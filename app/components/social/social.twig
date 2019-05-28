@@ -1,0 +1,19 @@
+{% macro social(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+	<div class="social">
+        {% if data.title %}
+            <h5 class="social__title">{{ data.title }}</h5>
+        {% endif %}
+
+        <div class="social__list">
+            {% for item in data.list %}
+                <div class="social__item">
+                    <a href="{{ item.href }}" class="social__link" title="{{ item.alt }}">
+                        {{ svg.icon(item.icon) }}
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

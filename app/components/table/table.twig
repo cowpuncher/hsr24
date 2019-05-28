@@ -1,0 +1,20 @@
+{% macro table(data) %}
+	<table>
+        <thead>
+            <tr>
+                {% for item in data.head %}
+                    <th>{{ item.text }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data.list %}
+                <tr>
+                    {% for item2 in item.list %}
+                        <td>{{ item2.text }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endmacro %}

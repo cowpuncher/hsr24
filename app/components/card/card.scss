@@ -1,0 +1,114 @@
+.card {
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    border: 1px solid $color-smoke;
+    background: $color-white;
+    border-radius: 5px;
+    margin: 0 13px 26px;
+    width: calc(25% - 26px);
+
+    &__wrap {
+        padding: 0 0 40px;
+    }
+
+    &__list {
+        margin: 0 0 -26px;
+        padding: 0 23px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__slider & {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__slider &__list {
+        margin-bottom: 0;
+    }
+
+    &__slider {
+        & .slick-track {
+            display: flex;
+        }
+
+        & .slick-slide {
+            margin: 0 13px;
+            float: none;
+            height: auto;
+
+            & > div {
+                height: 100%;
+            }
+        }
+
+        & .slick-prev {
+            left: -36px;
+            margin-top: -24px;
+        }
+
+        & .slick-next {
+            right: -36px;
+            margin-top: -24px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+
+        & img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+
+    &__status {
+        font-size: 11px;
+        line-height: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.4px;
+        text-transform: uppercase;
+        color: $color-white;
+        border-radius: 5px;
+        background: $color-red;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        font-family: $fons-lato;
+        padding: 3px 9px;
+        min-width: 92px;
+    }
+
+    &__info {
+        padding: 20px 16px 11px;
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    &__bottom {
+        width: 100%;
+        margin-top: auto;
+        padding: 0px 16px 9px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        & .elem-btn {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__price {
+
+    }
+}

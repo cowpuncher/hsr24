@@ -1,0 +1,7 @@
+{% macro select(data) %}
+	<select class="{{ data.class }}">
+        {% for item in data.list %}
+            <option {% if item.selected %}selected="selected"{% endif %} value="{{ item.value }}">{{ item.text }}</option>
+        {% endfor %}
+    </select>
+{% endmacro %}

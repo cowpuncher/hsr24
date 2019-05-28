@@ -1,0 +1,56 @@
+{% import '../_macros/_svg.twig' as svg %}
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}Default page name{% endblock %}</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi"> -->
+
+	<!-- Prevent click-to-call by Skype -->
+	<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+	<!-- Prevent iOS Safary detect numbers as phone -->
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- build:styles_version -->
+	<link rel="stylesheet" href="template_styles.css">
+	  <!-- endbuild -->
+
+  </head>
+
+  <body class="{% block bodyClass %}{% endblock %}">
+
+	<div class="page">
+        {% if userInit %}
+            {% include '../../components/header/header-lk.twig' %}
+        {% else %}
+            {% include '../../components/header/header.twig' %}
+        {% endif %}
+
+
+	  <main>
+		{% block content %}{% endblock %}
+	  </main>
+
+	  {% include '../../components/footer/footer.twig' %}
+	</div> <!-- page-wrapper end -->
+
+	<!-- JavaScript files placed at the end of the document so the pages load faster
+	================================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+    <script src="js/libs.js"></script>
+	<script src="js/main.js"></script>
+  </body>
+</html>

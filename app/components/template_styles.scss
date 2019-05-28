@@ -1,0 +1,45 @@
+@import "libs/bootstrap";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/magnific-popup/src/css/main.scss";
+// @import "../../bower_components/jquery-autocomplete/autocomplete.scss";
+
+@import "config/variables";
+@import "config/mixins";
+@import "config/fonts";
+@import "config/base";
+@import "config/typography";
+@import "config/icon";
+
+// @import "elem/elem-close";
+@import "elem/elem-btn";
+@import "elem/elem-item";
+@import "elem/elem-input";
+@import "elem/elem-label";
+@import "elem/elem-more";
+@import "elem/elem-price";
+@import "elem/elem-title";
+
+@import "accordion/accordion";
+@import "autocomplete/autocomplete";
+@import "banner/banner";
+@import "breadcrumbs/breadcrumbs";
+@import "card/card";
+@import "counter/counter";
+@import "filter/filter";
+@import "footer/footer";
+@import "hamburger/hamburger";
+@import "header/header";
+@import "map/map";
+@import "menu/menu";
+@import "pay/pay";
+@import "pagination/pagination";
+@import "popup/popup";
+@import "recommend/recommend";
+@import "select/select";
+@import "slider/slider";
+@import "social/social";
+@import "table/table";
+@import "tabs/tabs";
+
+@import "page/page-inner";
+@import "page/page-main";

@@ -1,0 +1,74 @@
+{% macro banner(data) %}
+    {% import '../slider/slider.twig' as slider %}
+
+	{% if data.slider %}
+        <div class="banner">
+            <div class="banner__col">
+                {{ slider.slider(data.slider) }}
+            </div>
+            <div class="banner__col">
+                <div class="banner__item">
+                    <img src="assets/images/example/banner/banner-small.jpg" alt="">
+                    <div class="banner__inner">
+                        <h3>Хит продаж</h3>
+                        <a href="#" class="elem-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="banner__item">
+                    <img src="assets/images/example/banner/banner-small.jpg" alt="">
+                    <div class="banner__inner">
+                        <h3>Любая доставка <br>300 рублей</h3>
+                        <a href="#" class="elem-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if data.list %}
+        <div class="banner-inner">
+            <div class="banner-inner__col">
+                <div class="banner-inner__item">
+                    <img src="{{ data.list[0].img }}" alt="">
+                    <div class="banner-inner__inner">
+                        <h3 class="banner-inner__title">{{ data.list[0].title }}</h3>
+                        <a href="#" class="elem-btn">{{ data.list[0].btn }}</a>
+                    </div>
+                </div>
+                <div class="banner-inner__item">
+                    <div class="banner-inner__col">
+                        <img src="{{ data.list[1].img }}" alt="">
+                        <div class="banner-inner__inner banner-inner__inner--small">
+                            <h3 class="banner-inner__title">{{ data.list[1].title }}</h3>
+                            <a href="#" class="elem-btn">{{ data.list[1].btn }}</a>
+                        </div>
+                    </div>
+                    <div class="banner-inner__col">
+                        <img src="{{ data.list[2].img }}" alt="">
+                        <div class="banner-inner__inner banner-inner__inner--small">
+                            <h3 class="banner-inner__title">{{ data.list[2].title }}</h3>
+                            <a href="#" class="elem-btn">{{ data.list[2].btn }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-inner__col banner-inner__col--auto">
+                <img src="{{ data.list[3].img }}" alt="">
+                <div class="banner-inner__inner">
+                    <h3 class="banner-inner__title">{{ data.list[3].title }}</h3>
+                    <a href="#" class="elem-btn">{{ data.list[3].btn }}</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if data.full %}
+        <div class="banner banner--full">
+            <img src="{{ data.img }}" alt="">
+            <div class="banner__inner banner__inner--big">
+                <h3>{{ data.title }}</h3>
+                <a href="#" class="elem-btn elem-btn--left">{{ data.btn }}</a>
+            </div>
+        </div>
+    {% endif %}
+{% endmacro %}

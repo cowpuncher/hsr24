@@ -1,0 +1,81 @@
+/* base config settings */
+
+$bg-base: #ffffff;
+
+$color-base:       #101010;
+$color-white:      #ffffff;
+$color-turquoise:  #C0FBF8;
+$color-red:        #F61D2A;
+$color-blue:       #3085F8;
+$color-gray:       #C6C6C6;
+$color-gray-light: #E6E6E6;
+$color-smoke:      #F6F6F6;
+$color-red-opacity: rgba(246, 29, 42, 0.85);
+
+$font-base: 'Gilroy';
+$fons-lato: 'Lato', sans-serif;
+$font-size-base: 16px;
+$font-weight-base: normal;
+$line-height-base: 24px;
+$margin-bottom-list-base: 30px;
+$padding-left-list-base: 30px;
+$margin-top-list-item: 10px;
+$bg-point-base: #000000;
+$size-point: 4px;
+$spacer: 1rem !default;
+$border-width: 1px;
+
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+$lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-weight:            300 !default;
+
+$small-font-size:             80% !default;
+
+$hr-border-color:             rgba($color-base, .1) !default;
+$hr-border-width:             $border-width !default;
+
+$mark-padding:                .2em !default;
+
+// Параметры отступов между колонками сетки.
+$grid-gutter-padding: 1rem;
+$grid-gutter-compensation: -1rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1280px,
+  xl: 1920px
+) !default;
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 1240px,
+  xl: 1240px
+) !default;
+
+$max-width: 1280px;
+$page-padding: 15px;
+$page-padding-mobile: 15px;
+$sidebar-width: 290px;
+$content-gap: 24px;
+$content-gap-inner: 35px;
+$content-gap-responsive: 20px;
+$content-gap-inner-responsive: 15px;
+
+$xs: 320px;
+$sm: 575px;
+$md: 767px;
+$lg: 1279px;
+$xl: 1919px;

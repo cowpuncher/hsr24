@@ -1,0 +1,36 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/banner/banner.twig' as banner %}
+{% import '../components/slider/slider.twig' as slider %}
+{% import '../components/tabs/tabs.twig' as tabs %}
+{% import '../components/recommend/recommend.twig' as recommend %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-main{% endblock %}
+
+{% block content %}
+
+    {{ banner.banner(bannerList) }}
+
+    <div class="container">
+        <div class="container__inner">
+            {{ menu.menu(advantagesList) }}
+
+            {{ tabs.tabs(tabsList) }}
+
+            {{ banner.banner(bannerInner) }}
+
+            {{ recommend.recommend(recommendList) }}
+
+            {{ banner.banner(bannerFull) }}
+
+            {{ recommend.recommend(viewList) }}
+        </div>
+    </div>
+
+{% endblock %}

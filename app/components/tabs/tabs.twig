@@ -1,0 +1,41 @@
+{% macro tabs(data) %}
+
+    {% import '../../page/_macros/_prefix.twig' as pr %}
+    {% import '../../page/_macros/_mod.twig' as mod %}
+    {% import '../../page/_macros/_attr.twig' as attr %}
+
+    {% import '../card/card.twig' as card %}
+
+    {% set pr = pr.generatePrefix('tabs', data.prefix) %}
+    {% set mod = mod.generateMod('tabs', data.prefix, data.mod) %}
+    {% set attr = attr.generateAttr('tabs', data.prefix) %}
+
+    <div class="tabs{{pr}} {{mod}}" {{attr}}>
+        <div class="tabs{{pr}}__head js-tabs-head">
+            {% for item in data.list %}
+                <div class="tabs{{pr}}__head-item">
+                    <a href="#" class="tabs{{pr}}__head-link {% if item.active %}active{% endif %}">{{ item.title }}</a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="tabs{{pr}}__body js-tabs-body">
+            {% for item in data.list %}
+                <div class="tabs{{pr}}__body-item {% if item.active %}open{% endif %}">
+                    {% if item.text %}
+                        {{ item.text }}
+                    {% endif %}
+
+                    {% if item.slider %}
+                        <div class="card__wrap">
+                            <div class="card__list card__slider" data-slider-cards>
+                                {% for item2 in item.slider %}
+                                    {{ card.card(item2) }}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

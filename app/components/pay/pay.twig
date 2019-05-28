@@ -1,0 +1,19 @@
+{% macro pay(data) %}
+	{% import '../../page/_macros/_svg.twig' as svg %}
+
+	<div class="pay">
+        {% if data.title %}
+            <h5 class="pay__title">{{ data.title }}</h5>
+        {% endif %}
+
+        <div class="pay__list">
+            {% for item in data.list %}
+                <div class="pay__item">
+                    <a href="{{ item.href }}" class="pay__link" title="{{ item.alt }}">
+                        {{ svg.icon(item.icon) }}
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

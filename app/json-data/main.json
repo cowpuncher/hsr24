@@ -1,0 +1,583 @@
+{
+    "page_title": "HSR",
+    "menuTop": {
+        "prefix": "top",
+        "list": [
+            {
+                "href": "#",
+                "text": "Доставка и оплата"
+            },
+            {
+                "href": "#",
+                "text": "Гарантии и обязательства"
+            },
+            {
+                "href": "#",
+                "text": "Программа лояльности"
+            },
+            {
+                "href": "#",
+                "text": "Акции"
+            }
+        ]
+    },
+    "menuIcons": {
+        "prefix": "icons",
+        "list": [
+            {
+                "href": "#",
+                "text": "HSR Бонус",
+                "icon": "loyalty"
+            },
+            {
+                "href": "#",
+                "text": "Избранное ",
+                "icon": "favs",
+                "count": "5"
+            },
+            {
+                "href": "#",
+                "text": "Корзина",
+                "icon": "cart",
+                "count": "10"
+            }
+        ]
+    },
+    "menuBottom": {
+        "prefix": "bottom",
+        "list": [
+            {
+                "href": "#",
+                "text": "Товары <br>из&nbsp;рекламы",
+                "icon": "adv-product"
+            },
+            {
+                "href": "#",
+                "text": "Товары <br>для&nbsp;дома",
+                "icon": "home"
+            },
+            {
+                "href": "#",
+                "text": "Дача и сад",
+                "icon": "dacha"
+            },
+            {
+                "href": "#",
+                "text": "Красота <br>и&nbsp;здоровье",
+                "icon": "beauty"
+            },
+            {
+                "href": "#",
+                "text": "Электроника",
+                "icon": "electronics"
+            },
+            {
+                "href": "#",
+                "text": "Ювелирный&nbsp;дом<br>",
+                "icon": "talisma",
+                "detail": "talisma"
+            },
+            {
+                "href": "#",
+                "text": "Православная <br>ярмарка",
+                "icon": "prevoslav"
+            },
+            {
+                "href": "#",
+                "text": "Досуг&nbsp;и&nbsp;хобби",
+                "icon": "hobby"
+            }
+        ]
+    },
+    "bannerList": {
+        "slider": {
+            "list": [
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "btn": "Подробнее"
+                },
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "btn": "Подробнее"
+                },
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "btn": "Подробнее"
+                },
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "btn": "Подробнее"
+                }
+            ]
+        }
+    },
+    "advantagesList": {
+        "prefix": "advantages",
+        "list": [
+            {
+                "text": "Бесплатная доставка <br>от 5000 рублей",
+                "href": "#",
+                "icon": "delivery-free"
+            },
+            {
+                "text": "Доставка <br>в любую точку РФ",
+                "href": "#",
+                "icon": "delivery-rf"
+            },
+            {
+                "text": "Более 1000 <br>пунктов выдачи",
+                "href": "#",
+                "icon": "delivery-point"
+            },
+            {
+                "text": "Выгодная программа<br> лояльности",
+                "href": "#",
+                "icon": "delivery-loyality"
+            }
+        ]
+    },
+    "tabsList": {
+        "list": [
+            {
+                "title": "Распродажа",
+                "active": true,
+                "slider": [
+                    {
+                        "img": "assets/images/example/card/img1.jpg",
+                        "status": "Распродажа",
+                        "name": "Мульти-овощерезка «Радуга вкуса»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img2.jpg",
+                        "status": "Распродажа",
+                        "name": "Женское пальто из замши и шерпы",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img3.jpg",
+                        "status": "Распродажа",
+                        "name": "Комплект «Адора» ",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img4.jpg",
+                        "status": "Распродажа",
+                        "name": "Набор «Мечта хозяйки»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img5.jpg",
+                        "status": "Распродажа",
+                        "name": "Куртка «Надежная защита»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img6.jpg",
+                        "status": "Распродажа",
+                        "name": "Брошь «Лунный цветок»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img7.jpg",
+                        "status": "Распродажа",
+                        "name": "Брошь «Цветущий янтарь»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    }
+                ]
+            },
+            {
+                "title": "Хиты продаж",
+                "slider": [
+                    {
+                        "img": "assets/images/example/card/img1.jpg",
+                        "status": "Хит продаж",
+                        "name": "Мульти-овощерезка «Радуга вкуса»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img2.jpg",
+                        "status": "Хит продаж",
+                        "name": "Женское пальто из замши и шерпы",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img3.jpg",
+                        "status": "Хит продаж",
+                        "name": "Комплект «Адора» ",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img4.jpg",
+                        "status": "Хит продаж",
+                        "name": "Набор «Мечта хозяйки»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img5.jpg",
+                        "status": "Хит продаж",
+                        "name": "Куртка «Надежная защита»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img6.jpg",
+                        "status": "Хит продаж",
+                        "name": "Брошь «Лунный цветок»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img7.jpg",
+                        "status": "Хит продаж",
+                        "name": "Брошь «Цветущий янтарь»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    }
+                ]
+            },
+            {
+                "title": "Новинки",
+                "slider": [
+                    {
+                        "img": "assets/images/example/card/img1.jpg",
+                        "status": "Новинки",
+                        "name": "Мульти-овощерезка «Радуга вкуса»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img2.jpg",
+                        "status": "Новинки",
+                        "name": "Женское пальто из замши и шерпы",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img3.jpg",
+                        "status": "Новинки",
+                        "name": "Комплект «Адора» ",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img4.jpg",
+                        "status": "Новинки",
+                        "name": "Набор «Мечта хозяйки»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img5.jpg",
+                        "status": "Новинки",
+                        "name": "Куртка «Надежная защита»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img6.jpg",
+                        "status": "Новинки",
+                        "name": "Брошь «Лунный цветок»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img7.jpg",
+                        "status": "Новинки",
+                        "name": "Брошь «Цветущий янтарь»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    }
+                ]
+            },
+            {
+                "title": "Акции",
+                "slider": [
+                    {
+                        "img": "assets/images/example/card/img1.jpg",
+                        "status": "Акции",
+                        "name": "Мульти-овощерезка «Радуга вкуса»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img2.jpg",
+                        "status": "Акции",
+                        "name": "Женское пальто из замши и шерпы",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img3.jpg",
+                        "status": "Акции",
+                        "name": "Комплект «Адора» ",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img4.jpg",
+                        "status": "Акции",
+                        "name": "Набор «Мечта хозяйки»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img5.jpg",
+                        "status": "Акции",
+                        "name": "Куртка «Надежная защита»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img6.jpg",
+                        "status": "Акции",
+                        "name": "Брошь «Лунный цветок»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    },
+                    {
+                        "img": "assets/images/example/card/img7.jpg",
+                        "status": "Акции",
+                        "name": "Брошь «Цветущий янтарь»",
+                        "priceOld": "1 400 ₽",
+                        "price": "1 000 ₽",
+                        "btn": "В корзину"
+                    }
+                ]
+            }
+        ]
+    },
+    "bannerInner": {
+        "list": [
+            {
+                "img": "assets/images/example/banner/banner1.jpg",
+                "title": "Товары для дома",
+                "btn": "Подробнее"
+            },
+            {
+                "img": "assets/images/example/banner/banner2.jpg",
+                "title": "Товары для красоты и здоровья",
+                "btn": "Подробнее"
+            },
+            {
+                "img": "assets/images/example/banner/banner2.jpg",
+                "title": "Летняя одежда для дачи",
+                "btn": "Подробнее"
+            },
+            {
+                "img": "assets/images/example/banner/banner3.jpg",
+                "title": "Коллекция ювелирного дома TALISMA",
+                "btn": "Подробнее"
+            }
+        ]
+    },
+    "recommendList": {
+        "title": "Рекомендуем",
+        "list": [
+            {
+                "img": "assets/images/example/card/img1.jpg",
+                "status": "Распродажа",
+                "name": "Мульти-овощерезка «Радуга вкуса»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            },
+            {
+                "img": "assets/images/example/card/img5.jpg",
+                "status": "акция",
+                "name": "Куртка «Надежная защита»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            },
+            {
+                "img": "assets/images/example/card/img6.jpg",
+                "status": "новинка",
+                "name": "Брошь «Лунный цветок»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            },
+            {
+                "img": "assets/images/example/card/img7.jpg",
+                "status": "хит продаж",
+                "name": "Брошь «Цветущий янтарь»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            }
+        ],
+        "more": true
+    },
+    "bannerFull": {
+        "full": true,
+        "img": "assets/images/example/banner/banner4.jpg",
+        "title": "Вступайте в нашу программу лояльности!",
+        "btn": "Подробнее"
+    },
+    "viewList": {
+        "title": "Вы смотрели",
+        "list": [
+            {
+                "img": "assets/images/example/card/img8.jpg",
+                "status": "Распродажа",
+                "name": "Колье + браслет «Меридиан»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            },
+            {
+                "img": "assets/images/example/card/img5.jpg",
+                "status": "акция",
+                "name": "Куртка «Надежная защита»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            },
+            {
+                "img": "assets/images/example/card/img6.jpg",
+                "status": "новинка",
+                "name": "Брошь «Лунный цветок»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            },
+            {
+                "img": "assets/images/example/card/img7.jpg",
+                "status": "хит продаж",
+                "name": "Брошь «Цветущий янтарь»",
+                "priceOld": "1 400 ₽",
+                "price": "1 000 ₽",
+                "btn": "В корзину"
+            }
+        ]
+    },
+    "menuFooter": {
+        "prefix": "footer",
+        "list": [
+            {
+                "href": "#",
+                "text": "О компании",
+                "class": "order-lg-1"
+            },
+            {
+                "href": "#",
+                "text": "Доставка и оплата",
+                "class": "order-lg-2 md"
+            },
+            {
+                "href": "#",
+                "text": "Программа лояльности",
+                "class": "order-lg-4 md"
+            },
+            {
+                "href": "#",
+                "text": "Акции",
+                "class": "order-lg-3"
+            },
+            {
+                "href": "#",
+                "text": "Возврат и обмен",
+                "class": "order-lg-5"
+            },
+            {
+                "href": "#",
+                "text": "Контакты",
+                "class": "order-lg-8"
+            },
+            {
+                "href": "#",
+                "text": "Поставщикам",
+                "class": "order-lg-7"
+            },
+            {
+                "href": "#",
+                "text": "Политика конфиденциальности",
+                "class": "order-lg-6 md"
+            }
+        ]
+    },
+    "socialList": {
+        "title": "Мы в социальных сетях",
+        "list": [
+            {
+                "icon": "vk",
+                "alt": "в контакте",
+                "href": "#"
+            },
+            {
+                "icon": "ok",
+                "alt": "однокласники",
+                "href": "#"
+            },
+            {
+                "icon": "youtube",
+                "alt": "youtube",
+                "href": "#"
+            }
+        ]
+    },
+    "payList": {
+        "title": "Способы оплаты",
+        "list": [
+            {
+                "icon": "mastercard",
+                "alt": "mastercard",
+                "href": "#"
+            },
+            {
+                "icon": "visa",
+                "alt": "visa",
+                "href": "#"
+            },
+            {
+                "icon": "mir",
+                "alt": "mir",
+                "href": "#"
+            },
+            {
+                "icon": "halva",
+                "alt": "halva",
+                "href": "#"
+            }
+        ]
+    }
+}

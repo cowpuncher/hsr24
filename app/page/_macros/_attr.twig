@@ -1,0 +1,2 @@
+{# data-атрибут #}
+{% macro generateAttr(el, prefix)  %}{% if prefix != undefined %}{{'data-' ~ el ~ '-' ~ prefix}}{% else %}{{'data-' ~ el}}{% endif %}{% endmacro %}

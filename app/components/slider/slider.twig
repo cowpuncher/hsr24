@@ -1,0 +1,24 @@
+{% macro slider(data) %}
+
+    {% import '../../page/_macros/_prefix.twig' as pr %}
+    {% import '../../page/_macros/_mod.twig' as mod %}
+    {% import '../../page/_macros/_attr.twig' as attr %}
+
+    {% set pr = pr.generatePrefix('slider', data.prefix) %}
+    {% set mod = mod.generateMod('slider', data.prefix, data.mod) %}
+    {% set attr = attr.generateAttr('slider', data.prefix) %}
+
+    <div class="slider{{pr}} {{mod}}" {{attr}}>
+
+        {% for item in data.list %}
+            <div class="slider{{pr}}__item">
+                <img src="{{ item.img }}" alt="{{ item.img_alt }}" class="slider{{pr}}__img">
+
+                {% if item.btn %}
+                    <a href="#" class="elem-btn">{{ item.btn }}</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+    </div>
+{% endmacro %}

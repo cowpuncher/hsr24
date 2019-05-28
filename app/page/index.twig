@@ -1,0 +1,20 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-index{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <ul>
+            {% for item in menuList %}
+                <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}

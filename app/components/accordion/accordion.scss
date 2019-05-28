@@ -1,0 +1,17 @@
+.accordion {
+    &__item {
+
+    }
+
+    &__header {
+
+    }
+
+    &__body {
+        display: none;
+
+        &_open {
+            display: block;
+        }
+    }
+}

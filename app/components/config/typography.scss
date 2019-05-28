@@ -1,0 +1,156 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: bold;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 800;
+}
+
+h2, .h2 {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 800;
+}
+
+h3, .h3 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 800;
+}
+
+h4, .h4 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+h5, .h5 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+}
+
+h6, .h6 {
+    font-size: $h6-font-size;
+}
+
+.lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+}
+
+hr {
+    margin-top: $hr-margin-y;
+    margin-bottom: $hr-margin-y;
+    border: 0;
+    border-top: $hr-border-width solid $hr-border-color;
+}
+
+small,
+.small {
+  font-size: $small-font-size;
+  font-weight: $font-weight-normal;
+}
+
+mark,
+.mark {
+  padding: $mark-padding;
+  background-color: $mark-bg;
+}
+
+.dark {
+    color: $color-white;
+}
+
+.light {
+    color: $color-base;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (min-width: $xl) {
+    .text-right-xl {
+        text-align: right;
+    }
+
+    .text-left-xl {
+        text-align: left;
+    }
+
+    .text-center-xl {
+        text-align: center;
+    }
+}
+
+@media (min-width: $lg) and (max-width: $xl - 1) {
+    .text-right-lg {
+        text-align: right;
+    }
+
+    .text-left-lg {
+        text-align: left;
+    }
+
+    .text-center-lg {
+        text-align: center;
+    }
+}
+
+@media (min-width: $md) and (max-width: $lg - 1) {
+    .text-right-md {
+        text-align: right;
+    }
+
+    .text-left-md {
+        text-align: left;
+    }
+
+    .text-center-md {
+        text-align: center;
+    }
+}
+
+@media (min-width: $sm) and (max-width: $md - 1) {
+    .text-right-sm {
+        text-align: right;
+    }
+
+    .text-left-sm {
+        text-align: left;
+    }
+
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+@media (min-width: $xs) and (max-width: $sm - 1) {
+    .text-right-xs {
+        text-align: right;
+    }
+
+    .text-left-xs {
+        text-align: left;
+    }
+
+    .text-center-xs {
+        text-align: center;
+    }
+}

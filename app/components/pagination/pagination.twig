@@ -1,0 +1,32 @@
+{% macro pagination() %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+	<nav class="pagination">
+        <ul class="pagination__list">
+            <a href="#" class="pagination__link pagination__link--prev">
+                {{ svg.icon('arrow-back') }}
+                Предыдущая
+            </a>
+
+            {% for i in 1..19 %}
+              {% if (i < 8) or (i > 18) %}
+                <li class="pagination__item">
+                  {% if i == 3 %}
+                    <span class="pagination__text">{{ i }}</span>
+                  {% else %}
+                    <a href="#" class="pagination__link">{{ i }}</a>
+                  {% endif %}
+                </li>
+              {% else %}
+                {% if (i == 8) %}
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">...</a>
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            <a href="#" class="pagination__link pagination__link--next">Следующая {{ svg.icon('arrow-back') }}</a>
+        </ul>
+	</nav>
+{% endmacro %}

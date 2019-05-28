@@ -1,0 +1,67 @@
+.icon {
+    &-user {
+        width: 16px;
+        height: 20px;
+    }
+
+    &-logo {
+        width: 104px;
+        height: 58px;
+    }
+
+    &-search,
+    &-consultant,
+    &-ask {
+        height: 24px;
+        width: 24px;
+    }
+
+    &-24h,
+    &-loyalty,
+    &-favs,
+    &-cart,
+    &-adv-product,
+    &-home,
+    &-dacha,
+    &-beauty,
+    &-electronics,
+    &-talisma,
+    &-prevoslav,
+    &-hobby,
+    &-all,
+    &-show-more,
+    &-vk,
+    &-ok,
+    &-youtube {
+        height: 32px;
+        width: 32px;
+    }
+
+    &-delivery-free,
+    &-delivery-rf,
+    &-delivery-point,
+    &-delivery-loyality {
+        height: 76px;
+        width: 76px;
+    }
+
+    &-mastercard {
+        height: 20px;
+        width: 34px;
+    }
+
+    &-visa {
+        height: 17px;
+        width: 49px;
+    }
+
+    &-mir {
+        height: 15px;
+        width: 55px;
+    }
+
+    &-halva {
+        height: 16px;
+        width: 55px;
+    }
+}

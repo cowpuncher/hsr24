@@ -1,0 +1,16 @@
+{
+  "name": "sample",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap-sass": "~3.3.7",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "magnific-popup": "^1.1.0",
+    "jquery.form-styler": "jquery-form-styler#^2.0.2",
+    "jquery.maskedinput": "^1.4.1",
+    "jquery-validation": "^1.18.0",
+    "jquery-autocomplete": "^1.1.1"
+  }
+}

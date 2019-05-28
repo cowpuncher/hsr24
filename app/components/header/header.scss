@@ -1,0 +1,98 @@
+.header {
+    margin-bottom: 12px;
+
+    &__top {
+        background:$color-base;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__authorization {
+        margin-left: auto;
+        padding-right: 3px;
+    }
+
+    &__link {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 14px 0;
+
+        & + & {
+            margin-left: 14px;
+
+            &:before {
+                background: $color-white;
+                content: '';
+                height: 23px;
+                width: 1px;
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                margin-top: -12px;
+            }
+        }
+
+        & .icon {
+            margin-left: 8px;
+        }
+    }
+
+    &__middle {
+        padding: 22px 0 9px;
+    }
+
+    &__search {
+        margin-left: 37px;
+        padding-bottom: 6px;
+        width: 37%;
+    }
+
+    &__contacts {
+        margin-left: auto;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-bottom: 7px;
+        letter-spacing: 0;
+
+        &-title {
+            color: $color-red;
+            font-size: 11px;
+            line-height: 15px;
+        }
+
+        &-phone {
+            font-size: 22.6px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            margin-top: -5px;
+
+            & .icon {
+                margin-right: 9px;
+                top: 3px;
+                position: relative;
+            }
+        }
+
+        &-desc {
+            font-size: 10.2px;
+            line-height: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        padding-bottom: 7px;
+        margin-left: 62px;
+    }
+}

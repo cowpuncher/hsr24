@@ -1,0 +1,13 @@
+.elem-price {
+    font-size: 27px;
+    line-height: 32px;
+    font-family: $fons-lato;
+
+    &-old {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $fons-lato;
+        color: $color-red;
+        text-decoration: line-through;
+    }
+}

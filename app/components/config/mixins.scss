@@ -1,0 +1,145 @@
+/**
+ * Подчеркивания ссылок через border.
+ *
+ * $color - цвет текста.
+ * $border-color - цвет подчеркивания.
+ * $border-alpha - значение прозрачности для rgba.
+ * $underline - отображать подчеркивание по умолчанию.
+ */
+@mixin link-border($color: inherit, $border-color: inherit, $border-alpha: 0.5, $underline: true) {
+    color: $color;
+    text-decoration: none;
+
+    border: none;
+
+    transition-property: border-color;
+    transition-duration: .33s;
+    transition-timing-function: ease-out;
+
+    &:hover {
+        border-color: $border-color
+    }
+
+    @if ($underline == true) {
+        border-bottom: 1px solid rgba($border-color, $border-alpha);
+    }
+
+    @if ($underline == false) {
+        border-bottom: 1px solid transparent;
+    }
+}
+
+/*
+ * Подчеркивания ссылок через box-shadow.
+ * Подходит для использования, если надо регулировать расположение подчеркивания относительно текста.
+ *
+ * $color - цвет текста.
+ * $border-color - цвет подчеркивания.
+ * $border-alpha - значение прозрачности для rgba.
+ * $background-color - цвет фона на кототром расположена ссылка.
+ * $y1 - расположение тени фона.
+ * $y2 - расположение тени подчеркивания.
+ */
+@mixin link-shadow($color: inherit, $border-color: inherit, $border-alpha: 0.5, $background-color: white, $y1: -1px, $y2: -2px) {
+    display: inline;
+
+    color: $color;
+    text-decoration: none;
+
+    transition-property: box-shadow;
+    transition-duration: .33s;
+    transition-timing-function: ease-out;
+
+    box-shadow: inset 0 $y1 $background-color, inset 0 $y2 rgba($border-color, $border-alpha);
+
+    &:hover {
+        box-shadow: inset 0 $y1 $background-color, inset 0 $y2 $border-color;
+    }
+}
+
+@mixin media($min-width: 1200px) {
+    @media (min-width: $min-width) {
+        @content;
+    }
+}
+
+// Color placeholder
+@mixin placeholder($text-indent, $transition: .2s, $font: 14px, $color: #c7c6c6) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        font-size: $font;
+        text-indent: $text-indent;
+        @include transition($transition);
+    }
+
+    &:-moz-placeholder {
+        color: $color;
+        font-size: $font;
+        text-indent: $text-indent;
+        @include transition($transition);
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        font-size: $font;
+        text-indent: $text-indent;
+        @include transition($transition);
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        font-size: $font;
+        text-indent: $text-indent;
+        @include transition($transition);
+    }
+}
+
+// Clearfix
+@mixin clearfix {
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+// Fonts generator
+@mixin font-face($name, $path, $weight: normal, $style: normal, $exts: woff2 woff) {
+    $src: null;
+    $extmods: (eot: "?", svg: "#"+ str-replace($name, " ", "_"));
+    $formats: (otf: "opentype", ttf: "truetype");
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// Inline-block
+@mixin inlineblock ($value: top) {
+    display: inline-block;
+    vertical-align: $value;
+}
+
+// Absolute centered
+@mixin center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}

@@ -1,0 +1,50 @@
+<footer id="footer" class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="main.html" class="elem-logo footer__logo">
+                        {{ svg.icon('logo') }}
+                    </a>
+                </div>
+                <div class="footer__menu">
+                    {{ menu.menu(menuFooter) }}
+                </div>
+                <div class="footer__col footer__col--social">
+                    {{ social.social(socialList) }}
+                </div>
+                <div class="footer__col footer__col--pay">
+                    {{ pay.pay(payList) }}
+
+                    <div class="footer__adress">
+                        <p>ОГРН 1137746372290</p>
+                        <p>109052 г. Москва, ул. Смирновская, д. 4, стр.2</p>
+                        <p>© 2013-2019 ООО «Home Shopping Russia» Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom dark">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__link">
+                    {{ svg.icon('consultant') }} Связаться с нами
+                </a>
+
+                <a href="#" class="footer__link">
+                    {{ svg.icon('ask') }} Онлайн консультант
+                </a>
+
+                <form class="footer__subscribe">
+                    <div class="elem-item footer__subscribe-item">
+                        <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
+                        <input type="text" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">
+                        <button class="elem-btn elem-btn--xs footer__btn">Подписаться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,130 @@
+.banner {
+    display: flex;
+    position: relative;
+
+    &--full {
+        margin-bottom: 27px;
+    }
+
+    &__col {
+        width: calc(63.75% - 20px);
+        position: relative;
+
+        & + & {
+            width: 36.25%;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        height: calc(50% - 10px);
+
+        & + & {
+            margin-top: 20px;
+        }
+
+        & img {
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+            object-fit: cover;
+        }
+    }
+
+    &__inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 32px 30px;
+        display: flex;
+        flex-direction: column;
+
+        &--big {
+            padding: 43px 42px 38px;
+        }
+
+        & .elem-btn {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+
+            &--left {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &-inner {
+        display: flex;
+        margin-bottom: 24px;
+        justify-content: space-between;
+
+        &__col {
+            width: calc(56% - 12px);
+            position: relative;
+            overflow: hidden;
+
+            & + & {
+                margin-left: 24px;
+                width: calc(44.2% - 12px);
+                flex-shrink: 0;
+            }
+
+            &--auto {
+                & img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        &__item {
+            position: relative;
+            //height: calc(50% - 12px);
+            display: flex;
+
+            & + & {
+                margin-top: 24px;
+            }
+        }
+
+        &__item &__col {
+            width: calc(50% - 12px);
+        }
+
+        & img {
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+            object-fit: cover;
+        }
+
+        &__inner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            padding: 37px 36px;
+            display: flex;
+            flex-direction: column;
+
+            &--small {
+                padding: 30px 28px 38px;
+            }
+
+            & .elem-btn {
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+            }
+        }
+    }
+}

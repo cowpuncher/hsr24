@@ -1,0 +1,39 @@
+{% macro menu(data) %}
+    {% import '../../page/_macros/_prefix.twig' as pr %}
+    {% import '../../page/_macros/_mod.twig' as mod %}
+    {% import '../../page/_macros/_attr.twig' as attr %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+    {% set pr = pr.generatePrefix('menu', data.prefix) %}
+    {% set mod = mod.generateMod('menu', data.prefix, data.mod) %}
+    {% set attr = attr.generateAttr('menu', data.prefix) %}
+
+    <nav class="menu{{pr}} {{mod}}" {{attr}} {% if data.scrollto %}data-scroll-to{% endif %}>
+
+        <ul class="menu{{pr}}__list">
+
+            {% for item in data.list %}
+                <li class="menu{{pr}}__item {% if item.class %}{{ item.class }}{% endif %}">
+                    <a href="{{ item.href }}" class="menu{{pr}}__link" {% if item.scrollto %}data-scroll-to-single{% endif %}>
+                        {% if item.icon %}
+                            <div class="menu{{pr}}__icon">
+                                {{ svg.icon(item.icon) }}
+                                {% if item.count %}
+                                    <div class="menu{{pr}}__count dark">{{ item.count }}</div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                        <div class="menu{{pr}}__text">
+                            {{ item.text }}
+
+                            {% if item.detail %}
+                                <div class="menu{{pr}}__detail dark">{{ item.detail }}</div>
+                            {% endif %}
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+
+        </ul>
+    </nav>
+{% endmacro %}

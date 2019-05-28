@@ -1,0 +1,65 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 32px;
+
+    @media (max-width: $md) {
+        margin-bottom: 22px;
+    }
+
+    & th {
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: rgba(#656464, .7);
+        border-bottom: 1px solid rgba($color-base, 0.1);
+        padding: 9px 4px;
+        font-weight: 700;
+
+        &:first-child {
+            padding-left: 0;
+            width: 29%;
+
+            @media (max-width: $lg) {
+                width: 27%;
+            }
+
+            @media (max-width: $md) {
+                width: 28%;
+            }
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    & td {
+        font-size: 14px;
+        line-height: 26px;
+        border-bottom: 1px solid rgba($color-base, 0.1);
+        padding: 6px 4px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.table {
+    overflow-x: auto;
+    width: 100%;
+
+    * + & {
+        margin-top: 14px;
+    }
+
+    & table {
+        min-width: 620px;
+    }
+}

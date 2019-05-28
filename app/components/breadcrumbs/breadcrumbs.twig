@@ -1,0 +1,14 @@
+{% macro breadcrumbs(data) %}
+	<div class="breadcrumbs">
+        {% for item in data.list %}
+            {# Если последний элемент #}
+            <div class="breadcrumbs__item">
+                {% if loop.last %}
+                    <span class="breadcrumbs__text">{{ item.text }}</span>
+                {% else %}
+                    <a href="{{ item.href }}" class="breadcrumbs__link">{{ item.text }}</a>
+                {% endif %}
+            </div>
+        {% endfor %}
+	</div>
+{% endmacro %}

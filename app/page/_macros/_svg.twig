@@ -1,0 +1,6 @@
+{# Macro for calling svg icon from images/required/sprite.svg #}
+{% macro icon(iconName, stp) %}
+  <svg aria-hidden="true" class="icon icon-{{iconName}}">
+    <use xlink:href="{{stp}}assets/images/required/sprite.svg#{{iconName}}"></use>
+  </svg>
+{% endmacro %}

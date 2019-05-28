@@ -1,0 +1,26 @@
+{% macro accordion(data) %}
+    {% import '../../page/_macros/_prefix.twig' as pr %}
+    {% import '../../page/_macros/_mod.twig' as mod %}
+    {% import '../../page/_macros/_attr.twig' as attr %}
+
+    {% set pr = pr.generatePrefix('accordion', data.prefix) %}
+    {% set mod = mod.generateMod('accordion', data.prefix, data.mod) %}
+    {% set attr = attr.generateAttr('accordion', data.prefix) %}
+
+    <div class="accordion{{pr}} {{mod}}" {{attr}}>
+
+        {% for item in data.list %}
+            <div class="accordion{{pr}}__item" {{attr}}-item>
+
+                <div class="accordion{{pr}}__header" {{attr}}-header>
+                    {{ item.title }}
+                </div>
+
+                <div class="accordion{{pr}}__body {% if item.class %}accordion{{pr}}__body_{{ item.class }}{% endif %}" {{attr}}-body>
+                    {{ item.text }}
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endmacro %}

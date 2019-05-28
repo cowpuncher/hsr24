@@ -1,0 +1,135 @@
+{
+    "page_title": "HSR",
+    "menuList": [
+        {
+            "title": "Главная",
+            "href": "main.html"
+        }
+    ],
+    "menuTop": {
+        "prefix": "top",
+        "list": [
+            {
+                "href": "#",
+                "text": "Доставка и оплата"
+            },
+            {
+                "href": "#",
+                "text": "Гарантии и обязательства"
+            },
+            {
+                "href": "#",
+                "text": "Программа лояльности"
+            },
+            {
+                "href": "#",
+                "text": "Акции"
+            }
+        ]
+    },
+    "menuIcons": {
+        "prefix": "icons",
+        "list": [
+            {
+                "href": "#",
+                "text": "HSR Бонус",
+                "icon": "loyalty"
+            },
+            {
+                "href": "#",
+                "text": "Избранное ",
+                "icon": "favs",
+                "count": "5"
+            },
+            {
+                "href": "#",
+                "text": "Корзина",
+                "icon": "cart",
+                "count": "10"
+            }
+        ]
+    },
+    "menuBottom": {
+        "prefix": "bottom",
+        "list": [
+            {
+                "href": "#",
+                "text": "Товары <br>из&nbsp;рекламы",
+                "icon": "adv-product"
+            },
+            {
+                "href": "#",
+                "text": "Товары <br>для&nbsp;дома",
+                "icon": "home"
+            },
+            {
+                "href": "#",
+                "text": "Дача и сад",
+                "icon": "dacha"
+            },
+            {
+                "href": "#",
+                "text": "Красота <br>и&nbsp;здоровье",
+                "icon": "beauty"
+            },
+            {
+                "href": "#",
+                "text": "Электроника",
+                "icon": "electronics"
+            },
+            {
+                "href": "#",
+                "text": "Ювелирный&nbsp;дом<br>",
+                "icon": "talisma",
+                "detail": "talisma"
+            },
+            {
+                "href": "#",
+                "text": "Православная <br>ярмарка",
+                "icon": "prevoslav"
+            },
+            {
+                "href": "#",
+                "text": "Досуг&nbsp;и&nbsp;хобби",
+                "icon": "hobby"
+            }
+        ]
+    },
+    "menuFooter": {
+        "prefix": "footer",
+        "list": [
+            {
+                "href": "#",
+                "text": "О компании"
+            },
+            {
+                "href": "#",
+                "text": "Доставка и оплата"
+            },
+            {
+                "href": "#",
+                "text": "Программа лояльности"
+            },
+            {
+                "href": "#",
+                "text": "Политика конфиденциальности"
+            },
+            {
+                "href": "#",
+                "text": "Акции"
+            },
+            {
+                "href": "#",
+                "text": "Возврат и обмен"
+            },
+            {
+                "href": "#",
+                "text": "Поставщикам"
+            },
+            {
+                "href": "#",
+                "text": "Контакты"
+            }
+        ]
+    }
+}

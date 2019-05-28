@@ -1,0 +1,23 @@
+{% macro recommend(data) %}
+    {% import '../card/card.twig' as card %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+	<div class="recommend">
+        <h2 class="elem-title">{{ data.title }}</h2>
+
+        <div class="card__list">
+            {% for item in data.list %}
+                {{ card.card(item) }}
+            {% endfor %}
+        </div>
+
+        {% if data.more %}
+            <div class="elem-more__row">
+                <a href="#" class="elem-more">
+                    {{ svg.icon('show-more') }}
+                    <span>Показать еще</span>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% endmacro %}

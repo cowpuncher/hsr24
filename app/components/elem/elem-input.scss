@@ -1,0 +1,45 @@
+.elem-input {
+    border: 1px solid $color-gray-light;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &--xs {
+        font-size: 11px;
+        line-height: 14px;
+        height: 28px;
+        padding: 7px 8px;
+        border-radius: 8px;
+    }
+
+    &::placeholder {
+        color: $color-gray;
+    }
+
+    &:focus {
+        border-color: $color-base;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translate(0, -50%);
+        display: flex;
+    }
+
+    &__icon + & {
+        padding-left: 44px;
+    }
+
+    &--sm {
+        font-size: 12px;
+        line-height: 14px;
+        border-radius: 16px;
+        padding: 8px 16px;
+    }
+}

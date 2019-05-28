@@ -1,0 +1,2 @@
+
+{% macro generateMod(el, prefix, mod) %}{% if mod != undefined %}{% if prefix != undefined %}{{el ~ pr ~ '--' ~ mod}}{% else %}{{el ~ '--' ~ mod}}{% endif %}{% else %}{{''}}{% endif %}{% endmacro %}

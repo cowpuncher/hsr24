@@ -1,0 +1,57 @@
+<header id="header" class="header">
+  <div class="header__top dark">
+    <div class="container">
+        <div class="header__inner">
+            {{ menu.menu(menuTop) }}
+
+            <div class="header__authorization">
+                <a href="#" class="header__link">Вход</a>
+                <a href="#" class="header__link">Регистрация {{ svg.icon('user') }} </a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="header__middle">
+    <div class="container">
+        <div class="header__inner">
+            <a href="main.html" class="elem-logo">
+                {{ svg.icon('logo') }}
+            </a>
+
+            <div class="header__search">
+                <div class="elem-item">
+                    <div class="elem-input__icon">
+                        {{ svg.icon('search') }}
+                    </div>
+                    <input type="text" class="elem-input elem-input--sm" placeholder="Поиск по сайту">
+                </div>
+            </div>
+
+            <div class="header__contacts">
+                <div class="header__contacts-title">Обратный звонок</div>
+                <a href="tel:8800707502" class="header__contacts-phone">
+                    {{ svg.icon('24h') }} 8 800 707-50-25
+                </a>
+                <div class="header__contacts-desc">Звонок по России бесплатный</div>
+            </div>
+
+            <div class="header__menu">
+                {{ menu.menu(menuIcons) }}
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="header__bootom">
+    <div class="container">
+        <div class="header__inner">
+            {{ menu.menu(menuBottom) }}
+
+            <a href="#" class="menu-bottom__all">
+                {{ svg.icon('all') }} Весь каталог
+            </a>
+        </div>
+    </div>
+  </div>
+</header>
