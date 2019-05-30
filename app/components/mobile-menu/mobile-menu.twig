@@ -1,0 +1,24 @@
+<div class="mobile-menu hidden-xl hidden-lg" data-menu-mobile>
+    <h2 class="mobile-menu__title elem-title">Каталог товаров</h2>
+    <div class="mobile-menu__menu">
+        {{ menu.menu(menuBottom) }}
+    </div>
+
+    <div class="mobile-menu__bottom">
+        <div class="mobile-menu__menu2">
+            {{ menu.menu(menuMobile) }}
+        </div>
+
+        <div class="header__contacts mobile-menu__contacts">
+            <a href="tel:8800707502" class="header__contacts-phone">
+                <div class="header__contacts-icon">
+                    {{ svg.icon('24h') }}
+                </div>
+                <div class="header__contacts-info">
+                    8 800 707-50-25
+                    <div class="header__contacts-desc">Звонок по России бесплатный</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

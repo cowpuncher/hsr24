@@ -3,11 +3,24 @@
     line-height: 32px;
     font-family: $fons-lato;
 
+    @media (max-width: $lg) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
     &-old {
         font-size: 16px;
         line-height: 19px;
         font-family: $fons-lato;
         color: $color-red;
         text-decoration: line-through;
+
+        @media (max-width: $lg) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-left: 6px;
+            position: relative;
+            top: -2px;
+        }
     }
 }

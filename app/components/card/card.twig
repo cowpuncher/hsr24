@@ -1,9 +1,9 @@
 {% macro card(data) %}
     {% import '../../page/_macros/_svg.twig' as svg %}
 
-	<a href="#" class="card">
+	<div class="card {% if data.class %}{{ data.class }}{% endif %}">
         <div class="card__img dark">
-            <img src="{{ data.img }}" alt="">
+            <a href="#"><img src="{{ data.img }}" alt=""></a>
             {% if data.status %}
               <span class="card__status">
                 {{ data.status }}
@@ -11,7 +11,7 @@
             {% endif %}
         </div>
         <div class="card__info">
-            <div class="card__name">{{ data.name }}</div>
+            <a href="#" class="card__name">{{ data.name }}</a>
         </div>
         <div class="card__bottom">
             <div class="card__price">
@@ -21,8 +21,11 @@
                 {% endif %}
             </div>
             {% if data.btn %}
-                <div class="elem-btn elem-btn--light elem-btn--sm">{{ data.btn }}</div>
+                <a href="#" class="elem-btn elem-btn--light elem-btn--sm">{{ data.btn }}</a>
             {% endif %}
         </div>
-    </a>
+        <span class="card__like" data-like>
+            {{ svg.icon('favs') }}
+        </span>
+    </div>
 {% endmacro %}

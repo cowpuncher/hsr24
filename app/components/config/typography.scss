@@ -11,18 +11,33 @@ h1, .h1 {
     font-size: 32px;
     line-height: 39px;
     font-weight: 800;
+
+    @media (max-width: $lg) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 h2, .h2 {
     font-size: 32px;
     line-height: 39px;
     font-weight: 800;
+
+    @media (max-width: $lg) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 h3, .h3 {
     font-size: 24px;
     line-height: 29px;
     font-weight: 800;
+
+    @media (max-width: $lg) {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 h4, .h4 {
@@ -38,7 +53,9 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    font-size: $h6-font-size;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 800;
 }
 
 .lead {

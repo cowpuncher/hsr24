@@ -2,7 +2,7 @@
     {% import '../slider/slider.twig' as slider %}
 
 	{% if data.slider %}
-        <div class="banner">
+        <div class="banner {% if data.class %}{{ data.class }}{% endif %}">
             <div class="banner__col">
                 {{ slider.slider(data.slider) }}
             </div>

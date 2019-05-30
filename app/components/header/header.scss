@@ -1,5 +1,8 @@
 .header {
     margin-bottom: 12px;
+    position: relative;
+    z-index: 100;
+    background: $color-white;
 
     &__top {
         background:$color-base;
@@ -41,17 +44,32 @@
 
         & .icon {
             margin-left: 8px;
+            stroke: $color-white;
         }
     }
 
     &__middle {
         padding: 22px 0 9px;
+
+        @media (max-width: $lg) {
+            padding: 16px 0 0;
+        }
     }
 
     &__search {
         margin-left: 37px;
         padding-bottom: 6px;
         width: 37%;
+
+        @media (max-width: $lg) {
+            margin-left: 29px;
+            margin-right: 29px;
+            width: 46%;
+        }
+
+        & .elem-item {
+            margin-bottom: 0;
+        }
     }
 
     &__contacts {
@@ -69,12 +87,25 @@
             line-height: 15px;
         }
 
+        &-icon {
+            margin-right: 12px;
+            flex-shrink: 0;
+            position: relative;
+            top: 3px;
+        }
+
         &-phone {
             font-size: 22.6px;
             line-height: 26px;
             display: flex;
             align-items: center;
             margin-top: -5px;
+
+            @media (max-width: $lg) {
+                font-size: 31px;
+                line-height: 36px;
+                margin-top: 0;
+            }
 
             & .icon {
                 margin-right: 9px;
@@ -87,6 +118,12 @@
             font-size: 10.2px;
             line-height: 12px;
             text-transform: uppercase;
+
+            @media (max-width: $lg) {
+                font-size: 13.7px;
+                line-height: 16px;
+                color: $color-gray;
+            }
         }
     }
 
@@ -94,5 +131,9 @@
         display: flex;
         padding-bottom: 7px;
         margin-left: 62px;
+
+        @media (max-width: $lg) {
+            margin-left: auto;
+        }
     }
 }

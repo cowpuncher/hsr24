@@ -1,0 +1,43 @@
+.mobile-menu {
+    width: 100%;
+    max-width: 466px;
+    background: $color-white;
+    position: fixed;
+    left: -100%;
+    top: 71px;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 17px;
+    overflow-y: auto;
+
+    &.open {
+        left: 0;
+    }
+
+    &__title {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    &__menu {
+        margin-bottom: 20px;
+    }
+
+    &__bottom {
+        margin-top: auto;
+        margin-left: -17px;
+        margin-right: -17px;
+        padding-left: 17px;
+        padding-right: 17px;
+        background: $color-smoke;
+        padding-bottom: 7px;
+    }
+
+    &__contacts {
+        margin-left: 0;
+        align-items: center;
+        margin-top: 13px;
+    }
+}

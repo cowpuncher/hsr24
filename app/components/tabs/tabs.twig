@@ -10,7 +10,7 @@
     {% set mod = mod.generateMod('tabs', data.prefix, data.mod) %}
     {% set attr = attr.generateAttr('tabs', data.prefix) %}
 
-    <div class="tabs{{pr}} {{mod}}" {{attr}}>
+    <div class="tabs{{pr}} {{mod}} {% if data.class %}{{ data.class }}{% endif %}" {{attr}}>
         <div class="tabs{{pr}}__head js-tabs-head">
             {% for item in data.list %}
                 <div class="tabs{{pr}}__head-item">

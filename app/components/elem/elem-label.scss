@@ -4,4 +4,13 @@
     line-height: 15px;
     font-weight: 800;
     margin-bottom: 5px;
+    position: relative;
+
+    &[required] {
+        &:after {
+            content: '*';
+            color: $color-red;
+            margin-left: 3px;
+        }
+    }
 }

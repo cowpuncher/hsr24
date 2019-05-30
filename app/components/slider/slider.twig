@@ -11,8 +11,12 @@
     <div class="slider{{pr}} {{mod}}" {{attr}}>
 
         {% for item in data.list %}
-            <div class="slider{{pr}}__item">
+            <div class="slider{{pr}}__item dark">
                 <img src="{{ item.img }}" alt="{{ item.img_alt }}" class="slider{{pr}}__img">
+
+                {% if item.name %}
+                    <div class="slider{{pr}}__name">{{ item.name }}</div>
+                {% endif %}
 
                 {% if item.btn %}
                     <a href="#" class="elem-btn">{{ item.btn }}</a>

@@ -5,7 +5,7 @@ $('select').styler();
 
 // маска в инпутах
 $('[data-date]').mask("99/99/9999");
-$('[data-phone]').mask("(999) 999-9999");
+$('[data-phone]').mask("+7 (999) 999-99-99");
 $('[data-tin]').mask("99-9999999");
 $('[data-ssn]').mask("999-99-9999");
 
@@ -45,6 +45,12 @@ $('[data-validate]').validate({
 
 $('[data-close]').click(function(e) {
     $(this).parent().hide();
+
+    e.preventDefault();
+});
+
+$(document).on('click', '[data-like]', function(e) {
+    $(this).toggleClass('active');
 
     e.preventDefault();
 });

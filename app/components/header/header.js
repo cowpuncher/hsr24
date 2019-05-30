@@ -73,13 +73,12 @@ class Header {
         });
 
         $(document).on('click', function(e) {
-            if(!$('.header__search-in').is(e.target) && $('.header__search-in').has(e.target).length === 0
-                && !$('[data-search-btn]').is(e.target) && $('[data-search-btn]').has(e.target).length === 0
-                && !$('[data-header-user]').is(e.target) && $('[data-header-user]').has(e.target).length === 0
+            if(!$('[data-hamburger]').is(e.target) && $('[data-hamburger]').has(e.target).length === 0
+                && !$('[data-menu-mobile]').is(e.target) && $('[data-menu-mobile]').has(e.target).length === 0
             ) {
-                $('[data-search-parent]').slideUp(300);
                 $('.page').removeClass('overflow');
-                $('[data-header-user]').removeClass('open');
+                $('[data-menu-mobile]').removeClass('open');
+                $('[data-hamburger]').removeClass('open');
             }
         });
     }

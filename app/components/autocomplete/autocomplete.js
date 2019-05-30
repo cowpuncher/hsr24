@@ -9,12 +9,79 @@ class Autocomplete {
     initialize() {
         if (this.autocomplete.length) {
 
+            var countriesString = [
+                {
+                 id:"Перчатки «Гениальный садовод»",
+                 value:"Перчатки «Гениальный садовод»",
+                 label:"Перчатки «Гениальный садовод»",
+                 img:"assets/images/example/search/img1.jpg"
+                },
+                {
+                 id:"Садовый опрыскиватель",
+                 value:"Садовый опрыскиватель",
+                 label:"Садовый опрыскиватель",
+                 img:"assets/images/example/search/img2.jpg"
+                },
+                {
+                 id:"Садовые принадлежности",
+                 value:"Садовые принадлежности",
+                 label:"Садовые принадлежности",
+                 img:"assets/images/example/search/img3.jpg"
+                },
+                {
+                 id:"Садовая мебель",
+                 value:"Садовая мебель",
+                 label:"Садовая мебель",
+                 img:"assets/images/example/search/img4.jpg"
+                },
+                {
+                 id:"Садовые инструменты",
+                 value:"Садовые инструменты",
+                 label:"Садовые инструменты",
+                 img:"assets/images/example/search/img5.jpg"
+                }
+              ];
+
+            var termTemplate = "<span class='ui-autocomplete-term'>%s</span>";
+            var autocomplete = this.autocomplete;
+
+            autocomplete.autocomplete({
+                source: countriesString,
+                appendTo: '.ui-autocomplete__wrap',
+                minLength: 1,
+                html: true,
+                open: function( event, ui ) {
+                    $('.ui-autocomplete__wrap').show();
+
+                    if ($('.ui-autocomplete__wrap').find('h6').length == 0) {
+                        $('.ui-autocomplete__wrap').append('<h6><a href="#">Все результаты</a></h6>')
+                    }
+                },
+                close: function( event, ui ) {
+                    $('.ui-autocomplete__wrap').hide();
+                    $('.ui-autocomplete__wrap').find('h6').remove();
+                },
+            }).data("ui-autocomplete")._renderItem = function (ul, item) {
+                var newText = String(item.value).replace(
+                        new RegExp(this.term, "gi"),
+                        "<span class='ui-state-highlight'>$&</span>");
+
+                return $("<li></li>")
+                    .data("ui-autocomplete-item", item)
+                    .append(`<div class='ui-autocomplete__item'>
+                                <div class='ui-autocomplete__img'>
+                                    <img src='${item.img}'>
+                                </div>
+                                <div class='ui-autocomplete__text'>${newText}</div>
+                            </div>`)
+                    .appendTo(ul);
+            };
         }
 
         if (this.autocompleteCity.length) {
             var states = [
-                'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
-                'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia',
+                'Перчатки «Гениальный садовод»',
+                'Садовый опрыскиватель',
                 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa',
                 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland',
                 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',

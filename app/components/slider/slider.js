@@ -5,6 +5,7 @@ class Slider {
         this.sliderCarousel = $('[data-slider-carousel]');
         this.sliderTop = $('[data-slider-top]');
         this.sliderCards = $('[data-slider-cards]');
+        this.sliderCategory = $('[data-slider-category]');
         this.sliderPopup = $('[data-slider-popup]');
         this.initialize();
     }
@@ -17,6 +18,7 @@ class Slider {
         var nextCarousel = '<button type="button" class="slick-next slick-next--carousel"></button>';
 
         var sliderCards = this.sliderCards;
+        var sliderCategory = this.sliderCategory;
 
         this.slider.slick({
             dots: true,
@@ -63,8 +65,57 @@ class Slider {
             slidesToShow: 4,
             responsive: [
                 {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
                     breakpoint: 767,
                     settings: {
+                        slidesToShow: 2,
+                        dots: false,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: false,
+                        arrows: false
+                    }
+                }
+            ]
+        });
+
+        sliderCategory.slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            prevArrow: prevCarousel,
+            nextArrow: nextCarousel,
+            cssEase: 'ease-out',
+            slidesToShow: 6,
+            responsive: [
+                {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: false,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
                         dots: false,
                         arrows: false
                     }

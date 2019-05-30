@@ -2,7 +2,7 @@
     {% import '../card/card.twig' as card %}
     {% import '../../page/_macros/_svg.twig' as svg %}
 
-	<div class="recommend">
+	<div class="recommend {% if data.class %}{{ data.class }}{% endif %}">
         <h2 class="elem-title">{{ data.title }}</h2>
 
         <div class="card__list">

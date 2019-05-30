@@ -1,16 +1,29 @@
 .pay {
 	&__title {
         margin-bottom: 26px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 19px;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
+
+        @media (max-width: $lg) {
+            padding-left: 3px;
+        }
+
     }
 
     &__item {
         & + & {
             margin-left: 12px;
+
+            @media (max-width: $lg) {
+                margin-left: 26px;
+            }
         }
     }
 

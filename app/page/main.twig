@@ -21,9 +21,14 @@
         <div class="container__inner">
             {{ menu.menu(advantagesList) }}
 
-            {{ tabs.tabs(tabsList) }}
+            <div class="slider__wrap hidden-lg hidden-xl">
+                <h2 class="elem-title">Популярные категории</h2>
+                {{ slider.slider(sliderPopular) }}
+            </div>
 
             {{ banner.banner(bannerInner) }}
+
+            {{ tabs.tabs(tabsList) }}
 
             {{ recommend.recommend(recommendList) }}
 

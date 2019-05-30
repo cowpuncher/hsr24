@@ -1,0 +1,33 @@
+.sms {
+	&__title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    &__link {
+        font-weight: 300;
+        color: $color-red;
+        letter-spacing: 0;
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: -21px;
+    }
+
+    &__input {
+        width: calc(25% - 12px);
+
+        & + & {
+            margin-left: 16px;
+        }
+
+        & .elem-input {
+            font-size: 24px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}

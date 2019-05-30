@@ -15,6 +15,17 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
+    @media (max-width: $lg) {
+        font-size: 12px;
+        line-height: 15px;
+        height: 32px;
+        width: 136px;
+    }
+
+    &__wrap {
+        text-align: center;
+    }
+
     &:hover {
         color: $color-white;
         background: $color-base;
@@ -30,6 +41,10 @@
     &--sm {
         height: 32px;
         width: 108px;
+
+        @media (max-width: $lg) {
+            width: 127px;
+        }
     }
 
     &--xs {

@@ -9,6 +9,10 @@
         outline: none;
         transition: all 0.3s ease-in-out;
 
+        @media (max-width: $lg) {
+            margin-top: -25px;
+        }
+
         &:focus {
             outline: none;
         }
@@ -16,11 +20,19 @@
 
     &-prev {
         transform: rotate(180deg);
-        left: 32px
+        left: 32px;
+
+        @media (max-width: $lg) {
+            left: 18px;
+        }
     }
 
     &-next {
         right: 32px;
+
+        @media (max-width: $lg) {
+            right: 18px;
+        }
     }
 
     &-disabled {
@@ -37,9 +49,17 @@
         bottom: 45px;
         width: 100%;
 
+        @media (max-width: $lg) {
+            bottom: 36px;
+        }
+
         & li {
             & + li {
                 margin-left: 28px;
+
+                @media (max-width: $lg) {
+                    margin-left: 20px;
+                }
             }
         }
 
@@ -53,6 +73,11 @@
             line-height: 0;
             padding: 0;
             cursor: pointer;
+
+            @media (max-width: $lg) {
+                height: 8px;
+                width: 8px;
+            }
         }
 
         .slick-active button {
@@ -72,11 +97,64 @@
             bottom: 120px;
             left: 50%;
             transform: translate(-50%, 0);
+
+            @media (max-width: $lg) {
+                bottom: 75px;
+            }
         }
 
         & img {
             width: 100%;
             vertical-align: top;
+        }
+    }
+
+    &__wrap {
+        margin-bottom: 20px;
+    }
+
+    &-category {
+        padding: 0 29px;
+
+        & .slick-slide {
+            margin-right: 8px;
+            margin-left: 8px;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        & .slick-arrow {
+            margin-top: -17px;
+        }
+
+        & .slick-prev {
+            left: 0;
+        }
+
+        & .slick-next {
+            right: 0;
+        }
+
+        &__item {
+            position: relative;
+        }
+
+        &__name {
+            font-size: 13px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 16px;
+            text-align: center;
         }
     }
 }

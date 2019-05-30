@@ -1,7 +1,7 @@
 'use strict';
 
-// import '../../bower_components/jquery-ui/jquery-ui.min.js';
-// import '../../bower_components/jquery-ui/ui/i18n/datepicker-ru.js';
+import '../../bower_components/jquery-ui/jquery-ui.min.js';
+// import '../../bower_components/jquery-autocomplete/jquery.autocomplete.js';
 import '../../bower_components/slick-carousel/slick/slick.js';
 import '../../bower_components/magnific-popup/dist/jquery.magnific-popup.js';
 import '../../bower_components/jquery.form-styler/dist/jquery.formstyler.js';

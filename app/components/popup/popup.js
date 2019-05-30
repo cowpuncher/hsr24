@@ -61,9 +61,7 @@ class Popap {
         // Модальное окно
         this.popupModal.magnificPopup({
             type: 'inline',
-            preloader: false,
-            focus: '#username',
-            modal: true
+            closeOnContentClick: false
         });
 
         // Модальное окно с подгрузкой данных через ajax

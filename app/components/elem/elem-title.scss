@@ -2,4 +2,11 @@
     border-bottom: 1px solid $color-gray-light;
     padding: 17px 0 18px;
     margin-bottom: 32px;
+
+    @media (max-width: $lg) {
+        margin-left: 27px;
+        margin-right: 27px;
+        padding-bottom: 13px;
+        margin-bottom: 20px;
+    }
 }

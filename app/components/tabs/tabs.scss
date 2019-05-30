@@ -2,14 +2,26 @@
     display: block;
     margin-bottom: 27px;
 
+    @media (max-width: $lg) {
+        margin-bottom: -12px;
+    }
+
     &__head {
         display: flex;
         justify-content: center;
         margin-bottom: 32px;
 
+        @media (max-width: $lg) {
+            margin-bottom: 20px;
+        }
+
         &-item {
             & + & {
                 margin-left: 64px;
+
+                @media (max-width: $lg) {
+                    margin-left: 20px;
+                }
             }
         }
 
@@ -25,6 +37,13 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+
+            @media (max-width: $lg) {
+                font-size: 12px;
+                line-height: 15px;
+                height: 44px;
+                min-width: 128px;
+            }
 
             &:hover {
                 background: $color-base;

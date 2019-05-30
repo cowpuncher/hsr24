@@ -1,6 +1,10 @@
 .social {
 	&__title {
         margin-bottom: 19px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 13px;
+        }
     }
 
     &__list {
@@ -15,6 +19,6 @@
     }
 
     &__link {
-        display: block;
+        display: flex;
     }
 }

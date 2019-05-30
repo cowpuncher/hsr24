@@ -30,7 +30,7 @@
 
 	<div class="page">
                     <header id="header" class="header">
-  <div class="header__top dark">
+  <div class="header__top dark hidden-xs hidden-sm hidden-md">
     <div class="container">
         <div class="header__inner">
                             
@@ -39,37 +39,45 @@
 
         <ul class="menu-top__list">
 
-                            <li class="menu-top__item ">
+                                            <li class="menu-top__item " >
                     <a href="#" class="menu-top__link" >
                                                 <div class="menu-top__text">
                             Доставка и оплата
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-top__item ">
+                                            <li class="menu-top__item " >
                     <a href="#" class="menu-top__link" >
                                                 <div class="menu-top__text">
                             Гарантии и обязательства
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-top__item ">
+                                            <li class="menu-top__item " >
                     <a href="#" class="menu-top__link" >
                                                 <div class="menu-top__text">
                             Программа лояльности
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-top__item ">
+                                            <li class="menu-top__item " >
                     <a href="#" class="menu-top__link" >
                                                 <div class="menu-top__text">
                             Акции
 
                                                     </div>
                     </a>
+
+                    
                 </li>
             
         </ul>
@@ -77,8 +85,8 @@
 
 
             <div class="header__authorization">
-                <a href="#" class="header__link">Вход</a>
-                <a href="#" class="header__link">Регистрация   <svg aria-hidden="true" class="icon icon-user">
+                <a href="#login" class="header__link" data-popup-modal>Вход</a>
+                <a href="#reg" class="header__link" data-popup-modal>Регистрация   <svg aria-hidden="true" class="icon icon-user">
     <use xlink:href="assets/images/required/sprite.svg#user"></use>
   </svg>
  </a>
@@ -105,11 +113,12 @@
   </svg>
 
                     </div>
-                    <input type="text" class="elem-input elem-input--sm" placeholder="Поиск по сайту">
+                    <input type="text" class="elem-input elem-input--sm" placeholder="Поиск по сайту" data-autocomplete>
+                    <div class="ui-autocomplete__wrap"></div>
                 </div>
             </div>
 
-            <div class="header__contacts">
+            <div class="header__contacts hidden-xs hidden-sm hidden-md">
                 <div class="header__contacts-title">Обратный звонок</div>
                 <a href="tel:8800707502" class="header__contacts-phone">
                       <svg aria-hidden="true" class="icon icon-24h">
@@ -127,7 +136,7 @@
 
         <ul class="menu-icons__list">
 
-                            <li class="menu-icons__item ">
+                                            <li class="menu-icons__item " >
                     <a href="#" class="menu-icons__link" >
                                                     <div class="menu-icons__icon">
                                   <svg aria-hidden="true" class="icon icon-loyalty">
@@ -140,8 +149,10 @@
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-icons__item ">
+                                            <li class="menu-icons__item " >
                     <a href="#" class="menu-icons__link" >
                                                     <div class="menu-icons__icon">
                                   <svg aria-hidden="true" class="icon icon-favs">
@@ -155,8 +166,10 @@
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-icons__item ">
+                                            <li class="menu-icons__item " >
                     <a href="#" class="menu-icons__link" >
                                                     <div class="menu-icons__icon">
                                   <svg aria-hidden="true" class="icon icon-cart">
@@ -170,17 +183,31 @@
 
                                                     </div>
                     </a>
+
+                    
                 </li>
             
         </ul>
     </nav>
+
+                    <div class="hamburger hidden-lg hidden-xl" data-hamburger>
+        <div class="hamburger__menu">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+        </div>
+        <div class="hamburger__cross">
+            <span class="hamburger__cross-line"></span>
+            <span class="hamburger__cross-line"></span>
+        </div>
+    </div>
 
             </div>
         </div>
     </div>
   </div>
 
-  <div class="header__bootom">
+  <div class="header__bootom hidden-xs hidden-sm hidden-md">
     <div class="container">
         <div class="header__inner">
                             
@@ -189,7 +216,7 @@
 
         <ul class="menu-bottom__list">
 
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-adv-product">
@@ -202,8 +229,10 @@
 
                                                     </div>
                     </a>
+
+                                                                
                 </li>
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-home">
@@ -216,8 +245,10 @@
 
                                                     </div>
                     </a>
+
+                                                                
                 </li>
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-dacha">
@@ -230,8 +261,10 @@
 
                                                     </div>
                     </a>
+
+                                                                
                 </li>
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-beauty">
@@ -244,8 +277,10 @@
 
                                                     </div>
                     </a>
+
+                                                                
                 </li>
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-electronics">
@@ -258,8 +293,10 @@
 
                                                     </div>
                     </a>
+
+                                                                
                 </li>
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-talisma">
@@ -273,8 +310,10 @@
                                                             <div class="menu-bottom__detail dark">talisma</div>
                                                     </div>
                     </a>
+
+                                                                
                 </li>
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-prevoslav">
@@ -287,8 +326,10 @@
 
                                                     </div>
                     </a>
+
+                                                                
                 </li>
-                            <li class="menu-bottom__item ">
+                                            <li class="menu-bottom__item " >
                     <a href="#" class="menu-bottom__link" >
                                                     <div class="menu-bottom__icon">
                                   <svg aria-hidden="true" class="icon icon-hobby">
@@ -301,6 +342,8 @@
 
                                                     </div>
                     </a>
+
+                                                                
                 </li>
             
         </ul>
@@ -316,9 +359,253 @@
         </div>
     </div>
   </div>
+
+    <div class="mobile-menu hidden-xl hidden-lg" data-menu-mobile>
+    <h2 class="mobile-menu__title elem-title">Каталог товаров</h2>
+    <div class="mobile-menu__menu">
+                        
+            
+    <nav class="menu-bottom " data-menu-bottom >
+
+        <ul class="menu-bottom__list">
+
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-adv-product">
+    <use xlink:href="assets/images/required/sprite.svg#adv-product"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Товары <br>из&nbsp;рекламы
+
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-home">
+    <use xlink:href="assets/images/required/sprite.svg#home"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Товары <br>для&nbsp;дома
+
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-dacha">
+    <use xlink:href="assets/images/required/sprite.svg#dacha"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Дача и сад
+
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-beauty">
+    <use xlink:href="assets/images/required/sprite.svg#beauty"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Красота <br>и&nbsp;здоровье
+
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-electronics">
+    <use xlink:href="assets/images/required/sprite.svg#electronics"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Электроника
+
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-talisma">
+    <use xlink:href="assets/images/required/sprite.svg#talisma"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Ювелирный&nbsp;дом<br>
+
+                                                            <div class="menu-bottom__detail dark">talisma</div>
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-prevoslav">
+    <use xlink:href="assets/images/required/sprite.svg#prevoslav"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Православная <br>ярмарка
+
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+                                            <li class="menu-bottom__item " >
+                    <a href="#" class="menu-bottom__link" >
+                                                    <div class="menu-bottom__icon">
+                                  <svg aria-hidden="true" class="icon icon-hobby">
+    <use xlink:href="assets/images/required/sprite.svg#hobby"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-bottom__text">
+                            Досуг&nbsp;и&nbsp;хобби
+
+                                                    </div>
+                    </a>
+
+                                                                
+                </li>
+            
+        </ul>
+    </nav>
+
+    </div>
+
+    <div class="mobile-menu__bottom">
+        <div class="mobile-menu__menu2">
+                            
+            
+    <nav class="menu-mobile " data-menu-mobile >
+
+        <ul class="menu-mobile__list">
+
+                                            <li class="menu-mobile__item " >
+                    <a href="#" class="menu-mobile__link" >
+                                                <div class="menu-mobile__text">
+                            Избранное
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-mobile__item " >
+                    <a href="#" class="menu-mobile__link" >
+                                                <div class="menu-mobile__text">
+                            Акции
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-mobile__item " >
+                    <a href="#" class="menu-mobile__link" >
+                                                <div class="menu-mobile__text">
+                            Программа лояльности
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-mobile__item " >
+                    <a href="#" class="menu-mobile__link" >
+                                                <div class="menu-mobile__text">
+                            Доставка и оплата
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-mobile__item " >
+                    <a href="#" class="menu-mobile__link" >
+                                                <div class="menu-mobile__text">
+                            Гарантии и обязательства
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-mobile__item " >
+                    <a href="#" class="menu-mobile__link" >
+                                                <div class="menu-mobile__text">
+                            Возврат и обмен
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-mobile__item " >
+                    <a href="#" class="menu-mobile__link" >
+                                                <div class="menu-mobile__text">
+                            Контакты
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+            
+        </ul>
+    </nav>
+
+        </div>
+
+        <div class="header__contacts mobile-menu__contacts">
+            <a href="tel:8800707502" class="header__contacts-phone">
+                <div class="header__contacts-icon">
+                      <svg aria-hidden="true" class="icon icon-24h">
+    <use xlink:href="assets/images/required/sprite.svg#24h"></use>
+  </svg>
+
+                </div>
+                <div class="header__contacts-info">
+                    8 800 707-50-25
+                    <div class="header__contacts-desc">Звонок по России бесплатный</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 </header>
         
-
 	  <main>
 		
     <div class="container">
@@ -330,7 +617,7 @@
 	  </main>
 
 	  <footer id="footer" class="footer">
-    <div class="footer__top">
+    <div class="footer__top order-md-2">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__col">
@@ -348,69 +635,85 @@
 
         <ul class="menu-footer__list">
 
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             О компании
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             Доставка и оплата
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             Программа лояльности
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             Политика конфиденциальности
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             Акции
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             Возврат и обмен
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             Поставщикам
 
                                                     </div>
                     </a>
+
+                    
                 </li>
-                            <li class="menu-footer__item ">
+                                            <li class="menu-footer__item " >
                     <a href="#" class="menu-footer__link" >
                                                 <div class="menu-footer__text">
                             Контакты
 
                                                     </div>
                     </a>
+
+                    
                 </li>
             
         </ul>
@@ -426,24 +729,24 @@
                     <div class="footer__adress">
                         <p>ОГРН 1137746372290</p>
                         <p>109052 г. Москва, ул. Смирновская, д. 4, стр.2</p>
-                        <p>© 2013-2019 ООО «Home Shopping Russia» Все права защищены.</p>
+                        <p>© 2013-2019 ООО «Home Shopping <br class="hidden-lg hidden-xl">Russia» Все права защищены.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer__bottom dark">
+    <div class="footer__bottom dark order-md-1">
         <div class="container">
             <div class="footer__inner">
-                <a href="#" class="footer__link">
+                <a href="#" class="footer__link hidden-md">
                       <svg aria-hidden="true" class="icon icon-consultant">
     <use xlink:href="assets/images/required/sprite.svg#consultant"></use>
   </svg>
  Связаться с нами
                 </a>
 
-                <a href="#" class="footer__link">
+                <a href="#" class="footer__link hidden-md">
                       <svg aria-hidden="true" class="icon icon-ask">
     <use xlink:href="assets/images/required/sprite.svg#ask"></use>
   </svg>
@@ -451,6 +754,12 @@
                 </a>
 
                 <form class="footer__subscribe">
+                    <div class="footer__subscribe-icon hidden-lg hidden-xl">
+                          <svg aria-hidden="true" class="icon icon-mail_illustration">
+    <use xlink:href="assets/images/required/sprite.svg#mail_illustration"></use>
+  </svg>
+
+                    </div>
                     <div class="elem-item footer__subscribe-item">
                         <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
                         <input type="text" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">
@@ -461,6 +770,100 @@
         </div>
     </div>
 </footer>
+      <div id="login" class="popup popup--small mfp-hide">
+    <h2 class="popup__title">Авторизация</h2>
+
+    <form action="">
+        <div class="elem-item">
+            <label class="elem-label" required>Ваш номер телефона</label>
+            <input type="tel" class="elem-input" placeholder="+ 7 (___) ___-__-__" data-phone tabindex="0">
+        </div>
+        <div class="elem-btn__wrap popup__btn">
+            <button class="elem-btn">Получить код </button>
+        </div>
+
+        <div class="sms">
+    <div class="sms__title">
+        <label class="elem-label" required>
+            Введите код из SMS
+        </label>
+        <a href="#" class="sms__link">Отправить код повторно</a>
+    </div>
+    <div class="sms__row">
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="1">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="2">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="3">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="4">
+        </div>
+    </div>
+</div>
+
+        <div class="popup__links">
+            <a href="#reg" class="popup__link" data-popup-modal>У вас нет учетной записи? <br>Зарегистрироваться.</a>
+        </div>
+    </form>
+</div>
+
+<div id="reg" class="popup popup--small mfp-hide">
+    <h2 class="popup__title">Регистрация</h2>
+
+    <form action="">
+        <div class="elem-item">
+            <label class="elem-label" required>Ваше имя</label>
+            <input type="text" class="elem-input" placeholder="Имя" tabindex="0">
+        </div>
+        <div class="elem-item">
+            <label class="elem-label" required>Ваш e-mail</label>
+            <input type="email" class="elem-input" placeholder="Введите эл. почту" tabindex="1">
+        </div>
+
+        <div class="elem-item elem-item--radio">
+            <label class="elem-radio">
+                <input type="radio" class="elem-radio__input">
+                <div class="elem-radio__span">Я хочу получать новостную рассылку</div>
+            </label>
+        </div>
+
+        <div class="elem-item">
+            <label class="elem-label" required>Ваш номер телефона</label>
+            <input type="tel" class="elem-input" placeholder="+ 7 (___) ___-__-__" data-phone tabindex="0">
+        </div>
+        <div class="elem-btn__wrap popup__btn">
+            <button class="elem-btn">Получить код </button>
+        </div>
+
+        <div class="sms">
+    <div class="sms__title">
+        <label class="elem-label" required>
+            Введите код из SMS
+        </label>
+        <a href="#" class="sms__link">Отправить код повторно</a>
+    </div>
+    <div class="sms__row">
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="1">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="2">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="3">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" placeholder="0" tabindex="4">
+        </div>
+    </div>
+</div>
+    </form>
+</div>
+
 	</div> <!-- page-wrapper end -->
 
 	<!-- JavaScript files placed at the end of the document so the pages load faster

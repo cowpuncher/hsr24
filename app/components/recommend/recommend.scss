@@ -1,6 +1,10 @@
 .recommend {
     margin-bottom: 40px;
 
+    @media (max-width: $lg) {
+        margin-bottom: 30px;
+    }
+
     &:last-child {
         margin-bottom: 0;
     }

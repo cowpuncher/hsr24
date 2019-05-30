@@ -1,12 +1,12 @@
 <header id="header" class="header">
-  <div class="header__top dark">
+  <div class="header__top dark hidden-xs hidden-sm hidden-md">
     <div class="container">
         <div class="header__inner">
             {{ menu.menu(menuTop) }}
 
             <div class="header__authorization">
-                <a href="#" class="header__link">Вход</a>
-                <a href="#" class="header__link">Регистрация {{ svg.icon('user') }} </a>
+                <a href="#login" class="header__link" data-popup-modal>Вход</a>
+                <a href="#reg" class="header__link" data-popup-modal>Регистрация {{ svg.icon('user') }} </a>
             </div>
         </div>
     </div>
@@ -24,11 +24,12 @@
                     <div class="elem-input__icon">
                         {{ svg.icon('search') }}
                     </div>
-                    <input type="text" class="elem-input elem-input--sm" placeholder="Поиск по сайту">
+                    <input type="text" class="elem-input elem-input--sm" placeholder="Поиск по сайту" data-autocomplete>
+                    <div class="ui-autocomplete__wrap"></div>
                 </div>
             </div>
 
-            <div class="header__contacts">
+            <div class="header__contacts hidden-xs hidden-sm hidden-md">
                 <div class="header__contacts-title">Обратный звонок</div>
                 <a href="tel:8800707502" class="header__contacts-phone">
                     {{ svg.icon('24h') }} 8 800 707-50-25
@@ -38,12 +39,13 @@
 
             <div class="header__menu">
                 {{ menu.menu(menuIcons) }}
+                {{ hamburger.hamburger() }}
             </div>
         </div>
     </div>
   </div>
 
-  <div class="header__bootom">
+  <div class="header__bootom hidden-xs hidden-sm hidden-md">
     <div class="container">
         <div class="header__inner">
             {{ menu.menu(menuBottom) }}
@@ -54,4 +56,6 @@
         </div>
     </div>
   </div>
+
+    {% include '../mobile-menu/mobile-menu.twig' %}
 </header>

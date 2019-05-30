@@ -2,6 +2,8 @@
 
 import './config/base.js';
 
+// import './libs/jquery.ui.autocomplete.js';
+
 import './accordion/accordion';
 import './autocomplete/autocomplete';
 import './card/card';

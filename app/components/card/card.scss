@@ -1,12 +1,17 @@
 .card {
     position: relative;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     border: 1px solid $color-smoke;
     background: $color-white;
     border-radius: 5px;
     margin: 0 13px 26px;
     width: calc(25% - 26px);
+
+    @media (max-width: $lg) {
+        width: calc(100% / 3 - 26px);
+        margin-bottom: 18px;
+    }
 
     &__wrap {
         padding: 0 0 40px;
@@ -17,6 +22,12 @@
         padding: 0 23px;
         display: flex;
         flex-wrap: wrap;
+
+        @media (max-width: $lg) {
+            padding-left: 34px;
+            padding-right: 34px;
+            margin-bottom: -18px;
+        }
     }
 
     &__slider & {
@@ -27,6 +38,14 @@
 
     &__slider &__list {
         margin-bottom: 0;
+
+        @media (max-width: $lg) {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: $lg) {
+            margin-bottom: 0;
+        }
     }
 
     &__slider {
@@ -47,17 +66,26 @@
         & .slick-prev {
             left: -36px;
             margin-top: -24px;
+
+            @media (max-width: $lg) {
+                left: 0;
+            }
         }
 
         & .slick-next {
             right: -36px;
             margin-top: -24px;
+
+            @media (max-width: $lg) {
+                right: 0;
+            }
         }
     }
 
     &__img {
         position: relative;
         width: 100%;
+        border-bottom: 1px solid $color-smoke;
 
         & img {
             width: 100%;
@@ -82,17 +110,36 @@
         font-family: $fons-lato;
         padding: 3px 9px;
         min-width: 92px;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            left: 7px;
+            top: 7px;
+            min-width: 86px;
+            padding: 2px 7px;
+        }
     }
 
     &__info {
         padding: 20px 16px 11px;
         width: 100%;
+
+        @media (max-width: $lg) {
+            padding: 9px 13px 4px;
+        }
     }
 
     &__name {
         font-size: 18px;
         line-height: 22px;
         text-align: center;
+        display: block;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+        }
     }
 
     &__bottom {
@@ -103,12 +150,66 @@
         align-items: flex-end;
         justify-content: space-between;
 
+        @media (max-width: $lg) {
+            display: block;
+            padding-left: 13px;
+            padding-right: 13px;
+            padding-bottom: 13px;
+        }
+
         & .elem-btn {
             margin-bottom: 6px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 0;
+            }
         }
     }
 
     &__price {
+        @media (max-width: $lg) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 7px;
+        }
+    }
 
+    &__like {
+        position: absolute;
+        border: 1px solid $color-base;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1px;
+        cursor: pointer;
+        right: 8px;
+        top: 8px;
+
+        @media (max-width: $lg) {
+            right: 12px;
+            bottom: 14px;
+            top: auto;
+        }
+
+        & .icon {
+            max-width: 80%;
+            max-height: 80%;
+            fill: $color-base;
+        }
+
+
+
+        &.active {
+            border-color: $color-red;
+
+            & .icon {
+                fill: $color-red;
+            }
+        }
     }
 }

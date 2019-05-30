@@ -7,6 +7,11 @@
     &-logo {
         width: 104px;
         height: 58px;
+
+        @media (max-width: $xl) {
+            height: 48px;
+            width: 86px;
+        }
     }
 
     &-search,
@@ -32,9 +37,38 @@
     &-show-more,
     &-vk,
     &-ok,
-    &-youtube {
+    &-youtube,
+    &-user2,
+    &-kidsб
+    &-cloth-shoes {
         height: 32px;
         width: 32px;
+
+        @media (max-width: $lg) {
+            height: 44px;
+            width: 44px;
+        }
+    }
+
+    &-show-more,
+    &-vk,
+    &-ok,
+    &-youtube,
+    &-kids,
+    &-adv-product,
+    &-home,
+    &-dacha,
+    &-beauty,
+    &-electronics,
+    &-talisma,
+    &-prevoslav,
+    &-hobby,
+    &-kids,
+    &-cloth-shoes {
+        @media (max-width: $lg) {
+            height: 32px;
+            width: 32px;
+        }
     }
 
     &-delivery-free,
@@ -63,5 +97,18 @@
     &-halva {
         height: 16px;
         width: 55px;
+
+        @media (max-width: $lg) {
+            width: 65px;
+        }
+    }
+
+    &-favs {
+        fill: $color-base;
+    }
+
+    &-mail_illustration {
+        height: 95px;
+        width: 100px;
     }
 }

@@ -1,5 +1,5 @@
 <footer id="footer" class="footer">
-    <div class="footer__top">
+    <div class="footer__top order-md-2">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__col">
@@ -19,25 +19,28 @@
                     <div class="footer__adress">
                         <p>ОГРН 1137746372290</p>
                         <p>109052 г. Москва, ул. Смирновская, д. 4, стр.2</p>
-                        <p>© 2013-2019 ООО «Home Shopping Russia» Все права защищены.</p>
+                        <p>© 2013-2019 ООО «Home Shopping <br class="hidden-lg hidden-xl">Russia» Все права защищены.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer__bottom dark">
+    <div class="footer__bottom dark order-md-1">
         <div class="container">
             <div class="footer__inner">
-                <a href="#" class="footer__link">
+                <a href="#" class="footer__link hidden-md">
                     {{ svg.icon('consultant') }} Связаться с нами
                 </a>
 
-                <a href="#" class="footer__link">
+                <a href="#" class="footer__link hidden-md">
                     {{ svg.icon('ask') }} Онлайн консультант
                 </a>
 
                 <form class="footer__subscribe">
+                    <div class="footer__subscribe-icon hidden-lg hidden-xl">
+                        {{ svg.icon('mail_illustration') }}
+                    </div>
                     <div class="elem-item footer__subscribe-item">
                         <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
                         <input type="text" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">

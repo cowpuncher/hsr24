@@ -1,0 +1,34 @@
+.elem-radio {
+    position: relative;
+    display: flex;
+    font-weight: 300;
+
+    &__span {
+        position: relative;
+        padding-left: 36px;
+
+        &:before {
+            content: '';
+            box-shadow: 0 0 0 1px $color-red;
+            height: 24px;
+            width: 24px;
+            background: $color-white;
+            border: 4px solid $color-white;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &__input {
+        @extend %input-hide;
+    }
+
+    &__input:checked + &__span {
+        &:before {
+            background: $color-red;
+        }
+    }
+}

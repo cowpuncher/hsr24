@@ -1,19 +1,42 @@
 .banner {
     display: flex;
     position: relative;
+    justify-content: space-between;
 
     &--full {
         margin-bottom: 27px;
+        align-items: flex-start;
+
+        @media (max-width: $lg) {
+            min-height: 140px;
+            margin-bottom: 0;
+        }
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            min-height: 140px;
+        }
     }
 
     &__col {
         width: calc(63.75% - 20px);
         position: relative;
 
+        @media (max-width: $lg) {
+            width: calc(62.50% - 10px);
+        }
+
         & + & {
             width: 36.25%;
             flex-shrink: 0;
             margin-left: 20px;
+
+            @media (max-width: $lg) {
+                margin-left: 10px;
+                width: 37.5%;
+            }
         }
     }
 
@@ -21,8 +44,16 @@
         position: relative;
         height: calc(50% - 10px);
 
+        @media (max-width: $lg) {
+            height: calc(50% - 5px);
+        }
+
         & + & {
             margin-top: 20px;
+
+            @media (max-width: $lg) {
+                margin-top: 10px;
+            }
         }
 
         & img {
@@ -30,6 +61,9 @@
             width: 100%;
             vertical-align: top;
             object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     }
 
@@ -43,8 +77,16 @@
         display: flex;
         flex-direction: column;
 
+        @media (max-width: $lg) {
+            padding: 19px 20px;
+        }
+
         &--big {
             padding: 43px 42px 38px;
+
+            @media (max-width: $lg) {
+                padding: 28px 27px;
+            }
         }
 
         & .elem-btn {
@@ -64,15 +106,28 @@
         margin-bottom: 24px;
         justify-content: space-between;
 
+        @media (max-width: $lg) {
+            margin-bottom: 29px;
+        }
+
         &__col {
             width: calc(56% - 12px);
             position: relative;
             overflow: hidden;
 
+            @media (max-width: $lg) {
+                width: calc(55.5% - 8px);
+            }
+
             & + & {
                 margin-left: 24px;
                 width: calc(44.2% - 12px);
                 flex-shrink: 0;
+
+                @media (max-width: $lg) {
+                    margin-left: 16px;
+                    width: calc(44.5% - 8px);
+                }
             }
 
             &--auto {
@@ -91,11 +146,19 @@
 
             & + & {
                 margin-top: 24px;
+
+                @media (max-width: $lg) {
+                    margin-top: 15px;
+                }
             }
         }
 
         &__item &__col {
             width: calc(50% - 12px);
+
+            @media (max-width: $lg) {
+                width: calc(50% - 8px);
+            }
         }
 
         & img {
@@ -115,8 +178,16 @@
             display: flex;
             flex-direction: column;
 
+            @media (max-width: $lg) {
+                padding: 28px 27px 18px;
+            }
+
             &--small {
                 padding: 30px 28px 38px;
+
+                @media (max-width: $lg) {
+                    padding: 15px 15px 27px;
+                }
             }
 
             & .elem-btn {
