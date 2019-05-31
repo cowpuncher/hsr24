@@ -34,7 +34,8 @@
                 "href": "#",
                 "text": "Избранное ",
                 "icon": "favs",
-                "count": "5"
+                "count": "5",
+                "class": "hidden-xs"
             },
             {
                 "href": "#",
@@ -43,10 +44,11 @@
                 "count": "10"
             },
             {
-                "href": "#",
+                "href": "#login",
                 "text": "Вход",
                 "icon": "user2",
-                "class": "hidden-xl hidden-lg"
+                "class": "hidden-xl hidden-lg",
+                "attr": "data-popup-modal"
             }
         ]
     },
@@ -55,7 +57,7 @@
         "list": [
             {
                 "href": "#",
-                "text": "Товары <br class='hidden-md'>из&nbsp;рекламы",
+                "text": "Товары <br class='hidden-md hidden-sm hidden-xs'>из&nbsp;рекламы",
                 "icon": "adv-product",
                 "submenu": [
                     {
@@ -93,6 +95,20 @@
                         ]
                     },
                     {
+                        "title": "Посуда",
+                        "list": [
+                            {
+                                "text": "Приготовление пищи",
+                                "href": "#"
+                            },
+                            {
+                                "text": "Сервировка стола",
+                                "href": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -125,7 +141,7 @@
             },
             {
                 "href": "#",
-                "text": "Товары <br class='hidden-md'>для&nbsp;дома",
+                "text": "Товары <br class='hidden-md hidden-sm hidden-xs'>для&nbsp;дома",
                 "icon": "home",
                 "submenu": [
                     {
@@ -176,6 +192,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -259,6 +276,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -291,7 +309,7 @@
             },
             {
                 "href": "#",
-                "text": "Красота <br class='hidden-md'>и&nbsp;здоровье",
+                "text": "Красота <br class='hidden-md hidden-sm hidden-xs'>и&nbsp;здоровье",
                 "icon": "beauty",
                 "submenu": [
                     {
@@ -342,6 +360,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -425,6 +444,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -509,6 +529,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -541,7 +562,7 @@
             },
             {
                 "href": "#",
-                "text": "Ювелирный&nbsp;дом<br class='hidden-md'>",
+                "text": "Ювелирный&nbsp;дом<br class='hidden-md hidden-sm hidden-xs'>",
                 "icon": "talisma",
                 "detail": "talisma",
                 "submenu": [
@@ -593,6 +614,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -625,7 +647,7 @@
             },
             {
                 "href": "#",
-                "text": "Православная <br class='hidden-md'>ярмарка",
+                "text": "Православная <br class='hidden-md hidden-sm hidden-xs'>ярмарка",
                 "icon": "prevoslav",
                 "submenu": [
                     {
@@ -676,6 +698,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -759,6 +782,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -843,6 +867,7 @@
                         ]
                     },
                     {
+                        "category": true,
                         "list": [
                             {
                                 "text": "Кухонные принадлежности",
@@ -913,18 +938,22 @@
             "list": [
                 {
                     "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 },
                 {
                     "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 },
                 {
                     "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 },
                 {
                     "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 }
             ]
@@ -960,34 +989,42 @@
         "list": [
             {
                 "img": "assets/images/example/popular/img1.jpg",
+                "img2": "assets/images/example/popular/img1.jpg",
                 "name": "Садовый инвентарь"
             },
             {
                 "img": "assets/images/example/popular/img2.jpg",
+                "img2": "assets/images/example/popular/img2.jpg",
                 "name": "Охота и рыбалка"
             },
             {
                 "img": "assets/images/example/popular/img3.jpg",
+                "img2": "assets/images/example/popular/img3.jpg",
                 "name": "Текстиль для дома"
             },
             {
                 "img": "assets/images/example/popular/img4.jpg",
+                "img2": "assets/images/example/popular/img4.jpg",
                 "name": "Товары для здоровья"
             },
             {
                 "img": "assets/images/example/popular/img1.jpg",
+                "img2": "assets/images/example/popular/img1.jpg",
                 "name": "Садовый инвентарь"
             },
             {
                 "img": "assets/images/example/popular/img2.jpg",
+                "img2": "assets/images/example/popular/img2.jpg",
                 "name": "Охота и рыбалка"
             },
             {
                 "img": "assets/images/example/popular/img3.jpg",
+                "img2": "assets/images/example/popular/img3.jpg",
                 "name": "Текстиль для дома"
             },
             {
                 "img": "assets/images/example/popular/img4.jpg",
+                "img2": "assets/images/example/popular/img4.jpg",
                 "name": "Товары для здоровья"
             }
         ]
@@ -1247,21 +1284,25 @@
         "list": [
             {
                 "img": "assets/images/example/banner/banner1.jpg",
+                "img2": "assets/images/example/banner/banner1-xs.jpg",
                 "title": "Товары для дома",
                 "btn": "Подробнее"
             },
             {
                 "img": "assets/images/example/banner/banner2.jpg",
+                "img2": "assets/images/example/banner/banner2.jpg",
                 "title": "Товары для красоты и здоровья",
                 "btn": "Подробнее"
             },
             {
                 "img": "assets/images/example/banner/banner2.jpg",
+                "img2": "assets/images/example/banner/banner2.jpg",
                 "title": "Летняя одежда для дачи",
                 "btn": "Подробнее"
             },
             {
                 "img": "assets/images/example/banner/banner3.jpg",
+                "img2": "assets/images/example/banner/banner3-xs.jpg",
                 "title": "Коллекция ювелирного дома TALISMA",
                 "btn": "Подробнее"
             }
@@ -1331,7 +1372,7 @@
     },
     "viewList": {
         "title": "Вы смотрели",
-        "class": "hidden-md",
+        "class": "hidden-md hidden-sm hidden-xs",
         "list": [
             {
                 "img": "assets/images/example/card/img8.jpg",
@@ -1403,13 +1444,13 @@
             },
             {
                 "href": "#",
-                "text": "Поставщикам",
-                "class": "order-lg-7 order-md-6"
+                "text": "Политика конфиденциальности",
+                "class": "order-lg-6 md order-md-8 text-md-right"
             },
             {
                 "href": "#",
-                "text": "Политика конфиденциальности",
-                "class": "order-lg-6 md order-md-8 text-md-right"
+                "text": "Поставщикам",
+                "class": "order-lg-7 order-md-6"
             }
         ]
     },

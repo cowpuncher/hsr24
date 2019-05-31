@@ -5,6 +5,10 @@
         overflow-y: auto;
         z-index: 9;
 
+        @media (max-width: $md) {
+            max-height: 268px;
+        }
+
         &__wrap {
             display: none;
             position: absolute;
@@ -20,6 +24,10 @@
             @media (max-width: $lg) {
                 padding-top: 52px;
                 padding-bottom: 20px;
+            }
+
+            @media (max-width: $md) {
+                padding-top: 47px;
             }
 
             & .ui-menu-item:last-child {
@@ -38,6 +46,8 @@
                 @media (max-width: $lg) {
                     margin-top: 8px;
                     padding-top: 20px;
+                    margin-left: 0;
+                    margin-right: 0;
                 }
             }
         }
@@ -81,6 +91,12 @@
             width: 52px;
             margin-right: 16px;
 
+            @media (max-width: $md) {
+                height: 40px;
+                width: 40px;
+                margin-right: 15px;
+            }
+
             & img {
                 width: 100%;
                 height: 100%;
@@ -100,6 +116,12 @@
             @media (max-width: $lg) {
                 font-size: 13px;
                 line-height: 19px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0.1px;
             }
         }
     }
@@ -126,6 +148,13 @@
             margin-right: 0px;
             text-align: left;
 
+            @media (max-width: $md) {
+                padding: 0 15px;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0.1px;
+            }
+
             & a {
                 color: $color-base;
                 cursor: pointer;
@@ -140,6 +169,10 @@
                 color: $color-blue;
                 padding: 0px 20px;
                 margin: 0px;
+
+                @media (max-width: $md) {
+                    padding: 0 15px;
+                }
 
                 & a {
                     color: $color-blue;

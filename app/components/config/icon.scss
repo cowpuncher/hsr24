@@ -12,6 +12,11 @@
             height: 48px;
             width: 86px;
         }
+
+        @media (max-width: $md) {
+            height: 44px;
+            width: 72px;
+        }
     }
 
     &-search,
@@ -25,22 +30,8 @@
     &-loyalty,
     &-favs,
     &-cart,
-    &-adv-product,
-    &-home,
-    &-dacha,
-    &-beauty,
-    &-electronics,
-    &-talisma,
-    &-prevoslav,
-    &-hobby,
     &-all,
-    &-show-more,
-    &-vk,
-    &-ok,
-    &-youtube,
-    &-user2,
-    &-kidsб
-    &-cloth-shoes {
+    &-user2 {
         height: 32px;
         width: 32px;
 
@@ -50,11 +41,17 @@
         }
     }
 
+    &-24h {
+        @media (max-width: $md) {
+            height: 32px;
+            width: 32px;
+        }
+    }
+
     &-show-more,
     &-vk,
     &-ok,
     &-youtube,
-    &-kids,
     &-adv-product,
     &-home,
     &-dacha,
@@ -64,7 +61,11 @@
     &-prevoslav,
     &-hobby,
     &-kids,
-    &-cloth-shoes {
+    &-cloth-shoes,
+    &-back {
+        height: 32px;
+        width: 32px;
+
         @media (max-width: $lg) {
             height: 32px;
             width: 32px;
@@ -77,6 +78,11 @@
     &-delivery-loyality {
         height: 76px;
         width: 76px;
+
+        @media (max-width: $md) {
+            height: 56px;
+            width: 56px;
+        }
     }
 
     &-mastercard {
@@ -110,5 +116,10 @@
     &-mail_illustration {
         height: 95px;
         width: 100px;
+
+        @media (max-width: $md) {
+            height: 84px;
+            width: 90px;
+        }
     }
 }

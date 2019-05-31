@@ -8,6 +8,10 @@
         margin-top: 28px;
     }
 
+    @media (max-width: $md) {
+        flex-direction: column-reverse;
+    }
+
     &__bottom {
         background: $color-base;
 
@@ -15,6 +19,10 @@
             background: $color-smoke;
             color: $color-base;
             padding-top: 28px;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 19px;
         }
     }
 
@@ -43,13 +51,29 @@
         font-weight: 300;
         height: 48px;
 
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+            height: 24px;
+            padding: 0 5px;
+        }
+
         & + & {
             margin-left: 101px;
+
+            @media (max-width: $md) {
+                margin-left: 10px;
+            }
         }
 
         & .icon {
             margin-right: 8px;
             flex-shrink: 0;
+
+            @media (max-width: $md) {
+                margin-right: 4px;
+            }
         }
     }
 
@@ -62,6 +86,11 @@
             display: flex;
         }
 
+        @media (max-width: $md) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         &-item {
             display: flex;
             align-items: center;
@@ -71,11 +100,21 @@
                 flex-wrap: wrap;
                 align-items: flex-start;
             }
+
+            @media (max-width: $md) {
+                width: calc(100% - 106px);
+            }
         }
 
         &-icon {
             flex-shrink: 0;
             margin-right: 28px;
+
+            @media (max-width: $md) {
+                margin-right: 16px;
+                margin-bottom: 16px;
+                margin-left: 4px;
+            }
         }
     }
 
@@ -95,6 +134,19 @@
             width: 100%;
             margin-bottom: 21px;
         }
+
+        @media (max-width: $md) {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.2px;
+            text-align: right;
+            margin-right: 0;
+            margin-bottom: 16px;
+            height: 84px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
 
     &__input {
@@ -102,6 +154,12 @@
 
         @media (max-width: $lg) {
             width: calc(100% - 224px);
+        }
+
+        @media (max-width: $md) {
+            width: calc(100% + 110px);
+            margin-left: -110px;
+            border: 0;
         }
     }
 
@@ -116,6 +174,14 @@
             height: 44px;
             width: 208px;
         }
+
+        @media (max-width: $md) {
+            width: calc(100% + 110px);
+            margin-left: -110px;
+            border: 0;
+            margin-top: 12px;
+            letter-spacing: 0;
+        }
     }
 
     &__top {
@@ -124,6 +190,10 @@
         @media (max-width: $lg) {
             padding-top: 28px;
             padding-bottom: 22px;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 26px;
         }
     }
 
@@ -143,6 +213,10 @@
                 width: auto;
                 padding-top: 30px;
             }
+
+            @media (max-width: $lg) {
+                padding-top: 22px;
+            }
         }
 
         &--pay {
@@ -160,6 +234,22 @@
                 width: calc(100% - 130px);
                 padding-left: 45px;
                 justify-content: space-between;
+            }
+
+            @media (max-width: $lg) {
+                padding-top: 22px;
+                padding-left: 23px;
+            }
+        }
+    }
+
+    &__row {
+        &-mobile {
+            @media (max-width: $md) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
             }
         }
     }
@@ -180,11 +270,25 @@
             max-width: 50%;
         }
 
+        @media (max-width: $md) {
+            max-width: 100%;
+            width: 100%;
+            margin-top: 19px;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: left;
+            margin-bottom: -16px;
+        }
+
         & p {
             margin: 0 0 1px;
 
             @media (max-width: $lg) {
                 margin-bottom: 8px;
+            }
+
+            @media (max-width: $md) {
+                margin-bottom: 16px;
             }
         }
     }
@@ -198,5 +302,20 @@
             padding-top: 0;
             margin-top: -5px;
         }
+
+        @media (max-width: $md) {
+            padding-left: 0;
+            width: 100%;
+            padding-top: 22px;
+        }
+    }
+
+    &__consult  {
+        background: $color-base;
+        padding: 12px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }

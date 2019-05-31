@@ -13,6 +13,20 @@
         line-height: 12px;
     }
 
+    @media (max-width: $md) {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 800;
+        background: $color-smoke;
+        border-radius: 22px;
+        height: 44px;
+        width: 100%;
+        color: $color-gray;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+    }
+
     &__row {
         display: flex;
         align-items: center;
@@ -25,6 +39,10 @@
 
         @media (max-width: $lg) {
             margin-bottom: 7px;
+        }
+
+        @media (max-width: $md) {
+            display: none;
         }
     }
 

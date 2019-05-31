@@ -8,6 +8,12 @@
     z-index: 1001;
     right: -8px;
     margin-left: 21px;
+    flex-shrink: 0;
+
+    @media (max-width: $md) {
+        margin-left: 8px;
+        right: 0;
+    }
 
     &:hover {
         background:rgba($color-white, 0.4);

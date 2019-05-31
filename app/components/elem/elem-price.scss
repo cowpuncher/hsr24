@@ -8,6 +8,11 @@
         line-height: 29px;
     }
 
+    @media (max-width: $md) {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
     &-old {
         font-size: 16px;
         line-height: 19px;
@@ -21,6 +26,13 @@
             margin-left: 6px;
             position: relative;
             top: -2px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0px;
+            margin-left: 4px;
         }
     }
 }

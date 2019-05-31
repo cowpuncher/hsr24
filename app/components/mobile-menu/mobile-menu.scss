@@ -12,6 +12,12 @@
     padding: 4px 17px;
     overflow-y: auto;
 
+    @media (max-width: $md) {
+        max-width: 265px;
+        top: 106px;
+        padding: 0 15px;
+    }
+
     &.open {
         left: 0;
     }
@@ -19,10 +25,22 @@
     &__title {
         margin-left: 1px;
         margin-right: 1px;
+
+        @media (max-width: $md) {
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0;
+            padding-top: 8px;
+            margin-bottom: 12px;
+        }
     }
 
     &__menu {
         margin-bottom: 20px;
+
+        @media (max-width: $md) {
+            margin-bottom: 12px;
+        }
     }
 
     &__bottom {
@@ -39,5 +57,17 @@
         margin-left: 0;
         align-items: center;
         margin-top: 13px;
+
+        @media (max-width: $md) {
+            padding-bottom: 1px;
+            margin-top: 8px;
+        }
+
+        & .header__contacts-phone {
+            @media (max-width: $md) {
+                justify-content: flex-start;
+                width: 100%;
+            }
+        }
     }
 }

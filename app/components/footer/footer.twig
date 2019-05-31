@@ -2,10 +2,21 @@
     <div class="footer__top order-md-2">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__col">
+                <div class="footer__col footer__row-mobile">
                     <a href="main.html" class="elem-logo footer__logo">
                         {{ svg.icon('logo') }}
                     </a>
+
+                    <div class="header__contacts hidden-md hidden-lg hidden-xl">
+                        <div class="header__contacts-title">
+                            <span class="header__contacts-title-desc">Звоните 24/7</span>
+                            Обратный звонок
+                        </div>
+                        <a href="tel:8800707502" class="header__contacts-phone">
+                            8 800 707-50-25
+                        </a>
+                        <div class="header__contacts-desc">Звонок по России бесплатный</div>
+                    </div>
                 </div>
                 <div class="footer__menu">
                     {{ menu.menu(menuFooter) }}
@@ -16,11 +27,16 @@
                 <div class="footer__col footer__col--pay">
                     {{ pay.pay(payList) }}
 
-                    <div class="footer__adress">
+                    <div class="footer__adress hidden-xs hidden-sm">
                         <p>ОГРН 1137746372290</p>
                         <p>109052 г. Москва, ул. Смирновская, д. 4, стр.2</p>
                         <p>© 2013-2019 ООО «Home Shopping <br class="hidden-lg hidden-xl">Russia» Все права защищены.</p>
                     </div>
+                </div>
+                <div class="footer__adress hidden-md hidden-lg hidden-xl">
+                    <p>ОГРН 1137746372290</p>
+                    <p>109052 г. Москва, ул. Смирновская, д. 4, стр.2</p>
+                    <p>© 2013-2019 ООО «Home Shopping Russia» Все права защищены.</p>
                 </div>
             </div>
         </div>
@@ -29,11 +45,11 @@
     <div class="footer__bottom dark order-md-1">
         <div class="container">
             <div class="footer__inner">
-                <a href="#" class="footer__link hidden-md">
+                <a href="#" class="footer__link hidden-md hidden-sm hidden-xs">
                     {{ svg.icon('consultant') }} Связаться с нами
                 </a>
 
-                <a href="#" class="footer__link hidden-md">
+                <a href="#" class="footer__link hidden-md hidden-sm hidden-xs">
                     {{ svg.icon('ask') }} Онлайн консультант
                 </a>
 
@@ -47,6 +63,20 @@
                         <button class="elem-btn elem-btn--xs footer__btn">Подписаться</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__consult dark hidden-md hidden-lg hidden-xl">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__link">
+                    {{ svg.icon('consultant') }} Звонок консультанту
+                </a>
+
+                <a href="#" class="footer__link">
+                    {{ svg.icon('ask') }} Задайте нам вопрос
+                </a>
             </div>
         </div>
     </div>

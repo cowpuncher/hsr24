@@ -6,6 +6,10 @@
         margin-bottom: -12px;
     }
 
+    @media (max-width: $md) {
+        margin-bottom: -7px;
+    }
+
     &__head {
         display: flex;
         justify-content: center;
@@ -15,12 +19,20 @@
             margin-bottom: 20px;
         }
 
+        @media (max-width: $md) {
+            margin-bottom: 16px;
+        }
+
         &-item {
             & + & {
                 margin-left: 64px;
 
                 @media (max-width: $lg) {
                     margin-left: 20px;
+                }
+
+                @media (max-width: $md) {
+                    margin-left: 6px;
                 }
             }
         }
@@ -43,6 +55,14 @@
                 line-height: 15px;
                 height: 44px;
                 min-width: 128px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 10px;
+                line-height: 16px;
+                height: 32px;
+                min-width: 63px;
+                padding: 3px 6px;
             }
 
             &:hover {

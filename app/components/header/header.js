@@ -75,6 +75,7 @@ class Header {
         $(document).on('click', function(e) {
             if(!$('[data-hamburger]').is(e.target) && $('[data-hamburger]').has(e.target).length === 0
                 && !$('[data-menu-mobile]').is(e.target) && $('[data-menu-mobile]').has(e.target).length === 0
+                && !$('[data-autocomplete]').is(e.target) && $('[data-autocomplete]').has(e.target).length === 0
             ) {
                 $('.page').removeClass('overflow');
                 $('[data-menu-mobile]').removeClass('open');

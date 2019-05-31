@@ -56,10 +56,15 @@ class Autocomplete {
                     if ($('.ui-autocomplete__wrap').find('h6').length == 0) {
                         $('.ui-autocomplete__wrap').append('<h6><a href="#">Все результаты</a></h6>')
                     }
+
+                    $('.page').addClass('overflow');
+                    $('body').addClass('scroll');
                 },
                 close: function( event, ui ) {
                     $('.ui-autocomplete__wrap').hide();
                     $('.ui-autocomplete__wrap').find('h6').remove();
+                    $('.page').removeClass('overflow');
+                    $('body').removeClass('scroll');
                 },
             }).data("ui-autocomplete")._renderItem = function (ul, item) {
                 var newText = String(item.value).replace(

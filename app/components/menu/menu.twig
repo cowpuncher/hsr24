@@ -17,7 +17,7 @@
                     <div class="menu{{pr}}__line {{ item.line }}"></div>
                 {% endif %}
                 <li class="menu{{pr}}__item {% if item.class %}{{ item.class }}{% endif %}" {% if item.submenu %}data-menu-bottom-drop{% endif %}>
-                    <a href="{{ item.href }}" class="menu{{pr}}__link" {% if item.scrollto %}data-scroll-to-single{% endif %}>
+                    <a href="{{ item.href }}" class="menu{{pr}}__link" {% if item.scrollto %}data-scroll-to-single{% endif %} {% if item.attr %}{{ item.attr }}{% endif %}>
                         {% if item.icon %}
                             <div class="menu{{pr}}__icon">
                                 {{ svg.icon(item.icon) }}
@@ -37,17 +37,50 @@
 
                     {% if data.prefix == 'bottom' %}
                         {% if item.submenu %}
-                            <div class="menu{{pr}}__drop" data-menu-bottom-drop>
+                            <div class="menu{{pr}}__drop" data-menu-bottom-drop-menu>
+
                                 <div class="menu{{pr}}__drop-arrow" data-menu-bottom-drop-arrow></div>
+                                <div class="menu{{pr}}__drop-back" data-menu-bottom-drop-back>{{ svg.icon('back') }} Назад</div>
+
+                                <a href="{{ item.href }}" class="menu{{pr}}__link menu{{pr}}__drop-category">
+                                    {% if item.icon %}
+                                        <div class="menu{{pr}}__icon">
+                                            {{ svg.icon(item.icon) }}
+                                            {% if item.count %}
+                                                <div class="menu{{pr}}__count dark">{{ item.count }}</div>
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                    <div class="menu{{pr}}__text">
+                                        {{ item.text }}
+
+                                        {% if item.detail %}
+                                            <div class="menu{{pr}}__detail dark">{{ item.detail }}</div>
+                                        {% endif %}
+                                    </div>
+                                </a>
+
                                 {% for item2 in item.submenu %}
                                     <div class="menu{{pr}}__col">
+
                                         {% if item2.title %}
-                                            <h5 class="menu{{pr}}__drop-title">{{ item2.title }}</h5>
+                                            <h5 class="menu{{pr}}__drop-title" {% if item2.list %}data-menu-bottom-drop{% endif %}><a href="#">{{ item2.title }}</a></h5>
                                         {% endif %}
-                                        <ul class="menu{{pr}}__drop-list">
+
+                                        <ul class="menu{{pr}}__drop-list {% if item2.category %}category{% endif %}" {% if item2.list %}data-menu-bottom-drop-menu{% endif %}>
+
+                                            {% if item2.list %}
+                                                <div class="menu{{pr}}__drop-back" data-menu-bottom-drop-back>{{ svg.icon('back') }} Назад</div>
+
+                                                {% if item2.title %}
+                                                    <h5 class="menu{{pr}}__drop-title" {% if item2.list %}data-menu-bottom-drop{% endif %}><a href="#">{{ item2.title }}</a></h5>
+                                                {% endif %}
+
+                                            {% endif %}
+
                                             {% for item3 in item2.list %}
-                                                <li class="menu{{pr}}__drop-item {% if item3.class %}{{ item3.class }}{% endif %}">
-                                                    <a href="{{ item3.href }}" class="menu{{pr}}__drop-link">
+                                                <li class="menu{{pr}}__drop-item {% if item3.class %}{{ item3.class }}{% endif %}" {% if item3.list %}data-menu-bottom-drop{% endif %}>
+                                                    <a href="{{ item3.href }}" class="menu{{pr}}__drop-link" >
                                                         <div class="menu{{pr}}__drop-text">{{ item3.text }}</div>
                                                     </a>
                                                 </li>

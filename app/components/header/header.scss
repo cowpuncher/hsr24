@@ -4,6 +4,10 @@
     z-index: 100;
     background: $color-white;
 
+    @media (max-width: $md) {
+        margin-bottom: 6px;
+    }
+
     &__top {
         background:$color-base;
     }
@@ -11,6 +15,10 @@
     &__inner {
         display: flex;
         align-items: center;
+
+        @media (max-width: $md) {
+            flex-wrap: wrap;
+        }
     }
 
     &__authorization {
@@ -54,6 +62,10 @@
         @media (max-width: $lg) {
             padding: 16px 0 0;
         }
+
+        @media (max-width: $md) {
+            padding-top: 11px;
+        }
     }
 
     &__search {
@@ -65,6 +77,12 @@
             margin-left: 29px;
             margin-right: 29px;
             width: 46%;
+        }
+
+        @media (max-width: $md) {
+            order: 1;
+            width: 100%;
+            margin: 3px 0 0;
         }
 
         & .elem-item {
@@ -81,10 +99,36 @@
         padding-bottom: 7px;
         letter-spacing: 0;
 
+        @media (max-width: $md) {
+            padding-bottom: 4px;
+        }
+
         &-title {
             color: $color-red;
             font-size: 11px;
             line-height: 15px;
+
+            @media (max-width: $md) {
+                font-size: 10px;
+                line-height: 16px;
+                font-weight: 800;
+                color: $color-base;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            &-desc {
+                @media (max-width: $md) {
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 0.1px;
+                    color: $color-gray;
+                    font-weight: 300;
+                }
+            }
         }
 
         &-icon {
@@ -92,6 +136,11 @@
             flex-shrink: 0;
             position: relative;
             top: 3px;
+
+            @media (max-width: $md) {
+                margin-right: 3px;
+                top: 0;
+            }
         }
 
         &-phone {
@@ -105,6 +154,13 @@
                 font-size: 31px;
                 line-height: 36px;
                 margin-top: 0;
+            }
+
+            @media (max-width: $md) {
+                font-size: 22.6px;
+                line-height: 26px;
+                font-weight: 300;
+                margin-bottom: 2px;
             }
 
             & .icon {
@@ -124,6 +180,14 @@
                 line-height: 16px;
                 color: $color-gray;
             }
+
+            @media (max-width: $md) {
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0.1px;
+                font-weight: 300;
+                color: $color-base;
+            }
         }
     }
 
@@ -134,6 +198,12 @@
 
         @media (max-width: $lg) {
             margin-left: auto;
+        }
+
+        @media (max-width: $md) {
+            margin-left: 22px;
+            width: calc(100% - 98px);
+            padding-top: 2px;
         }
     }
 }

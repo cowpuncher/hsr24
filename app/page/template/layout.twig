@@ -30,11 +30,8 @@
   <body class="{% block bodyClass %}{% endblock %}">
 
 	<div class="page">
-        {% if userInit %}
-            {% include '../../components/header/header-lk.twig' %}
-        {% else %}
-            {% include '../../components/header/header.twig' %}
-        {% endif %}
+
+        {% include '../../components/header/header.twig' %}
 
 	  <main>
 		{% block content %}{% endblock %}

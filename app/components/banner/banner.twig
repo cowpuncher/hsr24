@@ -6,7 +6,7 @@
             <div class="banner__col">
                 {{ slider.slider(data.slider) }}
             </div>
-            <div class="banner__col">
+            <div class="banner__col hidden-xs hidden-sm">
                 <div class="banner__item">
                     <img src="assets/images/example/banner/banner-small.jpg" alt="">
                     <div class="banner__inner">
@@ -27,9 +27,9 @@
 
     {% if data.list %}
         <div class="banner-inner">
-            <div class="banner-inner__col">
+            <div class="banner-inner__col ordex-xs-1 order-sm-1 order-md-0">
                 <div class="banner-inner__item">
-                    <img src="{{ data.list[0].img }}" alt="">
+                    <img src="{{ data.list[0].img }}" srcset="{{ data.list[0].img2 }} 320w" alt="">
                     <div class="banner-inner__inner">
                         <h3 class="banner-inner__title">{{ data.list[0].title }}</h3>
                         <a href="#" class="elem-btn">{{ data.list[0].btn }}</a>
@@ -37,14 +37,14 @@
                 </div>
                 <div class="banner-inner__item">
                     <div class="banner-inner__col">
-                        <img src="{{ data.list[1].img }}" alt="">
+                        <img src="{{ data.list[1].img }}" srcset="{{ data.list[1].img2 }} 320w" alt="">
                         <div class="banner-inner__inner banner-inner__inner--small">
                             <h3 class="banner-inner__title">{{ data.list[1].title }}</h3>
                             <a href="#" class="elem-btn">{{ data.list[1].btn }}</a>
                         </div>
                     </div>
                     <div class="banner-inner__col">
-                        <img src="{{ data.list[2].img }}" alt="">
+                        <img src="{{ data.list[2].img }}" srcset="{{ data.list[2].img2 }} 320w" alt="">
                         <div class="banner-inner__inner banner-inner__inner--small">
                             <h3 class="banner-inner__title">{{ data.list[2].title }}</h3>
                             <a href="#" class="elem-btn">{{ data.list[2].btn }}</a>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="banner-inner__col banner-inner__col--auto">
-                <img src="{{ data.list[3].img }}" alt="">
+                <img src="{{ data.list[3].img }}" srcset="{{ data.list[3].img2 }} 320w" alt="">
                 <div class="banner-inner__inner">
                     <h3 class="banner-inner__title">{{ data.list[3].title }}</h3>
                     <a href="#" class="elem-btn">{{ data.list[3].btn }}</a>

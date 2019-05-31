@@ -22,6 +22,13 @@
         width: 136px;
     }
 
+    @media (max-width: $md) {
+        font-size: 10px;
+        line-height: 16px;
+        height: 26px;
+        width: 110px;
+    }
+
     &__wrap {
         text-align: center;
     }
@@ -41,9 +48,30 @@
     &--sm {
         height: 32px;
         width: 108px;
+        border-radius: 16px;
 
         @media (max-width: $lg) {
             width: 127px;
+        }
+
+        @media (max-width: $md) {
+            height: 26px;
+            width: 86px;
+            border-radius: 13px;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+        }
+
+        .mobile-list & {
+            @media (max-width: $md) {
+                height: 32px;
+                width: 122px;
+                font-size: 12px;
+                line-height: 17px;
+                letter-spacing: -0.2px;
+                border-radius: 16px;
+            }
         }
     }
 

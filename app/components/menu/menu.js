@@ -8,6 +8,8 @@ class Menu {
 
   initialize() {
 
+    var ww = $(window).width();
+
     // Если существует меню со ссылками якорями
     if (this.scrollto.length) {
         this.scrollto.each(function() {
@@ -40,37 +42,59 @@ class Menu {
         e.preventDefault;
     }
 
+    $(window).resize(function() {
+        ww = $(window).width();
+    });
+
     if ( $('[data-menu-bottom-drop]').length) {
 
         $('[data-menu-bottom-drop]').each(function() {
             var el = $(this);
-            var ww = $(window).width();
 
             if (ww > 1279) {
                 el.hover(function() {
-                    var drop = el.find('[data-menu-bottom-drop]');
-                    var dropWidth = drop.width();
+                    if (!el.hasClass('.menu-bottom__drop')) {
+                        var drop = el.children('[data-menu-bottom-drop-menu]');
+                        var dropWidth = drop.width();
 
-                    var ww = $(window).width();
-                    var bd = (ww - $('.container').width()) / 2;
+                        var ww = $(window).width();
+                        var bd = (ww - $('.container').width()) / 2;
 
-                    var elLeft = el.offset().left + bd;
-                    var maxWidth = ww - elLeft - bd - 12;
-                    var ml = 0;
-                    var arrow = 34;
+                        var elLeft = el.offset().left + 34;
+                        var maxWidth = ww - elLeft - bd - 12;
+                        var ml = 0;
+                        var arrow = 34;
 
-                    if (dropWidth > maxWidth) {
-                        ml = maxWidth - dropWidth;
-                        arrow = ml * (-1) + arrow;
+                        if (dropWidth > maxWidth) {
+                            ml = maxWidth - dropWidth;
+                            arrow = ml * (-1) + arrow;
 
-                        drop.css({'margin-left': ml + 'px'});
-                        drop.find('[data-menu-bottom-drop-arrow]').css({'left': arrow + 'px'});
+                            drop.css({'margin-left': ml + 'px'});
+                            drop.find('[data-menu-bottom-drop-arrow]').css({'left': arrow + 'px'});
+                        }
                     }
                 });
             } else {
-                var drop = el.find('[data-menu-bottom-drop]');
-                drop.removeAttr(style);
-                drop.find('[data-menu-bottom-drop-arrow]').removeAttr(style);
+                var drop = el.find('[data-menu-bottom-drop-menu]');
+                drop.removeAttr('style');
+                drop.find('[data-menu-bottom-drop-arrow]').removeAttr('style');
+
+                el.find('a').click(function(e) {
+
+                    if ($(this).parent('.menu-bottom__drop-title').length) {
+                        $(this).parent().next().addClass('open');
+                    } else {
+                        $(this).next().addClass('open');
+                    }
+
+                    e.preventDefault();
+                });
+
+                $('[data-menu-bottom-drop-back]').click(function(e) {
+                    $(this).parent().removeClass('open');
+
+                    e.preventDefault();
+                });
             }
         });
     }

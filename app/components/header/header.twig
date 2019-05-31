@@ -5,8 +5,13 @@
             {{ menu.menu(menuTop) }}
 
             <div class="header__authorization">
-                <a href="#login" class="header__link" data-popup-modal>Вход</a>
-                <a href="#reg" class="header__link" data-popup-modal>Регистрация {{ svg.icon('user') }} </a>
+                {% if userInit %}
+                    <a href="#" class="header__link">Личный кабинет</a>
+                    <a href="#" class="header__link">Выход</a>
+                {% else %}
+                    <a href="#login" class="header__link" data-popup-modal>Вход</a>
+                    <a href="#reg" class="header__link" data-popup-modal>Регистрация {{ svg.icon('user') }} </a>
+                {% endif %}
             </div>
         </div>
     </div>

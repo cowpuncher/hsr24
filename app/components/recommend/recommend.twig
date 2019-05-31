@@ -5,7 +5,7 @@
 	<div class="recommend {% if data.class %}{{ data.class }}{% endif %}">
         <h2 class="elem-title">{{ data.title }}</h2>
 
-        <div class="card__list">
+        <div class="card__list mobile-list">
             {% for item in data.list %}
                 {{ card.card(item) }}
             {% endfor %}

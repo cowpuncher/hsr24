@@ -5,6 +5,10 @@
         margin-bottom: 30px;
     }
 
+    @media (max-width: $md) {
+        margin-bottom: 24px;
+    }
+
     &:last-child {
         margin-bottom: 0;
     }
