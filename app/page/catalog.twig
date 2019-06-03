@@ -1,0 +1,23 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/catalog-list/catalog-list.twig' as catalog %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-catalog{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+            <h1 class="elem-title">Каталог товаров</h1>
+            {{ catalog.cataloglist(catalogList) }}
+        </div>
+
+	</div>
+
+{% endblock %}

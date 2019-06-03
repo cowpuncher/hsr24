@@ -4,6 +4,10 @@
         {
             "title": "Главная",
             "href": "main.html"
+        },
+        {
+            "title": "Каталог",
+            "href": "catalog.html"
         }
     ],
     "menuTop": {

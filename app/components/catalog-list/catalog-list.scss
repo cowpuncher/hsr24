@@ -1,0 +1,129 @@
+.catalog-list {
+    padding-top: 6px;
+
+    &__row {
+        display: flex;
+        margin: 0 -20px;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        width: 25%;
+        padding: 0 20px;
+
+        @media (max-width: $lg) {
+            width: calc(100% / 3);
+        }
+
+        @media (max-width: $md) {
+            width: 50%;
+        }
+
+        @media (max-width: $sm) {
+            width: 100%;
+            margin-bottom: 27px;
+        }
+
+        & + & {
+            width: 75%;
+
+            @media (max-width: $lg) {
+                width: calc(100% - 100% / 3);
+            }
+
+            @media (max-width: $md) {
+                width: 50%;
+            }
+
+            @media (max-width: $sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        background: $color-red;
+        border-radius: 22px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 800;
+        height: 44px;
+        margin-bottom: 29px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.blue {
+            background: $color-blue;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &__icon {
+        background: $color-white;
+        border: 1px solid $color-red;
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        margin: -6px 0;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .icon {
+            stroke: $color-red;
+            fill: $color-red;
+        }
+
+        .blue & {
+            border-color: $color-blue;
+
+            & .icon {
+                stroke: $color-blue;
+                fill: $color-blue;
+            }
+        }
+    }
+
+    &__item {
+        margin-bottom: 4px;
+
+        &--col3 {
+            width: calc(100% / 3);
+            padding: 0 20px;
+            margin-bottom: 27px;
+
+            @media (max-width: $lg) {
+                width: 50%;
+            }
+
+            @media (max-width: $md) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__list {
+        padding-left: 28px;
+        margin-top: 21px;
+
+        &-inner {
+            margin-top: 15px;
+            padding-left: 28px;
+            margin-bottom: -2px;
+        }
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -0.2px;
+    }
+}

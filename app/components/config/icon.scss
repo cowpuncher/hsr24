@@ -21,7 +21,8 @@
 
     &-search,
     &-consultant,
-    &-ask {
+    &-ask,
+    &-home2 {
         height: 24px;
         width: 24px;
     }
@@ -53,6 +54,7 @@
     &-ok,
     &-youtube,
     &-adv-product,
+    &-adv-product2,
     &-home,
     &-dacha,
     &-beauty,
@@ -70,6 +72,14 @@
             height: 32px;
             width: 32px;
         }
+    }
+
+    &-electronics,
+    &-prevoslav,
+    &-kids,
+    &-hobby {
+        fill: $color-base;
+        stroke: $color-base;
     }
 
     &-delivery-free,

@@ -1,12 +1,24 @@
 {% macro breadcrumbs(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
 	<div class="breadcrumbs">
         {% for item in data.list %}
             {# Если последний элемент #}
             <div class="breadcrumbs__item">
                 {% if loop.last %}
-                    <span class="breadcrumbs__text">{{ item.text }}</span>
+                    {% if item.text %}
+                        <span class="breadcrumbs__text">{{ item.text }}</span>
+                    {% endif %}
                 {% else %}
-                    <a href="{{ item.href }}" class="breadcrumbs__link">{{ item.text }}</a>
+                    <a href="{{ item.href }}" class="breadcrumbs__link">
+                        {% if item.text %}
+                            {{ item.text }}
+                        {% endif %}
+
+                        {% if item.icon %}
+                            {{ svg.icon(item.icon) }}
+                        {% endif %}
+                    </a>
                 {% endif %}
             </div>
         {% endfor %}
