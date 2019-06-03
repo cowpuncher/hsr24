@@ -6,6 +6,16 @@
     &__span {
         position: relative;
         padding-left: 36px;
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $lg) {
+            font-size: 12px;
+            line-height: 17px;
+            letter-spacing: -0.2px;
+            padding-left: 33px;
+        }
 
         &:before {
             content: '';

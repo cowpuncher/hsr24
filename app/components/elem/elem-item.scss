@@ -2,6 +2,10 @@
     position: relative;
     margin-bottom: 20px;
 
+    @media (max-width: $lg) {
+        margin-bottom: 16px;
+    }
+
     &--radio {
         //margin-top: -8px;
     }

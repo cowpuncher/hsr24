@@ -824,7 +824,7 @@
         <label class="elem-label" required>
             Введите код из SMS
         </label>
-        <a href="#" class="sms__link">Отправить код повторно</a>
+        <a href="#" class="sms__link hidden-xs hidden-sm hidden-md">Отправить код повторно</a>
     </div>
     <div class="sms__row">
         <div class="sms__input elem-item">
@@ -840,10 +840,19 @@
             <input type="text" class="elem-input" placeholder="0" tabindex="4">
         </div>
     </div>
+    <div class="sms__desc">
+        Не получили код? <a href="#" class="sms__link"> Отправить повторно.</a>
+    </div>
 </div>
 
-        <div class="popup__links">
+        <div class="popup__links hidden-xs hidden-sm hidden-md">
             <a href="#reg" class="popup__link" data-popup-modal>У вас нет учетной записи? <br>Зарегистрироваться.</a>
+        </div>
+
+        <h2 class="popup__title popup__title--xs  hidden-lg hidden-xl">Нет учетной записи?</h2>
+        <p class=" hidden-lg hidden-xl">Зарегистрируйтесь и получите все преимущества зарегистрированого клиента!</p>
+        <div class="elem-btn__wrap hidden-lg hidden-xl">
+            <a href="#reg" class="elem-btn" data-popup-modal>Зарегистрироваться</a>
         </div>
     </form>
 </div>
@@ -881,7 +890,7 @@
         <label class="elem-label" required>
             Введите код из SMS
         </label>
-        <a href="#" class="sms__link">Отправить код повторно</a>
+        <a href="#" class="sms__link hidden-xs hidden-sm hidden-md">Отправить код повторно</a>
     </div>
     <div class="sms__row">
         <div class="sms__input elem-item">
@@ -896,6 +905,9 @@
         <div class="sms__input elem-item">
             <input type="text" class="elem-input" placeholder="0" tabindex="4">
         </div>
+    </div>
+    <div class="sms__desc">
+        Не получили код? <a href="#" class="sms__link"> Отправить повторно.</a>
     </div>
 </div>
     </form>

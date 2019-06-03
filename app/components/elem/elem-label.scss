@@ -6,6 +6,11 @@
     margin-bottom: 5px;
     position: relative;
 
+    @media (max-width: $sm) {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
     &[required] {
         &:after {
             content: '*';

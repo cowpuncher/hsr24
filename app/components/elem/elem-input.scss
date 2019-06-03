@@ -9,6 +9,22 @@
     transition: all 0.3s ease-in-out;
     width: 100%;
 
+    @media (max-width: $lg) {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0px;
+        height: 44px;
+        border-radius: 8px;
+    }
+
+    @media (max-width: $sm) {
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.2px;
+        height: 44px;
+        border-radius: 8px;
+    }
+
     &--xs {
         font-size: 11px;
         line-height: 14px;
