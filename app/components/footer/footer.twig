@@ -1,6 +1,16 @@
 <footer id="footer" class="footer">
-    <div class="footer__top order-md-2">
+    <div class="footer__top order-md-2 order-lg-0">
         <div class="container">
+            <form class="footer__subscribe">
+                <div class="footer__subscribe-icon">
+                    {{ svg.icon('mail_illustration') }}
+                </div>
+                <div class="elem-item footer__subscribe-item">
+                    <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
+                    <input type="email" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">
+                    <button class="elem-btn footer__btn">Подписаться</button>
+                </div>
+            </form>
             <div class="footer__inner">
                 <div class="footer__col footer__row-mobile">
                     <a href="main.html" class="elem-logo footer__logo">
@@ -42,7 +52,7 @@
         </div>
     </div>
 
-    <div class="footer__bottom dark order-md-1">
+    {# <div class="footer__bottom dark order-md-1 order-lg-0">
         <div class="container">
             <div class="footer__inner">
                 <a href="#" class="footer__link hidden-md hidden-sm hidden-xs">
@@ -65,9 +75,9 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> #}
 
-    <div class="footer__consult dark hidden-md hidden-lg hidden-xl">
+    {# <div class="footer__consult dark hidden-md hidden-lg hidden-xl">
         <div class="container">
             <div class="footer__inner">
                 <a href="#" class="footer__link">
@@ -79,5 +89,5 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> #}
 </footer>

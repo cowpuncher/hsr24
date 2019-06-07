@@ -168,6 +168,15 @@
                 line-height: 17px;
                 letter-spacing: -0.2px;
             }
+
+            &:hover {
+                color: $color-red;
+
+                & .icon {
+                    fill: $color-red;
+                    stroke: $color-red;
+                }
+            }
         }
 
         &__item[data-menu-bottom-drop] &__link {

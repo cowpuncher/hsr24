@@ -1,6 +1,11 @@
 @import "libs/bootstrap";
+@import "libs/jquery.ui.slider";
+@import "libs/multi-select";
+
 @import "../../bower_components/slick-carousel/slick/slick.scss";
 @import "../../bower_components/magnific-popup/src/css/main.scss";
+@import "../../bower_components/bootstrap-select/sass/variables.scss";
+@import "../../bower_components/bootstrap-select/sass/bootstrap-select.scss";
 // @import "../../bower_components/jquery-autocomplete/autocomplete.scss";
 
 @import "config/variables";
@@ -10,8 +15,12 @@
 @import "config/typography";
 @import "config/icon";
 
-// @import "elem/elem-close";
+@import "elem/elem-back";
 @import "elem/elem-btn";
+@import "elem/elem-cancel";
+@import "elem/elem-close";
+@import "elem/elem-color";
+@import "elem/elem-filter";
 @import "elem/elem-item";
 @import "elem/elem-input";
 @import "elem/elem-label";
@@ -38,6 +47,7 @@
 @import "pay/pay";
 @import "pagination/pagination";
 @import "popup/popup";
+@import "price/price";
 @import "recommend/recommend";
 @import "select/select";
 @import "slider/slider";

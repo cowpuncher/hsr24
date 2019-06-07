@@ -1,0 +1,14 @@
+{% macro price(data) %}
+	<div class="price {% if data.class %}{{ data.class }}{% endif %}">
+        <div class="price__name">Фильтр по цене</div>
+        <div id="slider-price" class="price__slider" data-slider-price data-start="{{ data.priceStart }}" data-end="{{ data.priceEnd }}" data-min="{{ data.priceMin }}" data-max="{{ data.priceMax }}"></div>
+        <div class="price__input">
+            <label class="price__label" data-before="от">
+                <input id="lower-value" type="text" class="elem-input elem-input--gray elem-input--md elem-input--price" data-lower-value>
+            </label>
+            <label class="price__label" data-before="до">
+                <input id="upper-value" type="text" class="elem-input elem-input--gray elem-input--md elem-input--price" data-upper-value>
+            </label>
+        </div>
+    </div>
+{% endmacro %}

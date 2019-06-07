@@ -28,9 +28,13 @@
 
     &__inner {
         display: flex;
+        border-top: 1px solid $color-gray-light;
+        padding-top: 23px;
 
         @media (max-width: $lg) {
             flex-wrap: wrap;
+            border-top: 0;
+            padding-top: 11px;
         }
     }
 
@@ -78,12 +82,13 @@
     }
 
     &__subscribe {
-        margin-left: auto;
-        width: 54.3%;
+        width: 100%;
+        display: flex;
+        max-width: 710px;
+        margin: 0 auto 17px;
 
         @media (max-width: $lg) {
-            width: 100%;
-            display: flex;
+            max-width: 100%;
         }
 
         @media (max-width: $md) {
@@ -93,45 +98,50 @@
 
         &-item {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
             margin-bottom: 0;
+            width: calc(100% - 98px);
+            padding-top: 8px;
 
             @media (max-width: $lg) {
-                flex-wrap: wrap;
-                align-items: flex-start;
+                padding-top: 3px;
             }
 
             @media (max-width: $md) {
-                width: calc(100% - 106px);
+                padding-top: 0;
             }
         }
 
         &-icon {
             flex-shrink: 0;
-            margin-right: 28px;
+            margin-right: 16px;
+
+            @media (max-width: $lg) {
+                margin-right: 27px;
+            }
 
             @media (max-width: $md) {
-                margin-right: 16px;
                 margin-bottom: 16px;
                 margin-left: 4px;
+                margin-right: 20px;
             }
         }
     }
 
     &__label {
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 300;
-        margin-bottom: 0;
-        margin-right: 12px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 800;
+        margin-bottom: 7px;
+        margin-right: 0;
         flex-shrink: 0;
         margin-right: 12px;
+        width: 100%;
 
         @media (max-width: $lg) {
             font-size: 18px;
             line-height: 22px;
-            font-weight: 800;
-            width: 100%;
             margin-bottom: 21px;
         }
 
@@ -146,19 +156,25 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            padding-right: 5px;
         }
     }
 
     &__input {
-        width: 100%;
+        width: calc(100% - 212px);
+        height: 40px;
+        border-radius: 12px;
 
         @media (max-width: $lg) {
             width: calc(100% - 224px);
+            height: 44px;
+            border-radius: 10px;
+            border: 0;
         }
 
         @media (max-width: $md) {
-            width: calc(100% + 110px);
-            margin-left: -110px;
+            width: calc(100% + 114px);
+            margin-left: -114px;
             border: 0;
         }
     }
@@ -166,6 +182,9 @@
     &__btn {
         flex-shrink: 0;
         margin-left: 12px;
+        height: 40px;
+        width: 200px;
+        min-width: 200px;
 
         @media (max-width: $lg) {
             margin-left: 16px;
@@ -176,8 +195,8 @@
         }
 
         @media (max-width: $md) {
-            width: calc(100% + 110px);
-            margin-left: -110px;
+            width: calc(100% + 114px);
+            margin-left: -114px;
             border: 0;
             margin-top: 12px;
             letter-spacing: 0;
@@ -185,7 +204,7 @@
     }
 
     &__top {
-        padding: 33px 0 32px;
+        padding: 25px 0 32px;
 
         @media (max-width: $lg) {
             padding-top: 28px;
@@ -193,7 +212,7 @@
         }
 
         @media (max-width: $md) {
-            padding-top: 26px;
+            padding-top: 23px;
         }
     }
 

@@ -1,0 +1,69 @@
+.price {
+    display: flex;
+    align-items: center;
+
+    * + & {
+        margin-left: 20px;
+
+        @media (max-width: $lg) {
+            margin-left: 39px;
+        }
+    }
+
+    &__name {
+        flex-shrink: 0;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 300;
+        letter-spacing: -0.2px;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+        }
+    }
+
+    &__input {
+        display: flex;
+        margin-left: 12px;
+        flex-shrink: 0;
+
+        @media (max-width: $lg) {
+            margin-left: 16px;
+        }
+    }
+
+    &__label {
+        display: flex;
+        margin-bottom: 0;
+
+        & + & {
+            margin-left: 12px;
+
+            @media (max-width: $lg) {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__slider {
+        background: $color-gray-light;
+        height: 5px;
+        min-width: 137px;
+        border-radius: 3px;
+        margin-left: 12px;
+
+        & .ui-slider-range {
+            background: $color-base;
+        }
+
+        & .ui-slider-handle {
+            border: 1px solid $color-base;
+            background: $color-white;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+        }
+    }
+}

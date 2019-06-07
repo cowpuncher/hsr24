@@ -13,6 +13,8 @@ import './hamburger/hamburger';
 import './header/header';
 import './map/map';
 import './menu/menu';
+import './price/price';
 import './popup/popup';
+import './select/select';
 import './slider/slider';
 import './tabs/tabs';

@@ -1,7 +1,11 @@
 'use strict';
 
 // стилизация элементов форм
-$('select').styler();
+$('select').selectpicker({
+    noneSelectedText: "Выберите параметры",
+    dropupAuto: true,
+    showTick: true
+});
 
 // маска в инпутах
 $('[data-date]').mask("99/99/9999");

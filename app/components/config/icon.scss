@@ -1,4 +1,6 @@
 .icon {
+    transition: all 0.3s ease-in-out;
+
     &-user {
         width: 16px;
         height: 20px;
@@ -8,7 +10,7 @@
         width: 104px;
         height: 58px;
 
-        @media (max-width: $xl) {
+        @media (max-width: $lg) {
             height: 48px;
             width: 86px;
         }
@@ -22,9 +24,42 @@
     &-search,
     &-consultant,
     &-ask,
-    &-home2 {
+    &-home2,
+    &-filter,
+    &-clear-filter,
+    &-close {
         height: 24px;
         width: 24px;
+    }
+
+    &-filter {
+        stroke: $color-base;
+
+        @media (max-width: $lg) {
+            height: 18px;
+            width: 18px;
+        }
+
+        @media (max-width: $md) {
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &-table,
+    &-list {
+        height: 20px;
+        width: 20px;
+        fill: $color-gray-light;
+
+        @media (max-width: $lg) {
+            height: 14px;
+            width: 14px;
+        }
+
+        .active & {
+            fill: $color-base;
+        }
     }
 
     &-24h,
@@ -64,7 +99,8 @@
     &-hobby,
     &-kids,
     &-cloth-shoes,
-    &-back {
+    &-back,
+    &-arrow-back2 {
         height: 32px;
         width: 32px;
 
@@ -124,12 +160,28 @@
     }
 
     &-mail_illustration {
-        height: 95px;
-        width: 100px;
+        height: 78px;
+        width: 82px;
+
+        @media (max-width: $lg) {
+            height: 97px;
+            width: 102px;
+        }
 
         @media (max-width: $md) {
             height: 84px;
             width: 90px;
         }
+    }
+
+    &-arrow-back {
+        height: 12px;
+        width: 7px;
+        stroke: $color-base;
+    }
+
+    &-cancel {
+        height: 12px;
+        width: 12px;
     }
 }

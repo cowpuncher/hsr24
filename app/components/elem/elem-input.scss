@@ -25,22 +25,6 @@
         border-radius: 8px;
     }
 
-    &--xs {
-        font-size: 11px;
-        line-height: 14px;
-        height: 28px;
-        padding: 7px 8px;
-        border-radius: 8px;
-
-        @media (max-width: $lg) {
-            font-size: 13px;
-            line-height: 19px;
-            height: 44px;
-            border-radius: 10px;
-            padding: 7px 9px;
-        }
-    }
-
     &::placeholder {
         color: $color-gray;
     }
@@ -62,11 +46,52 @@
         padding-left: 44px;
     }
 
+    &--md {
+        height: 40px;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0;
+        border-radius: 20px;
+    }
+
     &--sm {
         font-size: 12px;
         line-height: 14px;
         border-radius: 16px;
         padding: 4px 16px;
         height: 32px;
+    }
+
+    &--xs {
+        font-size: 11px;
+        line-height: 14px;
+        height: 28px;
+        padding: 7px 8px;
+        border-radius: 8px;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+            height: 44px;
+            border-radius: 10px;
+            padding: 7px 9px;
+        }
+    }
+
+    &--price {
+        width: 100px;
+        text-align: center;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            height: 32px;
+            width: 80px;
+        }
+    }
+
+    &--gray {
+        background: $color-smoke;
+        border-color: $color-smoke;
     }
 }

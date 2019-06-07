@@ -20,4 +20,40 @@
         padding-bottom: 8px;
         padding-top: 10px;
     }
+
+    .elem-back + & {
+        @media (max-width: $lg) {
+            padding-top: 0;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    &--row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 3px;
+    }
+
+    &__count {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        margin-bottom: 4px;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+            color: $color-gray;
+            margin-bottom: 2px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+            margin-bottom: 0;
+        }
+    }
 }

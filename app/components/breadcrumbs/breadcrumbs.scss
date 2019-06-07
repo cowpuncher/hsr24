@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 4px;
+    padding-top: 9px;
 
     &__item {
         display: flex;
@@ -35,5 +35,94 @@
 
     &__link {
 
+        & .icon {
+            stroke: $color-gray;
+        }
+
+        &:hover {
+            color: $color-base;
+
+            & .icon {
+                stroke: $color-base;
+            }
+        }
+
+        &--list {
+            position: relative;
+            padding-right: 22px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 2px;
+                width: 8px;
+                height: 8px;
+                border-top: 1px solid $color-base;
+                border-right: 1px solid $color-base;
+                transform: rotate(135deg);
+                margin-top: -4px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+    &__wrap {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        padding-top: 37px;
+    }
+
+    &__list {
+        background: $color-white;
+        border: 1px solid $color-gray;
+        border-radius: 4px;
+        padding: 16px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 6px 12px 6px;
+            border-color: transparent transparent #c6c6c6 transparent;
+            position: absolute;
+            left: 40px;
+            top: -12px;
+        }
+
+        &-item {
+            & + & {
+                margin-top: 12px;
+            }
+        }
+
+        &-link {
+            display: flex;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.2px;
+            color: $color-base;
+            white-space: nowrap;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+
+    &__item:hover &__wrap {
+        display: block;
+    }
+
+    &__item:hover &__link {
+        &:after {
+            transform: rotate(-45deg);
+            margin-top: -1px;
+        }
     }
 }

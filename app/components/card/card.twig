@@ -5,12 +5,19 @@
         <div class="card__img dark">
             <a href="#"><img src="{{ data.img }}" alt=""></a>
             {% if data.status %}
-              <span class="card__status">
+              <span class="card__status {% if data.null %}card__status--null{% endif %}">
                 {{ data.status }}
               </span>
             {% endif %}
         </div>
         <div class="card__info">
+
+            {% if data.articul %}
+              <span class="card__articul">
+                Артикул: {{ data.articul }}
+              </span>
+            {% endif %}
+
             <a href="#" class="card__name">{{ data.name }}</a>
         </div>
         <div class="card__bottom">
@@ -21,7 +28,7 @@
                 {% endif %}
             </div>
             {% if data.btn %}
-                <a href="#" class="elem-btn elem-btn--light elem-btn--sm">{{ data.btn }}</a>
+                <a href="#" class="elem-btn elem-btn--light elem-btn--sm {% if data.null %} elem-btn--disabled {% endif %}" {% if data.null %} {% else %} data-add="Добавить" {% endif %}>{{ data.btn }}</a>
             {% endif %}
         </div>
         <span class="card__like" data-like>

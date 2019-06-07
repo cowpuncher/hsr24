@@ -12,6 +12,7 @@
     "jquery.maskedinput": "^1.4.1",
     "jquery-validation": "^1.18.0",
     "jquery-autocomplete": "^1.1.1",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "multiselect": "^0.9.12"
   }
 }

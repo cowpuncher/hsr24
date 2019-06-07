@@ -11,22 +11,25 @@
     letter-spacing: 0;
     font-weight: 800;
     height: 48px;
-    width: 208px;
+    min-width: 208px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    padding: 8px;
 
     @media (max-width: $lg) {
         font-size: 12px;
         line-height: 15px;
         height: 32px;
-        width: 136px;
+        min-width: 136px;
     }
 
     @media (max-width: $md) {
         font-size: 10px;
         line-height: 16px;
         height: 26px;
-        width: 110px;
+        min-width: 110px;
+        padding: 4px;
     }
 
     &__wrap {
@@ -35,7 +38,7 @@
 
     &:hover {
         color: $color-white;
-        background: $color-base;
+        background: $color-red-hover;
     }
 
     &--light {
@@ -43,19 +46,87 @@
         background: $color-white;
         border: 1px solid $color-base;
         color: $color-base;
+
+        &.active {
+            color: $color-white;
+            background: $color-base;
+        }
+
+        &:hover {
+            color: $color-red;
+            border-color: $color-red;
+            background: $color-white;
+        }
+
+        &.bold {
+            font-weight: 800;
+
+            &:hover {
+                color: $color-white;
+                background: $color-base;
+            }
+        }
+    }
+
+    &--gray {
+        border-color: $color-gray;
+        color: $color-base;
+        font-weight: 300;
+
+        &.bold {
+            font-weight: 800;
+        }
+    }
+
+    &--disabled {
+        background: $color-smoke;
+        border-color: $color-smoke;
+        white-space: normal;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+
+        &:hover {
+            color: $color-base;
+            border-color: $color-gray;
+            background: $color-gray;
+        }
+    }
+
+    &:disabled,
+    &.disabled {
+        background: $color-smoke;
+        border-color: $color-smoke;
+        color: $color-gray;
+        cursor: default;
+    }
+
+    &--md {
+        height: 40px;
+        min-width: 124px;
+        max-width: 132px;
+        border-radius: 25px;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -0.2px;
+        width: auto;
+        padding: 0 12px;
     }
 
     &--sm {
         height: 32px;
+        min-width: 108px;
         width: 108px;
         border-radius: 16px;
 
         @media (max-width: $lg) {
+            min-width: 127px;
             width: 127px;
         }
 
         @media (max-width: $md) {
             height: 26px;
+            min-width: 86px;
             width: 86px;
             border-radius: 13px;
             font-size: 10px;
@@ -66,6 +137,7 @@
         .mobile-list & {
             @media (max-width: $md) {
                 height: 32px;
+                min-width: 122px;
                 width: 122px;
                 font-size: 12px;
                 line-height: 17px;
@@ -79,6 +151,6 @@
         font-size: 12px;
         line-height: 15px;
         height: 28px;
-        width: 136px;
+        min-width: 136px;
     }
 }

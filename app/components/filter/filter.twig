@@ -1,32 +1,128 @@
 {% macro filter(data) %}
     {% import '../../page/_macros/_svg.twig' as svg %}
+    {% import '../price/price.twig' as price %}
+    {% import '../pagination/pagination.twig' as pagination %}
+    {% import '../select/select.twig' as select %}
 
 	<div class="filter">
-        <div class="filter__title open" data-filter>Фильтр {{ svg.icon('arrow-filter') }}</div>
-        <div class="filter__list open">
-            {% for item in data.list %}
-                <div class="filter__item">
-                    <div class="filter__name">
-                        {{ item.name }}
+
+        <div class="filter__row">
+            {% if data.filter %}
+                <a href="#" class="elem-filter" data-filter-show>
+                   {{ svg.icon('filter') }} {{ data.filter.name }}
+                </a>
+            {% endif %}
+
+            {% if data.btn %}
+                <div class="filter__btn hidden-md hidden-sm hidden-xs">
+                    {% for item in data.btn %}
+                        <div class="filter__btn-item">
+                            <a href="{{ item.href }}" class="elem-btn elem-btn--light elem-btn--md" data-filter-btn>{{ item.text }}</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {{ price.price(data) }}
+        </div>
+
+        <div class="filter__wrap" data-filter-show-wrap>
+            <div class="elem-title filter__wrap-title hidden-md hidden-lg hidden-xl">
+                {{ svg.icon('filter') }}
+                Фильтр
+
+                <a href="#" class="elem-close">
+                    {{ svg.icon('close') }}
+                </a>
+            </div>
+            <div class="filter__wrap-in">
+                <div class="filter__row filter__row--start">
+                    <div class="filter__item">
+                        <label class="elem-label hidden-sm hidden-xs">Цвет</label>
+                        {{ select.select(data.colorList) }}
                     </div>
 
-                    <div class="filter__list-inner">
-                        {% for item2 in item.list %}
-                            <div class="filter__item-inner">
-                                <label class="elem-checkbox">
-                                    <input type="checkbox" {% if item2.active %}checked{% endif %} class="elem-checkbox__input">
-                                    <span class="elem-checkbox__text">
-                                        {{ item2.name }}
-                                        {% if item2.count %}
-                                            <span class="filter__count">{{ item2.count }}</span>
-                                        {% endif %}
-                                    </span>
-                                </label>
-                            </div>
-                        {% endfor %}
+                    <div class="filter__item">
+                        <label class="elem-label hidden-sm hidden-xs">Размер</label>
+                        {{ select.select(data.sizeList) }}
+                    </div>
+
+                    <div class="filter__item">
+                        <label class="elem-label hidden-sm hidden-xs">Наличие</label>
+                        {{ select.select(data.availabilityList) }}
                     </div>
                 </div>
-            {% endfor %}
+            </div>
+
+            <div class="filter__wrap-btn">
+                <a href="#" class="elem-btn elem-btn--light elem-btn--gray bold">Сбросить</a>
+                <a href="#" class="elem-btn">Применить</a>
+            </div>
+
+            <div class="filter__info hidden-sm hidden-xs">
+                <div class="filter__row filter__row--start filter__info-row">
+                    <div class="filter__info-items" data-filter-color>
+                        <label class="elem-label">Цвет:</label>
+                        <div class="filter__info-list null" data-filter-list></div>
+                    </div>
+
+                    <div class="filter__info-items" data-filter-size>
+                        <label class="elem-label">Размер:</label>
+                        <div class="filter__info-list null" data-filter-list></div>
+                    </div>
+                    <a href="#" class="filter__delete" data-filter-delete>
+                        Очистить всё
+                        {{ svg.icon('clear-filter') }}
+                    </a>
+                </div>
+            </div>
+            <div class="filter__row filter__all hidden-sm hidden-xs">
+                Найдено товаров:  12
+            </div>
+        </div>
+
+        <div class="filter__row filter__row--between">
+            <div class="filter__select">
+                {# выпадающий список #}
+                {{ select.select(data.sortList) }}
+            </div>
+
+            {# пагинация #}
+            <div class="hidden-md hidden-sm hidden-xs">
+                {{ pagination.pagination() }}
+            </div>
+
+            <div class="filter__view hidden-sm hidden-xs" data-filter-view>
+                {% if data.count %}
+                    <div class="filter__view-name">Показать:</div>
+                    <div class="filter__nums">
+                        {% for item in data.count %}
+                            <a href="" class="filter__nums-item {% if item.active %}active{% endif %}">{{ item.text }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                <a href="" class="filter__view-link active" data-filter-view-item="table">
+                    {{ svg.icon('table') }}
+                </a>
+
+                <a href="" class="filter__view-link" data-filter-view-item="list">
+                    {{ svg.icon('list') }}
+                </a>
+            </div>
+        </div>
+
+        <div class="filter__view hidden-md hidden-lg hidden-xl" data-filter-view>
+            <a href="" class="filter__view-link active" data-filter-view-item="table">
+                {{ svg.icon('table') }}
+            </a>
+
+            <a href="" class="filter__view-link" data-filter-view-item="list">
+                {{ svg.icon('list') }}
+            </a>
+        </div>
+        <div class="filter__row hidden-md hidden-lg hidden-xl">
+            <div class="elem-title__count">Товары: 1-12 из 20</div>
         </div>
     </div>
 {% endmacro %}

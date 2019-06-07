@@ -3,15 +3,14 @@
 
 	<nav class="pagination">
         <ul class="pagination__list">
-            <a href="#" class="pagination__link pagination__link--prev">
+            <a href="#" class="pagination__link pagination__link--prev disabled">
                 {{ svg.icon('arrow-back') }}
-                Предыдущая
             </a>
 
-            {% for i in 1..19 %}
-              {% if (i < 8) or (i > 18) %}
+            {% for i in 1..20 %}
+              {% if (i < 4) or (i > 17) %}
                 <li class="pagination__item">
-                  {% if i == 3 %}
+                  {% if i == 1 %}
                     <span class="pagination__text">{{ i }}</span>
                   {% else %}
                     <a href="#" class="pagination__link">{{ i }}</a>
@@ -20,13 +19,13 @@
               {% else %}
                 {% if (i == 8) %}
                   <li class="pagination__item">
-                    <a href="#" class="pagination__link">...</a>
+                    <a href="#" class="pagination__link pagination__link--more">...</a>
                   </li>
                 {% endif %}
               {% endif %}
             {% endfor %}
 
-            <a href="#" class="pagination__link pagination__link--next">Следующая {{ svg.icon('arrow-back') }}</a>
+            <a href="#" class="pagination__link pagination__link--next">{{ svg.icon('arrow-back') }}</a>
         </ul>
 	</nav>
 {% endmacro %}

@@ -1,0 +1,558 @@
+{
+    "page_title": "HSR",
+    "menuList": [
+        {
+            "title": "Главная",
+            "href": "main.html"
+        },
+        {
+            "title": "Каталог",
+            "href": "catalog.html"
+        }
+    ],
+    "menuTop": {
+        "prefix": "top",
+        "list": [
+            {
+                "href": "#",
+                "text": "Доставка и оплата"
+            },
+            {
+                "href": "#",
+                "text": "Гарантии и обязательства"
+            },
+            {
+                "href": "#",
+                "text": "Программа лояльности"
+            },
+            {
+                "href": "#",
+                "text": "Акции"
+            }
+        ]
+    },
+    "menuIcons": {
+        "prefix": "icons",
+        "list": [
+            {
+                "href": "#",
+                "text": "HSR Бонус",
+                "icon": "loyalty",
+                "count": "10000"
+            },
+            {
+                "href": "#",
+                "text": "Избранное ",
+                "icon": "favs",
+                "count": "5",
+                "class": "hidden-xs"
+            },
+            {
+                "href": "#",
+                "text": "Корзина",
+                "icon": "cart",
+                "count": "10"
+            },
+            {
+                "href": "#login",
+                "text": "Вход",
+                "icon": "user2",
+                "class": "hidden-xl hidden-lg",
+                "attr": "data-popup-modal"
+            }
+        ]
+    },
+    "menuBottom": {
+        "prefix": "bottom",
+        "list": [
+            {
+                "href": "#",
+                "text": "Товары <br>из&nbsp;рекламы",
+                "icon": "adv-product"
+            },
+            {
+                "href": "#",
+                "text": "Товары <br>для&nbsp;дома",
+                "icon": "home"
+            },
+            {
+                "href": "#",
+                "text": "Дача и сад",
+                "icon": "dacha"
+            },
+            {
+                "href": "#",
+                "text": "Красота <br>и&nbsp;здоровье",
+                "icon": "beauty"
+            },
+            {
+                "href": "#",
+                "text": "Электроника",
+                "icon": "electronics"
+            },
+            {
+                "href": "#",
+                "text": "Ювелирный&nbsp;дом<br>",
+                "icon": "talisma",
+                "detail": "talisma"
+            },
+            {
+                "href": "#",
+                "text": "Православная <br>ярмарка",
+                "icon": "prevoslav"
+            },
+            {
+                "href": "#",
+                "text": "Досуг&nbsp;и&nbsp;хобби",
+                "icon": "hobby"
+            }
+        ]
+    },
+    "menuMobile": {
+        "prefix": "mobile",
+        "list": [
+            {
+                "text": "Избранное",
+                "href": "#"
+            },
+            {
+                "text": "Акции",
+                "href": "#"
+            },
+            {
+                "text": "Программа лояльности",
+                "href": "#"
+            },
+            {
+                "text": "Доставка и оплата",
+                "href": "#"
+            },
+            {
+                "text": "Гарантии и обязательства",
+                "href": "#"
+            },
+            {
+                "text": "Возврат и обмен",
+                "href": "#"
+            },
+            {
+                "text": "Контакты",
+                "href": "#"
+            }
+        ]
+    },
+    "menuFooter": {
+        "prefix": "footer",
+        "list": [
+            {
+                "href": "#",
+                "text": "О компании",
+                "class": "order-lg-1 order-md-5 text-md-left",
+                "line": "hidden-xl hidden-lg order-md-5"
+            },
+            {
+                "href": "#",
+                "text": "Доставка и оплата",
+                "class": "order-lg-2 md order-md-1 text-md-left"
+            },
+            {
+                "href": "#",
+                "text": "Программа лояльности",
+                "class": "order-lg-4 md order-md-2"
+            },
+            {
+                "href": "#",
+                "text": "Акции",
+                "class": "order-lg-3 order-md-3"
+            },
+            {
+                "href": "#",
+                "text": "Возврат и обмен",
+                "class": "order-lg-5  order-md-4 text-md-right"
+            },
+            {
+                "href": "#",
+                "text": "Контакты",
+                "class": "order-lg-8 order-md-7"
+            },
+            {
+                "href": "#",
+                "text": "Политика конфиденциальности",
+                "class": "order-lg-6 md order-md-8 text-md-right"
+            },
+            {
+                "href": "#",
+                "text": "Поставщикам",
+                "class": "order-lg-7 order-md-6"
+            }
+        ]
+    },
+    "breadcrumbsList": {
+        "class": "hidden-md hidden-sm hidden-xs",
+        "list": [
+            {
+                "href": "main.html",
+                "icon": "home2"
+            },
+            {
+                "text": "Каталог товаров",
+                "href": "catalog.html"
+            },
+            {
+                "text": "Красота и здоровье",
+                "href": "categories.html",
+                "list": [
+                    {
+                        "text": "Товары по уходу",
+                        "href": "#"
+                    }
+                ]
+            },
+            {
+                "text": "Товары по уходу",
+                "href": "categories.html",
+                "list": [
+                    {
+                        "text": "Уход за кожей",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Уход за волосами",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Уход за ногтями",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Средства личной гигиены",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Мази, крема, БАДы",
+                        "href": "#"
+                    },
+                    {
+                        "text": "Прочее",
+                        "href": "#"
+                    }
+                ]
+            },
+            {
+                "text": "Уход за кожей",
+                "href": "categories.html"
+            }
+        ]
+    },
+    "cardClist": [
+        {
+            "img": "assets/images/example/card/img8.jpg",
+            "status": "НЕТ В НАЛИЧИЕ",
+            "name": "Колье + браслет «Меридиан»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "Сообщить о поступлении",
+            "articul": "000000",
+            "null": true
+        },
+        {
+            "img": "assets/images/example/card/img12.jpg",
+            "status": "Распродажа",
+            "name": "Колье «Сияние звезд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img13.jpg",
+            "status": "Распродажа",
+            "name": "Колье + серьги «Янтарная палитра» ",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img14.jpg",
+            "status": "Распродажа",
+            "name": "Колье + серьги «Янтарная россыпь»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img15.jpg",
+            "name": "Комплект «Созвездие Изумруд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img16.jpg",
+            "status": "акция",
+            "name": "Колье + серьги «Янтарный цветок»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img17.jpg",
+            "status": "новинка",
+            "name": "Комплект цепь + серьги «Чудесница»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img18.jpg",
+            "status": "хит продаж",
+            "name": "Комплект «Созвездие Рубин»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img15.jpg",
+            "name": "Комплект «Созвездие Изумруд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img19.jpg",
+            "status": "акция",
+            "name": "Комплект «Созвездие Сапфир»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img8.jpg",
+            "name": "Колье + браслет «Меридиан»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img12.jpg",
+            "name": "Колье «Сияние звезд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        }
+    ],
+    "filterList": {
+        "class": "hidden-sm hidden-xs",
+        "filter": {
+            "name": "Фильтры<span class='hidden-sm hidden-xs'> по параметрам</span>"
+        },
+        "btn": [
+            {
+                "text": "Хиты продаж",
+                "href": "#"
+            },
+            {
+                "text": "Товары со скидкой",
+                "href": "#"
+            },
+            {
+                "text": "Новинки",
+                "href": "#"
+            }
+        ],
+        "priceStart": "1000",
+        "priceEnd": "10000",
+        "priceMin": "0",
+        "priceMax": "30000",
+        "sortList": {
+            "list": [
+                {
+                    "text": "Популярные",
+                    "value": "popular"
+                },
+                {
+                    "text": "Сначала дорогие",
+                    "value": "maxPrice"
+                },
+                {
+                    "text": "Сначала дешевые",
+                    "value": "minPrice"
+                },
+                {
+                    "text": "Хиты продаж",
+                    "value": "hit",
+                    "class": "hidden-xl hidden-lg"
+                },
+                {
+                    "text": "Товары со скидкой",
+                    "value": "sale",
+                    "class": "hidden-xl hidden-lg"
+                },
+                {
+                    "text": "Новинки",
+                    "value": "new",
+                    "class": "hidden-xl hidden-lg"
+                }
+            ]
+        },
+        "count": [
+            {
+                "text": "12",
+                "active": true
+            },
+            {
+                "text": "24"
+            },
+            {
+                "text": "36"
+            }
+        ],
+        "colorList": {
+            "title": "Выберите параметры",
+            "multiple": true,
+            "color": true,
+            "attr": "data-color data-filter='data-filter-color'",
+            "list": [
+                {
+                    "color": "#ffffff",
+                    "class": "light",
+                    "title": "Белый",
+                    "value": "#ffffff"
+                },
+                {
+                    "color": "#101010",
+                    "class": "dark",
+                    "title": "Черный",
+                    "value": "#101010"
+                },
+                {
+                    "color": "#F61D2A",
+                    "title": "Цвет 1",
+                    "value": "#F61D2A"
+                },
+                {
+                    "color": "#C0FBF8",
+                    "title": "Цвет 2",
+                    "value": "#C0FBF8"
+                },
+                {
+                    "color": "#3085F8",
+                    "title": "Цвет 3",
+                    "value": "#3085F8"
+                },
+                {
+                    "color": "#E6E6E6",
+                    "title": "Цвет 4",
+                    "value": "#E6E6E6"
+                },
+                {
+                    "color": "#BB6BD9",
+                    "title": "Цвет 5",
+                    "value": "#BB6BD9"
+                },
+                {
+                    "color": "#F2C94C",
+                    "title": "Цвет 6",
+                    "value": "#F2C94C"
+                },
+                {
+                    "color": "#6FCF97",
+                    "title": "Цвет 7",
+                    "value": "#6FCF97"
+                },
+                {
+                    "color": "#F2994A",
+                    "title": "Цвет 8",
+                    "value": "#F2994A"
+                }
+            ]
+        },
+        "sizeList": {
+            "multiple": true,
+            "title": "Выберите параметры",
+            "attr": "data-size data-filter='data-filter-size'",
+            "list": [
+                {
+                    "text": "Параметр 1",
+                    "value": "42"
+                },
+                {
+                    "text": "Параметр 2",
+                    "value": "43"
+                },
+                {
+                    "text": "Параметр 3",
+                    "value": "44"
+                }
+            ]
+        },
+        "availabilityList": {
+            "title": "Выберите параметры",
+            "list": [
+                {
+                    "text": "Да",
+                    "value": "Да"
+                },
+                {
+                    "text": "Нет",
+                    "value": "Нет"
+                }
+            ]
+        }
+    },
+    "socialList": {
+        "title": "Мы в социальных сетях",
+        "list": [
+            {
+                "icon": "vk",
+                "alt": "в контакте",
+                "href": "#"
+            },
+            {
+                "icon": "ok",
+                "alt": "однокласники",
+                "href": "#"
+            },
+            {
+                "icon": "youtube",
+                "alt": "youtube",
+                "href": "#"
+            }
+        ]
+    },
+    "payList": {
+        "title": "Способы оплаты",
+        "list": [
+            {
+                "icon": "mastercard",
+                "alt": "mastercard",
+                "href": "#"
+            },
+            {
+                "icon": "visa",
+                "alt": "visa",
+                "href": "#"
+            },
+            {
+                "icon": "mir",
+                "alt": "mir",
+                "href": "#"
+            },
+            {
+                "icon": "halva",
+                "alt": "halva",
+                "href": "#"
+            }
+        ]
+    }
+}

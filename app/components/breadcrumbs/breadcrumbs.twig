@@ -1,7 +1,7 @@
 {% macro breadcrumbs(data) %}
     {% import '../../page/_macros/_svg.twig' as svg %}
 
-	<div class="breadcrumbs">
+	<div class="breadcrumbs {% if data.class %}{{ data.class }}{% endif %}">
         {% for item in data.list %}
             {# Если последний элемент #}
             <div class="breadcrumbs__item">
@@ -10,7 +10,7 @@
                         <span class="breadcrumbs__text">{{ item.text }}</span>
                     {% endif %}
                 {% else %}
-                    <a href="{{ item.href }}" class="breadcrumbs__link">
+                    <a href="{{ item.href }}" class="breadcrumbs__link {% if item.list %} breadcrumbs__link--list {% endif %}">
                         {% if item.text %}
                             {{ item.text }}
                         {% endif %}
@@ -19,6 +19,18 @@
                             {{ svg.icon(item.icon) }}
                         {% endif %}
                     </a>
+                {% endif %}
+
+                {% if item.list %}
+                    <div class="breadcrumbs__wrap">
+                        <div class="breadcrumbs__list">
+                            {% for item2 in item.list %}
+                                <div class="breadcrumbs__list-item">
+                                    <a href="{{ item2.href }}" class="breadcrumbs__list-link">{{ item2.text }}</a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
                 {% endif %}
             </div>
         {% endfor %}

@@ -144,6 +144,7 @@
     <use xlink:href="assets/images/required/sprite.svg#loyalty"></use>
   </svg>
 
+                                                                    <div class="menu-icons__count dark">10000</div>
                                                             </div>
                                                 <div class="menu-icons__text">
                             HSR Бонус
@@ -153,7 +154,7 @@
 
                     
                 </li>
-                                            <li class="menu-icons__item " >
+                                            <li class="menu-icons__item hidden-xs" >
                     <a href="#" class="menu-icons__link"  >
                                                     <div class="menu-icons__icon">
                                   <svg aria-hidden="true" class="icon icon-favs">
@@ -181,6 +182,22 @@
                                                             </div>
                                                 <div class="menu-icons__text">
                             Корзина
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-icons__item hidden-xl hidden-lg" >
+                    <a href="#login" class="menu-icons__link"  data-popup-modal>
+                                                    <div class="menu-icons__icon">
+                                  <svg aria-hidden="true" class="icon icon-user2">
+    <use xlink:href="assets/images/required/sprite.svg#user2"></use>
+  </svg>
+
+                                                            </div>
+                                                <div class="menu-icons__text">
+                            Вход
 
                                                     </div>
                     </a>
@@ -613,14 +630,28 @@
         <ul>
                             <li><a href="main.html">Главная</a></li>
                             <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="categories.html">Категории</a></li>
                     </ul>
     </div>
 
 	  </main>
 
 	  <footer id="footer" class="footer">
-    <div class="footer__top order-md-2">
+    <div class="footer__top order-md-2 order-lg-0">
         <div class="container">
+            <form class="footer__subscribe">
+                <div class="footer__subscribe-icon">
+                      <svg aria-hidden="true" class="icon icon-mail_illustration">
+    <use xlink:href="assets/images/required/sprite.svg#mail_illustration"></use>
+  </svg>
+
+                </div>
+                <div class="elem-item footer__subscribe-item">
+                    <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
+                    <input type="email" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">
+                    <button class="elem-btn footer__btn">Подписаться</button>
+                </div>
+            </form>
             <div class="footer__inner">
                 <div class="footer__col footer__row-mobile">
                     <a href="main.html" class="elem-logo footer__logo">
@@ -648,7 +679,8 @@
 
         <ul class="menu-footer__list">
 
-                                            <li class="menu-footer__item " >
+                                                <div class="menu-footer__line hidden-xl hidden-lg order-md-5"></div>
+                                <li class="menu-footer__item order-lg-1 order-md-5 text-md-left" >
                     <a href="#" class="menu-footer__link"  >
                                                 <div class="menu-footer__text">
                             О компании
@@ -658,7 +690,7 @@
 
                     
                 </li>
-                                            <li class="menu-footer__item " >
+                                            <li class="menu-footer__item order-lg-2 md order-md-1 text-md-left" >
                     <a href="#" class="menu-footer__link"  >
                                                 <div class="menu-footer__text">
                             Доставка и оплата
@@ -668,7 +700,7 @@
 
                     
                 </li>
-                                            <li class="menu-footer__item " >
+                                            <li class="menu-footer__item order-lg-4 md order-md-2" >
                     <a href="#" class="menu-footer__link"  >
                                                 <div class="menu-footer__text">
                             Программа лояльности
@@ -678,17 +710,7 @@
 
                     
                 </li>
-                                            <li class="menu-footer__item " >
-                    <a href="#" class="menu-footer__link"  >
-                                                <div class="menu-footer__text">
-                            Политика конфиденциальности
-
-                                                    </div>
-                    </a>
-
-                    
-                </li>
-                                            <li class="menu-footer__item " >
+                                            <li class="menu-footer__item order-lg-3 order-md-3" >
                     <a href="#" class="menu-footer__link"  >
                                                 <div class="menu-footer__text">
                             Акции
@@ -698,7 +720,7 @@
 
                     
                 </li>
-                                            <li class="menu-footer__item " >
+                                            <li class="menu-footer__item order-lg-5  order-md-4 text-md-right" >
                     <a href="#" class="menu-footer__link"  >
                                                 <div class="menu-footer__text">
                             Возврат и обмен
@@ -708,20 +730,30 @@
 
                     
                 </li>
-                                            <li class="menu-footer__item " >
+                                            <li class="menu-footer__item order-lg-8 order-md-7" >
                     <a href="#" class="menu-footer__link"  >
                                                 <div class="menu-footer__text">
-                            Поставщикам
+                            Контакты
 
                                                     </div>
                     </a>
 
                     
                 </li>
-                                            <li class="menu-footer__item " >
+                                            <li class="menu-footer__item order-lg-6 md order-md-8 text-md-right" >
                     <a href="#" class="menu-footer__link"  >
                                                 <div class="menu-footer__text">
-                            Контакты
+                            Политика конфиденциальности
+
+                                                    </div>
+                    </a>
+
+                    
+                </li>
+                                            <li class="menu-footer__item order-lg-7 order-md-6" >
+                    <a href="#" class="menu-footer__link"  >
+                                                <div class="menu-footer__text">
+                            Поставщикам
 
                                                     </div>
                     </a>
@@ -734,10 +766,80 @@
 
                 </div>
                 <div class="footer__col footer__col--social">
-                    
+                        
+	<div class="social">
+                    <h5 class="social__title">Мы в социальных сетях</h5>
+        
+        <div class="social__list">
+                            <div class="social__item">
+                    <a href="#" class="social__link" title="в контакте">
+                          <svg aria-hidden="true" class="icon icon-vk">
+    <use xlink:href="assets/images/required/sprite.svg#vk"></use>
+  </svg>
+
+                    </a>
+                </div>
+                            <div class="social__item">
+                    <a href="#" class="social__link" title="однокласники">
+                          <svg aria-hidden="true" class="icon icon-ok">
+    <use xlink:href="assets/images/required/sprite.svg#ok"></use>
+  </svg>
+
+                    </a>
+                </div>
+                            <div class="social__item">
+                    <a href="#" class="social__link" title="youtube">
+                          <svg aria-hidden="true" class="icon icon-youtube">
+    <use xlink:href="assets/images/required/sprite.svg#youtube"></use>
+  </svg>
+
+                    </a>
+                </div>
+                    </div>
+    </div>
+
                 </div>
                 <div class="footer__col footer__col--pay">
-                    
+                    	
+	<div class="pay">
+                    <h5 class="pay__title">Способы оплаты</h5>
+        
+        <div class="pay__list">
+                            <div class="pay__item">
+                    <a href="#" class="pay__link" title="mastercard">
+                          <svg aria-hidden="true" class="icon icon-mastercard">
+    <use xlink:href="assets/images/required/sprite.svg#mastercard"></use>
+  </svg>
+
+                    </a>
+                </div>
+                            <div class="pay__item">
+                    <a href="#" class="pay__link" title="visa">
+                          <svg aria-hidden="true" class="icon icon-visa">
+    <use xlink:href="assets/images/required/sprite.svg#visa"></use>
+  </svg>
+
+                    </a>
+                </div>
+                            <div class="pay__item">
+                    <a href="#" class="pay__link" title="mir">
+                          <svg aria-hidden="true" class="icon icon-mir">
+    <use xlink:href="assets/images/required/sprite.svg#mir"></use>
+  </svg>
+
+                    </a>
+                </div>
+                            <div class="pay__item">
+                    <a href="#" class="pay__link" title="halva">
+                          <svg aria-hidden="true" class="icon icon-halva">
+    <use xlink:href="assets/images/required/sprite.svg#halva"></use>
+  </svg>
+
+                    </a>
+                </div>
+                    </div>
+    </div>
+
 
                     <div class="footer__adress hidden-xs hidden-sm">
                         <p>ОГРН 1137746372290</p>
@@ -754,59 +856,9 @@
         </div>
     </div>
 
-    <div class="footer__bottom dark order-md-1">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="#" class="footer__link hidden-md hidden-sm hidden-xs">
-                      <svg aria-hidden="true" class="icon icon-consultant">
-    <use xlink:href="assets/images/required/sprite.svg#consultant"></use>
-  </svg>
- Связаться с нами
-                </a>
+    
 
-                <a href="#" class="footer__link hidden-md hidden-sm hidden-xs">
-                      <svg aria-hidden="true" class="icon icon-ask">
-    <use xlink:href="assets/images/required/sprite.svg#ask"></use>
-  </svg>
- Онлайн консультант
-                </a>
-
-                <form class="footer__subscribe">
-                    <div class="footer__subscribe-icon hidden-lg hidden-xl">
-                          <svg aria-hidden="true" class="icon icon-mail_illustration">
-    <use xlink:href="assets/images/required/sprite.svg#mail_illustration"></use>
-  </svg>
-
-                    </div>
-                    <div class="elem-item footer__subscribe-item">
-                        <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
-                        <input type="text" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">
-                        <button class="elem-btn elem-btn--xs footer__btn">Подписаться</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer__consult dark hidden-md hidden-lg hidden-xl">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="#" class="footer__link">
-                      <svg aria-hidden="true" class="icon icon-consultant">
-    <use xlink:href="assets/images/required/sprite.svg#consultant"></use>
-  </svg>
- Звонок консультанту
-                </a>
-
-                <a href="#" class="footer__link">
-                      <svg aria-hidden="true" class="icon icon-ask">
-    <use xlink:href="assets/images/required/sprite.svg#ask"></use>
-  </svg>
- Задайте нам вопрос
-                </a>
-            </div>
-        </div>
-    </div>
+    
 </footer>
       <div id="login" class="popup popup--small mfp-hide">
     <h2 class="popup__title">Авторизация</h2>
@@ -919,8 +971,9 @@
 	<!-- JavaScript files placed at the end of the document so the pages load faster
 	================================================== -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="js/libs.js"></script>
 	<script src="js/main.js"></script>

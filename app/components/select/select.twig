@@ -1,7 +1,15 @@
 {% macro select(data) %}
-	<select class="{{ data.class }}">
-        {% for item in data.list %}
-            <option {% if item.selected %}selected="selected"{% endif %} value="{{ item.value }}">{{ item.text }}</option>
-        {% endfor %}
-    </select>
+    {# {% if data.multiple %}
+
+    {% else %} #}
+        <select class="{{ data.class }}" title="{{ data.title }}" {% if data.multiple %}data-multiple multiple data-selected-text-format="count > 1"{% endif %} {% if data.attr %}{{ data.attr }}{% endif %}>
+            {% for item in data.list %}
+                <option {% if item.title %}title="{{ item.title }}"{% endif %} {% if item.color %}style="background-color: {{ item.color }}"{% endif %} class="{% if item.class %}{{ item.class }}{% endif %}" value="{{ item.value }}">
+                    {% if item.text %}
+                        {{ item.text }}
+                    {% endif %}
+                </option>
+            {% endfor %}
+        </select>
+    {# {% endif %} #}
 {% endmacro %}

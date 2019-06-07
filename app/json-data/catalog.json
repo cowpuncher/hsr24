@@ -27,19 +27,28 @@
             {
                 "href": "#",
                 "text": "HSR Бонус",
-                "icon": "loyalty"
+                "icon": "loyalty",
+                "count": "10000"
             },
             {
                 "href": "#",
                 "text": "Избранное ",
                 "icon": "favs",
-                "count": "5"
+                "count": "5",
+                "class": "hidden-xs"
             },
             {
                 "href": "#",
                 "text": "Корзина",
                 "icon": "cart",
                 "count": "10"
+            },
+            {
+                "href": "#login",
+                "text": "Вход",
+                "icon": "user2",
+                "class": "hidden-xl hidden-lg",
+                "attr": "data-popup-modal"
             }
         ]
     },
@@ -127,35 +136,44 @@
         "list": [
             {
                 "href": "#",
-                "text": "О компании"
+                "text": "О компании",
+                "class": "order-lg-1 order-md-5 text-md-left",
+                "line": "hidden-xl hidden-lg order-md-5"
             },
             {
                 "href": "#",
-                "text": "Доставка и оплата"
+                "text": "Доставка и оплата",
+                "class": "order-lg-2 md order-md-1 text-md-left"
             },
             {
                 "href": "#",
-                "text": "Программа лояльности"
+                "text": "Программа лояльности",
+                "class": "order-lg-4 md order-md-2"
             },
             {
                 "href": "#",
-                "text": "Политика конфиденциальности"
+                "text": "Акции",
+                "class": "order-lg-3 order-md-3"
             },
             {
                 "href": "#",
-                "text": "Акции"
+                "text": "Возврат и обмен",
+                "class": "order-lg-5  order-md-4 text-md-right"
             },
             {
                 "href": "#",
-                "text": "Возврат и обмен"
+                "text": "Контакты",
+                "class": "order-lg-8 order-md-7"
             },
             {
                 "href": "#",
-                "text": "Поставщикам"
+                "text": "Политика конфиденциальности",
+                "class": "order-lg-6 md order-md-8 text-md-right"
             },
             {
                 "href": "#",
-                "text": "Контакты"
+                "text": "Поставщикам",
+                "class": "order-lg-7 order-md-6"
             }
         ]
     },
@@ -390,6 +408,51 @@
             {
                 "title": "Православная ярмарка",
                 "icon": "prevoslav"
+            }
+        ]
+    },
+    "socialList": {
+        "title": "Мы в социальных сетях",
+        "list": [
+            {
+                "icon": "vk",
+                "alt": "в контакте",
+                "href": "#"
+            },
+            {
+                "icon": "ok",
+                "alt": "однокласники",
+                "href": "#"
+            },
+            {
+                "icon": "youtube",
+                "alt": "youtube",
+                "href": "#"
+            }
+        ]
+    },
+    "payList": {
+        "title": "Способы оплаты",
+        "list": [
+            {
+                "icon": "mastercard",
+                "alt": "mastercard",
+                "href": "#"
+            },
+            {
+                "icon": "visa",
+                "alt": "visa",
+                "href": "#"
+            },
+            {
+                "icon": "mir",
+                "alt": "mir",
+                "href": "#"
+            },
+            {
+                "icon": "halva",
+                "alt": "halva",
+                "href": "#"
             }
         ]
     }
