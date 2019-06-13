@@ -105,9 +105,14 @@
     &-electronics,
     &-prevoslav,
     &-kids,
-    &-hobby {
+    &-hobby,
+    &-adv-product {
         fill: $color-base;
         stroke: $color-base;
+    }
+
+    &-adv-product {
+        stroke-width: 1;
     }
 
     &-delivery-free,
@@ -175,5 +180,15 @@
     &-cancel {
         height: 12px;
         width: 12px;
+    }
+
+    &-tv-404 {
+        width: 320px;
+        height: 299px;
+    }
+
+    &-404 {
+        width: 379px;
+        height: 142px;
     }
 }

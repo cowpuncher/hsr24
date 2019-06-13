@@ -1,0 +1,120 @@
+.page-404 {
+    &__inner {
+        display: flex;
+        max-width: 752px;
+        margin: 0 auto;
+        padding: 128px 0 112px;
+
+        @media (max-width: $lg) {
+            max-width: 626px;
+            padding-top: 120px;
+            padding-bottom: 122px;
+        }
+
+        @media (max-width: $md) {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__info {
+        padding-top: 12px;
+
+        @media (max-width: $lg) {
+            padding-top: 0;
+        }
+
+        @media (max-width: $md) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        margin-bottom: 26px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 9px;
+        }
+
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.2px;
+        font-weight: 300;
+        margin-bottom: 24px;
+        text-align: center;
+
+        @media (max-width: $lg) {
+            font-weight: 800;
+            display: flex;
+            margin-bottom: 34px;
+            justify-content: center;
+        }
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+        }
+
+        & p {
+            margin-bottom: 2px;
+
+            & + p {
+                @media (max-width: $lg) {
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        width: 320px;
+        margin-left: 75px;
+        margin-right: -19px;
+        flex-shrink: 0;
+
+        @media (max-width: $lg) {
+            width: 235px;
+            margin-right: 0;
+            padding-top: 12px;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 0;
+            width: 200px;
+            margin: 0 0 29px;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+
+        & .elem-btn {
+            height: 52px;
+            border-radius: 26px;
+            font-size: 14px;
+            padding: 0 30px;
+
+            @media (max-width: $lg) {
+                font-size: 13px;
+                line-height: 16px;
+                height: 44px;
+                width: 272px;
+            }
+
+            @media (max-width: $md) {
+                width: 100%;
+                max-width: 290px;
+            }
+        }
+    }
+}

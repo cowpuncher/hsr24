@@ -1,0 +1,35 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-404{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <h1 class="elem-title hidden-xl hidden-lg">Ошибка 404</h1>
+        <div class="page-404__inner">
+            <div class="page-404__info">
+                <div class="page-404__title">
+                    {{ svg.icon('404') }}
+                </div>
+                <div class="page-404__text">
+                    <p>Упс!</p>
+                    <p>Такой страницы не существует...</p>
+                </div>
+                <div class="page-404__btn">
+                    <a href="main.html" class="elem-btn">Вернуться на главную <span class="hidden-md hidden-sm hidden-xs">страницу</span></a>
+                </div>
+            </div>
+            <div class="page-404__img">
+                <img src="assets/images/example/tv-404.png" alt="">
+            </div>
+        </div>
+	</div>
+
+{% endblock %}
