@@ -59,7 +59,9 @@
         }
 
         &__text {
-            display: none;
+            @media (max-width: $lg) {
+                display: none;
+            }
         }
 
 		&__icon {
