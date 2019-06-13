@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: $md) {
+        flex-direction: column;
+        margin-bottom: 9px;
+    }
+
     * + & {
         margin-left: 20px;
 
@@ -32,6 +37,12 @@
         @media (max-width: $lg) {
             margin-left: 16px;
         }
+
+        @media (max-width: $md) {
+            margin-left: 0;
+            margin-bottom: 22px;
+            padding-top: 12px;
+        }
     }
 
     &__label {
@@ -54,6 +65,12 @@
         border-radius: 3px;
         margin-left: 12px;
 
+        @media (max-width: $md) {
+            margin-left: 12px;
+            margin-right: 12px;
+            width: calc(100% - 24px) !important;
+        }
+
         & .ui-slider-range {
             background: $color-base;
         }
@@ -64,6 +81,12 @@
             height: 15px;
             width: 15px;
             border-radius: 50%;
+
+            @media (max-width: $md) {
+                height: 24px;
+                width: 24px;
+                top: -10px;
+            }
         }
     }
 }

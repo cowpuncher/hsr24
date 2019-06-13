@@ -27,7 +27,9 @@
     &-home2,
     &-filter,
     &-clear-filter,
-    &-close {
+    &-close,
+    &-thumbs-up,
+    &-thumbs-down {
         height: 24px;
         width: 24px;
     }
@@ -77,13 +79,6 @@
         }
     }
 
-    &-24h {
-        @media (max-width: $md) {
-            height: 32px;
-            width: 32px;
-        }
-    }
-
     &-show-more,
     &-vk,
     &-ok,
@@ -100,14 +95,11 @@
     &-kids,
     &-cloth-shoes,
     &-back,
-    &-arrow-back2 {
+    &-arrow-back2,
+    &-garbage-can,
+    &-24h {
         height: 32px;
         width: 32px;
-
-        @media (max-width: $lg) {
-            height: 32px;
-            width: 32px;
-        }
     }
 
     &-electronics,

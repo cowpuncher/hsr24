@@ -5,6 +5,7 @@ class Select {
 	}
 
 	 initialize() {
+
 		$('select[data-filter]').on('change', function(){
             var selected = $(this).val();
             var filter = $(this).attr('data-filter');
@@ -67,7 +68,28 @@ class Select {
                 $('[data-filter-show]').removeClass('choose');
             }
 
-         });
+        });
+
+        $('select[data-filter]').on('show.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+            var option = $(this).children();
+
+            option.each(function() {
+                var color = $(this).attr('data-filter-color');
+                var border = $(this).attr('data-filter-border') || 'transparent';
+                var index = $(this).index();
+                var li = $(this).parents('.bootstrap-select').find('.dropdown-menu li');
+
+                li.eq(index).attr('data-filter-color', color);
+                li.eq(index).attr('data-filter-border', border);
+
+                if (li.eq(index).find('a').find('.select-color').length == 0) {
+                    li.eq(index).find('a').append(`<span class="select-color" style="background: ${color}; border: 1px solid ${border}"></span>`);
+                }
+            });
+        });
+
+
+
 	}
 }
 

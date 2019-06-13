@@ -1,0 +1,33 @@
+{% macro reviews(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+    {% import '../rating/rating.twig' as rating %}
+
+	<div class="reviews__list">
+        {% for item in data.list %}
+            <div class="reviews">
+                <div class="reviews__head">
+                    <div class="reviews__name">{{ item.name }}</div>
+                    <div class="reviews__rating">
+                        {{ rating.rating(item.rating) }}
+                    </div>
+                    <div class="reviews__date">{{ item.date }}</div>
+                    <div class="reviews__voice">
+                        <div class="reviews__voice-title">Отзыв был вам полезен?</div>
+                        <a href="#" class="reviews__voice-item">
+                            {{ svg.icon('thumbs-up') }} {{ item.like }}
+                        </a>
+                        <a href="#" class="reviews__voice-item">
+                            {{ svg.icon('thumbs-down') }} {{ item.dislike }}
+                        </a>
+                    </div>
+                </div>
+                <div class="reviews__body">
+                    <div class="reviews__text">{{ item.text }}</div>
+                    <div class="reviews__btn">
+                        <a href="#" class="elem-btn elem-btn--disabled elem-btn--xs">Читать дальше</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}

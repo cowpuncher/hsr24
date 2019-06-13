@@ -6,6 +6,7 @@
 
     @media (max-width: $lg) {
         max-width: 100%;
+        width: 100% !important;
     }
 
     & > .dropdown-toggle {
@@ -25,7 +26,16 @@
             line-height: 12px;
             letter-spacing: 0.1px;
             height: 32px;
-            padding: 10px 45px 10px 20px;
+            padding: 10px 45px 10px 17px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 800;
+            height: 32px;
+            border-radius: 20px;
+            padding-top: 8px;
         }
 
         &.bs-placeholder {
@@ -91,8 +101,17 @@
         width: 100%;
         display: none;
 
+        @media (max-width: $md) {
+            max-height: none !important;
+            min-width: 290px !important;
+        }
+
         & .inner {
             width: 100%;
+
+            @media (max-width: $md) {
+                max-height: none !important;
+            }
         }
 
         & li {
@@ -116,6 +135,20 @@
                 align-items: center;
                 outline: none;
                 position: relative;
+
+                @media (max-width: $lg) {
+                    font-size: 10px;
+                    line-height: 12px;
+                    padding-left: 17px;
+                    padding-right: 17px;
+                }
+
+                @media (max-width: $md) {
+                    font-size: 12px;
+                    line-height: 17px;
+                    height: 44px;
+                    font-weight: 400;
+                }
 
                 &:hover {
                     background: $color-smoke;
@@ -169,6 +202,14 @@
                     top: 50%;
                     margin-top: -5px;
                     opacity: 0;
+
+                    @media (max-width: $lg) {
+                        height: 14px;
+                        width: 20px;
+                        background-size: 20px 14px;
+                        margin-top: -7px;
+                        right: 20px;
+                    }
                 }
 
                 &.selected {
@@ -176,6 +217,10 @@
                         opacity: 1;
                         right: 16px;
                         top: 50%;
+
+                        @media (max-width: $lg) {
+                            right: 18px;
+                        }
                     }
 
                     &:first-child {
@@ -207,11 +252,25 @@
                         margin-top: -8px;
                         opacity: 1;
                         display: block;
+
+                        @media (max-width: $lg) {
+                            height: 20px;
+                            width: 20px;
+                            right: auto;
+                            left: 17px;
+                            margin-top: -10px;
+                        }
                     }
 
                     &:first-child {
                         & span.check-mark {
                             top: calc(50% + 8px);
+                        }
+                    }
+
+                    & a {
+                        @media (max-width: $lg) {
+                            padding-left: 49px;
                         }
                     }
 
@@ -236,67 +295,89 @@
 
         & select[data-color] {
             & ~ .dropdown-menu {
-                top: 20px;
-                padding-top: 22px;
-                min-height: 32px !important;
-
-                & .inner {
-                    min-height: 20px !important;
-                }
 
                 & li {
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    margin: 0 5px 10px;
 
                     & a {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
-                        height: 20px;
-                        width: 20px;
-                        padding: 0;
-                        border-radius: 50%;
+                        justify-content: flex-start;
+                        padding-left: 44px;
+                        position: relative;
 
-                        &.light {
-                            border: 1px solid $color-base;
+                        & .select-color {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 16px;
+                            top: 50%;
+                            margin-top: -10px;
                         }
 
-                        &.dark {
+                        &.light {
 
-                            & span.check-mark {
-                                background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3439 1.04346C10.5443 1.23337 10.5529 1.54984 10.363 1.75031L4.67877 7.75031C4.58673 7.84746 4.45959 7.90366 4.32579 7.90633C4.19199 7.90901 4.06271 7.85794 3.96686 7.76455L0.651068 4.53378C0.453287 4.34107 0.449175 4.02451 0.641885 3.82673C0.834596 3.62895 1.15115 3.62484 1.34893 3.81755L4.30155 6.69446L9.63702 1.06256C9.82694 0.862096 10.1434 0.853542 10.3439 1.04346Z' fill='white'/%3E%3C/svg%3E%0A");
+                            & .select-color {
+                                border: 1px solid $color-base !important;
                             }
                         }
                     }
 
+                    &:first-child {
+
+                        & a .select-color {
+                            top: calc(50% + 7px);
+                        }
+                    }
+
                     & span.check-mark {
-                        background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3439 1.04346C10.5443 1.23337 10.5529 1.54984 10.363 1.75031L4.67877 7.75031C4.58673 7.84746 4.45959 7.90366 4.32579 7.90633C4.19199 7.90901 4.06271 7.85794 3.96686 7.76455L0.651068 4.53378C0.453287 4.34107 0.449175 4.02451 0.641885 3.82673C0.834596 3.62895 1.15115 3.62484 1.34893 3.81755L4.30155 6.69446L9.63702 1.06256C9.82694 0.862096 10.1434 0.853542 10.3439 1.04346Z' fill='%23101010'/%3E%3C/svg%3E%0A");
-                        background-size: 11px 8px;
+                        background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3439 1.04346C10.5443 1.23337 10.5529 1.54984 10.363 1.75031L4.67877 7.75031C4.58673 7.84746 4.45959 7.90366 4.32579 7.90633C4.19199 7.90901 4.06271 7.85794 3.96686 7.76455L0.651068 4.53378C0.453287 4.34107 0.449175 4.02451 0.641885 3.82673C0.834596 3.62895 1.15115 3.62484 1.34893 3.81755L4.30155 6.69446L9.63702 1.06256C9.82694 0.862096 10.1434 0.853542 10.3439 1.04346Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
+                        background-size: 18px 12px;
                         background-position: center center;
                         background-repeat: no-repeat;
-                        height: 100%;
-                        width: 100%;
+                        height: 12px;
+                        width: 18px;
                         position: absolute;
-                        right: 0;
-                        top: 0%;
-                        margin-top: 0px;
+                        right: 16px;
+                        top: 50%;
+                        margin-top: -6px;
                         opacity: 0;
+                        background-color: transparent;
+                        border-color: transparent;
+                        left: auto;
+
+                        @media (max-width: $lg) {
+                            height: 14px;
+                            width: 20px;
+                            background-size: 20px 14px;
+                            margin-top: -7px;
+                            right: 20px;
+                            left: auto;
+                        }
                     }
 
                     &.selected {
                         & span.check-mark {
+                            left: auto;
                             opacity: 1;
-                            right: 0;
-                            top: 0%;
+                            right: 16px;
+                            top: 50%;
                             background-color: transparent;
                             border-color: transparent;
+
+                            @media (max-width: $lg) {
+                                right: 18px;
+                                left: auto;
+                            }
                         }
 
                         &:first-child {
                             & span.check-mark {
-                                top: 0;
+                                top: calc(50% + 7px);
+                            }
+
+                            & a .select-color {
+                                top: calc(50% + 7px);
                             }
                         }
                     }

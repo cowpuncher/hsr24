@@ -13,6 +13,14 @@ class Filter {
             e.preventDefault();
         });
 
+        $('[data-filter-close]').click(function(e) {
+            var el = $(this);
+
+            $('[data-filter-show]').removeClass('open');
+            el.parents('.filter').find('[data-filter-show-wrap]').slideUp(300);
+            e.preventDefault();
+        });
+
         $('[data-filter-view-item]').click(function(e) {
             var el = $(this);
             var parent = el.parents('[data-filter-view]');
@@ -34,6 +42,10 @@ class Filter {
             $(this).toggleClass('active');
 
             e.preventDefault();
+        });
+
+        $('[data-elem-select]').click(function() {
+            $(this).parent().toggleClass('open');
         });
 
         $(document).on('click', '[data-filter-cancel]', function(e){

@@ -78,6 +78,7 @@ class Header {
                 && !$('[data-autocomplete]').is(e.target) && $('[data-autocomplete]').has(e.target).length === 0
             ) {
                 $('.page').removeClass('overflow');
+                $('body').removeClass('scroll');
                 $('[data-menu-mobile]').removeClass('open');
                 $('[data-hamburger]').removeClass('open');
             }

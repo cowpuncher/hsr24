@@ -104,11 +104,24 @@
             border-radius: 16px;
             padding: 24px 12px;
 
+            @media (max-width: $lg) {
+                padding: 19px 16px;
+            }
+
             @media (max-width: $md) {
                 padding: 0;
                 border-radius: 0;
                 border: 0;
                 background: transparent;
+                max-height: calc(100vh - 144px);
+                overflow-y: auto;
+            }
+
+            & .bootstrap-select>.dropdown-toggle {
+                height: 44px;
+                border-radius: 22px;
+                padding-left: 16px;
+                padding-right: 48px;
             }
         }
 
@@ -168,12 +181,20 @@
 
     &__item {
 
+        @media (max-width: $lg) {
+            width: calc(100% / 3 - 20px);
+        }
+
         @media (max-width: $md) {
             width: 100%;
         }
 
         & + & {
             margin-left: 25px;
+
+            @media (max-width: $lg) {
+                margin-left: 30px;
+            }
 
             @media (max-width: $md) {
                 margin-left: 0;
@@ -262,6 +283,13 @@
         padding: 22px 0;
         margin: 0 12px 0;
         margin-top: -1px;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+            padding: 21px 0;
+        }
     }
 
     &__delete {
@@ -275,8 +303,17 @@
         right: 12px;
         top: 32px;
 
+        @media (max-width: $lg) {
+            top: 17px;
+            right: 17px;
+        }
+
         & .icon {
             margin-left: 8px;
+
+            @media (max-width: $lg) {
+                margin-left: 0;
+            }
         }
     }
 
@@ -285,14 +322,26 @@
         padding-right: 125px;
         position: relative;
 
+        @media (max-width: $lg) {
+            padding: 23px 17px 22px;
+        }
+
         &-row {
             margin-right: -40px;
+
+            @media (max-width: $lg) {
+                margin-right: -30px;
+            }
         }
 
         &-items {
             display: flex;
             align-items: center;
             margin-right: 40px;
+
+            @media (max-width: $lg) {
+                margin-right: 30px;
+            }
 
             & .elem-label {
                 margin-bottom: 0;
@@ -308,6 +357,11 @@
             font-size: 14px;
             line-height: 20px;
             font-weight: 300;
+
+            @media (max-width: $lg) {
+                font-size: 10px;
+                line-height: 20px;
+            }
 
             &.null {
                 position: relative;
@@ -331,6 +385,11 @@
             margin-right: 8px;
             display: flex;
             align-items: center;
+
+            @media (max-width: $lg) {
+                font-size: 10px;
+                line-height: 12px;
+            }
         }
     }
 }

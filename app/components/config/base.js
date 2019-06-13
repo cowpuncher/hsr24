@@ -1,10 +1,53 @@
 'use strict';
 
 // стилизация элементов форм
-$('select').selectpicker({
-    noneSelectedText: "Выберите параметры",
-    dropupAuto: true,
-    showTick: true
+
+$('select').each(function() {
+    var el = $(this);
+    var ww = $(window).width();
+    var noneSelectedText = "Выберите параметры";
+
+    if (ww < 768) {
+        noneSelectedText = el.attr('data-mobile-none');
+    } else {
+        noneSelectedText = "Выберите параметры";
+    }
+
+    el.attr('title', noneSelectedText);
+
+    el.selectpicker({
+        noneSelectedText: noneSelectedText,
+        dropupAuto: true,
+        showTick: true
+    });
+});
+
+$(window).resize(function() {
+    var ww = $(window).width();
+    this.console.log(ww);
+
+    $('select').each(function() {
+        var el = $(this);
+        var noneSelectedText = "Выберите параметры";
+
+        if (ww < 768) {
+            noneSelectedText = el.attr('data-mobile-none');
+        } else {
+            noneSelectedText = "Выберите параметры";
+        }
+
+        el.attr('title', noneSelectedText);
+
+        el.selectpicker({
+            noneSelectedText: noneSelectedText,
+            dropupAuto: true,
+            showTick: true
+        });
+    });
+
+    setTimeout(() => {
+        $('select').selectpicker('refresh');
+    }, 1000);
 });
 
 // маска в инпутах
