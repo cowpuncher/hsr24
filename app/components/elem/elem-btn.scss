@@ -42,7 +42,7 @@
     }
 
     &--light {
-        font-weight: 300;
+        font-weight: 400;
         background: $color-white;
         border: 1px solid $color-base;
         color: $color-base;
@@ -71,7 +71,7 @@
     &--gray {
         border-color: $color-gray;
         color: $color-base;
-        font-weight: 300;
+        font-weight: 400;
 
         &.bold {
             font-weight: 800;
@@ -86,7 +86,7 @@
         font-size: 11px;
         line-height: 14px;
         text-align: center;
-        font-weight: 300;
+        font-weight: 400;
 
         &:hover {
             color: $color-base;

@@ -1,27 +1,5 @@
 {
     "page_title": "HSR",
-    "menuList": [
-        {
-            "title": "Главная",
-            "href": "main.html"
-        },
-        {
-            "title": "Каталог",
-            "href": "catalog.html"
-        },
-        {
-            "title": "Категории",
-            "href": "categories.html"
-        },
-        {
-            "title": "404",
-            "href": "404.html"
-        },
-        {
-            "title": "Акции",
-            "href": "actions.html"
-        }
-    ],
     "menuTop": {
         "prefix": "top",
         "list": [
@@ -1043,6 +1021,64 @@
                 "icon": "halva",
                 "alt": "halva",
                 "href": "#"
+            }
+        ]
+    },
+    "bannerList": {
+        "slider": {
+            "list": [
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
+                    "btn": "Подробнее"
+                },
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
+                    "btn": "Подробнее"
+                },
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
+                    "btn": "Подробнее"
+                },
+                {
+                    "img": "assets/images/example/banner/banner.jpg",
+                    "img2": "assets/images/example/banner/banner-xs.jpg",
+                    "btn": "Подробнее"
+                }
+            ]
+        }
+    },
+    "teaserList": {
+        "text": "Ни дня без акции — наш девиз. Каждый день в HSR24 — выгодные цены, скидки и интересные предложения. Следите за нашими новостями!"
+    },
+    "actionsList": {
+        "list": [
+            {
+                "title": "Скидка 20% при покупке от 3 шт. и более",
+                "img": "assets/images/example/actions/actions.jpg"
+            },
+            {
+                "title": "Вместе дешевле",
+                "img": "assets/images/example/actions/actions.jpg"
+            },
+            {
+                "title": "При покупке 2 товаров — 3-й в подарок",
+                "img": "assets/images/example/actions/actions.jpg"
+            }
+        ]
+    },
+    "breadcrumbsList": {
+        "class": "hidden-md hidden-sm hidden-xs",
+        "list": [
+            {
+                "href": "main.html",
+                "icon": "home2"
+            },
+            {
+                "text": "Акции",
+                "href": "actions.html"
             }
         ]
     }
