@@ -361,6 +361,7 @@
 
             &-title,
             & .h5 {
+                font-size: 16px;
                 line-height: 15px;
                 font-weight: 800;
                 margin-bottom: 16px;
@@ -483,9 +484,9 @@
             }
 
             &-link {
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 14px;
-                font-weight: 400;
+                font-weight: 500;
                 display: block;
 
                 @media (max-width: $lg) {

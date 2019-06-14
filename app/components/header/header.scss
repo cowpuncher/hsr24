@@ -3,6 +3,7 @@
     position: relative;
     z-index: 100;
     background: $color-white;
+    font-weight: 500;
 
     @media (max-width: $md) {
         margin-bottom: 6px;
