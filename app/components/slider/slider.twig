@@ -12,7 +12,7 @@
 
         {% for item in data.list %}
             <div class="slider{{pr}}__item dark">
-                <img src="{{ item.img }}" srcset="{{ item.img2 }} 320w" alt="{{ item.img_alt }}" class="slider{{pr}}__img">
+                <img src="{{ item.img2 }}" srcset="{{ item.img }} 768w" alt="{{ item.img_alt }}" class="slider{{pr}}__img">
 
                 {% if item.name %}
                     <div class="slider{{pr}}__name">{{ item.name }}</div>

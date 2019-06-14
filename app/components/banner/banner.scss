@@ -32,6 +32,10 @@
         }
     }
 
+    &--inner {
+        margin-top: 17px;
+    }
+
     &__col {
         width: calc(63.75% - 20px);
         position: relative;

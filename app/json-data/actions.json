@@ -1025,25 +1025,26 @@
         ]
     },
     "bannerList": {
+        "class": "banner--inner",
         "slider": {
             "list": [
                 {
-                    "img": "assets/images/example/banner/banner.jpg",
+                    "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 },
                 {
-                    "img": "assets/images/example/banner/banner.jpg",
+                    "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 },
                 {
-                    "img": "assets/images/example/banner/banner.jpg",
+                    "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 },
                 {
-                    "img": "assets/images/example/banner/banner.jpg",
+                    "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
                     "btn": "Подробнее"
                 }
