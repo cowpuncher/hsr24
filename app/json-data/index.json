@@ -20,6 +20,14 @@
         {
             "title": "Акции",
             "href": "actions.html"
+        },
+        {
+            "title": "Акция",
+            "href": "action.html"
+        },
+        {
+            "title": "Поиск",
+            "href": "searching.html"
         }
     ],
     "menuTop": {
@@ -38,7 +46,7 @@
                 "text": "Программа лояльности"
             },
             {
-                "href": "#",
+                "href": "actions.html",
                 "text": "Акции"
             }
         ]

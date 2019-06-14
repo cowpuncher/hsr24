@@ -26,9 +26,11 @@
 	{{ banner.banner(bannerList) }}
 
 	<div class="container">
-		{{ teaser.teaser(teaserList) }}
+        <div class="container__inner">
+            {{ teaser.teaser(teaserList) }}
 
-		{{ actions.actions(actionsList) }}
+            {{ actions.actions(actionsList) }}
+        </div>
 	</div>
 
 {% endblock %}

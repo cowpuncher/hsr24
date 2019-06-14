@@ -1024,65 +1024,6 @@
             }
         ]
     },
-    "bannerList": {
-        "class": "banner--inner",
-        "slider": {
-            "list": [
-                {
-                    "img": "assets/images/example/banner/banner5.jpg",
-                    "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
-                },
-                {
-                    "img": "assets/images/example/banner/banner5.jpg",
-                    "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
-                },
-                {
-                    "img": "assets/images/example/banner/banner5.jpg",
-                    "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
-                },
-                {
-                    "img": "assets/images/example/banner/banner5.jpg",
-                    "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
-                }
-            ]
-        }
-    },
-    "teaserList": {
-        "text": "Ни дня без акции — наш девиз. Каждый день в HSR24 — выгодные цены, скидки и интересные предложения. Следите за нашими новостями!"
-    },
-    "actionsList": {
-        "list": [
-            {
-                "title": "Скидка 20% при покупке от 3 шт. и более",
-                "img": "assets/images/example/actions/actions2.jpg",
-                "class": "dark"
-            },
-            {
-                "title": "Вместе дешевле",
-                "img": "assets/images/example/actions/actions2.jpg",
-                "class": "dark"
-            },
-            {
-                "title": "При покупке 2 товаров — 3-й в подарок",
-                "img": "assets/images/example/actions/actions2.jpg",
-                "class": "dark"
-            },
-            {
-                "title": "Скидка 50%",
-                "img": "assets/images/example/actions/actions2.jpg",
-                "class": "dark"
-            },
-            {
-                "title": "Подарок при покупке",
-                "img": "assets/images/example/actions/actions2.jpg",
-                "class": "dark"
-            }
-        ]
-    },
     "breadcrumbsList": {
         "list": [
             {
@@ -1092,7 +1033,136 @@
             {
                 "text": "Акции",
                 "href": "actions.html"
+            },
+            {
+                "text": "Скидка 20% при покупке от 3 шт. и более",
+                "href": "action.html"
             }
         ]
-    }
+    },
+    "bannerList": {
+        "full": true,
+        "img": "assets/images/example/banner/banner7.jpg",
+        "title": "Скидка 20% при покупке от 3 шт. и более",
+        "titleClass": "text-center",
+        "titleBig": true
+    },
+    "teaserList": {
+        "text": "Ни дня без акции — наш девиз. Каждый день в HSR24 — выгодные цены, скидки и интересные предложения. Следите за нашими новостями!"
+    },
+    "cardList": [
+        {
+            "img": "assets/images/example/card/img8.jpg",
+            "status": "НЕТ В НАЛИЧИЕ",
+            "name": "Колье + браслет «Меридиан»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "Сообщить о поступлении",
+            "articul": "000000",
+            "null": true
+        },
+        {
+            "img": "assets/images/example/card/img12.jpg",
+            "status": "Распродажа",
+            "name": "Колье «Сияние звезд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img13.jpg",
+            "status": "Распродажа",
+            "name": "Колье + серьги «Янтарная палитра» ",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img14.jpg",
+            "status": "Распродажа",
+            "name": "Колье + серьги «Янтарная россыпь»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000"
+        },
+        {
+            "img": "assets/images/example/card/img15.jpg",
+            "name": "Комплект «Созвездие Изумруд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm"
+        },
+        {
+            "img": "assets/images/example/card/img16.jpg",
+            "status": "акция",
+            "name": "Колье + серьги «Янтарный цветок»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm"
+        },
+        {
+            "img": "assets/images/example/card/img17.jpg",
+            "status": "новинка",
+            "name": "Комплект цепь + серьги «Чудесница»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm hidden-md"
+        },
+        {
+            "img": "assets/images/example/card/img18.jpg",
+            "status": "хит продаж",
+            "name": "Комплект «Созвездие Рубин»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm hidden-md"
+        },
+        {
+            "img": "assets/images/example/card/img15.jpg",
+            "name": "Комплект «Созвездие Изумруд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm hidden-md"
+        },
+        {
+            "img": "assets/images/example/card/img19.jpg",
+            "status": "акция",
+            "name": "Комплект «Созвездие Сапфир»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm hidden-md"
+        },
+        {
+            "img": "assets/images/example/card/img8.jpg",
+            "name": "Колье + браслет «Меридиан»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm hidden-md"
+        },
+        {
+            "img": "assets/images/example/card/img12.jpg",
+            "name": "Колье «Сияние звезд»",
+            "priceOld": "1 400 ₽",
+            "price": "1 000 ₽",
+            "btn": "В корзину",
+            "articul": "000000",
+            "class": "hidden-xs hidden-sm hidden-md"
+        }
+    ]
 }

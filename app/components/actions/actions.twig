@@ -1,9 +1,25 @@
 {% macro actions(data) %}
-	<div class="actions">
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+	<div class="actions {% if data.class %}{{ data.class }}{% endif %}">
         <div class="actions__list">
             {% for item in data.list %}
-
+                <a href="#" class="actions__item {% if item.class %}{{ item.class }}{% endif %}">
+                    <div class="actions__img">
+                        <img src="{{ item.img }}" alt="">
+                    </div>
+                    <div class="actions__inner">
+                        <h3 class="actions__title">{{ item.title }}</h3>
+                    </div>
+                </a>
             {% endfor %}
+        </div>
+
+        <div class="elem-more__row">
+            <a href="#" class="elem-more">
+                {{ svg.icon('show-more') }}
+                <span>Показать еще</span>
+            </a>
         </div>
     </div>
 {% endmacro %}

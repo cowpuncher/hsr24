@@ -18,11 +18,12 @@
     {{ banner.banner(bannerList) }}
 
     <div class="container">
-        <div class="container__inner">
             {{ menu.menu(advantagesList) }}
 
             <div class="slider__wrap hidden-lg hidden-xl">
-                <h2 class="elem-title">Популярные категории</h2>
+                <div class="container__inner">
+                    <h2 class="elem-title">Популярные категории</h2>
+                </div>
                 {{ slider.slider(sliderPopular) }}
             </div>
 
@@ -35,7 +36,7 @@
             {{ banner.banner(bannerFull) }}
 
             {{ recommend.recommend(viewList) }}
-        </div>
+
     </div>
 
 {% endblock %}

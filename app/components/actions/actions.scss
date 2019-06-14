@@ -1,3 +1,82 @@
 .actions {
-	
+    padding: 0 5px;
+
+    @media (max-width: $lg) {
+        padding: 0;
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+
+        & + & {
+            margin-top: 23px;
+
+            @media (max-width: $lg) {
+                margin-top: 17px;
+            }
+
+            @media (max-width: $md) {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+        border-radius: 32px;
+        overflow: hidden;
+
+        @media (max-width: $lg) {
+            border-radius: 20px;
+        }
+
+        @media (max-width: $md) {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 36px 37px;
+        z-index: 2;
+
+        @media (max-width: $lg) {
+            padding: 18px 19px;
+        }
+
+        @media (max-width: $md) {
+            padding: 16px 12px;
+        }
+    }
+
+    &__item:hover &__title {
+        color: $color-red;
+    }
+
+    &__title {
+        @media (max-width: $lg) {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
 }

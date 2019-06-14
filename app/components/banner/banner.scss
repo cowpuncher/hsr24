@@ -101,6 +101,23 @@
         }
     }
 
+    &__title {
+        margin-top: 13px;
+
+        @media (max-width: $lg) {
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 2px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 13px;
+            line-height: 16px;
+            margin: 0 auto;
+            max-width: 90%;
+        }
+    }
+
     &__inner {
         position: absolute;
         left: 0;

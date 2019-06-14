@@ -1,17 +1,37 @@
 .breadcrumbs {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     padding-top: 9px;
+    position: relative;
+
+    @media (max-width: $md) {
+        overflow: hidden;
+    }
+
+    .page-not-title & {
+        padding-bottom: 15px;
+    }
+
+    &:after {
+        content: '';
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 67.5%);
+        height: 100%;
+        width: 45px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
     &__item {
         display: flex;
         align-items: center;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 14px;
         letter-spacing: -0.2px;
         color: $color-gray;
         position: relative;
+        white-space: nowrap;
+        flex-shrink: 0;
 
         & + & {
             margin-left: 26px;
@@ -30,7 +50,7 @@
     }
 
     &__text {
-
+        color: $color-base;
     }
 
     &__link {
@@ -103,7 +123,7 @@
 
         &-link {
             display: flex;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 14px;
             letter-spacing: -0.2px;
             color: $color-base;

@@ -65,8 +65,8 @@
         flex-wrap: wrap;
 
         @media (max-width: $lg) {
-            padding-left: 34px;
-            padding-right: 34px;
+            padding-left: 5px;
+            padding-right: 5px;
             margin-bottom: -18px;
         }
 
@@ -74,6 +74,18 @@
             padding-left: 0;
             padding-right: 0;
             margin: 0 -5px -8px;
+        }
+
+        &--inner {
+            @media (max-width: $lg) {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            @media (max-width: $md) {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
 
         &.list {
@@ -280,6 +292,7 @@
                 padding: 0;
                 margin-top: -2px;
                 padding-right: 10px;
+                margin-bottom: 3px;
             }
         }
 
@@ -398,7 +411,7 @@
             @media (max-width: $md) {
                 width: 100%;
                 padding: 0;
-                margin-top: 3px;
+                margin-top: auto;
                 align-items: inherit;
             }
         }
@@ -515,7 +528,7 @@
 
     &__like {
         position: absolute;
-        border: 1px solid $color-base;
+        //border: 1px solid $color-base;
         border-radius: 50%;
         height: 32px;
         width: 32px;
@@ -572,8 +585,8 @@
         }
 
         & .icon {
-            max-width: 80%;
-            max-height: 80%;
+            //max-width: 80%;
+            //max-height: 80%;
             fill: $color-base;
         }
 
@@ -581,7 +594,7 @@
 
         &.active,
         &:hover {
-            border-color: $color-red;
+            //border-color: $color-red;
 
             & .icon {
                 fill: $color-red;

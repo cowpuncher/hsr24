@@ -1,0 +1,17 @@
+.elem-desc {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 33px;
+
+    @media (max-width: $lg) {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 19px;
+    }
+
+    @media (max-width: $md) {
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 23px;
+    }
+}

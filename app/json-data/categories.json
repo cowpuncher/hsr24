@@ -1154,6 +1154,7 @@
         }
     ],
     "filterList": {
+        "top": true,
         "class": "hidden-sm hidden-xs",
         "filter": {
             "name": "Фильтры<span class='hidden-sm hidden-xs'> по параметрам</span>"

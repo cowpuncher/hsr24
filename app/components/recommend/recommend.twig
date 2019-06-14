@@ -3,7 +3,7 @@
     {% import '../../page/_macros/_svg.twig' as svg %}
 
 	<div class="recommend {% if data.class %}{{ data.class }}{% endif %}">
-        <h2 class="elem-title">{{ data.title }}</h2>
+        <div class="container__inner"><h2 class="elem-title">{{ data.title }}</h2></div>
 
         <div class="card__list mobile-list">
             {% for item in data.list %}

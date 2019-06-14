@@ -4,15 +4,11 @@
     padding-top: 8px;
 
     @media (max-width: $lg) {
-        margin-left: 27px;
-        margin-right: 27px;
         padding-top: 5px;
         margin-bottom: 20px;
     }
 
     @media (max-width: $md) {
-        margin-left: 0;
-        margin-right: 0;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -176,7 +172,9 @@
 
     &__wrap &__row {
         width: 100%;
-        margin: 0;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     &__item {
@@ -189,17 +187,19 @@
             width: 100%;
         }
 
-        & + & {
-            margin-left: 25px;
+        margin-right: 25px;
 
-            @media (max-width: $lg) {
-                margin-left: 30px;
-            }
+        @media (max-width: $lg) {
+            margin-right: 30px;
+        }
 
-            @media (max-width: $md) {
-                margin-left: 0;
-                margin-top: 16px;
-            }
+        @media (max-width: $md) {
+            margin-right: 0;
+            margin-top: 16px;
+        }
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 

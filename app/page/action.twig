@@ -1,0 +1,51 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/banner/banner.twig' as banner %}
+{% import '../components/teaser/teaser.twig' as teaser %}
+{% import '../components/card/card.twig' as card %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-action page-not-title{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# Баннер #}
+            {{ banner.banner(bannerList) }}
+
+            {# Тизер #}
+            {{ teaser.teaser(teaserList) }}
+
+            <h2 class="elem-title elem-title--inner">Правила участия в акции</h2>
+
+            <div class="elem-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem. Pretium quam vulputate dignissim suspendisse in. Consequat semper viverra nam libero justo laoreet sit amet. Euismod nisi porta lorem mollis aliquam ut porttitor. Pulvinar mattis nunc sed blandit. Sed risus ultricies tristique nulla. Amet consectetur adipiscing elit ut aliquam. Neque gravida in fermentum et sollicitudin ac. Quis varius quam quisque id diam. Et netus et malesuada fames ac turpis egestas. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada.
+            </div>
+
+            <div class="card__list card__list--inner mobile-list">
+                {% for item in cardList %}
+                    {{ card.card(item) }}
+                {% endfor %}
+            </div>
+
+            <div class="elem-more__row">
+                <a href="#" class="elem-more">
+                    {{ svg.icon('show-more') }}
+                    <span>Показать еще</span>
+                </a>
+            </div>
+        </div>
+	</div>
+
+{% endblock %}

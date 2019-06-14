@@ -66,8 +66,15 @@
         <div class="banner banner--full">
             <img src="{{ data.img }}" alt="">
             <div class="banner__inner banner__inner--big">
-                <h3>{{ data.title }}</h3>
-                <a href="#" class="elem-btn elem-btn--left">{{ data.btn }}</a>
+                {% if data.titleBig %}
+                    <h2 {% if data.titleClass %}class="banner__title {{ data.titleClass }}"{% endif %} >{{ data.title }}</h2>
+                {% else %}
+                    <h3 {% if data.titleClass %}class="{{ data.titleClass }}"{% endif %} >{{ data.title }}</h3>
+                {% endif %}
+
+                {% if data.btn %}
+                    <a href="#" class="elem-btn elem-btn--left">{{ data.btn }}</a>
+                {% endif %}
             </div>
         </div>
     {% endif %}
