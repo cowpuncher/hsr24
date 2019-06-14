@@ -111,8 +111,9 @@
 
         &-title {
             color: $color-red;
-            font-size: 11px;
+            font-size: 12px;
             line-height: 15px;
+            font-weight: 500;
 
             @media (max-width: $md) {
                 font-size: 10px;
@@ -177,14 +178,16 @@
         }
 
         &-desc {
-            font-size: 10.2px;
-            line-height: 12px;
+            font-size: 11px;
+            line-height: 15px;
+            font-weight: 500;
             text-transform: uppercase;
 
             @media (max-width: $lg) {
                 font-size: 13.7px;
                 line-height: 16px;
                 color: $color-gray;
+                font-weight: 400;
             }
 
             @media (max-width: $md) {
