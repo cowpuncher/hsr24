@@ -1,15 +1,5 @@
 {
     "page_title": "HSR",
-    "menuList": [
-        {
-            "title": "Главная",
-            "href": "main.html"
-        },
-        {
-            "title": "Каталог",
-            "href": "catalog.html"
-        }
-    ],
     "menuTop": {
         "prefix": "top",
         "list": [
@@ -26,7 +16,7 @@
                 "text": "Программа лояльности"
             },
             {
-                "href": "#",
+                "href": "actions.html",
                 "text": "Акции"
             }
         ]
@@ -989,60 +979,102 @@
             }
         ]
     },
+    "socialList": {
+        "title": "Мы в социальных сетях",
+        "list": [
+            {
+                "icon": "vk",
+                "alt": "в контакте",
+                "href": "#"
+            },
+            {
+                "icon": "ok",
+                "alt": "однокласники",
+                "href": "#"
+            },
+            {
+                "icon": "youtube",
+                "alt": "youtube",
+                "href": "#"
+            }
+        ]
+    },
+    "payList": {
+        "title": "Способы оплаты",
+        "list": [
+            {
+                "icon": "mastercard",
+                "alt": "mastercard",
+                "href": "#"
+            },
+            {
+                "icon": "visa",
+                "alt": "visa",
+                "href": "#"
+            },
+            {
+                "icon": "mir",
+                "alt": "mir",
+                "href": "#"
+            },
+            {
+                "icon": "halva",
+                "alt": "halva",
+                "href": "#"
+            }
+        ]
+    },
     "breadcrumbsList": {
-        "class": "hidden-md hidden-sm hidden-xs",
         "list": [
             {
                 "href": "main.html",
                 "icon": "home2"
             },
             {
-                "text": "Каталог товаров",
-                "href": "catalog.html"
+                "text": "Товары по запросу «Украшения» ",
+                "href": "searching.html"
+            }
+        ]
+    },
+    "filterList": {
+        "sortList": {
+            "list": [
+                {
+                    "text": "Популярные",
+                    "value": "popular"
+                },
+                {
+                    "text": "Сначала дорогие",
+                    "value": "maxPrice"
+                },
+                {
+                    "text": "Сначала дешевые",
+                    "value": "minPrice"
+                },
+                {
+                    "text": "Хиты продаж",
+                    "value": "hit"
+                },
+                {
+                    "text": "Товары со скидкой",
+                    "value": "sale"
+                },
+                {
+                    "text": "Новинки",
+                    "value": "new"
+                }
+            ]
+        },
+        "count": [
+            {
+                "text": "12",
+                "active": true
             },
             {
-                "text": "Красота и здоровье",
-                "href": "categories.html",
-                "list": [
-                    {
-                        "text": "Товары по уходу",
-                        "href": "#"
-                    }
-                ]
+                "text": "24"
             },
             {
-                "text": "Товары по уходу",
-                "href": "categories.html",
-                "list": [
-                    {
-                        "text": "Уход за кожей",
-                        "href": "#"
-                    },
-                    {
-                        "text": "Уход за волосами",
-                        "href": "#"
-                    },
-                    {
-                        "text": "Уход за ногтями",
-                        "href": "#"
-                    },
-                    {
-                        "text": "Средства личной гигиены",
-                        "href": "#"
-                    },
-                    {
-                        "text": "Мази, крема, БАДы",
-                        "href": "#"
-                    },
-                    {
-                        "text": "Прочее",
-                        "href": "#"
-                    }
-                ]
-            },
-            {
-                "text": "Уход за кожей",
-                "href": "categories.html"
+                "text": "36"
             }
         ]
     },
@@ -1152,283 +1184,5 @@
             "btn": "В корзину",
             "articul": "000000"
         }
-    ],
-    "filterList": {
-        "top": true,
-        "class": "hidden-sm hidden-xs",
-        "filter": {
-            "name": "Фильтры<span class='hidden-sm hidden-xs'> по параметрам</span>"
-        },
-        "btn": [
-            {
-                "text": "Хиты продаж",
-                "href": "#"
-            },
-            {
-                "text": "Товары со скидкой",
-                "href": "#"
-            },
-            {
-                "text": "Новинки",
-                "href": "#"
-            }
-        ],
-        "priceStart": "1000",
-        "priceEnd": "10000",
-        "priceMin": "0",
-        "priceMax": "30000",
-        "sortList": {
-            "list": [
-                {
-                    "text": "Популярные",
-                    "value": "popular"
-                },
-                {
-                    "text": "Сначала дорогие",
-                    "value": "maxPrice"
-                },
-                {
-                    "text": "Сначала дешевые",
-                    "value": "minPrice"
-                },
-                {
-                    "text": "Хиты продаж",
-                    "value": "hit",
-                    "class": "hidden-xl hidden-lg"
-                },
-                {
-                    "text": "Товары со скидкой",
-                    "value": "sale",
-                    "class": "hidden-xl hidden-lg"
-                },
-                {
-                    "text": "Новинки",
-                    "value": "new",
-                    "class": "hidden-xl hidden-lg"
-                }
-            ]
-        },
-        "count": [
-            {
-                "text": "12",
-                "active": true
-            },
-            {
-                "text": "24"
-            },
-            {
-                "text": "36"
-            }
-        ],
-        "colorList": {
-            "title": "Выберите параметры",
-            "title2": "Цвет",
-            "multiple": true,
-            "color": true,
-            "attr": "data-color data-filter='data-filter-color'",
-            "list": [
-                {
-                    "color": "#ffffff",
-                    "class": "light",
-                    "title": "Белый",
-                    "value": "#ffffff"
-                },
-                {
-                    "color": "#101010",
-                    "class": "dark",
-                    "title": "Черный",
-                    "value": "#101010"
-                },
-                {
-                    "color": "#F61D2A",
-                    "title": "Красный",
-                    "value": "#F61D2A"
-                },
-                {
-                    "color": "#C0FBF8",
-                    "title": "Голубой",
-                    "value": "#C0FBF8"
-                },
-                {
-                    "color": "#3085F8",
-                    "title": "Синий",
-                    "value": "#3085F8"
-                },
-                {
-                    "color": "#C6C6C6",
-                    "title": "Серый",
-                    "value": "#C6C6C6"
-                },
-                {
-                    "color": "#D155FF",
-                    "title": "Фиолетовый",
-                    "value": "#D155FF"
-                },
-                {
-                    "color": "#FFA51F",
-                    "title": "Оранжевый",
-                    "value": "#FFA51F"
-                },
-                {
-                    "color": "#FFEC44",
-                    "title": "Желтый",
-                    "value": "#FFEC44"
-                },
-                {
-                    "color": "#FBFF4F",
-                    "title": "Лимонный",
-                    "value": "#FBFF4F"
-                },
-                {
-                    "color": "#78FFF8",
-                    "title": "Бирюзовый",
-                    "value": "#78FFF8"
-                },
-                {
-                    "color": "#004DB5",
-                    "title": "Темно-синий",
-                    "value": "#004DB5"
-                },
-                {
-                    "color": "#FD16AD",
-                    "title": "Фуксия",
-                    "value": "#FD16AD"
-                },
-                {
-                    "color": "#C0002E",
-                    "title": "Бордовый",
-                    "value": "#C0002E"
-                },
-                {
-                    "color": "#70001B",
-                    "title": "Темно-бордовый",
-                    "value": "#70001B"
-                },
-                {
-                    "color": "#7F8000",
-                    "title": "Оливковый",
-                    "value": "#7F8000"
-                },
-                {
-                    "color": "#4C6D62",
-                    "title": "Серо-зеленый",
-                    "value": "#4C6D62"
-                },
-                {
-                    "color": "#008887",
-                    "title": "Морская волна",
-                    "value": "#008887"
-                },
-                {
-                    "color": "#4EF25E",
-                    "title": "Зеленый",
-                    "value": "#4EF25E"
-                },
-                {
-                    "color": "linear-gradient(180deg, #D29D0B 0%, #E5C652 24.48%, #F7EF85 49.48%, #C98E0D 56.77%, #D6B244 69.27%, #FEF687 100%)",
-                    "title": "Золотой",
-                    "value": "linear-gradient(180deg, #D29D0B 0%, #E5C652 24.48%, #F7EF85 49.48%, #C98E0D 56.77%, #D6B244 69.27%, #FEF687 100%)",
-                    "border": "#D5A82D"
-                },
-                {
-                    "color": "linear-gradient(180deg, #848484 0%, #D9D9D9 24.48%, #FAFAFA 49.48%, #AEAEAE 56.77%, #D5D5D5 69.27%, #EEEEEE 100%)",
-                    "title": "Серебряный",
-                    "value": "linear-gradient(180deg, #848484 0%, #D9D9D9 24.48%, #FAFAFA 49.48%, #AEAEAE 56.77%, #D5D5D5 69.27%, #EEEEEE 100%)",
-                    "border": "#BDBDBD"
-                }
-            ]
-        },
-        "sizeList": {
-            "multiple": true,
-            "title": "Выберите параметры",
-            "title2": "Размер",
-            "attr": "data-size data-filter='data-filter-size'",
-            "list": [
-                {
-                    "text": "Параметр 1",
-                    "value": "42"
-                },
-                {
-                    "text": "Параметр 2",
-                    "value": "43"
-                },
-                {
-                    "text": "Параметр 3",
-                    "value": "44"
-                }
-            ]
-        },
-        "availabilityList": {
-            "title": "Выберите параметры",
-            "title2": "Наличие",
-            "list": [
-                {
-                    "text": "Да",
-                    "value": "Да"
-                },
-                {
-                    "text": "Нет",
-                    "value": "Нет"
-                }
-            ]
-        },
-        "viewIcon": true
-    },
-    "socialList": {
-        "title": "Мы в социальных сетях",
-        "list": [
-            {
-                "icon": "vk",
-                "alt": "в контакте",
-                "href": "#"
-            },
-            {
-                "icon": "ok",
-                "alt": "однокласники",
-                "href": "#"
-            },
-            {
-                "icon": "youtube",
-                "alt": "youtube",
-                "href": "#"
-            }
-        ]
-    },
-    "payList": {
-        "title": "Способы оплаты",
-        "list": [
-            {
-                "icon": "mastercard",
-                "alt": "mastercard",
-                "href": "#"
-            },
-            {
-                "icon": "visa",
-                "alt": "visa",
-                "href": "#"
-            },
-            {
-                "icon": "mir",
-                "alt": "mir",
-                "href": "#"
-            },
-            {
-                "icon": "halva",
-                "alt": "halva",
-                "href": "#"
-            }
-        ]
-    },
-    "reviewsList": {
-        "list": [
-            {
-                "name": "Мария",
-                "rating": "2.5",
-                "date": "19.03.2019",
-                "like": "1",
-                "dislike": "0",
-                "text": "Доброго всем времени суток. Пару лет назад сестра подарила мне овощерезку Найсер Дайсер. Сначала я не оценила подарок. Пока не решила приготовить на ужин винегрет. Я потратила в два раза меньше времени на нарезку овощей. Все ровненькое, аккуратненькое. У меня всегда были проблемы с ровной нарезкой кубиков. А теперь нарезала. Я потратила в два раза меньше времени на нарезку овощей. Все ровненькое, аккуратненькое..."
-            }
-        ]
-    }
+    ]
 }

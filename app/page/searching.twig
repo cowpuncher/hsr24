@@ -1,0 +1,43 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/filter/filter.twig' as filters %}
+{% import '../components/card/card.twig' as card %}
+{% import '../components/pagination/pagination.twig' as pagination %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-index{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            <h2 class="elem-title elem-title--inner elem-title--row">
+                <span>Товары по запросу «Украшения»</span><span class="elem-title__count hidden-xs">Найдено товаров: 12</span>
+            </h2>
+
+            {# фильтр #}
+            {{ filters.filter(filterList) }}
+
+            {# список карточек #}
+            <div class="card__list list" data-card-list>
+                {% for item in cardClist %}
+                    {{ card.card(item) }}
+                {% endfor %}
+            </div>
+
+            {# пагинация #}
+            {{ pagination.pagination() }}
+        </div>
+	</div>
+
+{% endblock %}
