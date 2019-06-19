@@ -1,0 +1,17 @@
+{% macro priceList(data) %}
+	<div class="price-list">
+        {% for item in data.list %}
+            <div class="price-list__item {% if item.class %}{{ item.class }}{% endif %}">
+                <div class="price-list__title">{{ item.title }}</div>
+                <div class="price-list__price">{{ item.price }}</div>
+
+                {% if item.sale %}
+                    <div class="price-list__sale dark">
+                        <div class="price-list__sale-title">{{ item.saleTitle }}</div>
+                        <div class="price-list__sale-price">{{ item.sale }}</div>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}

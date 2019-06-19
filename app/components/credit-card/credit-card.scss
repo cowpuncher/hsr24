@@ -1,0 +1,112 @@
+.credit-card {
+	background: $color-smoke;
+    border: 1px solid$color-gray-light;
+    border-radius: 16px;
+    width: 312px;
+    padding: 19px 30px 19px;
+    margin-top: 16px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    &--back {
+        margin-left: -29%;
+        z-index: 1;
+        padding-left: 179px;
+        padding-top: 79px;
+        padding-right: 15px;
+
+        &:before {
+            height: 37px;
+            content: '';
+            display: block;
+            background: $color-base;
+            position: absolute;
+            left: 0;
+            top: 24px;
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+
+    &__label {
+        font-size: 12px;
+        line-height: 15px;
+        color: $color-gray;
+        font-weight: 800;
+        margin-bottom: 4px;
+        display: block;
+        width: 100%;
+    }
+
+    &__item {
+        position: relative;
+        padding-right: 29px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & .elem-input {
+            border-radius: 4px;
+            height: 28px;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 0 8px;
+        }
+    }
+
+    &--back &__item {
+
+        & .elem-input {
+            width: 65px;
+            padding: 0;
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__row {
+        display: inline-flex;
+        padding-right: 29px;
+        position: relative;
+    }
+
+    &__row &__item {
+        padding-right: 0;
+        width: 40px;
+        margin-bottom: 0;
+
+        & .elem-input {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    &__row &__item + &__item {
+        margin-left: 16px;
+
+        &:before {
+            content: '/';
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-gray;
+            position: absolute;
+            left: -12px;
+            top: 3px;
+        }
+    }
+
+    &__desc {
+        font-size: 12px;
+        line-height: 14px;
+        color: $color-gray;
+        margin-top: 9px;
+    }
+}

@@ -1,0 +1,14 @@
+{% macro orderList(data) %}
+    <div class="order-list" data-sticky>
+        <div class="order-list__title">{{ data.title }}</div>
+
+        <div class="order-list__list">
+            {% for item in data.list %}
+                <div class="order-list__item">
+                    <div class="order-list__name">{{ item.name }}</div>
+                    <div class="order-list__count">{{ item.count }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

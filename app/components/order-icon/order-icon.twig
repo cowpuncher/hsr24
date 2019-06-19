@@ -1,0 +1,49 @@
+{% macro orderIcon(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+    {% import '../pay/pay.twig' as pay %}
+    {% import '../credit-card/credit-card.twig' as creditCard %}
+
+    <div class="order-icon">
+        <div class="order-icon__list row">
+            {% for item in data.list %}
+                <a href="#{% if item.popup %}{{ item.popup }}{% endif %}" class="order-icon__item {% if item.class %}{{ item.class }}{% endif %}" data-order-icon {% if item.popup %}data-popup-modal{% endif %}{% if item.pay %}data-detail-pay="{{item.pay}}"{% endif %}>
+                    <div class="order-icon__inner">
+                        <div class="order-icon__icon">
+                            {{ svg.icon(item.icon) }}
+                        </div>
+                        <div class="order-icon__info">
+                            <label class="elem-radio">
+                                <input type="radio" class="elem-radio__input" name="{{ data.radioName }}">
+                                <span class="elem-radio__span">{{ item.radio }}</span>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+
+        {% if data.popup %}
+            <div class="order-icon__detail" data-order-detail>
+                <div class="order-icon__detail-title">Адрес доставки</div>
+                <div class="order-icon__detail-text" data-order-detail-text></div>
+                <div class="order-icon__detail-btn">
+                    <a href="#pvz" class="elem-btn elem-btn--dark" data-popup-modal>Выбрать другой адрес доставки</a>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if data.pay %}
+            <div class="order-icon__pay" data-order-pay>
+                <h3 class="light">Данные банковской карты</h3>
+
+                <div class="order-icon__pay-title">Мы принимаем</div>
+                <div class="order-icon__pay-list">
+                    {{pay.pay(data.payList)}}
+                </div>
+                <div class="order-icon__pay-card">
+                    {{ creditCard.creditCard() }}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endmacro %}

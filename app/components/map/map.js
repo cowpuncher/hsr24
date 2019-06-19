@@ -42,6 +42,8 @@ class Map {
                 }
 
             });
+
+
         }
 
         $('[data-open-info]').click(function() {

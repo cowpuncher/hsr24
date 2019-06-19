@@ -1,0 +1,11 @@
+.page-order {
+    &__btn {
+        margin-top: 40px;
+
+        & .elem-btn {
+            height: 52px;
+            width: 276px;
+            text-align: center;
+        }
+    }
+}

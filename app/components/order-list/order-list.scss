@@ -1,0 +1,74 @@
+.order-list {
+    position: relative;
+    background: $color-smoke;
+    border-radius: 12px;
+    padding: 24px 25px;
+    top: 0;
+    left: 0;
+
+    &.fixed {
+        position: fixed;
+        left: 15px;
+        top: 12px;
+    }
+
+    &.bottom {
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-gray;
+        font-weight: 800;
+        letter-spacing: 0.1px;
+    }
+
+    &__list {
+        counter-reset: item2;
+    }
+
+    &__item {
+        padding-left: 32px;
+        position: relative;
+
+        &:before {
+            content: counter(item2);
+            counter-increment: item2;
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 800;
+            color: $color-white;
+            background: $color-gray;
+        }
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    &__name {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 6px;
+    }
+
+    &__count {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 800;
+        color: $color-gray;
+    }
+}

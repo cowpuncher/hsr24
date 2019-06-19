@@ -1,0 +1,62 @@
+.elem-hint {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+
+    &--small {
+        right: -5px;
+        bottom: 2px;
+    }
+
+    &__text {
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        width: 172px;
+        right: -8px;
+        padding-bottom: 30px;
+
+        &-in {
+            background: $color-white;
+            border: 1px solid $color-gray;
+            border-radius: 4px;
+            font-size: 12px;
+            line-height: 14px;
+            position: relative;
+            padding: 7px 3px;
+            text-align: center;
+
+            &:after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 12px 6px 0 6px;
+                border-color: $color-gray transparent transparent transparent;
+                position: absolute;
+                bottom: -12px;
+                right: 20px;
+            }
+
+            & a {
+                color: $color-red;
+            }
+        }
+    }
+
+    &:hover &__text {
+        display: block;
+    }
+
+    &__icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    &--small &__icon {
+        & .icon {
+            height: 24px;
+            width: 24px;
+        }
+    }
+}

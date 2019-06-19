@@ -97,7 +97,8 @@
     &-back,
     &-arrow-back2,
     &-garbage-can,
-    &-24h {
+    &-24h,
+    &-q {
         height: 32px;
         width: 32px;
     }
@@ -190,5 +191,26 @@
     &-404 {
         width: 379px;
         height: 142px;
+    }
+
+    &-courier {
+        height: 78px;
+        width: 65px;
+    }
+
+    &-pochta {
+        height: 76px;
+        width: 76px;
+    }
+
+    &-pvz {
+        height: 80px;
+        width: 60px;
+    }
+
+    &-offline-payment,
+    &-online-payment {
+        height: 92px;
+        width: 92px;
     }
 }

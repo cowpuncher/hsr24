@@ -28,6 +28,10 @@
         {
             "title": "Поиск",
             "href": "searching.html"
+        },
+        {
+            "title": "Оформление заказа",
+            "href": "order.html"
         }
     ],
     "menuTop": {

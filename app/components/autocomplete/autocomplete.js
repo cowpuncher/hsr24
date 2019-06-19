@@ -85,8 +85,6 @@ class Autocomplete {
 
         if (this.autocompleteCity.length) {
             var states = [
-                'Перчатки «Гениальный садовод»',
-                'Садовый опрыскиватель',
                 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa',
                 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland',
                 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',
@@ -100,13 +98,13 @@ class Autocomplete {
 
             $('[data-autocomplete-city]').autocomplete({
                 source: states,
-                appendTo: '.elem-item',
+                appendTo: '.ui-autocomplete__wrap',
                 minLength: 1,
                 open: function( event, ui ) {
-                    //$('.elem-item').show();
+                    $('.ui-autocomplete__wrap').show();
                 },
                 close: function( event, ui ) {
-                    //$('.elem-item').hide();
+                    $('.ui-autocomplete__wrap').hide();
                 }
             });
         }

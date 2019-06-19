@@ -1,3 +1,104 @@
 .map {
     position: relative;
+
+    &--popup {
+        height: 478px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &--popup-sm {
+        height: 456px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &__marker {
+        height: 29px;
+        width: 21px;
+    }
+
+    & .ymaps-image-with-content-content {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    &__title {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 16px;
+    }
+
+    &__time {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: -8px;
+        padding-left: 43px;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 27C22.0751 27 27 22.0751 27 16C27 9.92487 22.0751 5 16 5C9.92487 5 5 9.92487 5 16C5 22.0751 9.92487 27 16 27ZM16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' fill='%23101010'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5471 7.94507C15.8233 7.94507 16.0471 8.16893 16.0471 8.44507V16.1037L23.2907 18.9346C23.5479 19.0351 23.6749 19.3251 23.5744 19.5823C23.4739 19.8395 23.1839 19.9665 22.9267 19.866L15.3651 16.9108C15.1733 16.8358 15.0471 16.651 15.0471 16.4451V8.44507C15.0471 8.16893 15.271 7.94507 15.5471 7.94507Z' fill='%23101010'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: 2px 8px;
+        background-size: 32px auto;
+
+        & b {
+            margin-right: 4px;
+        }
+
+        &-item {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__btn {
+        margin-top: 24px;
+        padding: 0 4px;
+    }
+
+    & .ymaps-shadows-pane {
+        display: none;
+    }
+
+    & .ymaps-layers-pane {
+        filter: grayscale(100%);
+    }
+
+    & .ymaps-b-balloon {
+        & .ymaps-b-balloon__tr,
+        & .ymaps-b-balloon__tl,
+        & .ymaps-b-balloon__bl,
+        & .ymaps-b-balloon__br,
+        & .ymaps-b-balloon__close {
+            display: none;
+        }
+
+        & .ymaps-b-balloon__content {
+            background: $color-white;
+            border: 0.8px solid #C6C6C6;
+            border-radius: 4px;
+            position: relative;
+
+            &:after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 12px 6px 0 6px;
+                border-color: $color-gray transparent transparent transparent;
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                margin-left: -6px;
+            }
+        }
+
+        & .ymaps-b-balloon__content-holster {
+            padding: 15px 15px;
+        }
+    }
 }

@@ -1,0 +1,87 @@
+.order-icon {
+    position: relative;
+
+    &__list {
+        margin-left: -19px;
+        margin-right: -19px;
+    }
+
+    &__item {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $color-gray-light;
+        border-radius: 12px;
+        padding: 21px 20px 14px;
+
+        .active & {
+            border-color: $color-red;
+        }
+    }
+
+    &__info {
+        font-size: 12px;
+        line-height: 15px;
+
+        & .elem-radio {
+            font-weight: 800;
+            margin-bottom: 0;
+
+            &__span {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    &__icon {
+        margin-bottom: 14px;
+        display: flex;
+        height: 92px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__detail {
+        display: none;
+        border: 1px solid $color-gray-light;
+        border-radius: 8px;
+        padding: 24px;
+        margin-top: 40px;
+        font-size: 12px;
+        line-height: 14px;
+
+        &-title {
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        &-btn {
+            margin-top: 18px;
+
+            & .elem-btn {
+                padding: 0 55px;
+            }
+        }
+    }
+
+    &__pay {
+        margin-top: 40px;
+        display: none;
+
+        &-title {
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 800;
+            color: $color-gray;
+            margin-top: -3px;
+            margin-bottom: 8px;
+        }
+    }
+}

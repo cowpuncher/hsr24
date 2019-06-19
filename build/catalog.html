@@ -4369,6 +4369,50 @@
     </form>
 </div>
 
+<div id="pvz" class="popup popup--lg mfp-hide">
+    <h2 class="popup__title popup__title--map text-center">Выберите пункт выдачи заказа</h2>
+    <div class="popup__search">
+        <input type="text" class="elem-input elem-input--city" placeholder="Поиск города" data-autocomplete-city>
+        <div class="ui-autocomplete__wrap"></div>
+    </div>
+
+    <div class="popup__map">
+        <div class="map map--popup" id="map10" data-map="city"></div>
+    </div>
+</div>
+
+<div id="courier" class="popup popup--xl mfp-hide">
+    <h2 class="popup__title popup__title--map text-center">Укажите адрес доставки</h2>
+
+    <div class="row">
+        <div class="col-12 col-xl-4 col-lg-4">
+            <div class="elem-item elem-item--md">
+                <label class="elem-label">Город</label>
+                <input type="text" class="elem-input">
+            </div>
+            <div class="elem-item elem-item--md">
+                <label class="elem-label">Улица</label>
+                <input type="text" class="elem-input">
+            </div>
+            <div class="elem-item elem-item--md">
+                <label class="elem-label">Дом</label>
+                <input type="text" class="elem-input">
+            </div>
+            <div class="elem-item elem-item--md">
+                <label class="elem-label">Квартира</label>
+                <input type="text" class="elem-input">
+            </div>
+            <div class="elem-item  elem-item--last">
+                <a href="#" class="elem-btn elem-btn--full" data-courier-adress>Привезти сюда</a>
+            </div>
+        </div>
+        <div class="col-12 col-xl-8 col-lg-8">
+            <div class="popup__map">
+                <div class="map map--popup map--popup-sm" id="map11" data-map></div>
+            </div>
+        </div>
+    </div>
+</div>
 	</div> <!-- page-wrapper end -->
 
 	<!-- JavaScript files placed at the end of the document so the pages load faster

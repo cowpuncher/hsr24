@@ -22,6 +22,49 @@ $('select').each(function() {
     });
 });
 
+if ($('[data-sticky]').length) {
+    $('[data-sticky]').each(function() {
+        var el = $(this);
+        var offset = el.parent().offset().top + 12;
+        var offsetLeft = el.parent().offset().left + 12;
+        var elWidth = el.parent().width();
+        var content = el.parents('[data-sticky-content]');
+        var maxScroll = content.offset().top + content.height() - el.height();
+        var ww = $(window).width();
+
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            offset = el.parent().offset().top + 12;
+            maxScroll = content.offset().top + content.height() - el.height();
+            offsetLeft = el.parent().offset().left + 12;
+            elWidth = el.parent().width();
+
+            if (ww > 767) {
+                if (scrollTop >= offset) {
+                    if (scrollTop <= maxScroll) {
+                        el.addClass('fixed');
+                        el.removeClass('bottom');
+                        el.css({'width': elWidth + 'px'});
+                        el.css({'left': offsetLeft + 'px'});
+                    } else {
+                        el.addClass('bottom');
+                        el.removeClass('fixed');
+                        el.removeAttr('style');
+                    }
+                } else {
+                    el.removeClass('fixed');
+                    el.removeClass('bottom');
+                    el.removeAttr('style');
+                }
+            } else {
+                el.removeClass('fixed');
+                el.removeClass('bottom');
+                el.removeAttr('style');
+            }
+        });
+    });
+}
+
 $(window).resize(function() {
     var ww = $(window).width();
     this.console.log(ww);
@@ -48,12 +91,48 @@ $(window).resize(function() {
     setTimeout(() => {
         $('select').selectpicker('refresh');
     }, 1000);
+
+    setTimeout(() => {
+        var scrollTop = $(window).scrollTop();
+        ww = $(window).width();
+        offset = el.parent().offset().top + 12;
+        maxScroll = content.offset().top + content.height() - el.height();
+        elWidth = el.parent().width();
+
+        if (ww > 767) {
+
+            if (scrollTop >= offset) {
+                offsetLeft = el.parent().offset().left + 12;
+                elWidth = el.parent().width();
+                maxScroll = content.offset().top + content.height() - el.height();
+                ww = $(window).width();
+
+                if (scrollTop <= maxScroll) {
+                    el.addClass('fixed');
+                    el.removeClass('bottom');
+                    el.css({'width': elWidth + 'px'});
+                    el.css({'left': offsetLeft + 'px'});
+                } else {
+                    el.addClass('bottom');
+                    el.removeClass('fixed');
+                    el.removeAttr('style');
+                }
+            } else {
+                el.removeClass('fixed');
+                el.removeClass('bottom');
+                el.removeAttr('style');
+            }
+        } else {
+            el.removeClass('fixed');
+        }
+
+    }, 200);
 });
 
 // маска в инпутах
 $('[data-date]').mask("99/99/9999");
 $('[data-phone]').mask("+7 (999) 999-99-99");
-$('[data-tin]').mask("99-9999999");
+$('[data-card-num]').mask("9999 9999 9999 9999");
 $('[data-ssn]').mask("999-99-9999");
 
 $('[data-date-completed]').mask("99/99/9999", {

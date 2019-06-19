@@ -1,0 +1,39 @@
+{% macro creditCard(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+    <div class="credit-card__inner">
+        <div class="credit-card">
+            <div class="credit-card__item">
+                <label class="credit-card__label">Номер карты</label>
+                <input type="text" class="elem-input" name="number" placeholder="XXXX XXXX XXXX XXXX" data-card-num>
+                {# <div class="elem-hint elem-hint--small">
+                    <div class="elem-hint__icon">
+                        {{ svg.icon('q') }}
+                    </div>
+                </div> #}
+            </div>
+            <div class="credit-card__item">
+                <label class="credit-card__label">Срок действия</label>
+                <div class="credit-card__row">
+                    <div class="credit-card__item">
+                        <input type="text" class="elem-input" name="mounth" placeholder="ММ" data-card-nounth maxlength="2">
+                    </div>
+                    <div class="credit-card__item">
+                        <input type="text" class="elem-input" name="year" placeholder="ГГ" data-card-year maxlength="2">
+                    </div>
+                </div>
+            </div>
+            <div class="credit-card__item">
+                <label class="credit-card__label">Имя и фамилия владельца карты</label>
+                <input type="text" class="elem-input" name="name" placeholder="ЛАТИНИЦЕЙ">
+            </div>
+        </div>
+        <div class="credit-card credit-card--back">
+            <div class="credit-card__item">
+                <label class="credit-card__label">CVC/CVV</label>
+                <input type="text" class="elem-input" name="code" placeholder="XXX" data-card-cvc>
+            </div>
+            <div class="credit-card__desc">Последние 3 цифры кода на полосе для подписи</div>
+        </div>
+    </div>
+{% endmacro %}
