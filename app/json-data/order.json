@@ -1047,19 +1047,19 @@
             {
                 "icon": "courier",
                 "radio": "Курьер",
-                "class": "col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12",
+                "class": "col-12 col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12",
                 "popup": "courier"
             },
             {
                 "icon": "pochta",
                 "radio": "Почта России",
-                "class": "col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12",
+                "class": "col-12 col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12",
                 "popup": "pvz"
             },
             {
                 "icon": "pvz",
                 "radio": "Самовывоз",
-                "class": "col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12",
+                "class": "col-12 col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12",
                 "popup": "pvz"
             }
         ]

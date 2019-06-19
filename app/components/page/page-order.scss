@@ -2,10 +2,21 @@
     &__btn {
         margin-top: 40px;
 
+        @media (max-width: $lg) {
+            margin-top: 28px;
+        }
+
         & .elem-btn {
             height: 52px;
             width: 276px;
             text-align: center;
+
+            @media (max-width: $lg) {
+                height: 44px;
+                width: 208px;
+                font-size: 13px;
+                line-height: 16px;
+            }
         }
     }
 }

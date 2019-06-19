@@ -24,17 +24,17 @@
 
             <div class="row" data-sticky-content>
                 <div class="col-12 col-xl-6 col-lg-6">
-                    <h3 class="light">Ваши данные</h3>
+                    <h3 class="light h3 h3--lg">Ваши данные</h3>
 
                     <div class="row">
-                        <div class="col-12 col-xl-6 col-lg-6">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">Имя</label>
                                 <input type="text" class="elem-input" value="Екатерина">
                             </div>
                         </div>
 
-                        <div class="col-12 col-xl-6 col-lg-6">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">Фамилия</label>
                                 <input type="text" class="elem-input" value="Могильникова">
@@ -43,14 +43,14 @@
                     </div>
 
                     <div class="row elem-item__row">
-                        <div class="col-12 col-xl-6 col-lg-6">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">E-mail</label>
                                 <input type="email" class="elem-input" value="kateika8@mail.ru">
                             </div>
                         </div>
 
-                        <div class="col-12 col-xl-6 col-lg-6">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">Телефон</label>
                                 <input type="tel" class="elem-input" value="+7 (926) 218-88-10" disabled>
@@ -68,25 +68,37 @@
                         </div>
                     </div>
 
-                    <h3 class="light">Выберите способ доставки</h3>
+                    <h3 class="light h3 h3--lg">Выберите способ доставки</h3>
                     {{ orderIcon.orderIcon(orderIconList) }}
+
+                    <div class="hidden-lg hidden-xl">
+                        <div class="row">
+                            <div class="col-12 col-md-9">
+                                {{ ordersList.orderList(orderList) }}
+                            </div>
+                        </div>
+                    </div>
 
                     {# Стоимость #}
                     {{ priceList.priceList(orderPriceList) }}
 
-                    <h3 class="light">Выберите способ оплаты</h3>
-                    {{ orderIcon.orderIcon(orderIconList2) }}
+                    <h3 class="light h3 h3--lg">Выберите способ оплаты</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-9 col-lg-12 col-xl-12">
+                            {{ orderIcon.orderIcon(orderIconList2) }}
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-xl-6 col-lg-6">
+                <div class="col-12 col-xl-6 col-lg-6 hidden-md hidden-sm hidden-xs">
                     {{ ordersList.orderList(orderList) }}
                 </div>
             </div>
 
             <div class="row page-order__btn">
-                <div class="col-12 col-xl-6 col-lg-6 justify-content-end d-flex">
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 justify-content-end d-flex">
                     <a href="#" class="elem-btn elem-btn--light elem-btn--gray bold">Назад в корзину</a>
                 </div>
-                <div class="col-12 col-xl-6 col-lg-6">
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                     <button class="elem-btn">Сделать заказ</button>
                 </div>
             </div>

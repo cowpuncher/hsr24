@@ -3,6 +3,11 @@
     right: 8px;
     bottom: 10px;
 
+    @media (max-width: $lg) {
+        right: 6px;
+        bottom: 6px;
+    }
+
     &--small {
         right: -5px;
         bottom: 2px;
@@ -16,6 +21,12 @@
         right: -8px;
         padding-bottom: 30px;
 
+        @media (max-width: $lg) {
+            width: 154px;
+            right: -6px;
+            padding-bottom: 22px;
+        }
+
         &-in {
             background: $color-white;
             border: 1px solid $color-gray;
@@ -25,6 +36,14 @@
             position: relative;
             padding: 7px 3px;
             text-align: center;
+
+            @media (max-width: $lg) {
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0.1px;
+                border-radius: 3px;
+                padding: 4px 3px;
+            }
 
             &:after {
                 content: '';
@@ -36,6 +55,10 @@
                 position: absolute;
                 bottom: -12px;
                 right: 20px;
+
+                @media (max-width: $lg) {
+                    right: 15px;
+                }
             }
 
             & a {

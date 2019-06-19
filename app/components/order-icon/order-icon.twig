@@ -23,22 +23,27 @@
         </div>
 
         {% if data.popup %}
-            <div class="order-icon__detail" data-order-detail>
-                <div class="order-icon__detail-title">Адрес доставки</div>
-                <div class="order-icon__detail-text" data-order-detail-text></div>
-                <div class="order-icon__detail-btn">
-                    <a href="#pvz" class="elem-btn elem-btn--dark" data-popup-modal>Выбрать другой адрес доставки</a>
+            <div class="row">
+                <div class="col-12 col-md-9 col-lg-12 col-xl-12">
+                    <div class="order-icon__detail" data-order-detail>
+                        <div class="order-icon__detail-title">Адрес доставки</div>
+                        <div class="order-icon__detail-text" data-order-detail-text></div>
+                        <div class="order-icon__detail-btn">
+                            <a href="#pvz" class="elem-btn elem-btn--dark" data-popup-modal>Выбрать другой адрес доставки</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         {% endif %}
 
         {% if data.pay %}
             <div class="order-icon__pay" data-order-pay>
-                <h3 class="light">Данные банковской карты</h3>
-
-                <div class="order-icon__pay-title">Мы принимаем</div>
-                <div class="order-icon__pay-list">
-                    {{pay.pay(data.payList)}}
+                <h3 class="light h3 h3--lg">Данные банковской карты</h3>
+                <div class="order-icon__pay-info">
+                    <div class="order-icon__pay-title">Мы принимаем</div>
+                    <div class="order-icon__pay-list">
+                        {{pay.pay(data.payList)}}
+                    </div>
                 </div>
                 <div class="order-icon__pay-card">
                     {{ creditCard.creditCard() }}

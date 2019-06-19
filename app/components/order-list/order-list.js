@@ -5,7 +5,12 @@ class OrderList {
 	}
 
 	 initialize() {
+        $('[data-order-select]').click(function(e) {
+            var el = $(this);
+            el.parent().toggleClass('open');
 
+            e.preventDefault();
+        });
 	}
 }
 

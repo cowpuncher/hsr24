@@ -213,35 +213,42 @@ class Popap {
                             }
                           ];
 
-                          $('[data-autocomplete-city]').autocomplete({
-                            source: states,
-                            appendTo: '.ui-autocomplete__wrap',
-                            minLength: 1,
-                            open: function( event, ui ) {
-                                $('.ui-autocomplete__wrap').show();
-                            },
-                            close: function( event, ui ) {
-                                $('.ui-autocomplete__wrap').hide();
-                            },
-                            select: function (event, ui) {
-                                var x = parseFloat(ui.item.x);
-                                var y = parseFloat(ui.item.y);
+                          autocompleteCity.each(function() {
+                            var el = $(this);
 
-                                //myMap.setZoom(10);
+                            el.autocomplete({
+                                source: states,
+                                appendTo: '.ui-autocomplete__wrap',
+                                minLength: 1,
+                                open: function( event, ui ) {
+                                    $('.ui-autocomplete__wrap').show();
+                                },
+                                close: function( event, ui ) {
+                                    $('.ui-autocomplete__wrap').hide();
+                                },
+                                select: function (event, ui) {
+                                    var x = parseFloat(ui.item.x);
+                                    var y = parseFloat(ui.item.y);
 
-                                setTimeout(() => {
-                                    myMap.setCenter([x,y], 12, {
-                                        //checkZoomRange: true
-                                    });
-                                }, 1000);
+                                    //myMap.setZoom(10);
 
-                                // setTimeout(() => {
-                                //     myMap.setZoom(12);
-                                // }, 2000);
+                                    console.log(x + ' ' + y);
 
-                                return false;
-                            }
+                                    setTimeout(() => {
+                                        myMap.setCenter([x,y], 12, {
+                                            checkZoomRange: true
+                                        });
+                                    }, 1000);
+
+                                    // setTimeout(() => {
+                                    //     myMap.setZoom(12);
+                                    // }, 2000);
+
+                                    return false;
+                                }
+                            });
                         });
+
                     }
                 },
                 close: function() {

@@ -2,8 +2,17 @@
     padding-right: 5px;
     margin-bottom: 40px;
 
+    @media (max-width: $lg) {
+        padding-right: 0;
+        margin-bottom: 28px;
+    }
+
     * + & {
         margin-top: 41px;
+
+        @media (max-width: $lg) {
+            margin-top: 33px;
+        }
     }
 
 	&__item {
@@ -13,12 +22,20 @@
 
         & + & {
             margin-top: 14px;
+
+            @media (max-width: $lg) {
+                margin-top: 13px;
+            }
         }
 
         &.total {
             border-top: 1px solid $color-gray-light;
             padding-top: 16px;
             margin-top: 11px;
+
+            @media (max-width: $lg) {
+                margin-top: 19px;
+            }
         }
     }
 
@@ -26,6 +43,11 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 800;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 16px;
+        }
 
         .total & {
             font-size: 24px;
@@ -39,10 +61,21 @@
         line-height: 20px;
         font-family: $fons-lato;
 
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 16px;
+            font-family: $font-base;
+            font-weight: 800;
+        }
+
         .total & {
             font-size: 22px;
             line-height: 26px;
             margin-left: auto;
+
+            @media (max-width: $lg) {
+                font-size: 24px;
+            }
         }
     }
 
@@ -57,10 +90,22 @@
         align-items: center;
         padding: 6px 14px;
 
+        @media (max-width: $lg) {
+            font-size: 13px;
+            padding: 6px 20px;
+            letter-spacing: 0;
+        }
+
         &-price {
             font-size: 17px;
             line-height: 20px;
             margin-left: 8px;
+
+            @media (max-width: $lg) {
+                font-size: 15px;
+                letter-spacing: -0.2px;
+                margin-left: 2px;
+            }
         }
     }
 }

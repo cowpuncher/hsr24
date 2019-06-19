@@ -6,6 +6,12 @@
     top: 0;
     left: 0;
 
+    @media (max-width: $lg) {
+        padding: 0;
+        background: transparent;
+        margin-top: 28px;
+    }
+
     &.fixed {
         position: fixed;
         left: 15px;
@@ -25,15 +31,69 @@
         color: $color-gray;
         font-weight: 800;
         letter-spacing: 0.1px;
+
+        @media (max-width: $lg) {
+            border: 1px solid $color-base;
+            border-radius: 22px;
+            font-size: 13px;
+            line-height: 16px;
+            color: $color-base;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            height: 44px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+            background: $color-white;
+        }
+
+        &:after {
+            @media (max-width: $lg) {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                width: 11px;
+                height: 11px;
+                border-top: 1px solid #101010;
+                border-right: 1px solid #101010;
+                transform: rotate(135deg);
+                margin-top: -8px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .open & {
+                @media (max-width: $lg) {
+                    transform: rotate(-45deg);
+                    margin-top: -2px;
+                }
+            }
+        }
     }
 
     &__list {
         counter-reset: item2;
+
+        @media (max-width: $lg) {
+            border: 1px solid $color-gray-light;
+            margin-top: -22px;
+            padding: 40px 20px 16px;
+            display: none;
+        }
+
+        .open & {
+            display: block;
+        }
     }
 
     &__item {
         padding-left: 32px;
         position: relative;
+
+        @media (max-width: $lg) {
+            padding-left: 30px;
+        }
 
         &:before {
             content: counter(item2);
@@ -56,6 +116,10 @@
 
         & + & {
             margin-top: 20px;
+
+            @media (max-width: $lg) {
+                margin-top: 10px;
+            }
         }
     }
 
@@ -63,6 +127,12 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 6px;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+            margin-bottom: 10px;
+        }
     }
 
     &__count {
@@ -70,5 +140,10 @@
         line-height: 20px;
         font-weight: 800;
         color: $color-gray;
+
+        @media (max-width: $lg) {
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 }

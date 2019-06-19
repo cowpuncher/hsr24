@@ -4,11 +4,21 @@
     &__list {
         margin-left: -19px;
         margin-right: -19px;
+
+        @media (max-width: $lg) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
     }
 
     &__item {
         padding-left: 19px;
         padding-right: 19px;
+
+        @media (max-width: $lg) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 
     &__inner {
@@ -55,18 +65,42 @@
         font-size: 12px;
         line-height: 14px;
 
+        @media (max-width: $lg) {
+            margin-top: 27px;
+            font-size: 13px;
+            line-height: 19px;
+            padding: 23px 19px 20px;
+        }
+
         &-title {
             font-size: 12px;
             line-height: 24px;
             font-weight: 800;
             margin-bottom: 8px;
+
+            @media (max-width: $lg) {
+                font-size: 13px;
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
         }
 
         &-btn {
             margin-top: 18px;
 
+            @media (max-width: $lg) {
+                margin-top: 26px;
+            }
+
             & .elem-btn {
                 padding: 0 55px;
+
+                @media (max-width: $lg) {
+                    padding: 0 35px;
+                    height: 44px;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
             }
         }
     }
@@ -74,6 +108,11 @@
     &__pay {
         margin-top: 40px;
         display: none;
+        position: relative;
+
+        @media (max-width: $lg) {
+            margin-top: 27px;
+        }
 
         &-title {
             font-size: 12px;
@@ -82,6 +121,27 @@
             color: $color-gray;
             margin-top: -3px;
             margin-bottom: 8px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 13px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+
+        &-info {
+            @media (max-width: $lg) {
+                position: absolute;
+                left: calc(100% - 15px);
+                top: 42px;
+                width: 28%;
+            }
+        }
+
+        &-card {
+            @media (max-width: $lg) {
+                margin-top: -17px;
+            }
         }
     }
 }

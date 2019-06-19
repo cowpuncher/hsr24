@@ -16,6 +16,10 @@
         padding-top: 79px;
         padding-right: 15px;
 
+        @media (max-width: $lg) {
+            margin-left: -32%;
+        }
+
         &:before {
             height: 37px;
             content: '';
@@ -41,6 +45,10 @@
         margin-bottom: 4px;
         display: block;
         width: 100%;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+        }
     }
 
     &__item {
@@ -58,6 +66,10 @@
             font-size: 16px;
             line-height: 24px;
             padding: 0 8px;
+
+            @media (max-width: $lg) {
+                font-size: 13px;
+            }
         }
     }
 
@@ -69,6 +81,10 @@
             text-align: center;
             font-size: 16px;
             line-height: 24px;
+
+            @media (max-width: $lg) {
+                font-size: 13px;
+            }
         }
     }
 
@@ -108,5 +124,11 @@
         line-height: 14px;
         color: $color-gray;
         margin-top: 9px;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            padding-right: 10px;
+        }
     }
 }

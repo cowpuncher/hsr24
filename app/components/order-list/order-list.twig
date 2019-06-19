@@ -1,6 +1,6 @@
 {% macro orderList(data) %}
     <div class="order-list" data-sticky>
-        <div class="order-list__title">{{ data.title }}</div>
+        <div class="order-list__title" data-order-select>{{ data.title }}</div>
 
         <div class="order-list__list">
             {% for item in data.list %}
