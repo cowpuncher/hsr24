@@ -196,16 +196,31 @@
     &-courier {
         height: 78px;
         width: 65px;
+
+        @media (max-width: $md) {
+            height: 48px;
+            width: 48px;
+        }
     }
 
     &-pochta {
         height: 76px;
         width: 76px;
+
+        @media (max-width: $md) {
+            height: 43px;
+            width: 43px;
+        }
     }
 
     &-pvz {
         height: 80px;
         width: 60px;
+
+        @media (max-width: $md) {
+            height: 48px;
+            width: 37px;
+        }
     }
 
     &-offline-payment,

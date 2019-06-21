@@ -5,12 +5,21 @@
         height: 478px;
         border-radius: 8px;
         overflow: hidden;
+
+        @media (max-width: $md) {
+            height: 439px;
+        }
     }
 
     &--popup-sm {
         height: 456px;
         border-radius: 8px;
         overflow: hidden;
+
+        @media (max-width: $md) {
+            height: 252px;
+            margin-bottom: 12px;
+        }
     }
 
     &__marker {
@@ -28,12 +37,24 @@
         line-height: 15px;
         font-weight: 800;
         margin-bottom: 8px;
+
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 14px;
+            margin-bottom: 11px;
+        }
     }
 
     &__text {
         font-size: 12px;
         line-height: 14px;
         margin-bottom: 16px;
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 10px;
+        }
     }
 
     &__time {
@@ -46,18 +67,39 @@
         background-position: 2px 8px;
         background-size: 32px auto;
 
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 17px;
+            margin-top: 4px;
+            background-position: 0 0;
+        }
+
         & b {
             margin-right: 4px;
+
+            @media (max-width: $md) {
+                font-size: 10px;
+                line-height: 14px;
+            }
         }
 
         &-item {
             margin-bottom: 9px;
+
+            @media (max-width: $md) {
+                margin-bottom: 5px;
+            }
         }
     }
 
     &__btn {
         margin-top: 24px;
         padding: 0 4px;
+
+        @media (max-width: $md) {
+            margin-top: 17px;
+            padding: 0;
+        }
     }
 
     & .ymaps-shadows-pane {
@@ -75,6 +117,18 @@
         & .ymaps-b-balloon__br,
         & .ymaps-b-balloon__close {
             display: none;
+        }
+
+        & .ymaps-b-balloon__close {
+            @media (max-width: $md) {
+                display: block;
+                background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12.5' cy='12' r='11.5' fill='white' stroke='%23101010'/%3E%3Cpath d='M7.1478 17.1386C6.95073 17.3356 6.95073 17.6551 7.1478 17.8522C7.34486 18.0493 7.66436 18.0493 7.86142 17.8522L12.5 13.2136L17.1386 17.8522C17.3356 18.0493 17.6552 18.0493 17.8523 17.8522C18.0492 17.6551 18.0492 17.3356 17.8523 17.1386L13.2136 12.5L17.8522 7.86143C18.0493 7.66436 18.0493 7.34486 17.8522 7.1478C17.6552 6.95073 17.3357 6.95073 17.1386 7.1478L12.5 11.7864L7.86143 7.1478C7.66436 6.95073 7.34485 6.95073 7.14779 7.1478C6.95074 7.34487 6.95074 7.66436 7.14779 7.86143L11.7864 12.5L7.1478 17.1386Z' fill='%23101010'/%3E%3C/svg%3E%0A");
+                height: 24px;
+                width: 24px;
+                background-position: 0 0;
+                right: -7px;
+                top: -9px;
+            }
         }
 
         & .ymaps-b-balloon__content {

@@ -9,6 +9,10 @@
         @media (max-width: $lg) {
             margin-bottom: 21px;
         }
+
+        @media (max-width: $md) {
+            font-size: 12px;
+        }
     }
 
     &__list {

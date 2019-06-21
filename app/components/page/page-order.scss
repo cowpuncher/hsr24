@@ -6,6 +6,19 @@
             margin-top: 28px;
         }
 
+        @media (max-width: $md) {
+            margin-top: 24px;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        & > * {
+            @media (max-width: $md) {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
         & .elem-btn {
             height: 52px;
             width: 276px;
@@ -17,6 +30,20 @@
                 font-size: 13px;
                 line-height: 16px;
             }
+
+            @media (max-width: $md) {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 12px;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__content {
+        @media (max-width: $md) {
+            padding-top: 8px;
         }
     }
 }

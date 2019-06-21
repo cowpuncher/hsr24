@@ -104,5 +104,9 @@
         height: 32px;
         font-size: 12px;
         line-height: 14px;
+
+        @media (max-width: $md) {
+            border-radius: 16px;
+        }
     }
 }

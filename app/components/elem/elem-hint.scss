@@ -13,6 +13,20 @@
         bottom: 2px;
     }
 
+    &__mob {
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 12px;
+            padding-top: 17px;
+            padding-left: 17px;
+            letter-spacing: 0.1px;
+        }
+
+        & a {
+            color: $color-red;
+        }
+    }
+
     &__text {
         display: none;
         position: absolute;

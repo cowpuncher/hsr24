@@ -12,6 +12,8 @@ class Popap {
     }
 
     initialize() {
+        var maps = [];
+        var count = 0;
 
         // открытие фото
         this.popupImageSingle.magnificPopup({
@@ -84,52 +86,58 @@ class Popap {
                         var el = $(this);
                         var id = el.attr('id');
 
-                        myMap = new ymaps.Map(document.getElementById(id), {
-                            center: [55.7535,37.6176],
-                            zoom: 12
-                        });
+                        if ($(this).find('.ymaps-map').length == 0) {
 
-                        myMap.behaviors.enable('scrollZoom');
+                            myMap = new ymaps.Map(document.getElementById(id), {
+                                center: [55.7535,37.6176],
+                                zoom: 12
+                            });
 
-                        myMap.events.add('click', function() {
-                            myMap.balloon.close();
-                        });
+                            myMap.behaviors.enable('scrollZoom');
 
-                        if (el.attr('data-map') == 'city') {
-                            for (var i = 0; i < city.length; i++) {
-                                myPlacemark = new ymaps.Placemark(
-                                    [city[i][1],city[i][2]] , {
-                                        iconContent: '<span class="map__marker"><img src="assets/images/required/' + city[i][3] +'.svg"></span>',
-                                        balloonContentBody: `
-                                            <div class="map__content">
-                                                <div class="map__title">Адрес пункта выдачи</div>
-                                                <div class="map__text" data-map-adress-text>125315, Москва, ул. Часовая, 10/1</div>
-                                                <div class="map__title">Примерная дата доставки</div>
-                                                <div class="map__text">24 мая</div>
-                                                <div class="map__time">
-                                                    <div class="map__time-item"><b>Пн:</b> 10:00 - 20:00</div>
-                                                    <div class="map__time-item"><b>Вт:</b> 10:00 - 20:00</div>
-                                                    <div class="map__time-item"><b>Ср:</b> 10:00 - 20:00</div>
-                                                    <div class="map__time-item"><b>Чт:</b> 10:00 - 20:00</div>
-                                                    <div class="map__time-item"><b>Пт:</b> 10:00 - 20:00</div>
-                                                    <div class="map__time-item"><b>Сб:</b> 10:00 - 18:00</div>
-                                                    <div class="map__time-item"><b>Вс:</b> 10:00 - 16:00</div>
+                            myMap.events.add('click', function() {
+                                myMap.balloon.close();
+                            });
+
+                            if (el.attr('data-map') == 'city') {
+                                for (var i = 0; i < city.length; i++) {
+                                    myPlacemark = new ymaps.Placemark(
+                                        [city[i][1],city[i][2]] , {
+                                            iconContent: '<span class="map__marker"><img src="assets/images/required/' + city[i][3] +'.svg"></span>',
+                                            balloonContentBody: `
+                                                <div class="map__content">
+                                                    <div class="map__title">Адрес пункта выдачи</div>
+                                                    <div class="map__text" data-map-adress-text>125315, Москва, ул. Часовая, 10/1</div>
+                                                    <div class="map__title">Примерная дата доставки</div>
+                                                    <div class="map__text">24 мая</div>
+                                                    <div class="map__time">
+                                                        <div class="map__time-item"><b>Пн:</b> 10:00 - 20:00</div>
+                                                        <div class="map__time-item"><b>Вт:</b> 10:00 - 20:00</div>
+                                                        <div class="map__time-item"><b>Ср:</b> 10:00 - 20:00</div>
+                                                        <div class="map__time-item"><b>Чт:</b> 10:00 - 20:00</div>
+                                                        <div class="map__time-item"><b>Пт:</b> 10:00 - 20:00</div>
+                                                        <div class="map__time-item"><b>Сб:</b> 10:00 - 18:00</div>
+                                                        <div class="map__time-item"><b>Вс:</b> 10:00 - 16:00</div>
+                                                    </div>
+                                                    <div class="map__btn">
+                                                        <a href="#" class="elem-btn elem-btn--md elem-btn--full" data-map-adress>Забрать здесь</a>
+                                                    </div>
                                                 </div>
-                                                <div class="map__btn">
-                                                    <a href="#" class="elem-btn elem-btn--md elem-btn--full" data-map-adress>Забрать здесь</a>
-                                                </div>
-                                            </div>
-                                        `
-                                    }, {
-                                        iconImageHref: '',
-                                        iconImageSize: [22, 29],
-                                        iconImageOffset: [-11, -15]
-                                    }
-                                );
+                                            `
+                                        }, {
+                                            iconImageHref: '',
+                                            iconImageSize: [22, 29],
+                                            iconImageOffset: [-11, -15]
+                                        }
+                                    );
 
-                                myMap.geoObjects.add(myPlacemark);
-                            }
-                        };
+                                    myMap.geoObjects.add(myPlacemark);
+                                }
+                            };
+
+                            maps[count] = myMap;
+                            count ++;
+                        }
                     });
 
                     if (autocompleteCity.length) {
@@ -211,9 +219,9 @@ class Popap {
                                 x: "54.9440",
                                 y: "39.3396"
                             }
-                          ];
+                        ];
 
-                          autocompleteCity.each(function() {
+                        autocompleteCity.each(function() {
                             var el = $(this);
 
                             el.autocomplete({
@@ -230,19 +238,15 @@ class Popap {
                                     var x = parseFloat(ui.item.x);
                                     var y = parseFloat(ui.item.y);
 
-                                    //myMap.setZoom(10);
+                                    for (var i = 0; i < count; i++) {
 
-                                    console.log(x + ' ' + y);
+                                        //maps[i].setZoom(10);
+                                        maps[i].setCenter([x,y]);
 
-                                    setTimeout(() => {
-                                        myMap.setCenter([x,y], 12, {
-                                            checkZoomRange: true
-                                        });
-                                    }, 1000);
-
-                                    // setTimeout(() => {
-                                    //     myMap.setZoom(12);
-                                    // }, 2000);
+                                        // setTimeout(() => {
+                                        //     maps[i].setZoom(12);
+                                        // }, 2000);
+                                    };
 
                                     return false;
                                 }

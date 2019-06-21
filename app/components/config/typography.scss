@@ -66,6 +66,12 @@ h3, .h3 {
             line-height: 1;
             margin-bottom: 18px;
         }
+
+        @media (max-width: $md) {
+            font-size: 15px;
+            line-height: 16px;
+            margin-bottom: 16px;
+        }
     }
 }
 

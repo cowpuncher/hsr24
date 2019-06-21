@@ -39,6 +39,10 @@
             padding-right: 28px;
             padding-bottom: 28px;
         }
+
+        @media (max-width: $md) {
+            padding: 16px;
+        }
     }
 
     &--xl {
@@ -52,6 +56,10 @@
             padding-left: 28px;
             padding-right: 28px;
             padding-bottom: 28px;
+        }
+
+        @media (max-width: $md) {
+            padding: 16px;
         }
     }
 
@@ -73,10 +81,6 @@
         }
 
         &--xs {
-            @media (max-width: $lg) {
-
-            }
-
             @media (max-width: $sm) {
                 padding-bottom: 10px;
                 margin-bottom: 12px;
@@ -86,6 +90,13 @@
         &--map {
             margin-top: 17px;
             margin-bottom: 27px;
+
+            @media (max-width: $md) {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 15px;
+                margin-top: 0;
+            }
         }
     }
 
@@ -140,6 +151,10 @@
         @media (max-width: $lg) {
             margin-bottom: 28px;
         }
+
+        @media (max-width: $md) {
+            margin-bottom: 4px;
+        }
     }
 
     & .mfp-close {
@@ -166,9 +181,27 @@
         }
     }
 
+    & .row {
+        @media (max-width: $md) {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        & > * {
+            @media (max-width: $md) {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+
     & .elem-item {
         @media (max-width: $sm) {
             margin-bottom: 12px;
+        }
+
+        &--last {
+            margin-bottom: 0;
         }
     }
 
@@ -182,6 +215,12 @@
             margin-right: auto;
             max-width: 272px;
             min-width: 272px;
+        }
+
+        @media (max-width: $md) {
+            min-width: 100%;
+            max-width: 100%;
+            padding: 0 10px;
         }
 
         @media (max-width: $sm) {

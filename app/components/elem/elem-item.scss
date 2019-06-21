@@ -16,6 +16,10 @@
         @media (max-width: $lg) {
             margin-bottom: 14px;
         }
+
+        @media (max-width: $md) {
+            margin-bottom: 11px;
+        }
     }
 
     &--last {

@@ -12,6 +12,10 @@
         margin-top: 28px;
     }
 
+    @media (max-width: $md) {
+        margin-top: 24px;
+    }
+
     &.fixed {
         position: fixed;
         left: 15px;
@@ -48,6 +52,12 @@
             background: $color-white;
         }
 
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 15px;
+        }
+
         &:after {
             @media (max-width: $lg) {
                 content: '';
@@ -82,6 +92,10 @@
             display: none;
         }
 
+        @media (max-width: $md) {
+            padding: 36px 15px 18px;
+        }
+
         .open & {
             display: block;
         }
@@ -93,6 +107,10 @@
 
         @media (max-width: $lg) {
             padding-left: 30px;
+        }
+
+        @media (max-width: $md) {
+            padding-left: 32px;
         }
 
         &:before {
@@ -132,6 +150,13 @@
             font-size: 13px;
             line-height: 19px;
             margin-bottom: 10px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 17px;
+            padding-top: 3px;
+            margin-bottom: 7px;
         }
     }
 

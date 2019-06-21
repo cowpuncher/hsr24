@@ -1025,6 +1025,7 @@
         ]
     },
     "breadcrumbsList": {
+        "class": "hidden-xs hidden-sm",
         "list": [
             {
                 "href": "main.html",
