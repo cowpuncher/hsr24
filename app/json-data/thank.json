@@ -32,10 +32,6 @@
         {
             "title": "Оформление заказа",
             "href": "order.html"
-        },
-        {
-            "title": "Спасибо за покупку!",
-            "href": "thank.html"
         }
     ],
     "menuTop": {
