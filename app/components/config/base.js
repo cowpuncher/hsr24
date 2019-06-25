@@ -69,6 +69,12 @@ if ($('[data-sticky]').length) {
     }
 }
 
+$('[data-ul-title]').click(function() {
+    var el = $(this);
+
+    el.parent().toggleClass('open');
+});
+
 $(window).resize(function() {
     var ww = $(window).width();
     this.console.log(ww);
