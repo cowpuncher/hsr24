@@ -16,6 +16,16 @@ body {
     margin: 0;
     padding: 0;
 
+    @media (max-width: $lg) {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    @media (max-width: $md) {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
     &.scroll {
         overflow: hidden;
         height: 100vh;
@@ -90,6 +100,16 @@ a {
 	}
 }
 
+p {
+    .content & {
+        margin-bottom: 22px;
+
+        @media (max-width: $md) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
 ul, ol {
 	list-style: none;
 	padding: 0;
@@ -158,6 +178,18 @@ ol:not([class]) {
 
 .list-mark {
     & li {
+        .content & {
+            margin-bottom: 25px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 22px;
+            }
+
+            @media (max-width: $md) {
+                margin-bottom: 17px;
+            }
+        }
+
         &:before {
             content: '✔';
             margin-right: 12px;

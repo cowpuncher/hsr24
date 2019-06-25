@@ -1,0 +1,132 @@
+.page-about {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 18px;
+        margin-bottom: 25px;
+
+        @media (max-width: $lg) {
+            padding: 0;
+            margin: 0 -16px 10px;
+        }
+
+        @media (max-width: $md) {
+            margin: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        * + & {
+            margin-top: 35px;
+
+            @media (max-width: $lg) {
+                margin-top: 29px;
+            }
+
+            @media (max-width: $md) {
+                margin-top: 24px;
+            }
+        }
+    }
+
+    &__item {
+        width: calc(47% - 36px);
+        margin: 0 18px;
+        border: 1px solid $color-gray-light;
+        border-radius: 16px;
+        padding: 16px 18px;
+
+        @media (max-width: $lg) {
+            margin: 0 16px;
+            width: calc(46% - 32px);
+            padding: 15px 13px 20px 16px;
+            letter-spacing: 0;
+        }
+
+        @media (max-width: $md) {
+            margin: 0 0 16px;
+            width: 100%;
+            padding-bottom: 14px;
+        }
+
+        &:nth-child(even) {
+            width: calc(53% - 36px);
+
+            @media (max-width: $lg) {
+                width: calc(54% - 32px);
+            }
+
+            @media (max-width: $md) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__head {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 800;
+        margin-bottom: 16px;
+
+        @media (max-width: $lg) {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &__text {
+        @media (max-width: $md) {
+            letter-spacing: -0.2px;
+        }
+    }
+
+    &__props {
+        margin-top: -10px;
+
+        @media (max-width: $lg) {
+            margin-top: -1px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 21px;
+        }
+
+        &-item {
+            letter-spacing: 0;
+
+            @media (max-width: $md) {
+                font-size: 11px;
+                line-height: 14px;
+            }
+
+            & + & {
+                margin-top: 24px;
+
+                @media (max-width: $lg) {
+                    margin-top: 21px;
+                }
+
+                @media (max-width: $md) {
+                    margin-top: 16px;
+                }
+            }
+
+            & b {
+                margin-right: 4px;
+
+                @media (max-width: $md) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
