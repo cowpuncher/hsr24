@@ -1,0 +1,22 @@
+{% macro why(data) %}
+	<div class="why">
+        {% if data.title %}
+            <h2 class="elem-title why__title">{{ data.title }}</h2>
+        {% endif %}
+
+        <div class="why__list">
+            {% for item in data.list %}
+                <div class="why__item">
+                    <div class="why__img">
+                        <img src="{{ item.img }}" alt="">
+                    </div>
+
+                    <div class="why__info">
+                        <h3 class="why__head">{{ item.title }}</h3>
+                        <div class="why__text">{{ item.text }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
