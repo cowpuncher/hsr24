@@ -156,6 +156,19 @@ ol:not([class]) {
     }
 }
 
+.list-mark {
+    & li {
+        &:before {
+            content: '✔';
+            margin-right: 12px;
+
+            @media (max-width: $lg) {
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
 img,
 svg {
     max-width: 100%;

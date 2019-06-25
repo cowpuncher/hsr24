@@ -1,0 +1,32 @@
+{% macro step(data) %}
+	<div class="step">
+        {% if data.title %}
+            <h2 class="elem-title step__title">{{ data.title }}</h2>
+        {% endif %}
+
+        <div class="step__list">
+            {% for item in data.list %}
+                <div class="step__item">
+                    <div class="step__img">
+                        <img src="{{ item.img }}" alt="">
+                        <div class="step__step">Шаг {{ loop.index }}</div>
+                    </div>
+
+                    <div class="step__info">
+                        <div class="step__head">
+                            {{ item.head }}
+                        </div>
+
+                        {% if item.list %}
+                            <ul class="list-mark">
+                                {% for item2 in item.list %}
+                                    <li>{{ item2.text }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

@@ -20,3 +20,4 @@ import './slider/slider';
 import './tabs/tabs';
 import './order-icon/order-icon';
 import './order-list/order-list';
+import './question/question';

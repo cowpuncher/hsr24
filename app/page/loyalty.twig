@@ -1,0 +1,65 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/banner/banner.twig' as banner %}
+{% import '../components/teaser/teaser.twig' as teaser %}
+{% import '../components/level/level.twig' as level %}
+{% import '../components/step/step.twig' as step %}
+{% import '../components/question/question.twig' as question %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-loyalty{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Клубная программа «Шопинг Бонус»</h1>
+
+            {# баннер #}
+            {{ banner.banner(bannerList) }}
+
+            {# Тизер #}
+            {{ teaser.teaser(teaserList) }}
+
+            <div class="elem-quest__list">
+                <div class="elem-quest">
+                    <div class="elem-quest__img">
+                        <img src="assets/images/example/img1.jpg" alt="">
+                    </div>
+                    <div class="elem-quest__text elem-quest__text--sm">
+                        Каждая ваша покупка дарит вам сидку на следующую!
+                    </div>
+                </div>
+                <div class="elem-quest">
+                    <div class="elem-quest__img">
+                        <img src="assets/images/example/img1.jpg" alt="">
+                    </div>
+                    <div class="elem-quest__text elem-quest__text--sm">
+                        Получайте бонусные рубли и оплачивайте ими до 100% стоимости покупок!<br>
+                        <b>1 бонус = 1 рубль</b>
+                    </div>
+                </div>
+            </div>
+
+            {# Уровни программы #}
+            {{ level.level(levelList) }}
+
+            {# Стать участником программы просто! #}
+            {{ step.step(steplList) }}
+
+            {# Вопросы и ответы #}
+            {{ question.question(questionList) }}
+        </div>
+	</div>
+
+{% endblock %}

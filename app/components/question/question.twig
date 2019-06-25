@@ -1,0 +1,32 @@
+{% macro question(data) %}
+	<div class="question">
+        {% if data.title %}
+            <h2 class="elem-title question__title">{{ data.title }}</h2>
+        {% endif %}
+
+        <div class="question__list">
+            {% for item in data.list %}
+                <div class="question__item open" >
+                    <div class="question__head" data-question>
+                        {{ item.head }}
+                        <div class="question__arrow"></div>
+                    </div>
+
+                    <div class="question__info" data-question-detal>
+                        {% if item.text %}
+                            <div class="question__text">{{ item.text }}</div>
+                        {% endif %}
+
+                        {% if item.list %}
+                            <ul class="list-mark">
+                                {% for item2 in item.list %}
+                                    <li>{{ item2.text }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

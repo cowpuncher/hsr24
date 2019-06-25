@@ -1,0 +1,25 @@
+{% macro level(data) %}
+	<div class="level">
+        {% if data.title %}
+            <h2 class="elem-title level__title">{{ data.title }}</h2>
+        {% endif %}
+
+        <div class="level__list" data-slider-mobile>
+            {% for item in data.list %}
+                <div class="level__item">
+                    <div class="level__card {% if item.cardColor %}{{ item.cardColor }}{% endif %}">
+                        <div class="level__head">{{ item.cardTitle }}</div>
+                        <div class="level__sale">{{ item.sale }}</div>
+                    </div>
+                    <div class="level__info">
+                        <ul class="list-mark">
+                            {% for item2 in item.list %}
+                                <li>{{ item2.text }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

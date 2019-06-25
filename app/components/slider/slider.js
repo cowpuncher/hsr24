@@ -19,6 +19,7 @@ class Slider {
 
         var sliderCards = this.sliderCards;
         var sliderCategory = this.sliderCategory;
+        var ww = $(window).width();
 
         this.slider.slick({
             dots: true,
@@ -39,6 +40,34 @@ class Slider {
                     }
                 }
             ]
+        });
+
+        if (ww < 768) {
+            $('[data-slider-mobile]').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                adaptiveHeight: true
+            });
+        }
+
+        $(window).resize(function() {
+            ww = $(window).width();
+
+            if (ww < 768) {
+                if (!$('[data-slider-mobile]').hasClass('slick-initialized')) {
+                    $('[data-slider-mobile]').slick({
+                        dots: true,
+                        arrows: false,
+                        infinite: true,
+                        adaptiveHeight: true
+                    });
+                }
+            } else {
+                if ($('[data-slider-mobile]').hasClass('slick-initialized')) {
+                    $('[data-slider-mobile]').slick('unslick');
+                }
+            }
         });
 
         this.sliderTop.slick({

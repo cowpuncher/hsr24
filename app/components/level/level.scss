@@ -1,0 +1,139 @@
+.level {
+    * + & {
+        margin-top: 24px;
+
+        @media (max-width: $lg) {
+            margin-top: 8px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 15px;
+        }
+    }
+
+    &__list {
+        padding: 0 103px;
+
+        @media (max-width: $lg) {
+            padding: 0;
+            margin-top: 29px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 0;
+            padding-bottom: 22px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $md) {
+            align-items: flex-start;
+            display: block;
+        }
+
+        & + & {
+            margin-top: 32px;
+
+            @media (max-width: $lg) {
+                margin-top: 20px;
+            }
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__card {
+        background: $color-gray;
+        border-radius: 20px;
+        height: 225px;
+        width: 359px;
+        margin-right: 52px;
+        position: relative;
+        flex-shrink: 0;
+
+        @media (max-width: $lg) {
+            height: 181px;
+            width: 290px;
+            margin-right: 28px;
+        }
+
+        &.dark {
+            background: $color-base;
+        }
+
+        &.red {
+            background: $color-red;
+        }
+    }
+
+    &__item:nth-child(even) &__card {
+        margin-right: 0;
+        margin-left: 52px;
+
+        @media (max-width: $lg) {
+            margin-left: 28px;
+        }
+    }
+
+    &__head {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 800;
+        color: $color-white;
+        position: absolute;
+        left: 28px;
+        top: 24px;
+        right: 28px;
+
+        @media (max-width: $lg) {
+            left: 20px;
+            top: 14px;
+            right: 20px;
+        }
+    }
+
+    &__sale {
+        font-size: 52px;
+        line-height: 1;
+        font-weight: 800;
+        color: $color-white;
+        position: absolute;
+        right: 28px;
+        bottom: 17px;
+        display: flex;
+        align-items: flex-end;
+
+        @media (max-width: $lg) {
+            font-size: 48px;
+            right: 22px;
+            bottom: 8px;
+        }
+
+        &:after {
+            content: '%';
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 400;
+            position: relative;
+            bottom: 1px;
+        }
+    }
+
+    &__info {
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 13px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}
