@@ -1,0 +1,40 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/card/card.twig' as card %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-favs{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Избранное</h1>
+
+            {# список карточек #}
+            <div class="card__list mobile-list" data-card-list>
+                {% for item in cardClist %}
+                    {{ card.card(item) }}
+                {% endfor %}
+            </div>
+
+            <div class="elem-more__row">
+                <a href="#" class="elem-more">
+                    {{ svg.icon('show-more') }}
+                    <span>Показать еще</span>
+                </a>
+            </div>
+        </div>
+	</div>
+
+{% endblock %}

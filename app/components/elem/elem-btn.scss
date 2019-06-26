@@ -32,6 +32,16 @@
         padding: 4px;
     }
 
+    & .icon {
+        &:first-child {
+            margin-right: 8px;
+        }
+
+        &:last-child {
+            margin-left: 8px;
+        }
+    }
+
     &__wrap {
         text-align: center;
     }
@@ -64,6 +74,7 @@
             &:hover {
                 color: $color-white;
                 background: $color-base;
+                border-color: $color-base;
             }
         }
     }
@@ -92,6 +103,22 @@
             color: $color-base;
             border-color: $color-gray;
             background: $color-gray;
+        }
+    }
+
+    &--gray-light {
+        border-color: $color-gray-light;
+        color: $color-base;
+        font-weight: 400;
+        background: transparent;
+
+        &:hover {
+            border-color: $color-smoke;
+            background-color: $color-smoke;
+        }
+
+        &.bold {
+            font-weight: 800;
         }
     }
 

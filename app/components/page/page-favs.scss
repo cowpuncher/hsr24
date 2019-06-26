@@ -1,0 +1,40 @@
+.page-favs {
+    position: relative;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+
+        & > * + * {
+            margin-left: 32px;
+
+            @media (max-width: $lg) {
+                margin-left: 0;
+                margin-top: 28px;
+            }
+
+            @media (max-width: $md) {
+                margin-top: 24px;
+            }
+        }
+
+        & .elem-btn {
+            width: 200px;
+
+            @media (max-width: $lg) {
+                width: 290px;
+                height: 44px;
+                font-size: 13px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 12px;
+            }
+        }
+    }
+}

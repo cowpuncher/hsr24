@@ -101,7 +101,8 @@
     &-q,
     &-tel,
     &-file,
-    &-map {
+    &-map,
+    &-arrow {
         height: 32px;
         width: 32px;
     }
@@ -158,6 +159,10 @@
 
     &-favs {
         fill: $color-base;
+
+        & .bg {
+            fill: transparent;
+        }
     }
 
     &-mail_illustration {

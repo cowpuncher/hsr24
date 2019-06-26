@@ -588,6 +588,10 @@
             //max-width: 80%;
             //max-height: 80%;
             fill: $color-base;
+
+            & .bg {
+                fill: transparent;
+            }
         }
 
 
@@ -598,6 +602,10 @@
 
             & .icon {
                 fill: $color-red;
+
+                & .bg {
+                    fill: $color-red;
+                }
             }
         }
     }
