@@ -305,6 +305,12 @@ ul:not([class]) {
 }
 
 .list-mark {
+    margin-bottom: 32px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     & li {
         .content & {
             margin-bottom: 25px;

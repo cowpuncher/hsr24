@@ -33,6 +33,10 @@
         white-space: nowrap;
         flex-shrink: 0;
 
+        @media (max-width: $md) {
+            font-size: 12px;
+        }
+
         & + & {
             margin-left: 26px;
 

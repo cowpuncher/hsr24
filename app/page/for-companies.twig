@@ -1,0 +1,53 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/banner/banner.twig' as banner %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-for-companies{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Поставщикам</h1>
+
+            {# баннер #}
+            {{ banner.banner(bannerList) }}
+
+            <h3 class="h3 h3--md">Приглашаем к взаимовыгодному сотрудничеству!</h3>
+            <p>Компания HSR24 специализируется на розничной и мелкооптовой продаже товаров. </p>
+
+            <span>Мы продаем:</span>
+            <ul class="list-mark">
+                <li>товары для кухни;</li>
+                <li>мелкую бытовую технику;</li>
+                <li>мелкую бытовую технику;</li>
+                <li>хозяйственные товары;</li>
+                <li>товары для дачи и сада;</li>
+                <li>товары для активного отдыха;</li>
+                <li>текстиль; </li>
+                <li>одежду;</li>
+                <li>бижутерию и ювелирные изделия.</li>
+            </ul>
+
+            <h3 class="h3 h3--md">Кого мы ждём для сотрудничества?</h3>
+            <p>
+                Поставщиков и производителей товаров народного потребления. Если у вас есть интересные предложения и идеи эксклюзивных разработок в области непродовольственных потребительских товаров, напишите нам на почту <a href="mailto:zakupkaHSR24@yandex.ru" class="color-red">zakupkaHSR24@yandex.ru</a>
+            </p>
+            <p>
+                Вы поможете нам расширить ассортимент — мы поможем вам увеличить ваш доход!
+            </p>
+        </div>
+	</div>
+
+{% endblock %}
