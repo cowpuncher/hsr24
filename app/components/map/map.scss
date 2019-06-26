@@ -11,6 +11,14 @@
         }
     }
 
+    &--contact {
+        height: 259px;
+
+        @media (max-width: $md) {
+            height: 332px;
+        }
+    }
+
     &--popup-sm {
         height: 456px;
         border-radius: 8px;

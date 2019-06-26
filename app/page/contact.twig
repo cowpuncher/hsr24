@@ -1,0 +1,78 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/social/social.twig' as social %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-contact{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Наши контакты</h1>
+
+            <div class="page-contact__inner">
+                <div class="page-contact__logo">
+                    {{ svg.icon('logo') }}
+                </div>
+
+                <div class="page-contact__col">
+                    <p>ООО «Хом шоппинг раша» </p>
+                    <p>ОГРН 1137746372290</p>
+                </div>
+
+                <div class="page-contact__col">
+                    <p>Телефон для заказа</p>
+
+                    <a href="tel:88007075025" class="elem-icon">
+                        {{ svg.icon('tel') }}
+                        8 (800) 707-50-25
+                    </a>
+                </div>
+
+                <div class="page-contact__col">
+                    <p>Мы в социальных сетях</p>
+                    {{ social.social({
+                        "list": [
+                            {
+                                "icon": "vk",
+                                "alt": "в контакте",
+                                "href": "#"
+                            },
+                            {
+                                "icon": "ok",
+                                "alt": "однокласники",
+                                "href": "#"
+                            },
+                            {
+                                "icon": "youtube",
+                                "alt": "youtube",
+                                "href": "#"
+                            }
+                        ]
+                    }) }}
+                </div>
+            </div>
+
+            <div class="elem-icon page-contact__text">
+                <span class="hidden-xs">{{ svg.icon('map') }}</span>
+                109052 г. Москва ул. Смирновская, д. 4, стр.2
+            </div>
+
+            <div class="page-contact__map">
+                <div id="map1" class="map map--contact" data-map></div>
+            </div>
+        </div>
+	</div>
+
+{% endblock %}

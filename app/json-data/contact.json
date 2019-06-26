@@ -1,75 +1,5 @@
 {
     "page_title": "HSR",
-    "menuList": [
-        {
-            "title": "Главная",
-            "href": "main.html"
-        },
-        {
-            "title": "Каталог",
-            "href": "catalog.html"
-        },
-        {
-            "title": "Категории",
-            "href": "categories.html"
-        },
-        {
-            "title": "404",
-            "href": "404.html"
-        },
-        {
-            "title": "Акции",
-            "href": "actions.html"
-        },
-        {
-            "title": "Акция",
-            "href": "action.html"
-        },
-        {
-            "title": "Поиск",
-            "href": "searching.html"
-        },
-        {
-            "title": "Оформление заказа",
-            "href": "order.html"
-        },
-        {
-            "title": "Спасибо за покупку!",
-            "href": "thank.html"
-        },
-        {
-            "title": "Гарантия качества",
-            "href": "guarantees.html"
-        },
-        {
-            "title": "Программа лояльности",
-            "href": "loyalty.html"
-        },
-        {
-            "title": "О компании",
-            "href": "about.html"
-        },
-        {
-            "title": "Политика конфиденциальности",
-            "href": "privacy.html"
-        },
-        {
-            "title": "Возврат и обмен",
-            "href": "return.html"
-        },
-        {
-            "title": "Доставка и оплата",
-            "href": "delivery.html"
-        },
-        {
-            "title": "Компаниям",
-            "href": "for-companies.html"
-        },
-        {
-            "title": "Конаткты",
-            "href": "contact.html"
-        }
-    ],
     "menuTop": {
         "prefix": "top",
         "list": [
@@ -1101,8 +1031,8 @@
                 "icon": "home2"
             },
             {
-                "text": "Список страниц",
-                "href": "index.html"
+                "text": "Наши контакты",
+                "href": "contact.html"
             }
         ]
     }
