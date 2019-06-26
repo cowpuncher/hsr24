@@ -1,0 +1,10 @@
+.elem-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    & .icon {
+        margin-right: 8px;
+        flex-shrink: 0;
+    }
+}

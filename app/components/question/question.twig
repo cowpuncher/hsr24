@@ -24,6 +24,10 @@
                                 {% endfor %}
                             </ul>
                         {% endif %}
+
+                        {% if item.text2 %}
+                            <div class="question__text">{{ item.text2 }}</div>
+                        {% endif %}
                     </div>
                 </div>
             {% endfor %}

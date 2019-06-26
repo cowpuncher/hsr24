@@ -4,6 +4,7 @@
 {% import '../components/hamburger/hamburger.twig' as hamburger %}
 {% import '../components/social/social.twig' as social %}
 {% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
 
 {% block title %}{{ page_title }}{% endblock %}
 
@@ -12,11 +13,19 @@
 {% block content %}
 
     <div class="container">
-        <ul>
-            {% for item in menuList %}
-                <li><a href="{{ item.href }}">{{ item.title }}</a></li>
-            {% endfor %}
-        </ul>
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Список страниц</h1>
+            <ol>
+                {% for item in menuList %}
+                    <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ol>
+        </div>
     </div>
 
 {% endblock %}

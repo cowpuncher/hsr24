@@ -137,4 +137,10 @@
             line-height: 17px;
         }
     }
+
+    &__text {
+        * + & {
+            margin-top: 24px;
+        }
+    }
 }

@@ -1,5 +1,7 @@
 {% macro step(data) %}
-	<div class="step">
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+	<div class="step {% if data.class %}{{ data.class }}{% endif %}">
         {% if data.title %}
             <h2 class="elem-title step__title">{{ data.title }}</h2>
         {% endif %}
@@ -13,9 +15,17 @@
                     </div>
 
                     <div class="step__info">
-                        <div class="step__head">
-                            {{ item.head }}
-                        </div>
+                        {% if item.head %}
+                            <div class="step__head">
+                                {{ item.head }}
+                            </div>
+                        {% endif %}
+
+                        {% if item.text %}
+                            <div class="step__text">
+                                {{ item.text }}
+                            </div>
+                        {% endif %}
 
                         {% if item.list %}
                             <ul class="list-mark">
@@ -23,6 +33,20 @@
                                     <li>{{ item2.text }}</li>
                                 {% endfor %}
                             </ul>
+                        {% endif %}
+
+                        {% if item.link %}
+                            <a href class="elem-link step__link">
+                                {{ svg.icon(item.linkImg) }}
+                                {{ item.link }}
+                            </a>
+                        {% endif %}
+
+                        {% if item.icon %}
+                            <div class="elem-icon step__icon">
+                                {{ svg.icon(item.iconImg) }}
+                                {{ item.icon }}
+                            </div>
                         {% endif %}
                     </div>
                 </div>

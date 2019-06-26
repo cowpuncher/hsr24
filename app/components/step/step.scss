@@ -7,6 +7,14 @@
         }
     }
 
+    &--three {
+        padding: 0 8px 0 26px;
+
+        @media (max-width: $lg) {
+            padding: 0;
+        }
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -20,6 +28,12 @@
 
         @media (max-width: $md) {
             margin-top: 36px;
+            padding-left: 0;
+        }
+    }
+
+    &--three &__list {
+        @media (max-width: $lg) {
             padding-left: 0;
         }
     }
@@ -60,6 +74,37 @@
         }
     }
 
+    &--three &__item {
+        width: 31%;
+
+        @media (max-width: $lg) {
+            padding-left: 15px;
+        }
+
+        @media (max-width: $md) {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        &:nth-child(2) {
+            width: 26%;
+
+            @media (max-width: $lg) {
+                width: 31%;
+            }
+
+            @media (max-width: $md) {
+                width: 100%;
+            }
+        }
+    }
+
+    &--three &__item + &__item {
+        @media (max-width: $md) {
+            margin-top: 45px;
+        }
+    }
+
     &__img {
         margin-bottom: 24px;
         position: relative;
@@ -77,6 +122,14 @@
 
         & img {
             width: 172px;
+        }
+    }
+
+    &--three &__img {
+        margin-left: 23px;
+
+        @media (max-width: $md) {
+            margin-left: auto;
         }
     }
 
@@ -135,6 +188,72 @@
             min-height: 0;
             text-align: center;
             padding: 0 12px;
+        }
+    }
+
+    &__text {
+        margin-top: 31px;
+
+        @media (max-width: $lg) {
+            margin-top: -3px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 1px;
+        }
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: 14px;
+        color: $color-blue;
+        margin-top: 8px;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+        }
+
+        @media (max-width: $md) {
+            justify-content: center;
+            margin-top: 11px;
+        }
+
+        & .icon {
+            @media (max-width: $lg) {
+                height: 44px;
+                width: 44px;
+            }
+
+            @media (max-width: $md) {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 10px;
+        margin-right: -6px;
+
+        @media (max-width: $lg) {
+            font-size: 12px;
+            line-height: 17px;
+        }
+
+        @media (max-width: $md) {
+            text-align: left;
+        }
+
+        & .icon {
+            margin-left: -9px;
+
+            @media (max-width: $md) {
+                margin-left: 0;
+            }
         }
     }
 }

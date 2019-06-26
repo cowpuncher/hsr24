@@ -1,0 +1,41 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/banner/banner.twig' as banner %}
+{% import '../components/teaser/teaser.twig' as teaser %}
+{% import '../components/step/step.twig' as step %}
+{% import '../components/question/question.twig' as question %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-return{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Возврат и обмен</h1>
+
+            {# баннер #}
+            {{ banner.banner(bannerList) }}
+
+            {# Тизер #}
+            {{ teaser.teaser(teaserList) }}
+
+            {# Шаги #}
+            {{ step.step(steplList) }}
+
+            {# Вопросы и ответы #}
+            {{ question.question(questionList) }}
+        </div>
+	</div>
+
+{% endblock %}
