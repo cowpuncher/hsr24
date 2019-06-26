@@ -11,16 +11,16 @@
     {% set attr = attr.generateAttr('tabs', data.prefix) %}
 
     <div class="tabs{{pr}} {{mod}} {% if data.class %}{{ data.class }}{% endif %}" {{attr}}>
-        <div class="tabs{{pr}}__head js-tabs-head">
+        <div class="tabs{{pr}}__head js-tabs-head" data-tabs-head>
             {% for item in data.list %}
                 <div class="tabs{{pr}}__head-item">
-                    <a href="#" class="tabs{{pr}}__head-link {% if item.active %}active{% endif %}">{{ item.title }}</a>
+                    <a href="#" class="tabs{{pr}}__head-link {% if item.active %}active{% endif %}" data-tabs-link>{{ item.title }}</a>
                 </div>
             {% endfor %}
         </div>
-        <div class="tabs{{pr}}__body js-tabs-body">
+        <div class="tabs{{pr}}__body js-tabs-body" data-tabs-body>
             {% for item in data.list %}
-                <div class="tabs{{pr}}__body-item {% if item.active %}open{% endif %}">
+                <div class="tabs{{pr}}__body-item {% if item.active %}open{% endif %}" data-tabs-body-item>
                     {% if item.text %}
                         {{ item.text }}
                     {% endif %}
@@ -36,6 +36,95 @@
                     {% endif %}
                 </div>
             {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro tabsInner(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+    {% import '../../page/_macros/_prefix.twig' as pr %}
+    {% import '../../page/_macros/_mod.twig' as mod %}
+    {% import '../../page/_macros/_attr.twig' as attr %}
+
+    {% set pr = pr.generatePrefix('tabs', data.prefix) %}
+    {% set mod = mod.generateMod('tabs', data.prefix, data.mod) %}
+    {% set attr = attr.generateAttr('tabs', data.prefix) %}
+
+
+    <div class="tabs {% if data.class %}{{ data.class }}{% endif %}" {{attr}}>
+        <div class="tabs__head js-tabs-head" data-tabs-head>
+            {% for item in data.list %}
+                <div class="tabs__head-item">
+                    <a href="#" class="tabs__head-in {% if item.active %}active{% endif %}" data-tabs-link>
+                        {{ svg.icon(item.icon) }}
+
+                        <span class="tabs__head-link ">
+                            {{ item.title }}
+                        </span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="tabs__body js-tabs-body" data-tabs-body>
+            <div class="tabs__body-item open" data-tabs-body-item>
+                <ul class="list-mark">
+                    <li>Подробную информацию по доставке вы можете посмотреть в <a href="#" class="color-red">Личном кабинете</a>.</li>
+                    <li>В день доставки курьер предварительно позвонит вам и согласует время встречи.</li>
+                    <li>Вы можете перенести дату и место доставки заказа, если у вас возникнет такая необходимость.</li>
+                    <li>Выкупать часть заказа невозможно.</li>
+                </ul>
+
+                <h4 class="h4 h4--sm">Способы оплаты</h4>
+                <p>Оплата курьеру производится наличными, либо банковской картой.</p>
+
+                <h4 class="h4 h4--sm">Стоимость доставки</h4>
+                <p>От 249 рублей. Полную стоимость доставки вы сможете узнать при оформлении заказа на сайте, либо по телефону.</p>
+
+                <h4 class="h4 h4--sm">Срок доставки</h4>
+                <p>От 2 рабочих дней, после согласования заказа.</p>
+
+                <h4 class="h4 h4--sm">Срок хранения заказа</h4>
+                <p>У курьерской службы — 14 дней.</p>
+            </div>
+
+            <div class="tabs__body-item" data-tabs-body-item>
+                <ul class="list-mark">
+                    <li>Осуществляется по всей территории Российской Федерации и соответствует географии доставки ФГУП «Почта России».</li>
+                    <li>После передачи заказа от склада в почтовую службу вам придет трек-номер, по которому вы сможете отследить посылку.</li>
+                </ul>
+
+                <h4 class="h4 h4--sm">Способы оплаты</h4>
+                <p>К оплате принимаются наличные и банковские карты.</p>
+
+                <h4 class="h4 h4--sm">Стоимость доставки</h4>
+                <p>Полную стоимость доставки вы сможете узнать при оформлении заказа на сайте, либо по телефону.</p>
+
+                <h4 class="h4 h4--sm">Срок доставки</h4>
+                <p>В соответствии со сроками «Почты России», в зависимости от удаленности региона.</p>
+
+                <h4 class="h4 h4--sm">Срок хранения заказа</h4>
+                <p>В отделениях Почты России — 30 дней.</p>
+            </div>
+
+            <div class="tabs__body-item" data-tabs-body-item>
+                <ul class="list-mark">
+                    <li>Доступна на всей территории Российской Федерации.</li>
+                    <li>При оформлении заказа вам необходимо выбрать ближайший пункт выдачи заказа и подтвердить его.</li>
+                    <li>Выкуп части заказа не предусмотрен.</li>
+                </ul>
+
+                <h4 class="h4 h4--sm">Способы оплаты</h4>
+                <p>Оплатить можно онлайн на сайте, либо при получении в ПВЗ картой или наличными.</p>
+
+                <h4 class="h4 h4--sm">Стоимость доставки</h4>
+                <p>От 199 рублей. Полную стоимость доставки вы сможете узнать при оформлении заказа на сайте, либо по телефону.</p>
+
+                <h4 class="h4 h4--sm">Срок доставки</h4>
+                <p>От 2 рабочих дней, после согласования заказа.</p>
+
+                <h4 class="h4 h4--sm">Срок хранения заказа</h4>
+                <p>В пунктах выдачи заказа — 7 дней.</p>
+            </div>
         </div>
     </div>
 {% endmacro %}

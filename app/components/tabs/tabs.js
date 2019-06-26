@@ -6,17 +6,18 @@ class Tabs {
     }
 
     initialize() {
-        var tabsInline = $('[data-tabs-inline]');
 
         if (this.tabs.length) {
             var tabs = this.tabs;
 
-            tabs.on('click', '.tabs__head-link', function(e) {
+            tabs.on('click', '[data-tabs-link]', function(e) {
                 var el = $(this);
-                var parent = el.parents('.tabs');
-                var head = parent.find('.tabs__head-link');
-                var body = parent.find('.tabs__body-item');
+                var parent = el.parents('[data-tabs]');
+                var head = parent.find('[data-tabs-link]');
+                var body = parent.find('[data-tabs-body-item]');
                 var index = el.parent().index();
+
+                console.log(index);
 
                 if (!$(this).hasClass('active')) {
                     body.removeClass('open').hide();

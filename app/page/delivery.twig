@@ -1,0 +1,72 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/banner/banner.twig' as banner %}
+{% import '../components/tabs/tabs.twig' as tabs %}
+{% import '../components/question/question.twig' as question %}
+{% import '../components/teaser/teaser.twig' as teaser %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-delivery{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Способы доставки</h1>
+
+            {# баннер #}
+            {{ banner.banner(bannerList) }}
+
+            {# Тизер #}
+            {{ teaser.teaser(teaserList) }}
+
+            {# Вы можете выбрать удобный для вас способ доставки. #}
+            {{ tabs.tabsInner(tabsList) }}
+
+            {# Варианты оплаты #}
+            <h2 class="elem-title">Варианты оплаты</h2>
+
+            <div class="elem-icon elem-icon--sm">
+                {{ svg.icon('online-payment') }}
+                <div class="elem-icon__in">
+                    <h3 class="h3 h3--md">Банковской картой на сайте</h3>
+                    <p class="hidden-xl hidden-lg">
+                        Для онлайн-оплаты на странице оформления заказа необходимо выбрать пункт «Банковской картой онлайн». Далее в соответствующие поля нужно ввести номер карты, срок ее действия, код CVC2/CVV2, а также имя и фамилию держателя карты. После подтверждения заказа вы будете перенаправлены на платежный шлюз «Яндекс.Касса». К оплате принимаются банковские карты Visa, MasterCard и МИР.
+                    </p>
+                </div>
+            </div>
+            <p class="hidden-md hidden-sm hidden-xs">
+                Для онлайн-оплаты на странице оформления заказа необходимо выбрать пункт «Банковской картой онлайн». Далее в соответствующие поля нужно ввести номер карты, срок ее действия, код CVC2/CVV2, а также имя и фамилию держателя карты. После подтверждения заказа вы будете перенаправлены на платежный шлюз «Яндекс.Касса». К оплате принимаются банковские карты Visa, MasterCard и МИР.
+            </p>
+
+            <div class="elem-icon elem-icon--sm">
+                {{ svg.icon('offline-payment') }}
+                <div class="elem-icon__in">
+                    <h3 class="h3 h3--md">Оплата при получении </h3>
+                    <ul class="list-mark hidden-xl hidden-lg">
+                        <li>Наличными или банковской картой курьеру.</li>
+                        <li>Наложенным платежом при получении посылки в отделениях «Почты России».</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="list-mark hidden-md hidden-sm hidden-xs">
+                <li>Наличными или банковской картой курьеру.</li>
+                <li>Наложенным платежом при получении посылки в отделениях «Почты России».</li>
+            </ul>
+
+            {# Вопросы и ответы #}
+            {{ question.question(questionList) }}
+        </div>
+	</div>
+
+{% endblock %}
