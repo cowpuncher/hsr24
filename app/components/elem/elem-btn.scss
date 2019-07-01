@@ -136,6 +136,10 @@
         cursor: default;
     }
 
+    &--lg {
+        height: 52px;
+    }
+
     &--md {
         height: 40px;
         min-width: 124px;
@@ -201,5 +205,25 @@
         max-width: none;
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    &--table {
+        @media (max-width: $lg) {
+            min-width: 208px;
+        }
+
+        @media (max-width: $md) {
+            min-width: 140px;
+        }
+
+        & + & {
+            @media (max-width: $lg) {
+                margin-left: 20px;
+            }
+
+            @media (max-width: $md) {
+                margin-left: 10px;
+            }
+        }
     }
 }

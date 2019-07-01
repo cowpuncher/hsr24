@@ -16,29 +16,43 @@ class Counter {
             var min = parseInt(input.attr('min'));
             var max = parseInt(input.attr('max'));
 
+            if (parseInt(input.val()) == min) {
+                minus.prop("disabled", "disabled");
+            }
+
+            if (parseInt(input.val()) == max) {
+                plus.prop("disabled", "disabled");
+            }
+
             plus.click(function add() {
                 var $input = input;
                 var a = $input.val();
+                a++;
+                $input.val(a);
 
                 if (a < max) {
-                    a++;
+                } else {
+                    plus.prop("disabled", "disabled");
                 }
 
-                minus.attr("disabled", !a);
-                $input.val(a);
+                minus.prop("disabled", false);
+
             });
 
-            minus.attr("disabled", !input);
+            //minus.attr("disabled", !input);
 
             minus.click(function minusButton() {
                 var $input = input;
                 var b = $input.val();
+                b--;
+                $input.val(b);
+
                 if (b > min) {
-                    b--;
-                    $input.val(b);
                 } else {
-                    minus.attr("disabled", true);
+                    minus.prop("disabled", "disabled");
                 }
+
+                plus.prop("disabled", false);
             });
 
             input.on('change keyup focus', function() {

@@ -1,0 +1,32 @@
+.elem-like {
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $md) {
+        height: 26px;
+        width: 26px;
+    }
+
+    & .icon {
+        fill: $color-base;
+
+        & .bg {
+            fill: transparent;
+        }
+    }
+
+    &.active,
+    &:hover {
+
+        & .icon {
+            fill: $color-red;
+
+            & .bg {
+                fill: $color-red;
+            }
+        }
+    }
+}

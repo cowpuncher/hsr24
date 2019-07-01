@@ -1,9 +1,11 @@
 {% macro counter(data) %}
     {% import '../../page/_macros/_prefix.twig' as pr %}
     {% import '../../page/_macros/_mod.twig' as mod %}
+    {% import '../../page/_macros/_attr.twig' as attr %}
 
     {% set pr = pr.generatePrefix('counter', data.prefix) %}
     {% set mod = mod.generateMod('counter', data.prefix, data.mod) %}
+    {% set attr = attr.generateAttr('counter', data.prefix) %}
 
     <div class="counter{{pr}} {{mod}}" data-counter{{pr}}>
 
@@ -11,6 +13,6 @@
 
         <input type="text" class="counter{{pr}}__input" min="{{ data.min }}" value="{{ data.val }}" max="{{ data.max }}" {{attr}}-input>
 
-        <button class="counter {{pr}}__btn counter {{pr}}__btn--plus" {{attr}}-plus></button>
+        <button class="counter{{pr}}__btn counter{{pr}}__btn--plus" {{attr}}-plus></button>
     </div>
 {% endmacro %}

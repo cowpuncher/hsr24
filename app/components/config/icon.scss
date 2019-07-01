@@ -102,7 +102,8 @@
     &-tel,
     &-file,
     &-map,
-    &-arrow {
+    &-arrow,
+    &-cross {
         height: 32px;
         width: 32px;
     }
@@ -244,5 +245,10 @@
     &-online-payment {
         height: 92px;
         width: 92px;
+    }
+
+    &-garbage-can,
+    &-cross {
+        stroke: $color-base;
     }
 }

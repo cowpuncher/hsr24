@@ -1,0 +1,7 @@
+.elem-remove {
+    &:hover {
+        & .icon {
+            stroke: $color-red;
+        }
+    }
+}

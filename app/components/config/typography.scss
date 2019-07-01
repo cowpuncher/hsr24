@@ -188,6 +188,14 @@ mark,
     color: $color-red;
 }
 
+.color-gray {
+    color: $color-gray;
+}
+
+.color-gray-light {
+    color: $color-gray-light;
+}
+
 @media (min-width: $xl) {
     .text-right-xl {
         text-align: right;

@@ -1,21 +1,17 @@
-.page-favs {
+.page-cart {
     position: relative;
 
     &__row {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         text-align: center;
 
-        @media (max-width: $lg) {
-            flex-direction: column;
-        }
-
         & > * + * {
-            margin-left: 32px;
+            margin-top: 32px;
 
             @media (max-width: $lg) {
-                margin-left: 0;
                 margin-top: 28px;
             }
 

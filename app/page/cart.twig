@@ -1,0 +1,82 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/table/table.twig' as table %}
+{% import '../components/price-list/price-list.twig' as priceList %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-index{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title elem-title--row">
+                <span>Корзина <span class="hidden-lg hidden-xl color-gray-light">2</span></span>
+                <a href="#" class="elem-icon color-red elem-title__remove" data-remove-all>Очистить</a>
+            </h1>
+
+            {# Таблица #}
+            {{ table.table(tableList) }}
+
+            {# Итого #}
+            <div class="table__footer">
+                <div class="row justify-content-between">
+                    <div class="table__col col-xl-6 col-lg-6 col-md-6">
+                        <div class="table__row hidden-xs hidden-sm hidden-md">
+                            <a href="#" class="elem-icon table__link" data-remove-all>{{ svg.icon('garbage-can') }} Очистить корзину</a>
+                            <span class="table__text">Всего товаров: 2 шт.</span>
+                        </div>
+
+                        <form class="table__row align-items-end row" data-form-promo>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="elem-item">
+                                    <label class="elem-label">Промокод</label>
+                                    <input type="text" class="elem-input elem-input--gray" placeholder="Введите промокод" maxlength="4" data-promo>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5">
+                                <button class="elem-btn elem-btn--full elem-btn--dark">Применить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="table__col col-xl-6 col-lg-6 col-md-6 justify-content-end">
+                        <div class="row">
+                            <div class="col-xl-11 col-lg-11">
+                                <div class="row">
+                                    <div class="col-xl-5 col-lg-5"></div>
+                                    <div class="col-xl-7 col-lg-7">
+                                        {{ priceList.priceList(orderPriceList) }}
+                                    </div>
+                                </div>
+                                <div class="row table__btn hidden-xs hidden-sm hidden-md">
+                                    <div class="col-xl-5 col-lg-5">
+                                        <a href="#click" class="elem-btn elem-btn--full elem-btn--lg elem-btn--light elem-btn--gray-light bold" data-popup-modal>Купить в 1 клик</a>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7">
+                                        <a href="#thank" class="elem-btn elem-btn--full elem-btn--lg" data-popup-modal>Оформить заказ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table__btn hidden-lg hidden-xl d-flex justify-content-center">
+                    <a href="#click" class="elem-btn elem-btn--table elem-btn--lg elem-btn--light elem-btn--gray-light bold" data-popup-modal>Купить в 1 клик</a>
+                    <a href="#thank" class="elem-btn elem-btn--table elem-btn--lg" data-popup-modal>Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+	</div>
+
+{% endblock %}

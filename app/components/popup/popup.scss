@@ -27,6 +27,14 @@
         }
     }
 
+    &--md {
+        max-width: 416px;
+
+        @media (max-width: $lg) {
+            max-width: 392px;
+        }
+    }
+
     &--lg {
         max-width: 824px;
         padding-left: 40px;
@@ -128,6 +136,10 @@
             margin-top: 12px;
             margin-bottom: 15px;
         }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     &__links {
@@ -155,6 +167,11 @@
         @media (max-width: $md) {
             margin-bottom: 4px;
         }
+    }
+
+    &__contacts {
+
+        display: inline-flex;
     }
 
     & .mfp-close {

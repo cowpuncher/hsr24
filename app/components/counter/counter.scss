@@ -1,18 +1,65 @@
 .counter {
     display: flex;
+    width: 100px;
+
+    @media (max-width: $md) {
+        width: 84px;
+    }
 
     &__btn {
+        height: 27px;
+        width: 27px;
+        border: 1px solid $color-base;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: transparent;
+        outline: none;
+        position: relative;
+        cursor: pointer;
 
-        &_minus {
-
+        &:before,
+        &:after {
+            height: 1px;
+            width: 12px;
+            content: '';
+            background: $color-base;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -6px;
         }
 
-        &_plus {
+        &:after {
+            transform: rotate(90deg);
+        }
 
+        &--minus {
+            &:after {
+                display: none;
+            }
+        }
+
+        &:disabled {
+            border-color: $color-gray-light;
+
+            &:before,
+            &:after {
+                background: $color-gray-light;
+            }
         }
     }
 
     &__input {
-
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 800;
+        border: 0;
+        background: transparent;
+        width: 100%;
+        outline: none;
+        text-align: center;
     }
 }

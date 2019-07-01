@@ -64,4 +64,14 @@
             margin-bottom: 0;
         }
     }
+
+    &__remove {
+        font-size: 12px;
+        line-height: 15px;
+
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
 }

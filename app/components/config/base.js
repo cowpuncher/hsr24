@@ -144,6 +144,7 @@ $('[data-date]').mask("99/99/9999");
 $('[data-phone]').mask("+7 (999) 999-99-99");
 $('[data-card-num]').mask("9999 9999 9999 9999");
 $('[data-ssn]').mask("999-99-9999");
+//$('[data-promo]').mask("9999");
 
 $('[data-date-completed]').mask("99/99/9999", {
     placeholder:" ",
@@ -181,6 +182,56 @@ $('[data-validate]').validate({
 
 $('[data-close]').click(function(e) {
     $(this).parent().hide();
+
+    e.preventDefault();
+});
+
+$('[data-remove]').click(function(e) {
+    $(this).parents('tr').remove();
+
+    e.preventDefault();
+});
+
+$('[data-remove-all]').click(function(e) {
+    $('table tr').each(function() {
+        $(this).remove();
+    });
+
+    e.preventDefault();
+});
+
+$('[data-promo]').keyup(function() {
+    var el = $(this);
+    var val = el.val().replace('_','')
+
+    console.log(val);
+
+    if (val.length == 4) {
+        el.addClass('succsess');
+    } else {
+        el.removeClass('succsess');
+    }
+});
+
+$('[data-form-promo]').submit(function(e) {
+    var el = $(this);
+    var input = el.find('[data-promo]');
+    var item = input.parent();
+    var btn = el.find('button');
+
+    if (!el.hasClass('on-remove')) {
+        if (input.val().length == 4) {
+            btn.text('Удалить');
+            item.append('<span class="elem-input--status">Применён</span>');
+            el.addClass('on-remove');
+            input.removeClass('succsess');
+        }
+    } else {
+        input.val('');
+        item.find('.elem-input--status').remove();
+        btn.text('Применить');
+        el.removeClass('on-remove');
+    }
 
     e.preventDefault();
 });
