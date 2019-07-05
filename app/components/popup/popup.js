@@ -254,6 +254,8 @@ class Popap {
                         });
 
                     }
+
+                    $('.slick-initialized').slick('refresh');
                 },
                 close: function() {
                   // Will fire when popup is closed

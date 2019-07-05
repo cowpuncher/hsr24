@@ -88,6 +88,18 @@
         {
             "title": "Корзина авторизованного пользователя",
             "href": "cart-authorized.html"
+        },
+        {
+            "title": "Карточка товара",
+            "href": "product.html"
+        },
+        {
+            "title": "Карточка товара автризованного пользователя",
+            "href": "product-auth.html"
+        },
+        {
+            "title": "Карточка товара  с размерами",
+            "href": "product-size.html"
         }
     ],
     "menuTop": {

@@ -24,7 +24,7 @@ class Counter {
                 plus.prop("disabled", "disabled");
             }
 
-            plus.click(function add() {
+            plus.click(function add(e) {
                 var $input = input;
                 var a = $input.val();
                 a++;
@@ -36,12 +36,12 @@ class Counter {
                 }
 
                 minus.prop("disabled", false);
-
+                e.preventDefault();
             });
 
             //minus.attr("disabled", !input);
 
-            minus.click(function minusButton() {
+            minus.click(function minusButton(e) {
                 var $input = input;
                 var b = $input.val();
                 b--;
@@ -53,6 +53,7 @@ class Counter {
                 }
 
                 plus.prop("disabled", false);
+                e.preventDefault();
             });
 
             input.on('change keyup focus', function() {

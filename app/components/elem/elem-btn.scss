@@ -104,10 +104,25 @@
             border-color: $color-gray;
             background: $color-gray;
         }
+
+        &.bold {
+            font-weight: 800;
+        }
+    }
+
+    &--disabled.elem-btn--lg {
+        font-size: 14px;
+        line-height: 20px;
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+        }
     }
 
     &--gray-light {
-        border-color: $color-gray-light;
+        border: 1px solid $color-gray-light;
         color: $color-base;
         font-weight: 400;
         background: transparent;
@@ -115,10 +130,17 @@
         &:hover {
             border-color: $color-smoke;
             background-color: $color-smoke;
+            color: $color-base;
         }
 
         &.bold {
             font-weight: 800;
+        }
+
+        &.active {
+            color: $color-gray;
+            border-color: $color-smoke;
+            background-color: $color-smoke;
         }
     }
 
@@ -138,6 +160,37 @@
 
     &--lg {
         height: 52px;
+
+        @media (max-width: $lg) {
+            height: 44px;
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &-min {
+            min-width: 276px;
+
+            @media (max-width: $lg) {
+                min-width: 208px;
+            }
+
+            @media (max-width: $md) {
+                min-width: calc(50% - 5px);
+                width: calc(50% - 5px);
+            }
+
+            & + & {
+                margin-left: 32px;
+
+                @media (max-width: $lg) {
+                    margin-left: 20px;
+                }
+
+                @media (max-width: $md) {
+                    margin-left: 10px;
+                }
+            }
+        }
     }
 
     &--md {

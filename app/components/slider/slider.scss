@@ -237,4 +237,101 @@
             }
         }
     }
+
+    &-product {
+        margin-bottom: 16px;
+
+        @media (max-width: $md) {
+            margin-bottom: 9px;
+        }
+
+        &__item {
+            vertical-align: top;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        & .slick-prev {
+            left: -43px;
+            margin-top: -15px;
+        }
+
+        & .slick-next {
+            right: -43px;
+            margin-top: -15px;
+        }
+
+        &__bg {
+            background: linear-gradient(0deg, rgba(16, 16, 16, 0.3), rgba(16, 16, 16, 0.3));
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-product-carousel {
+        & .slick-slide {
+            width: 91px;
+            margin-right: 23px;
+
+            @media (max-width: $lg) {
+                width: 88px;
+                margin-right: 22px;
+            }
+
+            @media (max-width: $md) {
+                width: 72px;
+                margin-right: 10px;
+            }
+        }
+
+        &__item {
+            vertical-align: top;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &__bg {
+            //background: linear-gradient(0deg, rgba(16, 16, 16, 0.3), rgba(16, 16, 16, 0.3));
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & .elem-play {
+                height: 49px;
+                width: 49px;
+
+                @media (max-width: $md) {
+                    height: 38px;
+                    width: 38px;
+                }
+
+                &:after {
+                    border-width: 10px 0 10px 18px;
+
+                    @media (max-width: $md) {
+                        border-width: 8px 0 8px 15px;
+                    }
+                }
+            }
+        }
+    }
 }

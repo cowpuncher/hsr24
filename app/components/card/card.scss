@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     border: 1px solid $color-smoke;
     background: $color-white;
@@ -16,6 +16,16 @@
     @media (max-width: $md) {
         width: calc(50% - 10px);
         margin: 0 5px 8px;
+    }
+
+    &--inline {
+        border: 0;
+        display: inline-flex !important;
+
+        & .elem-btn--auto {
+            padding: 0 13px;
+            font-size: 12px;
+        }
     }
 
     .mobile-list & {
@@ -51,6 +61,24 @@
             min-height: 120px;
             padding-left: 119px;
             margin-bottom: 12px;
+        }
+
+        &--inline {
+            width: 392px;
+            margin-bottom: 0;
+
+            @media (max-width: $lg) {
+                width: 320px;
+                padding: 8px;
+                padding-left: 120px;
+                min-height: 120px;
+            }
+
+            @media (max-width: $md) {
+                width: 234px;
+                padding-left: 98px;
+                min-height: 106px;
+            }
         }
     }
 
@@ -159,6 +187,26 @@
                 right: 0;
             }
         }
+
+        .popup & {
+            & .slick-prev {
+                left: -6px;
+                margin-top: -19px;
+
+                @media (max-width: $lg) {
+                    left: 0;
+                }
+            }
+
+            & .slick-next {
+                right: -6px;
+                margin-top: -19px;
+
+                @media (max-width: $lg) {
+                    right: 0;
+                }
+            }
+        }
     }
 
     &__img {
@@ -206,6 +254,19 @@
                 position: absolute;
                 left: 8px;
                 top: 8px;
+            }
+        }
+
+        .card--inline & {
+            @media (max-width: $lg) {
+                width: 104px;
+                height: 104px;
+                margin-right: 8px;
+            }
+
+            @media (max-width: $md) {
+                width: 90px;
+                height: 90px;
             }
         }
     }
@@ -272,6 +333,18 @@
                 top: 4px;
             }
         }
+
+        .card--inline & {
+            position: relative;
+            left: auto;
+            top: auto;
+            display: inline-flex;
+            margin-bottom: 6px;
+
+            @media (max-width: $lg) {
+                margin-bottom: 11px;
+            }
+        }
     }
 
     &__info {
@@ -315,6 +388,10 @@
                 margin-bottom: 6px;
             }
         }
+
+        .card--inline & {
+            padding-top: 0;
+        }
     }
 
     &__name {
@@ -322,6 +399,11 @@
         line-height: 22px;
         text-align: center;
         display: block;
+
+        &--sm {
+            font-size: 16px;
+            line-height: 24px;
+        }
 
         @media (max-width: $lg) {
             font-size: 13px;
@@ -347,6 +429,21 @@
                 text-align: left;
                 padding-right: 0;
             }
+        }
+    }
+
+    &__count {
+        font-size: 12px;
+        line-height: 15px;
+        color: $color-gray;
+        font-weight: 800;
+        margin: 5px 0 9px;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            font-weight: 400;
+            margin-bottom: 0;
         }
     }
 
@@ -522,6 +619,10 @@
             & .elem-price-old {
                 margin-left: 13px;
                 margin-bottom: 4px;
+
+                @media (max-width: $lg) {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -582,6 +683,33 @@
                 right: 6px;
                 bottom: 8px;
             }
+
+            &--top {
+                bottom: auto;
+                top: 7px;
+                right: 13px;
+            }
+        }
+
+        .card--inline & {
+            right: 46px;
+            bottom: 11px;
+
+            @media (max-width: $lg) {
+                right: 14px;
+            }
+
+            @media (max-width: $md) {
+                right: 9px;
+                bottom: 6px;
+            }
+
+            & .icon {
+                @media (max-width: $md) {
+                    height: 26px;
+                    width: 26px;
+                }
+            }
         }
 
         & .icon {
@@ -605,6 +733,12 @@
                     fill: $color-red;
                 }
             }
+        }
+    }
+
+    &__btn {
+        .card--inline & {
+            margin-top: 8px;
         }
     }
 }

@@ -1,6 +1,10 @@
 .pagination {
     margin-top: 40px;
 
+    &--sm {
+        margin-top: 32px;
+    }
+
     @media (max-width: $lg) {
         margin-top: 21px;
     }

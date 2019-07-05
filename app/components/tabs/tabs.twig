@@ -128,3 +128,42 @@
         </div>
     </div>
 {% endmacro %}
+
+{% macro tabsProduct(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+    {% import '../../page/_macros/_prefix.twig' as pr %}
+    {% import '../../page/_macros/_mod.twig' as mod %}
+    {% import '../../page/_macros/_attr.twig' as attr %}
+
+    {% set pr = pr.generatePrefix('tabs', data.prefix) %}
+    {% set mod = mod.generateMod('tabs', data.prefix, data.mod) %}
+    {% set attr = attr.generateAttr('tabs', data.prefix) %}
+
+
+    <div class="tabs-product {% if data.class %}{{ data.class }}{% endif %}" {{attr}}>
+        <div class="tabs-product__head js-tabs-head" data-tabs-head>
+            {% for item in data.list %}
+                <div class="tabs-product__head-item">
+                    <a href="#" class="tabs-product__head-in {% if item.active %}active{% endif %}" data-tabs-link>
+                        <span class="tabs-product__head-link ">
+                            {{ item.title }}
+                        </span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="tabs-product__body js-tabs-body" data-tabs-body>
+            <div class="tabs-product__body-item open" data-tabs-body-item>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu dui. Fringilla urna porttitor rhoncus dolor purus. Neque gravida in fermentum et sollicitudin. Sed viverra tellus in hac habitasse platea. Mattis pellentesque id nibh tortor id. Rhoncus dolor purus non enim. Erat imperdiet sed euismod nisi porta lorem mollis. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Sed enim ut sem viverra aliquet eget sit amet. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque.
+                </p>
+            </div>
+
+            <div class="tabs-product__body-item" data-tabs-body-item>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu dui. Fringilla urna porttitor rhoncus dolor purus. Neque gravida in fermentum et sollicitudin. Sed viverra tellus in hac habitasse platea. Mattis pellentesque id nibh tortor id. Rhoncus dolor purus non enim. Erat imperdiet sed euismod nisi porta lorem mollis. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Sed enim ut sem viverra aliquet eget sit amet. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

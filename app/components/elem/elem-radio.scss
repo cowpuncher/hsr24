@@ -3,6 +3,20 @@
     display: flex;
     font-weight: 400;
 
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 11px -1px;
+
+        @media (max-width: $lg) {
+            margin: 7px -10px 1px -7px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 10px;
+        }
+    }
+
     &__span {
         position: relative;
         padding-left: 36px;
@@ -40,6 +54,167 @@
         &:before {
             background: $color-red;
             box-shadow: 0 0 0 1px $color-red;
+        }
+    }
+
+    &--color {
+        margin: 0 1px 8px;
+
+        @media (max-width: $lg) {
+            margin: 0 2px 8px;
+        }
+    }
+
+    &--color &__span {
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        padding: 3px;
+
+        &:before {
+            height: 22px;
+            width: 22px;
+            border: 1px solid transparent;
+            left: 3px;
+            top: 3px;
+            box-shadow: none;
+        }
+    }
+
+    &--color &__input:checked + &__span {
+        border-color: $color-red;
+
+        &:before {
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+
+    &--white &__span {
+        &:before {
+            border-color: $color-gray-light;
+            background: $color-white;
+        }
+    }
+
+    &--black &__span {
+        &:before {
+            background: $color-base;
+        }
+    }
+
+    &--red &__span {
+        &:before {
+            background: $color-red;
+        }
+    }
+
+    &--turquoise &__span {
+        &:before {
+            background: $color-turquoise;
+        }
+    }
+
+    &--blue &__span {
+        &:before {
+            background: $color-blue;
+        }
+    }
+
+    &--gray &__span {
+        &:before {
+            background: $color-gray;
+        }
+    }
+
+    &--green &__span {
+        &:before {
+            background: $color-green;
+        }
+    }
+
+    &--purple &__span {
+        &:before {
+            background: #D155FF;
+        }
+    }
+
+    &--pink &__span {
+        &:before {
+            background: #FD16AD;
+        }
+    }
+
+    &--yellow &__span {
+        &:before {
+            background: #FFEC44;
+        }
+    }
+
+    // checked
+
+    &--black &__input:checked + &__span {
+
+        &:before {
+            background:  $color-base;
+        }
+    }
+
+    &--red &__input:checked + &__span {
+
+        &:before {
+            background:  $color-red;
+        }
+    }
+
+    &--turquoise &__input:checked + &__span {
+
+        &:before {
+            background:  $color-turquoise;
+        }
+    }
+
+    &--blue &__input:checked + &__span {
+
+        &:before {
+            background:  $color-blue;
+        }
+    }
+
+    &--gray &__input:checked + &__span {
+
+        &:before {
+            background:  $color-gray;
+        }
+    }
+
+    &--green &__input:checked + &__span {
+
+        &:before {
+            background:  $color-green;
+        }
+    }
+
+    &--purple &__input:checked + &__span {
+
+        &:before {
+            background:  #D155FF;
+        }
+    }
+
+    &--pink &__input:checked + &__span {
+
+        &:before {
+            background:  #FD16AD;
+        }
+    }
+
+    &--yellow &__input:checked + &__span {
+
+        &:before {
+            background:  #FFEC44;
         }
     }
 }

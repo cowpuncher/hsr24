@@ -5,8 +5,11 @@ class Slider {
         this.sliderCarousel = $('[data-slider-carousel]');
         this.sliderTop = $('[data-slider-top]');
         this.sliderCards = $('[data-slider-cards]');
+        this.sliderCardsPopup = $('[data-slider-cards-popup]');
         this.sliderCategory = $('[data-slider-category]');
         this.sliderPopup = $('[data-slider-popup]');
+        this.sliderProduct = $('[data-slider-product]');
+        this.sliderProductCarousel = $('[data-slider-product-carousel]');
         this.initialize();
     }
 
@@ -18,6 +21,7 @@ class Slider {
         var nextCarousel = '<button type="button" class="slick-next slick-next--carousel"></button>';
 
         var sliderCards = this.sliderCards;
+        var sliderCardsPopup = this.sliderCardsPopup;
         var sliderCategory = this.sliderCategory;
         var ww = $(window).width();
 
@@ -40,6 +44,30 @@ class Slider {
                     }
                 }
             ]
+        });
+
+        this.sliderProduct.slick({
+            dots: false,
+            arrows: true,
+            infinite: true,
+            prevArrow: prev,
+            nextArrow: next,
+            cssEase: 'ease-out',
+            asNavFor: this.sliderProductCarousel,
+            adaptiveHeight: true
+        });
+
+        this.sliderProductCarousel.slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
+            speed: 300,
+            prevArrow: prevCarousel,
+            nextArrow: nextCarousel,
+            variableWidth: true,
+            cssEase: 'ease-out',
+            asNavFor: this.sliderProduct,
+            focusOnSelect: true
         });
 
         if (ww < 768) {
@@ -113,6 +141,42 @@ class Slider {
                         slidesToShow: 2,
                         dots: false,
                         arrows: false
+                    }
+                }
+            ]
+        });
+
+        sliderCardsPopup.slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            prevArrow: prevCarousel,
+            nextArrow: nextCarousel,
+            cssEase: 'ease-out',
+            slidesToShow: 2,
+            responsive: [
+                {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: false,
+                        arrows: false,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: false,
+                        arrows: false,
+                        variableWidth: true
                     }
                 }
             ]

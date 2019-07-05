@@ -35,6 +35,20 @@
         }
     }
 
+    &--mdx {
+        max-width: 523px;
+        padding-top: 40px;
+
+        @media (max-width: $lg) {
+            max-width: 492px;
+            padding-top: 28px;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 18px;
+        }
+    }
+
     &--lg {
         max-width: 824px;
         padding-left: 40px;
@@ -50,6 +64,20 @@
 
         @media (max-width: $md) {
             padding: 16px;
+        }
+    }
+
+    &--lgx {
+        max-width: 904px;
+        padding: 40px;
+
+        @media (max-width: $lg) {
+            max-width: 694px;
+            padding: 28px;
+        }
+
+        @media (max-width: $md) {
+            padding: 18px 16px 16px;
         }
     }
 
@@ -81,6 +109,11 @@
             margin-bottom: 20px;
         }
 
+        @media (max-width: $md) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
         @media (max-width: $sm) {
             text-align: left;
             border-bottom: 1px solid $color-gray;
@@ -105,6 +138,10 @@
                 margin-bottom: 15px;
                 margin-top: 0;
             }
+        }
+
+        .card__list + & {
+            margin-top: 26px;
         }
     }
 
@@ -222,7 +259,7 @@
         }
     }
 
-    & .elem-btn {
+    & .elem-btn:not(.elem-btn--sm) {
         @media (max-width: $lg) {
             height: 44px;
             font-size: 13px;
@@ -253,6 +290,81 @@
 
         &:first-child {
             margin-top: 0;
+        }
+    }
+
+    &__btns {
+        margin-top: 28px;
+
+        @media (max-width: $md) {
+            flex-wrap: wrap;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & .elem-btn:not(.elem-btn--sm) {
+            @media (max-width: $lg) {
+                min-width: 208px;
+                width: 208px;
+                max-width: 208px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            @media (max-width: $md) {
+                min-width: 100%;
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        & * + * {
+            margin-left: 24px;
+
+            @media (max-width: $lg) {
+                margin-left: 20px;
+            }
+
+            @media (max-width: $md) {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+    }
+
+    & .card__list {
+        margin-bottom: 0;
+
+        @media (max-width: $lg) {
+            margin-top: 28px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 17px;
+            margin-right: -16px;
+        }
+
+        &.list {
+            @media (max-width: $lg) {
+                padding: 0;
+            }
+        }
+    }
+
+    & .card__slider .slick-slide {
+        @media (max-width: $lg) {
+            margin: 0 3px;
+        }
+
+        @media (max-width: $md) {
+            width: 234px;
+            margin: 0 4px;
         }
     }
 }

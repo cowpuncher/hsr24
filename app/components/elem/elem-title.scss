@@ -19,6 +19,28 @@
         padding-top: 10px;
     }
 
+    &--lg {
+        margin-bottom: 41px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 21px;
+        }
+
+        @media (max-width: $md) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &-inline {
+        padding: 22px 0 16px;
+
+        @media (max-width: $lg) {
+            border-bottom: 1px solid $color-gray-light;
+            padding: 2px 0 13px;
+            margin-bottom: 0;
+        }
+    }
+
     .teaser + & {
         padding-top: 0;
     }
@@ -62,6 +84,15 @@
             line-height: 12px;
             letter-spacing: 0.1px;
             margin-bottom: 0;
+        }
+    }
+
+    &__counts {
+        color: $color-gray-light;
+        margin-left: 10px;
+
+        @media (max-width: $md) {
+            margin-left: 4px;
         }
     }
 

@@ -164,6 +164,14 @@
         & .bg {
             fill: transparent;
         }
+
+        &.active {
+            fill: $color-red;
+
+            & .bg {
+                fill: $color-red;
+            }
+        }
     }
 
     &-mail_illustration {

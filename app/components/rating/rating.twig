@@ -1,3 +1,6 @@
 {% macro rating(data) %}
-	<div class="rating" data-rating="{{ data }}"></div>
+    <div class="rating__wrap">
+        <div class="rating" data-rating="{{ data }}"></div>
+        <span class="rating__count">4.7</span>
+    </div>
 {% endmacro %}

@@ -7,7 +7,7 @@
     {% set mod = mod.generateMod('counter', data.prefix, data.mod) %}
     {% set attr = attr.generateAttr('counter', data.prefix) %}
 
-    <div class="counter{{pr}} {{mod}}" data-counter{{pr}}>
+    <div class="counter{{pr}} {{mod}} {% if data.class %}{{ data.class }}{% endif %}" data-counter{{pr}}>
 
         <button class="counter{{pr}}__btn counter{{pr}}__btn--minus" {{attr}}-minus></button>
 

@@ -135,6 +135,23 @@
         }
     }
 
+    &--textarea {
+        resize: none;
+        height: 184px;
+        padding: 28px 31px;
+        letter-spacing: -.2px;
+        display: block;
+
+        @media (max-width: $lg) {
+            height: 129px;
+            padding: 17px 19px;
+        }
+
+        @media (max-width: $md) {
+            padding: 8px 9px;
+        }
+    }
+
     &.succsess {
         border-color: $color-green;
 

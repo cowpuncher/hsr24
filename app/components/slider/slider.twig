@@ -21,6 +21,16 @@
                 {% if item.btn %}
                     <a href="#" class="elem-btn">{{ item.btn }}</a>
                 {% endif %}
+
+                {% if item.video %}
+                    <div class="slider{{pr}}__bg">
+                        {% if data.prefix == "product-carousel" %}
+                            <span class="elem-play"></span>
+                        {% else %}
+                            <a href="#{{ item.video }}" class="elem-play" data-popup-modal></a>
+                        {% endif %}
+                    </div>
+                {% endif %}
             </div>
         {% endfor %}
 

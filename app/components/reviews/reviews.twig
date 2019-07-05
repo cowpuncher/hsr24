@@ -3,31 +3,48 @@
     {% import '../rating/rating.twig' as rating %}
 
 	<div class="reviews__list">
-        {% for item in data.list %}
-            <div class="reviews">
-                <div class="reviews__head">
-                    <div class="reviews__name">{{ item.name }}</div>
-                    <div class="reviews__rating">
-                        {{ rating.rating(item.rating) }}
+        {% if data.title %}
+            <h2 class="elem-title">
+                {{ data.title }}
+                {% if data.count > -1 %}
+                    <span class="elem-title__counts">{{ data.count }}</span>
+                {% endif %}
+            </h2>
+        {% endif %}
+
+        {% if data.list %}
+            {% for item in data.list %}
+                <div class="reviews">
+                    <div class="reviews__head">
+                        <div class="reviews__name">{{ item.name }}</div>
+                        <div class="reviews__rating">
+                            {{ rating.rating(item.rating) }}
+                        </div>
+                        <div class="reviews__date">{{ item.date }}</div>
+                        {% if item.like %}
+                            <div class="reviews__voice">
+                                <div class="reviews__voice-title">Отзыв был вам полезен?</div>
+                                <a href="#" class="reviews__voice-item">
+                                    {{ svg.icon('thumbs-up') }} {{ item.like }}
+                                </a>
+                                <a href="#" class="reviews__voice-item">
+                                    {{ svg.icon('thumbs-down') }} {{ item.dislike }}
+                                </a>
+                            </div>
+                        {% endif %}
                     </div>
-                    <div class="reviews__date">{{ item.date }}</div>
-                    <div class="reviews__voice">
-                        <div class="reviews__voice-title">Отзыв был вам полезен?</div>
-                        <a href="#" class="reviews__voice-item">
-                            {{ svg.icon('thumbs-up') }} {{ item.like }}
-                        </a>
-                        <a href="#" class="reviews__voice-item">
-                            {{ svg.icon('thumbs-down') }} {{ item.dislike }}
-                        </a>
+                    <div class="reviews__body">
+                        <div class="reviews__text">{{ item.text }}</div>
+                        <div class="reviews__btn">
+                            <a href="#" class="elem-btn elem-btn--disabled elem-btn--xs">Читать дальше</a>
+                        </div>
                     </div>
                 </div>
-                <div class="reviews__body">
-                    <div class="reviews__text">{{ item.text }}</div>
-                    <div class="reviews__btn">
-                        <a href="#" class="elem-btn elem-btn--disabled elem-btn--xs">Читать дальше</a>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        {% if data.text %}
+            <p class="elem-desc page-product__desc text-center">{{ data.text }}</p>
+        {% endif %}
     </div>
 {% endmacro %}

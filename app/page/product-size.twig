@@ -1,0 +1,237 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/card/card.twig' as card %}
+{% import '../components/slider/slider.twig' as slider %}
+{% import '../components/rating/rating.twig' as rating %}
+{% import '../components/counter/counter.twig' as counter %}
+{% import '../components/tabs/tabs.twig' as tabs %}
+{% import '../components/reviews/reviews.twig' as reviews %}
+{% import '../components/pagination/pagination.twig' as pagination %}
+{% import '../components/select/select.twig' as select %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-product{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            <div class="elem-back hidden-lg hidden-xl">
+                {{ svg.icon('arrow-back2') }}
+                Назад
+
+                <div class="elem-back__list">
+                    <div class="elem-back__item">
+                        <a href="#" class="elem-back__link">Уход за кожей</a>
+                    </div>
+                    <div class="elem-back__item">
+                        <a href="#" class="elem-back__link">Товары по уходу</a>
+                    </div>
+                    <div class="elem-back__item">
+                        <a href="#" class="elem-back__link">Красота и здоровье</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-sticky-content>
+                <div class="col-lg-7 col-xl-7 position-relative" >
+
+                    {# слайдер с фото и видео #}
+                    <div class="page-product__sticky" data-sticky>
+                        <h1 class="h2 elem-title-inline">Мульти-овощерезка «Радуга вкуса»</h1>
+
+                        <div class="page-product__row page-product__top hidden-lg hidden-xl">
+                            <div class="elem-status">акция</div>
+                            <div class="elem-status elem-status--light">бесплатная доставка</div>
+                        </div>
+                        <div class="page-product__row justify-content-between hidden-lg hidden-xl">
+                            <div class="page-product__rating">
+                                {{ rating.rating(2.5) }}
+                            </div>
+                            <div class="page-product__articul">Артикул: 000000</div>
+                        </div>
+
+                        <div class="page-product__slider">
+                            {{ slider.slider(sliderList) }}
+                            {{ slider.slider(sliderList2) }}
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-xl-5">
+                    <form class="page-product__inner page-product__info">
+                        <div class="page-product__row page-product__top hidden-xs hidden-sm hidden-md">
+                            <div class="elem-status">акция</div>
+                            <div class="elem-status elem-status--light">бесплатная доставка</div>
+                        </div>
+                        <div class="page-product__row justify-content-between hidden-xs hidden-sm hidden-md">
+                            <div class="page-product__articul">Артикул: 000000</div>
+                            <div class="page-product__rating">
+                                {{ rating.rating(2.5) }}
+                            </div>
+                        </div>
+                        <div class="page-product__row page-product__row--mob page-product__row--mob-center">
+                            <div class="page-product__row justify-content-center align-items-end">
+                                <div class="elem-price elem-price--lg">1 000 ₽</div>
+                                <div class="elem-price-old elem-price-old--lg">1 400 ₽</div>
+                            </div>
+                            <div class="elem-info__wrap">
+                                <div class="elem-info">Цена без учета доступной скидки по вашей карте клуба HSR</div>
+                            </div>
+                        </div>
+
+                        <div class="page-product__row page-product__row--mob page-product__row--mob-reverse">
+                            <div class="page-product__select">
+                                {{ select.select(selectList) }}
+                            </div>
+
+                            <div class="page-product__color">
+                                <h6>Выберите цвет</h6>
+
+                                <div class="elem-radio__list">
+                                    <label class="elem-radio elem-radio--color elem-radio--white">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--black">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--red">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--turquoise">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--blue">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--gray">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--green">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--purple">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--pink">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+
+                                    <label class="elem-radio elem-radio--color elem-radio--yellow">
+                                        <input type="radio" class="elem-radio__input" name="radio1">
+                                        <span class="elem-radio__span"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-product__row page-product__row--mob">
+                            <div class="page-product__row justify-content-between page-product__left">
+                                <a href="#cart" class="elem-btn elem-btn--lg" data-popup-modal>В корзину</a>
+
+                                {{counter.counter({
+                                    "min": "1",
+                                    "max": "100",
+                                    "val": "1",
+                                    "class": "counter--inner"
+                                })}}
+                            </div>
+
+                            <div class="page-product__row page-product__btn page-product__right">
+                                <a href="#fav" class="elem-btn elem-btn--full elem-btn--lg elem-btn--gray-light bold" data-favorites data-popup-modal>
+                                    <svg id="favs" class="icon icon-favs" width="32" height="32" viewBox="0 0 32 32" stroke="none" stroke-width="0" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="bg" d="M15.8531 28.2099C16.236 28.5966 16.7464 28.5966 17.0016 28.2099C19.0433 26.1472 25.6789 19.9593 28.3587 16.6075C31.2936 13.1268 31.2936 8.48584 27.8482 5.26296C24.4028 2.04008 19.2985 3.45815 16.3636 7.71235C13.8114 3.32923 8.19668 2.29791 5.0065 5.26296C1.68871 8.35693 1.81631 13.5135 4.49607 16.6075C7.04822 19.5726 13.8114 26.1472 15.8531 28.2099Z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8009 3.19673C24.0258 2.67803 26.337 3.16464 28.1898 4.89774C31.8458 8.3177 31.8311 13.2605 28.7451 16.9247C26.7068 19.4726 22.41 23.6404 19.5588 26.4059C18.6464 27.2909 17.882 28.0324 17.3871 28.5311C17.1662 28.8351 16.8333 28.9999 16.4752 28.9999C16.1109 28.9999 15.7652 28.8317 15.4977 28.5616C15.0359 28.095 14.3253 27.3906 13.473 26.5457C10.594 23.6918 6.09868 19.2357 4.11757 16.9342C1.2807 13.6582 1.13111 8.19312 4.66546 4.89721L4.66606 4.89665C7.96882 1.82697 13.5517 2.7507 16.3929 6.82925C17.8724 4.94387 19.7943 3.66454 21.8009 3.19673ZM22.028 4.17062C20.0932 4.62168 18.183 5.95549 16.7751 7.99621C16.6779 8.13709 16.5154 8.21847 16.3444 8.21191C16.1733 8.20535 16.0175 8.11177 15.9314 7.96387C13.5105 3.80609 8.26073 2.92134 5.3472 5.62881C2.24644 8.52066 2.3519 13.3682 4.87398 16.2801L4.87498 16.2812C6.82615 18.5481 11.2601 22.9436 14.1417 25.8002C15.007 26.6581 15.7324 27.3771 16.2084 27.8581C16.3238 27.9746 16.4247 27.9999 16.4752 27.9999C16.5142 27.9999 16.549 27.9878 16.5842 27.9344C16.6023 27.907 16.6231 27.8814 16.6462 27.8581C17.1669 27.332 17.9709 26.5521 18.9254 25.6262C21.7786 22.8585 25.9762 18.7866 27.9681 16.2952L27.9762 16.285L27.9764 16.2851C30.7561 12.9885 30.7397 8.65228 27.5066 5.62803C25.914 4.13825 23.9503 3.72245 22.028 4.17062Z"/>
+                                    </svg>
+                                    <span>Добавить в избранное</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="page-product__row page-product__tabs">
+                            {{ tabs.tabsProduct(tabsList) }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            {# Отзывы #}
+            <div class="page-product__reviews">
+                {{ reviews.reviews(reviewsList) }}
+
+                {{ pagination.paginationSmall() }}
+            </div>
+
+            {# Написать отзыв #}
+            <div class="page-product__reviews-add">
+                <h2 class="elem-title elem-title--lg">Написать отзыв</h2>
+                <p class="elem-desc page-product__desc text-center">
+                    Чтобы оставить отзыв о товаре, войдите под своим именем.<br>
+                    Если у вас еще нет аккаунта — зарегистрируйте его.
+                </p>
+                <div class="page-product__row justify-content-center">
+                    <div class="elem-btn elem-btn--lg elem-btn--lg-min elem-btn--light elem-btn--gray bold">
+                        <span class="hidden-xs hidden-sm">Зарегистрироваться</span>
+                        <span class="hidden-md hidden-lg hidden-xl">Регистрация</span>
+                    </div>
+                    <div class="elem-btn elem-btn--lg elem-btn--lg-min">
+                        <span class="hidden-xs hidden-sm">Войти</span>
+                        <span class="hidden-md hidden-lg hidden-xl">Вход</span>
+                    </div>
+                </div>
+            </div>
+
+            {# С этим товаром покупают #}
+            <div class="page-product__cards hidden-xs hidden-sm">
+                <h2 class="elem-title">С этим товаром покупают</h2>
+                <div class="card__wrap">
+                    <div class="card__list card__slider" data-slider-cards>
+                        {% for item in recommendList.list %}
+                            {{ card.card(item) }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            {# Вам может понравиться #}
+            <div class="page-product__cards hidden-xs hidden-sm">
+                <h2 class="elem-title">Вам может понравиться</h2>
+                <div class="card__wrap">
+                    <div class="card__list card__slider" data-slider-cards>
+                        {% for item in recommendList.list %}
+                            {{ card.card(item) }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+{% endblock %}

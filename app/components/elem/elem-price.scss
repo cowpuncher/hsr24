@@ -13,6 +13,11 @@
         line-height: 26px;
     }
 
+    &--lg {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
     &-old {
         font-size: 16px;
         line-height: 19px;
@@ -33,6 +38,24 @@
             line-height: 14px;
             letter-spacing: 0px;
             margin-left: 4px;
+        }
+
+        &--lg {
+            font-size: 20px;
+            line-height: 31px;
+
+            @media (max-width: $lg) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            * + & {
+                margin-left: 15px;
+
+                @media (max-width: $lg) {
+                    margin-left: 4px;
+                }
+            }
         }
     }
 }

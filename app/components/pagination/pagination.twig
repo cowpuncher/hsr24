@@ -29,3 +29,21 @@
         </ul>
 	</nav>
 {% endmacro %}
+
+{% macro paginationSmall() %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+
+	<nav class="pagination pagination--sm">
+        <ul class="pagination__list">
+            <a href="#" class="pagination__link pagination__link--prev disabled">
+                {{ svg.icon('arrow-back') }}
+            </a>
+
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">1</a>
+            </li>
+
+            <a href="#" class="pagination__link pagination__link--next disabled">{{ svg.icon('arrow-back') }}</a>
+        </ul>
+	</nav>
+{% endmacro %}

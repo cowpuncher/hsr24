@@ -5,12 +5,12 @@
 $('select').each(function() {
     var el = $(this);
     var ww = $(window).width();
-    var noneSelectedText = "Выберите параметры";
+    var noneSelectedText = el.attr('data-desktop-none') || "Выберите параметры";
 
     if (ww < 768) {
         noneSelectedText = el.attr('data-mobile-none');
     } else {
-        noneSelectedText = "Выберите параметры";
+        noneSelectedText = el.attr('data-desktop-none') || "Выберите параметры";
     }
 
     el.attr('title', noneSelectedText);
@@ -35,6 +35,16 @@ if ($('[data-sticky]').length) {
             var maxScroll = content.offset().top + content.height() - el.height();
             var ww = $(window).width();
 
+            $(window).resize(function() {
+                ww = $(window).width();
+
+                if (ww < 1280) {
+                    el.removeClass('fixed');
+                    el.removeClass('bottom');
+                    el.removeAttr('style');
+                }
+            });
+
             $(window).scroll(function() {
                 var scrollTop = $(window).scrollTop();
                 offset = el.parent().offset().top + 12;
@@ -43,15 +53,22 @@ if ($('[data-sticky]').length) {
                 elWidth = el.parent().width();
 
                 if (ww > 1279) {
-                    if (scrollTop >= offset) {
-                        if (scrollTop <= maxScroll) {
-                            el.addClass('fixed');
-                            el.removeClass('bottom');
-                            el.css({'width': elWidth + 'px'});
-                            el.css({'left': offsetLeft + 'px'});
+
+                    if (el.innerHeight() < content.innerHeight()) {
+                        if (scrollTop >= offset) {
+                            if (scrollTop <= maxScroll) {
+                                el.addClass('fixed');
+                                el.removeClass('bottom');
+                                el.css({'width': elWidth + 'px'});
+                                el.css({'left': offsetLeft + 'px'});
+                            } else {
+                                el.addClass('bottom');
+                                el.removeClass('fixed');
+                                el.removeAttr('style');
+                            }
                         } else {
-                            el.addClass('bottom');
                             el.removeClass('fixed');
+                            el.removeClass('bottom');
                             el.removeAttr('style');
                         }
                     } else {
@@ -75,18 +92,40 @@ $('[data-ul-title]').click(function() {
     el.parent().toggleClass('open');
 });
 
+$('[data-favorites]').click(function(e) {
+    var el = $(this);
+    el.toggleClass('active');
+    el.find('.icon').toggleClass('active');
+
+    if (el.hasClass('active')) {
+        el.find('span').text('Добавлено в избранное');
+        setTimeout(function () {
+            el.removeAttr('data-popup-modal');
+            el.attr('href', '#');
+        }, 300);
+    } else {
+        el.find('span').text('Добавить в избранное');
+        setTimeout(function () {
+            el.attr('data-popup-modal');
+            el.attr('href', '#fav');
+        }, 300);
+    }
+
+    e.preventDefault();
+});
+
 $(window).resize(function() {
     var ww = $(window).width();
     this.console.log(ww);
 
     $('select').each(function() {
         var el = $(this);
-        var noneSelectedText = "Выберите параметры";
+        var noneSelectedText = el.attr('data-desktop-none') || "Выберите параметры";
 
         if (ww < 768) {
             noneSelectedText = el.attr('data-mobile-none');
         } else {
-            noneSelectedText = "Выберите параметры";
+            noneSelectedText = el.attr('data-desktop-none') || "Выберите параметры";
         }
 
         el.attr('title', noneSelectedText);

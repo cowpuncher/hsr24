@@ -14,4 +14,10 @@
         line-height: 17px;
         margin-bottom: 23px;
     }
+
+    @media (max-width: $md) {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.1px;
+    }
 }

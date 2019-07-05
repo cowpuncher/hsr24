@@ -9,6 +9,11 @@
         width: 100% !important;
     }
 
+    &.select--full {
+        max-width: none;
+        width: 100% !important;
+    }
+
     & > .dropdown-toggle {
         padding: 10px 45px 10px 20px;
         font-size: 14px;
@@ -380,6 +385,84 @@
                                 top: calc(50% + 7px);
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    &.select--sm {
+        & > .dropdown-toggle {
+            height: 52px;
+            border-radius: 26px;
+            font-weight: 800;
+            padding-left: 31px;
+            padding-right: 70px;
+
+            @media (max-width: $lg) {
+                height: 44px;
+                border-radius: 22px;
+                font-size: 13px;
+                line-height: 16px;
+                padding-left: 22px;
+                padding-right: 45px;
+            }
+
+            & .bs-caret {
+                position: absolute;
+                top: 0;
+                right: 40px;
+                width: 25px;
+                height: 100%;
+
+                @media (max-width: $lg) {
+                    right: 25px;
+                }
+
+                & .caret {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 17px;
+                    height: 17px;
+                    border-top: 1px solid $color-base;
+                    border-right: 1px solid $color-base;
+                    transform: rotate(135deg);
+                    margin-top: -13px;
+                    transition: all 0.3s ease-in-out;
+
+                    @media (max-width: $lg) {
+                        height: 11px;
+                        width: 11px;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+
+        & .dropdown-menu {
+            top: 26px;
+
+            @media (max-width: $lg) {
+                text-outline: 20px;
+            }
+
+            & li {
+                & a {
+                    height: 40px;
+
+                    @media (max-width: $lg) {
+                        height: 36px;
+                    }
+                }
+
+                &:first-child a {
+                    padding-top: 26px;
+                    height: 66px;
+
+                    @media (max-width: $lg) {
+                        padding-top: 20px;
+                        height: 56px;
                     }
                 }
             }

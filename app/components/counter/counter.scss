@@ -62,4 +62,40 @@
         outline: none;
         text-align: center;
     }
+
+    &--inner {
+        border-radius: 28px;
+        border: 1px solid $color-gray-light;
+        height: 52px;
+        align-items: center;
+        padding: 0 22px;
+        width: 155px;
+        margin-left: 16px;
+        flex-shrink: 0;
+
+        @media (max-width: $lg) {
+            height: 44px;
+            width: 126px;
+            padding: 0 13px;
+            margin-left: 16px;
+        }
+
+        @media (max-width: $md) {
+            margin-left: 0;
+            order: -1;
+            margin-right: 10px;
+            width: calc(50% - 5px);
+            padding: 0 21px;
+        }
+    }
+
+    &--inner &__btn {
+        border: 0;
+
+        &:before,
+        &:after {
+            width: 15px;
+            margin-left: -8px;
+        }
+    }
 }

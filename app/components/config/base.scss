@@ -187,18 +187,22 @@ ol:not([class]) {
 
     & > li {
         &:before {
-            @media (max-width: $md) {
-                position: absolute;
-                left: 16px;
-                top: 14px;
+            .content & {
+                @media (max-width: $md) {
+                    position: absolute;
+                    left: 16px;
+                    top: 14px;
+                }
             }
         }
 
         & ol li:before {
-            @media (max-width: $md) {
-                position: relative;
-                left: auto;
-                top: auto;
+            .content & {
+                @media (max-width: $md) {
+                    position: relative;
+                    left: auto;
+                    top: auto;
+                }
             }
         }
     }

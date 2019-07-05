@@ -1,7 +1,27 @@
 .reviews {
+    & + & {
+        margin-top: 23px;
+
+        @media (max-width: $lg) {
+            margin-top: 21px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 13px;
+        }
+    }
+
+    & .rating__count {
+        display: none;
+    }
+
 	&__head {
         display: flex;
         align-items: center;
+
+        @media (max-width: $md) {
+            flex-wrap: wrap;
+        }
     }
 
     &__name {
@@ -9,11 +29,31 @@
         line-height: 20px;
         font-weight: 800;
         margin-right: 24px;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 14px;
+            width: 100%;
+            margin: 0 0 5px;
+        }
     }
 
     &__rating {
         margin-right: 24px;
         display: flex;
+
+        @media (max-width: $lg) {
+            margin-right: 22px;
+        }
+
+        @media (max-width: $md) {
+            margin-right: 10px;
+        }
     }
 
     &__date {
@@ -21,6 +61,18 @@
         line-height: 21px;
         color: $color-gray;
         font-weight: 400;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: 0;
+        }
+
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+        }
     }
 
     &__voice {
@@ -55,6 +107,18 @@
         border-radius: 20px;
         margin-top: 18px;
         padding: 24px 32px;
+
+        @media (max-width: $lg) {
+            margin-top: 12px;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 10px;
+            border-radius: 8px;
+            padding: 8px 9px;
+        }
     }
 
     &__text {
@@ -63,5 +127,33 @@
         line-height: 24px;
         letter-spacing: -0.2px;
         font-weight: 400;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 9px;
+        }
+    }
+
+    &__btn {
+
+        & .elem-btn--xs {
+            @media (max-width: $md) {
+                padding: 0;
+                background: none;
+                font-size: 10px;
+                line-height: 14px;
+                color: $color-base;
+                font-weight: 800;
+                height: auto;
+                width: auto;
+                min-width: 0;
+            }
+        }
     }
 }

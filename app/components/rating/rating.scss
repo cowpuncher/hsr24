@@ -1,6 +1,6 @@
-@mixin stars($height:22px,$max:5, $colors:(base:"#dddddd" , rate: $color-red ,hover:"#e3d06c" ) ) {
+@mixin stars($height:22px,$max:5, $space:6, $colors:(base:"#dddddd" , rate: $color-red ,hover:"#e3d06c" ) ) {
     position: relative;
-    width: ($height * $max + $max * 6);
+    width: ($height * $max + $max * $space);
     display: inline-block;
     height: $height;
 
@@ -22,7 +22,7 @@
     &:after {
       background-repeat: repeat-x;
       background-image: url("data:image/svg+xml,%3Csvg width='28' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.3541 10.0169C21.7812 9.5964 21.932 8.9793 21.7478 8.40564C21.5631 7.83199 21.0821 7.42249 20.4912 7.33559L15.237 6.56442C15.0132 6.53151 14.8199 6.38974 14.7199 6.18477L12.3709 1.37609C12.1072 0.835795 11.5719 0.500031 10.9753 0.500031C10.3791 0.500031 9.84378 0.835795 9.58003 1.37609L7.2306 6.18521C7.13066 6.39018 6.93687 6.53195 6.71309 6.56486L1.45892 7.33603C0.868413 7.42249 0.386969 7.83243 0.2023 8.40608C0.0180646 8.97974 0.168842 9.59684 0.595971 10.0173L4.39755 13.7603C4.55963 13.9201 4.63393 14.1501 4.59569 14.3748L3.69885 19.6601C3.61934 20.1254 3.74013 20.5779 4.03821 20.9347C4.5014 21.4908 5.31004 21.6602 5.9566 21.317L10.6555 18.8214C10.8519 18.7174 11.0991 18.7182 11.2951 18.8214L15.9944 21.317C16.2229 21.4386 16.4667 21.5 16.7183 21.5C17.1775 21.5 17.6129 21.2937 17.9123 20.9347C18.2108 20.5779 18.3312 20.1245 18.2517 19.6601L17.3544 14.3748C17.3162 14.1496 17.3905 13.9201 17.5525 13.7603L21.3541 10.0169Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
-      background-size: (($height * $max + $max * 6) / $max);
+      background-size: (($height * $max + $max * $space) / $max) 100%;
       content: "";
       display: block;
       width: ($height*$max);
@@ -33,11 +33,45 @@
 
     @for $i from $max*2 through 0 {
       &[data-rating='#{($max*2 - $i)*0.5}']:after {
-       width:($height * $max + $max * 6)*(($max * 2 - $i) / ($max * 2));
+       width:($height * $max + $max * $space)*(($max * 2 - $i) / ($max * 2));
       }
     }
   }
 
 .rating {
-	@include stars($height:22px);
+    @include stars($height:22px);
+
+    @media (max-width: $md) {
+        @include stars($height:11px, $space: 3);
+    }
+
+    &--big {
+        @include stars($height:28px, $space: 7.63);
+
+        @media (max-width: $lg) {
+            @include stars($height:22px);
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__count {
+        margin-left: 4px;
+        font-size: 14px;
+        line-height: 16px;
+
+        @media (max-width: $lg) {
+            font-size: 13px;
+            line-height: 19px;
+            margin-left: 5px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 7px;
+            line-height: 9px;
+        }
+    }
 }
