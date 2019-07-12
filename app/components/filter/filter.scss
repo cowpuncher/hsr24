@@ -49,6 +49,19 @@
         & .pagination {
             margin-top: 0;
         }
+
+        &--scroll {
+            width: 100%;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            position: relative;
+        }
+    }
+
+    &__field-scroll {
+        display: flex;
+        overflow-x: auto;
+        position: relative;
     }
 
     &__select {

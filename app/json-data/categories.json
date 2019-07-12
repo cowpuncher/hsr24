@@ -1159,6 +1159,25 @@
         "filter": {
             "name": "Фильтры<span class='hidden-sm hidden-xs'> по параметрам</span>"
         },
+        "category": [
+            {
+                "name": "Сковороды",
+                "num": "10",
+                "class": "active"
+            },
+            {
+                "name": "Кастрюли",
+                "num": "5"
+            },
+            {
+                "name": "Выпечка",
+                "num": "10"
+            },
+            {
+                "name": "Наборы",
+                "num": "100"
+            }
+        ],
         "btn": [
             {
                 "text": "Хиты продаж",

@@ -7,6 +7,14 @@
 	<div class="filter">
 
         {% if data.top %}
+            <div class="filter__row filter__row--scroll">
+                <div class="filter__field-scroll">
+                    {% for item in data.category %}
+                        <a href="#" class="elem-link elem-link--margin-right {{ item.class }}">{{ item.name }}<span class="elem-label elem-label--red-circle">{{ item.num }}</span></a>
+                    {% endfor %}
+                </div>
+            </div>
+
             <div class="filter__row">
                 {% if data.filter %}
                     <a href="#" class="elem-filter" data-filter-show>
