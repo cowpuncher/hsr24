@@ -100,6 +100,10 @@
         {
             "title": "Карточка товара  с размерами",
             "href": "product-size.html"
+        },
+        {
+            "title": "Личный кабинет",
+            "href": "profile.html"
         }
     ],
     "menuTop": {

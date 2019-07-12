@@ -7,4 +7,12 @@
         margin-right: 8px;
         flex-shrink: 0;
     }
+
+    &--margin-right {
+        margin-right: 10px;
+    }
+
+    &.active {
+        color: $color-red;
+    }
 }

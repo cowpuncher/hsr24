@@ -1,0 +1,63 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+
+
+
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-profile{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <form class="container__inner">
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            
+            <h2 class="elem-title elem-title--inner">Личный кабинет</h2>
+
+            <div class="row page-order__content" data-sticky-content>
+                <div class="col-12 col-xl-6 col-lg-6">
+                    <h3 class="light h3 h3--lg">Персональные данные</h3>
+
+                    <div class="row">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                            <div class="elem-item elem-item--md">
+                                <label class="elem-label">Имя</label>
+                                <input type="text" class="elem-input" value="Екатерина">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                            <div class="elem-item elem-item--md">
+                                <label class="elem-label">Фамилия</label>
+                                <input type="text" class="elem-input" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                            <div class="elem-item elem-item--md">
+                                <label class="elem-label">Отчество</label>
+                                <input type="email" class="elem-input" value="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </form>
+	</div>
+
+{% endblock %}
