@@ -12,7 +12,8 @@
         margin-right: 10px;
     }
 
-    &.active {
+    &.active,
+    &--red {
         color: $color-red;
     }
 }

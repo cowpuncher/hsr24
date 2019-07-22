@@ -22,10 +22,10 @@ table {
         }
     }
 
-    & td {
+
+    & td:not(.more-info__col) {
         padding: 28px 15px 12px;
         border-bottom: 1px solid $color-gray-light;
-
 
         &.td {
 
@@ -213,7 +213,7 @@ table {
         display: flex;
         flex-direction: column;
 
-        & + & {
+        &+& {
             @media (max-width: $md) {
                 margin-top: 16px;
             }
@@ -237,7 +237,7 @@ table {
             margin-bottom: 0;
         }
 
-        & + & {
+        &+& {
             margin-top: auto;
         }
 
@@ -324,9 +324,7 @@ table {
             line-height: 17px;
         }
 
-        @media (max-width: $md) {
-
-        }
+        @media (max-width: $md) {}
     }
 
     &__price {
@@ -367,6 +365,8 @@ table {
                     border-bottom: 1px solid $color-gray-light;
                     padding-bottom: 7px;
                     min-height: 151px;
+
+
                 }
 
                 @media (max-width: $md) {
@@ -376,13 +376,307 @@ table {
                     padding-bottom: 13px;
                 }
 
-                & + tr {
+                &+tr {
                     @media (max-width: $lg) {
                         margin-top: 20px;
                     }
 
                     @media (max-width: $md) {
                         margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Стили для таблицы со списком заказов в личном кабинете
+    &--order {
+        @media (max-width: $md) {
+            display: block;
+        }
+
+        & tr {
+            display: flex;
+            width: 100%;
+        }
+
+        & thead {
+            @media (max-width: $md) {
+                display: none;
+            }
+
+            @media (min-width: $md) {
+                & th {
+                    width: 16%;
+                    padding: 15px 0;
+                }
+
+                & th:nth-child(2) {
+                    width: 20%;
+                }
+            }
+        }
+
+        & tbody {
+            @media (max-width: $md) {
+                display: block;
+            }
+
+            @media (min-width: $md) {
+                & tr:not(:first-child) {
+                    & td:not(.more-info__col) {
+                        border-top: 1px solid $color-gray-light;
+                    }
+                }
+            }
+
+
+            & tr:not(.more-info) {
+                @media (max-width: $md) {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    padding-right: 92px;
+                    padding-bottom: 7px;
+                    min-height: 151px;
+
+                    &:not(:first-child) {
+                        border-top: 1px solid $color-gray-light;
+                    }
+                }
+
+                @media (max-width: $md) {
+                    padding-right: 72px;
+                    min-height: 104px;
+                    padding-bottom: 13px;
+                    padding-top: 15px;
+                    margin-top: 15px;
+                }               
+            }
+
+
+            & td:not(.more-info__col) {
+                padding: 28px 15px 12px;
+                border-bottom: 0;
+
+                @media (min-width: $md) {
+                    width: 16%;
+
+                    &:nth-child(2) {
+                        width: 20%;
+                    }
+                }
+
+                &.td {
+
+                    @media (min-width: $md) {
+                        text-align: center;
+                        justify-content: center;
+
+                        span {
+                            margin: 0 auto;
+                        }
+
+                        .table__price {
+                            padding: 0;
+                            align-items: center;
+                        }
+                    }
+
+                    @media (max-width: $md) {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 6px 8px 7px;
+                        border-bottom: 0;
+                        font-size: 12px;
+                        line-height: 17px;
+                    }
+
+                    @media (max-width: $md) {
+                        padding: 0;
+                        font-size: 10px;
+                        line-height: 12px;
+                        letter-spacing: 0.1px;
+                    }
+
+
+                    &--order {
+                        &-number {
+                            @media (max-width: $md) {
+                                font-weight: bold;
+                            }
+                        }
+
+                        &-date {
+                            @media (max-width: $md) {
+                                margin: 6px 0;
+                            }
+                        }
+
+                        &-payment {
+                            @media (max-width: $md) {
+                                margin-top: 6px;
+                                order: 1;
+                            }
+                        }
+
+                        &-status {
+                            @media (max-width: $md) {
+                                font-weight: bold;
+                                color: $color-red;
+                                position: absolute;
+                                top: 15px;
+                                right: 0;
+                            }
+                        }
+
+                        &-price {
+                            @media (min-width: $md) {
+                                .elem-price {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        &-more {
+                            @media (max-width: $md) {
+                                position: absolute;
+                                top: 50px;
+                                right: 0;
+                            }
+
+                            & .icon {
+                                height: 32px;
+                                width: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Раскрывающаяся карточка с подробной информацией о заказе
+            & .more-info {
+                display: none;
+                background-color: $color-smoke;
+                border-radius: 8px;
+                padding: 16px;
+                
+                @media (min-width: $md) {
+                    padding: 28px;
+                }
+
+                &.active {
+                    display: flex;
+                    flex-direction: column;
+
+                    @media (min-width: $md) {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                }
+
+                &__col {
+                    &:not(:first-child) {
+                        margin-top: 20px;
+
+                        @media (min-width: $md) {
+                            margin-top: 0;
+                        }
+                    }
+
+                    @media (min-width: $md) {
+                        width: 48%;
+                    }
+
+                    @media (min-width: $lg) {
+                        width: 30%;
+                    }
+
+                    &:nth-child(2) {
+                        @media (min-width: $md) {
+                            order: 1;
+                        }
+
+                        @media (min-width: $lg) {
+                            order: unset;
+                        }
+                    }
+                }
+
+                &__head {
+                    font-size: 15px;
+                }
+
+                &__list {
+                    margin-top: 16px;
+                    counter-reset: item2;
+
+                    &--bordered {
+                        border-bottom: 1px solid $color-gray-light;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                &__result {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 16px;
+                    font-weight: 800;
+                    margin-top: 10px;
+
+                    @media (min-width: $md) {
+                        font-size: 24px;
+                    }
+                }
+
+                &__item {
+                    font-weight: bold;
+                    color: $color-gray;
+                    line-height: 1.5;
+
+                    @media (min-width: $md) {
+                        line-height: 2.25;
+                    }
+
+                    &-value {
+                        font-weight: normal;
+                        color: $color-base;
+
+                        &--red {
+                            color: $color-red;
+                        }
+                    }
+                }
+
+                &__product {
+                    padding-top: 3px;
+
+                    &:not(:first-child) {
+                        margin-top: 15px;
+                    }
+
+                    &-name {
+                        margin-left: 30px;
+                    }
+
+                    &:before {
+                        content: counter(item2);
+                        counter-increment: item2;
+                        height: 20px;
+                        width: 20px;
+                        position: absolute;
+                        left: 0;
+                        top: 1px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        font-size: 12px;
+                        line-height: 15px;
+                        font-weight: 800;
+                        color: $color-white;
+                        background: $color-gray;                        
                     }
                 }
             }

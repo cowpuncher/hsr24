@@ -1,0 +1,599 @@
+.club-card {
+    position: relative;
+    &__group {
+        position: relative;
+        
+        &:nth-child(3) {
+            margin: 20px 0;
+
+            @media (min-width: $md) {
+                margin: 0;
+            }
+        }
+
+        @media (min-width: $md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        @media (min-width: $md) {
+            position: absolute;
+            max-width: 40%;
+            bottom: 22.135vw; // 170px;
+            left: -13.021vw; // -100px;
+        }
+
+        @media (min-width: $lg) {
+            position: absolute;
+            max-width: 30%;
+            bottom: 320px;
+            left: -162px;
+        }
+
+        @media (min-width: $xl) {
+            bottom: 332px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;       
+
+        &-item {
+            position: absolute;
+            
+            &--bold {
+                font-weight: 800;
+            }
+
+            &--uppercase {
+                text-transform: uppercase;
+            }
+
+            &--name {
+                top: 5.313vw; // 17px;
+                left: 25.625vw; // 82px;
+                width: 31.250vw; // 100px;
+                font-size: 3.125vw; // 10px;
+                line-height: 4.375vw; // 14px;
+                color: $color-orange;
+
+                @media (min-width: $md) {
+                    top: 1.042vw; // 8px;
+                    left: 6.510vw; // 50px;
+                    width: 21.745vw; // 167px;
+                    font-size: 1.693vw; // 13px;
+                    line-height: 2.083vw; // 16px;
+                }
+
+                @media (min-width: $lg) {
+                    top: 8px;
+                    left: 80px;
+                    width: 250px;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+
+            }
+
+            &--balance {
+                top: 40.625vw; // 130px;
+                right: 6.250vw; // 20px;
+                width: 28.750vw; // 92px;
+                font-size: 5vw; // 16px;
+                line-height: 6.250vw; // 20px;
+                color: $color-turquoise;
+                text-align: center;
+
+                @media (min-width: $md) {
+                    top: 27.083vw; // 208px;
+                    left: 42.448vw; // 326px;
+                    width: 13.021vw; // 100px;
+                    font-size: 1.693vw; // 13px;
+                    line-height: 2.083vw; // 16px;
+                }
+
+                @media (min-width: $lg) {
+                    top: 348px;
+                    left: 558px;
+                    width: 160px;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 360px;
+                    left: 578px;
+                }
+            }
+
+            &--info {
+                @media (min-width: $md) {
+                    top: 12.109vw; // 93px;
+                    left: 18.750vw; // 144px;
+                    width: 17.448vw; // 134px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                    color: $color-turquoise;
+                }
+
+                @media (min-width: $lg) {
+                    top: 170px;
+                    left: 245px;
+                    width: 215px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 180px;
+                    left: 256px;
+                }
+            }
+
+            &--current-status {
+                top: 29.688vw; // 95px;
+                left: 10.625vw; // 34px;
+                width: 34.375vw; // 110px;
+                font-size: 3.125vw; // 10px;
+                line-height: 4.375vw; // 14px;
+                color: $color-orange;
+                text-align: center;
+
+                @media (min-width: $md) {
+                    top: 6.250vw; // 48px;
+                    left: auto;
+                    right: 33.203vw; // 255px;
+                    width: 13.021vw; // 100px;
+                    font-size: 1.302vw; // 10px;
+                    line-height: 1.823vw; // 14px;
+                }
+
+                @media (min-width: $lg) {
+                    top: 80px;
+                    right: 442px;
+                    width: 150px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 90px;
+                    right: 462px;
+                }
+
+                & .icon-status-basic {
+                    width: 100%;
+                    height: 25vw; // 80px;
+
+                    @media (min-width: $md) {
+                        height: 10.677vw; // 82px;
+                    }
+
+                    @media (min-width: $lg) {
+                        height: 130px;
+                    }
+                }
+            }
+
+            &--next-status {
+                top: 7.813vw; // 25px;
+                left: 6.875vw; // 22px;
+                width: 45.625vw; // 146px;
+                font-size: 3.125vw; // 10px;
+                line-height: 3.750vw; // 12px;
+                color: $color-orange;
+
+                @media (min-width: $md) {
+                    top: -25vw; // -192px;
+                    left: 67.448vw; // 518px;
+                    width: 9.115vw; // 70px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                    text-align: center;
+                }
+
+                @media (min-width: $lg) {
+                    width: 120px;
+                    top: -308px;
+                    left: 876px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    left: 908px;
+                }
+            }
+
+            &--purchases {
+                top: 8.125vw; // 26px;
+                right: 14.375vw; // 46px;
+                width: 18.750vw; // 60px;
+                font-size: 3.125vw; // 10px;
+                line-height: 6.250vw; // 20px;
+                color: $color-orange;
+                text-align: center;
+
+                @media (min-width: $md) {
+                    top: -13.672vw; // -105px;
+                    left: 67.448vw; // 518px;
+                    width: 9.115vw; // 70px;
+                    font-size: 1.823vw; // 14px;
+                    line-height: 2.865vw; // 22px;
+                    text-align: center;
+                }
+
+                @media (min-width: $lg) {
+                    width: 120px;
+                    top: -158px;
+                    left: 876px;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+
+                @media (min-width: $xl) {
+                    left: 908px;
+                }
+            }
+
+            &--levels {
+                @media (min-width: $md) {
+                    top: 3.776vw; // 29px;
+                    left: 44.792vw; // 344px;
+                    width: 20.182vw; // 155px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                    color: $color-turquoise;
+                }
+
+                @media (min-width: $lg) {
+                    top: 61px;
+                    left: 576px;
+                    width: 254px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    left: 600px;
+                }
+            }
+
+            &--status-medium,
+            &--status-all {
+                width: 37.500vw; // 120px;
+                top: 24.375vw; // 78px;
+
+                @media (min-width: $md) {
+                    width: 20.573vw; // 158px;
+                    top: 16.146vw; // 124px;
+                }
+
+                @media (min-width: $lg) {
+                    width: 158px;
+                    top: 218px;
+                }
+
+                & .icon-status-medium,
+                & .icon-status-all {
+                    width: 100%;
+                    height: 25vw;  // 80px;
+
+                    @media (min-width: $md) {
+                        height: 10.677vw; // 82px;
+                    }
+
+                    @media (min-width: $lg) {
+                        height: 130px;
+                    }
+                }
+            }
+
+            &--status-medium {
+                left: 3.125vw; // 10px;
+
+                @media (min-width: $lg) {
+                    left: 94px;
+                }
+
+                @media (min-width: $xl) {
+                    left: 104px;
+                }
+            }
+
+            &--status-all {
+                right: 3.125vw; // 10px;
+
+                @media (min-width: $md) {
+                    left: 25.130vw; // 193px;
+                }
+
+                @media (min-width: $lg) {
+                    left: 378px;
+                }
+
+                @media (min-width: $xl) {
+                   left: 398px;
+                }
+            }
+
+            &--cashback-medium,
+            &--cashback-all {
+                top: 53.750vw; // 172px;
+                width: 25vw; // 80px;
+                font-size: 2.813vw; // 9px;
+                line-height: 3.438vw; // 11px;
+                color: $color-orange;
+
+                @media (min-width: $md) {
+                    top: 30.990vw; // 238px;
+                    width: 10.026vw; // 77px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                }
+
+                @media (min-width: $lg) {
+                    top: 404px;
+                    width: 124px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 418px;
+                }
+            }
+
+            &--cashback-medium {
+                left: 15.625vw; // 50px;
+
+                @media (min-width: $md) {
+                    left: 10.417vw; // 80px;
+                }
+
+                @media (min-width: $lg) {
+                    left: 150px;
+                }
+
+                @media (min-width: $xl) {
+                    left: 156px;
+                }
+            }
+
+            &--cashback-all {
+                right: 3.750vw; // 12px;
+
+                @media (min-width: $md) {
+                    right: 45.573vw; // 350px;
+                }
+
+                @media (min-width: $lg) {
+                    right: 584px;
+                }
+
+                @media (min-width: $xl) {
+                    right: 610px;
+                }
+            }
+
+            &--cashback-base {
+                @media (min-width: $md) {
+                    right: 17.188vw; // 132px;
+                    top: 8.073vw; // 62px;
+                    width: 10.417vw; // 80px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                    color: $color-orange;
+                }
+
+                @media (min-width: $lg) {
+                    top: 105px;
+                    right: 224px;
+                    width: 130px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 110px;
+                    right: 235px;
+                }
+            }
+
+            &--cashback-value {
+                position: absolute;
+                left: -10.313vw; // -33px;
+                top: 2.500vw; // 8px;
+                font-size: 5vw; // 16px;
+                line-height: 6.250vw; // 20px;
+
+                @media (min-width: $md) {
+                    left: -4.688vw; // -36px;
+                    top: 0.911vw; // 7px;
+                    font-size: 2.344vw; // 18px;
+                    line-height: 2.865vw; // 22px;
+                }
+
+                @media (min-width: $lg) {
+                    left: -66px;
+                    top: 8px;
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+            }
+
+            &--present-medium,
+            &--present-all {
+                top: 71.250vw; // 228px;
+                width: 20.938vw; // 67px;
+                font-size: 2.813vw; // 9px;
+                line-height: 3.438vw; // 11px;
+                color: $color-orange;
+
+                @media (min-width: $md) {
+                    top: 37.500vw; // 288px;
+                    width: 8.854vw; // 68px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                }
+
+                @media (min-width: $lg) {
+                    top: 488px;
+                    width: 104px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 504px;
+                }
+            }
+
+            &--present-medium {
+                left: 20vw; // 64px;
+
+                @media (min-width: $md) {
+                    left: 12.370vw; // 95px;
+                }
+
+                @media (min-width: $lg) {
+                    left: 166px;
+                }
+
+                @media (min-width: $xl) {
+                    left: 172px;
+                }
+            }
+
+            &--present-all {
+                right: 3.125vw; // 10px;
+                
+                @media (min-width: $md) {
+                    right: 45.052vw; // 346px;
+                }
+
+                @media (min-width: $lg) {
+                    right: 588px;
+                }
+
+                @media (min-width: $xl) {
+                    right: 612px;
+                }
+            }
+
+            &--present-base {
+                @media (min-width: $md) {
+                    right: 17.188vw; // 132px;
+                    top: 14.583vw; // 112px;
+                    width: 8.594vw; // 66px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                    color: $color-orange;
+                }
+
+                @media (min-width: $lg) {
+                    top: 190px;
+                    right: 230px;
+                    width: 108px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 196px;
+                    right: 235px;
+                }
+            }
+
+            &--present-value {
+                position: absolute;
+                left: -13.750vw; // -44px;
+                top: 1.563vw; // 5px;
+                font-size: 3.750vw; // 12px;
+                line-height: 4.688vw; // 15px;
+
+                @media (min-width: $md) {
+                    left: -5.990vw; // -46px;
+                    top: 0.521vw; // 4px;
+                    font-size: 1.693vw; // 13px;
+                    line-height: 2.083vw; // 16px;
+                }
+
+                @media (min-width: $lg) {
+                    left: -80px;
+                    top: 4px;
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+
+            &--bonuses-deadline {
+                top: 91.250vw; // 292px;
+                right: 6.250vw; // 20px;
+                width: 31.250vw; // 100px;
+                font-size: 2.813vw; // 9px;
+                line-height: 3.438vw; // 11px;
+                color: $color-orange;
+                text-align: center;
+
+                @media (min-width: $md) {
+                    top: 46.875vw; // 360px;
+                    left: 28.906vw; // 222px;
+                    width: 13.021vw; // 100px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                }
+
+                @media (min-width: $lg) {
+                    top: 606px;
+                    left: 372px;
+                    width: 170px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 630px;
+                    left: 394px;
+                }
+            }
+
+            &--about {
+                top: 21.875vw; // 70px;
+                right: 5.625vw; // 18px;
+                width: 56.250vw; // 180px;
+                font-size: 2.813vw; // 9px;
+                line-height: 3.438vw; // 11px;
+                color: $color-turquoise;
+
+                @media (min-width: $md) {
+                    top: 9.635vw; // 74px;
+                    right: 16.406vw; // 126px;
+                    width: 30.599vw; // 235px;
+                    font-size: 1.172vw; // 9px;
+                    line-height: 1.432vw; // 11px;
+                }
+
+                @media (min-width: $lg) {
+                    top: 140px;
+                    right: 246px;
+                    width: 382px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                @media (min-width: $xl) {
+                    top: 155px;
+                    right: 258px;
+                }
+            }
+
+        }
+    }
+}
