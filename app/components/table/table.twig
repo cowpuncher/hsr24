@@ -82,9 +82,61 @@
                                     {{ svg.icon('cross') }}
                                 </a>
                             {% endif %}
+
+                            {% if item2.more %}
+                                <a href="#" class="btn-more" data-more>
+                                    {{ svg.icon('arrow-down') }}
+                                </a>
+                            {% endif %}
                         </td>
                     {% endfor %}
                 </tr>
+
+                {% if item.more %}
+                    {% for item2 in item.more %}
+                        <tr class="more-info">
+                            <td class="more-info__col">
+                                <div class="more-info__head">Детали заказа</div>
+                                
+                                <ul class="more-info__list">
+                                    <li class="more-info__item">Адрес доставки: <span class="more-info__item-value">{{ item2.address }}</span></li>
+                                    <li class="more-info__item">Тип доставки: <span class="more-info__item-value">{{ item2.deliveryType }}</span></li>
+                                    <li class="more-info__item">Трек-номер: <span class="more-info__item-value">{{ item2.trackNumber }}</span></li>
+                                </ul>
+
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Сумма заказа</div>
+                                
+                                <ul class="more-info__list more-info__list--bordered">
+                                    <li class="more-info__item">Товары: <span class="more-info__item-value">{{ item2.productSum }}</span></li>
+                                    <li class="more-info__item">Доставка: <span class="more-info__item-value">{{ item2.deliverySum }}</span></li>
+                                    <li class="more-info__item">Скидка HSR: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;{{ item2.saleHSR }}</span></li>
+                                    <li class="more-info__item">Бонусные рубли: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;{{ item2.saleRouble }}</span></li>
+                                    <li class="more-info__item">Скидки по промокоду: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;{{ item2.salePromocode }}</span></li>
+                                </ul>
+
+                                <div class="more-info__result">
+                                    <div class="more-info__result-label">Итого:</div>
+                                    <div class="more-info__result-label">{{ item2.totalSum }}</div>
+                                </div>
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Список товаров</div>
+                                
+                                <ul class="more-info__list">
+                                    {% for item3 in item2.products %}
+                                        <li class="more-info__product"><span class="more-info__product-name">{{ item3.name }}</span></li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+
+                        </tr>
+                    {% endfor %}
+                {% endif %}
+
             {% endfor %}
         </tbody>
     </table>
