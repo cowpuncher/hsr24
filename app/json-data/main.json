@@ -1091,6 +1091,11 @@
                         "priceOld": "1 400 ₽",
                         "price": "1 000 ₽",
                         "btn": "В корзину"
+                    },
+                    {
+                        "class": "card-link",
+                        "icon": "go-to-catalog",
+                        "btn": "Перейти в каталог"
                     }
                 ]
             },
@@ -1152,6 +1157,11 @@
                         "priceOld": "1 400 ₽",
                         "price": "1 000 ₽",
                         "btn": "В корзину"
+                    },
+                    {
+                        "class": "card-link",
+                        "icon": "go-to-catalog",
+                        "btn": "Перейти в каталог"
                     }
                 ]
             },
@@ -1213,6 +1223,11 @@
                         "priceOld": "1 400 ₽",
                         "price": "1 000 ₽",
                         "btn": "В корзину"
+                    },
+                    {
+                        "class": "card-link",
+                        "icon": "go-to-catalog",
+                        "btn": "Перейти в каталог"
                     }
                 ]
             },
@@ -1274,6 +1289,11 @@
                         "priceOld": "1 400 ₽",
                         "price": "1 000 ₽",
                         "btn": "В корзину"
+                    },
+                    {
+                        "class": "card-link",
+                        "icon": "go-to-catalog",
+                        "btn": "Перейти в каталог"
                     }
                 ]
             }

@@ -23,7 +23,23 @@
 
 		&__link {
 			display: block;
-			padding: 17px 0px;
+            padding: 17px 0px;
+            font-weight: 400;
+            
+            &:hover {
+                color: $color-white;
+            }
+            
+            .menu-top__text {
+                padding-bottom: 2px;
+                border-bottom: 1px solid transparent;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover .menu-top__text {
+                border-bottom: 1px solid $color-white;
+                transition: all 0.3s ease-in-out;
+            }
 		}
 	}
 
@@ -186,10 +202,10 @@
             &:hover {
                 color: $color-red;
 
-                & .icon {
-                    fill: $color-red;
-                    stroke: $color-red;
-                }
+                // & .icon {
+                //     fill: $color-red;
+                //     stroke: $color-red;
+                // }
             }
         }
 
@@ -271,6 +287,10 @@
             margin-left: auto;
             flex-shrink: 0;
             margin-left: 17px;
+
+            &:hover {
+                background: $color-hover-all;
+            }
 
 			& .icon {
 				margin-right: 8px;

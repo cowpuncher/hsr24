@@ -741,4 +741,40 @@
             margin-top: 8px;
         }
     }
+
+    &-link {
+        justify-content: center;
+        padding: 10px;
+
+        @media (min-width: $md) {
+            padding: 30px;
+        }
+
+        &__icon {
+            margin-bottom: 20px;
+
+            & .icon-go-to-catalog {
+                height: 100px;
+
+                @media (min-width: $md) {
+                    height: 150px;
+                }
+            }
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+
+            & .elem-btn {
+                width: 100%;
+                max-width: 130px;
+                
+                @media (min-width: $md) {
+                    max-width: 100%;
+                }
+                
+            }
+        }
+    }
 }
