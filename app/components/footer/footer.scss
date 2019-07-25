@@ -314,6 +314,7 @@
 
     &__menu {
         padding-top: 8px;
+        width: 42%;
 
         @media (max-width: $lg) {
             width: calc(100% - 86px);

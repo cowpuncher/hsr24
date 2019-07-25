@@ -16,6 +16,12 @@
                                 <input type="radio" class="elem-radio__input" name="{{ data.radioName }}">
                                 <span class="elem-radio__span">{{ item.radio }}</span>
                             </label>
+                            {% if item.radio2 %}
+                                <label class="elem-radio">
+                                    <input type="radio" class="elem-radio__input" name="{{ data.radioName }}">
+                                    <span class="elem-radio__span">{{ item.radio2 }}</span>
+                                </label>
+                            {% endif %}
                         </div>
                     </div>
                 </a>

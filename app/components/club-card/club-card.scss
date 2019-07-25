@@ -24,6 +24,10 @@
             left: -13.021vw; // -100px;
         }
 
+        @media (min-width: 1024px) {
+            bottom: 25.586vw; // 262px;
+        }
+
         @media (min-width: $lg) {
             position: absolute;
             max-width: 30%;
@@ -98,6 +102,13 @@
                     line-height: 2.083vw; // 16px;
                 }
 
+                
+                @media (min-width: 1024px) {
+                    top: 27.930vw; // 286px;
+                    left: 44.238vw; // 453px; 
+                }
+
+
                 @media (min-width: $lg) {
                     top: 348px;
                     left: 558px;
@@ -120,6 +131,11 @@
                     font-size: 1.172vw; // 9px;
                     line-height: 1.432vw; // 11px;
                     color: $color-turquoise;
+                }
+
+                @media (min-width: 1024px) {
+                    top: 13.184vw; // 135px;
+                    left: 19.531vw; // 200px;
                 }
 
                 @media (min-width: $lg) {
@@ -152,6 +168,10 @@
                     width: 13.021vw; // 100px;
                     font-size: 1.302vw; // 10px;
                     line-height: 1.823vw; // 14px;
+                }
+
+                @media (min-width: 1024px) {
+                    right: 34.570vw; // 354px;
                 }
 
                 @media (min-width: $lg) {
@@ -198,6 +218,10 @@
                     text-align: center;
                 }
 
+                @media (min-width: 1024px) {
+                    left: 69.727vw; // 714px;
+                }
+
                 @media (min-width: $lg) {
                     width: 120px;
                     top: -308px;
@@ -229,6 +253,10 @@
                     text-align: center;
                 }
 
+                @media (min-width: 1024px) {
+                    left: 69.727vw; // 714px;
+                }
+
                 @media (min-width: $lg) {
                     width: 120px;
                     top: -158px;
@@ -250,6 +278,10 @@
                     font-size: 1.172vw; // 9px;
                     line-height: 1.432vw; // 11px;
                     color: $color-turquoise;
+                }
+
+                @media (min-width: 1024px) {
+                    left: 46.094vw; // 472px;
                 }
 
                 @media (min-width: $lg) {
@@ -338,6 +370,10 @@
                     line-height: 1.432vw; // 11px;
                 }
 
+                @media (min-width: 1024px) {
+                    top: 32.031vw; // 328px;
+                }
+
                 @media (min-width: $lg) {
                     top: 404px;
                     width: 124px;
@@ -357,6 +393,10 @@
                     left: 10.417vw; // 80px;
                 }
 
+                @media (min-width: 1024px) {
+                    left: 11.328vw; // 116px;
+                }
+
                 @media (min-width: $lg) {
                     left: 150px;
                 }
@@ -371,6 +411,10 @@
 
                 @media (min-width: $md) {
                     right: 45.573vw; // 350px;
+                }
+
+                @media (min-width: 1024px) {
+                    right: 47.070vw; // 482px;
                 }
 
                 @media (min-width: $lg) {
@@ -390,6 +434,10 @@
                     font-size: 1.172vw; // 9px;
                     line-height: 1.432vw; // 11px;
                     color: $color-orange;
+                }
+
+                @media (min-width: 1024px) {
+                    right: 17.773vw; // 182px;
                 }
 
                 @media (min-width: $lg) {
@@ -443,6 +491,10 @@
                     line-height: 1.432vw; // 11px;
                 }
 
+                @media (min-width: 1024px) {
+                    top: 38.672vw; // 396px;
+                }
+
                 @media (min-width: $lg) {
                     top: 488px;
                     width: 104px;
@@ -462,6 +514,10 @@
                     left: 12.370vw; // 95px;
                 }
 
+                @media (min-width: 1024px) {
+                    left: 13.086vw; // 134px;
+                }
+
                 @media (min-width: $lg) {
                     left: 166px;
                 }
@@ -476,6 +532,10 @@
                 
                 @media (min-width: $md) {
                     right: 45.052vw; // 346px;
+                }
+
+                @media (min-width: 1024px) {
+                    right: 46.680vw; // 478px;
                 }
 
                 @media (min-width: $lg) {
@@ -495,6 +555,11 @@
                     font-size: 1.172vw; // 9px;
                     line-height: 1.432vw; // 11px;
                     color: $color-orange;
+                }
+
+                @media (min-width: 1024px) {
+                    top: 15.137vw; // 155px;
+                    right: 18.164vw; // 186px;
                 }
 
                 @media (min-width: $lg) {
@@ -550,6 +615,11 @@
                     line-height: 1.432vw; // 11px;
                 }
 
+                @media (min-width: 1024px) {
+                    top: 47.852vw; // 490px;
+                    left: 30.078vw; // 308px;
+                }
+
                 @media (min-width: $lg) {
                     top: 606px;
                     left: 372px;
@@ -578,6 +648,10 @@
                     width: 30.599vw; // 235px;
                     font-size: 1.172vw; // 9px;
                     line-height: 1.432vw; // 11px;
+                }
+
+                @media (min-width: 1024px) {
+                    right: 19.531vw; // 200px;
                 }
 
                 @media (min-width: $lg) {

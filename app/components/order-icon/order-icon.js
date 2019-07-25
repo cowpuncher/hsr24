@@ -10,9 +10,24 @@ class OrderIcon {
             var el = $(this);
             var parent = el.parent();
 
+            // Немного доработал скрипт для того, чтобы было возможно вставлять дополнительные радиокнопки
+            var option = el.find('.elem-radio'); // added row
+
             parent.children().removeClass('active');
             el.addClass('active');
-            el.find('input').prop('checked', 'checked');
+            el.find('input').first().prop('checked', 'checked'); // el.find('input').prop('checked', 'checked');
+            
+            option.off().on('click', function(e) { // added
+                console.log('click');
+                // $(this).toggleClass('active');
+                $(this).find('input').first().prop('checked', 'checked');
+                
+                $(this).parents('[data-order-icon]').parent().children().removeClass('active');
+                $(this).parents('[data-order-icon]').addClass('active');
+
+                e.stopPropagation();
+                e.preventDefault();
+            })
 
             e.preventDefault();
         });

@@ -10,3 +10,6 @@ import '../../bower_components/jquery-validation/dist/additional-methods.js';
 import '../../bower_components/jquery-validation/dist/localization/messages_ru.js';
 import '../../bower_components/bootstrap-select/dist/js/bootstrap-select.min.js';
 import '../../bower_components/bootstrap-select/dist/js/i18n/defaults-ru_RU.min.js';
+
+import '../../bower_components/air-datepicker/dist/js/datepicker.min.js';
+import '../../bower_components/svgxuse/svgxuse.min.js';

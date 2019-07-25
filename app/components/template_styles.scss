@@ -8,6 +8,13 @@
 @import "../../bower_components/bootstrap-select/sass/bootstrap-select.scss";
 // @import "../../bower_components/jquery-autocomplete/autocomplete.scss";
 
+// Стили плагина Air-Datepicker
+@import "../../bower_components/air-datepicker/src/sass/_datepicker-config.scss";
+@import "../../bower_components/air-datepicker/src/sass/cell.scss";
+@import "../../bower_components/air-datepicker/src/sass/datepicker.scss";
+@import "../../bower_components/air-datepicker/src/sass/navigation.scss";
+@import "../../bower_components/air-datepicker/src/sass/timepicker.scss";
+
 @import "config/variables";
 @import "config/mixins";
 @import "config/fonts";
