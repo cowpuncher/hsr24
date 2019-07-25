@@ -1079,7 +1079,7 @@
         },
         {
             "img": "assets/images/example/card/img1.jpg",
-            "status": "НЕТ В НАЛИЧИЕ",
+            "status": "НЕТ В НАЛИЧИИ",
             "name": "Комплект «Созвездие Изумруд»",
             "priceOld": "1 400 ₽",
             "price": "1 000 ₽",
@@ -1090,7 +1090,7 @@
         },
         {
             "img": "assets/images/example/card/img5.jpg",
-            "status": "НЕТ В НАЛИЧИЕ",
+            "status": "НЕТ В НАЛИЧИИ",
             "name": "Колье + серьги «Янтарный цветок»",
             "priceOld": "1 400 ₽",
             "price": "1 000 ₽",
@@ -1102,7 +1102,7 @@
         },
         {
             "img": "assets/images/example/card/img6.jpg",
-            "status": "НЕТ В НАЛИЧИЕ",
+            "status": "НЕТ В НАЛИЧИИ",
             "name": "Комплект цепь + серьги «Чудесница»",
             "priceOld": "1 400 ₽",
             "price": "1 000 ₽",
@@ -1113,7 +1113,7 @@
         },
         {
             "img": "assets/images/example/card/img7.jpg",
-            "status": "НЕТ В НАЛИЧИЕ",
+            "status": "НЕТ В НАЛИЧИИ",
             "name": "Комплект «Созвездие Рубин»",
             "priceOld": "1 400 ₽",
             "price": "1 000 ₽",

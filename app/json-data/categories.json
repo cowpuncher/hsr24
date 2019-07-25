@@ -1049,7 +1049,7 @@
     "cardClist": [
         {
             "img": "assets/images/example/card/img8.jpg",
-            "status": "НЕТ В НАЛИЧИЕ",
+            "status": "НЕТ В НАЛИЧИИ",
             "name": "Колье + браслет «Меридиан»",
             "priceOld": "1 400 ₽",
             "price": "1 000 ₽",

@@ -38,6 +38,7 @@
         border: 1px solid $color-gray-light;
         border-radius: 12px;
         padding: 21px 20px 14px;
+        height: 100%;
 
         @media (max-width: $md) {
             flex-direction: row;
@@ -56,6 +57,10 @@
         & .elem-radio {
             font-weight: 800;
             margin-bottom: 0;
+
+            &:not(last-child) {
+                margin-bottom: 10px;
+            }
 
             &__span {
                 padding-left: 30px;

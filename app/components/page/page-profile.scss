@@ -1,3 +1,6 @@
 .page-profile {
-    
+    .phone-number div,
+    .phone-number-change div {
+        flex: 0 1 auto;
+    }
 }

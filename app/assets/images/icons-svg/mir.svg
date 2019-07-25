@@ -1,17 +1,84 @@
-<svg width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M39.3451 7.37769V15.2217H44.2513V10.8094H49.189C51.768 10.8094 53.9695 9.38465 54.8186 7.37769H39.3451Z" fill="#006848"/>
-<path d="M39.1444 0.378662C39.1602 0.77754 39.2234 1.17642 39.3183 1.54461C39.3341 1.62132 39.3657 1.71337 39.3815 1.79008C39.3973 1.82076 39.3973 1.85144 39.4131 1.89747C40.2983 4.6129 42.9064 6.57661 45.9886 6.57661H55.0932C55.1564 6.26978 55.188 5.96295 55.188 5.64078C55.188 4.10663 54.5083 2.7259 53.4177 1.75939C52.4535 0.900271 51.1732 0.378662 49.7506 0.378662H39.1444V0.378662Z" fill="url(#paint0_linear)"/>
-<path d="M30.5352 1.95097L27.072 9.17137H26.7224V0.378662H21.7976V15.2622H25.9758C27.072 15.2622 28.0728 14.6515 28.5335 13.6898L31.9968 6.46944H32.3463V15.2622H37.2711V0.378662H33.093C31.9968 0.378662 30.9959 0.989267 30.5352 1.95097Z" fill="#006848"/>
-<path d="M7.69468 2.34316L9.74215 9.2189H10.0886L12.1204 2.34316C12.4669 1.17674 13.5536 0.378662 14.7978 0.378662H19.6803V15.3426H14.7978V6.50237H14.4513L11.6479 15.3426H8.16717L5.3637 6.50237H5.01721V15.3426H0.134766V0.378662H5.01721C6.26144 0.378662 7.34818 1.17674 7.69468 2.34316Z" fill="#006848"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear" x1="39.1417" y1="3.47952" x2="55.1832" y2="3.47952" gradientUnits="userSpaceOnUse">
-<stop stop-color="#02AFFF"/>
-<stop offset="1" stop-color="#1F5BDE"/>
-</linearGradient>
-<clipPath id="clip0">
-<rect width="55.0532" height="14.9958" fill="white" transform="translate(0.134766 0.378662)"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="55"
+   height="15"
+   viewBox="0 0 55 15"
+   fill="none"
+   version="1.1"
+   id="svg17"
+   sodipodi:docname="mir.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1149"
+     inkscape:window-height="735"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="6.9090909"
+     inkscape:cx="9.4802632"
+     inkscape:cy="7.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg17" />
+  <path
+     d="M39.21 6.99902V14.843H44.1162V10.4308H49.0539C51.6328 10.4308 53.8343 9.00598 54.6835 6.99902H39.21Z"
+     fill="#006848"
+     id="path2" />
+  <path
+     d="M39.0098 0C39.0256 0.398878 39.0888 0.797755 39.1836 1.16595C39.1994 1.24266 39.2311 1.33471 39.2469 1.41141C39.2627 1.4421 39.2627 1.47278 39.2785 1.5188C40.1636 4.23424 42.7717 6.19795 45.854 6.19795H54.9585C55.0218 5.89112 55.0534 5.58429 55.0534 5.26212C55.0534 3.72797 54.3737 2.34724 53.2831 1.38073C52.3189 0.521609 51.0385 0 49.6159 0H39.0098V0Z"
+     fill="url(#paint0_linear)"
+     id="path4"
+     style="fill:#02afff;fill-opacity:1" />
+  <path
+     d="M30.4007 1.57231L26.9374 8.79271H26.5879V0H21.6631V14.8835H25.8413C26.9374 14.8835 27.9383 14.2729 28.399 13.3112L31.8623 6.09078H32.2118V14.8835H37.1366V0H32.9585C31.8623 0 30.8614 0.610605 30.4007 1.57231Z"
+     fill="#006848"
+     id="path6" />
+  <path
+     d="M7.55991 1.9645L9.60739 8.84024H9.95388L11.9856 1.9645C12.3321 0.798077 13.4188 0 14.6631 0H19.5455V14.9639H14.6631V6.12371H14.3166L11.5131 14.9639H8.0324L5.22894 6.12371H4.88244V14.9639H0V0H4.88244C6.12668 0 7.21341 0.798077 7.55991 1.9645Z"
+     fill="#006848"
+     id="path8" />
+  <defs
+     id="defs15">
+    <linearGradient
+       id="paint0_linear"
+       x1="39.007"
+       y1="3.10086"
+       x2="55.0485"
+       y2="3.10086"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#02AFFF"
+         id="stop10" />
+      <stop
+         offset="1"
+         stop-color="#1F5BDE"
+         id="stop12" />
+    </linearGradient>
+  </defs>
 </svg>
