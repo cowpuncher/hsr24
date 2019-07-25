@@ -114,7 +114,7 @@ class Slider {
 
         sliderCards.slick({
             dots: false,
-            infinite: true,
+            infinite: false,
             speed: 300,
             prevArrow: prevCarousel,
             nextArrow: nextCarousel,
