@@ -20,12 +20,24 @@
     &__list {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__item {
         & + & {
             margin-left: 9px;
         }
+
+        @media (max-width: $md) {
+            & + & {
+                margin-left: 0px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 9px;
+            }
+        }
+
     }
 
     &__link {

@@ -37,6 +37,7 @@
     &__item {
         @media (max-width: $lg) {
             margin-left: 20px;
+            margin-bottom: 10px;
         }
 
         & + & {
@@ -46,7 +47,7 @@
                 margin-left: 26px;
             }
 
-            @media (max-width: $lg) {
+            @media (max-width: $md) {
                 margin-left: 20px;
             }
         }

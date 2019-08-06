@@ -236,6 +236,10 @@
             @media (max-width: $lg) {
                 padding-top: 32px;
             }
+
+            @media (max-width: $md) {
+                width: 50%;
+            }
         }
 
         &--pay {
@@ -258,6 +262,10 @@
             @media (max-width: $lg) {
                 padding-top: 32px;
                 padding-left: 23px;
+            }
+
+            @media (max-width: $md) {
+                width: 50%;
             }
         }
     }
