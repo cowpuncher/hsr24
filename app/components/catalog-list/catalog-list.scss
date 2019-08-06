@@ -78,7 +78,7 @@
         justify-content: center;
 
         & .icon {
-            stroke: $color-red;
+            // stroke: $color-red;
             fill: $color-red;
         }
 
@@ -86,7 +86,7 @@
             border-color: $color-blue;
 
             & .icon {
-                stroke: $color-blue;
+                // stroke: $color-blue;
                 fill: $color-blue;
             }
         }
