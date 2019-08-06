@@ -26,19 +26,19 @@ class Autocomplete {
                  id:"Садовые принадлежности",
                  value:"Садовые принадлежности",
                  label:"Садовые принадлежности",
-                 img:"assets/images/example/search/img3.jpg"
+                //  img:"assets/images/example/search/img3.jpg"
                 },
                 {
                  id:"Садовая мебель",
                  value:"Садовая мебель",
                  label:"Садовая мебель",
-                 img:"assets/images/example/search/img4.jpg"
+                //  img:"assets/images/example/search/img4.jpg"
                 },
                 {
                  id:"Садовые инструменты",
                  value:"Садовые инструменты",
                  label:"Садовые инструменты",
-                 img:"assets/images/example/search/img5.jpg"
+                //  img:"assets/images/example/search/img5.jpg"
                 }
               ];
 

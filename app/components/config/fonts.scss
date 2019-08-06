@@ -219,3 +219,13 @@
     font-weight: 900;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'ALS Rubl';
+    src: url('assets/fonts/ALSRubl.eot');
+    src: url('assets/fonts/ALSRubl.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/ALSRubl.woff') format('woff'),
+        url('assets/fonts/ALSRubl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

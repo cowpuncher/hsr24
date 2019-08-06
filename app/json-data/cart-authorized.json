@@ -996,6 +996,11 @@
                 "icon": "youtube",
                 "alt": "youtube",
                 "href": "#"
+            },
+            {
+                "icon": "instagram",
+                "alt": "instagram",
+                "href": "#"
             }
         ]
     },
@@ -1083,8 +1088,8 @@
                         "class": "td--count"
                     },
                     {
-                        "price": "5 000 ₽",
-                        "priceOld": "5 300 ₽",
+                        "price": "5 000 <span class=\"elem-rub\">i</span>",
+                        "priceOld": "5 300 <span class=\"elem-rub\">i</span>",
                         "class": "td--price"
                     },
                     {
@@ -1135,26 +1140,26 @@
         "list": [
             {
                 "title": "Товары на сумму: ",
-                "price": "5 300 ₽"
+                "price": "5 300 <span class=\"elem-rub\">i</span>"
             },
             {
                 "title": "Скидка HSR: ",
-                "price": "– 300 ₽",
+                "price": "– 300 <span class=\"elem-rub\">i</span>",
                 "class": "color-red"
             },
             {
                 "title": "Бонусные рубли: ",
-                "price": "– 500 ₽",
+                "price": "– 500 <span class=\"elem-rub\">i</span>",
                 "class": "color-red"
             },
             {
                 "title": "Скидка по промокоду: ",
-                "price": "– 500 ₽",
+                "price": "– 500 <span class=\"elem-rub\">i</span>",
                 "class": "color-red"
             },
             {
                 "title": "Итого: ",
-                "price": "4 200 ₽",
+                "price": "4 200 <span class=\"elem-rub\">i</span>",
                 "class": "total"
             }
         ]

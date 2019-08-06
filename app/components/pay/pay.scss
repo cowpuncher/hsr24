@@ -8,10 +8,12 @@
 
         @media (max-width: $lg) {
             margin-bottom: 21px;
+            color: $color-gray;
         }
 
         @media (max-width: $md) {
             font-size: 12px;
+            
         }
     }
 

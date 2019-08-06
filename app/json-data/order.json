@@ -996,6 +996,11 @@
                 "icon": "youtube",
                 "alt": "youtube",
                 "href": "#"
+            },
+            {
+                "icon": "instagram",
+                "alt": "instagram",
+                "href": "#"
             }
         ]
     },
@@ -1069,33 +1074,33 @@
         "list": [
             {
                 "title": "Товары: ",
-                "price": "6 700 ₽"
+                "price": "6 700 <span class=\"elem-rub\">i</span>"
             },
             {
                 "title": "Доставка: ",
-                "price": "0 ₽"
+                "price": "0 <span class=\"elem-rub\">i</span>"
             },
             {
                 "title": "Скидка HSR: ",
-                "price": "– 2 500 ₽",
+                "price": "– 2 500 <span class=\"elem-rub\">i</span>",
                 "class": "color-red"
             },
             {
                 "title": "Бонусные рубли: ",
-                "price": "– 150 ₽",
+                "price": "– 150 <span class=\"elem-rub\">i</span>",
                 "class": "color-red"
             },
             {
                 "title": "Скидка по промокоду: ",
-                "price": "– 300 ₽",
+                "price": "– 300 <span class=\"elem-rub\">i</span>",
                 "class": "color-red"
             },
             {
                 "title": "Итого: ",
-                "price": "6 700 ₽",
+                "price": "6 700 <span class=\"elem-rub\">i</span>",
                 "class": "total",
                 "saleTitle": "Ваша выгода: ",
-                "sale": "3 050 ₽"
+                "sale": "3 050 <span class=\"elem-rub\">i</span>"
             }
         ]
     },
@@ -1144,19 +1149,19 @@
         }
     },
     "orderList": {
-        "title": "В заказе 4 товара на сумму 6 700 ₽",
+        "title": "В заказе 4 товара на сумму 6 700 <span class=\"elem-rub\">i</span>",
         "list": [
             {
                 "name": "Мульти-овощерезка «Радуга вкуса»",
-                "count": "1 шт. х 1000 ₽"
+                "count": "1 шт. х 1000 <span class=\"elem-rub\">i</span>"
             },
             {
                 "name": "Комплект «Адора»",
-                "count": "1 шт. х 900 ₽"
+                "count": "1 шт. х 900 <span class=\"elem-rub\">i</span>"
             },
             {
                 "name": "Женское пальто из замши и шерпы",
-                "count": "2 шт. х 4800 ₽"
+                "count": "2 шт. х 4800 <span class=\"elem-rub\">i</span>"
             }
         ]
     }

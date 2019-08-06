@@ -310,7 +310,17 @@
         &__inner--small &__title {
             @media (max-width: $md) {
                 text-align: left;
+                margin: 0 auto;
             }
+        }
+
+        
+    }
+
+    &__inner--big h3 {
+        @media (max-width: $md) {
+            text-align: left;
+            margin: 0 auto;
         }
     }
 }

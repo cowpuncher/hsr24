@@ -996,6 +996,11 @@
                 "icon": "youtube",
                 "alt": "youtube",
                 "href": "#"
+            },
+            {
+                "icon": "instagram",
+                "alt": "instagram",
+                "href": "#"
             }
         ]
     },
@@ -1109,7 +1114,7 @@
                                 "class": "td--order td--order-payment"
                             },
                             {
-                                "price": "10 000 ₽",
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
                                 "class": "td--order td--order-price"
                             },
                             {
@@ -1131,7 +1136,7 @@
                                 "saleHSR": "2,500",
                                 "saleRouble": "150",
                                 "salePromocode": "300",
-                                "totalSum": "2 000 ₽",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
                                         "name": "Мульти-овощерезка «Радуга вкуса»"
@@ -1170,7 +1175,7 @@
                                 "class": "td--order td--order-payment"
                             },
                             {
-                                "price": "10 000 ₽",
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
                                 "class": "td--order td--order-price"
                             },
                             {
@@ -1188,7 +1193,7 @@
                                 "saleHSR": "2,500",
                                 "saleRouble": "150",
                                 "salePromocode": "300",
-                                "totalSum": "2 000 ₽",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
                                         "name": "Мульти-овощерезка «Радуга вкуса»"
@@ -1227,7 +1232,7 @@
                                 "class": "td--order td--order-payment"
                             },
                             {
-                                "price": "10 000 ₽",
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
                                 "class": "td--order td--order-price"
                             },
                             {
@@ -1245,7 +1250,7 @@
                                 "saleHSR": "2,500",
                                 "saleRouble": "150",
                                 "salePromocode": "300",
-                                "totalSum": "2 000 ₽",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
                                         "name": "Мульти-овощерезка «Радуга вкуса»"
@@ -1284,7 +1289,7 @@
                                 "class": "td--order td--order-payment"
                             },
                             {
-                                "price": "10 000 ₽",
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
                                 "class": "td--order td--order-price"
                             },
                             {
@@ -1302,7 +1307,7 @@
                                 "saleHSR": "2,500",
                                 "saleRouble": "150",
                                 "salePromocode": "300",
-                                "totalSum": "2 000 ₽",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
                                         "name": "Мульти-овощерезка «Радуга вкуса»"
@@ -1341,7 +1346,7 @@
                                 "class": "td--order td--order-payment"
                             },
                             {
-                                "price": "10 000 ₽",
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
                                 "class": "td--order td--order-price"
                             },
                             {
@@ -1359,7 +1364,7 @@
                                 "saleHSR": "2,500",
                                 "saleRouble": "150",
                                 "salePromocode": "300",
-                                "totalSum": "2 000 ₽",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
                                         "name": "Мульти-овощерезка «Радуга вкуса»"

@@ -996,6 +996,11 @@
                 "icon": "youtube",
                 "alt": "youtube",
                 "href": "#"
+            },
+            {
+                "icon": "instagram",
+                "alt": "instagram",
+                "href": "#"
             }
         ]
     },
@@ -1081,7 +1086,7 @@
                         "class": "td--count"
                     },
                     {
-                        "price": "1 000 ₽",
+                        "price": "1 000 <span class=\"elem-rub\">i</span>",
                         "class": "td--price"
                     },
                     {
@@ -1130,11 +1135,11 @@
         "list": [
             {
                 "title": "Товары на сумму: ",
-                "price": "1 000 ₽"
+                "price": "1 000 <span class=\"elem-rub\">i</span>"
             },
             {
                 "title": "Итого: ",
-                "price": "1 000 ₽",
+                "price": "1 000 <span class=\"elem-rub\">i</span>",
                 "class": "total"
             }
         ]

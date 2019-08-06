@@ -83,6 +83,7 @@
     &-vk,
     &-ok,
     &-youtube,
+    &-instagram,
     &-adv-product,
     &-adv-product2,
     &-home,
@@ -108,14 +109,14 @@
         width: 32px;
     }
 
-    &-electronics,
-    &-prevoslav,
-    &-kids,
-    &-hobby,
-    &-adv-product {
-        fill: $color-base;
-        stroke: $color-base;
-    }
+    // &-electronics,
+    // &-prevoslav,
+    // &-kids,
+    // &-hobby,
+    // &-adv-product {
+    //     fill: $color-base;
+    //     stroke: $color-base;
+    // }
 
     &-adv-product {
         stroke-width: 1;
