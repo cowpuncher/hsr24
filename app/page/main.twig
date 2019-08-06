@@ -17,10 +17,10 @@
 
     {{ banner.banner(bannerList) }}
 
-    <div class="container">
+    <div class="container d-flex flex-column">
             {{ menu.menu(advantagesList) }}
 
-            {{ tabs.tabs(tabsList) }}
+            
 
             <div class="slider__wrap hidden-lg hidden-xl">
                 <div class="container__inner">
@@ -31,7 +31,7 @@
 
             {{ banner.banner(bannerInner) }}
 
-            
+            {{ tabs.tabs(tabsList) }}
 
             {{ recommend.recommend(recommendList) }}
 

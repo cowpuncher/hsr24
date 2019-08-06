@@ -996,6 +996,11 @@
                 "icon": "youtube",
                 "alt": "youtube",
                 "href": "#"
+            },
+            {
+                "icon": "instagram",
+                "alt": "instagram",
+                "href": "#"
             }
         ]
     },
@@ -1082,48 +1087,48 @@
                 "img": "assets/images/example/card/img1.jpg",
                 "status": "Распродажа",
                 "name": "Мульти-овощерезка «Радуга вкуса»",
-                "priceOld": "1 400 ₽",
-                "price": "1 000 ₽",
+                "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                "price": "1 000 <span class=\"elem-rub\">i</span>",
                 "btn": "В корзину"
             },
             {
                 "img": "assets/images/example/card/img5.jpg",
                 "status": "акция",
                 "name": "Куртка «Надежная защита»",
-                "priceOld": "1 400 ₽",
-                "price": "1 000 ₽",
+                "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                "price": "1 000 <span class=\"elem-rub\">i</span>",
                 "btn": "В корзину"
             },
             {
                 "img": "assets/images/example/card/img6.jpg",
                 "status": "новинка",
                 "name": "Брошь «Лунный цветок»",
-                "priceOld": "1 400 ₽",
-                "price": "1 000 ₽",
+                "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                "price": "1 000 <span class=\"elem-rub\">i</span>",
                 "btn": "В корзину"
             },
             {
                 "img": "assets/images/example/card/img7.jpg",
                 "status": "хит продаж",
                 "name": "Брошь «Цветущий янтарь»",
-                "priceOld": "1 400 ₽",
-                "price": "1 000 ₽",
+                "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                "price": "1 000 <span class=\"elem-rub\">i</span>",
                 "btn": "В корзину"
             },
             {
                 "img": "assets/images/example/card/img9.jpg",
                 "status": "новинка",
                 "name": "Подвес «Янтарная загадка»",
-                "priceOld": "1 400 ₽",
-                "price": "1 000 ₽",
+                "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                "price": "1 000 <span class=\"elem-rub\">i</span>",
                 "btn": "В корзину"
             },
             {
                 "img": "assets/images/example/card/img10.jpg",
                 "status": "хит продаж",
                 "name": "Колье + серьги «Янтарный цветок»",
-                "priceOld": "1 400 ₽",
-                "price": "1 000 ₽",
+                "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                "price": "1 000 <span class=\"elem-rub\">i</span>",
                 "btn": "В корзину"
             }
         ]

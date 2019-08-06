@@ -10,6 +10,8 @@ class Slider {
         this.sliderPopup = $('[data-slider-popup]');
         this.sliderProduct = $('[data-slider-product]');
         this.sliderProductCarousel = $('[data-slider-product-carousel]');
+        this.sliderCardsProgress = $('[data-slider-cards-progress]');
+        this.sliderCardsProgressLabel = $('[data-slider-cards-progress-label]');
         this.initialize();
     }
 
@@ -24,6 +26,25 @@ class Slider {
         var sliderCardsPopup = this.sliderCardsPopup;
         var sliderCategory = this.sliderCategory;
         var ww = $(window).width();
+
+
+        var sliderCardsProgress = this.sliderCardsProgress;
+        var sliderCardsProgressLabel = this.sliderCardsProgressLabel;
+        
+        
+
+        sliderCards.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+          var calc = ((nextSlide) / (slick.slideCount-2)) * 100;
+        
+            sliderCardsProgress
+                .css('background-size', calc + '% 100%')
+                .attr('aria-valuenow', calc );
+        
+            sliderCardsProgressLabel.text( calc + '% completed' );
+        });
+
+
+
 
         this.slider.slick({
             dots: true,
@@ -195,6 +216,13 @@ class Slider {
                     breakpoint: 1279,
                     settings: {
                         slidesToShow: 4,
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false,
                         variableWidth: true
                     }
                 }

@@ -229,12 +229,12 @@
             padding-top: 8px;
 
             @media (max-width: $lg) {
-                width: auto;
+                width: 22%;
                 padding-top: 30px;
             }
 
             @media (max-width: $lg) {
-                padding-top: 22px;
+                padding-top: 32px;
             }
         }
 
@@ -246,17 +246,17 @@
             padding-top: 8px;
 
             @media (max-width: $lg) {
-                width: auto;
+                width: 78%;
                 padding-top: 30px;
                 flex-direction: row;
                 align-items: flex-start;
-                width: calc(100% - 130px);
+                // width: calc(100% - 130px);
                 padding-left: 45px;
                 justify-content: space-between;
             }
 
             @media (max-width: $lg) {
-                padding-top: 22px;
+                padding-top: 32px;
                 padding-left: 23px;
             }
         }
@@ -284,7 +284,8 @@
         @media (max-width: $lg) {
             font-size: 10px;
             line-height: 12px;
-            margin-top: -9px;
+            // margin-top: -9px;
+            margin-top: auto;
             letter-spacing: 0.1px;
             max-width: 50%;
         }

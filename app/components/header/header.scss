@@ -37,6 +37,10 @@
         padding: 14px 0;
         letter-spacing: 0;
 
+        &:hover {
+            color: unset;
+        }
+
         @media (max-width: $lg) {
             font-weight: 400;
         }
@@ -112,7 +116,7 @@
         &-title {
             color: $color-red;
             font-size: 12px;
-            line-height: 20px;
+            line-height: 15px;
             font-weight: 500;
 
             @media (max-width: $md) {
@@ -155,7 +159,11 @@
             line-height: 26px;
             display: flex;
             align-items: center;
-            margin-top: -5px;
+            // margin-top: -5px;
+
+            &:hover {
+                color: unset;
+            }
 
             @media (max-width: $lg) {
                 font-size: 31px;
@@ -172,7 +180,7 @@
 
             & .icon {
                 margin-right: 9px;
-                top: 3px;
+                // top: 3px;
                 position: relative;
             }
         }

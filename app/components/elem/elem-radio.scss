@@ -44,6 +44,10 @@
             top: 0;
             transition: all 0.3s ease-in-out;
         }
+
+        &:hover:before {
+            box-shadow: 0 0 0 1px $color-red;
+        }
     }
 
     &__input {
@@ -53,7 +57,7 @@
     &__input:checked + &__span {
         &:before {
             background: $color-red;
-            box-shadow: 0 0 0 1px $color-red;
+            
         }
     }
 
