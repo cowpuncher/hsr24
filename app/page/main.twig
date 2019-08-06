@@ -14,8 +14,9 @@
 {% block bodyClass %}page-main{% endblock %}
 
 {% block content %}
-
-    {{ banner.banner(bannerList) }}
+    <div class="container">
+        {{ banner.banner(bannerList) }}
+    </div>
 
     <div class="container d-flex flex-column">
             {{ menu.menu(advantagesList) }}
@@ -40,5 +41,9 @@
             {{ recommend.recommend(viewList) }}
 
     </div>
+
+    <a href="#" class="online-support">
+        {{ svg.icon('ask') }}
+    </a>
 
 {% endblock %}

@@ -1,0 +1,18 @@
+.online-support {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-base;
+    border-radius: 50%;
+    z-index: 99;
+
+    @media (max-width: $md) {
+        right: 20px;
+        bottom: 20px;
+    }
+}
