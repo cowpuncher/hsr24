@@ -17,6 +17,27 @@
                     <div class="menu{{pr}}__line {{ item.line }}"></div>
                 {% endif %}
                 <li class="menu{{pr}}__item {% if item.class %}{{ item.class }}{% endif %}" {% if item.submenu %}data-menu-bottom-drop{% endif %}>
+                    
+                    {% if pr == "-advantages" %}
+                        <div class="menu{{pr}}__link" {% if item.scrollto %}data-scroll-to-single{% endif %} {% if item.attr %}{{ item.attr }}{% endif %}>
+                            {% if item.icon %}
+                                <div class="menu{{pr}}__icon">
+                                    {{ svg.icon(item.icon) }}
+                                    {% if item.count %}
+                                        <div class="menu{{pr}}__count dark">{{ item.count }}</div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                            <div class="menu{{pr}}__text">
+                                {{ item.text }}
+
+                                {% if item.detail %}
+                                    <div class="menu{{pr}}__detail dark">{{ item.detail }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% else %}
+                    
                     <a href="{{ item.href }}" class="menu{{pr}}__link" {% if item.scrollto %}data-scroll-to-single{% endif %} {% if item.attr %}{{ item.attr }}{% endif %}>
                         {% if item.icon %}
                             <div class="menu{{pr}}__icon">
@@ -34,6 +55,8 @@
                             {% endif %}
                         </div>
                     </a>
+
+                    {% endif %}
 
                     {% if data.prefix == 'bottom' %}
                         {% if item.submenu %}

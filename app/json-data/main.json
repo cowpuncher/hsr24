@@ -964,22 +964,22 @@
         "list": [
             {
                 "text": "Бесплатная доставка <br>от 5000 рублей",
-                "href": "#",
+                
                 "icon": "delivery-free"
             },
             {
                 "text": "Доставка <br>в любую точку РФ",
-                "href": "#",
+                
                 "icon": "delivery-rf"
             },
             {
                 "text": "Более 1000 <br>пунктов выдачи",
-                "href": "#",
+                
                 "icon": "delivery-point"
             },
             {
                 "text": "Выгодная программа<br> лояльности",
-                "href": "#",
+                
                 "icon": "delivery-loyality"
             }
         ]
