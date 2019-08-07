@@ -56,6 +56,40 @@
                 margin-left: 10px;
             }
         }
+
+        &[data-before="от"] {
+            &:before {
+                content: 'от';
+            }
+        }
+
+        &[data-before="до"] {
+            &:before {
+                content: 'до';
+            }
+        }
+
+        &[data-before] {
+            &:before {
+                position: absolute;
+                margin-top: 8px;
+                margin-left: 14px;
+
+                @media (max-width: $lg) {
+                    font-size: 10px;
+                    margin-top: 7px;
+                    margin-left: 12px;
+                }
+
+                @media (max-width: $lg) {
+                    font-size: 12px;
+                    margin-top: 14px;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        
     }
 
     &__slider {

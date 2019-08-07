@@ -51,6 +51,14 @@
         background: $color-red-hover;
     }
 
+    &--no-hover {
+        &:hover {
+            background-color: unset;
+            border-color: unset;
+            color: unset;
+        }
+    }
+
     &--light {
         font-weight: 400;
         background: $color-white;
@@ -79,6 +87,21 @@
         }
     }
 
+    &--light-no-hover {
+        &:hover {
+            color: $color-base;
+            border-color: $color-base;
+            background: $color-white;
+        }
+
+        &.active {
+            &:hover {
+                color: $color-white;
+                background: $color-base;  
+            }
+        }
+    }
+
     &--gray {
         border-color: $color-gray;
         color: $color-base;
@@ -101,8 +124,8 @@
 
         &:hover {
             color: $color-base;
-            border-color: $color-gray;
-            background: $color-gray;
+            border-color: $color-gray-light;
+            background: $color-gray-light;
         }
 
         &.bold {

@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="filter__row">
+            <div class="filter__row filter__row--between">
                 {% if data.filter %}
                     <a href="#" class="elem-filter" data-filter-show>
                     {{ svg.icon('filter') }} {{ data.filter.name }}
@@ -26,7 +26,7 @@
                     <div class="filter__btn hidden-md hidden-sm hidden-xs">
                         {% for item in data.btn %}
                             <div class="filter__btn-item">
-                                <a href="{{ item.href }}" class="elem-btn elem-btn--light elem-btn--md" data-filter-btn>{{ item.text }}</a>
+                                <a href="{{ item.href }}" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md" data-filter-btn>{{ item.text }}</a>
                             </div>
                         {% endfor %}
                     </div>

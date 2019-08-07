@@ -52,6 +52,7 @@
             font-size: 13px;
             line-height: 19px;
         }
+
     }
 
     &__text {
@@ -60,7 +61,8 @@
 
     &__link {
         &:hover {
-            font-weight: 800;
+            color: unset;
+            font-weight: unset;
         }
 
         &--prev,
@@ -69,10 +71,10 @@
             border-radius: 50%;
 
             &.disabled {
-                border-color: $color-gray;
+                border-color: $color-gray-light;
 
                 & .icon {
-                    stroke: $color-gray;
+                    stroke: $color-gray-light;
                 }
             }
         }

@@ -27,6 +27,11 @@
         padding: 4px 15px 4px 31px;
     }
 
+    &:hover {
+        color: unset;
+        background: $color-gray-light;
+    }
+
     &:after {
         content: '';
         position: absolute;

@@ -21,13 +21,13 @@
                                             <h6><a href="#">{{ item2.title }}</a></h6>
 
                                             {% if item2.list %}
-                                                {% for item3 in item2.list %}
-                                                    <div class="catalog-list__list-inner">
+                                                <div class="catalog-list__list-inner">
+                                                    {% for item3 in item2.list %}
                                                         <div class="catalog-list__item">
                                                             <a href="{{ item3.href }}" class="catalog-list__link">{{ item3.text }}</a>
                                                         </div>
-                                                    </div>
-                                                {% endfor %}
+                                                    {% endfor %}
+                                                </div>
                                             {% endif %}
                                         </div>
                                     {% endfor %}

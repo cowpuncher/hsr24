@@ -45,7 +45,7 @@
                 "text": "Избранное ",
                 "icon": "favs",
                 "count": "5",
-                "class": "hidden-xs"
+                "class": "hidden-md hidden-xs"
             },
             {
                 "href": "#",
@@ -1157,7 +1157,7 @@
         "top": true,
         "class": "hidden-sm hidden-xs",
         "filter": {
-            "name": "Фильтры<span class='hidden-sm hidden-xs'> по параметрам</span>"
+            "name": "Фильтры&nbsp;<span class='hidden-sm hidden-xs'>по параметрам</span>"
         },
         "category": [
             {
