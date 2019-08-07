@@ -91,6 +91,19 @@
         }
     }
 
+    &--price-label {
+        padding: 10px 16px 10px 36px;
+
+        @media (max-width: $lg) {
+            padding-left: 28px;
+        }
+
+        @media (max-width: $md) {
+            padding-left: 50px;
+        }
+
+    }
+
     &--gray {
         background-color: $color-smoke;
         border-color: $color-smoke;

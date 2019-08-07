@@ -141,7 +141,7 @@
                 "text": "Избранное ",
                 "icon": "favs",
                 "count": "5",
-                "class": "hidden-xs"
+                "class": "hidden-md hidden-xs"
             },
             {
                 "href": "#",

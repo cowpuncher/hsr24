@@ -29,14 +29,14 @@ class Price {
                     max: max,
                     values: [ start, end ],
                     slide: function( event, ui ) {
-                        lower.val('от ' + ui.values[ 0 ]);
-                        upper.val('до ' + ui.values[ 1 ]);
+                        lower.val(ui.values[ 0 ]);
+                        upper.val(ui.values[ 1 ]);
                     }
                 });
             });
 
-            lower.val('от ' + el.slider( "values", 0 ));
-            upper.val('до ' + el.slider( "values", 1 ));
+            lower.val(el.slider( "values", 0 ));
+            upper.val(el.slider( "values", 1 ));
         });
 	}
 }
