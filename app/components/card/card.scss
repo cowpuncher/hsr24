@@ -118,6 +118,14 @@
                 }
                 
             }
+
+            & .elem-price {
+                &-old {
+                    @media (max-width: $md) {
+                        margin-left: 4px;
+                    }
+                }
+            }
         }
 
         &--inner {
@@ -674,8 +682,10 @@
         right: 8px;
         top: 8px;
 
-        &:hover {
-            animation: scale 0.5s infinite ease;
+        @media (min-width: $lg + 1) {
+            &:hover {
+                animation: scale 0.5s infinite ease;
+            }
         }
 
         @keyframes scale {
@@ -768,9 +778,10 @@
             //max-width: 80%;
             //max-height: 80%;
             fill: $color-base;
+            transition: 0s;
 
             & .bg {
-                fill: transparent;
+                fill: $color-white;
             }
         }
 
@@ -779,10 +790,11 @@
         }
 
         &.active {
-            //border-color: $color-red;
+            // border-color: $color-red;
 
             & .icon {
                 fill: $color-red;
+                transition: 0s;
 
                 & .bg {
                     fill: $color-red;

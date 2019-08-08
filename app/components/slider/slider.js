@@ -10,8 +10,10 @@ class Slider {
         this.sliderPopup = $('[data-slider-popup]');
         this.sliderProduct = $('[data-slider-product]');
         this.sliderProductCarousel = $('[data-slider-product-carousel]');
+
         this.sliderCardsProgress = $('[data-slider-cards-progress]');
         this.sliderCardsProgressLabel = $('[data-slider-cards-progress-label]');
+
         this.initialize();
     }
 
@@ -27,25 +29,9 @@ class Slider {
         var sliderCategory = this.sliderCategory;
         var ww = $(window).width();
 
-
         var sliderCardsProgress = this.sliderCardsProgress;
         var sliderCardsProgressLabel = this.sliderCardsProgressLabel;
-        
-        
-
-        sliderCards.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-          var calc = ((nextSlide) / (slick.slideCount-2)) * 100;
-        
-            sliderCardsProgress
-                .css('background-size', calc + '% 100%')
-                .attr('aria-valuenow', calc );
-        
-            sliderCardsProgressLabel.text( calc + '% completed' );
-        });
-
-
-
-
+    
         this.slider.slick({
             dots: true,
             arrows: true,
@@ -272,7 +258,26 @@ class Slider {
             //sliderCards.slickGoTo(index);
             sliderCards.slick('slickGoTo', index);
         });
+
+
+        function setProgress(index) {
+            var calc = ((index + 1) / (sliderCards.slick('getSlick').slideCount - 1)) * 100;
+          
+            sliderCardsProgress
+              .css('background-size', calc + '% 100%')
+              .attr('aria-valuenow', calc );
+          
+            sliderCardsProgressLabel.text(calc + '% completed');
+        }
+          
+        sliderCards.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+          setProgress(nextSlide);
+        });
+            
+        setProgress(0);
+
     }
+    
 }
 
 new Slider();

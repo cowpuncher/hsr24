@@ -295,7 +295,7 @@
                 }
 
                 @media (max-width: $lg) {
-                    padding: 21px 12px 20px;
+                    padding: 13px 12px 20px;
                 }
             }
 
@@ -321,6 +321,14 @@
         @media (max-width: $md) {
             text-align: left;
             margin: 0 auto;
+        }
+    }
+
+    & .slider {
+        & .slick-arrow {
+            @media (max-width: 480px) {
+                margin-top: -20px;
+            }
         }
     }
 }
