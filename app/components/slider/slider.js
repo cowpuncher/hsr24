@@ -31,19 +31,7 @@ class Slider {
 
         var sliderCardsProgress = this.sliderCardsProgress;
         var sliderCardsProgressLabel = this.sliderCardsProgressLabel;
-        
-
-        // sliderCards.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-        //   var calc = ((nextSlide) / (slick.slideCount-2)) * 100;
-        
-        //     sliderCardsProgress
-        //         .css('background-size', calc + '% 100%')
-        //         .attr('aria-valuenow', calc );
-        
-        //     sliderCardsProgressLabel.text( calc + '% completed' );
-        // });
-
-
+    
         this.slider.slick({
             dots: true,
             arrows: true,
