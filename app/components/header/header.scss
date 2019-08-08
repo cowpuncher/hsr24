@@ -150,8 +150,8 @@
 
             & .icon {
                 @media (min-width: $md) {
-                    width: 50px;
-                    height: 50px;
+                    width: 44px;
+                    height: 44px;
                 }
             }
 
@@ -206,6 +206,7 @@
             @media (max-width: $lg) {
                 font-size: 13.7px;
                 line-height: 16px;
+                letter-spacing: 0.2px;
                 color: $color-gray;
                 font-weight: 400;
             }
@@ -222,11 +223,12 @@
 
     &__menu {
         display: flex;
-        padding-bottom: 7px;
+        padding-bottom: 10px;
         margin-left: 62px;
 
         @media (max-width: $lg) {
             margin-left: auto;
+            padding-bottom: 7px;
         }
 
         @media (max-width: $md) {

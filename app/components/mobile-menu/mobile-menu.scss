@@ -4,7 +4,7 @@
     background: $color-white;
     position: fixed;
     left: -100%;
-    top: 71px;
+    top: 69px;
     bottom: 0;
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -14,7 +14,7 @@
 
     @media (max-width: $md) {
         max-width: 265px;
-        top: 106px;
+        top: 105px;
         padding: 0 15px;
     }
 

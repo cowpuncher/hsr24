@@ -20,7 +20,7 @@ class Autocomplete {
                  id:"Садовый опрыскиватель",
                  value:"Садовый опрыскиватель",
                  label:"Садовый опрыскиватель",
-                 img:"assets/images/example/search/img2.jpg"
+                 img:"assets/images/example/search/img1.jpg"
                 },
                 {
                  id:"Садовые принадлежности",

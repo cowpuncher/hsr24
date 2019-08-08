@@ -189,10 +189,18 @@
 
         & .slick-prev {
             left: 0;
+
+            @media (max-width: $lg) {
+                left: -5px;
+            }
         }
 
         & .slick-next {
             right: 0;
+
+            @media (max-width: $lg) {
+                right: -5px;
+            }
         }
 
         &__item {
