@@ -6,7 +6,8 @@
     "bootstrap-sass": "~3.3.7",
     "slick-carousel": "^1.8.1",
     "air-datepicker": "^2.2.3",
-    "svgxuse": "^1.2.6"
+    "svgxuse": "^1.2.6",
+    "swiper": "^4.5.0"
   },
   "devDependencies": {
     "magnific-popup": "^1.1.0",

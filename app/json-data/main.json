@@ -1035,8 +1035,10 @@
             {
                 "title": "Распродажа",
                 "active": true,
+                "sliderType": "swiper",
                 "slider": [
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img1.jpg",
                         "status": "Распродажа",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
@@ -1045,6 +1047,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img2.jpg",
                         "status": "Распродажа",
                         "name": "Женское пальто из замши и шерпы",
@@ -1053,6 +1056,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img3.jpg",
                         "status": "Распродажа",
                         "name": "Комплект «Адора» ",
@@ -1061,6 +1065,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img4.jpg",
                         "status": "Распродажа",
                         "name": "Набор «Мечта хозяйки»",
@@ -1069,6 +1074,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img5.jpg",
                         "status": "Распродажа",
                         "name": "Куртка «Надежная защита»",
@@ -1077,6 +1083,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img6.jpg",
                         "status": "Распродажа",
                         "name": "Брошь «Лунный цветок»",
@@ -1085,6 +1092,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img7.jpg",
                         "status": "Распродажа",
                         "name": "Брошь «Цветущий янтарь»",
@@ -1093,7 +1101,7 @@
                         "btn": "В корзину"
                     },
                     {
-                        "class": "card-link",
+                        "class": "card-link swiper-slide",
                         "icon": "go-to-catalog",
                         "btn": "Перейти в каталог"
                     }
@@ -1101,8 +1109,10 @@
             },
             {
                 "title": "Хиты продаж",
+                "sliderType": "swiper",
                 "slider": [
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img1.jpg",
                         "status": "Хит продаж",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
@@ -1111,6 +1121,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img2.jpg",
                         "status": "Хит продаж",
                         "name": "Женское пальто из замши и шерпы",
@@ -1119,6 +1130,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img3.jpg",
                         "status": "Хит продаж",
                         "name": "Комплект «Адора» ",
@@ -1127,6 +1139,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img4.jpg",
                         "status": "Хит продаж",
                         "name": "Набор «Мечта хозяйки»",
@@ -1135,6 +1148,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img5.jpg",
                         "status": "Хит продаж",
                         "name": "Куртка «Надежная защита»",
@@ -1143,6 +1157,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img6.jpg",
                         "status": "Хит продаж",
                         "name": "Брошь «Лунный цветок»",
@@ -1151,6 +1166,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img7.jpg",
                         "status": "Хит продаж",
                         "name": "Брошь «Цветущий янтарь»",
@@ -1159,7 +1175,7 @@
                         "btn": "В корзину"
                     },
                     {
-                        "class": "card-link",
+                        "class": "card-link swiper-slide",
                         "icon": "go-to-catalog",
                         "btn": "Перейти в каталог"
                     }
@@ -1167,8 +1183,10 @@
             },
             {
                 "title": "Новинки",
+                "sliderType": "swiper",
                 "slider": [
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img1.jpg",
                         "status": "Новинки",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
@@ -1177,6 +1195,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img2.jpg",
                         "status": "Новинки",
                         "name": "Женское пальто из замши и шерпы",
@@ -1185,6 +1204,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img3.jpg",
                         "status": "Новинки",
                         "name": "Комплект «Адора» ",
@@ -1193,6 +1213,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img4.jpg",
                         "status": "Новинки",
                         "name": "Набор «Мечта хозяйки»",
@@ -1201,6 +1222,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img5.jpg",
                         "status": "Новинки",
                         "name": "Куртка «Надежная защита»",
@@ -1209,6 +1231,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img6.jpg",
                         "status": "Новинки",
                         "name": "Брошь «Лунный цветок»",
@@ -1217,6 +1240,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img7.jpg",
                         "status": "Новинки",
                         "name": "Брошь «Цветущий янтарь»",
@@ -1225,7 +1249,7 @@
                         "btn": "В корзину"
                     },
                     {
-                        "class": "card-link",
+                        "class": "card-link swiper-slide",
                         "icon": "go-to-catalog",
                         "btn": "Перейти в каталог"
                     }
@@ -1233,8 +1257,10 @@
             },
             {
                 "title": "Акции",
+                "sliderType": "swiper",
                 "slider": [
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img1.jpg",
                         "status": "Акции",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
@@ -1243,6 +1269,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img2.jpg",
                         "status": "Акции",
                         "name": "Женское пальто из замши и шерпы",
@@ -1251,6 +1278,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img3.jpg",
                         "status": "Акции",
                         "name": "Комплект «Адора» ",
@@ -1259,6 +1287,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img4.jpg",
                         "status": "Акции",
                         "name": "Набор «Мечта хозяйки»",
@@ -1267,6 +1296,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img5.jpg",
                         "status": "Акции",
                         "name": "Куртка «Надежная защита»",
@@ -1275,6 +1305,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img6.jpg",
                         "status": "Акции",
                         "name": "Брошь «Лунный цветок»",
@@ -1283,6 +1314,7 @@
                         "btn": "В корзину"
                     },
                     {
+                        "class": "swiper-slide",
                         "img": "assets/images/example/card/img7.jpg",
                         "status": "Акции",
                         "name": "Брошь «Цветущий янтарь»",
@@ -1291,7 +1323,7 @@
                         "btn": "В корзину"
                     },
                     {
-                        "class": "card-link",
+                        "class": "card-link swiper-slide",
                         "icon": "go-to-catalog",
                         "btn": "Перейти в каталог"
                     }

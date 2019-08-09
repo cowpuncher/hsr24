@@ -23,3 +23,4 @@ import './order-list/order-list';
 import './question/question';
 import './rating/rating';
 import './profile/profile';
+import './swiper/swiper';

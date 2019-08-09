@@ -1,0 +1,23 @@
+.swiper {
+    &-container {
+        padding-bottom: 16px;
+        
+    }
+
+    &-scrollbar {
+        height: 4px;
+        border-radius: 2px;
+        background: $color-smoke;
+
+        &-drag {
+            height: 4px;
+            border-radius: 2px;
+            background: $color-red;
+        }
+
+        @media(min-width: $md) {
+            display: none;
+        }
+    }
+
+}

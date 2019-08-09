@@ -13,3 +13,4 @@ import '../../bower_components/bootstrap-select/dist/js/i18n/defaults-ru_RU.min.
 
 import '../../bower_components/air-datepicker/dist/js/datepicker.min.js';
 import '../../bower_components/svgxuse/svgxuse.min.js';
+
