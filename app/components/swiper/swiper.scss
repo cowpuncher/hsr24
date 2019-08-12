@@ -28,11 +28,18 @@
 
         &-prev {
             transform: rotate(180deg);
-            left: 0;
+            left: -22px;
         }
 
         &-next {
-            right: 0;
+            right: -22px;
+        }
+
+        @media (max-width: $md) {
+            &-prev,
+            &-next {
+                display: none;
+            }
         }
 
         &-disabled {
