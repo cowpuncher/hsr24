@@ -35,6 +35,16 @@
             right: -22px;
         }
 
+        @media (max-width: $lg) {
+            &-prev {
+                left: -5px;
+            }
+            
+            &-next {
+                right: -5px;
+            }
+        }
+
         @media (max-width: $md) {
             &-prev,
             &-next {
