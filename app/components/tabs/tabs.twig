@@ -28,12 +28,32 @@
                     {% if item.slider %}
                         <div class="card__wrap">
                             <div class="card__list card__slider" data-slider-cards>
-                                {% for item2 in item.slider %}
-                                    {{ card.card(item2) }}
-                                {% endfor %}
+                                {% if item.sliderType == "swiper" %}
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            {% for item2 in item.slider %}
+                                                {{ card.card(item2) }}
+                                            {% endfor %}
+                                        </div>
+
+                                        
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                {% else %}
+
+                                    {% for item2 in item.slider %}
+                                        {{ card.card(item2) }}
+                                    {% endfor %}
+
+                                {% endif %}
                             </div>
 
-                            <div class="slider-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-slider-cards-progress><span class="slider__label sr-only" data-slider-cards-progress-label></div>
+                            {# <div class="slider-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-slider-cards-progress>
+                                <span class="slider-progress__label sr-only" data-slider-cards-progress-label>
+                            </div> #}
                             
                         </div>
 

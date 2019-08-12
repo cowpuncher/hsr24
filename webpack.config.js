@@ -13,7 +13,7 @@ module.exports = {
     rules: [{
       test: /\.js$/,
       exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
-      loader: 'babel-loader'
+      loader: 'babel-loader?presets[]=es2015'
     },
     {
       enforce: 'pre',

@@ -1,0 +1,66 @@
+.swiper {
+    &-container {
+        padding-bottom: 16px;
+        margin-left: 13px;
+        margin-right: 13px;
+
+        @media (max-width: $md) {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    &-button {
+        &-prev,
+        &-next {
+            @extend %btn-arrow;
+            background: transparent;
+            border: 0;
+            box-sizing: border-box;
+            height: 32px;
+            width: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            outline: none;
+        }
+
+        &-prev {
+            transform: rotate(180deg);
+            left: -22px;
+        }
+
+        &-next {
+            right: -22px;
+        }
+
+        @media (max-width: $md) {
+            &-prev,
+            &-next {
+                display: none;
+            }
+        }
+
+        &-disabled {
+            opacity: .2;
+        }
+    }
+
+    &-scrollbar {
+        height: 4px;
+        border-radius: 2px;
+        background: $color-smoke;
+
+        &-drag {
+            height: 4px;
+            border-radius: 2px;
+            background: $color-red;
+        }
+
+        @media(min-width: $md) {
+            display: none;
+        }
+    }
+
+}

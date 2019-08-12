@@ -34,7 +34,7 @@ class Tabs {
                 if ( bodyContent.find('.slick-initialized').length ) {
                     $('[data-slider-cards]').slick('refresh');
                 }
-
+                
                 e.preventDefault();
             });
         }

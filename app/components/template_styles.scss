@@ -15,6 +15,8 @@
 @import "../../bower_components/air-datepicker/src/sass/navigation.scss";
 @import "../../bower_components/air-datepicker/src/sass/timepicker.scss";
 
+@import '../../bower_components/swiper/src/swiper.scss';
+
 @import "config/variables";
 @import "config/mixins";
 @import "config/fonts";
@@ -89,7 +91,7 @@
 @import "step/step";
 
 @import "club-card/club-card";
-@import "slider-progress/slider-progress";
+@import "swiper/swiper";
 @import "online-support/online-support";
 
 @import "page/page-inner";

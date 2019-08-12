@@ -11,8 +11,8 @@ class Slider {
         this.sliderProduct = $('[data-slider-product]');
         this.sliderProductCarousel = $('[data-slider-product-carousel]');
 
-        this.sliderCardsProgress = $('[data-slider-cards-progress]');
-        this.sliderCardsProgressLabel = $('[data-slider-cards-progress-label]');
+        // this.sliderCardsProgress = $('[data-slider-cards-progress]');
+        // this.sliderCardsProgressLabel = $('[data-slider-cards-progress-label]');
 
         this.initialize();
     }
@@ -29,9 +29,9 @@ class Slider {
         var sliderCategory = this.sliderCategory;
         var ww = $(window).width();
 
-        var sliderCardsProgress = this.sliderCardsProgress;
-        var sliderCardsProgressLabel = this.sliderCardsProgressLabel;
-    
+        // var sliderCardsProgress = this.sliderCardsProgress;
+        // var sliderCardsProgressLabel = this.sliderCardsProgressLabel;
+
         this.slider.slick({
             dots: true,
             arrows: true,
@@ -119,39 +119,39 @@ class Slider {
             speed: 2000
         });
 
-        sliderCards.slick({
-            dots: false,
-            infinite: false,
-            speed: 300,
-            prevArrow: prevCarousel,
-            nextArrow: nextCarousel,
-            cssEase: 'ease-out',
-            slidesToShow: 4,
-            responsive: [
-                {
-                    breakpoint: 1279,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                        dots: false,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 2,
-                        dots: false,
-                        arrows: false
-                    }
-                }
-            ]
-        });
+        // sliderCards.slick({
+        //     dots: false,
+        //     infinite: false,
+        //     speed: 300,
+        //     prevArrow: prevCarousel,
+        //     nextArrow: nextCarousel,
+        //     cssEase: 'ease-out',
+        //     slidesToShow: 4,
+        //     responsive: [
+        //         {
+        //             breakpoint: 1279,
+        //             settings: {
+        //                 slidesToShow: 3
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 768,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //                 dots: false,
+        //                 arrows: false
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 576,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //                 dots: false,
+        //                 arrows: false
+        //             }
+        //         }
+        //     ]
+        // });
 
         sliderCardsPopup.slick({
             dots: false,
@@ -202,12 +202,14 @@ class Slider {
                     breakpoint: 1279,
                     settings: {
                         slidesToShow: 4,
+                        slidesToScroll: 3,
                         variableWidth: true
                     }
                 },
                 {
                     breakpoint: 767,
                     settings: {
+                        slidesToScroll: 2,
                         arrows: false,
                         variableWidth: true
                     }
@@ -259,24 +261,29 @@ class Slider {
             sliderCards.slick('slickGoTo', index);
         });
 
+        
 
-        function setProgress(index) {
-            var calc = ((index + 1) / (sliderCards.slick('getSlick').slideCount - 1)) * 100;
+        // function setProgress(index) {
+        //     var calc = ((index + 1) / (sliderCards.slick('getSlick').slideCount - 1)) * 100;
           
-            sliderCardsProgress
-              .css('background-size', calc + '% 100%')
-              .attr('aria-valuenow', calc );
+        //     sliderCardsProgress
+        //       .css('background-size', calc + '% 100%')
+        //       .attr('aria-valuenow', calc );
           
-            sliderCardsProgressLabel.text(calc + '% completed');
-        }
+        //     sliderCardsProgressLabel.text(calc + '% completed');
+        // }
           
-        sliderCards.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-          setProgress(nextSlide);
-        });
+        // sliderCards.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+        //   setProgress(nextSlide);
+        // });
             
-        setProgress(0);
+        // setProgress(0);
+
+        
 
     }
+
+    
     
 }
 

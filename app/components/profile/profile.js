@@ -55,3 +55,15 @@ smsAutoFocus();
 $('#date-of-birth').datepicker({
 
 });
+
+function getCode() {
+
+    $('form').find('.sms').hide();
+
+    $('.btn-getcode').click(function(e) {
+        e.preventDefault();
+        $(this).closest('form').find('.sms').show();
+    })
+}
+
+getCode();
