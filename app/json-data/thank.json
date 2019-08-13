@@ -599,6 +599,7 @@
                 "text": "Ювелирный&nbsp;дом<br class='hidden-md hidden-sm hidden-xs'>",
                 "icon": "talisma",
                 "detail": "talisma",
+                "detailIcon": "talisma-detail",
                 "submenu": [
                     {
                         "title": "Текстиль для дома",

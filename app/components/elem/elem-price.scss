@@ -23,7 +23,22 @@
         line-height: 19px;
         font-family: $fons-lato;
         color: $color-red;
-        text-decoration: line-through;
+        // text-decoration: line-through;
+        position: relative;
+        display: inline-block;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: $color-red;
+            top: 60%;
+            width: 100%;
+            height: 1px;
+            
+            @media (max-width: $md) {
+                top: 55%;
+            }
+        }
 
         @media (max-width: $lg) {
             font-size: 14px;

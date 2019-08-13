@@ -242,6 +242,7 @@
         & img {
             width: 100%;
             vertical-align: top;
+            border-radius: 5px 5px 0 0;
 
             @media (max-width: $md) {
                 border-radius: 3px;

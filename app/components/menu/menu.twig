@@ -31,8 +31,12 @@
                             <div class="menu{{pr}}__text">
                                 {{ item.text }}
 
-                                {% if item.detail %}
+                                {# {% if item.detail %}
                                     <div class="menu{{pr}}__detail dark">{{ item.detail }}</div>
+                                {% endif %} #}
+
+                                {% if item.detailIcon %}
+                                    <div class="menu{{pr}}__detail-icon dark">{{ svg.icon(item.detailIcon) }}</div>
                                 {% endif %}
                             </div>
                         </div>
@@ -50,8 +54,12 @@
                         <div class="menu{{pr}}__text">
                             {{ item.text }}
 
-                            {% if item.detail %}
+                            {# {% if item.detail %}
                                 <div class="menu{{pr}}__detail dark">{{ item.detail }}</div>
+                            {% endif %} #}
+
+                            {% if item.detailIcon %}
+                                <div class="menu{{pr}}__detail-icon dark">{{ svg.icon(item.detailIcon) }}</div>
                             {% endif %}
                         </div>
                     </a>
@@ -77,8 +85,12 @@
                                     <div class="menu{{pr}}__text">
                                         {{ item.text }}
 
-                                        {% if item.detail %}
+                                        {# {% if item.detail %}
                                             <div class="menu{{pr}}__detail dark">{{ item.detail }}</div>
+                                        {% endif %} #}
+
+                                        {% if item.detailIcon %}
+                                            <div class="menu{{pr}}__detail-icon dark">{{ svg.icon(item.detailIcon) }}</div>
                                         {% endif %}
                                     </div>
                                 </a>
