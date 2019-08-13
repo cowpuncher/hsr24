@@ -1199,6 +1199,7 @@
         "sortList": {
             "list": [
                 {
+                    "selected": true,
                     "text": "Популярные",
                     "value": "popular"
                 },
@@ -1380,6 +1381,7 @@
         "availabilityList": {
             "title": "Выберите параметры",
             "title2": "Наличие",
+            "attr": "data-filter",
             "list": [
                 {
                     "text": "Да",

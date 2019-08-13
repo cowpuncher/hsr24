@@ -4,7 +4,7 @@
     {% else %} #}
         <select class="{{ data.class }}" title="{{ data.title2 }}" {% if data.multiple %}data-multiple multiple data-selected-text-format="count > 1"{% endif %} {% if data.attr %}{{ data.attr }}{% endif %} data-mobile-none="{{ data.title2 }}" data-desktop-none="{{ data.title }}">
             {% for item in data.list %}
-                <option {% if item.title %}title="{{ item.title }}"{% endif %} {% if item.color %}data-filter-color="{{ item.color }}"{% endif %} {% if item.border %} data-filter-border="{{ item.border }}" {% endif %} class="{% if item.class %}{{ item.class }}{% endif %}" value="{{ item.value }}">
+                <option {% if item.title %}title="{{ item.title }}"{% endif %} {% if item.color %}data-filter-color="{{ item.color }}"{% endif %} {% if item.border %} data-filter-border="{{ item.border }}" {% endif %} class="{% if item.class %}{{ item.class }}{% endif %}" value="{{ item.value }}" {% if item.selected %} selected {% endif %}>
                     {% if item.text %}
                         {{ item.text }}
                     {% else %}

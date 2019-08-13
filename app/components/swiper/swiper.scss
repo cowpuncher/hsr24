@@ -1,8 +1,14 @@
 .swiper {
+    &-wrapper {
+        z-index: 0;
+    }
+
     &-container {
         padding-bottom: 16px;
         margin-left: 13px;
         margin-right: 13px;
+        z-index: 0;
+        position: unset;
 
         @media (max-width: $md) {
             margin-left: 5px;

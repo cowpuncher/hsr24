@@ -1039,7 +1039,7 @@
                 "slider": [
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img1.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Распродажа",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1048,7 +1048,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img2.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Распродажа",
                         "name": "Женское пальто из замши и шерпы",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1057,7 +1057,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img3.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Распродажа",
                         "name": "Комплект «Адора» ",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1066,7 +1066,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img4.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Распродажа",
                         "name": "Набор «Мечта хозяйки»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1075,7 +1075,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img5.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Распродажа",
                         "name": "Куртка «Надежная защита»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1084,7 +1084,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img6.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Распродажа",
                         "name": "Брошь «Лунный цветок»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1093,7 +1093,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img7.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Распродажа",
                         "name": "Брошь «Цветущий янтарь»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1113,7 +1113,7 @@
                 "slider": [
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img1.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Хит продаж",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1122,7 +1122,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img2.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Хит продаж",
                         "name": "Женское пальто из замши и шерпы",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1131,7 +1131,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img3.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Хит продаж",
                         "name": "Комплект «Адора» ",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1140,7 +1140,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img4.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Хит продаж",
                         "name": "Набор «Мечта хозяйки»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1149,7 +1149,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img5.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Хит продаж",
                         "name": "Куртка «Надежная защита»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1158,7 +1158,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img6.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Хит продаж",
                         "name": "Брошь «Лунный цветок»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1167,7 +1167,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img7.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Хит продаж",
                         "name": "Брошь «Цветущий янтарь»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1187,7 +1187,7 @@
                 "slider": [
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img1.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Новинки",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1196,7 +1196,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img2.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Новинки",
                         "name": "Женское пальто из замши и шерпы",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1205,7 +1205,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img3.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Новинки",
                         "name": "Комплект «Адора» ",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1214,7 +1214,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img4.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Новинки",
                         "name": "Набор «Мечта хозяйки»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1223,7 +1223,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img5.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Новинки",
                         "name": "Куртка «Надежная защита»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1232,7 +1232,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img6.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Новинки",
                         "name": "Брошь «Лунный цветок»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1241,7 +1241,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img7.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Новинки",
                         "name": "Брошь «Цветущий янтарь»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1261,7 +1261,7 @@
                 "slider": [
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img1.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Акции",
                         "name": "Мульти-овощерезка «Радуга вкуса»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1270,7 +1270,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img2.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Акции",
                         "name": "Женское пальто из замши и шерпы",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1279,7 +1279,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img3.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Акции",
                         "name": "Комплект «Адора» ",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1288,7 +1288,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img4.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Акции",
                         "name": "Набор «Мечта хозяйки»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1297,7 +1297,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img5.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Акции",
                         "name": "Куртка «Надежная защита»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1306,7 +1306,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img6.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Акции",
                         "name": "Брошь «Лунный цветок»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1315,7 +1315,7 @@
                     },
                     {
                         "class": "swiper-slide",
-                        "img": "assets/images/example/card/img7.jpg",
+                        "img": "assets/images/example/card/img.jpg",
                         "status": "Акции",
                         "name": "Брошь «Цветущий янтарь»",
                         "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1365,7 +1365,7 @@
         "title": "Рекомендуем",
         "list": [
             {
-                "img": "assets/images/example/card/img1.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "Распродажа",
                 "name": "Мульти-овощерезка «Радуга вкуса»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1373,7 +1373,7 @@
                 "btn": "В корзину"
             },
             {
-                "img": "assets/images/example/card/img5.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "акция",
                 "name": "Куртка «Надежная защита»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1381,7 +1381,7 @@
                 "btn": "В корзину"
             },
             {
-                "img": "assets/images/example/card/img6.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "новинка",
                 "name": "Брошь «Лунный цветок»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1389,7 +1389,7 @@
                 "btn": "В корзину"
             },
             {
-                "img": "assets/images/example/card/img7.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "хит продаж",
                 "name": "Брошь «Цветущий янтарь»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1397,7 +1397,7 @@
                 "btn": "В корзину"
             },
             {
-                "img": "assets/images/example/card/img9.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "новинка",
                 "name": "Подвес «Янтарная загадка»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1406,7 +1406,7 @@
                 "class": "hidden-lg hidden-xl"
             },
             {
-                "img": "assets/images/example/card/img10.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "хит продаж",
                 "name": "Колье + серьги «Янтарный цветок»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1429,7 +1429,7 @@
         "class": "order-xl-4 order-lg-4 hidden-md hidden-sm hidden-xs",
         "list": [
             {
-                "img": "assets/images/example/card/img8.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "Распродажа",
                 "name": "Колье + браслет «Меридиан»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1437,7 +1437,7 @@
                 "btn": "В корзину"
             },
             {
-                "img": "assets/images/example/card/img5.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "акция",
                 "name": "Куртка «Надежная защита»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1445,7 +1445,7 @@
                 "btn": "В корзину"
             },
             {
-                "img": "assets/images/example/card/img6.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "новинка",
                 "name": "Брошь «Лунный цветок»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
@@ -1453,7 +1453,7 @@
                 "btn": "В корзину"
             },
             {
-                "img": "assets/images/example/card/img7.jpg",
+                "img": "assets/images/example/card/img.jpg",
                 "status": "хит продаж",
                 "name": "Брошь «Цветущий янтарь»",
                 "priceOld": "1 400 <span class=\"elem-rub\">i</span>",

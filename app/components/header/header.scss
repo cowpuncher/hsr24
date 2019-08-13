@@ -64,6 +64,10 @@
             margin-left: 8px;
             stroke: $color-white;
         }
+
+        &--thin {
+            font-weight: 400;
+        }
     }
 
     &__middle {
@@ -116,8 +120,8 @@
         &-title {
             color: $color-red;
             font-size: 12px;
-            line-height: 15px;
-            font-weight: 500;
+            line-height: 1;
+            font-weight: 400;
 
             @media (max-width: $md) {
                 font-size: 10px;
@@ -199,7 +203,7 @@
 
         &-desc {
             font-size: 10.2px;
-            line-height: 15px;
+            line-height: 1;
             font-weight: 500;
             text-transform: uppercase;
 

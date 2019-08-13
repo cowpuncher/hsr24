@@ -3,6 +3,7 @@ var swiper = new Swiper('.swiper-container', {
     observeParents: true,
     slidesPerView: 4,
     spaceBetween: 26,
+    allowTouchMove: false,
     scrollbar: {
         el: '.swiper-scrollbar',
         hide: false,
@@ -19,7 +20,8 @@ var swiper = new Swiper('.swiper-container', {
     // when window width is <= 480px
     480: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 10,
+      allowTouchMove: true
     },
     767: {
       spaceBetween: 10

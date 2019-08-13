@@ -16,6 +16,7 @@
     transition: all 0.3s ease-in-out;
     white-space: nowrap;
     padding: 8px;
+    outline: none;
 
     @media (max-width: $lg) {
         font-size: 12px;
@@ -68,6 +69,7 @@
         &.active {
             color: $color-white;
             background: $color-base;
+            font-weight: 800;
         }
 
         &:hover {
