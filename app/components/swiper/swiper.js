@@ -24,7 +24,9 @@ var swiper = new Swiper('.swiper-container', {
       allowTouchMove: true
     },
     767: {
-      spaceBetween: 10
+      slidesPerView: 3,
+      spaceBetween: 10,
+      allowTouchMove: true
     },
     // when window width is <= 640px
     1279: {
