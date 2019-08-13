@@ -9,7 +9,18 @@
     }
 
     &--margin-right {
-        margin-right: 10px;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+
+            @media (min-width: $md + 1) {
+                margin-right: 28px;
+            }
+
+            @media (min-width: $lg + 1) {
+                margin-right: 36px;
+            }
+        }
     }
 
     &.active,

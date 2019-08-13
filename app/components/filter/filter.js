@@ -103,6 +103,67 @@ class Filter {
 
             e.preventDefault();
         });
+
+        // Показ/скрытие доп. блока фильтра в зависимости от выбора опций
+        var filterWrap = $('[data-filter-show-wrap]');
+
+        filterWrap.find('.filter__info').hide();
+        filterWrap.find('.filter__all').hide();
+
+        filterWrap.find('.filter__item').each(function() {
+            $('select[data-filter]').on('change', function() {
+                var selectedOption = $('select[data-filter]').parent().find('.dropdown-menu li').hasClass('selected');
+                
+                if (selectedOption) {
+                    filterWrap.find('.filter__info').slideDown();
+                    filterWrap.find('.filter__all').slideDown();
+                } else {
+                    filterWrap.find('.filter__info').slideUp();
+                    filterWrap.find('.filter__all').slideUp();
+                }
+            });
+        });
+
+        // Добавление градиента по краям быстрого фильтра
+        var fieldScroll = $('.filter__field-scroll');
+
+        fieldScroll.parent().prepend('<div class="filter__row--scroll-l-gradient"></div>');
+        fieldScroll.parent().append('<div class="filter__row--scroll-r-gradient"></div>');
+        
+        var leftGradient = fieldScroll.parent().find('.filter__row--scroll-l-gradient');
+        var rightGradient = fieldScroll.parent().find('.filter__row--scroll-r-gradient');
+        
+        leftGradient.hide();
+        rightGradient.hide();
+
+        var scrollElements = fieldScroll.children();
+        var scrollWidth = 0;
+
+        scrollElements.each(function() {
+            scrollWidth += $(this).outerWidth(true);
+        });
+
+        $('.filter__field-scroll').scroll(function() {
+            var el = $(this);
+            var scroll = el.scrollLeft();
+
+            leftGradient = el.parent().find('.filter__row--scroll-l-gradient');
+            rightGradient = el.parent().find('.filter__row--scroll-r-gradient');
+            
+            if (scroll > 0) {
+                leftGradient.fadeIn(500);
+            } else {
+                leftGradient.fadeOut(500);
+            }
+
+            if (scroll + 1 < (scrollWidth - el.width())) {
+                rightGradient.fadeIn(500);
+            } else {
+                rightGradient.fadeOut(500);
+            }
+        
+        });
+
 	}
 }
 
