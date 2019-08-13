@@ -211,7 +211,7 @@ class Slider {
                     settings: {
                         slidesToScroll: 2,
                         arrows: false,
-                        // variableWidth: true
+                        variableWidth: true
                     }
                 }
             ]

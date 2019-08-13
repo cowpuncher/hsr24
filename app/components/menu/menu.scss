@@ -290,7 +290,14 @@
                 margin-left: 11px;
             }
 
-            
+            &-icon {
+                margin-top: 4px;
+
+                @media (max-width: $lg) {
+                    margin-left: 4px;
+                }
+
+            }
 		}
 
 		&__all {
