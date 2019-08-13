@@ -203,7 +203,7 @@ class Slider {
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 3,
-                        variableWidth: true
+                        // variableWidth: true
                     }
                 },
                 {
@@ -211,7 +211,7 @@ class Slider {
                     settings: {
                         slidesToScroll: 2,
                         arrows: false,
-                        variableWidth: true
+                        // variableWidth: true
                     }
                 }
             ]
