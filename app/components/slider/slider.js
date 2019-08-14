@@ -203,7 +203,15 @@ class Slider {
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 3,
-                        // variableWidth: true
+                        variableWidth: true
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                        variableWidth: false
                     }
                 },
                 {

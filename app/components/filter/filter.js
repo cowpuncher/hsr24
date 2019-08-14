@@ -151,15 +151,15 @@ class Filter {
             rightGradient = el.parent().find('.filter__row--scroll-r-gradient');
             
             if (scroll > 0) {
-                leftGradient.fadeIn(500);
+                leftGradient.fadeIn(300);
             } else {
-                leftGradient.fadeOut(500);
+                leftGradient.fadeOut(300);
             }
 
             if (scroll + 1 < (scrollWidth - el.width())) {
-                rightGradient.fadeIn(500);
+                rightGradient.fadeIn(300);
             } else {
-                rightGradient.fadeOut(500);
+                rightGradient.fadeOut(300);
             }
         
         });
