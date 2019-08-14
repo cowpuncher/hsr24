@@ -1037,28 +1037,32 @@
                 {
                     "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
+                    "btn": "Подробнее",
+                    "title": "Акция!"
                 },
                 {
                     "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
+                    "btn": "Подробнее",
+                    "title": "Акция!"
                 },
                 {
                     "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
+                    "btn": "Подробнее",
+                    "title": "Акция!"
                 },
                 {
                     "img": "assets/images/example/banner/banner5.jpg",
                     "img2": "assets/images/example/banner/banner-xs.jpg",
-                    "btn": "Подробнее"
+                    "btn": "Подробнее",
+                    "title": "Акция!"
                 }
             ]
         }
     },
     "teaserList": {
-        "text": "Ни дня без акции — наш девиз. Каждый день в HSR24 — выгодные цены, скидки и интересные предложения. Следите за нашими новостями!"
+        "text": "Делаем шоппинг максимально выгодным!<br />Любимые акции для любимых клиентов только на HSR24!"
     },
     "actionsList": {
         "list": [

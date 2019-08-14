@@ -18,6 +18,10 @@
                     <div class="slider{{pr}}__name">{{ item.name }}</div>
                 {% endif %}
 
+                {% if item.title %}
+                    <h3>{{ item.title }}</h3>
+                {% endif %}
+
                 {% if item.btn %}
                     <a href="#" class="elem-btn">{{ item.btn }}</a>
                 {% endif %}
