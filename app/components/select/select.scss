@@ -134,6 +134,7 @@
 
         & .filter-option {
             padding-right: 0;
+            font-weight: normal;
         }
     }
 
@@ -153,6 +154,10 @@
         top: 20px;
         width: 100%;
         display: none;
+
+        @media (max-width: $lg) {
+            min-width: auto !important;
+        }
 
         @media (max-width: $md) {
             max-height: none !important;
@@ -197,7 +202,7 @@
                 }
 
                 @media (max-width: $md) {
-                    font-size: 12px;
+                    font-size: 10px;
                     line-height: 17px;
                     height: 44px;
                     font-weight: 400;
@@ -211,6 +216,7 @@
             &:first-child a {
                 padding-top: 25px;
                 height: 62px;
+
             }
         }
     }
@@ -256,11 +262,19 @@
                     margin-top: -5px;
                     opacity: 0;
 
+                    // @media (max-width: $lg) {
+                    //     height: 14px;
+                    //     width: 20px;
+                    //     background-size: 20px 14px;
+                    //     margin-top: -7px;
+                    //     right: 20px;
+                    // }
+
                     @media (max-width: $lg) {
-                        height: 14px;
-                        width: 20px;
-                        background-size: 20px 14px;
-                        margin-top: -7px;
+                        height: 9px;
+                        width: 15px;
+                        background-size: 15px 9px;
+                        margin-top: -5px;
                         right: 20px;
                     }
                 }
@@ -279,11 +293,16 @@
                     &:first-child {
                         & span.check-mark {
                             top: calc(50% + 7px);
+
+                            @media (max-width: $lg) {
+                                margin-top: -2px;
+                            }
                         }
                     }
                 }
             }
         }
+
 
         & select[multiple] {
             & ~ .dropdown-menu {
@@ -306,26 +325,31 @@
                         opacity: 1;
                         display: block;
 
-                        @media (max-width: $lg) {
-                            height: 20px;
-                            width: 20px;
-                            right: auto;
-                            left: 17px;
-                            margin-top: -10px;
-                        }
+                        // @media (max-width: $lg) {
+                        //     height: 20px;
+                        //     width: 20px;
+                        //     right: auto;
+                        //     left: 17px;
+                        //     margin-top: -10px;
+                        // }
+
                     }
 
                     &:first-child {
                         & span.check-mark {
                             top: calc(50% + 11px);
+
+                            @media (max-width: $lg) {
+                                margin-top: -8px;
+                            }
                         }
                     }
 
-                    & a {
-                        @media (max-width: $lg) {
-                            padding-left: 49px;
-                        }
-                    }
+                    // & a {
+                    //     @media (max-width: $lg) {
+                    //         padding-left: 49px;
+                    //     }
+                    // }
 
                     &.selected {
                         & span.check-mark {
@@ -340,6 +364,13 @@
                             & span.check-mark {
                                 top: calc(50% + 11px);
                             }
+                        }
+                    }
+
+                    &:not(:last-child) {
+
+                        & a {
+                            border-bottom: 1px solid $color-gray-light;
                         }
                     }
                 }
@@ -357,6 +388,10 @@
                         justify-content: flex-start;
                         padding-left: 44px;
                         position: relative;
+
+                        @media (max-width: $md) {
+                            height: 38px;
+                        }
 
                         & .select-color {
                             width: 20px;
@@ -381,6 +416,12 @@
                         & a .select-color {
                             top: calc(50% + 11px);
                         }
+
+                        & a {
+                            @media (max-width: $md) {
+                                height: 64px;
+                            }
+                        }
                     }
 
                     & span.check-mark {
@@ -399,13 +440,21 @@
                         border-color: transparent;
                         left: auto;
 
+                        // @media (max-width: $lg) {
+                        //     height: 14px;
+                        //     width: 20px;
+                        //     background-size: 20px 14px;
+                        //     margin-top: -7px;
+                        //     right: 20px;
+                        //     left: auto;
+                        // }
+
                         @media (max-width: $lg) {
-                            height: 14px;
-                            width: 20px;
-                            background-size: 20px 14px;
-                            margin-top: -7px;
+                            height: 9px;
+                            width: 15px;
+                            background-size: 15px 9px;
+                            margin-top: -5px;
                             right: 20px;
-                            left: auto;
                         }
                     }
 
@@ -427,6 +476,10 @@
                         &:first-child {
                             & span.check-mark {
                                 top: calc(50% + 11px);
+
+                                @media (max-width: $lg) {
+                                    margin-top: -5px;
+                                }
                             }
 
                             & a .select-color {

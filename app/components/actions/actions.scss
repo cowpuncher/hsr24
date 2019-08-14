@@ -20,6 +20,10 @@
                 margin-top: 12px;
             }
         }
+
+        &.dark:hover {
+            color: $color-white;
+        }
     }
 
     &__img {
@@ -65,7 +69,7 @@
     }
 
     &__item:hover &__title {
-        color: $color-red;
+        color: unset;
     }
 
     &__title {
