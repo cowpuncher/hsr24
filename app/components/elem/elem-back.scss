@@ -39,8 +39,10 @@
     &.open,
     &:hover {
         &:after {
-            transform: rotate(-45deg);
-            margin-top: -2px;
+            @media(min-width: $lg + 1) {
+                transform: rotate(-45deg);
+                margin-top: -2px;
+            }
         }
     }
 
@@ -57,10 +59,16 @@
         background: $color-white;
         z-index: 9;
         display: none;
+
+        &.active {
+            display: block;
+        }
     }
 
     &:hover &__list {
-        display: block;
+        @media(min-width: $lg + 1) {
+            display: block;
+        }
     }
 
     &__item {
