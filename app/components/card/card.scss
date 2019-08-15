@@ -100,8 +100,7 @@
         flex-wrap: wrap;
 
         @media (max-width: $lg) {
-            padding-left: 25px;
-            padding-right: 25px;
+            padding: 0 13px;
             margin-bottom: -18px;
         }
 
@@ -155,6 +154,12 @@
                 margin-left: 0;
                 margin-right: 0;
             }
+
+            & .card {
+                &__info {
+                    display: block;
+                }
+            }
         }
     }
 
@@ -192,6 +197,11 @@
 
             & > div {
                 height: 100%;
+            }
+
+            @media (max-width: $lg) {
+                padding-left: 25px;
+                padding-right: 25px;
             }
         }
 

@@ -37,6 +37,32 @@ class Price {
 
             lower.val(el.slider( "values", 0 ));
             upper.val(el.slider( "values", 1 ));
+
+            lower.change(function() {
+                var val1 = lower.val();
+                var val2 = upper.val();
+
+                if(parseInt( val1 ) > parseInt( val2 )) {
+                    val1 = val2;
+                    lower.val(val1);
+                }
+
+                el.slider("values", 0, val1);
+            });
+
+            upper.change(function() {
+                var val1 = lower.val();
+                var val2 = upper.val();
+
+                if(parseInt( val2 ) < parseInt( val1 )) {
+                    val2 = val1;
+                    upper.val(val2);
+                }
+
+                el.slider("values", 1, val2);
+            });
+
+            
         });
 	}
 }

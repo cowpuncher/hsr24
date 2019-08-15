@@ -281,3 +281,12 @@ $(document).on('click', '[data-like]', function(e) {
     e.preventDefault();
 });
 
+
+var elemBack = $('.elem-back');
+elemBack.click(function() {
+    var el = $(this);
+    var elemBackList = el.find('.elem-back__list');
+    elemBackList.toggleClass('active');
+    console.log('good');
+})
+

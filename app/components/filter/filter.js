@@ -89,6 +89,14 @@ class Filter {
         $(document).on('click', '[data-filter-delete]', function(e){
             var el = $(this);
             var list = el.parent().children().find('[data-filter-list]');
+            
+            var filterItem = $('.filter__wrap').find('.filter__item');
+            
+            filterItem.each(function() {
+                var selectItem = $(this).find('.bootstrap-select select');
+                selectItem.selectpicker('deselectAll');
+                selectItem.selectpicker('val', '');
+            })
 
             list.each(function() {
                 $(this).addClass('null');

@@ -134,8 +134,8 @@
 
         & .filter-option {
             padding-right: 0;
-            font-weight: normal;
         }
+        
     }
 
     & .dropdown-menu {
@@ -216,7 +216,12 @@
             &:first-child a {
                 padding-top: 25px;
                 height: 62px;
+            }
 
+            &:not(:last-child) {
+                & a {
+                    border-bottom: 1px solid $color-gray-light;
+                }
             }
         }
     }
@@ -408,6 +413,12 @@
                             & .select-color {
                                 border: 1px solid $color-base !important;
                             }
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        & a {
+                            border-bottom: 0;
                         }
                     }
 
