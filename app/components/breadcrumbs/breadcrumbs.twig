@@ -1,7 +1,7 @@
 {% macro breadcrumbs(data) %}
     {% import '../../page/_macros/_svg.twig' as svg %}
 
-	<div class="breadcrumbs {% if data.class %}{{ data.class }}{% endif %}">
+	<div class="breadcrumbs {% if data.class %}{{ data.class }}{% endif %}" {% if data.attr %}{{ data.attr }}{% endif %}>
         {% for item in data.list %}
             {# Если последний элемент #}
             <div class="breadcrumbs__item">
@@ -35,4 +35,5 @@
             </div>
         {% endfor %}
 	</div>
+
 {% endmacro %}

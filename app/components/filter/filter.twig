@@ -8,7 +8,7 @@
 
         {% if data.top %}
             <div class="filter__row filter__row--scroll">
-                <div class="filter__field-scroll">
+                <div class="filter__field-scroll" data-scroll-row>
                     {% for item in data.category %}
                         <a href="#" class="elem-link elem-link--margin-right {{ item.class }}">{{ item.name }}<span class="elem-label elem-label--red-circle">{{ item.num }}</span></a>
                     {% endfor %}

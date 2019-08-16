@@ -116,6 +116,10 @@
             margin: 0 auto;
             max-width: 90%;
         }
+
+        @media (max-width: $sm) {
+            max-width: 100%;
+        }
     }
 
     &__inner {
@@ -327,7 +331,7 @@
     & .slider {
         & .slick-arrow {
             @media (max-width: 480px) {
-                margin-top: -20px;
+                margin-top: -16px;
             }
         }
     }

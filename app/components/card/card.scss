@@ -81,11 +81,14 @@
             }
 
             @media (max-width: $md) {
-                width: 234px;
-                padding-left: 98px;
+                // width: 234px;
+                width: 100%;
+                padding: 0;
+                padding-left: 110px;
                 min-height: 106px;
             }
         }
+
     }
 
     &__wrap {
@@ -100,7 +103,8 @@
         flex-wrap: wrap;
 
         @media (max-width: $lg) {
-            padding: 0 13px;
+            padding-left: 5px;
+            padding-right: 5px;
             margin-bottom: -18px;
         }
 
@@ -198,11 +202,6 @@
             & > div {
                 height: 100%;
             }
-
-            @media (max-width: $lg) {
-                padding-left: 25px;
-                padding-right: 25px;
-            }
         }
 
         & .slick-prev {
@@ -225,23 +224,62 @@
 
         .popup & {
             & .slick-prev {
-                left: -6px;
+                left: -26px;
                 margin-top: -19px;
 
                 @media (max-width: $lg) {
-                    left: 0;
+                    left: -24px;
                 }
             }
 
             & .slick-next {
-                right: -6px;
+                right: -26px;
                 margin-top: -19px;
 
                 @media (max-width: $lg) {
-                    right: 0;
+                    right: -24px;
                 }
             }
         }
+
+        @media (min-width: $md + 1) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        @media (max-width: $lg) {
+            & .card--inline {
+                border: 1px solid $color-smoke;
+                border-radius: 8px;
+                padding: 8px 8px 8px 120px;
+            }
+        }
+
+        @media (max-width: $md) {
+            & .card--inline {
+                // border: 1px solid $color-smoke;
+                // border-radius: 8px;
+                padding: 8px 8px 8px 105px;
+    
+                & .card__img {
+                    width: 90px;
+                    height: 90px;
+                    left: 8px;
+                    top: 8px;
+                }
+
+                & .card__price {
+                    flex-direction: column;
+                    align-items: baseline;
+
+                    & .elem-price-old {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        
     }
 
     &__img {
@@ -305,8 +343,10 @@
             }
 
             @media (max-width: $md) {
-                width: 90px;
-                height: 90px;
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 0;
             }
         }
     }
@@ -382,7 +422,7 @@
             margin-bottom: 6px;
 
             @media (max-width: $lg) {
-                margin-bottom: 11px;
+                // margin-bottom: 11px;
             }
         }
     }
@@ -391,12 +431,17 @@
         padding: 20px 16px 11px;
         width: 100%;
 
+        min-height: 62px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
         @media (max-width: $lg) {
             padding: 9px 13px 4px;
-            min-height: 40px;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
+            min-height: 45px;
+            // display: flex;
+            // align-items: flex-end;
+            // justify-content: center;
         }
 
         @media (max-width: $md) {
@@ -675,6 +720,10 @@
                 @media (max-width: $lg) {
                     margin-bottom: 0;
                 }
+
+                @media (max-width: $md) {
+                    margin-left: 5px;
+                }
             }
         }
     }
@@ -767,10 +816,11 @@
 
         .card--inline & {
             right: 46px;
-            bottom: 11px;
+            bottom: 6px;
 
             @media (max-width: $lg) {
-                right: 14px;
+                right: 8px;
+                bottom: 9px;
             }
 
             @media (max-width: $md) {

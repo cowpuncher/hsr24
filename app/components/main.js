@@ -22,5 +22,8 @@ import './order-icon/order-icon';
 import './order-list/order-list';
 import './question/question';
 import './rating/rating';
+
+import './reviews/reviews';
 import './profile/profile';
 import './swiper/swiper';
+import './scroll-row/scroll-row';

@@ -199,6 +199,12 @@
                     color: $color-base;
                     border-bottom-color: $color-base;
                 }
+
+                &:not(.active) {
+                    &:hover {
+                        color: $color-gray;
+                    }
+                }
             }
         }
 

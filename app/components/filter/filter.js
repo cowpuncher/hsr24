@@ -10,6 +10,10 @@ class Filter {
 
             el.toggleClass('open');
             el.parents('.filter').find('[data-filter-show-wrap]').slideToggle(300);
+            
+            $('.page').addClass('overflow');
+            $('body').addClass('scroll');
+
             e.preventDefault();
         });
 
@@ -18,6 +22,10 @@ class Filter {
 
             $('[data-filter-show]').removeClass('open');
             el.parents('.filter').find('[data-filter-show-wrap]').slideUp(300);
+            
+            $('.page').removeClass('overflow');
+            $('body').removeClass('scroll');
+
             e.preventDefault();
         });
 
@@ -39,8 +47,10 @@ class Filter {
         });
 
         $('[data-filter-btn]').click(function(e) {
+            
+            $(this).closest('.filter__btn').find('[data-filter-btn]').removeClass('active');
             $(this).toggleClass('active');
-
+            
             e.preventDefault();
         });
 
@@ -130,46 +140,6 @@ class Filter {
                     filterWrap.find('.filter__all').slideUp();
                 }
             });
-        });
-
-        // Добавление градиента по краям быстрого фильтра
-        var fieldScroll = $('.filter__field-scroll');
-
-        fieldScroll.parent().prepend('<div class="filter__row--scroll-l-gradient"></div>');
-        fieldScroll.parent().append('<div class="filter__row--scroll-r-gradient"></div>');
-        
-        var leftGradient = fieldScroll.parent().find('.filter__row--scroll-l-gradient');
-        var rightGradient = fieldScroll.parent().find('.filter__row--scroll-r-gradient');
-        
-        leftGradient.hide();
-        rightGradient.hide();
-
-        var scrollElements = fieldScroll.children();
-        var scrollWidth = 0;
-
-        scrollElements.each(function() {
-            scrollWidth += $(this).outerWidth(true);
-        });
-
-        $('.filter__field-scroll').scroll(function() {
-            var el = $(this);
-            var scroll = el.scrollLeft();
-
-            leftGradient = el.parent().find('.filter__row--scroll-l-gradient');
-            rightGradient = el.parent().find('.filter__row--scroll-r-gradient');
-            
-            if (scroll > 0) {
-                leftGradient.fadeIn(300);
-            } else {
-                leftGradient.fadeOut(300);
-            }
-
-            if (scroll + 1 < (scrollWidth - el.width())) {
-                rightGradient.fadeIn(300);
-            } else {
-                rightGradient.fadeOut(300);
-            }
-        
         });
 
 	}

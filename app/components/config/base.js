@@ -99,16 +99,10 @@ $('[data-favorites]').click(function(e) {
 
     if (el.hasClass('active')) {
         el.find('span').text('Добавлено в избранное');
-        setTimeout(function () {
-            el.removeAttr('data-popup-modal');
-            el.attr('href', '#');
-        }, 300);
+        
     } else {
         el.find('span').text('Добавить в избранное');
-        setTimeout(function () {
-            el.attr('data-popup-modal');
-            el.attr('href', '#fav');
-        }, 300);
+        
     }
 
     e.preventDefault();
