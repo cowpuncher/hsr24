@@ -114,6 +114,7 @@
     }
 
     &__left {
+        width: 100%;
         @media (max-width: $lg) {
             width: 51%;
             padding-right: 20px;
@@ -199,7 +200,11 @@
             @media (max-width: $md) {
                 margin: 0;
                 width: 100%;
-                min-width: 100%;
+                // min-width: 100%;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
             }
         }
     }
@@ -213,6 +218,10 @@
 
         @media (max-width: $md) {
             margin-bottom: -4px;
+        }
+
+        @media (min-width: $md + 1) {
+            padding-top: 5px;
         }
     }
 
@@ -228,6 +237,13 @@
 
             @media (max-width: $lg) {
                 margin-top: -13px;
+            }
+        }
+
+        & .card {
+            &__slider {
+                padding-left: 5px;
+                padding-right: 5px;
             }
         }
     }
@@ -303,6 +319,28 @@
                 height: 26px;
                 width: 26px;
             }
+
+            & .bg {
+                fill: $color-white;
+            }
+        }
+
+        & .elem-btn {
+            &.active {
+                & .icon {
+                    & .bg {
+                        fill: $color-red;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .popup__btns *+* {
+        @media (max-width: $md) {
+            margin-top: 0;
+            margin-bottom: 12px;
         }
     }
 }

@@ -350,7 +350,7 @@
 
         @media (max-width: $md) {
             margin-top: 17px;
-            margin-right: -16px;
+            // margin-right: -16px;
         }
 
         &.list {
@@ -368,6 +368,36 @@
         @media (max-width: $md) {
             width: 234px;
             margin: 0 4px;
+        }
+    }
+
+    & .card__slider {
+        @media (max-width: $md) {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50px;
+                height: 100%;
+                background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255,0) 100%);
+            }
+        }
+
+        & .card {
+            &--inline {
+                .card__status {
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+
+                    @media (max-width: $lg) {
+                        top: 12px;
+                        left: 12px;
+                    }
+
+                }
+            }
         }
     }
 }

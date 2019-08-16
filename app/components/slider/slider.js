@@ -119,39 +119,39 @@ class Slider {
             speed: 2000
         });
 
-        // sliderCards.slick({
-        //     dots: false,
-        //     infinite: false,
-        //     speed: 300,
-        //     prevArrow: prevCarousel,
-        //     nextArrow: nextCarousel,
-        //     cssEase: 'ease-out',
-        //     slidesToShow: 4,
-        //     responsive: [
-        //         {
-        //             breakpoint: 1279,
-        //             settings: {
-        //                 slidesToShow: 3
-        //             }
-        //         },
-        //         {
-        //             breakpoint: 768,
-        //             settings: {
-        //                 slidesToShow: 2,
-        //                 dots: false,
-        //                 arrows: false
-        //             }
-        //         },
-        //         {
-        //             breakpoint: 576,
-        //             settings: {
-        //                 slidesToShow: 2,
-        //                 dots: false,
-        //                 arrows: false
-        //             }
-        //         }
-        //     ]
-        // });
+        sliderCards.slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            prevArrow: prevCarousel,
+            nextArrow: nextCarousel,
+            cssEase: 'ease-out',
+            slidesToShow: 4,
+            responsive: [
+                {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: false,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: false,
+                        arrows: false
+                    }
+                }
+            ]
+        });
 
         sliderCardsPopup.slick({
             dots: false,

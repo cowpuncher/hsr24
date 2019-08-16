@@ -12,4 +12,13 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    & .card {
+        &__list {
+            @media (min-width: $md + 1) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
 }

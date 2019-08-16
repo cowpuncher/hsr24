@@ -16,6 +16,10 @@
     &--lg {
         font-size: 36px;
         line-height: 43px;
+
+        @media (max-width: $lg) {
+            line-height: 1;
+        }
     }
 
     &-old {
