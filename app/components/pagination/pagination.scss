@@ -81,6 +81,7 @@
 
         &--prev {
             margin-right: 6px;
+            padding-right: 1px;
 
             @media (max-width: $md) {
                 margin-right: 0;
@@ -93,6 +94,7 @@
 
         &--next {
             margin-left: 6px;
+            padding-left: 1px;
 
             @media (max-width: $md) {
                 margin-left: 0;

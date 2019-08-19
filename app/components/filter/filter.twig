@@ -26,7 +26,7 @@
                     <div class="filter__btn hidden-md hidden-sm hidden-xs">
                         {% for item in data.btn %}
                             <div class="filter__btn-item">
-                                <a href="{{ item.href }}" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md" data-filter-btn>{{ item.text }}</a>
+                                <a href="{{ item.href }}" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md elem-btn--fix-weight" title="{{ item.text }}" data-filter-btn>{{ item.text }}</a>
                             </div>
                         {% endfor %}
                     </div>
@@ -93,6 +93,12 @@
                             <label class="elem-label">Размер:</label>
                             <div class="filter__info-list null" data-filter-list></div>
                         </div>
+
+                        <div class="filter__info-items" data-filter-available>
+                            <label class="elem-label">Наличие:</label>
+                            <div class="filter__info-list null" data-filter-list></div>
+                        </div>
+
                         <a href="#" class="filter__delete" data-filter-delete>
                             <span class="filter__delete-item hidden-xs hidden-sm hidden-md">
                                 <span class="filter__delete-text">Очистить всё</span>

@@ -4026,13 +4026,13 @@
                 
                                     <div class="filter__btn hidden-md hidden-sm hidden-xs">
                                                     <div class="filter__btn-item">
-                                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md" data-filter-btn>Хиты продаж</a>
+                                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md elem-btn--fix-weight" title="Хиты продаж" data-filter-btn>Хиты продаж</a>
                             </div>
                                                     <div class="filter__btn-item">
-                                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md" data-filter-btn>Товары со скидкой</a>
+                                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md elem-btn--fix-weight" title="Товары со скидкой" data-filter-btn>Товары со скидкой</a>
                             </div>
                                                     <div class="filter__btn-item">
-                                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md" data-filter-btn>Новинки</a>
+                                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md elem-btn--fix-weight" title="Новинки" data-filter-btn>Новинки</a>
                             </div>
                                             </div>
                 
@@ -4181,7 +4181,7 @@
                         <div class="filter__item">
                             <label class="elem-label hidden-sm hidden-xs">Наличие</label>
                                 
-        <select class="" title="Наличие"  data-filter data-mobile-none="Наличие" data-desktop-none="Выберите параметры">
+        <select class="" title="Наличие"  data-available data-filter='data-filter-available' data-mobile-none="Наличие" data-desktop-none="Выберите параметры">
                             <option    class="" value="Да" >
                                             Да
                                     </option>
@@ -4211,6 +4211,12 @@
                             <label class="elem-label">Размер:</label>
                             <div class="filter__info-list null" data-filter-list></div>
                         </div>
+
+                        <div class="filter__info-items" data-filter-available>
+                            <label class="elem-label">Наличие:</label>
+                            <div class="filter__info-list null" data-filter-list></div>
+                        </div>
+
                         <a href="#" class="filter__delete" data-filter-delete>
                             <span class="filter__delete-item hidden-xs hidden-sm hidden-md">
                                 <span class="filter__delete-text">Очистить всё</span>
@@ -4238,7 +4244,7 @@
             <div class="filter__select">
                 
                     
-        <select class="" title=""   data-mobile-none="" data-desktop-none="">
+        <select class="sortlist" title=""   data-mobile-none="" data-desktop-none="">
                             <option    class="" value="popular"  selected >
                                             Популярные
                                     </option>

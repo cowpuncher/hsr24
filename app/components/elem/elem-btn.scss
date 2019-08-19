@@ -60,11 +60,27 @@
         }
     }
 
+    &--fix-weight {
+        flex-direction: column;
+
+        &:after {
+            display: block;
+            content: attr(title);
+            font-weight: 800;
+            height: 1px;
+            color: transparent;
+            overflow: hidden;
+            visibility: hidden;
+        }
+    }
+
     &--light {
         font-weight: 400;
         background: $color-white;
         border: 1px solid $color-base;
         color: $color-base;
+
+        
 
         &.active {
             color: $color-white;

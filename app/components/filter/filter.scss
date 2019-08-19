@@ -56,23 +56,6 @@
             justify-content: flex-start;
             position: relative;
 
-            &-l-gradient {
-                position: absolute;
-                left: 0;
-                width: 40px;
-                height: 100%;
-                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-                z-index: 1;
-            }
-
-            &-r-gradient {
-                position: absolute;
-                right: 0;
-                width: 40px;
-                height: 100%;
-                background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-                z-index: 1;
-            }
         }
     }
 
@@ -124,7 +107,7 @@
         border-radius: 16px;
         margin-bottom: 32px;
         display: none;
-
+        
         @media (max-width: $md) {
             position: fixed;
             overflow: hidden;
@@ -136,6 +119,9 @@
             background: $color-white;
             z-index: 100;
             padding: 13px 15px;
+            
+            top: -70px;
+            transform: translateY(70px);
         }
 
         &-in {
@@ -307,9 +293,12 @@
                 min-width: 26px;
             }
 
-            &.active,
-            &:hover {
+            &.active {
                 font-weight: 800;
+            }
+
+            &:hover {
+                color: unset;
             }
 
             & + & {
