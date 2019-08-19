@@ -15,6 +15,19 @@ class Select {
 
             list.children().remove();
 
+            if (filter == 'data-filter-available') {
+                list.append(`
+                    <div class="filter__info-item">
+                        <div class="filter__info-text">${selected}</div>
+                        <a href="#" class="elem-cancel" data-filter-cancel="data-available">
+                            <svg aria-hidden="true" class="icon icon-cancel">
+                                <use xlink:href="assets/images/required/sprite.svg#cancel"></use>
+                            </svg>
+                        </a>
+                    </div>
+                `);
+            }
+
             for (var i = 0; i < selected.length; i++) {
 
                 classSelected = $(this).find('option').eq(i).attr('class');
@@ -30,7 +43,8 @@ class Select {
                             </a>
                         </div>
                     `);
-                } else {
+
+                } else if (!(filter == 'data-filter-available')) {
                     list.append(`
                         <div class="filter__info-item">
                             <div class="filter__info-text">${selected[i]}</div>

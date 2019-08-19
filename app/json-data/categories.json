@@ -1198,6 +1198,7 @@
         "priceMin": "0",
         "priceMax": "30000",
         "sortList": {
+            "class": "sortlist",
             "list": [
                 {
                     "selected": true,
@@ -1382,7 +1383,7 @@
         "availabilityList": {
             "title": "Выберите параметры",
             "title2": "Наличие",
-            "attr": "data-filter",
+            "attr": "data-available data-filter='data-filter-available'",
             "list": [
                 {
                     "text": "Да",
