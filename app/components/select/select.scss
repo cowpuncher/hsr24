@@ -616,7 +616,7 @@
 
                 &:first-child {
                     a {
-                        @media (max-width: $md) {
+                        @media (max-width: $md + 1) {
                             height: 44px;
                             padding-top: 17px;
                         }
@@ -634,7 +634,9 @@
                     &:first-child {
                         span {
                             &.check-mark {
-                                margin-top: -7px;
+                                @media (max-width: $md + 1) {
+                                    margin-top: -7px;
+                                }
                             }
                         }
                     }
