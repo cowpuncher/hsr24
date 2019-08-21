@@ -1,66 +1,73 @@
 function changeNumber() {
 
-    $('.phone-number-change').hide();
-    $('.phone-number-change').find('.sms').hide();
+    $('.phone-number-change').removeClass('active');
+    $('.phone-number-change').find('.sms').removeClass('active');
 
-    $('.change-number-btn').click(function(e) {
+    $('.change-number-btn').click(function (e) {
+        var el =  $(this);
+
+        el.closest('.phone-number').removeClass('active');
+        el.parents().find('.phone-number-change').addClass('active');
+
         e.preventDefault();
-        $(this).closest('.phone-number').hide();
-        $(this).parents().find('.phone-number-change').show();
-
     });
 
-    $('.change-number-cancel').click(function(e) {
+    $('.change-number-getcode').click(function (e) {
+        var el =  $(this);
+        
+        el.removeClass('active');
+        el.parents().find('.sms-code').addClass('active');
+
         e.preventDefault();
-        $(this).parents().find('.phone-number-change').hide();
-        $(this).parents().find('.phone-number').show();
-        $(this).parents().find('.phone-number-change').find('.sms').hide();
-        $(this).parents().find('.change-number-getcode').show();
     });
 
-    $('.change-number-getcode').click(function(e) {
-        e.preventDefault();
-        $(this).hide();
-        $(this).parents().find('.sms').show();
-    });
+    // $('.sms-code .sms__input input').keyup(function() {
+    //     var el = $(this);
+    //     var smsBlock = el.closest('.sms-code');
+    //     var smsFields = smsBlock.find('input');
+        
+        
+        
+    // }}
 
 }
 
 changeNumber();
 
 function showMoreInfo() {
-    
-    $('.td--order-more').click(function(e) {
+
+    $('.td--order-more').click(function (e) {
+        var el =  $(this);
+
+        el.parent().next('.more-info').toggleClass('active');
+        el.find('.icon-arrow-down').toggleClass('active');
+
         e.preventDefault();
-        $(this).parent().next('.more-info').toggleClass('active');
     });
-    
+
 }
 
 showMoreInfo();
 
 function smsAutoFocus() {
-    $('.sms__input input').keyup(function() {
-        if($(this).val().match(/^\d{1}$/)) {
-          $(this).parent().next('.sms__input').children('input').focus();
+    $('.sms__input input').keyup(function () {
+        if ($(this).val().match(/^\d{1}$/)) {
+            $(this).parent().next('.sms__input').children('input').focus();
         } else {
-          $(this).val('');
+            $(this).val('');
         }
     });
 }
 
 smsAutoFocus();
 
-
-$('#date-of-birth').datepicker({
-
-});
+$("#date-of-birth").datepicker();
 
 function getCode() {
 
     $('form').find('.sms').hide();
 
-    $('.btn-getcode').click(function(e) {
+    $('.btn-getcode').click(function (e) {
         e.preventDefault();
         $(this).closest('form').find('.sms').show();
     })

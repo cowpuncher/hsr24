@@ -452,6 +452,8 @@ table {
         }
 
         & tbody {
+            border-bottom: 1px solid $color-gray-light;
+            
             @media (max-width: $md) {
                 display: block;
             }
@@ -466,6 +468,7 @@ table {
 
 
             & tr:not(.more-info) {
+                
                 @media (max-width: $md) {
                     display: flex;
                     flex-direction: column;
@@ -484,7 +487,24 @@ table {
                     min-height: 104px;
                     padding-bottom: 13px;
                     padding-top: 15px;
-                    margin-top: 15px;
+
+                    &:first-child {
+                        padding-top: 0;
+
+                        & td:not(.more-info__col) {
+                            &.td {
+                                &--order {
+                                    &-status {
+                                        top: 0;
+                                    }
+
+                                    &-more {
+                                        top: 35px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }               
             }
 
@@ -495,10 +515,15 @@ table {
 
                 @media (min-width: $md) {
                     width: 16%;
+                    padding-top: 18px;
 
                     &:nth-child(2) {
                         width: 20%;
                     }
+                }
+
+                @media (min-width: $lg) {
+                    padding-top: 28px;
                 }
 
                 &.td {
@@ -568,11 +593,16 @@ table {
                             @media (min-width: $md) {
                                 .elem-price {
                                     font-size: 16px;
+                                    line-height: 22px;
                                 }
                             }
                         }
 
                         &-more {
+                            @media (min-width: $lg) {
+                                padding-top: 20px;
+                            }
+
                             @media (max-width: $md) {
                                 position: absolute;
                                 top: 50px;
@@ -582,6 +612,15 @@ table {
                             & .icon {
                                 height: 32px;
                                 width: 32px;
+
+                                &.active {
+                                    transform: rotateZ(180deg);
+                                }
+
+                                @media (min-width: $lg) {
+                                    width: 41px;
+                                    height: 41px;
+                                }
                             }
                         }
                     }
@@ -590,23 +629,33 @@ table {
 
             // Раскрывающаяся карточка с подробной информацией о заказе
             & .more-info {
-                display: none;
+                // display: none;
                 background-color: $color-smoke;
                 border-radius: 8px;
-                padding: 16px;
                 
-                @media (min-width: $md) {
-                    padding: 28px;
-                }
-
+                height: 0;
+                visibility: hidden;
+                padding: 0;
+                transform: scaleY(0);
+                
                 &.active {
                     display: flex;
                     flex-direction: column;
+                    margin-bottom: 10px;
+                    padding: 16px;
+
+                    height: auto;
+                    visibility: visible;
+                    transform: scaleY(1);
+                    transform-origin: top;
+                    transition: transform .5s ease-in-out;
 
                     @media (min-width: $md) {
                         flex-direction: row;
                         flex-wrap: wrap;
                         justify-content: space-between;
+                        margin-bottom: 20px;
+                        padding: 28px;
                     }
                 }
 
@@ -622,11 +671,11 @@ table {
                     }
 
                     @media (min-width: $md) {
-                        width: 48%;
+                        width: 45%;
                     }
 
                     @media (min-width: $lg) {
-                        width: 30%;
+                        width: 27%;
                     }
 
                     &:nth-child(2) {
@@ -642,6 +691,16 @@ table {
 
                 &__head {
                     font-size: 15px;
+
+                    @media (min-width: $md) {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+
+                    @media (min-width: $lg) {
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
                 }
 
                 &__list {
@@ -669,7 +728,7 @@ table {
                 &__item {
                     font-weight: bold;
                     color: $color-gray;
-                    line-height: 1.5;
+                    line-height: 2;
 
                     @media (min-width: $md) {
                         line-height: 2.25;

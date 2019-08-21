@@ -3,4 +3,82 @@
     .phone-number-change div {
         flex: 0 1 auto;
     }
+
+    .phone-number,
+    .phone-number-change,
+    .sms-code {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s ease-in-out;
+
+        &.active {
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity .5s ease-in-out;
+        }
+    }
+
+    .sms-code {
+        @media (max-width: $md) {
+            margin-top: 10px;
+        }
+    }
+
+    .phone-number,
+    .phone-number-change {
+        & .elem-item--no-margin-bottom {
+            @media (max-width: $md) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .phone-number-change {
+        .sms-code {
+            &.success {
+                &:after {
+                    content: '';
+                    height: 24px;
+                    width: 24px;
+                    background-image: url('assets/images/icons-svg/sms-success.svg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 24px auto;
+                    position: absolute;
+                    right: -40px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: 1;
+                }
+
+                & .elem-input {
+                    border-color: #4EF25E;
+                }
+            }
+
+            &.fail {
+                &:after {
+                    content: none;
+                }
+
+                & .elem-input {
+                    border-color: $color-red;
+                }
+            }
+
+            & .elem-item {
+                @media (min-width: $md + 1) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .sms__desc {
+            @media (min-width: $md + 1) {
+                display: none;
+            }
+        }
+    }
 }

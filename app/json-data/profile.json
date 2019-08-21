@@ -1046,6 +1046,7 @@
   
 
     "tabsList": {
+        "class": "tabs--profile",
         "list": [
             {
                 "title": "Мои заказы",
@@ -1099,7 +1100,7 @@
                     {
                         "list": [
                             {
-                                "text": "Заказ № 00000",
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
                                 "class": "td--order td--order-number"
                             },
                             {
@@ -1132,11 +1133,11 @@
                                 "address": "125315, Москва, ул. Московская, 10/1",
                                 "deliveryType": "Курьером",
                                 "trackNumber": "000000000000",
-                                "productSum": "6,700",
-                                "deliverySum": "0",
-                                "saleHSR": "2,500",
-                                "saleRouble": "150",
-                                "salePromocode": "300",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2,500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
@@ -1160,7 +1161,7 @@
                     
                         "list": [
                             {
-                                "text": "Заказ № 00000",
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
                                 "class": "td--order td--order-number"
                             },
                             {
@@ -1189,11 +1190,11 @@
                                 "address": "125315, Москва, ул. Московская, 10/1",
                                 "deliveryType": "Курьером",
                                 "trackNumber": "000000000000",
-                                "productSum": "6,700",
-                                "deliverySum": "0",
-                                "saleHSR": "2,500",
-                                "saleRouble": "150",
-                                "salePromocode": "300",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2,500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
@@ -1217,7 +1218,7 @@
                     
                         "list": [
                             {
-                                "text": "Заказ № 00000",
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
                                 "class": "td--order td--order-number"
                             },
                             {
@@ -1246,11 +1247,11 @@
                                 "address": "125315, Москва, ул. Московская, 10/1",
                                 "deliveryType": "Курьером",
                                 "trackNumber": "000000000000",
-                                "productSum": "6,700",
-                                "deliverySum": "0",
-                                "saleHSR": "2,500",
-                                "saleRouble": "150",
-                                "salePromocode": "300",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2,500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
@@ -1274,7 +1275,7 @@
                     
                         "list": [
                             {
-                                "text": "Заказ № 00000",
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
                                 "class": "td--order td--order-number"
                             },
                             {
@@ -1303,11 +1304,11 @@
                                 "address": "125315, Москва, ул. Московская, 10/1",
                                 "deliveryType": "Курьером",
                                 "trackNumber": "000000000000",
-                                "productSum": "6,700",
-                                "deliverySum": "0",
-                                "saleHSR": "2,500",
-                                "saleRouble": "150",
-                                "salePromocode": "300",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2,500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {
@@ -1331,7 +1332,7 @@
                     
                         "list": [
                             {
-                                "text": "Заказ № 00000",
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
                                 "class": "td--order td--order-number"
                             },
                             {
@@ -1360,11 +1361,11 @@
                                 "address": "125315, Москва, ул. Московская, 10/1",
                                 "deliveryType": "Курьером",
                                 "trackNumber": "000000000000",
-                                "productSum": "6,700",
-                                "deliverySum": "0",
-                                "saleHSR": "2,500",
-                                "saleRouble": "150",
-                                "salePromocode": "300",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2,500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
                                 "products": [
                                     {

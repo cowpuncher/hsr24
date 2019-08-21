@@ -42,8 +42,51 @@
     }
 
     &__content {
+
         @media (max-width: $md) {
             padding-top: 8px;
         }
+
+        & .elem-item__row {
+            margin-bottom: 30px;
+
+            @media (max-width: $md) {
+                margin-bottom: 20px;
+            }
+        }
+
+        
     }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__col {
+        max-width: 100%;
+
+        @media (min-width: $md + 1) {
+            max-width: 33.33333%;
+        }
+
+        @media (min-width: $lg) {
+            max-width: 32%;
+        }
+
+        &--4 {
+            max-width: 100%;
+
+            @media (min-width: $md + 1) {
+                max-width: 33.33333%;
+            }
+
+            @media (min-width: $lg) {
+                max-width: 23.5%;
+            }
+        }
+
+    }
+    
 }

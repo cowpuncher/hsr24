@@ -102,7 +102,7 @@
             &:hover {
                 // background: $color-base;
                 // color: $color-white;
-                color: unset;
+                color: $color-base;
             }
 
             &.active,
@@ -214,6 +214,31 @@
 
                 &.open {
                     display: block;
+                }
+            }
+        }
+    }
+
+    &--profile {
+        .tabs {
+            &__head {
+                &-link {
+                    @media (max-width: $md) {
+                        min-width: 92px;
+                    }
+                }
+            }
+
+            &-product {
+                &__head {
+                    
+                    @media (min-width: $md) {
+                        margin-bottom: 20px;
+                    }
+
+                    @media (min-width: $lg) {
+                        margin-bottom: 29px;
+                    }
                 }
             }
         }
