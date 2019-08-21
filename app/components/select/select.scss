@@ -7,7 +7,7 @@
     &.show-tick {
         &.select-custom {
             & > .dropdown-menu li.selected:first-child span.check-mark {
-                top: calc(50% + 17px);
+                top: calc(50% + 15px);
 
                 @media (max-width: $lg) {
                     top: calc(50% + 7px);
@@ -22,11 +22,27 @@
             
             height: 52px;
             border: 1px solid #E6E6E6;
-            border-radius: 8px;
+            border-radius: 12px;
+            font-size: 16px;
             font-weight: normal;
 
+
             @media (max-width: $lg) {
+                font-size: 13px;
+                border-radius: 8px; 
                 height: 44px;
+            }
+
+            @media (max-width: $sm) {
+                font-size: 12px;
+            }
+
+            &.bs-placeholder {
+                color: $color-gray;
+
+                &:hover {
+                    color: $color-gray;
+                }
             }
         }
 
