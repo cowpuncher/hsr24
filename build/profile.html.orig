@@ -26,7 +26,7 @@
 
   </head>
 
-  <body class="page-delivery">
+  <body class="page-profile">
 
 	<div class="page">
 
@@ -3900,10 +3900,10 @@
 	  <main>
 		
 	<div class="container">
-        <div class="container__inner">
+        <form class="container__inner">
             
                 
-	<div class="breadcrumbs " >
+	<div class="breadcrumbs hidden-xs hidden-sm" >
                     
             <div class="breadcrumbs__item">
                                     <a href="main.html" class="breadcrumbs__link ">
@@ -3917,7 +3917,7 @@
                             </div>
                     
             <div class="breadcrumbs__item">
-                                                            <span class="breadcrumbs__text">Доставка и оплата</span>
+                                                            <span class="breadcrumbs__text">Личный кабинет</span>
                                     
                             </div>
         	</div>
@@ -3925,229 +3925,970 @@
 
 
             
-            <h1 class="h2 elem-title">Способы доставки</h1>
+            <h2 class="elem-title elem-title--inner">Личный кабинет</h2>
 
+                                
             
-                <div class=" ">
-	
-    
-            <div class="banner banner--full">
-            <img src="assets/images/example/banner/banner-with-cards.jpg" alt="">
-            <div class="banner__inner banner__inner--big">
-                                    <h3  ></h3>
-                
-                            </div>
-        </div>
-        </div>
-
-
-            
-            	<div class="teaser">
-        <h3>Вы можете выбрать удобный для вас способ доставки.</h3>
-    </div>
-
-
-            
-                            
             
 
-    <div class="tabs tabs--inner" data-tabs>
+    <div class="tabs tabs--profile" data-tabs>
         <div class="tabs__head js-tabs-head" data-tabs-head>
                             <div class="tabs__head-item">
                     <a href="#" class="tabs__head-in active" data-tabs-link>
-                          <svg aria-hidden="true" class="icon icon-courier2">
-    <use xlink:href="assets/images/required/sprite.svg#courier2"></use>
-  </svg>
-
-
                         <span class="tabs__head-link ">
-                            <span class='hidden-xs hidden-sm'>Доставка курьером</span><span class='hidden-md hidden-lg hidden-xl'>Курьер</span>
+                            Мои заказы
                         </span>
                     </a>
                 </div>
                             <div class="tabs__head-item">
                     <a href="#" class="tabs__head-in " data-tabs-link>
-                          <svg aria-hidden="true" class="icon icon-pochta2">
-    <use xlink:href="assets/images/required/sprite.svg#pochta2"></use>
-  </svg>
-
-
                         <span class="tabs__head-link ">
-                            <span class='hidden-xs hidden-sm'>Доставка почтой</span><span class='hidden-md hidden-lg hidden-xl'>Почта России</span>
+                            Мои данные
                         </span>
                     </a>
                 </div>
                             <div class="tabs__head-item">
                     <a href="#" class="tabs__head-in " data-tabs-link>
-                          <svg aria-hidden="true" class="icon icon-pvz2">
-    <use xlink:href="assets/images/required/sprite.svg#pvz2"></use>
-  </svg>
-
-
                         <span class="tabs__head-link ">
-                            <span class='hidden-xs hidden-sm'>Доставка в ПВЗ</span><span class='hidden-md hidden-lg hidden-xl'>ПВЗ</span>
+                            Карта клуба
                         </span>
                     </a>
                 </div>
                     </div>
         <div class="tabs__body js-tabs-body" data-tabs-body>
+            
             <div class="tabs__body-item open" data-tabs-body-item>
-                <ul class="list-mark">
-                    <li>Подробную информацию по доставке вы можете посмотреть в <a href="#" class="color-red">Личном кабинете</a>.</li>
-                    <li>В день доставки курьер предварительно позвонит вам и согласует время встречи.</li>
-                    <li>Вы можете перенести дату и место доставки заказа, если у вас возникнет такая необходимость.</li>
-                    <li>Выкупать часть заказа невозможно.</li>
-                </ul>
 
-                <h4 class="h4 h4--sm">Способы оплаты</h4>
-                <p>Оплата курьеру производится наличными, либо банковской картой.</p>
+                                
+    
+            
 
-                <h4 class="h4 h4--sm">Стоимость доставки</h4>
-                <p>От 249 рублей. Полную стоимость доставки вы сможете узнать при оформлении заказа на сайте, либо по телефону.</p>
+    <div class="tabs-product " data-tabs>
+        <div class="tabs-product__head js-tabs-head justify-content-center" data-tabs-head>
+                            <div class="tabs-product__head-item">
+                    <a href="#" class="tabs-product__head-in active" data-tabs-link>
+                        <span class="tabs-product__head-link ">
+                            Активные
+                        </span>
+                    </a>
+                </div>
+                            <div class="tabs-product__head-item">
+                    <a href="#" class="tabs-product__head-in " data-tabs-link>
+                        <span class="tabs-product__head-link ">
+                            Выполненные
+                        </span>
+                    </a>
+                </div>
+                            <div class="tabs-product__head-item">
+                    <a href="#" class="tabs-product__head-in " data-tabs-link>
+                        <span class="tabs-product__head-link ">
+                            Все заказы
+                        </span>
+                    </a>
+                </div>
+                    </div>
+        <div class="tabs-product__body js-tabs-body" data-tabs-body>
+            <div class="tabs-product__body-item open" data-tabs-body-item>
+                        
+	<table class="table table--order">
+        <thead>
+            <tr>
+                                    <th>№ заказа</th>
+                                    <th>Дата / время</th>
+                                    <th>Статус</th>
+                                    <th>Вид оплаты</th>
+                                    <th>Сумма</th>
+                                    <th>Подробнее</th>
+                            </tr>
+        </thead>
+        <tbody>
+                            <tr>
+                                            <td class="td td--order td--order-number " >
+                            
+                                                            <div class="table__row ">
+                                    <span><span class="hidden-xl hidden-lg hidden-md">Заказ №</span> 00000</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-date " >
+                            
+                                                            <div class="table__row ">
+                                    <span>00.00.00 / 00:00</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-status " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Доставляется</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-payment " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Наличными</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-price " >
+                            
+                            
+                            
+                            
+                                                            <div class="text-left table__price">
+                                    
+                                    <div class="elem-price">10 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-more " >
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                                            <a href="#" class="btn-more" data-more>
+                                      <svg aria-hidden="true" class="icon icon-arrow-down">
+    <use xlink:href="assets/images/required/sprite.svg#arrow-down"></use>
+  </svg>
 
-                <h4 class="h4 h4--sm">Срок доставки</h4>
-                <p>От 2 рабочих дней, после согласования заказа.</p>
+                                </a>
+                                                    </td>
+                                    </tr>
 
-                <h4 class="h4 h4--sm">Срок хранения заказа</h4>
-                <p>У курьерской службы — 14 дней.</p>
+                                                            <tr class="more-info">
+                            <td class="more-info__col">
+                                <div class="more-info__head">Детали заказа</div>
+                                
+                                <ul class="more-info__list">
+                                    <li class="more-info__item">Адрес доставки: <span class="more-info__item-value">125315, Москва, ул. Московская, 10/1</span></li>
+                                    <li class="more-info__item">Тип доставки: <span class="more-info__item-value">Курьером</span></li>
+                                    <li class="more-info__item">Трек-номер: <span class="more-info__item-value">000000000000</span></li>
+                                </ul>
+
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Сумма заказа</div>
+                                
+                                <ul class="more-info__list more-info__list--bordered">
+                                    <li class="more-info__item">Товары: <span class="more-info__item-value">6700 руб.</span></li>
+                                    <li class="more-info__item">Доставка: <span class="more-info__item-value">0 руб.</span></li>
+                                    <li class="more-info__item">Скидка HSR: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;2,500 руб.</span></li>
+                                    <li class="more-info__item">Бонусные рубли: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;150 руб.</span></li>
+                                    <li class="more-info__item">Скидки по промокоду: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;300 руб.</span></li>
+                                </ul>
+
+                                <div class="more-info__result">
+                                    <div class="more-info__result-label">Итого:</div>
+                                    <div class="more-info__result-label">2 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Список товаров</div>
+                                
+                                <ul class="more-info__list">
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Мульти-овощерезка «Радуга вкуса»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Комплект «Адора»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Женское пальто из замши и шерпы</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Подвес «Янтарная загадка»</span></li>
+                                                                    </ul>
+                            </td>
+
+                        </tr>
+                                    
+                            <tr>
+                                            <td class="td td--order td--order-number " >
+                            
+                                                            <div class="table__row ">
+                                    <span><span class="hidden-xl hidden-lg hidden-md">Заказ №</span> 00000</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-date " >
+                            
+                                                            <div class="table__row ">
+                                    <span>00.00.00 / 00:00</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-status " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Оформляется</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-payment " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Онлайн-оплата</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-price " >
+                            
+                            
+                            
+                            
+                                                            <div class="text-left table__price">
+                                    
+                                    <div class="elem-price">10 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-more " >
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                                            <a href="#" class="btn-more" data-more>
+                                      <svg aria-hidden="true" class="icon icon-arrow-down">
+    <use xlink:href="assets/images/required/sprite.svg#arrow-down"></use>
+  </svg>
+
+                                </a>
+                                                    </td>
+                                    </tr>
+
+                                                            <tr class="more-info">
+                            <td class="more-info__col">
+                                <div class="more-info__head">Детали заказа</div>
+                                
+                                <ul class="more-info__list">
+                                    <li class="more-info__item">Адрес доставки: <span class="more-info__item-value">125315, Москва, ул. Московская, 10/1</span></li>
+                                    <li class="more-info__item">Тип доставки: <span class="more-info__item-value">Курьером</span></li>
+                                    <li class="more-info__item">Трек-номер: <span class="more-info__item-value">000000000000</span></li>
+                                </ul>
+
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Сумма заказа</div>
+                                
+                                <ul class="more-info__list more-info__list--bordered">
+                                    <li class="more-info__item">Товары: <span class="more-info__item-value">6700 руб.</span></li>
+                                    <li class="more-info__item">Доставка: <span class="more-info__item-value">0 руб.</span></li>
+                                    <li class="more-info__item">Скидка HSR: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;2,500 руб.</span></li>
+                                    <li class="more-info__item">Бонусные рубли: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;150 руб.</span></li>
+                                    <li class="more-info__item">Скидки по промокоду: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;300 руб.</span></li>
+                                </ul>
+
+                                <div class="more-info__result">
+                                    <div class="more-info__result-label">Итого:</div>
+                                    <div class="more-info__result-label">2 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Список товаров</div>
+                                
+                                <ul class="more-info__list">
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Мульти-овощерезка «Радуга вкуса»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Комплект «Адора»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Женское пальто из замши и шерпы</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Подвес «Янтарная загадка»</span></li>
+                                                                    </ul>
+                            </td>
+
+                        </tr>
+                                    
+                            <tr>
+                                            <td class="td td--order td--order-number " >
+                            
+                                                            <div class="table__row ">
+                                    <span><span class="hidden-xl hidden-lg hidden-md">Заказ №</span> 00000</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-date " >
+                            
+                                                            <div class="table__row ">
+                                    <span>00.00.00 / 00:00</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-status " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Доставляется</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-payment " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Онлайн-оплата</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-price " >
+                            
+                            
+                            
+                            
+                                                            <div class="text-left table__price">
+                                    
+                                    <div class="elem-price">10 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-more " >
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                                            <a href="#" class="btn-more" data-more>
+                                      <svg aria-hidden="true" class="icon icon-arrow-down">
+    <use xlink:href="assets/images/required/sprite.svg#arrow-down"></use>
+  </svg>
+
+                                </a>
+                                                    </td>
+                                    </tr>
+
+                                                            <tr class="more-info">
+                            <td class="more-info__col">
+                                <div class="more-info__head">Детали заказа</div>
+                                
+                                <ul class="more-info__list">
+                                    <li class="more-info__item">Адрес доставки: <span class="more-info__item-value">125315, Москва, ул. Московская, 10/1</span></li>
+                                    <li class="more-info__item">Тип доставки: <span class="more-info__item-value">Курьером</span></li>
+                                    <li class="more-info__item">Трек-номер: <span class="more-info__item-value">000000000000</span></li>
+                                </ul>
+
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Сумма заказа</div>
+                                
+                                <ul class="more-info__list more-info__list--bordered">
+                                    <li class="more-info__item">Товары: <span class="more-info__item-value">6700 руб.</span></li>
+                                    <li class="more-info__item">Доставка: <span class="more-info__item-value">0 руб.</span></li>
+                                    <li class="more-info__item">Скидка HSR: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;2,500 руб.</span></li>
+                                    <li class="more-info__item">Бонусные рубли: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;150 руб.</span></li>
+                                    <li class="more-info__item">Скидки по промокоду: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;300 руб.</span></li>
+                                </ul>
+
+                                <div class="more-info__result">
+                                    <div class="more-info__result-label">Итого:</div>
+                                    <div class="more-info__result-label">2 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Список товаров</div>
+                                
+                                <ul class="more-info__list">
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Мульти-овощерезка «Радуга вкуса»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Комплект «Адора»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Женское пальто из замши и шерпы</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Подвес «Янтарная загадка»</span></li>
+                                                                    </ul>
+                            </td>
+
+                        </tr>
+                                    
+                            <tr>
+                                            <td class="td td--order td--order-number " >
+                            
+                                                            <div class="table__row ">
+                                    <span><span class="hidden-xl hidden-lg hidden-md">Заказ №</span> 00000</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-date " >
+                            
+                                                            <div class="table__row ">
+                                    <span>00.00.00 / 00:00</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-status " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Оформляется</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-payment " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Онлайн-оплата</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-price " >
+                            
+                            
+                            
+                            
+                                                            <div class="text-left table__price">
+                                    
+                                    <div class="elem-price">10 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-more " >
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                                            <a href="#" class="btn-more" data-more>
+                                      <svg aria-hidden="true" class="icon icon-arrow-down">
+    <use xlink:href="assets/images/required/sprite.svg#arrow-down"></use>
+  </svg>
+
+                                </a>
+                                                    </td>
+                                    </tr>
+
+                                                            <tr class="more-info">
+                            <td class="more-info__col">
+                                <div class="more-info__head">Детали заказа</div>
+                                
+                                <ul class="more-info__list">
+                                    <li class="more-info__item">Адрес доставки: <span class="more-info__item-value">125315, Москва, ул. Московская, 10/1</span></li>
+                                    <li class="more-info__item">Тип доставки: <span class="more-info__item-value">Курьером</span></li>
+                                    <li class="more-info__item">Трек-номер: <span class="more-info__item-value">000000000000</span></li>
+                                </ul>
+
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Сумма заказа</div>
+                                
+                                <ul class="more-info__list more-info__list--bordered">
+                                    <li class="more-info__item">Товары: <span class="more-info__item-value">6700 руб.</span></li>
+                                    <li class="more-info__item">Доставка: <span class="more-info__item-value">0 руб.</span></li>
+                                    <li class="more-info__item">Скидка HSR: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;2,500 руб.</span></li>
+                                    <li class="more-info__item">Бонусные рубли: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;150 руб.</span></li>
+                                    <li class="more-info__item">Скидки по промокоду: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;300 руб.</span></li>
+                                </ul>
+
+                                <div class="more-info__result">
+                                    <div class="more-info__result-label">Итого:</div>
+                                    <div class="more-info__result-label">2 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Список товаров</div>
+                                
+                                <ul class="more-info__list">
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Мульти-овощерезка «Радуга вкуса»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Комплект «Адора»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Женское пальто из замши и шерпы</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Подвес «Янтарная загадка»</span></li>
+                                                                    </ul>
+                            </td>
+
+                        </tr>
+                                    
+                            <tr>
+                                            <td class="td td--order td--order-number " >
+                            
+                                                            <div class="table__row ">
+                                    <span><span class="hidden-xl hidden-lg hidden-md">Заказ №</span> 00000</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-date " >
+                            
+                                                            <div class="table__row ">
+                                    <span>00.00.00 / 00:00</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-status " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Доставляется</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-payment " >
+                            
+                                                            <div class="table__row ">
+                                    <span>Онлайн-оплата</span>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-price " >
+                            
+                            
+                            
+                            
+                                                            <div class="text-left table__price">
+                                    
+                                    <div class="elem-price">10 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            
+                            
+                            
+                                                    </td>
+                                            <td class="td td--order td--order-more " >
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                                            <a href="#" class="btn-more" data-more>
+                                      <svg aria-hidden="true" class="icon icon-arrow-down">
+    <use xlink:href="assets/images/required/sprite.svg#arrow-down"></use>
+  </svg>
+
+                                </a>
+                                                    </td>
+                                    </tr>
+
+                                                            <tr class="more-info">
+                            <td class="more-info__col">
+                                <div class="more-info__head">Детали заказа</div>
+                                
+                                <ul class="more-info__list">
+                                    <li class="more-info__item">Адрес доставки: <span class="more-info__item-value">125315, Москва, ул. Московская, 10/1</span></li>
+                                    <li class="more-info__item">Тип доставки: <span class="more-info__item-value">Курьером</span></li>
+                                    <li class="more-info__item">Трек-номер: <span class="more-info__item-value">000000000000</span></li>
+                                </ul>
+
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Сумма заказа</div>
+                                
+                                <ul class="more-info__list more-info__list--bordered">
+                                    <li class="more-info__item">Товары: <span class="more-info__item-value">6700 руб.</span></li>
+                                    <li class="more-info__item">Доставка: <span class="more-info__item-value">0 руб.</span></li>
+                                    <li class="more-info__item">Скидка HSR: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;2,500 руб.</span></li>
+                                    <li class="more-info__item">Бонусные рубли: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;150 руб.</span></li>
+                                    <li class="more-info__item">Скидки по промокоду: <span class="more-info__item-value more-info__item-value--red">&#8212;&nbsp;300 руб.</span></li>
+                                </ul>
+
+                                <div class="more-info__result">
+                                    <div class="more-info__result-label">Итого:</div>
+                                    <div class="more-info__result-label">2 000 <span class="elem-rub">i</span></div>
+                                </div>
+                            </td>
+
+                            <td class="more-info__col">
+                                <div class="more-info__head">Список товаров</div>
+                                
+                                <ul class="more-info__list">
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Мульти-овощерезка «Радуга вкуса»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Комплект «Адора»</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Женское пальто из замши и шерпы</span></li>
+                                                                            <li class="more-info__product"><span class="more-info__product-name">Подвес «Янтарная загадка»</span></li>
+                                                                    </ul>
+                            </td>
+
+                        </tr>
+                                    
+                    </tbody>
+    </table>
+
+                
             </div>
 
-            <div class="tabs__body-item" data-tabs-body-item>
-                <ul class="list-mark">
-                    <li>Осуществляется по всей территории Российской Федерации и соответствует географии доставки ФГУП «Почта России».</li>
-                    <li>После передачи заказа от склада в почтовую службу вам придет трек-номер, по которому вы сможете отследить посылку.</li>
-                </ul>
-
-                <h4 class="h4 h4--sm">Способы оплаты</h4>
-                <p>К оплате принимаются наличные и банковские карты.</p>
-
-                <h4 class="h4 h4--sm">Стоимость доставки</h4>
-                <p>Полную стоимость доставки вы сможете узнать при оформлении заказа на сайте, либо по телефону.</p>
-
-                <h4 class="h4 h4--sm">Срок доставки</h4>
-                <p>В соответствии со сроками «Почты России», в зависимости от удаленности региона.</p>
-
-                <h4 class="h4 h4--sm">Срок хранения заказа</h4>
-                <p>В отделениях Почты России — 30 дней.</p>
+            <div class="tabs-product__body-item" data-tabs-body-item>
+                <p>
+                    Здесь будет отображаться информация о выполненных заказах.
+                </p>
             </div>
 
-            <div class="tabs__body-item" data-tabs-body-item>
-                <ul class="list-mark">
-                    <li>Доступна на всей территории Российской Федерации.</li>
-                    <li>При оформлении заказа вам необходимо выбрать ближайший пункт выдачи заказа и подтвердить его.</li>
-                    <li>Выкуп части заказа не предусмотрен.</li>
-                </ul>
-
-                <h4 class="h4 h4--sm">Способы оплаты</h4>
-                <p>Оплатить можно онлайн на сайте, либо при получении в ПВЗ картой или наличными.</p>
-
-                <h4 class="h4 h4--sm">Стоимость доставки</h4>
-                <p>От 199 рублей. Полную стоимость доставки вы сможете узнать при оформлении заказа на сайте, либо по телефону.</p>
-
-                <h4 class="h4 h4--sm">Срок доставки</h4>
-                <p>От 2 рабочих дней, после согласования заказа.</p>
-
-                <h4 class="h4 h4--sm">Срок хранения заказа</h4>
-                <p>В пунктах выдачи заказа — 7 дней.</p>
+            <div class="tabs-product__body-item" data-tabs-body-item>
+                <p>
+                    Здесь будет отображаться информация о ваших заказах.
+                </p>
             </div>
         </div>
     </div>
 
+                
+                
+                
+                
+            </div>
 
-            
-            <h2 class="elem-title">Варианты оплаты</h2>
+            <div class="tabs__body-item" data-tabs-body-item>
+                <div class="row page-order__content" data-sticky-content>
+                    <div class="col-12 col-xl-12 col-lg-12">
+                        <h3 class="light h3 h3--lg">Персональные данные</h3>
 
-            <div class="elem-icon elem-icon--sm">
-                  <svg aria-hidden="true" class="icon icon-online-payment">
-    <use xlink:href="assets/images/required/sprite.svg#online-payment"></use>
-  </svg>
+                        <div class="row page-order__row">
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Имя</label>
+                                    <input type="text" class="elem-input" value="Екатерина">
+                                </div>
+                            </div>
 
-                <div class="elem-icon__in">
-                    <h3 class="h3 h3--md">Банковской картой на сайте</h3>
-                    <p class="hidden-xl hidden-lg">
-                        Для онлайн-оплаты на странице оформления заказа необходимо выбрать пункт «Банковской картой онлайн». Далее в соответствующие поля нужно ввести номер карты, срок ее действия, код CVC2/CVV2, а также имя и фамилию держателя карты. После подтверждения заказа вы будете перенаправлены на платежный шлюз «Яндекс.Касса». К оплате принимаются банковские карты Visa, MasterCard и МИР.
-                    </p>
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Фамилия</label>
+                                    <input type="text" class="elem-input" value="">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Отчество</label>
+                                    <input type="text" class="elem-input" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row elem-item__row flex-md-row-reverse page-order__row">
+
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Дата рождения</label>
+                                    <input type="text" class="elem-input elem-input--white" id="date-of-birth" placeholder="ДД.ММ.ГГГГ" readonly="readonly">
+                                </div>                            
+                            </div>
+
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Пол</label>
+                                    
+                                            
+        <select class="select-custom select-custom--w-100" title="Пол не выбран"   data-mobile-none="Пол не выбран" data-desktop-none="Пол не выбран">
+                            <option    class="" value="male" >
+                                            Мужской
+                                    </option>
+                            <option    class="" value="female" >
+                                            Женский
+                                    </option>
+                    </select>
+    
+
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                                <div class="elem-item">
+                                    <label class="elem-label">E-mail</label>
+                                    <input type="email" class="elem-input" value="kateika8@mail.ru">
+                                </div>
+
+                                <label class="elem-radio">
+                                    <input type="radio" class="elem-radio__input" name="radio-mailing">
+                                    <span class="elem-radio__span">Я хочу получать новостную рассылку</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <h3 class="light h3 h3--lg">Адрес</h3>
+
+                        <div class="row elem-item__row page-order__row">
+
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 page-order__col--4">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Город</label>
+                                    <input type="text" class="elem-input" value="">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 page-order__col--4">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Улица</label>
+                                    <input type="text" class="elem-input" value="">
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-xl-3 col-lg-3 col-md-2 page-order__col--4">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Дом</label>
+                                    <input type="text" class="elem-input" value="">
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-xl-3 col-lg-3 col-md-2 page-order__col--4">
+                                <div class="elem-item elem-item--md">
+                                    <label class="elem-label">Квартира</label>
+                                    <input type="text" class="elem-input" value="">
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="row elem-item__row page-order__row align-items-center">
+
+                            <div class="col-12 col-xl-9 col-lg-9 col-md-8 col-sm-9">
+                                <label class="elem-radio">
+                                    <input type="radio" class="elem-radio__input" name="radio-policy">
+                                    <span class="elem-radio__span"><span>Я согласен(на) с условиями&nbsp;<a href="#" class="elem-link elem-link--red d-inline">Политики конфиденциальности.</a></span></span>
+                                </label>
+                            </div>
+
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                                 <button class="elem-btn elem-btn--lg elem-btn--w100">Сохранить изменения</button>
+                            </div>
+
+                        </div>
+
+                        <h3 class="light h3 h3--lg">Изменение номера телефона</h3>
+
+                        <div class="row phone-number align-items-end active">
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                <div class="elem-item elem-item--no-margin-bottom">
+                                    <label class="elem-label">Ваш номер телефона</label>
+                                    <input type="tel" class="elem-input" value="+7 (926) 218-88-10" disabled data-phone>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-3">
+                                <button class="elem-btn elem-btn--lg elem-btn--w100 elem-btn--dark change-number-btn" href="#">Изменить</button>
+                            </div>
+                        </div>
+
+                        <div class="row phone-number-change align-items-end">
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4">
+                                <div class="elem-item elem-item--no-margin-bottom">
+                                    <label class="elem-label">Введите новый номер</label>
+                                    <input type="tel" class="elem-input" value="" data-phone>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-3">
+                                <button class="elem-btn elem-btn--lg elem-btn--w100 elem-btn--dark change-number-getcode" href="#">Получить код</button>
+                            </div>
+
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-5">
+                                <div class="elem-item elem-item--no-margin-bottom sms-code success">
+                                    <div class="sms__title">
+                                        <label class="elem-label">
+                                            Введите код из SMS
+                                        </label>
+                                        <a href="#" class="sms__link hidden-xs hidden-sm">Отправить код повторно</a>
+                                    </div>
+                                    <div class="sms__row">
+                                        <div class="sms__input elem-item">
+                                            <input type="text" class="elem-input" placeholder="0" tabindex="1">
+                                        </div>
+                                        <div class="sms__input elem-item">
+                                            <input type="text" class="elem-input" placeholder="0" tabindex="2">
+                                        </div>
+                                        <div class="sms__input elem-item">
+                                            <input type="text" class="elem-input" placeholder="0" tabindex="3">
+                                        </div>
+                                        <div class="sms__input elem-item">
+                                            <input type="text" class="elem-input" placeholder="0" tabindex="4">
+                                        </div>
+                                    </div>
+                                    <div class="sms__desc">
+                                        <a href="#" class="sms__link hidden-md">Отправить код повторно</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
-            <p class="hidden-md hidden-sm hidden-xs">
-                Для онлайн-оплаты на странице оформления заказа необходимо выбрать пункт «Банковской картой онлайн». Далее в соответствующие поля нужно ввести номер карты, срок ее действия, код CVC2/CVV2, а также имя и фамилию держателя карты. После подтверждения заказа вы будете перенаправлены на платежный шлюз «Яндекс.Касса». К оплате принимаются банковские карты Visa, MasterCard и МИР.
-            </p>
 
-            <div class="elem-icon elem-icon--sm">
-                  <svg aria-hidden="true" class="icon icon-offline-payment">
-    <use xlink:href="assets/images/required/sprite.svg#offline-payment"></use>
+            <div class="tabs-product__body-item" data-tabs-body-item>
+                <div class="club-card">
+                    <div class="club-card__group">
+                        <div class="club-card__image">
+                            <img src="assets/images/required/club-card/1-mobile.png" class="hidden-md hidden-lg hidden-xl">
+                            <img src="assets/images/required/club-card/1-desktop.png" class="hidden-xs hidden-sm">
+                        </div>
+                        <div class="club-card__text">
+                            <div class="club-card__text-item club-card__text-item--name club-card__text-item--bold">Рады видеть вас, Екатерина</div>
+                            <div class="club-card__text-item club-card__text-item--current-status club-card__text-item--bold">
+                                Ваш статус:   <svg aria-hidden="true" class="icon icon-status-basic">
+    <use xlink:href="assets/images/required/sprite.svg#status-basic"></use>
   </svg>
 
-                <div class="elem-icon__in">
-                    <h3 class="h3 h3--md">Оплата при получении </h3>
-                    <ul class="list-mark hidden-xl hidden-lg">
-                        <li>Наличными или банковской картой курьеру.</li>
-                        <li>Наложенным платежом при получении посылки в отделениях «Почты России».</li>
-                    </ul>
+                            </div>
+
+                            <div class="club-card__text-item club-card__text-item--cashback-base hidden-xs hidden-sm"><span class="club-card__text-item--cashback-value club-card__text-item--bold">10%</span> от суммы покупки возвращаются на бонусный счет</div>
+                            <div class="club-card__text-item club-card__text-item--present-base hidden-xs hidden-sm"><span class="club-card__text-item--present-value club-card__text-item--bold">300 ₽</span> подарок на День Рождения</div>
+
+                            <div class="club-card__text-item club-card__text-item--balance club-card__text-item--bold">2000 ₽</div>
+                            <div class="club-card__text-item club-card__text-item--info hidden-xs hidden-sm">Добро пожаловать в нашу программу HSR Бонус!<br /><br />Здесь вы можете посмотреть ваш текущий статус и узнать количество бонусов на карте.<br /><br />Копите бонусные рубли и повышайте свой статус! Каждая покупка приближает вас к новому уровню программы.
+</div>
+                        </div>
+                    </div>
+
+                    <div class="club-card__group">
+                        <div class="club-card__image">
+                            <img src="assets/images/required/club-card/2-mobile.png" class="hidden-md hidden-lg hidden-xl">
+                            <img src="assets/images/required/club-card/2-desktop.png" class="hidden-xs hidden-sm">
+                        </div>
+                        <div class="club-card__text">
+                            <div class="club-card__text-item club-card__text-item--next-status">Для получения статуса <span class="club-card__text-item--bold club-card__text-item--uppercase">медиум</span> осталось совершить</div>
+                            <div class="club-card__text-item club-card__text-item--purchases club-card__text-item--bold">2 покупки</div>
+
+                            <div class="club-card__text-item club-card__text-item--levels hidden-xs hidden-sm">«Базовый» уровень – для новеньких. Но уже со своими бонусами!<br /><br />После второго заказа вы переходите на уровень «Медиум». Здесь еще интереснее и выгоднее.<br /><br />После четвертой покупки вы получаете самые классные привилегии.<br /><br />Уровень «Всё включено» — это бесконечное удовольствие от выгодного шопинга.</div>
+
+                            <div class="club-card__text-item club-card__text-item--status-medium">  <svg aria-hidden="true" class="icon icon-status-medium">
+    <use xlink:href="assets/images/required/sprite.svg#status-medium"></use>
+  </svg>
+</div>
+                            <div class="club-card__text-item club-card__text-item--status-all">  <svg aria-hidden="true" class="icon icon-status-all">
+    <use xlink:href="assets/images/required/sprite.svg#status-all"></use>
+  </svg>
+</div>
+                            <div class="club-card__text-item club-card__text-item--cashback-medium"><span class="club-card__text-item--cashback-value club-card__text-item--bold">15%</span> от суммы покупки возвращаются на бонусный счет</div>
+                            <div class="club-card__text-item club-card__text-item--cashback-all"><span class="club-card__text-item--cashback-value club-card__text-item--bold">20%</span> от суммы покупки возвращаются на бонусный счет</div>
+                            <div class="club-card__text-item club-card__text-item--present-medium"><span class="club-card__text-item--present-value club-card__text-item--bold">600 ₽</span> подарок на День Рождения</div>
+                            <div class="club-card__text-item club-card__text-item--present-all"><span class="club-card__text-item--present-value club-card__text-item--bold">1000 ₽</span> подарок на День Рождения</div>
+                            <div class="club-card__text-item club-card__text-item--bonuses-deadline">Неограниченный срок действия бонусов</div>
+                        </div>
+                    </div>
+
+                    <div class="club-card__group">
+                        <div class="club-card__image">
+                            <img src="assets/images/required/club-card/3-mobile.png" class="hidden-md hidden-lg hidden-xl">
+                            <img src="assets/images/required/club-card/3-desktop.png" class="hidden-xs hidden-sm">
+                        </div>
+                        <div class="club-card__text">
+                            <div class="club-card__text-item club-card__text-item--about">Программа <span class="club-card__text-item--bold">HSR Бонус</span> — это индивидуальные предложения, дополнительные бонусные рубли, полезные информационные сервисы и приятные сюрпризы. Каждый новый уровень даёт массу преимуществ, превращая шопинг в интересный и увлекательный процесс.<br /><br /><span class="club-card__text-item--bold">Хотите подробностей? Жмите на кнопку.</span></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4 col-lg-4 col-md-4 offset-md-8 offset-lg-8 club-card__btn">
+                        <button class="elem-btn elem-btn--lg elem-btn--w100">Условия программы лояльности</button>
+                    </div>
+
+                    
                 </div>
             </div>
-            <ul class="list-mark hidden-md hidden-sm hidden-xs">
-                <li>Наличными или банковской картой курьеру.</li>
-                <li>Наложенным платежом при получении посылки в отделениях «Почты России».</li>
-            </ul>
-
-            
-            	<div class="question">
-                    <h2 class="elem-title question__title">Вопросы и ответы</h2>
-        
-        <div class="question__list">
-                            <div class="question__item open" >
-                    <div class="question__head" data-question>
-                        Как я могу узнать статус моего заказа?
-                        <div class="question__arrow"></div>
-                    </div>
-
-                    <div class="question__info" data-question-detal>
-                                                    <div class="question__text">Информацию о содержимом вашего заказа и о его статусе можно найти в вашем <a href='#' class='color-red'>Личном кабинете</a> во вкладке «Мои заказы», либо у наших операторов, позвонив по номеру 8-800-707-50-25.</div>
-                        
-                        
-                                            </div>
-                </div>
-                            <div class="question__item open" >
-                    <div class="question__head" data-question>
-                        Могу ли я отменить заказ?
-                        <div class="question__arrow"></div>
-                    </div>
-
-                    <div class="question__info" data-question-detal>
-                                                    <div class="question__text">Можете. Для этого вам необходимо будет связаться с нами по номеру 8-800-707-50-25.</div>
-                        
-                        
-                                            </div>
-                </div>
-                            <div class="question__item open" >
-                    <div class="question__head" data-question>
-                        Как изменить адрес доставки?
-                        <div class="question__arrow"></div>
-                    </div>
-
-                    <div class="question__info" data-question-detal>
-                                                    <div class="question__text">Адрес доставки возможно изменить через оператора. Свяжитесь с нами по номеру 8-800-707-50-25 и укажите новый адрес.</div>
-                        
-                        
-                                            </div>
-                </div>
-                            <div class="question__item open" >
-                    <div class="question__head" data-question>
-                        Как я могу вернуть деньги, если товар мне не подошел или пришел с браком?
-                        <div class="question__arrow"></div>
-                    </div>
-
-                    <div class="question__info" data-question-detal>
-                                                    <div class="question__text">Возврат товара возможен в течение 14 дней с момента его получения. Более подробно с процедурой возврата Вы сможете ознакомиться на странице <a href='#' class='color-red'>Возврат и обмен</a>.</div>
-                        
-                        
-                                            </div>
-                </div>
-                    </div>
-    </div>
 
         </div>
+    </div>
+       
+
+        </form>
 	</div>
 
     <a href="#" class="online-support">
@@ -4396,8 +5137,11 @@
                 </div>
                             <div class="pay__item">
                     <a href="#" class="pay__link" title="mir">
+                                                      <svg aria-hidden="true" class="icon icon-mir">
+    <use xlink:href="assets/images/required/sprite.svg#mir"></use>
+  </svg>
+
                         
-                                                    <img src="assets/images/required/mir.svg">
                                             </a>
                 </div>
                             <div class="pay__item">

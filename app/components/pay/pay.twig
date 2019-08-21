@@ -10,7 +10,13 @@
             {% for item in data.list %}
                 <div class="pay__item">
                     <a href="{{ item.href }}" class="pay__link" title="{{ item.alt }}">
-                        {{ svg.icon(item.icon) }}
+                        {% if item.icon %}
+                            {{ svg.icon(item.icon) }}
+                        {% endif %}
+
+                        {% if item.img %}
+                            <img src="assets/images/required/{{ item.img }}.svg">
+                        {% endif %}
                     </a>
                 </div>
             {% endfor %}

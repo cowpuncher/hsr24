@@ -55,5 +55,10 @@
 
     &__link {
         display: block;
+
+        & img {
+            display: inline-block;
+            vertical-align: top;
+        }
     }
 }
