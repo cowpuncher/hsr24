@@ -25,9 +25,12 @@
             width: 100%;
             object-fit: cover;
             min-height: 140px;
+            max-height: 272px;
 
             @media (max-width: $md) {
                 min-height: 106px;
+                height: auto;
+                object-fit: inherit;
             }
         }
     }
@@ -318,7 +321,7 @@
             }
         }
 
-        
+
     }
 
     &__inner--big h3 {

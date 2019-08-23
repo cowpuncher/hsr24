@@ -22,6 +22,7 @@
             width: 100%;
             text-align: center;
             margin-top: 20px;
+            margin-right: 0;
         }
 
         & img {
@@ -50,6 +51,12 @@
 
         & a {
             color: $color-blue;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-red;
+                text-decoration: none;
+            }
         }
     }
 
