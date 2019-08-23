@@ -88,6 +88,17 @@
     &__icon {
         display: flex;
         cursor: pointer;
+
+        & .icon {
+            fill: $color-gray;
+        }
+
+        &:hover {
+            & .icon {
+                fill: #949494;
+            }
+            
+        }
     }
 
     &--small &__icon {

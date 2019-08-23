@@ -10,6 +10,11 @@
     width: 100%;
     background-position: calc(100% - 16px) center;
 
+    &:disabled {
+        background: $color-smoke;
+        border-color: transparent;
+    }
+
     @media (max-width: $lg) {
         font-size: 13px;
         line-height: 19px;
@@ -137,7 +142,7 @@
         font-size: 14px;
         line-height: 16px;
         color: $color-gray;
-        left: 55px;
+        left: 60px;
         height: calc(100% - 20px);
         top: 20px;
         display: flex;

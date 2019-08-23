@@ -96,6 +96,10 @@
             @media (max-width: $lg) {
                 font-size: 13px;
             }
+
+            &::placeholder {
+                color: $color-gray-light;
+            }
         }
     }
 

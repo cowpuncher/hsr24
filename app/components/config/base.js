@@ -284,3 +284,17 @@ elemBack.click(function() {
     console.log('good');
 })
 
+$(document).ready(function() {
+    var headerHeight = $('.header').outerHeight(true);
+    var footerHeight = $('.footer').outerHeight(true);
+
+    $('main').css('min-height', 'calc(100vh - ' + (headerHeight + footerHeight) + 'px)');
+
+    $(window).resize(function() {
+        headerHeight = $('.header').outerHeight(true);
+        footerHeight = $('.footer').outerHeight(true);
+
+        $('main').css('min-height', 'calc(100vh - ' + (headerHeight + footerHeight) + 'px)');
+    })
+})
+
