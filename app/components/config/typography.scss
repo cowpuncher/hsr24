@@ -53,6 +53,10 @@ h3, .h3 {
         font-weight: 400;
     }
 
+    &--m-b-10 {
+        margin-bottom: 10px;
+    }
+
     @media (max-width: $lg) {
         font-size: 16px;
         line-height: 20px;
