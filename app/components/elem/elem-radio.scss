@@ -57,7 +57,7 @@
     &__input:checked + &__span {
         &:before {
             background: $color-red;
-            
+            box-shadow: 0 0 0 1px $color-red;
         }
     }
 

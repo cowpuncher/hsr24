@@ -143,6 +143,14 @@ table {
                     width: 100%;
                     margin-bottom: 10px;
                 }
+
+                @media (min-width: $lg + 1) {
+                    &.td--null {
+                        .table__row {
+                            justify-content: center;
+                        }
+                    }
+                }
             }
 
             &--price {
@@ -242,7 +250,8 @@ table {
             margin-top: auto;
         }
 
-        & .row {
+        & .row,
+        &.row {
             width: calc(100% + 24px);
         }
     }
@@ -295,6 +304,12 @@ table {
     &__link {
         font-size: 14px;
         font-weight: 800;
+
+        &:hover {
+            & .icon {
+                stroke: $color-red;
+            }
+        }
     }
 
     &__name {
@@ -350,6 +365,27 @@ table {
             @media (max-width: $lg) {
                 align-items: flex-start;
             }
+
+            
+
+            &-items {
+                
+                @media (max-width: $lg) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: flex-end;
+                }
+
+                .elem-price-old + .elem-price {
+                    margin-top: -8px;
+                }
+
+                .elem-price-old {
+                    @media (max-width: $lg) {
+                        margin-left: 10px;
+                    }
+                }
+            }
         }
 
         .counter {
@@ -379,7 +415,7 @@ table {
             & td {
                 &.td {
                     @media (max-width: $lg) {
-                        display: block;
+                        // display: block;
                     }
                 }
             }

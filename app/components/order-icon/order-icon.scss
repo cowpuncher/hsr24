@@ -9,6 +9,16 @@
             margin-left: -10px;
             margin-right: -10px;
         }
+
+        &--payment {
+            margin-left: -10px;
+            margin-right: -10px;
+
+            & .order-icon__item {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
     }
 
     &__item {
@@ -29,6 +39,10 @@
                 margin-bottom: 0;
             }
         }
+
+        &:hover {
+            color: $color-base;
+        }
     }
 
     &__inner {
@@ -39,6 +53,7 @@
         border-radius: 12px;
         padding: 21px 20px 14px;
         height: 100%;
+        transition: all .3s ease-in-out;
 
         @media (max-width: $md) {
             flex-direction: row;
@@ -47,6 +62,37 @@
 
         .active & {
             border-color: $color-red;
+        }
+
+        &:hover {
+            border-color: $color-red;
+            transition: all .3s ease-in-out;
+        }
+
+        &--direction-row {
+            flex-direction: row;
+
+            @media (max-width: $md) {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            
+            .order-icon__info {
+                max-width: 150px;
+
+                @media (min-width: $md + 1) {
+                    max-width: none;
+                    margin-left: 10px;
+                }
+
+                @media (min-width: $lg + 1) {
+                    max-width: 150px;
+                }
+
+                .elem-radio:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 
@@ -58,7 +104,7 @@
             font-weight: 800;
             margin-bottom: 0;
 
-            &:not(last-child) {
+            &:not(:last-child) {
                 margin-bottom: 10px;
             }
 

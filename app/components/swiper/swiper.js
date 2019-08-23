@@ -23,12 +23,13 @@ var swiper = new Swiper('.swiper-container', {
       spaceBetween: 10,
       allowTouchMove: true
     },
+    // when window width is <= 767px
     767: {
       slidesPerView: 3,
       spaceBetween: 10,
       allowTouchMove: true
     },
-    // when window width is <= 640px
+    // when window width is <= 1279px
     1279: {
       slidesPerView: 3,
       spaceBetween: 26

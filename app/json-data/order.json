@@ -1031,7 +1031,7 @@
         ]
     },
     "breadcrumbsList": {
-        "class": "hidden-xs hidden-sm",
+        "class": "hidden-md hidden-sm hidden-xs",
         "list": [
             {
                 "href": "main.html",
@@ -1112,15 +1112,15 @@
             {
                 "icon": "offline-payment",
                 "radio": "Наличными при получении",
-                "class": "col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12",
+                "class": "col-12 col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12",
                 "pay": "hide",
-                
+                "direction": "row",
                 "radio2": "Банковской картой при получении"
             },
             {
                 "icon": "online-payment",
                 "radio": "Банковской картой онлайн",
-                "class": "col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12",
+                "class": "col-12 col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12",
                 "pay": "show"
             }
         ],
@@ -1137,7 +1137,7 @@
                     "href": "#"
                 },
                 {
-                    "icon": "mir",
+                    "img": "mir",
                     "alt": "mir",
                     "href": "#"
                 },

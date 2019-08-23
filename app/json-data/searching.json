@@ -1043,6 +1043,7 @@
         ]
     },
     "filterList": {
+        "class": "filter--search-page",
         "sortList": {
             "list": [
                 {

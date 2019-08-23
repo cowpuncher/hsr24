@@ -1084,6 +1084,7 @@
             "likeActive": true
         },
         {
+            "class": "card--not-available",
             "img": "assets/images/example/card/img1.jpg",
             "status": "НЕТ В НАЛИЧИИ",
             "name": "Комплект «Созвездие Изумруд»",
@@ -1095,6 +1096,7 @@
             "likeActive": true
         },
         {
+            "class": "card--not-available",
             "img": "assets/images/example/card/img5.jpg",
             "status": "НЕТ В НАЛИЧИИ",
             "name": "Колье + серьги «Янтарный цветок»",
@@ -1107,6 +1109,7 @@
             "unsubscribe": true
         },
         {
+            "class": "card--not-available",
             "img": "assets/images/example/card/img6.jpg",
             "status": "НЕТ В НАЛИЧИИ",
             "name": "Комплект цепь + серьги «Чудесница»",
@@ -1118,6 +1121,7 @@
             "likeActive": true
         },
         {
+            "class": "card--not-available",
             "img": "assets/images/example/card/img7.jpg",
             "status": "НЕТ В НАЛИЧИИ",
             "name": "Комплект «Созвездие Рубин»",

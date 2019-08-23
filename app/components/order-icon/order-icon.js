@@ -11,13 +11,13 @@ class OrderIcon {
             var parent = el.parent();
 
             // Немного доработал скрипт для того, чтобы было возможно вставлять дополнительные радиокнопки
-            var option = el.find('.elem-radio'); // added row
+            var option = el.find('.elem-radio'); //
 
             parent.children().removeClass('active');
             el.addClass('active');
             el.find('input').first().prop('checked', 'checked'); // el.find('input').prop('checked', 'checked');
             
-            option.off().on('click', function(e) { // added
+            option.off().on('click', function(e) { //
                 console.log('click');
                 // $(this).toggleClass('active');
                 $(this).find('input').first().prop('checked', 'checked');

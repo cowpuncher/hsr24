@@ -4,7 +4,7 @@
     {% import '../pagination/pagination.twig' as pagination %}
     {% import '../select/select.twig' as select %}
 
-	<div class="filter">
+	<div class="filter {{ data.class }}">
 
         {% if data.top %}
             <div class="filter__row filter__row--scroll">

@@ -4,12 +4,13 @@
     {% import '../credit-card/credit-card.twig' as creditCard %}
 
     <div class="order-icon">
-        <div class="order-icon__list row">
+        <div class="order-icon__list {% if data.radioName == "radio-payment" %}order-icon__list--payment{% endif %} row">
             {% for item in data.list %}
                 <a href="#{% if item.popup %}{{ item.popup }}{% endif %}" class="order-icon__item {% if item.class %}{{ item.class }}{% endif %}" data-order-icon {% if item.popup %}data-popup-modal{% endif %}{% if item.pay %}data-detail-pay="{{item.pay}}"{% endif %}>
-                    <div class="order-icon__inner">
+                    <div class="order-icon__inner {% if item.direction == "row" %} order-icon__inner--direction-row{% endif %}">
                         <div class="order-icon__icon">
-                            {{ svg.icon(item.icon) }}
+                            {% if item.icon %}{{ svg.icon(item.icon) }}{% endif %}
+                            {% if item.img %}<img src="assets/images/required/{{ item.img }}">{% endif %}
                         </div>
                         <div class="order-icon__info">
                             <label class="elem-radio">
