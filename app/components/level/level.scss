@@ -22,6 +22,8 @@
         @media (max-width: $md) {
             margin-top: 0;
             padding-bottom: 22px;
+            margin-right: -10px;
+            margin-left: -10px;
         }
     }
 
@@ -32,6 +34,7 @@
         @media (max-width: $md) {
             align-items: flex-start;
             display: block;
+            padding: 0 10px;
         }
 
         & + & {
