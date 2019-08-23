@@ -3,7 +3,8 @@
     &__group {
         position: relative;
         
-        &:nth-child(3) {
+        &:nth-child(3),
+        &--slider {
             margin: 20px 0;
 
             @media (min-width: $md) {
@@ -36,7 +37,9 @@
         }
 
         @media (min-width: $xl) {
+            max-width: 276px;
             bottom: 332px;
+            left: -90px;
         }
     }
 
@@ -188,7 +191,11 @@
                 }
 
                 & .icon-status-basic {
-                    width: 100%;
+                    // width: 100%;
+
+                    display: block;
+                    margin: 0 auto;
+
                     height: 25vw; // 80px;
 
                     @media (min-width: $md) {
@@ -244,6 +251,7 @@
                 color: $color-orange;
                 text-align: center;
 
+                
                 @media (min-width: $md) {
                     top: -13.672vw; // -105px;
                     left: 67.448vw; // 518px;
@@ -314,7 +322,10 @@
 
                 & .icon-status-medium,
                 & .icon-status-all {
-                    width: 100%;
+                    // width: 100%;
+                    display: block;
+                    margin: 0 auto;
+
                     height: 25vw;  // 80px;
 
                     @media (min-width: $md) {
@@ -663,11 +674,52 @@
                 }
 
                 @media (min-width: $xl) {
-                    top: 155px;
+                    top: 145px;
                     right: 258px;
                 }
             }
 
+        }
+    }
+
+    & .card__slider .slick-slide {
+        @media (max-width: $lg) {
+            margin: 0 3px;
+        }
+
+        @media (max-width: $md) {
+            width: 234px;
+            margin: 0 4px;
+        }
+    }
+
+    & .card__slider {
+        @media (max-width: $md) {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50px;
+                height: 100%;
+                background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255,0) 100%);
+            }
+        }
+
+        & .card {
+            &--inline {
+                .card__status {
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+
+                    @media (max-width: $lg) {
+                        top: 12px;
+                        left: 12px;
+                    }
+
+                }
+            }
         }
     }
 }

@@ -25,9 +25,6 @@ function changeNumber() {
     //     var el = $(this);
     //     var smsBlock = el.closest('.sms-code');
     //     var smsFields = smsBlock.find('input');
-        
-        
-        
     // }}
 
 }

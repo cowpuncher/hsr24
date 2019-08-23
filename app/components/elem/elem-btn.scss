@@ -85,8 +85,6 @@
         border: 1px solid $color-base;
         color: $color-base;
 
-        
-
         &.active {
             color: $color-white;
             background: $color-base;
@@ -106,6 +104,16 @@
                 color: $color-white;
                 background: $color-base;
                 border-color: $color-base;
+            }
+        }
+    }
+
+    &--light-hover-red {
+        &.bold {
+            &:hover {
+                color: $color-red;
+                border-color: $color-red;
+                background: $color-white;
             }
         }
     }
@@ -191,9 +199,16 @@
     }
 
     &--dark {
-        border-color: $color-base;
+        border: 1px solid $color-base;
+        // border-color: $color-base;
         background: $color-base;
         color: $color-white;
+
+        &:hover {
+            border-color: $color-base;
+            background-color: $color-white;
+            color: $color-base;
+        }
     }
 
     &:disabled,
@@ -289,6 +304,10 @@
                 line-height: 17px;
                 letter-spacing: -0.2px;
                 border-radius: 16px;
+            }
+
+            @media (max-width: $md) {
+                line-height: 12px;
             }
         }
     }

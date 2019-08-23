@@ -105,4 +105,10 @@
             line-height: 14px;
         }
     }
+
+    &__num {
+        @media (max-width: $lg) {
+            margin-left: 5px;
+        }
+    }
 }

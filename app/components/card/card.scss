@@ -910,4 +910,28 @@
             }
         }
     }
+
+    &__list {
+        &.mobile-list {
+
+            & .card {
+                @media (max-width: $md) {
+                    border-radius: 8px;
+                }
+            }
+
+            & .card--not-available {
+
+                @media (max-width: $md) {
+                    & .card__price {
+                        display: none;
+                    }
+
+                    & .card__info {
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -28,7 +28,7 @@
             width: 200px;
 
             @media (max-width: $lg) {
-                width: 290px;
+                // width: 290px;
                 height: 44px;
                 font-size: 13px;
             }
@@ -36,6 +36,14 @@
             @media (max-width: $md) {
                 font-size: 12px;
             }
+
+            &:hover {
+                & .icon {
+                    fill: $color-red;
+                }
+            }
+
+            
         }
     }
 }

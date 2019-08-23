@@ -27,11 +27,14 @@
                                 </div>
                             {% endif %}
 
-                            {% if (item2.color) or (item2.size) %}
+                            {% if (item2.color) or (item2.size) or (item2.articul) %}
                                 <div class="table__row align-items-start">
-                                    <div class="table__item table__item-articul hidden-lg hidden-xl">
-                                        Артикул: 000000
-                                    </div>
+                                    {% if item2.articul %}
+                                        <div class="table__item table__item-articul hidden-lg hidden-xl">
+                                            Артикул: {{ item2.articul }}
+                                        </div>
+                                    {% endif %}
+
                                     {% if item2.color %}
                                         <div class="table__item">
                                             <div class="table__item-title">Цвет:</div>
@@ -60,11 +63,13 @@
 
                             {% if item2.price %}
                                 <div class="text-left table__price">
-                                    {% if item2.priceOld %}
-                                        <div class="elem-price-old">{{ item2.priceOld }}</div>
-                                    {% endif %}
-
-                                    <div class="elem-price">{{ item2.price }}</div>
+                                    <div class="table__price-items">
+                                        {% if item2.priceOld %}
+                                            <div class="elem-price-old">{{ item2.priceOld }}</div>
+                                        {% endif %}
+    
+                                        <div class="elem-price">{{ item2.price }}</div>
+                                    </div>
                                 </div>
                             {% endif %}
 
