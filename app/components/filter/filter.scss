@@ -439,4 +439,12 @@
             }
         }
     }
+
+    &--search-page & {
+        &__select {
+            @media (min-width: $lg + 1) {
+                min-width: auto;
+            }
+        }
+    }
 }

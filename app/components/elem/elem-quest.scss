@@ -111,6 +111,10 @@
                 line-height: 17px;
             }
         }
+
+        &--extrabold {
+            font-weight: 800;
+        }
     }
 
     &__list &:nth-child(even) &__text {
