@@ -503,3 +503,88 @@ table {
         text-align: right !important;
     }
 }
+
+jdiv {
+    .cssLeaf_1k {
+
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2240%22%20viewBox%3D%220%200%2032%2040%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M0%200h9.02L32%2033.196V40H0z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23F61D2A%22%20d%3D%22M9%200c3.581.05%2023%205.426%2023%2033.08v.03C18.922%2030.751%209%2019.311%209%205.554V0z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A") !important;
+    }
+
+    .headerBox_3s {
+        background: #010101 !important;
+    }
+
+    .closeIcon_1U {
+        height: 32px;
+        width: 32px;
+        background: #101010 no-repeat center center !important;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.14645 4.14645C4.34171 3.95118 4.65829 3.95118 4.85355 4.14645L12 11.2929L19.1464 4.14645C19.3417 3.95118 19.6583 3.95118 19.8536 4.14645C20.0488 4.34171 20.0488 4.65829 19.8536 4.85355L12.7071 12L19.8536 19.1464C20.0488 19.3417 20.0488 19.6583 19.8536 19.8536C19.6583 20.0488 19.3417 20.0488 19.1464 19.8536L12 12.7071L4.85355 19.8536C4.65829 20.0488 4.34171 20.0488 4.14645 19.8536C3.95118 19.6583 3.95118 19.3417 4.14645 19.1464L11.2929 12L4.14645 4.85355C3.95118 4.65829 3.95118 4.34171 4.14645 4.14645Z' fill='white'/%3E%3C/svg%3E%0A")  !important;
+        background-size: 24px auto !important;
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .label_39._bottom_3v._pad100_GR {
+        background: #010101 !important;
+    }
+
+    .__client_1w ._grey_3- {
+        background: #010101 !important;
+    }
+
+    .sendButton_1o {
+        background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='18' cy='18' r='18' fill='%23F61D2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.6464 10.6464C17.8417 10.4512 18.1583 10.4512 18.3536 10.6464L24.3536 16.6464C24.5488 16.8417 24.5488 17.1583 24.3536 17.3536C24.1583 17.5488 23.8417 17.5488 23.6464 17.3536L18.5 12.2071V25C18.5 25.2761 18.2761 25.5 18 25.5C17.7239 25.5 17.5 25.2761 17.5 25V12.2071L12.3536 17.3536C12.1583 17.5488 11.8417 17.5488 11.6464 17.3536C11.4512 17.1583 11.4512 16.8417 11.6464 16.6464L17.6464 10.6464Z' fill='white'/%3E%3C/svg%3E%0A") !important;
+    }
+
+    .button_Jn {
+        background: #F61D2A;
+        border: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 26px !important;
+        font-size: 14px !important;
+        line-height: 17px;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+        height: 48px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        white-space: nowrap;
+        padding: 8px;
+        outline: none;
+        box-sizing: border-box;
+
+        &:hover {
+            color: #fff;
+            background: #DF0001;
+        }
+
+        & .text_Xc {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+
+    & .body_14 * .inputField_G5,
+    & .body_14 input[type=text].inputField_G5,
+    & .body_14 input[type=tel].inputField_G5,
+    & .body_14 input[type=email].inputField_G5 {
+        border: 1px solid #E6E6E6 !important;
+        border-radius: 12px !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        padding: 10px 16px !important;
+        height: 52px !important;
+        outline: none !important;
+        transition: all 0.3s ease-in-out !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+
+        &:focus,
+        &:hover {
+            border-color: #C6C6C6 !important;
+        }
+    }
+}
