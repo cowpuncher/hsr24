@@ -787,7 +787,8 @@
         &__list {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: -42px;
+            // margin-bottom: -42px;
+            margin-bottom: -21px;
 
             @media (max-width: $lg) {
                 justify-content: space-between;
@@ -804,7 +805,8 @@
         }
 
         &__item {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
+            margin-bottom: 20px;
             width: 42%;
 
             @media (max-width: $lg) {
@@ -842,30 +844,30 @@
                 }
             }
 
-            &:first-of-type {
-                position: absolute;
-                left: calc(-40% - 2px);
-                bottom: 0;
+            // &:first-of-type {
+            //     position: absolute;
+            //     left: calc(-40% - 2px);
+            //     bottom: 0;
 
-                @media (max-width: $lg) {
-                    left: auto;
-                    bottom: auto;
-                    position: relative;
+            //     @media (max-width: $lg) {
+            //         left: auto;
+            //         bottom: auto;
+            //         position: relative;
 
-                }
-            }
+            //     }
+            // }
 
-            &:nth-of-type(6) {
-                position: absolute;
-                left: 100%;
-                bottom: 0;
+            // &:nth-of-type(6) {
+            //     position: absolute;
+            //     left: 100%;
+            //     bottom: 0;
 
-                @media (max-width: $lg) {
-                    left: auto;
-                    bottom: auto;
-                    position: relative;
-                }
-            }
+            //     @media (max-width: $lg) {
+            //         left: auto;
+            //         bottom: auto;
+            //         position: relative;
+            //     }
+            // }
 
             &:nth-of-type(even) {
                 @media (max-width: $md) {
