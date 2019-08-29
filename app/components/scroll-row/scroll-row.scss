@@ -1,6 +1,36 @@
 .scroll-row {
     &-container {
         overflow-x: auto;
+        
+        // &[data-scroll-container] {
+        //     ::-webkit-scrollbar { 
+        //         display: none; 
+        //     }
+        // }
+
+        // &[data-scroll-row] {
+        //     ::-webkit-scrollbar { 
+        //         display: none; 
+        //     }
+        // }
+
+        @media (min-width: 1025px) {
+            & ::-webkit-scrollbar {
+                width: 4px;
+            }
+             
+            & ::-webkit-scrollbar-track {
+                border-radius: 4px;
+                background: $color-smoke;
+            }
+             
+            & ::-webkit-scrollbar-thumb {
+                border-radius: 4px;
+                background: $color-gray-light;
+            }
+        }
+
+        
     }
 
     &-gradient {
