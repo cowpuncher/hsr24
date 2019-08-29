@@ -1156,7 +1156,7 @@
     ],
     "filterList": {
         "top": true,
-        "class": "hidden-sm hidden-xs",
+        "priceClass": "hidden-sm hidden-xs",
         "filter": {
             "name": "Фильтры&nbsp;<span class='hidden-sm hidden-xs'>по параметрам</span>"
         },
