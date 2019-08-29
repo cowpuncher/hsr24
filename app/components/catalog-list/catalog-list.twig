@@ -3,7 +3,7 @@
 
     <div class="catalog-list">
         <div class="catalog-list__row">
-            <div class="catalog-list__col">
+            {# <div class="catalog-list__col">
                 {% for item in data.list %}
                     {% if loop.index == 1 %}
                         <div class="catalog-list__item">
@@ -36,12 +36,13 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-            </div>
-            <div class="catalog-list__col">
-                <div class="catalog-list__row">
+            </div> #}
+
+            {# <div class="catalog-list__col"> #}
+                {# <div class="catalog-list__row"> #}
                     {% for item in data.list %}
-                        {% if loop.index > 1 %}
-                            <div class="catalog-list__item catalog-list__item--col3">
+                        {# {% if loop.index > 1 %} #}
+                            <div class="catalog-list__item catalog-list__item--col4">
                                 <a href="#" class="catalog-list__title dark {% if item.color %}{{ item.color }}{% endif %}">
                                     <div class="catalog-list__icon">
                                         {{ svg.icon(item.icon) }}
@@ -59,7 +60,7 @@
                                                     <div class="catalog-list__list-inner">
                                                         {% for item3 in item2.list %}
                                                             <div class="catalog-list__item">
-                                                                <a href="{{ item3.href }}" class="catalog-list__link">{{ item3.text }}</a>
+                                                                <a href="{{ item3.href }}" class="catalog-list__link">{{ item3.title }}</a>
                                                             </div>
                                                         {% endfor %}
                                                     </div>
@@ -69,10 +70,10 @@
                                     </div>
                                 {% endif %}
                             </div>
-                        {% endif %}
+                        {# {% endif %} #}
                     {% endfor %}
-                </div>
-            </div>
+                {# </div> #}
+            {# </div> #}
         </div>
     </div>
 {% endmacro %}
