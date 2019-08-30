@@ -27,4 +27,8 @@
     &--red {
         color: $color-red;
     }
+
+    &--nowrap {
+        white-space: nowrap;
+    }
 }
