@@ -55,7 +55,9 @@ class Slider {
             nextArrow: next,
             cssEase: 'ease-out',
             asNavFor: this.sliderProductCarousel,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+
+            fade: true,
         });
 
         this.sliderProductCarousel.slick({

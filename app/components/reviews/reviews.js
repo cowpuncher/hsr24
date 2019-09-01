@@ -7,16 +7,16 @@ class Reviews {
 	 initialize() {
 
 		var text = $('.reviews__text');
-		text.append('<div class="reviews__text-bg"></div>');
+		// text.append('<div class="reviews__text-bg"></div>');
 		
 		text.each(function moreText() {
 			var el = $(this);
-			var gradient = el.find('.reviews__text-bg');
+			// var gradient = el.find('.reviews__text-bg');
 			var btn = el.parent().find('.reviews__btn');
 			console.log(el.prop('scrollHeight') - 2);
 			
 			if ((el.prop('scrollHeight') - 2) < el.height()) {
-				gradient.hide();
+				// gradient.hide();
 				// btn.hide();
 				// text.css('margin-bottom', '0');
 				btn.css('visibility', 'hidden');

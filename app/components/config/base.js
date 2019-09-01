@@ -298,3 +298,14 @@ $(document).ready(function() {
     })
 })
 
+$('[data-add]').click(function(e) {
+    
+    e.preventDefault();
+
+    var el = $(this);
+    
+    el.text('В корзине');
+    el.css({'color': '#F61D2A', 'border-color': '#F61D2A'});
+
+})
+
