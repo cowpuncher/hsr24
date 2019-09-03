@@ -52,6 +52,7 @@ body {
         opacity: 0;
         transition: all 0.3s ease-in-out;
         visibility: hidden;
+        z-index: 1;
     }
 
     &.overflow {
@@ -349,6 +350,11 @@ ul:not([class]) {
             }
         }
     }
+
+    @media (max-width: $md) {
+        margin-bottom: 18px;
+    }
+
 }
 
 img,
@@ -587,4 +593,23 @@ jdiv {
             border-color: #C6C6C6 !important;
         }
     }
+}
+
+// Datepicker Custom Styles
+
+.datepicker--day-name {
+    color: $color-red;
+}
+
+.datepicker--cell.-current- {
+    color: $color-blue;
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-:hover,
+.datepicker--cell.-selected-:focus,
+.datepicker--cell.-selected-.-current-,
+.datepicker--cell.-selected-.-current-:hover,
+.datepicker--cell.-selected-.-current-:focus {
+    background: $color-blue;
 }

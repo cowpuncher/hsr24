@@ -53,6 +53,21 @@
             @media (max-width: $md) {
                 margin-bottom: 20px;
             }
+
+            &--mob-mb-10 {
+                @media (max-width: $md) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        & .elem-radio {
+            margin-bottom: 0;
+
+            @media (min-width: $md) {
+                width: max-content;
+            }
+
         }
 
         

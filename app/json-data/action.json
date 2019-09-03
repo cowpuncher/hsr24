@@ -1049,6 +1049,7 @@
     },
     "bannerList": {
         "full": true,
+        "fullClass": "banner--full-h-400",
         "img": "assets/images/example/banner/banner7.jpg",
         "title": "Скидка 20% при покупке от 3 шт. и более",
         "titleClass": "text-center",

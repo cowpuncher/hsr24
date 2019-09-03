@@ -1,5 +1,5 @@
 {% macro teaser(data) %}
-	<div class="teaser">
+	<div class="teaser {% if data.class %} {{ data.class }} {% endif %}">
         <h3>{{ data.text }}</h3>
     </div>
 {% endmacro %}

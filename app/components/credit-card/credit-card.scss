@@ -22,7 +22,8 @@
         padding-right: 15px;
 
         @media (max-width: $lg) {
-            margin-left: -32%;
+            // margin-left: -32%;
+            margin-left: -22%;
         }
 
         @media (max-width: $md) {
@@ -67,6 +68,7 @@
         margin-bottom: 4px;
         display: block;
         width: 100%;
+        letter-spacing: 0.3px;
 
         @media (max-width: $lg) {
             font-size: 13px;

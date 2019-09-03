@@ -1135,7 +1135,7 @@
                                 "trackNumber": "000000000000",
                                 "productSum": "6700 руб.",
                                 "deliverySum": "0 руб.",
-                                "saleHSR": "2,500 руб.",
+                                "saleHSR": "2500 руб.",
                                 "saleRouble": "150 руб.",
                                 "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
@@ -1192,7 +1192,7 @@
                                 "trackNumber": "000000000000",
                                 "productSum": "6700 руб.",
                                 "deliverySum": "0 руб.",
-                                "saleHSR": "2,500 руб.",
+                                "saleHSR": "2500 руб.",
                                 "saleRouble": "150 руб.",
                                 "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
@@ -1249,7 +1249,7 @@
                                 "trackNumber": "000000000000",
                                 "productSum": "6700 руб.",
                                 "deliverySum": "0 руб.",
-                                "saleHSR": "2,500 руб.",
+                                "saleHSR": "2500 руб.",
                                 "saleRouble": "150 руб.",
                                 "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
@@ -1306,7 +1306,7 @@
                                 "trackNumber": "000000000000",
                                 "productSum": "6700 руб.",
                                 "deliverySum": "0 руб.",
-                                "saleHSR": "2,500 руб.",
+                                "saleHSR": "2500 руб.",
                                 "saleRouble": "150 руб.",
                                 "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
@@ -1363,7 +1363,7 @@
                                 "trackNumber": "000000000000",
                                 "productSum": "6700 руб.",
                                 "deliverySum": "0 руб.",
-                                "saleHSR": "2,500 руб.",
+                                "saleHSR": "2500 руб.",
                                 "saleRouble": "150 руб.",
                                 "salePromocode": "300 руб.",
                                 "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
@@ -1403,8 +1403,64 @@
                     "value": "female"
                 }
             ]
+        },
+
+        "specialProductList": {
+            "title": "Специально для вас",
+            "list": [
+                {
+                    "img": "assets/images/example/card/img1.jpg",
+                    "status": "Распродажа",
+                    "name": "Мульти-овощерезка «Радуга вкуса»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img5.jpg",
+                    "status": "акция",
+                    "name": "Куртка «Надежная защита»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img6.jpg",
+                    "status": "новинка",
+                    "name": "Брошь «Лунный цветок»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img7.jpg",
+                    "status": "хит продаж",
+                    "name": "Брошь «Цветущий янтарь»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img9.jpg",
+                    "status": "новинка",
+                    "name": "Подвес «Янтарная загадка»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img10.jpg",
+                    "status": "хит продаж",
+                    "name": "Колье + серьги «Янтарный цветок»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                }
+            ]
         }
 
     }
+
+    
    
 }

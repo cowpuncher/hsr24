@@ -32,11 +32,11 @@ class Map {
             ymaps.ready(init);
         }
 
-        if (this.map.length) {
+        else if (this.map.length) {
             ymaps.ready(init);
         }
 
-        if (this.mapCity.length) {
+        else if (this.mapCity.length) {
             ymaps.ready(init);
         }
 

@@ -200,6 +200,10 @@
 
     &__search {
         position: relative;
+        
+        & .elem-input {
+            border-radius: 16px;
+        }
     }
 
     &__in {
@@ -266,6 +270,7 @@
 
         &--last {
             margin-bottom: 0;
+            margin-top: 4px;
         }
     }
 
@@ -297,6 +302,8 @@
 
     &__map {
         margin-top: 14px;
+        border-radius: 8px;
+        overflow: hidden;
 
         &:first-child {
             margin-top: 0;

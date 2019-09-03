@@ -277,12 +277,25 @@ $(document).on('click', '[data-like]', function(e) {
 
 
 var elemBack = $('.elem-back');
-elemBack.click(function() {
+
+elemBack.each(function() {
     var el = $(this);
-    var elemBackList = el.find('.elem-back__list');
-    elemBackList.toggleClass('active');
-    console.log('good');
+    
+    el.click(function() {
+        var el = $(this);
+
+        if (el.hasClass('disabled-nav')) {
+            return false;
+        } else {
+            var elemBackList = el.find('.elem-back__list');
+            elemBackList.toggleClass('active');
+        }
+
+        
+    });
 })
+
+
 
 $(document).ready(function() {
     var headerHeight = $('.header').outerHeight(true);
@@ -299,13 +312,32 @@ $(document).ready(function() {
 })
 
 $('[data-add]').click(function(e) {
-    
-    e.preventDefault();
-
     var el = $(this);
     
-    el.text('В корзине');
+    el.addClass('added');
     el.css({'color': '#F61D2A', 'border-color': '#F61D2A'});
+    el.attr('data-add', 'Перейти');
+    e.preventDefault();
 
-})
+    if (($('[data-filter-view-item=list]').hasClass('active'))) {
+        el.text('В корзину');
+    } else {
+        el.text('В корзине');
+    }
+});
 
+$('[data-filter-view-item=list]').click(function() {
+    $('[data-add]').each(function() {
+        if ($(this).hasClass('added')) {
+            $(this).text('В корзину');
+        }  
+    });
+});
+
+$('[data-filter-view-item=table]').click(function() {
+    $('[data-add]').each(function() {
+        if ($(this).hasClass('added')) {
+            $(this).text('В корзине');
+        }  
+    });   
+});

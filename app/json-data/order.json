@@ -1111,11 +1111,11 @@
         "list": [
             {
                 "icon": "offline-payment",
-                "radio": "Наличными при получении",
+                "radio": "Наличными <br />при получении",
                 "class": "col-12 col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12",
                 "pay": "hide",
                 "direction": "row",
-                "radio2": "Банковской картой при получении"
+                "radio2": "Банковской картой <br />при получении"
             },
             {
                 "icon": "online-payment",
@@ -1150,7 +1150,7 @@
         }
     },
     "orderList": {
-        "title": "В заказе 4 товара на сумму 6 700 <span class=\"elem-rub\">i</span>",
+        "title": "<span>В заказе 4 товара на сумму 6 700 <span class=\"elem-rub\">i</span></span>",
         "list": [
             {
                 "name": "Мульти-овощерезка «Радуга вкуса»",

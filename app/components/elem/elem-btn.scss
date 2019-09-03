@@ -223,6 +223,12 @@
         width: 100%;
     }
 
+    &--mob-m-t-10 {
+        @media (max-width: $md) {
+            margin-top: 10px;
+        }
+    }
+
     &--m-b-10 {
         margin-bottom: 10px;
     }

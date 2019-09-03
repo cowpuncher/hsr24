@@ -33,6 +33,18 @@
                 object-fit: inherit;
             }
         }
+
+        &-h-400 {
+            & img {
+                max-height: 400px;
+            }
+        }
+
+        &-margin-bottom {
+            @media (max-width: $lg) {
+                margin-bottom: 14px;
+            }
+        }
     }
 
     &--inner {

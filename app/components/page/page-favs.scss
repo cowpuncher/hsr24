@@ -26,6 +26,7 @@
 
         & .elem-btn {
             width: 200px;
+            letter-spacing: 0;
 
             @media (max-width: $lg) {
                 // width: 290px;

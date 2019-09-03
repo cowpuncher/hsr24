@@ -248,8 +248,9 @@
     
     {% import '../../components/select/select.twig' as select %}
     {% import '../../components/table/table.twig' as table %}
+    {% import '../../components/card/card.twig' as card %}
     {% import _self as orders %}
-
+    
     {% set pr = pr.generatePrefix('tabs', data.prefix) %}
     {% set mod = mod.generateMod('tabs', data.prefix, data.mod) %}
     {% set attr = attr.generateAttr('tabs', data.prefix) %}
@@ -339,7 +340,7 @@
 
                         <h3 class="light h3 h3--lg">Адрес</h3>
 
-                        <div class="row elem-item__row page-order__row">
+                        <div class="row elem-item__row elem-item__row--mob-mb-10 page-order__row">
 
                             <div class="col-12 col-xl-3 col-lg-3 col-md-4 page-order__col--4">
                                 <div class="elem-item elem-item--md">
@@ -382,14 +383,14 @@
                             </div>
 
                             <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                                 <button class="elem-btn elem-btn--lg elem-btn--w100">Сохранить изменения</button>
+                                 <button class="elem-btn elem-btn--lg elem-btn--w100 elem-btn--mob-m-t-10">Сохранить изменения</button>
                             </div>
 
                         </div>
 
                         <h3 class="light h3 h3--lg">Изменение номера телефона</h3>
 
-                        <div class="row phone-number align-items-end active">
+                        <div class="row elem-item__row phone-number align-items-end active">
                             <div class="col-12 col-xl-4 col-lg-4 col-md-4">
                                 <div class="elem-item elem-item--no-margin-bottom">
                                     <label class="elem-label">Ваш номер телефона</label>
@@ -464,7 +465,7 @@
                             </div>
 
                             <div class="club-card__text-item club-card__text-item--cashback-base hidden-xs hidden-sm"><span class="club-card__text-item--cashback-value club-card__text-item--bold">10%</span> от суммы покупки возвращаются на бонусный счет</div>
-                            <div class="club-card__text-item club-card__text-item--present-base hidden-xs hidden-sm"><span class="club-card__text-item--present-value club-card__text-item--bold">300 ₽</span> подарок на День Рождения</div>
+                            <div class="club-card__text-item club-card__text-item--present-base hidden-xs hidden-sm"><span class="club-card__text-item--present-value club-card__text-item--bold">300 ₽</span> подарок на День рождения</div>
 
                             <div class="club-card__text-item club-card__text-item--balance club-card__text-item--bold">2000 ₽</div>
                             <div class="club-card__text-item club-card__text-item--info hidden-xs hidden-sm">Добро пожаловать в нашу программу <span class="club-card__text-item--bold">HSR Бонус!</span><br /><br />Здесь вы можете посмотреть ваш текущий статус и узнать количество бонусов на карте.<br /><br />Копите бонусные рубли и повышайте свой статус! Каждая покупка приближает вас к новому уровню программы.</div>
@@ -478,7 +479,7 @@
                         </div>
                         <div class="club-card__text">
                             <div class="club-card__text-item club-card__text-item--next-status">Для получения статуса <span class="club-card__text-item--bold club-card__text-item--uppercase">медиум</span> осталось совершить</div>
-                            <div class="club-card__text-item club-card__text-item--purchases club-card__text-item--bold">2 покупки</div>
+                            <div class="club-card__text-item club-card__text-item--purchases club-card__text-item--bold"><span>2</span> покупки</div>
 
                             <div class="club-card__text-item club-card__text-item--levels hidden-xs hidden-sm"><span class="club-card__text-item--bold">«Базовый»</span> уровень – для новеньких. Но уже со своими бонусами!<br /><br />После второго заказа вы переходите на уровень <span class="club-card__text-item--bold">«Медиум»</span>. Здесь еще интереснее и выгоднее.<br /><br />После четвертой покупки вы получаете самые классные привилегии.<br />Уровень <span class="club-card__text-item--bold">«Всё включено»</span> — это бесконечное удовольствие от выгодного шопинга.</div>
 
@@ -510,6 +511,17 @@
 
                     <div class="col-12 col-xl-4 col-lg-4 col-md-4 offset-md-8 offset-lg-8 club-card__btn">
                         <button class="elem-btn elem-btn--lg elem-btn--w100">Условия программы лояльности</button>
+                    </div>
+
+                    <div class=" club-card__group club-card__group--slider hidden-sm hidden-xs">
+                        <h3 class="light h3 h3--lg">Специально для вас</h3>
+                        <div class="card__wrap">
+                            <div class="card__list card__slider" data-slider-cards>
+                                {% for item in data.specialProductList.list %}
+                                    {{ card.card(item) }}
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
 
                     <div class=" club-card__group club-card__group--slider hidden-xl hidden-lg hidden-md hidden-sm">
