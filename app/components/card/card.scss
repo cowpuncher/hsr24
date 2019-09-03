@@ -32,6 +32,14 @@
             padding: 0 13px;
             font-size: 12px;
         }
+
+        & .card__info {
+
+            @media (min-width: $lg) {
+                min-height: 49px;
+            }
+            
+        }
     }
 
     .mobile-list & {
@@ -229,7 +237,7 @@
         .popup & {
             & .slick-prev {
                 left: -26px;
-                margin-top: -19px;
+                margin-top: -10px;
 
                 @media (max-width: $lg) {
                     left: -24px;
@@ -238,7 +246,7 @@
 
             & .slick-next {
                 right: -26px;
-                margin-top: -19px;
+                margin-top: -10px;
 
                 @media (max-width: $lg) {
                     right: -24px;
@@ -279,11 +287,25 @@
                     & .elem-price-old {
                         margin-left: 0;
                     }
+
+                    & .elem-price {
+                        line-height: 22px;
+                    }
                 }
             }
         }
 
         
+    }
+
+    &--inline &__img {
+        & img {
+            border-radius: 5px;
+
+            @media (max-width: $md) {
+                border-radius: 3px;
+            }
+        }
     }
 
     &__img {
@@ -442,7 +464,7 @@
 
         @media (max-width: $lg) {
             padding: 9px 13px 4px;
-            min-height: 45px;
+            min-height: 39px;
             // display: flex;
             // align-items: flex-end;
             // justify-content: center;
@@ -543,8 +565,12 @@
         @media (max-width: $lg) {
             font-size: 10px;
             line-height: 12px;
-            font-weight: 400;
+            // font-weight: 400;
             margin-bottom: 0;
+        }
+
+        @media (max-width: $md) {
+            font-weight: 800;
         }
     }
 
@@ -723,6 +749,7 @@
 
                 @media (max-width: $lg) {
                     margin-bottom: 0;
+                    margin-left: 8px;
                 }
 
                 @media (max-width: $md) {
@@ -813,7 +840,7 @@
 
             &--top {
                 bottom: auto;
-                top: 7px;
+                top: -5px;
                 right: 13px;
             }
         }

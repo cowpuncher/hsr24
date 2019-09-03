@@ -234,7 +234,8 @@
         &-info {
             @media (max-width: $lg) {
                 position: absolute;
-                left: calc(100% - 15px);
+                // left: calc(100% - 15px);
+                left: calc(100% - 190px);
                 top: 42px;
                 width: 28%;
             }

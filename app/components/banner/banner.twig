@@ -64,7 +64,7 @@
     {% endif %}
 
     {% if data.full %}
-        <div class="banner banner--full">
+        <div class="banner banner--full {% if data.fullClass %} {{ data.fullClass }} {% endif %}">
             <img src="{{ data.img }}" alt="">
             <div class="banner__inner banner__inner--big">
                 {% if data.titleBig %}

@@ -220,6 +220,11 @@
             margin-top: 11px;
         }
 
+        &:hover {
+            color: $color-blue;
+            text-decoration: underline;
+        }
+
         & .icon {
             @media (max-width: $lg) {
                 height: 44px;

@@ -1078,6 +1078,7 @@
                         "text": "Мульти-овощерезка «Радуга вкуса»",
                         "articul": "000000",
                         "color": "red",
+                        "background": "linear-gradient(to right, #3085F8, #F61D2A)",
                         "size": "42",
                         "name": true
                     },
@@ -1115,6 +1116,7 @@
                         "text": "Мульти-овощерезка «Радуга вкуса»",
                         "articul": "000000",
                         "color": "blue",
+                        "background": "#D155FF",
                         "size": "42",
                         "name": true
                     },

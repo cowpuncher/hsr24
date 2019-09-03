@@ -13,6 +13,7 @@
     &:disabled {
         background: $color-smoke;
         border-color: transparent;
+        color: $color-gray;
     }
 
     @media (max-width: $lg) {
