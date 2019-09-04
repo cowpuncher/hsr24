@@ -400,6 +400,12 @@
             background: $color-gray;
         }
 
+        &--light {
+            background: $color-white;
+            border: 1px solid $color-gray-light;
+            color: $color-red;
+        }
+
         @media (max-width: $lg) {
             font-size: 10px;
             line-height: 12px;
