@@ -264,6 +264,10 @@ class Popap {
               }
         });
 
+        this.popupModal.click(function() {
+            $('.slick-initialized').slick('refresh');
+        })
+
         // Модальное окно с подгрузкой данных через ajax
         this.popupAjax.magnificPopup({
             type: 'ajax'

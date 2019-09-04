@@ -343,4 +343,125 @@
             margin-bottom: 12px;
         }
     }
+
+    &__popup {
+
+        @media (max-width: $md) {
+            flex-direction: column;
+        }
+        
+        & .page-product__slider {
+            padding-left: 25px;
+            margin-top: 0;
+
+            @media (max-width: $lg) {
+                padding-left: 10px;
+                padding-right: 0;
+            }
+
+            & .slider-product {
+                margin-bottom: 10px;
+
+                @media (max-width: $lg) {
+                    & .slick-prev {
+                        left: -30px;
+                    }
+    
+                    & .slick-next {
+                        right: -30px;
+                    }
+                }
+                
+            }
+
+            & .slider-product-carousel {
+                & .slick-slide {
+                    width: 67px;
+                    margin-right: 10px;
+
+                    @media (max-width: $lg) {
+                        width: 54px;
+                        margin-right: 7px;
+                    }
+                }
+                
+            }
+        }
+
+        & .page-product__select,
+        & .page-product__color,
+        & .page-product__left {
+            @media (max-width: $lg) {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        & .page-product__row--mob {
+            flex-direction: column;
+        }
+
+        & .page-product__inner {
+            padding-right: 0;
+
+            @media (max-width: $lg) {
+                padding-left: 30px;
+            }
+
+            @media (max-width: $md) {
+                padding-left: 0;
+            }
+        }
+
+        & .page-product__info {
+            padding-top: 0;
+        }
+
+        & .page-product__top {
+            height: auto;
+        }
+
+        & .elem-info {
+            text-align: center;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .elem-info+.elem-info {
+            margin-top: 8px;
+        }
+
+        *+.elem-info__wrap {
+            margin-top: 10px;
+        }
+
+        & .elem-info__wrap {
+            display: block;
+            margin-left: 0;
+        }
+
+        & .elem-btn--popup:not(.elem-btn--sm) {
+           min-width: 190px;
+
+            @media (max-width: $lg) {
+                min-width: 144px;
+            }
+        }
+
+        & .counter {
+           width: 147px;
+
+            @media (max-width: $lg) {
+                width: 108px;
+            }
+
+            @media (max-width: $md) {
+                width: 140px;
+            }
+        }
+
+        & .card__status:not(:last-of-type) {
+            margin-bottom: 0;
+        }
+    }
 }
