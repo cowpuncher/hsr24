@@ -46,7 +46,7 @@ if ($('[data-sticky]').length) {
             });
 
             $(window).scroll(function() {
-                var scrollTop = $(window).scrollTop() - 77;
+                var scrollTop = $(window).scrollTop();
                 offset = el.parent().offset().top + 12;
                 maxScroll = content.offset().top + content.height() - el.height();
                 offsetLeft = el.parent().offset().left + 12;
@@ -55,7 +55,7 @@ if ($('[data-sticky]').length) {
                 if (ww > 1279) {
 
                     if (el.innerHeight() < content.innerHeight()) {
-                        if (scrollTop >= offset) {
+                        if (scrollTop - 77 >= offset) {
                             if (scrollTop <= maxScroll) {
                                 el.addClass('fixed');
                                 el.removeClass('bottom');
