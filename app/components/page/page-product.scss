@@ -276,11 +276,7 @@
         &.fixed,
         &.bottom {
             & .elem-title-inline {
-                opacity: 0;
-                visibility: hidden;
-                height: 20px;
-                padding: 0;
-                margin: 0;
+                display: none;
             }
         }
     }

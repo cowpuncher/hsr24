@@ -46,7 +46,7 @@ if ($('[data-sticky]').length) {
             });
 
             $(window).scroll(function() {
-                var scrollTop = $(window).scrollTop();
+                var scrollTop = $(window).scrollTop() - 77;
                 offset = el.parent().offset().top + 12;
                 maxScroll = content.offset().top + content.height() - el.height();
                 offsetLeft = el.parent().offset().left + 12;
