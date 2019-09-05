@@ -272,6 +272,12 @@
             top: auto;
             right: 12px;
         }
+
+        &.fixed {
+            & .elem-title-inline {
+                display: none;
+            }
+        }
     }
 
     &__stars {
