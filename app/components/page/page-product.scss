@@ -273,7 +273,8 @@
             right: 12px;
         }
 
-        &.fixed {
+        &.fixed,
+        &.bottom {
             & .elem-title-inline {
                 opacity: 0;
                 visibility: hidden;
