@@ -275,7 +275,8 @@
 
         &.fixed {
             & .elem-title-inline {
-                display: none;
+                opacity: 0;
+                visibility: hidden;
             }
         }
     }
