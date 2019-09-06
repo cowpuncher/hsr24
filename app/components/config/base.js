@@ -35,6 +35,14 @@ if ($('[data-sticky]').length) {
             var maxScroll = content.offset().top + content.height() - el.height();
             var ww = $(window).width();
 
+            var productTitle = el.find('.elem-title-inline');
+            
+            if (productTitle.length) {
+                var productTitleHeight = productTitle.outerHeight(true);
+            } else { 
+                productTitleHeight = 0;
+            }
+
             $(window).resize(function() {
                 ww = $(window).width();
 
@@ -55,7 +63,7 @@ if ($('[data-sticky]').length) {
                 if (ww > 1279) {
 
                     if (el.innerHeight() < content.innerHeight()) {
-                        if (scrollTop - 77 >= offset) {
+                        if (scrollTop - productTitleHeight >= offset) {
                             if (scrollTop <= maxScroll) {
                                 el.addClass('fixed');
                                 el.removeClass('bottom');
