@@ -10,7 +10,7 @@
                 top: calc(50% + 15px);
 
                 @media (max-width: $lg) {
-                    top: calc(50% + 7px);
+                    top: calc(50% + 10px);
                 }
             }
         }
@@ -289,16 +289,17 @@
                 }
 
                 & span.check-mark {
-                    background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3439 1.04346C10.5443 1.23337 10.5529 1.54984 10.363 1.75031L4.67877 7.75031C4.58673 7.84746 4.45959 7.90366 4.32579 7.90633C4.19199 7.90901 4.06271 7.85794 3.96686 7.76455L0.651068 4.53378C0.453287 4.34107 0.449175 4.02451 0.641885 3.82673C0.834596 3.62895 1.15115 3.62484 1.34893 3.81755L4.30155 6.69446L9.63702 1.06256C9.82694 0.862096 10.1434 0.853542 10.3439 1.04346Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
-                    background-size: 18px 12px;
+                    // background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3439 1.04346C10.5443 1.23337 10.5529 1.54984 10.363 1.75031L4.67877 7.75031C4.58673 7.84746 4.45959 7.90366 4.32579 7.90633C4.19199 7.90901 4.06271 7.85794 3.96686 7.76455L0.651068 4.53378C0.453287 4.34107 0.449175 4.02451 0.641885 3.82673C0.834596 3.62895 1.15115 3.62484 1.34893 3.81755L4.30155 6.69446L9.63702 1.06256C9.82694 0.862096 10.1434 0.853542 10.3439 1.04346Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.3646 3.65782C15.5536 3.85917 15.5435 4.17559 15.3422 4.36457L6.8187 12.3646C6.63018 12.5415 6.33785 12.5455 6.14452 12.3739L0.668009 7.51072C0.461527 7.32736 0.442779 7.01133 0.626136 6.80485C0.809493 6.59837 1.12552 6.57962 1.332 6.76298L6.46718 11.323L14.6578 3.63543C14.8592 3.44645 15.1756 3.45647 15.3646 3.65782Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
+                    background-size: 16px 16px;
                     background-position: center center;
                     background-repeat: no-repeat;
-                    height: 12px;
-                    width: 18px;
+                    height: 16px;
+                    width: 16px;
                     position: absolute;
                     right: 16px;
                     top: 50%;
-                    margin-top: -5px;
+                    margin-top: -7px;
                     opacity: 0;
 
                     // @media (max-width: $lg) {
@@ -337,10 +338,10 @@
 
                     &:first-child {
                         & span.check-mark {
-                            top: calc(50% + 7px);
+                            top: calc(50% + 10px);
 
                             @media (max-width: $lg) {
-                                margin-top: -2px;
+                                // margin-top: -2px;
                             }
                         }
                     }
@@ -476,16 +477,17 @@
                     }
 
                     & span.check-mark {
-                        background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3439 1.04346C10.5443 1.23337 10.5529 1.54984 10.363 1.75031L4.67877 7.75031C4.58673 7.84746 4.45959 7.90366 4.32579 7.90633C4.19199 7.90901 4.06271 7.85794 3.96686 7.76455L0.651068 4.53378C0.453287 4.34107 0.449175 4.02451 0.641885 3.82673C0.834596 3.62895 1.15115 3.62484 1.34893 3.81755L4.30155 6.69446L9.63702 1.06256C9.82694 0.862096 10.1434 0.853542 10.3439 1.04346Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
-                        background-size: 18px 12px;
+                        // background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.3439 1.04346C10.5443 1.23337 10.5529 1.54984 10.363 1.75031L4.67877 7.75031C4.58673 7.84746 4.45959 7.90366 4.32579 7.90633C4.19199 7.90901 4.06271 7.85794 3.96686 7.76455L0.651068 4.53378C0.453287 4.34107 0.449175 4.02451 0.641885 3.82673C0.834596 3.62895 1.15115 3.62484 1.34893 3.81755L4.30155 6.69446L9.63702 1.06256C9.82694 0.862096 10.1434 0.853542 10.3439 1.04346Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
+                        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.3646 3.65782C15.5536 3.85917 15.5435 4.17559 15.3422 4.36457L6.8187 12.3646C6.63018 12.5415 6.33785 12.5455 6.14452 12.3739L0.668009 7.51072C0.461527 7.32736 0.442779 7.01133 0.626136 6.80485C0.809493 6.59837 1.12552 6.57962 1.332 6.76298L6.46718 11.323L14.6578 3.63543C14.8592 3.44645 15.1756 3.45647 15.3646 3.65782Z' fill='%23F61D2A'/%3E%3C/svg%3E%0A");
+                        background-size: 16px 16px;
                         background-position: center center;
                         background-repeat: no-repeat;
-                        height: 12px;
-                        width: 18px;
+                        height: 16px;
+                        width: 16px;
                         position: absolute;
                         right: 16px;
                         top: 50%;
-                        margin-top: -6px;
+                        margin-top: -7px;
                         opacity: 0;
                         background-color: transparent;
                         border-color: transparent;
@@ -526,15 +528,15 @@
 
                         &:first-child {
                             & span.check-mark {
-                                top: calc(50% + 11px);
+                                top: calc(50% + 10px);
 
                                 @media (max-width: $lg) {
-                                    margin-top: -5px;
+                                    // margin-top: -5px;
                                 }
                             }
 
                             & a .select-color {
-                                top: calc(50% + 11px);
+                                top: calc(50% + 10px);
                             }
                         }
                     }
