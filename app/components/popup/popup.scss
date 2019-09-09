@@ -147,6 +147,10 @@
             }
         }
 
+        &--status {
+            margin-bottom: 16px;
+        }
+
         .card__list + & {
             margin-top: 26px;
         }
@@ -424,6 +428,29 @@
             }
         }
     }
+
+    &__status-btn {
+        margin-top: 38px;
+        margin-bottom: 15px;
+    }
+
+    &__status-icon {
+        margin-top: 40px;
+    }
+
+    &__status-label + &__status-icon {
+        margin-top: 0;
+    }
+
+    &__status-label {
+        & .elem-desc {
+            @media (max-width: $md) {
+                font-size: 12px;
+            }
+        }
+        
+    }
+
 }
 
 .mfp-container {
