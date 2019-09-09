@@ -4281,11 +4281,11 @@
                 </div>
 
                 <div class="elem-item">
-                    <textarea class="elem-input elem-input--textarea" placeholder="Опишите общее впечатление, достоинства и недостатки."></textarea>
+                    <textarea class="elem-input elem-input--textarea" placeholder="Опишите общее впечатление, достоинства и недостатки." data-review-text></textarea>
                 </div>
 
                 <div class="page-product__row justify-content-end">
-                    <div class="elem-btn elem-btn--lg elem-btn--lg-min">Отправить</div>
+                    <a href="#fail" class="elem-btn elem-btn--lg elem-btn--lg-min" data-popup-modal data-review-send>Отправить</a>
                 </div>
             </div>
 
@@ -5622,6 +5622,31 @@
                     </form>
                 </div>
             </div>
+    </div>
+</div>
+
+<div id="success" class="popup popup--mdx mfp-hide">
+    <h2 class="popup__title popup__title--status">Отзыв успешно отправлен</h2>
+
+    <div class="popup__status">
+        <div class="popup__status-icon d-flex justify-content-center">  <svg aria-hidden="true" class="icon icon-success_illustration">
+    <use xlink:href="assets/images/required/sprite.svg#success_illustration"></use>
+  </svg>
+</div>
+        <div class="popup__status-btn d-flex justify-content-center"><a href="#" class="elem-btn elem-btn--lg">ОК</a></div>
+    </div>
+</div>
+
+<div id="fail" class="popup popup--mdx mfp-hide">
+    <h2 class="popup__title popup__title--status">Не удалось отправить отзыв</h2>
+
+    <div class="popup__status">
+        <div class="popup__status-label d-flex justify-content-center"><span class="elem-desc">Пожалуйста, попробуйте позже.</span></div>
+        <div class="popup__status-icon d-flex justify-content-center">  <svg aria-hidden="true" class="icon icon-fail_illustration">
+    <use xlink:href="assets/images/required/sprite.svg#fail_illustration"></use>
+  </svg>
+</div>
+        <div class="popup__status-btn d-flex justify-content-center"><a href="#" class="elem-btn elem-btn--lg">Закрыть</a></div>
     </div>
 </div>	</div> <!-- page-wrapper end -->
 

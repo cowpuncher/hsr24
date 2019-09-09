@@ -36,6 +36,16 @@ class Reviews {
 
 			e.preventDefault();
 		})
+
+		
+		$('[data-review-text]').change(function() {
+			if ($('[data-review-text]').val() != "") {
+				$('[data-review-send]').attr('href', '#success');
+			} else {
+				$('[data-review-send]').attr('href', '#fail');
+			}
+		});
+			
 	}
 }
 
