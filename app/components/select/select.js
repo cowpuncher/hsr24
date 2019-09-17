@@ -41,7 +41,7 @@ class Select {
         if (filter === 'data-filter-color') {
           list.append(`
                         <div class="filter__info-item">
-                            <input type="hidden" name="${nameSelected}"  name="${valueSelected}" >
+                            <input type="hidden" name="${nameSelected}" value="${valueSelected}" >
                             <div class="elem-color ${classSelected}" style="background: ${selected[i]}"></div>
                             <a href="#" class="elem-cancel" data-filter-cancel="data-color">
                                 <svg aria-hidden="true" class="icon icon-cancel">
@@ -54,7 +54,7 @@ class Select {
         } else if (!(filter === 'data-filter-available')) {
           list.append(`
                         <div class="filter__info-item">
-                            <input type="hidden" name="${nameSelected}"  name="${valueSelected}" >
+                            <input type="hidden" name="${nameSelected}" value="${valueSelected}" >
                             <div class="filter__info-text">${selected[i]}</div>
                             <a href="#" class="elem-cancel" data-filter-cancel="data-size">
                                 <svg aria-hidden="true" class="icon icon-cancel">
