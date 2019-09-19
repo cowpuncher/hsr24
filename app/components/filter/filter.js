@@ -44,12 +44,14 @@ class Filter {
         $('[data-filter-btn]').click(function(e) {
             var el = $(this);
 
-            el.parent().siblings().find('[data-filter-btn]').removeClass('active');
+            // el.parent().siblings().find('[data-filter-btn]').removeClass('active');
 
             if (el.hasClass('active')) {
                 el.removeClass('active');
+                el.find('input[type="checkbox"]').prop('checked', false).change();
             } else {
                 el.addClass('active');
+                el.find('input[type="checkbox"]').prop('checked', true).change();
             }
             
             e.preventDefault();
@@ -147,8 +149,6 @@ class Filter {
         $('.filter__nums-item').click(function(e) {
             $(this).siblings().removeClass('active');
             $(this).addClass('active');
-
-            e.preventDefault();
         })
 
 	}

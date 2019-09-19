@@ -29,7 +29,6 @@ class Select {
                     </div>
                 `);
       }
-      console.log(selected);
 
       for (var i = 0; i < selected.length; i++) {
 
@@ -41,8 +40,8 @@ class Select {
         if (filter === 'data-filter-color') {
           list.append(`
                         <div class="filter__info-item">
-                            <input type="hidden" name="${nameSelected}" value="${valueSelected}" >
-                            <div class="elem-color ${classSelected}" style="background: ${selected[i]}"></div>
+                            <input type="hidden" name="${nameSelected}" value="${selected[i]}" >
+                            <div class="elem-color ${classSelected}" style="background: ${valueSelected}"></div>
                             <a href="#" class="elem-cancel" data-filter-cancel="data-color">
                                 <svg aria-hidden="true" class="icon icon-cancel">
                                     <use xlink:href="assets/images/required/sprite.svg#cancel"></use>
@@ -54,8 +53,8 @@ class Select {
         } else if (!(filter === 'data-filter-available')) {
           list.append(`
                         <div class="filter__info-item">
-                            <input type="hidden" name="${nameSelected}" value="${valueSelected}" >
-                            <div class="filter__info-text">${selected[i]}</div>
+                            <input type="hidden" name="${nameSelected}" value="${selected[i]}" >
+                            <div class="filter__info-text">${valueSelected}</div>
                             <a href="#" class="elem-cancel" data-filter-cancel="data-size">
                                 <svg aria-hidden="true" class="icon icon-cancel">
                                     <use xlink:href="assets/images/required/sprite.svg#cancel"></use>
