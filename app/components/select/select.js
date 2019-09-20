@@ -5,15 +5,15 @@ class Select {
   }
 
   initialize() {
+    var bxTemplatePath = '';
 
-    $('select[data-filter]').on('change', function(){
-      var selected = $(this).val();
-      var filter = $(this).attr('data-filter');
+    function print(select){
+      var selected = select.val();
+      var filter = select.attr('data-filter');
       var list = $('[' + filter + ']').find('[data-filter-list]');
       var classSelected = '';
       var nameSelected = '';
       var valueSelected = '';
-      var nullSelect = false;
 
       list.children().remove();
 
@@ -23,7 +23,7 @@ class Select {
                         <div class="filter__info-text">${selected}</div>
                         <a href="#" class="elem-cancel" data-filter-cancel="data-available">
                             <svg aria-hidden="true" class="icon icon-cancel">
-                                <use xlink:href="assets/images/required/sprite.svg#cancel"></use>
+                                <use xlink:href="${bxTemplatePath}/assets/images/required/sprite.svg#cancel"></use>
                             </svg>
                         </a>
                     </div>
@@ -32,7 +32,7 @@ class Select {
 
       for (var i = 0; i < selected.length; i++) {
 
-        var optionSelected = $(this).find('option').eq(i);
+        var optionSelected = select.find('option').eq(i);
         classSelected = optionSelected.attr('class');
         nameSelected = optionSelected.attr('data-name');
         valueSelected = optionSelected.attr('data-value');
@@ -44,7 +44,7 @@ class Select {
                             <div class="elem-color ${classSelected}" style="background: ${valueSelected}"></div>
                             <a href="#" class="elem-cancel" data-filter-cancel="data-color">
                                 <svg aria-hidden="true" class="icon icon-cancel">
-                                    <use xlink:href="assets/images/required/sprite.svg#cancel"></use>
+                                    <use xlink:href="${bxTemplatePath}/assets/images/required/sprite.svg#cancel"></use>
                                 </svg>
                             </a>
                         </div>
@@ -57,7 +57,7 @@ class Select {
                             <div class="filter__info-text">${valueSelected}</div>
                             <a href="#" class="elem-cancel" data-filter-cancel="data-size">
                                 <svg aria-hidden="true" class="icon icon-cancel">
-                                    <use xlink:href="assets/images/required/sprite.svg#cancel"></use>
+                                    <use xlink:href="${bxTemplatePath}/assets/images/required/sprite.svg#cancel"></use>
                                 </svg>
                             </a>
                         </div>
@@ -72,7 +72,10 @@ class Select {
       } else {
         list.removeClass('null');
       }
+    }
 
+    function checkChoose(){
+      var nullSelect = false;
       $('[data-filter-show-wrap]').find('[data-filter-list]').each(function() {
         if ($(this).hasClass('null')) {
           nullSelect = false;
@@ -82,13 +85,18 @@ class Select {
         }
       });
 
-
       if (nullSelect) {
         $('[data-filter-show]').addClass('choose');
       } else {
         $('[data-filter-show]').removeClass('choose');
       }
+    }
 
+    $('select[data-filter]').on('change', function(){
+      var selected = $(this).val();
+
+      print(selected);
+      checkChoose();
     });
 
     $('select[data-filter]').on('show.bs.select', function (e, clickedIndex, isSelected, previousValue) {
@@ -111,6 +119,16 @@ class Select {
 
 
 
+    $(document).ready(function(){
+      bxTemplatePath = !!window.bxTemplatePath ? window.bxTemplatePath : '';
+
+      $('select[data-filter]').each(function () {
+        if (!!$(this).val()) {
+          print($(this));
+        }
+      });
+      checkChoose();
+    })
   }
 }
 

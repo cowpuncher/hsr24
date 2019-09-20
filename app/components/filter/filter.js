@@ -62,6 +62,8 @@ class Filter {
         });
 
         $(document).on('click', '[data-filter-cancel]', function(e){
+            e.preventDefault();
+
             var el = $(this);
             var index = el.parent().index();
             var select = el.attr('data-filter-cancel');
@@ -96,8 +98,7 @@ class Filter {
             }
 
             el.parent().remove();
-
-            e.preventDefault();
+            $('select[' + select +']').change();
         });
 
         $(document).on('click', '[data-filter-delete]', function(e){
