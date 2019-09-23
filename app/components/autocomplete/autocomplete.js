@@ -77,7 +77,7 @@ class Autocomplete {
                                 <div class='ui-autocomplete__img'>
                                     <img src='${item.img}'>
                                 </div>
-                                <div class='ui-autocomplete__text'>${newText}</div>
+                                <a href="#" class='ui-autocomplete__text'>${newText}</a>
                             </div>`)
                     .appendTo(ul);
             };

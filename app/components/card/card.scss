@@ -313,11 +313,14 @@
         width: 100%;
         border-bottom: 1px solid $color-smoke;
 
+        height: 250px;
+        text-align: center;
+
         & img {
-            width: 100%;
+            // width: 100%;
             vertical-align: top;
             border-radius: 5px 5px 0 0;
-
+            
             @media (max-width: $md) {
                 border-radius: 3px;
             }
