@@ -1111,16 +1111,14 @@
         "list": [
             {
                 "icon": "offline-payment",
-                "radio": "Наличными <br />при получении",
-                "class": "col-12 col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12",
-                "pay": "hide",
-                "direction": "row",
-                "radio2": "Банковской картой <br />при получении"
+                "radio": "При получении",
+                "class": "col-12 col-xl-6 col-lg-6 col-md-4 col-sm-12 col-xs-12",
+                "pay": "hide"
             },
             {
                 "icon": "online-payment",
                 "radio": "Банковской картой онлайн",
-                "class": "col-12 col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12",
+                "class": "col-12 col-xl-6 col-lg-6 col-md-4 col-sm-12 col-xs-12",
                 "pay": "show"
             }
         ],
