@@ -419,6 +419,19 @@
                             border-bottom: 1px solid $color-gray-light;
                         }
                     }
+
+                    &.disabled {
+                        & span {
+                            &.text {
+                                color: $color-gray;
+                            }
+
+                            &.check-mark {
+                                background: $color-gray-light;
+                                border-color: $color-gray-light;
+                            }
+                        }
+                    }
                 }
             }
         }
