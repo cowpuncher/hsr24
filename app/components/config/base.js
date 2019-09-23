@@ -43,14 +43,6 @@ if ($('[data-sticky]').length) {
                 productTitleHeight = 0;
             }
 
-            // $('[data-slider-product]').on('afterChange', function(event, slick, currentSlide, nextSlide){
-            //     if (el.innerHeight() > content.innerHeight()) {
-            //         el.removeClass('fixed');
-            //         el.removeClass('bottom');
-            //         el.removeAttr('style');
-            //     }
-            // });
-
             $(window).resize(function() {
                 ww = $(window).width();
 
