@@ -29,8 +29,8 @@ class Price {
                     max: max,
                     values: [ start, end ],
                     slide: function( event, ui ) {
-                        lower.val(ui.values[ 0 ]);
-                        upper.val(ui.values[ 1 ]);
+                        lower.val(ui.values[ 0 ]).change();
+                        upper.val(ui.values[ 1 ]).change();
                     }
                 });
             });
