@@ -12,12 +12,12 @@
         &::-webkit-scrollbar {
             width: 4px;
         }
-         
+
         &::-webkit-scrollbar-track {
             border-radius: 2px;
             background: $color-smoke;
         }
-         
+
         &::-webkit-scrollbar-thumb {
             border-radius: 2px;
             background: $color-gray-light;
@@ -53,10 +53,23 @@
                 }
             }
 
+            &.open {
+                display: flex !important;
+                flex-direction: column-reverse;
+            }
+
+            &-in {
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+            }
+
             & h6 {
                 border-top: 1px solid #E6E6E6;
                 padding-top: 16px;
                 margin: 8px 20px 0;
+                position: relative;
+                z-index: 10;
 
                 @media (max-width: $lg) {
                     margin-top: 8px;
@@ -143,7 +156,7 @@
                 letter-spacing: 0.1px;
             }
 
-            
+
             &:after {
                 content: '';
                 position: absolute;
@@ -157,6 +170,8 @@
                 }
             }
         }
+
+
     }
 
     &-state-highlight {
@@ -217,7 +232,7 @@
                 margin-top: 16px;
             }
 
-            
+
         }
 
         &-divider {

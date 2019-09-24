@@ -47,25 +47,20 @@ class Autocomplete {
 
             autocomplete.autocomplete({
                 source: countriesString,
-                appendTo: '.ui-autocomplete__wrap',
+                appendTo: '.ui-autocomplete__wrap-in',
                 minLength: 1,
                 html: true,
                 open: function( event, ui ) {
-                    $('.ui-autocomplete__wrap').show();
-
-                    if ($('.ui-autocomplete__wrap').find('h6').length == 0) {
-                        $('.ui-autocomplete__wrap').append('<h6><span data-href="newpage.html" class="ui-autocomplete__link" data-autocomplete-all>Все результаты</span></h6>');
-                    }
-
-                    $(document).delegate('.ui-autocomplete__link', 'click', function(){
-                        alert();
-                    });
+                    $('.ui-autocomplete__wrap').show().addClass('open');
 
                     // $('.page').addClass('overflow');
                     // $('body').addClass('scroll');
                 },
                 close: function( event, ui ) {
-                    $('.ui-autocomplete__wrap').hide();
+                    $('.ui-autocomplete__wrap').find('.ui-autocomplete').show();
+                    setTimeout(() => {
+                        $('.ui-autocomplete__wrap').hide().removeClass('open');
+                    }, 300);
                     //$('.ui-autocomplete__wrap').find('h6').remove();
                     // $('.page').removeClass('overflow');
                     // $('body').removeClass('scroll');
