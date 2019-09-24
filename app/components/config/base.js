@@ -36,10 +36,10 @@ if ($('[data-sticky]').length) {
             var ww = $(window).width();
 
             var productTitle = el.find('.elem-title-inline');
-            
+
             if (productTitle.length) {
                 var productTitleHeight = productTitle.outerHeight(true);
-            } else { 
+            } else {
                 productTitleHeight = 0;
             }
 
@@ -90,6 +90,49 @@ if ($('[data-sticky]').length) {
                     el.removeAttr('style');
                 }
             });
+
+            $(document).on('click', '[data-slider-product] .slick-arrow', function(){
+                setTimeout(() => {
+                    var scrollTop = $(window).scrollTop();
+                        offset = el.parent().offset().top + 12;
+                        maxScroll = content.offset().top + content.height() - el.height();
+                        offsetLeft = el.parent().offset().left + 12;
+                        elWidth = el.parent().width();
+
+                    if (ww > 1279) {
+
+                        console.log(el.innerHeight() + ' ' + content.innerHeight());
+
+                        if (el.innerHeight() < content.innerHeight()) {
+                            if (scrollTop - productTitleHeight >= offset) {
+                                if (scrollTop <= maxScroll) {
+                                    el.addClass('fixed');
+                                    el.removeClass('bottom');
+                                    el.css({'width': elWidth + 'px'});
+                                    el.css({'left': offsetLeft + 'px'});
+                                } else {
+                                    el.addClass('bottom');
+                                    el.removeClass('fixed');
+                                    el.removeAttr('style');
+                                }
+                            } else {
+                                el.removeClass('fixed');
+                                el.removeClass('bottom');
+                                el.removeAttr('style');
+                            }
+                        } else {
+                            el.removeClass('fixed');
+                            el.removeClass('bottom');
+                            el.removeAttr('style');
+                        }
+                    } else {
+                        el.removeClass('fixed');
+                        el.removeClass('bottom');
+                        el.removeAttr('style');
+                    }
+                }, 300);
+
+            });
         });
     }
 }
@@ -107,10 +150,10 @@ $('[data-favorites]').click(function(e) {
 
     if (el.hasClass('active')) {
         el.find('span').text('Добавлено в избранное');
-        
+
     } else {
         el.find('span').text('Добавить в избранное');
-        
+
     }
 
     e.preventDefault();
@@ -288,7 +331,7 @@ var elemBack = $('.elem-back');
 
 elemBack.each(function() {
     var el = $(this);
-    
+
     el.click(function() {
         var el = $(this);
 
@@ -299,7 +342,7 @@ elemBack.each(function() {
             elemBackList.toggleClass('active');
         }
 
-        
+
     });
 })
 
@@ -321,7 +364,7 @@ $(document).ready(function() {
 
 $('[data-add]').click(function(e) {
     var el = $(this);
-    
+
     el.addClass('added');
     el.css({'color': '#F61D2A', 'border-color': '#F61D2A'});
     el.attr('data-add', 'Перейти');
@@ -338,7 +381,7 @@ $('[data-filter-view-item=list]').click(function() {
     $('[data-add]').each(function() {
         if ($(this).hasClass('added')) {
             $(this).text('В корзину');
-        }  
+        }
     });
 });
 
@@ -346,6 +389,6 @@ $('[data-filter-view-item=table]').click(function() {
     $('[data-add]').each(function() {
         if ($(this).hasClass('added')) {
             $(this).text('В корзине');
-        }  
-    });   
+        }
+    });
 });
