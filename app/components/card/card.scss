@@ -362,6 +362,10 @@
                 left: 8px;
                 top: 8px;
             }
+
+            & img {
+                max-height: 100%;
+            }
         }
 
         .card--inline & {
