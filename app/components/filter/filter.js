@@ -44,12 +44,14 @@ class Filter {
         $('[data-filter-btn]').click(function(e) {
             var el = $(this);
 
-            el.parent().siblings().find('[data-filter-btn]').removeClass('active');
+            // el.parent().siblings().find('[data-filter-btn]').removeClass('active');
 
             if (el.hasClass('active')) {
                 el.removeClass('active');
+                el.find('input[type="checkbox"]').prop('checked', false).change();
             } else {
                 el.addClass('active');
+                el.find('input[type="checkbox"]').prop('checked', true).change();
             }
             
             e.preventDefault();
@@ -60,6 +62,8 @@ class Filter {
         });
 
         $(document).on('click', '[data-filter-cancel]', function(e){
+            e.preventDefault();
+
             var el = $(this);
             var index = el.parent().index();
             var select = el.attr('data-filter-cancel');
@@ -94,8 +98,7 @@ class Filter {
             }
 
             el.parent().remove();
-
-            e.preventDefault();
+            $('select[' + select +']').change();
         });
 
         $(document).on('click', '[data-filter-delete]', function(e){
@@ -147,8 +150,6 @@ class Filter {
         $('.filter__nums-item').click(function(e) {
             $(this).siblings().removeClass('active');
             $(this).addClass('active');
-
-            e.preventDefault();
         })
 
 	}

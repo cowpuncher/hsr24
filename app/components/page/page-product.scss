@@ -253,7 +253,6 @@
         left: 0;
         top: 0;
         z-index: 1;
-        padding-bottom: 1rem;
 
         @media (max-width: $lg) {
             padding-bottom: 5px;
@@ -343,7 +342,7 @@
         }
     }
 
-    
+
     .popup__btns *+* {
         @media (max-width: $md) {
             margin-top: 0;
@@ -356,7 +355,7 @@
         @media (max-width: $md) {
             flex-direction: column;
         }
-        
+
         & .page-product__slider {
             padding-left: 25px;
             margin-top: 0;
@@ -373,12 +372,12 @@
                     & .slick-prev {
                         left: -30px;
                     }
-    
+
                     & .slick-next {
                         right: -30px;
                     }
                 }
-                
+
             }
 
             & .slider-product-carousel {
@@ -391,7 +390,7 @@
                         margin-right: 7px;
                     }
                 }
-                
+
             }
         }
 

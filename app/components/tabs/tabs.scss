@@ -216,6 +216,10 @@
                 &.open {
                     display: block;
                 }
+
+                & p:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -232,7 +236,7 @@
 
             &-product {
                 &__head {
-                    
+
                     @media (min-width: $md) {
                         margin-bottom: 20px;
                     }

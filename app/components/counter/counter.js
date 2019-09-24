@@ -27,6 +27,8 @@ class Counter {
             plus.click(function add(e) {
                 var $input = input;
                 var a = $input.val();
+                min = parseInt($input.attr('min'));
+                max = parseInt($input.attr('max'));
                 a++;
                 $input.val(a);
 
@@ -44,6 +46,8 @@ class Counter {
             minus.click(function minusButton(e) {
                 var $input = input;
                 var b = $input.val();
+                min = parseInt($input.attr('min'));
+                max = parseInt($input.attr('max'));
                 b--;
                 $input.val(b);
 
