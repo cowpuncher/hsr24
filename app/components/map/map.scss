@@ -69,10 +69,12 @@
         font-size: 12px;
         line-height: 14px;
         margin-top: -8px;
+        padding-top: 10px;
+        min-height: 30px;
         padding-left: 43px;
         background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 27C22.0751 27 27 22.0751 27 16C27 9.92487 22.0751 5 16 5C9.92487 5 5 9.92487 5 16C5 22.0751 9.92487 27 16 27ZM16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' fill='%23101010'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.5471 7.94507C15.8233 7.94507 16.0471 8.16893 16.0471 8.44507V16.1037L23.2907 18.9346C23.5479 19.0351 23.6749 19.3251 23.5744 19.5823C23.4739 19.8395 23.1839 19.9665 22.9267 19.866L15.3651 16.9108C15.1733 16.8358 15.0471 16.651 15.0471 16.4451V8.44507C15.0471 8.16893 15.271 7.94507 15.5471 7.94507Z' fill='%23101010'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
-        background-position: 2px 8px;
+        background-position: 2px 0px;
         background-size: 32px auto;
 
         @media (max-width: $md) {
@@ -98,6 +100,17 @@
                 margin-bottom: 5px;
             }
         }
+
+        // &--only-one-item {
+        //     min-height: 32px;
+        //     background-position: 0 0;
+        //     display: flex;
+        //     align-items: center;
+
+        //     & .map__time-item {
+        //         margin-bottom: 0;
+        //     }
+        // }
     }
 
     &__btn {
