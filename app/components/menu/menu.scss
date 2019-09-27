@@ -652,6 +652,13 @@
             max-width: 1216px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             margin-right: -24px;
+
+            @media (max-width: $lg) {
+                display: flex;
+                flex-direction: column;
+                margin-right: 0;
+                max-width: none;
+            }
         }
 
         &__col {

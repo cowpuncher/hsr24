@@ -396,3 +396,18 @@ $('[data-filter-view-item=table]').click(function() {
         }
     });
 });
+
+
+$('.online-support').click(function(e) {
+    e.preventDefault();
+
+    jivo_api.open();
+})
+
+function jivo_onOpen() {
+    $('.online-support').hide();
+}
+
+function jivo_onClose() {
+    $('.online-support').show();
+}
