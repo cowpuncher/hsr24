@@ -425,11 +425,3 @@ $('.online-support').click(function(e) {
 
     jivo_api.open();
 })
-
-function jivo_onOpen() {
-    $('.online-support').hide();
-}
-
-function jivo_onClose() {
-    $('.online-support').show();
-}
