@@ -621,3 +621,11 @@ jdiv {
 .leaf_25._bottom_DW, .leaf_25._left_MI, .leaf_25._right_3d {
     // display: none;
 }
+
+.label_39._bottom_3v._pad100_GR._init_Tk.notranslate ~ .main_2l.notranslate {
+    opacity: 0;
+}
+
+.label_39._bottom_3v._pad100_GR._init_Tk.notranslate ~ .main_2l.notranslate .leaf_25._bottom_DW {
+    display: none;
+}
