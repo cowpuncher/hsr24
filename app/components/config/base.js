@@ -92,6 +92,10 @@ if ($('[data-sticky]').length) {
             });
 
             $(document).on('click', '[data-slider-product] .slick-arrow', function(){
+                el.removeClass('fixed');
+                el.removeClass('bottom');
+                el.removeAttr('style');
+
                 setTimeout(() => {
                     var scrollTop = $(window).scrollTop();
                         offset = el.parent().offset().top + 12;
@@ -130,7 +134,7 @@ if ($('[data-sticky]').length) {
                         el.removeClass('bottom');
                         el.removeAttr('style');
                     }
-                }, 300);
+                }, 100);
 
             });
         });
