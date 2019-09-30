@@ -34,6 +34,8 @@ if ($('[data-sticky]').length) {
             var content = el.parents('[data-sticky-content]');
             var maxScroll = content.offset().top + content.height() - el.height();
             var ww = $(window).width();
+            var hSlider = [];
+            var min = 0;
 
             var productTitle = el.find('.elem-title-inline');
 
@@ -42,6 +44,15 @@ if ($('[data-sticky]').length) {
             } else {
                 productTitleHeight = 0;
             }
+
+            var slide = $('[data-slider-product]').find('.slider-product__item');
+
+            slide.each(function() {
+                hSlider.push($(this).outerHeight());
+            });
+
+            min = Math.max.apply(null, hSlider);
+            min = min + el.find('.elem-title-inline').innerHeight() + el.find('[data-slider-product-carousel]').innerHeight() + 24;
 
             $(window).resize(function() {
                 ww = $(window).width();
@@ -92,11 +103,19 @@ if ($('[data-sticky]').length) {
             });
 
             $(document).on('click', '[data-slider-product] .slick-arrow', function(){
-                el.removeClass('fixed');
-                el.removeClass('bottom');
-                el.removeAttr('style');
+                var parent = $(this).parents('[data-slider-product]');
+                var active = parent.find('.slick-current');
+                var index = active.index();
+                var hh = hSlider[index] + el.find('.elem-title-inline').innerHeight() + el.find('[data-slider-product-carousel]').innerHeight() + 24;
+
+                if (hh === min) {
+                    el.parent().height(hh);
+                } else {
+                    el.parent().removeAttr('style');
+                }
 
                 setTimeout(() => {
+
                     var scrollTop = $(window).scrollTop();
                         offset = el.parent().offset().top + 12;
                         maxScroll = content.offset().top + content.height() - el.height();
@@ -105,36 +124,39 @@ if ($('[data-sticky]').length) {
 
                     if (ww > 1279) {
 
-                        console.log(el.innerHeight() + ' ' + content.innerHeight());
-
                         if (el.innerHeight() < content.innerHeight()) {
                             if (scrollTop - productTitleHeight >= offset) {
                                 if (scrollTop <= maxScroll) {
+                                    //el.parent().removeAttr('style');
                                     el.addClass('fixed');
                                     el.removeClass('bottom');
                                     el.css({'width': elWidth + 'px'});
                                     el.css({'left': offsetLeft + 'px'});
                                 } else {
+                                    // el.parent().height(min);
                                     el.addClass('bottom');
                                     el.removeClass('fixed');
                                     el.removeAttr('style');
                                 }
                             } else {
+                                //el.parent().removeAttr('style');
                                 el.removeClass('fixed');
                                 el.removeClass('bottom');
                                 el.removeAttr('style');
                             }
                         } else {
+                            //el.parent().removeAttr('style');
                             el.removeClass('fixed');
                             el.removeClass('bottom');
                             el.removeAttr('style');
                         }
                     } else {
+                        //el.parent().removeAttr('style');
                         el.removeClass('fixed');
                         el.removeClass('bottom');
                         el.removeAttr('style');
                     }
-                }, 100);
+                }, 300);
 
             });
         });
@@ -396,3 +418,10 @@ $('[data-filter-view-item=table]').click(function() {
         }
     });
 });
+
+
+$('.online-support').click(function(e) {
+    e.preventDefault();
+
+    jivo_api.open();
+})
