@@ -251,7 +251,9 @@ $(window).resize(function() {
 
 // маска в инпутах
 $('[data-date]').mask("99/99/9999");
-$('[data-phone]').mask("+7 (999) 999-99-99");
+$('[data-phone]').mask("+7 (999) 999-99-99", {
+    autoclear: false
+});
 $('[data-card-num]').mask("9999 9999 9999 9999");
 $('[data-ssn]').mask("999-99-9999");
 //$('[data-promo]').mask("9999");
@@ -322,6 +324,31 @@ $('[data-promo]').keyup(function() {
         el.removeClass('succsess');
     }
 });
+
+$('#login [data-phone], #reg [data-phone]').change(function() {
+    var el = $(this);
+    var errorText = el.next('.elem-input--error');
+    var val = el.val().replace('_','');
+
+    if (val.length < 18) {
+        el.addClass('error');
+        errorText.show();
+    } else {
+        el.removeClass('error');
+        errorText.hide();
+    }
+});
+
+$('#login [data-phone]').keyup(function() {
+    var el = $(this);
+    if (el.val() !== '+7 (999) 999-99-99') {
+        $('.btn-getcode').click(function() {
+            el.closest('form').hide();
+            $('#login .popup__error').show();
+            $('.popup__error-tel').html(el.val());
+        })
+    }
+})
 
 $('[data-form-promo]').submit(function(e) {
     var el = $(this);
