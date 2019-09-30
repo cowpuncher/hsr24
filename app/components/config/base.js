@@ -22,146 +22,146 @@ $('select').each(function() {
     });
 });
 
-if ($('[data-sticky]').length) {
-    var ww = $(window).width();
+// if ($('[data-sticky]').length) {
+//     var ww = $(window).width();
 
-    if (ww > 1279) {
-        $('[data-sticky]').each(function() {
-            var el = $(this);
-            var offset = el.parent().offset().top + 12;
-            var offsetLeft = el.parent().offset().left + 12;
-            var elWidth = el.parent().width();
-            var content = el.parents('[data-sticky-content]');
-            var maxScroll = content.offset().top + content.height() - el.height();
-            var ww = $(window).width();
-            var hSlider = [];
-            var min = 0;
+//     if (ww > 1279) {
+//         $('[data-sticky]').each(function() {
+//             var el = $(this);
+//             var offset = el.parent().offset().top + 12;
+//             var offsetLeft = el.parent().offset().left + 12;
+//             var elWidth = el.parent().width();
+//             var content = el.parents('[data-sticky-content]');
+//             var maxScroll = content.offset().top + content.height() - el.height();
+//             var ww = $(window).width();
+//             var hSlider = [];
+//             var min = 0;
 
-            var productTitle = el.find('.elem-title-inline');
+//             var productTitle = el.find('.elem-title-inline');
 
-            if (productTitle.length) {
-                var productTitleHeight = productTitle.outerHeight(true);
-            } else {
-                productTitleHeight = 0;
-            }
+//             if (productTitle.length) {
+//                 var productTitleHeight = productTitle.outerHeight(true);
+//             } else {
+//                 productTitleHeight = 0;
+//             }
 
-            var slide = $('[data-slider-product]').find('.slider-product__item');
+//             var slide = $('[data-slider-product]').find('.slider-product__item');
 
-            slide.each(function() {
-                hSlider.push($(this).outerHeight());
-            });
+//             slide.each(function() {
+//                 hSlider.push($(this).outerHeight());
+//             });
 
-            min = Math.max.apply(null, hSlider);
-            min = min + el.find('.elem-title-inline').innerHeight() + el.find('[data-slider-product-carousel]').innerHeight() + 24;
+//             min = Math.max.apply(null, hSlider);
+//             min = min + el.find('.elem-title-inline').innerHeight() + el.find('[data-slider-product-carousel]').innerHeight() + 24;
 
-            $(window).resize(function() {
-                ww = $(window).width();
+//             $(window).resize(function() {
+//                 ww = $(window).width();
 
-                if (ww < 1280) {
-                    el.removeClass('fixed');
-                    el.removeClass('bottom');
-                    el.removeAttr('style');
-                }
-            });
+//                 if (ww < 1280) {
+//                     el.removeClass('fixed');
+//                     el.removeClass('bottom');
+//                     el.removeAttr('style');
+//                 }
+//             });
 
-            $(window).scroll(function() {
-                var scrollTop = $(window).scrollTop();
-                offset = el.parent().offset().top + 12;
-                maxScroll = content.offset().top + content.height() - el.height();
-                offsetLeft = el.parent().offset().left + 12;
-                elWidth = el.parent().width();
+//             $(window).scroll(function() {
+//                 var scrollTop = $(window).scrollTop();
+//                 offset = el.parent().offset().top + 12;
+//                 maxScroll = content.offset().top + content.height() - el.height();
+//                 offsetLeft = el.parent().offset().left + 12;
+//                 elWidth = el.parent().width();
 
-                if (ww > 1279) {
+//                 if (ww > 1279) {
 
-                    if (el.innerHeight() < content.innerHeight()) {
-                        if (scrollTop - productTitleHeight >= offset) {
-                            if (scrollTop <= maxScroll) {
-                                el.addClass('fixed');
-                                el.removeClass('bottom');
-                                el.css({'width': elWidth + 'px'});
-                                el.css({'left': offsetLeft + 'px'});
-                            } else {
-                                el.addClass('bottom');
-                                el.removeClass('fixed');
-                                el.removeAttr('style');
-                            }
-                        } else {
-                            el.removeClass('fixed');
-                            el.removeClass('bottom');
-                            el.removeAttr('style');
-                        }
-                    } else {
-                        el.removeClass('fixed');
-                        el.removeClass('bottom');
-                        el.removeAttr('style');
-                    }
-                } else {
-                    el.removeClass('fixed');
-                    el.removeClass('bottom');
-                    el.removeAttr('style');
-                }
-            });
+//                     if (el.innerHeight() < content.innerHeight()) {
+//                         if (scrollTop - productTitleHeight >= offset) {
+//                             if (scrollTop <= maxScroll) {
+//                                 el.addClass('fixed');
+//                                 el.removeClass('bottom');
+//                                 el.css({'width': elWidth + 'px'});
+//                                 el.css({'left': offsetLeft + 'px'});
+//                             } else {
+//                                 el.addClass('bottom');
+//                                 el.removeClass('fixed');
+//                                 el.removeAttr('style');
+//                             }
+//                         } else {
+//                             el.removeClass('fixed');
+//                             el.removeClass('bottom');
+//                             el.removeAttr('style');
+//                         }
+//                     } else {
+//                         el.removeClass('fixed');
+//                         el.removeClass('bottom');
+//                         el.removeAttr('style');
+//                     }
+//                 } else {
+//                     el.removeClass('fixed');
+//                     el.removeClass('bottom');
+//                     el.removeAttr('style');
+//                 }
+//             });
 
-            $(document).on('click', '[data-slider-product] .slick-arrow', function(){
-                var parent = $(this).parents('[data-slider-product]');
-                var active = parent.find('.slick-current');
-                var index = active.index();
-                var hh = hSlider[index] + el.find('.elem-title-inline').innerHeight() + el.find('[data-slider-product-carousel]').innerHeight() + 24;
+//             $(document).on('click', '[data-slider-product] .slick-arrow', function(){
+//                 var parent = $(this).parents('[data-slider-product]');
+//                 var active = parent.find('.slick-current');
+//                 var index = active.index();
+//                 var hh = hSlider[index] + el.find('.elem-title-inline').innerHeight() + el.find('[data-slider-product-carousel]').innerHeight() + 24;
 
-                if (hh === min) {
-                    el.parent().height(hh);
-                } else {
-                    el.parent().removeAttr('style');
-                }
+//                 if (hh === min) {
+//                     el.parent().height(hh);
+//                 } else {
+//                     el.parent().removeAttr('style');
+//                 }
 
-                setTimeout(() => {
+//                 setTimeout(() => {
 
-                    var scrollTop = $(window).scrollTop();
-                        offset = el.parent().offset().top + 12;
-                        maxScroll = content.offset().top + content.height() - el.height();
-                        offsetLeft = el.parent().offset().left + 12;
-                        elWidth = el.parent().width();
+//                     var scrollTop = $(window).scrollTop();
+//                         offset = el.parent().offset().top + 12;
+//                         maxScroll = content.offset().top + content.height() - el.height();
+//                         offsetLeft = el.parent().offset().left + 12;
+//                         elWidth = el.parent().width();
 
-                    if (ww > 1279) {
+//                     if (ww > 1279) {
 
-                        if (el.innerHeight() < content.innerHeight()) {
-                            if (scrollTop - productTitleHeight >= offset) {
-                                if (scrollTop <= maxScroll) {
-                                    //el.parent().removeAttr('style');
-                                    el.addClass('fixed');
-                                    el.removeClass('bottom');
-                                    el.css({'width': elWidth + 'px'});
-                                    el.css({'left': offsetLeft + 'px'});
-                                } else {
-                                    // el.parent().height(min);
-                                    el.addClass('bottom');
-                                    el.removeClass('fixed');
-                                    el.removeAttr('style');
-                                }
-                            } else {
-                                //el.parent().removeAttr('style');
-                                el.removeClass('fixed');
-                                el.removeClass('bottom');
-                                el.removeAttr('style');
-                            }
-                        } else {
-                            //el.parent().removeAttr('style');
-                            el.removeClass('fixed');
-                            el.removeClass('bottom');
-                            el.removeAttr('style');
-                        }
-                    } else {
-                        //el.parent().removeAttr('style');
-                        el.removeClass('fixed');
-                        el.removeClass('bottom');
-                        el.removeAttr('style');
-                    }
-                }, 300);
+//                         if (el.innerHeight() < content.innerHeight()) {
+//                             if (scrollTop - productTitleHeight >= offset) {
+//                                 if (scrollTop <= maxScroll) {
+//                                     //el.parent().removeAttr('style');
+//                                     el.addClass('fixed');
+//                                     el.removeClass('bottom');
+//                                     el.css({'width': elWidth + 'px'});
+//                                     el.css({'left': offsetLeft + 'px'});
+//                                 } else {
+//                                     // el.parent().height(min);
+//                                     el.addClass('bottom');
+//                                     el.removeClass('fixed');
+//                                     el.removeAttr('style');
+//                                 }
+//                             } else {
+//                                 //el.parent().removeAttr('style');
+//                                 el.removeClass('fixed');
+//                                 el.removeClass('bottom');
+//                                 el.removeAttr('style');
+//                             }
+//                         } else {
+//                             //el.parent().removeAttr('style');
+//                             el.removeClass('fixed');
+//                             el.removeClass('bottom');
+//                             el.removeAttr('style');
+//                         }
+//                     } else {
+//                         //el.parent().removeAttr('style');
+//                         el.removeClass('fixed');
+//                         el.removeClass('bottom');
+//                         el.removeAttr('style');
+//                     }
+//                 }, 300);
 
-            });
-        });
-    }
-}
+//             });
+//         });
+//     }
+// }
 
 $('[data-ul-title]').click(function() {
     var el = $(this);

@@ -37,8 +37,10 @@ body {
 
 .page {
     min-width: 320px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 100%;
+    height: 100vh;
     position: relative;
 
     &:after {
@@ -507,6 +509,16 @@ table {
 
     .text-xs-right {
         text-align: right !important;
+    }
+}
+
+.position-sticky {
+    @media (min-width: $lg + 1) {
+        position: -webkit-sticky;
+        position: sticky;
+        align-self: flex-start;
+        top: 0;
+        z-index: 1;
     }
 }
 
