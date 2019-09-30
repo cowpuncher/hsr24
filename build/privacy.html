@@ -4482,6 +4482,7 @@
         <div class="elem-item">
             <label class="elem-label" required>Ваш номер телефона</label>
             <input type="tel" class="elem-input" placeholder="+ 7 (___) ___-__-__" data-phone tabindex="0">
+            <div class="elem-input--error">Проверьте правильность введенного номера телефона.</div>
         </div>
         <div class="elem-btn__wrap popup__btn">
             <button class="elem-btn btn-getcode">Получить код </button>
@@ -4521,6 +4522,14 @@
             <a href="#reg" class="elem-btn" data-popup-modal>Зарегистрироваться</a>
         </div>
     </form>
+
+    <div class="popup__error">
+        <div class="popup__error-text">Пользователь с номером телефона <br /><span class="popup__error-tel"></span> не найден</div>
+        <div class="elem-btn__wrap popup__btn">
+            <button href="#reg" class="elem-btn" data-popup-modal>Зарегистрироваться</button>
+        </div>
+    </div>
+
 </div>
 
 <div id="reg" class="popup popup--small mfp-hide">
@@ -4546,6 +4555,7 @@
         <div class="elem-item">
             <label class="elem-label" required>Ваш номер телефона</label>
             <input type="tel" class="elem-input" placeholder="+ 7 (___) ___-__-__" data-phone tabindex="0">
+            <div class="elem-input--error">Проверьте правильность введенного номера телефона.</div>
         </div>
         <div class="elem-btn__wrap popup__btn">
             <button class="elem-btn btn-getcode">Получить код </button>
