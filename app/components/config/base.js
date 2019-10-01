@@ -325,7 +325,7 @@ $('[data-promo]').keyup(function() {
     }
 });
 
-$('#login [data-phone], #reg [data-phone]').change(function() {
+$('#login [data-phone], #reg [data-phone], .phone-number-change [data-phone]').change(function() {
     var el = $(this);
     var errorText = el.next('.elem-input--error');
     var val = el.val().replace('_','');
@@ -339,16 +339,16 @@ $('#login [data-phone], #reg [data-phone]').change(function() {
     }
 });
 
-$('#login [data-phone]').keyup(function() {
-    var el = $(this);
-    if (el.val() !== '+7 (999) 999-99-99') {
-        $('.btn-getcode').click(function() {
-            el.closest('form').hide();
-            $('#login .popup__error').show();
-            $('.popup__error-tel').html(el.val());
-        })
-    }
-})
+// $('#login [data-phone]').keyup(function() {
+//     var el = $(this);
+//     if (el.val() !== '+7 (999) 999-99-99') {
+//         $('.btn-getcode').click(function() {
+//             el.closest('form').hide();
+//             $('#login .popup__error').show();
+//             $('.popup__error-tel').html(el.val());
+//         })
+//     }
+// })
 
 $('[data-form-promo]').submit(function(e) {
     var el = $(this);
