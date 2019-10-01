@@ -325,7 +325,7 @@ $('[data-promo]').keyup(function() {
     }
 });
 
-$('#login [data-phone], #reg [data-phone]').change(function() {
+$('#login [data-phone], #reg [data-phone], .phone-number-change [data-phone]').change(function() {
     var el = $(this);
     var errorText = el.next('.elem-input--error');
     var val = el.val().replace('_','');

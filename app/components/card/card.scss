@@ -175,6 +175,10 @@
                 &__like {
                     display: flex;
                 }
+
+                &__name {
+                    max-width: 160px;
+                }
             }
         }
     }
