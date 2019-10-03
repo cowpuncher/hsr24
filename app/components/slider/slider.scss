@@ -123,6 +123,10 @@
         position: relative;
         vertical-align: top;
 
+        &:not(:first-child) {
+            display: none;
+        }
+
         & .elem-btn {
             position: absolute;
             bottom: 90px;
