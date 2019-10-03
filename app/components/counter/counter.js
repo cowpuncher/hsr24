@@ -30,7 +30,7 @@ class Counter {
                 min = parseInt($input.attr('min'));
                 max = parseInt($input.attr('max'));
                 a++;
-                $input.val(a);
+                $input.val(a).change();
 
                 if (a < max) {
                 } else {
@@ -49,7 +49,7 @@ class Counter {
                 min = parseInt($input.attr('min'));
                 max = parseInt($input.attr('max'));
                 b--;
-                $input.val(b);
+                $input.val(b).change();
 
                 if (b > min) {
                 } else {
