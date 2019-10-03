@@ -80,7 +80,7 @@ class Popap {
                     // var myPlacemark;
                     // var myMap;
 
-                    var autocompleteCity = $('[data-autocomplete-city]');
+                    // var autocompleteCity = $('[data-autocomplete-city]');
 
                     // $('[data-map-city]').each(function() {
                     //     var el = $(this);
@@ -140,122 +140,127 @@ class Popap {
                     //     //}
                     // });
 
-                    if (autocompleteCity.length) {
-                        var states = [
-                            {
-                                id:"Москва",
-                                value:"Москва",
-                                label:"Москва",
-                                x: "55.7535",
-                                y: "37.6176"
-                            },
-                            {
-                                id:"Абрамцево",
-                                value:"Абрамцево",
-                                label:"Абрамцево",
-                                x: "56.2127",
-                                y: "37.9679"
-                            },
-                            {
-                                id:"Алабино",
-                                value:"Алабино",
-                                label:"Алабино",
-                                x: "55.5254",
-                                y: "37.0008"
-                            },
-                            {
-                                id:"Апрелевка",
-                                value:"Апрелевка",
-                                label:"Апрелевка",
-                                x: "55.5452",
-                                y: "37.0732"
-                            },
-                            {
-                                id:"Архангельское",
-                                value:"Архангельское",
-                                label:"Архангельское",
-                                x: "54.4077",
-                                y: "56.7863"
-                            },
-                            {
-                                id:"Ашитково",
-                                value:"Ашитково",
-                                label:"Ашитково",
-                                x: "55.4356",
-                                y: "38.5998"
-                            },
-                            {
-                                id:"Байконур",
-                                value:"Байконур",
-                                label:"Байконур",
-                                x: "45.6225",
-                                y: "63.3177"
-                            },
-                            {
-                                id:"Бакшеево",
-                                value:"Бакшеево",
-                                label:"Бакшеево",
-                                x: "55.7108",
-                                y: "39.8713"
-                            },
-                            {
-                                id:"Балашиха",
-                                value:"Балашиха",
-                                label:"Балашиха",
-                                x: "55.7963",
-                                y: "37.9382"
-                            },
-                            {
-                                id:"Барыбино",
-                                value:"Барыбино",
-                                label:"Барыбино",
-                                x: "55.2633",
-                                y: "37.8931"
-                            },
-                            {
-                                id:"Белоомут",
-                                value:"Белоомут",
-                                label:"Белоомут",
-                                x: "54.9440",
-                                y: "39.3396"
-                            }
-                        ];
+                    // if (autocompleteCity.length) {
+                    //     var states = [
+                    //         {
+                    //             id:"Москва",
+                    //             value:"Москва",
+                    //             label:"Москва",
+                    //             x: "55.7535",
+                    //             y: "37.6176"
+                    //         },
+                    //         {
+                    //             id:"Абрамцево",
+                    //             value:"Абрамцево",
+                    //             label:"Абрамцево",
+                    //             x: "56.2127",
+                    //             y: "37.9679"
+                    //         },
+                    //         {
+                    //             id:"Алабино",
+                    //             value:"Алабино",
+                    //             label:"Алабино",
+                    //             x: "55.5254",
+                    //             y: "37.0008"
+                    //         },
+                    //         {
+                    //             id:"Апрелевка",
+                    //             value:"Апрелевка",
+                    //             label:"Апрелевка",
+                    //             x: "55.5452",
+                    //             y: "37.0732"
+                    //         },
+                    //         {
+                    //             id:"Архангельское",
+                    //             value:"Архангельское",
+                    //             label:"Архангельское",
+                    //             x: "54.4077",
+                    //             y: "56.7863"
+                    //         },
+                    //         {
+                    //             id:"Ашитково",
+                    //             value:"Ашитково",
+                    //             label:"Ашитково",
+                    //             x: "55.4356",
+                    //             y: "38.5998"
+                    //         },
+                    //         {
+                    //             id:"Байконур",
+                    //             value:"Байконур",
+                    //             label:"Байконур",
+                    //             x: "45.6225",
+                    //             y: "63.3177"
+                    //         },
+                    //         {
+                    //             id:"Бакшеево",
+                    //             value:"Бакшеево",
+                    //             label:"Бакшеево",
+                    //             x: "55.7108",
+                    //             y: "39.8713"
+                    //         },
+                    //         {
+                    //             id:"Балашиха",
+                    //             value:"Балашиха",
+                    //             label:"Балашиха",
+                    //             x: "55.7963",
+                    //             y: "37.9382"
+                    //         },
+                    //         {
+                    //             id:"Барыбино",
+                    //             value:"Барыбино",
+                    //             label:"Барыбино",
+                    //             x: "55.2633",
+                    //             y: "37.8931"
+                    //         },
+                    //         {
+                    //             id:"Белоомут",
+                    //             value:"Белоомут",
+                    //             label:"Белоомут",
+                    //             x: "54.9440",
+                    //             y: "39.3396"
+                    //         }
+                    //     ];
+                    //
+                    //     autocompleteCity.each(function() {
+                    //         var el = $(this);
+                    //
+                    //         el.autocomplete({
+                    //             source: states,
+                    //             appendTo: '.ui-autocomplete__wrap',
+                    //             minLength: 1,
+                    //             open: function( event, ui ) {
+                    //                 $('.ui-autocomplete__wrap').show();
+                    //             },
+                    //             close: function( event, ui ) {
+                    //                 $('.ui-autocomplete__wrap').hide();
+                    //             },
+                    //             select: function (event, ui) {
+                    //                 var x = parseFloat(ui.item.x);
+                    //                 var y = parseFloat(ui.item.y);
+                    //
+                    //                 for (var i = 0; i < count; i++) {
+                    //
+                    //                     //maps[i].setZoom(10);
+                    //                     maps[i].setCenter([x,y]);
+                    //
+                    //                     // setTimeout(() => {
+                    //                     //     maps[i].setZoom(12);
+                    //                     // }, 2000);
+                    //                 };
+                    //
+                    //                 return false;
+                    //             }
+                    //         });
+                    //     });
+                    //
+                    // }
 
-                        autocompleteCity.each(function() {
-                            var el = $(this);
+                  // масштабирование карты
+                  if (typeof pvzmap !== 'undefined'){
+                    pvzmap.map.setBounds(pvzmap.pvzCollection.getBounds());
+                  }
 
-                            el.autocomplete({
-                                source: states,
-                                appendTo: '.ui-autocomplete__wrap',
-                                minLength: 1,
-                                open: function( event, ui ) {
-                                    $('.ui-autocomplete__wrap').show();
-                                },
-                                close: function( event, ui ) {
-                                    $('.ui-autocomplete__wrap').hide();
-                                },
-                                select: function (event, ui) {
-                                    var x = parseFloat(ui.item.x);
-                                    var y = parseFloat(ui.item.y);
-
-                                    for (var i = 0; i < count; i++) {
-
-                                        //maps[i].setZoom(10);
-                                        maps[i].setCenter([x,y]);
-
-                                        // setTimeout(() => {
-                                        //     maps[i].setZoom(12);
-                                        // }, 2000);
-                                    };
-
-                                    return false;
-                                }
-                            });
-                        });
-
-                    }
-
-                    $('.slick-initialized').slick('refresh');
+                  $('.slick-initialized').slick('refresh');
                 },
                 close: function() {
                   // Will fire when popup is closed
