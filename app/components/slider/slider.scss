@@ -64,7 +64,7 @@
         justify-content: center;
         position: absolute;
         left: 0;
-        bottom: 45px;
+        bottom: 35px;
         width: 100%;
 
         @media (max-width: $lg) {
@@ -125,7 +125,7 @@
 
         & .elem-btn {
             position: absolute;
-            bottom: 120px;
+            bottom: 90px;
             left: 50%;
             transform: translate(-50%, 0);
 

@@ -325,18 +325,59 @@ $('[data-promo]').keyup(function() {
     }
 });
 
+$('.elem-input').change(function() {
+    var el = $(this);
+    var errorMsg = '<div class="elem-input-error">Поле не должно оставаться пустым</div>';
+
+    if (el.prev().is('[required]')) {
+        if (el.val() == '') {
+            el.addClass('error');
+            el.next('.elem-input-error').remove();
+            el.parent().append(errorMsg);
+        } else {
+            el.removeClass('error');
+            el.next('.elem-input-error').remove();
+        }
+    }
+})
+
 $('#login [data-phone], #reg [data-phone], .phone-number-change [data-phone]').change(function() {
     var el = $(this);
-    var errorText = el.next('.elem-input--error');
+    var errorMsg = '<div class="elem-input-error">Проверьте правильность введенного номера телефона.</div>';
     var val = el.val().replace('_','');
 
     if (val.length < 18) {
         el.addClass('error');
-        errorText.show();
+        el.next('.elem-input-error').remove();
+        el.parent().append(errorMsg);
     } else {
         el.removeClass('error');
-        errorText.hide();
+        el.next('.elem-input-error').remove();
     }
+});
+
+$('.elem-input[type = email]').change(function () {
+    var el = $(this);
+
+    var errorMsg = '<div class="elem-input-error">Проверьте правильность введенного email-адреса.</div>';
+    var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+
+    if (el.val() != '') {
+        if (pattern.test(el.val())) {
+            el.removeClass('error');
+            el.next('.elem-input-error').remove();
+        } else {
+            el.addClass('error');
+            el.next('.elem-input-error').remove();
+            el.parent().append(errorMsg);
+        }
+    } else {
+        errorMsg = '<div class="elem-input-error">Поле не должно оставаться пустым</div>';
+        el.addClass('error');
+        el.next('.elem-input-error').remove();
+        el.parent().append(errorMsg);
+    }
+
 });
 
 // $('#login [data-phone]').keyup(function() {

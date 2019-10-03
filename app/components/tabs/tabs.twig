@@ -309,14 +309,14 @@
 
                         <div class="row elem-item__row flex-md-row-reverse page-order__row">
 
-                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col order-lg-2">
                                 <div class="elem-item elem-item--md">
                                     <label class="elem-label">Дата рождения</label>
                                     <input type="text" class="elem-input elem-input--white" id="date-of-birth" placeholder="ДД.ММ.ГГГГ" readonly="readonly">
                                 </div>                            
                             </div>
 
-                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col order-lg-1">
                                 <div class="elem-item elem-item--md">
                                     <label class="elem-label">Пол</label>
                                     
@@ -325,14 +325,14 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col">
+                            <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col order-lg-3">
                                 <div class="elem-item">
                                     <label class="elem-label">E-mail</label>
                                     <input type="email" class="elem-input" value="kateika8@mail.ru">
                                 </div>
 
                                 <label class="elem-radio">
-                                    <input type="radio" class="elem-radio__input" name="radio-mailing">
+                                    <input type="checkbox" class="elem-radio__input" name="radio-mailing">
                                     <span class="elem-radio__span">Я хочу получать новостную рассылку</span>
                                 </label>
                             </div>
@@ -375,14 +375,14 @@
 
                         <div class="row elem-item__row page-order__row align-items-center">
 
-                            <div class="col-12 col-xl-9 col-lg-9 col-md-8 col-sm-9">
+                            {# <div class="col-12 col-xl-9 col-lg-9 col-md-8 col-sm-9">
                                 <label class="elem-radio">
-                                    <input type="radio" class="elem-radio__input" name="radio-policy">
+                                    <input type="checkbox" class="elem-radio__input" name="radio-policy">
                                     <span class="elem-radio__span"><span>Я согласен(на) с условиями&nbsp;<a href="#" class="elem-link elem-link--red d-inline">Политики конфиденциальности.</a></span></span>
                                 </label>
-                            </div>
+                            </div> #}
 
-                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-3 offset-xl-9 offset-lg-9 offset-md-8 offset-sm-9">
                                  <button class="elem-btn elem-btn--lg elem-btn--w100 elem-btn--mob-m-t-10">Сохранить изменения</button>
                             </div>
 
@@ -403,7 +403,7 @@
                             </div>
                         </div>
 
-                        <div class="row phone-number-change align-items-end">
+                        <div class="row elem-item__row phone-number-change align-items-end">
                             <div class="col-12 col-xl-4 col-lg-4 col-md-4">
                                 <div class="elem-item elem-item--no-margin-bottom">
                                     <label class="elem-label">Введите новый номер</label>
