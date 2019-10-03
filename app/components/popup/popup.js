@@ -257,7 +257,9 @@ class Popap {
 
                   // масштабирование карты
                   if (typeof pvzmap !== 'undefined'){
-                    pvzmap.map.setBounds(pvzmap.pvzCollection.getBounds());
+                    setTimeout(function(){
+                      pvzmap.map.setBounds(pvzmap.pvzCollection.getBounds());
+                    }, 200);
                   }
 
                   $('.slick-initialized').slick('refresh');
