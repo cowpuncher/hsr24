@@ -387,12 +387,13 @@ $('.elem-input[type = email]').change(function () {
 
 });
 
-var requiredFields = $('#reg .elem-item [required]').next();
+var requiredFields = $('#reg [data-required]');
 
 requiredFields.change(function() {
     
     var errorFields = 0;
     var emptyFields = 0;
+    var policyStatus = $('#reg [name = radio-policy]').is(':checked');
 
     requiredFields.each(function() {
         var el = $(this);
@@ -407,12 +408,12 @@ requiredFields.change(function() {
 
     })
 
-    if (errorFields > 0 || emptyFields > 0) {
+    console.log(policyStatus);
+
+    if (errorFields > 0 || emptyFields > 0 || !policyStatus) {
         $('#reg .btn-getcode').attr('disabled', true);
-        $('#reg [name = radio-policy]').attr('disabled', true);
     } else {
         $('#reg .btn-getcode').removeAttr('disabled');
-        $('#reg [name = radio-policy]').removeAttr('disabled');
     }
     
 })
