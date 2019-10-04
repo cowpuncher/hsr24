@@ -250,24 +250,31 @@ $(window).resize(function() {
 });
 
 // маска в инпутах
-$('[data-date]').mask("99/99/9999");
-$('[data-phone]').mask("+7 (999) 999-99-99", {
-    autoclear: false
-});
-$('[data-card-num]').mask("9999 9999 9999 9999");
-$('[data-ssn]').mask("999-99-9999");
-//$('[data-promo]').mask("9999");
+// $('[data-date]').mask("99/99/9999");
+// $('[data-phone]').mask("+7 (999) 999-99-99", {
+//     autoclear: false
+// });
+// $('[data-card-num]').mask("9999 9999 9999 9999");
+// $('[data-ssn]').mask("999-99-9999");
+// //$('[data-promo]').mask("9999");
 
-$('[data-date-completed]').mask("99/99/9999", {
-    placeholder:" ",
-    completed: function() {
-        alert("You typed the following: "+$(this).val());
-    },
-    autoclear: false
-});
+// $('[data-date-completed]').mask("99/99/9999", {
+//     placeholder:" ",
+//     completed: function() {
+//         alert("You typed the following: "+$(this).val());
+//     },
+//     autoclear: false
+// });
 
-$.mask.definitions['~']='[+-]';
-$('[data-phone-definitions]').mask("~9.99 ~9.99 999");
+// $.mask.definitions['~']='[+-]';
+// $('[data-phone-definitions]').mask("~9.99 ~9.99 999");
+
+// Маски для нового плагина
+$('[data-date]').inputmask("99/99/9999");
+$('[data-phone]').inputmask("+7 (999) 999-99-99");
+$('[data-card-num]').inputmask("9999 9999 9999 9999");
+$('[data-ssn]').inputmask("999-99-9999");
+$('[data-promo]').inputmask("9999");
 
 // Валидация форм
 $('[data-validate]').validate({
@@ -379,6 +386,37 @@ $('.elem-input[type = email]').change(function () {
     }
 
 });
+
+var requiredFields = $('#reg .elem-item [required]').next();
+
+requiredFields.change(function() {
+    
+    var errorFields = 0;
+    var emptyFields = 0;
+
+    requiredFields.each(function() {
+        var el = $(this);
+       
+        if (el.val() == '') {
+            emptyFields++;
+        } 
+        
+        if (el.hasClass('error')) {
+            errorFields++;
+        }
+
+    })
+
+    if (errorFields > 0 || emptyFields > 0) {
+        $('#reg .btn-getcode').attr('disabled', true);
+        $('#reg [name = radio-policy]').attr('disabled', true);
+    } else {
+        $('#reg .btn-getcode').removeAttr('disabled');
+        $('#reg [name = radio-policy]').removeAttr('disabled');
+    }
+    
+})
+
 
 // $('#login [data-phone]').keyup(function() {
 //     var el = $(this);
