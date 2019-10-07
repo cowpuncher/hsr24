@@ -62,6 +62,7 @@
                                 <div class="menu{{pr}}__detail-icon dark">{{ svg.icon(item.detailIcon) }}</div>
                             {% endif %}
                         </div>
+                        <div class="menu{{pr}}__arrow"></div>
                     </a>
 
                     {% endif %}
@@ -100,7 +101,7 @@
                                         <div class="menu{{pr}}__col">
 
                                             {% if item2.title %}
-                                                <h5 class="menu{{pr}}__drop-title" {% if item2.list %}data-menu-bottom-drop{% endif %}><a href="#">{{ item2.title }}</a></h5>
+                                                <h5 class="menu{{pr}}__drop-title" {% if item2.list %}data-menu-bottom-drop{% endif %}><a href="#">{{ item2.title }} <div class="menu{{pr}}__arrow"></div></a></h5>
                                             {% endif %}
 
                                             <ul class="menu{{pr}}__drop-list {% if item2.category %}category{% endif %}" {% if item2.list %}data-menu-bottom-drop-menu{% endif %}>
@@ -118,6 +119,7 @@
                                                     <li class="menu{{pr}}__drop-item {% if item3.class %}{{ item3.class }}{% endif %}" {% if item3.list %}data-menu-bottom-drop{% endif %}>
                                                         <a href="{{ item3.href }}" class="menu{{pr}}__drop-link" >
                                                             <div class="menu{{pr}}__drop-text">{{ item3.text }}</div>
+                                                            <div class="menu{{pr}}__arrow"></div>
                                                         </a>
                                                     </li>
                                                 {% endfor %}
