@@ -293,6 +293,15 @@
             }
         }
 
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+
+        .slider-product__item img {
+            max-height: 658px;
+        }
+
         .slick-list &__item {
             display: block;
         }
