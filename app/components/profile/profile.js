@@ -1,7 +1,7 @@
 function changeNumber() {
 
     $('.phone-number-change').removeClass('active');
-    $('.phone-number-change').find('.sms').removeClass('active');
+    // $('.phone-number-change').find('.sms').removeClass('active');
 
     $('.change-number-btn').click(function (e) {
         var el = $(this);
@@ -12,14 +12,14 @@ function changeNumber() {
         e.preventDefault();
     });
 
-    $('.change-number-getcode').click(function (e) {
-        var el = $(this);
-
-        el.removeClass('active');
-        el.parents().find('.sms-code').addClass('active');
-
-        e.preventDefault();
-    });
+    // $('.change-number-getcode').click(function (e) {
+    //     var el = $(this);
+    //
+    //     el.removeClass('active');
+    //     el.parents().find('.sms-code').addClass('active');
+    //
+    //     e.preventDefault();
+    // });
 
     // $('.sms-code .sms__input input').keyup(function() {
     //     var el = $(this);
