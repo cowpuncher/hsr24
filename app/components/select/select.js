@@ -95,7 +95,7 @@ class Select {
     $('select[data-filter]').on('change', function(){
       // var selected = $(this).val();
 
-      print(selected);
+      print($(this));
       checkChoose();
     });
 
