@@ -7,7 +7,9 @@
     "slick-carousel": "^1.8.1",
     "air-datepicker": "^2.2.3",
     "svgxuse": "^1.2.6",
-    "swiper": "^4.5.0"
+    "picturefill": "^3.0.3",
+    "swiper": "^5.0.4",
+    "inputmask": "^4.0.9"
   },
   "devDependencies": {
     "magnific-popup": "^1.1.0",

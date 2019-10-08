@@ -74,6 +74,7 @@
         &--list {
             position: relative;
             padding-right: 22px;
+            z-index: 99;
 
             &:after {
                 content: '';

@@ -79,12 +79,12 @@ class Menu {
                 drop.removeAttr('style');
                 drop.find('[data-menu-bottom-drop-arrow]').removeAttr('style');
 
-                el.find('a').click(function(e) {
+                el.find('.menu-bottom__arrow').click(function(e) {
 
-                    if ($(this).parent('.menu-bottom__drop-title').length) {
-                        $(this).parent().next().addClass('open');
+                    if ($(this).parent().parent('.menu-bottom__drop-title').length) {
+                        $(this).parent().parent().next().addClass('open');
                     } else {
-                        $(this).next().addClass('open');
+                        $(this).parent().next().addClass('open');
                     }
 
                     e.preventDefault();

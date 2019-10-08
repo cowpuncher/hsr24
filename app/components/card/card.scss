@@ -175,6 +175,10 @@
                 &__like {
                     display: flex;
                 }
+
+                &__name {
+                    max-width: 160px;
+                }
             }
         }
     }
@@ -312,14 +316,22 @@
         position: relative;
         width: 100%;
         border-bottom: 1px solid $color-smoke;
-
-        height: 250px;
+        height: 248px;
         text-align: center;
+
+        @media (max-width: $lg) {
+            height: 194px;
+        }
+
+        @media (max-width: $sm) {
+            height: 138px;
+        }
 
         & img {
             // width: 100%;
             vertical-align: top;
             border-radius: 5px 5px 0 0;
+            max-height: 100%;
             
             @media (max-width: $md) {
                 border-radius: 3px;

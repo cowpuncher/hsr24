@@ -4,7 +4,7 @@ function changeNumber() {
     $('.phone-number-change').find('.sms').removeClass('active');
 
     $('.change-number-btn').click(function (e) {
-        var el =  $(this);
+        var el = $(this);
 
         el.closest('.phone-number').removeClass('active');
         el.parents().find('.phone-number-change').addClass('active');
@@ -13,8 +13,8 @@ function changeNumber() {
     });
 
     $('.change-number-getcode').click(function (e) {
-        var el =  $(this);
-        
+        var el = $(this);
+
         el.removeClass('active');
         el.parents().find('.sms-code').addClass('active');
 
@@ -34,7 +34,7 @@ changeNumber();
 function showMoreInfo() {
 
     $('.td--order-more').click(function (e) {
-        var el =  $(this);
+        var el = $(this);
 
         el.parent().next('.more-info').toggleClass('active');
         el.find('.icon-arrow-down').toggleClass('active');
@@ -58,7 +58,48 @@ function smsAutoFocus() {
 
 smsAutoFocus();
 
-$("#date-of-birth").datepicker();
+$("#date-of-birth").datepicker({
+
+    onSelect: function (date) {
+        var el = $("#date-of-birth");
+
+        var errorMsg = '<div class="elem-input-error">Проверьте правильность выбранной даты рождения.</div>';
+        var now = new Date();
+        var nowDd = now.getDate();
+        var nowMm = now.getMonth() + 1;
+        var nowYyyy = now.getFullYear();
+
+        if (nowDd < 10) {
+            nowDd = "0" + nowDd;
+        }
+
+        if (nowMm < 10) {
+            nowMm = "0" + nowMm;
+        }
+
+        var arrDate = date.split('.');
+
+        var dateDd = arrDate[0];
+        var dateMm = arrDate[1];
+        var dateYyyy = arrDate[2];
+
+        // console.log(nowDd, nowMm,  nowYyyy);
+        // console.log(arrDate);
+        // console.log(dateDd, dateMm, dateYyyy);
+
+        if ((nowDd < dateDd && nowMm == dateMm && nowYyyy == dateYyyy) ||
+            (nowMm < dateMm && nowYyyy == dateYyyy) ||
+            (nowYyyy < dateYyyy)) {
+            el.addClass('error');
+            el.next('.elem-input-error').remove();
+            el.parent().append(errorMsg);
+        } else {
+            el.removeClass('error');
+            el.next('.elem-input-error').remove();
+        }
+
+    }
+});
 
 function getCode() {
 
