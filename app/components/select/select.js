@@ -55,7 +55,7 @@ class Select {
                         <div class="filter__info-item">
                             <input type="hidden" name="${nameSelected}" value="${selected[i]}" >
                             <div class="filter__info-text">${valueSelected}</div>
-                            <a href="#" class="elem-cancel" data-filter-cancel="data-size">
+                            <a href="#" class="elem-cancel" data-filter-cancel="${filter.replace('-filter', '')}">
                                 <svg aria-hidden="true" class="icon icon-cancel">
                                     <use xlink:href="${bxTemplatePath}/assets/images/required/sprite.svg#cancel"></use>
                                 </svg>
