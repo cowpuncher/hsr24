@@ -3,6 +3,7 @@
     background: $color-smoke;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     @media (max-width: $lg) {
         margin-top: 28px;
