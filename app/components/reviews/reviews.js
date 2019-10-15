@@ -8,13 +8,12 @@ class Reviews {
 
 		var text = $('.reviews__text');
 		// text.append('<div class="reviews__text-bg"></div>');
-		
+
 		text.each(function moreText() {
 			var el = $(this);
 			// var gradient = el.find('.reviews__text-bg');
 			var btn = el.parent().find('.reviews__btn');
-			console.log(el.prop('scrollHeight') - 2);
-			
+
 			if ((el.prop('scrollHeight') - 2) < el.height()) {
 				// gradient.hide();
 				// btn.hide();
@@ -23,7 +22,7 @@ class Reviews {
 			}
 		})
 
-		
+
 		$('.reviews__btn').click(function(e) {
 
 			var el = $(this);
@@ -37,7 +36,7 @@ class Reviews {
 			e.preventDefault();
 		})
 
-		
+
 		$('[data-review-text]').change(function() {
 			if ($('[data-review-text]').val() != "") {
 				$('[data-review-send]').attr('href', '#success');
@@ -45,7 +44,7 @@ class Reviews {
 				$('[data-review-send]').attr('href', '#fail');
 			}
 		});
-			
+
 	}
 }
 

@@ -340,6 +340,11 @@
     }
 
     &-product-carousel {
+
+        &.not-transform .slick-track {
+            transform: translate3d(0, 0, 0) !important;
+        }
+
         &__item {
             vertical-align: top;
             position: relative;
