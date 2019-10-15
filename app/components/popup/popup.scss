@@ -205,7 +205,7 @@
 
     &__search {
         position: relative;
-        
+
         & .elem-input {
             border-radius: 16px;
         }
@@ -448,7 +448,7 @@
                 font-size: 12px;
             }
         }
-        
+
     }
 
     &__error {
@@ -459,6 +459,10 @@
             color: $color-red;
             margin-bottom: 30px;
         }
+    }
+
+    & .list .card__bottom {
+        padding-right: 0;
     }
 
 }
