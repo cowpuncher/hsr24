@@ -30,6 +30,10 @@
         position: relative;
         border-radius: 32px;
         overflow: hidden;
+        max-height: 188px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
 
         @media (max-width: $lg) {
             border-radius: 20px;
