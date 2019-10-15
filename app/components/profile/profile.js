@@ -83,6 +83,10 @@ $("#date-of-birth").datepicker({
         var dateMm = arrDate[1];
         var dateYyyy = arrDate[2];
 
+        // console.log(nowDd, nowMm,  nowYyyy);
+        // console.log(arrDate);
+        // console.log(dateDd, dateMm, dateYyyy);
+
         if ((nowDd < dateDd && nowMm == dateMm && nowYyyy == dateYyyy) ||
             (nowMm < dateMm && nowYyyy == dateYyyy) ||
             (nowYyyy < dateYyyy)) {
@@ -97,14 +101,14 @@ $("#date-of-birth").datepicker({
     }
 });
 
-function getCode() {
+// function getCode() {
+//
+//     $('form').find('.sms').hide();
+//
+//     $('.btn-getcode').click(function (e) {
+//         e.preventDefault();
+//         $(this).closest('form').find('.sms').show();
+//     })
+// }
 
-    $('form').find('.sms').hide();
-
-    $('.btn-getcode').click(function (e) {
-        e.preventDefault();
-        $(this).closest('form').find('.sms').show();
-    })
-}
-
-getCode();
+// getCode();
