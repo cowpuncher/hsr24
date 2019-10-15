@@ -57,7 +57,7 @@ function smsAutoFocus() {
 }
 
 smsAutoFocus();
-ы
+
 $("#date-of-birth").datepicker({
 
     onSelect: function (date) {
@@ -111,4 +111,4 @@ $("#date-of-birth").datepicker({
 //     })
 // }
 
-getCode();
+// getCode();
