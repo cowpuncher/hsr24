@@ -283,6 +283,9 @@
             border-radius: 8px;
             overflow: hidden;
             position: relative;
+            text-align: center;
+            display: inline-block;
+            width: auto !important;
 
             @media (max-width: $md) {
                 border-radius: 4px;
@@ -298,8 +301,14 @@
             align-items: center;
         }
 
+        & .slick-slide {
+            text-align: center;
+        }
+
         .slider-product__item img {
             max-height: 658px;
+            width: auto;
+            display: inline-block;
         }
 
         .slick-list &__item {
