@@ -1153,10 +1153,6 @@
             {
                 "img": "assets/images/example/product/img1.jpg",
                 "img2": "assets/images/example/product/img1.jpg"
-            },
-            {
-                "img": "assets/images/example/product/img1.jpg",
-                "img2": "assets/images/example/product/img1.jpg"
             }
         ]
     },
@@ -1179,14 +1175,6 @@
             {
                 "img": "assets/images/example/product/img5.jpg",
                 "img2": "assets/images/example/product/img5.jpg"
-            },
-            {
-                "img": "assets/images/example/product/img6.jpg",
-                "img2": "assets/images/example/product/img6.jpg"
-            },
-            {
-                "img": "assets/images/example/product/img7.jpg",
-                "img2": "assets/images/example/product/img7.jpg"
             }
         ]
     },

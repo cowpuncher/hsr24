@@ -187,7 +187,6 @@ $('[data-favorites]').click(function(e) {
 
 $(window).resize(function() {
     var ww = $(window).width();
-    this.console.log(ww);
 
     $('select').each(function() {
         var el = $(this);
@@ -323,8 +322,6 @@ $('[data-promo]').keyup(function() {
     var el = $(this);
     var val = el.val().replace('_','')
 
-    console.log(val);
-
     if (val.length == 4) {
         el.addClass('succsess');
     } else {
@@ -390,32 +387,30 @@ $('.elem-input[type = email]').change(function () {
 var requiredFields = $('#reg [data-required]');
 
 requiredFields.change(function() {
-    
+
     var errorFields = 0;
     var emptyFields = 0;
     var policyStatus = $('#reg [name = radio-policy]').is(':checked');
 
     requiredFields.each(function() {
         var el = $(this);
-       
+
         if (el.val() == '') {
             emptyFields++;
-        } 
-        
+        }
+
         if (el.hasClass('error')) {
             errorFields++;
         }
 
     })
 
-    console.log(policyStatus);
-
     if (errorFields > 0 || emptyFields > 0 || !policyStatus) {
         $('#reg .btn-getcode').attr('disabled', true);
     } else {
         $('#reg .btn-getcode').removeAttr('disabled');
     }
-    
+
 })
 
 
