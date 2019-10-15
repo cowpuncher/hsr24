@@ -474,7 +474,7 @@ elemBack.each(function() {
     });
 })
 
-
+$('.page-product__info').find('.elem-price-old').prev('.elem-price').addClass('color-red');
 
 $(document).ready(function() {
     var headerHeight = $('.header').outerHeight(true);
@@ -487,7 +487,7 @@ $(document).ready(function() {
         footerHeight = $('.footer').outerHeight(true);
 
         $('main').css('min-height', 'calc(100vh - ' + (headerHeight + footerHeight) + 'px)');
-    })
+    });
 })
 
 $('[data-add]').click(function(e) {
