@@ -336,11 +336,14 @@ $('.elem-input').change(function() {
     if (el.prev().is('[required]')) {
         if (el.val() == '') {
             el.addClass('error');
-            el.next('.elem-input-error').remove();
+            el.parent().find('.elem-input-error').remove();
+            el.parent().find('.elem-input-icon').remove();
             el.parent().append(errorMsg);
+            el.parent().append('<div class="elem-input-icon error"></div>');
         } else {
             el.removeClass('error');
-            el.next('.elem-input-error').remove();
+            el.parent().find('.elem-input-error').remove();
+            el.parent().find('.elem-input-icon').remove();
         }
     }
 })
@@ -352,12 +355,25 @@ $('#login [data-phone], #reg [data-phone], .phone-number-change [data-phone]').c
 
     if (val.length < 18) {
         el.addClass('error');
-        el.next('.elem-input-error').remove();
+        el.parent().find('.elem-input-error').remove();
+        el.parent().find('.elem-input-icon').remove();
         el.parent().append(errorMsg);
+        el.parent().append('<div class="elem-input-icon error"></div>');
     } else {
         el.removeClass('error');
-        el.next('.elem-input-error').remove();
+        el.parent().find('.elem-input-error').remove();
+        el.parent().find('.elem-input-icon').remove();
     }
+});
+
+$(document).on('click', '.elem-input-icon.error', function(){
+    var el = $(this);
+    var input = el.parent().find('.elem-input');
+
+    input.val('');
+    input.removeClass('error');
+    input.parent().find('.elem-input-error').remove();
+    el.remove();
 });
 
 $('.elem-input[type = email]').change(function () {
@@ -369,17 +385,22 @@ $('.elem-input[type = email]').change(function () {
     if (el.val() != '') {
         if (pattern.test(el.val())) {
             el.removeClass('error');
-            el.next('.elem-input-error').remove();
+            el.parent().find('.elem-input-error').remove();
+            el.parent().find('.elem-input-icon').remove();
         } else {
             el.addClass('error');
-            el.next('.elem-input-error').remove();
+            el.parent().find('.elem-input-error').remove();
+            el.parent().find('.elem-input-icon').remove();
             el.parent().append(errorMsg);
+            el.parent().append('<div class="elem-input-icon error"></div>');
         }
     } else {
         errorMsg = '<div class="elem-input-error">Поле не должно оставаться пустым</div>';
         el.addClass('error');
-        el.next('.elem-input-error').remove();
+        el.parent().find('.elem-input-error').remove();
+        el.parent().find('.elem-input-icon').remove();
         el.parent().append(errorMsg);
+        el.parent().append('<div class="elem-input-icon error"></div>');
     }
 
 });

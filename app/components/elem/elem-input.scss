@@ -192,12 +192,29 @@
         background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23F61D2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.71967 6.96967C7.01256 6.67678 7.48744 6.67678 7.78033 6.96967L12 11.1893L16.2197 6.96967C16.5126 6.67678 16.9874 6.67678 17.2803 6.96967C17.5732 7.26256 17.5732 7.73744 17.2803 8.03033L13.0607 12.25L17.2803 16.4697C17.5732 16.7626 17.5732 17.2374 17.2803 17.5303C16.9874 17.8232 16.5126 17.8232 16.2197 17.5303L12 13.3107L7.78033 17.5303C7.48744 17.8232 7.01256 17.8232 6.71967 17.5303C6.42678 17.2374 6.42678 16.7626 6.71967 16.4697L10.9393 12.25L6.71967 8.03033C6.42678 7.73744 6.42678 7.26256 6.71967 6.96967Z' fill='white'/%3E%3C/svg%3E%0A");
         background-repeat: no-repeat;
     }
-    
+
     &-error {
         font-size: 12px;
         line-height: 14px;
         text-align: center;
         color: $color-red;
         margin-top: 10px;
+    }
+
+    &-icon {
+        position: absolute;
+        right: 17px;
+        top: 34px;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+
+        @media (max-width: $lg) {
+            top: 30px;
+        }
+
+        @media (max-width: $md) {
+            top: 31px;
+        }
     }
 }
