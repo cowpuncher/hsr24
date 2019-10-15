@@ -101,14 +101,14 @@ $("#date-of-birth").datepicker({
     }
 });
 
-function getCode() {
+// function getCode() {
+//
+//     $('form').find('.sms').hide();
+//
+//     $('.btn-getcode').click(function (e) {
+//         e.preventDefault();
+//         $(this).closest('form').find('.sms').show();
+//     })
+// }
 
-    $('form').find('.sms').hide();
-
-    $('.btn-getcode').click(function (e) {
-        e.preventDefault();
-        $(this).closest('form').find('.sms').show();
-    })
-}
-
-getCode();
+// getCode();

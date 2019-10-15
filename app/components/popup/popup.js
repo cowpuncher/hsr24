@@ -290,10 +290,10 @@ class Popap {
         $(document).delegate('[data-map-adress]', 'click', function(e) {
             var el = $(this);
             var parent = el.parents('.map__content');
-            var adress = parent.find('[data-map-adress-text]').text();
+            // var adress = parent.find('[data-map-adress-text]').text();
 
-            $('[data-order-detail]').find('[data-order-detail-text]').text(adress);
-            $('[data-order-detail]').show();
+            // $('[data-order-detail]').find('[data-order-detail-text]').text(adress);
+            // $('[data-order-detail]').show();
             $.magnificPopup.close();
             e.preventDefault();
         });
@@ -301,15 +301,15 @@ class Popap {
         $(document).delegate('[data-courier-adress]', 'click', function(e) {
             var el = $(this);
             var parent = el.parents('.popup');
-            var input = parent.find('input');
-            var total = '';
-
-            input.each(function() {
-                total = total + ' ' + $(this).val();
-            });
-
-            $('[data-order-detail]').find('[data-order-detail-text]').text(total);
-            $('[data-order-detail]').show();
+            // var input = parent.find('input');
+            // var total = '';
+            //
+            // input.each(function() {
+            //     total = total + ' ' + $(this).val();
+            // });
+            //
+            // $('[data-order-detail]').find('[data-order-detail-text]').text(total);
+            // $('[data-order-detail]').show();
             $.magnificPopup.close();
             e.preventDefault();
         });
