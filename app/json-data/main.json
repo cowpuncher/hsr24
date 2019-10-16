@@ -965,22 +965,22 @@
         "list": [
             {
                 "text": "Бесплатная доставка <br>от 5000 рублей",
-                
+
                 "icon": "delivery-free"
             },
             {
                 "text": "Доставка <br>в любую точку РФ",
-                
+
                 "icon": "delivery-rf"
             },
             {
                 "text": "Более 1000 <br>пунктов выдачи",
-                
+
                 "icon": "delivery-point"
             },
             {
                 "text": "Выгодная программа<br> лояльности",
-                
+
                 "icon": "delivery-loyality"
             }
         ]
@@ -1493,19 +1493,24 @@
                 "class": "order-lg-8  order-md-4 text-md-right"
             },
             {
-                "href": "#",
-                "text": "Контакты",
+                "href": "http://hh.ru/employer/2527584",
+                "text": "Вакансии",
                 "class": "order-lg-3 md order-md-7"
             },
             {
                 "href": "#",
+                "text": "Контакты",
+                "class": "order-lg-5 md order-md-6"
+            },
+            {
+                "href": "#",
                 "text": "Политика конфиденциальности",
-                "class": "order-lg-7  md order-md-8 text-md-right"
+                "class": "order-lg-8  md order-md-9 text-md-right"
             },
             {
                 "href": "#",
                 "text": "Поставщикам",
-                "class": "order-lg-5 md order-md-6"
+                "class": "order-lg-7 md order-md-8"
             }
         ]
     },
