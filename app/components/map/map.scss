@@ -31,8 +31,15 @@
     }
 
     &__marker {
-        height: 29px;
-        width: 21px;
+        min-height: 29px;
+        min-width: 21px;
+        display: flex;
+        align-items: flex-start;
+
+        & img {
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
     }
 
     & .ymaps-image-with-content-content {
