@@ -18,7 +18,7 @@ var swiper = new Swiper('.swiper-container', {
     // Responsive breakpoints
     breakpoints: {
     // when window width is <= 480px
-    480: {
+    534: {
       slidesPerView: 2,
       spaceBetween: 10,
       allowTouchMove: true
