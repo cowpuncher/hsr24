@@ -58,7 +58,7 @@ function smsAutoFocus() {
 
 smsAutoFocus();
 
-$("#date-of-birth").datepicker({
+var myDataPicker = $("#date-of-birth").datepicker({
 
     onSelect: function (date) {
         var el = $("#date-of-birth");
@@ -99,7 +99,19 @@ $("#date-of-birth").datepicker({
         }
 
     }
+}).data('datepicker');
+
+$('#date-of-birth').on('input', function () {
+    var arr = $('#date-of-birth').val().split('.');
+    var day = arr[0];
+    var mounth = parseInt(arr[1]) - 1;
+    var year = arr[2];
+
+    setTimeout(() => {
+        myDataPicker.selectDate(new Date(year, mounth, day));
+    }, 500);
 });
+
 
 // function getCode() {
 //
