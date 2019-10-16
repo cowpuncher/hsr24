@@ -8,12 +8,17 @@ class Select {
     var bxTemplatePath = '';
 
     function print(select){
-      var selected = select.val();
+      var selected = [];
       var filter = select.attr('data-filter');
       var list = $('[' + filter + ']').find('[data-filter-list]');
       var classSelected = '';
       var nameSelected = '';
       var valueSelected = '';
+      var dataValueSelected = '';
+
+      select.find(':selected').each(function (index, value) {
+        selected.push($(value).attr('data-value'));
+      });
 
       list.children().remove();
 
@@ -32,16 +37,17 @@ class Select {
 
       for (var i = 0; i < selected.length; i++) {
 
-        var optionSelected = select.find('option').eq(i);
+        var optionSelected = select.find('option[data-value="' + selected[i] + '"]');;
         classSelected = optionSelected.attr('class');
         nameSelected = optionSelected.attr('data-name');
-        valueSelected = optionSelected.attr('data-value');
+        dataValueSelected = optionSelected.attr('data-value');
+        valueSelected = optionSelected.val();
 
         if (filter === 'data-filter-color') {
           list.append(`
                         <div class="filter__info-item">
-                            <input type="hidden" name="${nameSelected}" value="${selected[i]}" >
-                            <div class="elem-color ${classSelected}" style="background: ${valueSelected}"></div>
+                            <input type="hidden" name="${nameSelected}" value="${valueSelected}" >
+                            <div class="elem-color ${classSelected}" style="background: ${dataValueSelected}"></div>
                             <a href="#" class="elem-cancel" data-filter-cancel="data-color">
                                 <svg aria-hidden="true" class="icon icon-cancel">
                                     <use xlink:href="${bxTemplatePath}/assets/images/required/sprite.svg#cancel"></use>
@@ -53,8 +59,8 @@ class Select {
         } else if (!(filter === 'data-filter-available')) {
           list.append(`
                         <div class="filter__info-item">
-                            <input type="hidden" name="${nameSelected}" value="${selected[i]}" >
-                            <div class="filter__info-text">${valueSelected}</div>
+                            <input type="hidden" name="${nameSelected}" value="${valueSelected}" >
+                            <div class="filter__info-text">${dataValueSelected}</div>
                             <a href="#" class="elem-cancel" data-filter-cancel="${filter.replace('-filter', '')}">
                                 <svg aria-hidden="true" class="icon icon-cancel">
                                     <use xlink:href="${bxTemplatePath}/assets/images/required/sprite.svg#cancel"></use>
