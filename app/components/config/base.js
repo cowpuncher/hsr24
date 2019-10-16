@@ -269,7 +269,7 @@ $(window).resize(function() {
 // $('[data-phone-definitions]').mask("~9.99 ~9.99 999");
 
 // Маски для нового плагина
-$('[data-date]').inputmask("99/99/9999");
+$('[data-date]').inputmask("99.99.9999");
 $('[data-phone]').inputmask("+7 (999) 999-99-99");
 $('[data-card-num]').inputmask("9999 9999 9999 9999");
 $('[data-ssn]').inputmask("999-99-9999");

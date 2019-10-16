@@ -41,7 +41,7 @@
                                         <div class="swiper-scrollbar"></div>
                                     </div>
 
-                                    
+
                                 {% else %}
 
                                     {% for item2 in item.slider %}
@@ -54,10 +54,10 @@
                             {# <div class="slider-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-slider-cards-progress>
                                 <span class="slider-progress__label sr-only" data-slider-cards-progress-label>
                             </div> #}
-                            
+
                         </div>
 
-                        
+
                     {% endif %}
                 </div>
             {% endfor %}
@@ -222,7 +222,7 @@
         <div class="tabs-product__body js-tabs-body" data-tabs-body>
             <div class="tabs-product__body-item open" data-tabs-body-item>
                 {{ table.table(data.tableList) }}
-                
+
             </div>
 
             <div class="tabs-product__body-item" data-tabs-body-item>
@@ -245,12 +245,12 @@
     {% import '../../page/_macros/_prefix.twig' as pr %}
     {% import '../../page/_macros/_mod.twig' as mod %}
     {% import '../../page/_macros/_attr.twig' as attr %}
-    
+
     {% import '../../components/select/select.twig' as select %}
     {% import '../../components/table/table.twig' as table %}
     {% import '../../components/card/card.twig' as card %}
     {% import _self as orders %}
-    
+
     {% set pr = pr.generatePrefix('tabs', data.prefix) %}
     {% set mod = mod.generateMod('tabs', data.prefix, data.mod) %}
     {% set attr = attr.generateAttr('tabs', data.prefix) %}
@@ -269,14 +269,14 @@
             {% endfor %}
         </div>
         <div class="tabs__body js-tabs-body" data-tabs-body>
-            
+
             <div class="tabs__body-item open" data-tabs-body-item>
 
                 {{ orders.tabsOrders(data.tabsOrdersTypes) }}
-                
+
                 {# Таблица #}
                 {# {{ table.table(data.tableList) }} #}
-                
+
             </div>
 
             <div class="tabs__body-item" data-tabs-body-item>
@@ -312,16 +312,16 @@
                             <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col order-lg-2">
                                 <div class="elem-item elem-item--md">
                                     <label class="elem-label">Дата рождения</label>
-                                    <input type="text" class="elem-input elem-input--white" id="date-of-birth" placeholder="ДД.ММ.ГГГГ" readonly="readonly">
-                                </div>                            
+                                    <input type="text" class="elem-input elem-input--white" id="date-of-birth" placeholder="ДД.ММ.ГГГГ" data-date>
+                                </div>
                             </div>
 
                             <div class="col-12 col-xl-4 col-lg-4 col-md-4 page-order__col order-lg-1">
                                 <div class="elem-item elem-item--md">
                                     <label class="elem-label">Пол</label>
-                                    
+
                                         {{ select.select(data.sexSelect) }}
-                                    
+
                                 </div>
                             </div>
 
@@ -370,7 +370,7 @@
                                 </div>
                             </div>
 
-                            
+
                         </div>
 
                         <div class="row elem-item__row page-order__row align-items-center">
@@ -656,13 +656,13 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
             </div>
 
         </div>
 
-        
+
     </div>
 {% endmacro %}
 
