@@ -66,63 +66,65 @@ class Slider {
         function recalc() {
             var sliderP = $('[data-slider-product-carousel]');
 
-            sliderP.each(function() {
-                var el = $(this);
+            if (sliderP.length) {
+                sliderP.each(function() {
+                    var el = $(this);
 
-                if (!el.hasClass('slick-initialized')) {
-                    el.slick({
-                        dots: false,
-                        infinite: infinite,
-                        arrows: false,
-                        speed: 300,
-                        prevArrow: prevCarousel,
-                        nextArrow: nextCarousel,
-                        variableWidth: true,
-                        cssEase: 'ease-out',
-                        asNavFor: sliderProduct,
-                        focusOnSelect: true
-                    });
-                }
+                    if (!el.hasClass('slick-initialized')) {
+                        el.slick({
+                            dots: false,
+                            infinite: infinite,
+                            arrows: false,
+                            speed: 300,
+                            prevArrow: prevCarousel,
+                            nextArrow: nextCarousel,
+                            variableWidth: true,
+                            cssEase: 'ease-out',
+                            asNavFor: sliderProduct,
+                            focusOnSelect: true
+                        });
+                    }
 
-                var ww = $(window).width();
-                var sliderPWrapper = el.width();
-                var sliderPItem = el.find('.slick-slide:not(.slick-cloned)');
-                var len = sliderPItem.length;
-                var mr = 27;
+                    var ww = $(window).width();
+                    var sliderPWrapper = el.width();
+                    var sliderPItem = el.find('.slick-slide:not(.slick-cloned)');
+                    var len = sliderPItem.length;
+                    var mr = 27;
 
-                if ((ww < 1280) && (ww > 767)) {
-                    mr = 22;
-                } else if (ww < 768) {
-                    mr = 10
-                } else {
-                    mr = 27;
-                }
+                    if ((ww < 1280) && (ww > 767)) {
+                        mr = 22;
+                    } else if (ww < 768) {
+                        mr = 10
+                    } else {
+                        mr = 27;
+                    }
 
-                var sliderPItemWidth = sliderPItem.width() + mr;
-                var sliderPItemsWidth = sliderPItemWidth * len;
+                    var sliderPItemWidth = sliderPItem.width() + mr;
+                    var sliderPItemsWidth = sliderPItemWidth * len;
 
-                if (sliderPWrapper > sliderPItemsWidth) {
-                    infinite = false;
+                    if (sliderPWrapper > sliderPItemsWidth) {
+                        infinite = false;
 
-                    el.slick('slickSetOption', {
-                        infinite: infinite
-                    }, true);
+                        el.slick('slickSetOption', {
+                            infinite: infinite
+                        }, true);
 
-                    setTimeout(() => {
-                        el.addClass('not-transform');
-                    }, 300);
-                } else {
-                    infinite = true;
+                        setTimeout(() => {
+                            el.addClass('not-transform');
+                        }, 300);
+                    } else {
+                        infinite = true;
 
-                    el.slick('slickSetOption', {
-                        infinite: infinite
-                    }, true);
+                        el.slick('slickSetOption', {
+                            infinite: infinite
+                        }, true);
 
-                    setTimeout(() => {
-                        el.removeClass('not-transform');
-                    }, 300);
-                }
-            });
+                        setTimeout(() => {
+                            el.removeClass('not-transform');
+                        }, 300);
+                    }
+                });
+            }
         }
 
         recalc();
@@ -241,7 +243,7 @@ class Slider {
             ]
         });
 
-        sliderCategory.slick({
+        this.sliderCategory.slick({
             dots: false,
             infinite: true,
             speed: 300,
