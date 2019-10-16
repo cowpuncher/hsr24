@@ -964,19 +964,24 @@
                 "class": "order-lg-8  order-md-4 text-md-right"
             },
             {
-                "href": "#",
-                "text": "Контакты",
+                "href": "http://hh.ru/employer/2527584",
+                "text": "Вакансии",
                 "class": "order-lg-3 md order-md-7"
             },
             {
                 "href": "#",
+                "text": "Контакты",
+                "class": "order-lg-5 md order-md-6"
+            },
+            {
+                "href": "#",
                 "text": "Политика конфиденциальности",
-                "class": "order-lg-7  md order-md-8 text-md-right"
+                "class": "order-lg-8  md order-md-9 text-md-right"
             },
             {
                 "href": "#",
                 "text": "Поставщикам",
-                "class": "order-lg-5 md order-md-6"
+                "class": "order-lg-7 md order-md-8"
             }
         ]
     },
@@ -1043,7 +1048,7 @@
             }
         ]
     },
-  
+
 
     "tabsList": {
         "class": "tabs--profile",
@@ -1123,9 +1128,9 @@
                                 "more": true,
                                 "class": "td--order td--order-more",
                                 "list": {
-                                    
+
                                 }
-                                
+
                             }
                         ],
                         "more": [
@@ -1153,12 +1158,12 @@
                                         "name": "Подвес «Янтарная загадка»"
                                     }
                                 ]
-    
+
                             }
-                        ]         
+                        ]
                     },
                     {
-                    
+
                         "list": [
                             {
                                 "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
@@ -1210,12 +1215,12 @@
                                         "name": "Подвес «Янтарная загадка»"
                                     }
                                 ]
-    
+
                             }
-                        ]       
+                        ]
                     },
                     {
-                    
+
                         "list": [
                             {
                                 "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
@@ -1267,12 +1272,12 @@
                                         "name": "Подвес «Янтарная загадка»"
                                     }
                                 ]
-    
+
                             }
-                        ]       
+                        ]
                     },
                     {
-                    
+
                         "list": [
                             {
                                 "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
@@ -1324,12 +1329,12 @@
                                         "name": "Подвес «Янтарная загадка»"
                                     }
                                 ]
-    
+
                             }
-                        ]       
+                        ]
                     },
                     {
-                    
+
                         "list": [
                             {
                                 "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
@@ -1381,9 +1386,9 @@
                                         "name": "Подвес «Янтарная загадка»"
                                     }
                                 ]
-    
+
                             }
-                        ]       
+                        ]
                     }
                 ]
             }
@@ -1394,10 +1399,10 @@
             "title2": "Пол не выбран",
             "class": "select-custom select-custom--w-100",
             "list": [
-                { 
+                {
                     "text": "Мужской",
                     "value": "male"
-                }, 
+                },
                 {
                     "text": "Женский",
                     "value": "female"
@@ -1461,6 +1466,6 @@
 
     }
 
-    
-   
+
+
 }
