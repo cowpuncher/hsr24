@@ -17,14 +17,14 @@
 {% block content %}
 
 	<div class="container">
-        <form class="container__inner">
+        <form class="container__inner" novalidate>
             {# хлебные крошки #}
             {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
 
-            
+
             <h2 class="elem-title elem-title--inner">Личный кабинет</h2>
 
-            {{ tabs.tabsProfile(tabsList) }}       
+            {{ tabs.tabsProfile(tabsList) }}
 
         </form>
 	</div>
