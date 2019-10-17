@@ -112,6 +112,24 @@
             @media (max-width: $md) {
                 padding-top: 0;
             }
+
+            & .elem-input-icon {
+                right: auto;
+                left: calc(100% - 253px);
+                top: 40px;
+
+                @media (max-width: $lg) {
+                    top: 56px;
+                    left: calc(100% - 264px);
+                }
+
+                @media (max-width: $md) {
+                    top: 110px;
+                    left: auto;
+                    right: 16px;
+                    bottom: 90px;
+                }
+            }
         }
 
         &-icon {
