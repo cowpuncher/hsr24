@@ -21,6 +21,7 @@
   "license": "ISC",
   "homepage": "https://dyarfi.github.io",
   "dependencies": {
+    "@lottiefiles/lottie-player": "^0.2.1",
     "@material/theme": "^1.1.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

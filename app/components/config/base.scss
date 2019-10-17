@@ -92,6 +92,39 @@ body {
     }
 }
 
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: $bg-base;
+    z-index: 9999;
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s linear;
+    }
+
+    &.hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 1s, opacity 1s linear;
+    }
+
+    & > * {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    & path:nth-child(2) {
+        stroke: #F61D2A !important;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	margin: 0;
