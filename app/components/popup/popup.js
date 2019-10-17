@@ -57,13 +57,15 @@ class Popap {
             mainClass: 'mfp-fade',
             removalDelay: 160,
             preloader: false,
-            fixedContentPos: false
+            fixedContentPos: false,
+            closeOnBgClick: false
         });
 
         // Модальное окно
         this.popupModal.magnificPopup({
             type: 'inline',
             closeOnContentClick: false,
+            closeOnBgClick: false,
             callbacks: {
                 open: function() {
                     // var city = [
@@ -277,14 +279,16 @@ class Popap {
 
         // Модальное окно с подгрузкой данных через ajax
         this.popupAjax.magnificPopup({
-            type: 'ajax'
+            type: 'ajax',
+            closeOnBgClick: false
         });
 
         // Модальное окно с подгрузкой данных через ajax - фиксированно сверху и имеет свою прокрутку
         this.popupAjaxTop.magnificPopup({
             type: 'ajax',
             alignTop: true,
-            overflowY: 'scroll'
+            overflowY: 'scroll',
+            closeOnBgClick: false
         });
 
         $(document).delegate('[data-map-adress]', 'click', function(e) {
