@@ -1,5 +1,7 @@
 'use strict';
 
+var loading = 0;
+var preloaderEl = document.getElementById('preloader');
 
 function loadData() {
     return new Promise((resolve, reject) => {
@@ -7,12 +9,20 @@ function loadData() {
     })
 }
 
-loadData()
-    .then(() => {
-      let preloaderEl = document.getElementById('preloader');
+loadData().then(() => {
       preloaderEl.classList.add('hidden');
       preloaderEl.classList.remove('visible');
 });
+
+function startLoad() {
+    preloaderEl.classList.add('visible');
+    preloaderEl.classList.remove('hidden');
+}
+
+function stopLoad() {
+    preloaderEl.classList.add('hidden');
+      preloaderEl.classList.remove('visible');
+}
 
 // стилизация элементов форм
 
@@ -184,17 +194,24 @@ $('[data-ul-title]').click(function() {
 });
 
 $('[data-favorites]').click(function(e) {
-    var el = $(this);
-    el.toggleClass('active');
-    el.find('.icon').toggleClass('active');
 
-    if (el.hasClass('active')) {
-        el.find('span').text('Добавлено в избранное');
+    startLoad();
 
-    } else {
-        el.find('span').text('Добавить в избранное');
+    setTimeout(() => {
+        var el = $(this);
+        el.toggleClass('active');
+        el.find('.icon').toggleClass('active');
 
-    }
+        if (el.hasClass('active')) {
+            el.find('span').text('Добавлено в избранное');
+
+        } else {
+            el.find('span').text('Добавить в избранное');
+
+        }
+
+        stopLoad();
+    }, 2000);
 
     e.preventDefault();
 });
