@@ -198,6 +198,7 @@ table {
 
         & .elem-btn {
             margin-top: auto;
+            vertical-align: bottom;
 
             @media (max-width: $lg) {
                 height: 44px;
@@ -365,16 +366,16 @@ table {
             display: flex;
             flex-direction: column;
             align-items: center;
-    
+
             @media (max-width: $lg) {
                 align-items: flex-start;
             }
 
-            
+
 
             &-items {
                 line-height: 0;
-                
+
                 @media (max-width: $lg) {
                     display: flex;
                     flex-direction: row-reverse;
@@ -494,7 +495,7 @@ table {
 
         & tbody {
             border-bottom: 1px solid $color-gray-light;
-            
+
             @media (max-width: $md) {
                 display: block;
             }
@@ -509,7 +510,7 @@ table {
 
 
             & tr:not(.more-info) {
-                
+
                 @media (max-width: $md) {
                     display: flex;
                     flex-direction: column;
@@ -546,7 +547,7 @@ table {
                             }
                         }
                     }
-                }               
+                }
             }
 
 
@@ -673,12 +674,12 @@ table {
                 // display: none;
                 background-color: $color-smoke;
                 border-radius: 8px;
-                
+
                 height: 0;
                 visibility: hidden;
                 padding: 0;
                 transform: scaleY(0);
-                
+
                 &.active {
                     display: flex;
                     flex-direction: column;
@@ -702,7 +703,7 @@ table {
 
                 &__col {
                     display: block;
-                    
+
                     &:not(:first-child) {
                         margin-top: 20px;
 
@@ -812,7 +813,7 @@ table {
                         line-height: 15px;
                         font-weight: 800;
                         color: $color-white;
-                        background: $color-gray;                        
+                        background: $color-gray;
                     }
                 }
             }
