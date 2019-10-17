@@ -578,4 +578,10 @@ $('.online-support').click(function(e) {
     e.preventDefault();
 
     jivo_api.open();
-})
+});
+
+$(document).mousedown(function (e) {
+    if ($(e.target).hasClass('mfp-content') || $(e.target).hasClass('mfp-container')) {
+        $.magnificPopup.close();
+    }
+});
