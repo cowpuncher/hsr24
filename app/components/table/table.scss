@@ -2,6 +2,10 @@ table {
     table-layout: auto;
     width: 100%;
 
+    & thead {
+        background: $color-base;
+    }
+
     & th {
         font-size: 14px;
         line-height: 16px;
@@ -14,11 +18,15 @@ table {
         &:first-child {
             border-top-left-radius: 24px;
             border-bottom-left-radius: 24px;
+
+            border-right: 1px solid $color-base;
         }
 
         &:last-child {
             border-top-right-radius: 24px;
             border-bottom-right-radius: 24px;
+
+            border-left: 1px solid $color-base;
         }
     }
 
