@@ -27,8 +27,8 @@ class Counter {
             plus.click(function add(e) {
                 var $input = input;
                 var a = $input.val();
-                min = parseInt($input.attr('min'));
-                max = parseInt($input.attr('max'));
+                min = parseInt($input.attr('min')) || 1;
+                max = parseInt($input.attr('max')) || 9999;
                 a++;
                 $input.val(a).change();
 
@@ -46,8 +46,8 @@ class Counter {
             minus.click(function minusButton(e) {
                 var $input = input;
                 var b = $input.val();
-                min = parseInt($input.attr('min'));
-                max = parseInt($input.attr('max'));
+                min = parseInt($input.attr('min')) || 1;
+                max = parseInt($input.attr('max')) || 9999;
                 b--;
                 $input.val(b).change();
 
@@ -61,8 +61,22 @@ class Counter {
             });
 
             input.on('change keyup focus', function() {
-                var removeLetters = $(this).val().replace(/[^0-9]/g, '');
-                $(this).val(removeLetters);
+                var $input = $(this);
+                var removeLetters = $input.val().replace(/[^0-9]/g, '');
+                $input.val(removeLetters);
+
+                min = parseInt($input.attr('min')) || 1;
+                max = parseInt($input.attr('max')) || 9999;
+
+                if (parseInt($input.val()) > max) {
+                    $input.val(max);
+                    plus.click();
+                }
+
+                if (parseInt($input.val()) < min) {
+                    $input.val(min);
+                    minus.click();
+                }
             });
         });
     }
