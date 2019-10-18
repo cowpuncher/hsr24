@@ -146,6 +146,7 @@
         padding: 32px 30px;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         @media (max-width: $lg) {
             padding: 19px 20px;
@@ -165,13 +166,15 @@
 
         & .elem-btn {
             display: flex;
-            margin-left: auto;
-            margin-right: auto;
             margin-top: auto;
 
             &--left {
                 margin-left: 0;
             }
+        }
+
+        > h3 {
+            width: 100%;
         }
     }
 
@@ -297,6 +300,7 @@
             padding: 37px 36px;
             display: flex;
             flex-direction: column;
+            align-items: center;
 
             @media (max-width: $lg) {
                 padding: 28px 27px 18px;
@@ -320,8 +324,6 @@
 
             & .elem-btn {
                 display: flex;
-                margin-left: auto;
-                margin-right: auto;
                 margin-top: auto;
             }
         }
@@ -333,7 +335,9 @@
             }
         }
 
-
+        &__title {
+            width: 100%;
+        }
     }
 
     &__inner--big h3 {

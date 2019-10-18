@@ -38,7 +38,7 @@
             @media (min-width: $lg) {
                 min-height: 49px;
             }
-            
+
         }
     }
 
@@ -128,7 +128,7 @@
                     right: auto;
                     left: 245px;
                 }
-                
+
             }
 
             & .elem-price {
@@ -178,6 +178,16 @@
 
                 &__name {
                     max-width: 160px;
+                }
+            }
+        }
+
+        &--name-full {
+            &.list {
+                & .card {
+                    &__name {
+                        max-width: none;
+                    }
                 }
             }
         }
@@ -238,6 +248,10 @@
             }
         }
 
+        .swiper-container {
+            position: static;
+        }
+
         .popup & {
             & .slick-prev {
                 left: -26px;
@@ -276,7 +290,7 @@
                 // border: 1px solid $color-smoke;
                 // border-radius: 8px;
                 padding: 8px 8px 8px 105px;
-    
+
                 & .card__img {
                     width: 90px;
                     height: 90px;
@@ -299,7 +313,6 @@
             }
         }
 
-        
     }
 
     &--inline &__img {
@@ -332,7 +345,7 @@
             vertical-align: top;
             border-radius: 5px 5px 0 0;
             max-height: 100%;
-            
+
             @media (max-width: $md) {
                 border-radius: 3px;
             }
@@ -954,11 +967,11 @@
             & .elem-btn {
                 width: 100%;
                 max-width: 130px;
-                
+
                 @media (min-width: $md) {
                     max-width: 100%;
                 }
-                
+
             }
         }
     }
