@@ -341,42 +341,15 @@ $.validator.addMethod("requiredphone", function (value, element) {
     return value.replace(/\D+/g, '').length > 1;
 }, "Поле не должно оставаться пустым");
 
-$('[data-validate]').validate({
-    rules: {
-        name: {
-            required: true,
-            minlength: 2
-        },
-        surname: {
-            required: true,
-            minlength: 2
-        },
-        email: {
-            required: true,
-            email: true
-        },
-        phone: {
-            requiredphone: true,
-            minlenghtphone: true
+$.validator.addMethod("fieldRequired", $.validator.methods.required, "Поле не должно оставаться пустым");
+$.validator.addMethod("fieldMinlength", $.validator.methods.minlength, "В поле не должно быть меньше 2 символов");
 
-        },
-        confirm: {
-            equalTo: "#password"
-        }
-      },
-      messages: {
-        name: {
-            required: "Поле не должно оставаться пустым"
-        },
-        email: {
-            required: "Поле не должно оставаться пустым",
-            email: "Проверьте правильность введенного email-адреса."
-        },
-        phone: {
-            required: "Поле не должно оставаться пустым"
-        }
-      }
-});
+$.validator.addClassRules("js-valid-name", { fieldRequired: true, fieldMinlength: 2 });
+$.validator.addClassRules("js-valid-surname", { fieldRequired: true, fieldMinlength: 2 });
+$.validator.addClassRules("js-valid-email", { fieldRequired: true, email: true });
+$.validator.addClassRules("js-valid-phone", { requiredphone: true, minlenghtphone: true });
+
+$('[data-validate]').validate();
 
 $('[data-validate]').submit(function() {
     $(this).validate();
