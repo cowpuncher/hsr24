@@ -335,11 +335,11 @@ $.validator.setDefaults({
 
 $.validator.addMethod("minlenghtphone", function (value, element) {
     return value.replace(/\D+/g, '').length > 10;
-}, "Поле не должно оставаться пустым");
+}, "Проверьте правильность введенного номера телефона.");
 
 $.validator.addMethod("requiredphone", function (value, element) {
     return value.replace(/\D+/g, '').length > 1;
-}, "Проверьте правильность введенного номера телефона.");
+}, "Поле не должно оставаться пустым");
 
 $('[data-validate]').validate({
     rules: {
