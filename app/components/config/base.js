@@ -1,18 +1,18 @@
 'use strict';
 
-var loading = 0;
-var preloaderEl = document.getElementById('preloader');
+// var loading = 0;
+// var preloaderEl = document.getElementById('preloader');
 
-function loadData() {
-    return new Promise((resolve, reject) => {
-      setTimeout(resolve, 2000);
-    })
-}
+// function loadData() {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(resolve, 2000);
+//     })
+// }
 
-loadData().then(() => {
-      preloaderEl.classList.add('hidden');
-      preloaderEl.classList.remove('visible');
-});
+// loadData().then(() => {
+//       preloaderEl.classList.add('hidden');
+//       preloaderEl.classList.remove('visible');
+// });
 
 function startLoad() {
     preloaderEl.classList.add('visible');

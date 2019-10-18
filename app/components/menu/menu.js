@@ -57,6 +57,20 @@ class Menu {
                         var drop = el.children('[data-menu-bottom-drop-menu]');
                         var dropWidth = drop.width();
 
+                        var row = drop.find('.menu-bottom__row');
+
+                        row.each(function() {
+                            var col = $(this).children();
+                            var colWidth = parseInt(drop.css('padding-left')) + parseInt(drop.css('padding-right'));
+
+                            col.each(function() {
+                                colWidth = colWidth + $(this).width() + parseInt($(this).css('margin-right'));
+                            });
+
+                            drop.css({'width': colWidth + 'px'});
+                        });
+
+
                         var ww = $(window).width();
                         var bd = (ww - $('.container').width()) / 2;
 
