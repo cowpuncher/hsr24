@@ -130,7 +130,7 @@ $('#date-of-birth').on('input', function () {
             myDataPicker.selectDate(new Date(year, mounth, day));
         }, 500);
     } else {
-        myDataPicker.selectDate(new Date());
+        myDataPicker.selectDate(now);
     }
 });
 

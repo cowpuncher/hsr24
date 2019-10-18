@@ -667,6 +667,7 @@
         }
 
         &__row {
+            display: flex;
             display: grid;
             max-width: 1216px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
