@@ -307,26 +307,79 @@ $('[data-ssn]').inputmask("999-99-9999");
 $('[data-promo]').inputmask("9999");
 
 // Валидация форм
+$.validator.setDefaults({
+    highlight: function(element) {
+        $(element).addClass("error");
+    },
+
+    unhighlight: function(element) {
+        $(element).removeClass("error");
+        $(element).parent().find('.elem-input-icon').remove();
+    },
+
+    errorElement: "div",
+    errorClass: "elem-input-error",
+
+    errorPlacement: function(error, element) {
+        if (element.parent(".input-group").length ||
+            element.prop("type") === "checkbox" ||
+            element.prop("type") === "radio"
+        ) {
+            error.insertAfter(element.parent());
+        } else {
+            error.insertAfter(element);
+            element.parent().append('<div class="elem-input-icon error"></div>');
+        }
+    }
+});
+
+$.validator.addMethod("minlenghtphone", function (value, element) {
+    return value.replace(/\D+/g, '').length > 10;
+}, "Поле не должно оставаться пустым");
+
+$.validator.addMethod("requiredphone", function (value, element) {
+    return value.replace(/\D+/g, '').length > 1;
+}, "Проверьте правильность введенного номера телефона.");
+
 $('[data-validate]').validate({
-    errorClass: "invalid",
-    validClass: "success",
     rules: {
-        name: "required",
+        name: {
+            required: true,
+            minlength: 2
+        },
+        surname: {
+            required: true,
+            minlength: 2
+        },
         email: {
-          required: true,
-          email: true
+            required: true,
+            email: true
+        },
+        phone: {
+            requiredphone: true,
+            minlenghtphone: true
+
         },
         confirm: {
             equalTo: "#password"
         }
       },
       messages: {
-        name: "Please specify your name",
+        name: {
+            required: "Поле не должно оставаться пустым"
+        },
         email: {
-            required: "We need your email address to contact you",
-            email: "Your email address must be in the format of name@domain.com"
+            required: "Поле не должно оставаться пустым",
+            email: "Проверьте правильность введенного email-адреса."
+        },
+        phone: {
+            required: "Поле не должно оставаться пустым"
         }
       }
+});
+
+$('[data-validate]').submit(function() {
+    $(this).validate();
 });
 
 $('[data-close]').click(function(e) {
@@ -360,43 +413,6 @@ $('[data-promo]').keyup(function() {
     }
 });
 
-$('.elem-input').change(function() {
-    var el = $(this);
-    var errorMsg = '<div class="elem-input-error">Поле не должно оставаться пустым</div>';
-
-    if (el.prev().is('[required]')) {
-        if (el.val() == '') {
-            el.addClass('error');
-            el.parent().find('.elem-input-error').remove();
-            el.parent().find('.elem-input-icon').remove();
-            el.parent().append(errorMsg);
-            el.parent().append('<div class="elem-input-icon error"></div>');
-        } else {
-            el.removeClass('error');
-            el.parent().find('.elem-input-error').remove();
-            el.parent().find('.elem-input-icon').remove();
-        }
-    }
-})
-
-$('#login [data-phone], #reg [data-phone], .phone-number-change [data-phone]').change(function() {
-    var el = $(this);
-    var errorMsg = '<div class="elem-input-error">Проверьте правильность введенного номера телефона.</div>';
-    var val = el.val().replace('_','');
-
-    if (val.length < 18) {
-        el.addClass('error');
-        el.parent().find('.elem-input-error').remove();
-        el.parent().find('.elem-input-icon').remove();
-        el.parent().append(errorMsg);
-        el.parent().append('<div class="elem-input-icon error"></div>');
-    } else {
-        el.removeClass('error');
-        el.parent().find('.elem-input-error').remove();
-        el.parent().find('.elem-input-icon').remove();
-    }
-});
-
 $(document).on('click', '.elem-input-icon.error', function(){
     var el = $(this);
     var input = el.parent().find('.elem-input');
@@ -405,35 +421,6 @@ $(document).on('click', '.elem-input-icon.error', function(){
     input.removeClass('error');
     input.parent().find('.elem-input-error').remove();
     el.remove();
-});
-
-$('.elem-input[type = email]').change(function () {
-    var el = $(this);
-
-    var errorMsg = '<div class="elem-input-error">Проверьте правильность введенного email-адреса.</div>';
-    var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-
-    if (el.val() != '') {
-        if (pattern.test(el.val())) {
-            el.removeClass('error');
-            el.parent().find('.elem-input-error').remove();
-            el.parent().find('.elem-input-icon').remove();
-        } else {
-            el.addClass('error');
-            el.parent().find('.elem-input-error').remove();
-            el.parent().find('.elem-input-icon').remove();
-            el.parent().append(errorMsg);
-            el.parent().append('<div class="elem-input-icon error"></div>');
-        }
-    } else {
-        errorMsg = '<div class="elem-input-error">Поле не должно оставаться пустым</div>';
-        el.addClass('error');
-        el.parent().find('.elem-input-error').remove();
-        el.parent().find('.elem-input-icon').remove();
-        el.parent().append(errorMsg);
-        el.parent().append('<div class="elem-input-icon error"></div>');
-    }
-
 });
 
 var requiredFields = $('#reg [data-required]');
@@ -463,7 +450,7 @@ requiredFields.change(function() {
         $('#reg .btn-getcode').removeAttr('disabled');
     }
 
-})
+});
 
 
 // $('#login [data-phone]').keyup(function() {

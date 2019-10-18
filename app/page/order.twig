@@ -16,7 +16,7 @@
 {% block content %}
 
 	<div class="container">
-        <form class="container__inner" novalidate>
+        <form class="container__inner" method="get" action="" data-validate novalidate="novalidate">
             {# хлебные крошки #}
             {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
 
@@ -47,14 +47,14 @@
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label" required>Имя</label>
-                                <input type="text" class="elem-input" value="Екатерина">
+                                <input type="text" name="name" class="elem-input" value="Екатерина" required>
                             </div>
                         </div>
 
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label" required>Фамилия</label>
-                                <input type="text" class="elem-input" value="Могильникова">
+                                <input type="text" name="surname" class="elem-input"  required>
                             </div>
                         </div>
                     </div>
@@ -63,14 +63,14 @@
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">E-mail</label>
-                                <input type="email" class="elem-input" value="kateika8@mail.ru">
+                                <input type="email" name="email" class="elem-input" value="kateika8@mail.ru">
                             </div>
                         </div>
 
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">Телефон</label>
-                                <input type="tel" class="elem-input" value="+7 (926) 218-88-10" disabled>
+                                <input type="tel" class="elem-input" name="phone" data-phone value="+7 (926) 218-88-10" >
                                 <div class="elem-hint hidden-xs hidden-sm">
                                     <div class="elem-hint__icon">
                                         {{ svg.icon('q') }}
@@ -119,7 +119,7 @@
                     <a href="#" class="elem-btn elem-btn--gray-light bold">Назад в корзину</a>
                 </div>
                 <div class="col-6">
-                    <button class="elem-btn">Сделать заказ</button>
+                    <button type="submit" class="elem-btn">Сделать заказ</button>
                 </div>
             </div>
         </form>
