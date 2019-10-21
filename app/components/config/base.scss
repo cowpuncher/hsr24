@@ -100,6 +100,8 @@ body {
     right: 0;
     // background: $bg-base;
     z-index: 9999;
+    width: 100vw;
+    height: 100vh;
 
     &.visible {
         visibility: visible;
