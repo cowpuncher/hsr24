@@ -19,7 +19,10 @@
             {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
 
             {# заголовок #}
-            <h1 class="h2 elem-title">Избранное</h1>
+            <h1 class="h2 elem-title elem-title--row">
+                <span>Избранное <span class="hidden-lg hidden-xl color-gray-light elem-title__num">2</span></span>
+                <a href="#" class="elem-icon color-red elem-title__remove hidden-lg hidden-xl" data-remove-all="">Очистить</a>
+            </h1>
 
             {# список карточек #}
             <div class="card__list mobile-list" data-card-list>
