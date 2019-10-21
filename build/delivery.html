@@ -4509,7 +4509,7 @@
                 <div class="elem-item footer__subscribe-item">
                     <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
                     <div class="footer__input-wrap">
-                        <input type="email" class="elem-input elem-input--xs footer__input" required placeholder="Введите ваш e-mail">
+                        <input type="email" class="elem-input elem-input--xs footer__input js-valid-email" required placeholder="Введите ваш e-mail">
                     </div>
                     <button type="submit" class="elem-btn footer__btn">Подписаться</button>
                 </div>
@@ -4801,7 +4801,7 @@
     <form action="" novalidate data-validate>
         <div class="elem-item">
             <label class="elem-label" required>Ваш номер телефона</label>
-            <input type="tel" class="elem-input" placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
+            <input type="tel" name="phone" class="elem-input js-valid-phone" required placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
 
         </div>
         <div class="elem-btn__wrap popup__btn">
@@ -4853,11 +4853,11 @@
     <form action="" novalidate data-validate>
         <div class="elem-item">
             <label class="elem-label" required>Ваше имя</label>
-            <input type="text" class="elem-input" placeholder="Имя" tabindex="0" data-required>
+            <input type="text" name="name" class="elem-input js-valid-name" required placeholder="Имя" tabindex="0" data-required>
         </div>
         <div class="elem-item">
             <label class="elem-label" required>Ваш e-mail</label>
-            <input type="email" class="elem-input" placeholder="Введите эл. почту" tabindex="1" data-required>
+            <input type="email" name="email" class="elem-input js-valid-email" required placeholder="Введите эл. почту" tabindex="1" data-required>
         </div>
 
         <div class="elem-item elem-item--radio">
@@ -4869,14 +4869,14 @@
 
         <div class="elem-item elem-item--radio">
             <label class="elem-radio">
-                <input type="checkbox" class="elem-radio__input" name="radio-policy" data-required>
+                <input type="checkbox" class="elem-radio__input" name="radio-policy" required data-required>
                 <span class="elem-radio__span"><span>Я согласен(на) с условиями&nbsp;<a href="#" class="elem-link elem-link--red d-inline">Политики конфиденциальности.</a></span></span>
             </label>
         </div>
 
         <div class="elem-item">
             <label class="elem-label" required>Ваш номер телефона</label>
-            <input type="tel" class="elem-input" placeholder="+7 (___) ___-__-__" data-phone data-required tabindex="0">
+            <input type="tel" name="phone" class="elem-input js-valid-phone" placeholder="+7 (___) ___-__-__" data-phone required data-required tabindex="0">
 
         </div>
 
@@ -4982,11 +4982,11 @@
     <form action="" novalidate data-validate>
         <div class="elem-item">
             <label class="elem-label" required>Ваше имя</label>
-            <input type="text" class="elem-input" placeholder="Имя" tabindex="0">
+            <input type="text" name="name" class="elem-input" required placeholder="Имя" tabindex="0">
         </div>
         <div class="elem-item">
             <label class="elem-label" required>Номер телефона</label>
-            <input type="tel" class="elem-input" placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
+            <input type="tel" name="phone" class="elem-input js-valid-phone" required placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
         </div>
         <div class="elem-btn__wrap popup__btn">
             <button class="elem-btn">Оформить заказ</button>
