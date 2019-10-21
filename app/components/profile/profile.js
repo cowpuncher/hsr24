@@ -102,14 +102,36 @@ var myDataPicker = $("#date-of-birth").datepicker({
 }).data('datepicker');
 
 $('#date-of-birth').on('input', function () {
-    var arr = $('#date-of-birth').val().split('.');
-    var day = arr[0];
-    var mounth = parseInt(arr[1]) - 1;
-    var year = arr[2];
+    var input = $('#date-of-birth');
+    var now = new Date();
 
-    setTimeout(() => {
-        myDataPicker.selectDate(new Date(year, mounth, day));
-    }, 500);
+    if (input.val().length == 10) {
+        var arr = input.val().split('.');
+        var day = arr[0].replace('_');
+        var mounth = parseInt(arr[1].replace('_')) - 1;
+        var year = arr[2].replace('_');
+
+        if (day.length > 2) {
+            day = parseInt(day);
+            day = '0' + day;
+        }
+
+        if (mounth.length > 2) {
+            mounth = parseInt(mounth);
+            mounth = '0' + mounth;
+        }
+
+        if (year.length > 4) {
+            year = now.getFullYear();
+        }
+
+        setTimeout(() => {
+            input.val(day + '.' + (mounth + 1) + '.' + year);
+            myDataPicker.selectDate(new Date(year, mounth, day));
+        }, 500);
+    } else {
+        myDataPicker.selectDate(now);
+    }
 });
 
 

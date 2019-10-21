@@ -30,15 +30,7 @@
 
 	<div class="page ">
         <div class="preloader visible" id="preloader">
-            <lottie-player
-                src="assets/images/lf20_x9pEKm.json"
-                background="transparent"
-                speed="1"
-                style="width: 100px; height: 100px;"
-                loop
-                autoplay>
-            </lottie-player>
-
+            <img src="assets/images/required/loader.gif" alt="">
         </div>
         <header id="header" class="header">
   <div class="header__top dark hidden-xs hidden-sm hidden-md">
@@ -4250,7 +4242,7 @@
 	  <main>
 		
 	<div class="container">
-        <form class="container__inner" novalidate>
+        <form class="container__inner" method="get" action="" data-validate novalidate="novalidate">
             
                 
 	<div class="breadcrumbs hidden-md hidden-sm hidden-xs" >
@@ -4312,14 +4304,14 @@
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label" required>Имя</label>
-                                <input type="text" class="elem-input" value="Екатерина">
+                                <input type="text" name="name" class="elem-input js-valid-name" value="Екатерина" required>
                             </div>
                         </div>
 
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label" required>Фамилия</label>
-                                <input type="text" class="elem-input" value="Могильникова">
+                                <input type="text" name="surname" class="elem-input js-valid-surname"  required>
                             </div>
                         </div>
                     </div>
@@ -4328,14 +4320,14 @@
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">E-mail</label>
-                                <input type="email" class="elem-input" value="kateika8@mail.ru">
+                                <input type="email" name="email" class="elem-input js-valid-email" value="kateika8@mail.ru">
                             </div>
                         </div>
 
                         <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                             <div class="elem-item elem-item--md">
                                 <label class="elem-label">Телефон</label>
-                                <input type="tel" class="elem-input" value="+7 (926) 218-88-10" disabled>
+                                <input type="tel" class="elem-input js-valid-phone" name="phone" data-phone value="+7 (926) 218-88-10" >
                                 <div class="elem-hint hidden-xs hidden-sm">
                                     <div class="elem-hint__icon">
                                           <svg aria-hidden="true" class="icon icon-q">
@@ -4528,10 +4520,11 @@
         
                     <div class="order-icon__pay" data-order-pay>
                 <h3 class="regular h3 h3--lg">Данные банковской карты</h3>
-                <div class="order-icon__pay-info">
-                    <div class="order-icon__pay-title">Мы принимаем</div>
-                    <div class="order-icon__pay-list">
-                        	
+                <div class="order-icon__pay-wrap">
+                    <div class="order-icon__pay-info">
+                        <div class="order-icon__pay-title">Мы принимаем</div>
+                        <div class="order-icon__pay-list">
+                            	
 	<div class="pay">
         
         <div class="pay__list">
@@ -4571,10 +4564,10 @@
                     </div>
     </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="order-icon__pay-card">
-                        
+                    <div class="order-icon__pay-card">
+                            
     <div class="credit-card__inner">
         <div class="credit-card">
             <div class="credit-card__item">
@@ -4607,6 +4600,7 @@
         </div>
     </div>
 
+                    </div>
                 </div>
             </div>
             </div>
@@ -4642,7 +4636,7 @@
                     <a href="#" class="elem-btn elem-btn--gray-light bold">Назад в корзину</a>
                 </div>
                 <div class="col-6">
-                    <button class="elem-btn">Сделать заказ</button>
+                    <button type="submit" class="elem-btn">Сделать заказ</button>
                 </div>
             </div>
         </form>
@@ -4660,7 +4654,7 @@
 	  <footer id="footer" class="footer">
     <div class="footer__top order-md-2 order-lg-0">
         <div class="container">
-            <form class="footer__subscribe" novalidate>
+            <form class="footer__subscribe" method="get" action="" novalidate data-validate>
                 <div class="footer__subscribe-icon">
                       <svg aria-hidden="true" class="icon icon-mail_illustration">
     <use xlink:href="assets/images/required/sprite.svg#mail_illustration"></use>
@@ -4669,8 +4663,10 @@
                 </div>
                 <div class="elem-item footer__subscribe-item">
                     <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
-                    <input type="email" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">
-                    <button class="elem-btn footer__btn">Подписаться</button>
+                    <div class="footer__input-wrap">
+                        <input type="email" class="elem-input elem-input--xs footer__input js-valid-email" required placeholder="Введите ваш e-mail">
+                    </div>
+                    <button type="submit" class="elem-btn footer__btn">Подписаться</button>
                 </div>
             </form>
             <div class="footer__inner">
@@ -4957,10 +4953,10 @@
       <div id="login" class="popup popup--small mfp-hide">
     <h2 class="popup__title">Авторизация</h2>
 
-    <form action="" novalidate>
+    <form action="" novalidate data-validate>
         <div class="elem-item">
             <label class="elem-label" required>Ваш номер телефона</label>
-            <input type="tel" class="elem-input" placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
+            <input type="tel" name="phone" class="elem-input js-valid-phone" required placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
 
         </div>
         <div class="elem-btn__wrap popup__btn">
@@ -5009,14 +5005,14 @@
 <div id="reg" class="popup popup--small mfp-hide">
     <h2 class="popup__title">Регистрация</h2>
 
-    <form action="" novalidate>
+    <form action="" novalidate data-validate>
         <div class="elem-item">
             <label class="elem-label" required>Ваше имя</label>
-            <input type="text" class="elem-input" placeholder="Имя" tabindex="0" data-required>
+            <input type="text" name="name" class="elem-input js-valid-name" required placeholder="Имя" tabindex="0" data-required>
         </div>
         <div class="elem-item">
             <label class="elem-label" required>Ваш e-mail</label>
-            <input type="email" class="elem-input" placeholder="Введите эл. почту" tabindex="1" data-required>
+            <input type="email" name="email" class="elem-input js-valid-email" required placeholder="Введите эл. почту" tabindex="1" data-required>
         </div>
 
         <div class="elem-item elem-item--radio">
@@ -5028,14 +5024,14 @@
 
         <div class="elem-item elem-item--radio">
             <label class="elem-radio">
-                <input type="checkbox" class="elem-radio__input" name="radio-policy" data-required>
+                <input type="checkbox" class="elem-radio__input" name="radio-policy" required data-required>
                 <span class="elem-radio__span"><span>Я согласен(на) с условиями&nbsp;<a href="#" class="elem-link elem-link--red d-inline">Политики конфиденциальности.</a></span></span>
             </label>
         </div>
 
         <div class="elem-item">
             <label class="elem-label" required>Ваш номер телефона</label>
-            <input type="tel" class="elem-input" placeholder="+7 (___) ___-__-__" data-phone data-required tabindex="0">
+            <input type="tel" name="phone" class="elem-input js-valid-phone" placeholder="+7 (___) ___-__-__" data-phone required data-required tabindex="0">
 
         </div>
 
@@ -5138,14 +5134,14 @@
 <div id="click" class="popup popup--md mfp-hide">
     <h2 class="popup__title">Заказ в один клик</h2>
 
-    <form action="" novalidate>
+    <form action="" novalidate data-validate>
         <div class="elem-item">
             <label class="elem-label" required>Ваше имя</label>
-            <input type="text" class="elem-input" placeholder="Имя" tabindex="0">
+            <input type="text" name="name" class="elem-input" required placeholder="Имя" tabindex="0">
         </div>
         <div class="elem-item">
             <label class="elem-label" required>Номер телефона</label>
-            <input type="tel" class="elem-input" placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
+            <input type="tel" name="phone" class="elem-input js-valid-phone" required placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
         </div>
         <div class="elem-btn__wrap popup__btn">
             <button class="elem-btn">Оформить заказ</button>
@@ -5432,7 +5428,7 @@
 	    </div>
 
         <div class="col-12 col-md-6 col-lg-6 col-xl-6">
-                    <form class="page-product__inner page-product__info" novalidate>
+                    <form class="page-product__inner page-product__info" novalidate data-validate>
                         <div class="page-product__row page-product__top hidden-sm hidden-xs">
                             <div class="elem-status">акция</div>
                             <div class="elem-status elem-status--light">бесплатная доставка</div>
@@ -5617,8 +5613,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
 
 

@@ -104,6 +104,8 @@ body {
     right: 0;
     // background: $bg-base;
     z-index: 9999;
+    width: 100vw;
+    height: 100vh;
 
     &.visible {
         visibility: visible;
@@ -122,10 +124,9 @@ body {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    & path:nth-child(2) {
-        stroke: #F61D2A !important;
+        height: 100px;
+        width: 100px;
+        fill: $color-red;
     }
 }
 

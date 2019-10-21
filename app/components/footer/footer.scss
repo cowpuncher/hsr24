@@ -182,21 +182,30 @@
     }
 
     &__input {
-        width: calc(100% - 212px);
         height: 40px;
         border-radius: 12px;
 
         @media (max-width: $lg) {
-            width: calc(100% - 224px);
             height: 44px;
             border-radius: 10px;
             border: 0;
         }
 
         @media (max-width: $md) {
-            width: calc(100% + 114px);
-            margin-left: -114px;
             border: 0;
+        }
+
+        &-wrap {
+            width: calc(100% - 212px);
+
+            @media (max-width: $lg) {
+                width: calc(100% - 224px);
+            }
+
+            @media (max-width: $md) {
+                width: calc(100% + 114px);
+                margin-left: -114px;
+            }
         }
     }
 
