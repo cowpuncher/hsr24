@@ -4321,7 +4321,7 @@
 	  <footer id="footer" class="footer">
     <div class="footer__top order-md-2 order-lg-0">
         <div class="container">
-            <form class="footer__subscribe" novalidate data-validate>
+            <form class="footer__subscribe" method="get" action="" novalidate data-validate>
                 <div class="footer__subscribe-icon">
                       <svg aria-hidden="true" class="icon icon-mail_illustration">
     <use xlink:href="assets/images/required/sprite.svg#mail_illustration"></use>
@@ -4331,9 +4331,9 @@
                 <div class="elem-item footer__subscribe-item">
                     <label class="elem-label footer__label">Узнавайте об акциях и скидках первыми!</label>
                     <div class="footer__input-wrap">
-                        <input type="email" class="elem-input elem-input--xs footer__input" placeholder="Введите ваш e-mail">
+                        <input type="email" class="elem-input elem-input--xs footer__input" required placeholder="Введите ваш e-mail">
                     </div>
-                    <button class="elem-btn footer__btn">Подписаться</button>
+                    <button type="submit" class="elem-btn footer__btn">Подписаться</button>
                 </div>
             </form>
             <div class="footer__inner">
