@@ -30,16 +30,9 @@
   <body class="{% block bodyClass %}{% endblock %}">
 
 	<div class="page">
-        {# <div class="preloader visible" id="preloader">
-            <lottie-player
-                src="assets/images/lf20_x9pEKm.json"
-                background="transparent"
-                speed="1"
-                style="width: 100px; height: 100px;"
-                loop
-                autoplay>
-            </lottie-player>
-        </div> #}
+        <div class="preloader visible" id="preloader">
+            <img src="assets/images/required/loader.gif" alt="">
+        </div>
         {% include '../../components/header/header.twig' %}
 
 	  <main>
@@ -61,7 +54,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     {# <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> #}
-    {# <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script> #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
 
     <script src="js/libs.js"></script>
 	<script src="js/main.js"></script>
