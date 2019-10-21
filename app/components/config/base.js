@@ -347,9 +347,7 @@ $(document).ready(function() {
     $.validator.addClassRules("js-valid-email", { fieldRequired: true, email: true });
     $.validator.addClassRules("js-valid-phone", { requiredphone: true, minlenghtphone: true });
 
-    $('[data-validate]').validate();
-
-    $('[data-validate]').submit(function() {
+    $('[data-validate]').each(function () {
         $(this).validate();
     });
 
