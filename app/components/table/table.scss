@@ -2,10 +2,6 @@ table {
     table-layout: auto;
     width: 100%;
 
-    & thead {
-        background: $color-base;
-    }
-
     & th {
         font-size: 14px;
         line-height: 16px;
