@@ -62,9 +62,14 @@ class Menu {
                         row.each(function() {
                             var col = $(this).children();
                             var colWidth = parseInt(drop.css('padding-left')) + parseInt(drop.css('padding-right'));
+                            var max = 5;
+                            var i = 0;
 
                             col.each(function() {
-                                colWidth = colWidth + $(this).width() + parseInt($(this).css('margin-right'));
+                                if (i < max) {
+                                    colWidth = colWidth + $(this).width() + parseInt($(this).css('margin-right'));
+                                    i++;
+                                }
                             });
 
                             drop.css({'width': colWidth + 'px'});
