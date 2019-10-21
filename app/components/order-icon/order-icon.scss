@@ -76,7 +76,7 @@
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
-            
+
             .order-icon__info {
                 max-width: 150px;
 
@@ -216,6 +216,18 @@
             margin-top: 27px;
         }
 
+        &-wrap {
+            @media (max-width: $lg) {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+            }
+
+            @media (max-width: $md) {
+                display: block;
+            }
+        }
+
         &-title {
             font-size: 12px;
             line-height: 15px;
@@ -233,11 +245,14 @@
 
         &-info {
             @media (max-width: $lg) {
-                position: absolute;
-                // left: calc(100% - 15px);
-                left: calc(100% - 190px);
-                top: 42px;
-                width: 28%;
+                // position: absolute;
+                // // left: calc(100% - 15px);
+                // left: calc(100% - 190px);
+                // top: 42px;
+                min-width: 28%;
+                max-width: 36%;
+                flex-shrink: 0;
+                margin-left: 10px;
             }
 
             @media (max-width: $md) {
@@ -246,6 +261,7 @@
                 top: auto;
                 width: 100%;
                 margin-bottom: 8px;
+                max-width: 100%;
             }
         }
 
