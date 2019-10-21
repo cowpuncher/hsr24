@@ -67,7 +67,7 @@
                                         {% if item2.priceOld %}
                                             <div class="elem-price-old">{{ item2.priceOld }}</div>
                                         {% endif %}
-    
+
                                         <div class="elem-price">{{ item2.price }}</div>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                         <tr class="more-info">
                             <td class="more-info__col">
                                 <div class="more-info__head">Детали заказа</div>
-                                
+
                                 <ul class="more-info__list">
                                     <li class="more-info__item">Адрес доставки: <span class="more-info__item-value">{{ item2.address }}</span></li>
                                     <li class="more-info__item">Тип доставки: <span class="more-info__item-value">{{ item2.deliveryType }}</span></li>
@@ -113,7 +113,7 @@
 
                             <td class="more-info__col">
                                 <div class="more-info__head">Сумма заказа</div>
-                                
+
                                 <ul class="more-info__list more-info__list--bordered">
                                     <li class="more-info__item">Товары: <span class="more-info__item-value">{{ item2.productSum }}</span></li>
                                     <li class="more-info__item">Доставка: <span class="more-info__item-value">{{ item2.deliverySum }}</span></li>
@@ -130,7 +130,7 @@
 
                             <td class="more-info__col">
                                 <div class="more-info__head">Список товаров</div>
-                                
+
                                 <ul class="more-info__list">
                                     {% for item3 in item2.products %}
                                         <li class="more-info__product"><span class="more-info__product-name">{{ item3.name }}</span></li>

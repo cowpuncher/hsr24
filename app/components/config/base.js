@@ -1,5 +1,7 @@
 'use strict';
 
+svg4everybody();
+
 $(document).ready(function() {
     var loading = 0;
     var preloaderEl = $('#preloader');

@@ -248,6 +248,10 @@
             }
         }
 
+        .swiper-container {
+            position: static;
+        }
+
         .popup & {
             & .slick-prev {
                 left: -26px;
@@ -308,7 +312,6 @@
                 }
             }
         }
-
 
     }
 
