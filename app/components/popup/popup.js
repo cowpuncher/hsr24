@@ -265,9 +265,21 @@ class Popap {
                   }
 
                   $('.slick-initialized').slick('refresh');
+
+                  if ($('[data-validate]').length) {
+                    $('[data-validate]').validate();
+                  }
                 },
-                close: function() {
-                  // Will fire when popup is closed
+                close: function() {},
+                change: function(data) {
+                    var content = this.content;
+                    var id = content[0].id;
+
+                    setTimeout(() => {
+                        if ($('#' + id).find('form').length) {
+                            $('#' + id).find('form').validate();
+                        }
+                    }, 300);
                 }
                 // e.t.c.
               }
