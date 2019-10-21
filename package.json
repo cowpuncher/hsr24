@@ -67,6 +67,7 @@
     "wiredep": "^4.0.0"
   },
   "devDependencies": {
+    "svg4everybody": "^2.1.9",
     "yargs": "^13.2.2"
   }
 }
