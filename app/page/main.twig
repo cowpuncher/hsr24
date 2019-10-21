@@ -13,6 +13,8 @@
 
 {% block bodyClass %}page-main{% endblock %}
 
+{% block pageClass %}page--overflow-hide{% endblock %}
+
 {% block content %}
     <div class="container">
         {{ banner.banner(bannerList) }}
@@ -21,7 +23,7 @@
     <div class="container d-flex flex-column">
             {{ menu.menu(advantagesList) }}
 
-            
+
 
             <div class="slider__wrap hidden-lg hidden-xl">
                 <div class="container__inner">
