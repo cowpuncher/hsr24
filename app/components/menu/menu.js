@@ -55,7 +55,6 @@ class Menu {
                 el.hover(function() {
                     if (!el.hasClass('.menu-bottom__drop')) {
                         var drop = el.children('[data-menu-bottom-drop-menu]');
-                        var dropWidth = drop.width();
 
                         var row = drop.find('.menu-bottom__row');
 
@@ -74,6 +73,8 @@ class Menu {
 
                             drop.css({'width': colWidth + 'px'});
                         });
+
+                        var dropWidth = drop.width();
 
 
                         var ww = $(window).width();
