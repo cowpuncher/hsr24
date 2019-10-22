@@ -36,6 +36,8 @@ class Slider {
             nextArrow: next,
             cssEase: 'ease-out',
             fade: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
             responsive: [
                 {
                     breakpoint: 768,
@@ -60,7 +62,15 @@ class Slider {
             cssEase: 'ease-out',
             asNavFor: sliderProductCarousel,
             // adaptiveHeight: true,
-            fade: true
+            fade: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false
+                    }
+                }
+            ]
         });
 
         function recalc() {

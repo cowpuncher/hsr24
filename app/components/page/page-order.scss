@@ -70,13 +70,15 @@
 
         }
 
-        
+        .position-sticky {
+            top: 20px;
+        }
     }
 
     &__row {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     &__col {
@@ -103,5 +105,5 @@
         }
 
     }
-    
+
 }

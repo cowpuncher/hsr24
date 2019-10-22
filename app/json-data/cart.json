@@ -1094,7 +1094,8 @@
                     },
                     {
                         "price": "1 000 <span class=\"elem-rub\">i</span>",
-                        "class": "td--price"
+                        "class": "td--price",
+                        "priceOld": "1290 <span class=\"elem-rub\">i</span>"
                     },
                     {
                         "favs": true,

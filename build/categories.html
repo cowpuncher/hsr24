@@ -24,6 +24,18 @@
 	<link rel="stylesheet" href="template_styles.css">
 	  <!-- endbuild -->
 
+    <!-- Перенес скрипты вверх для имитации работы на площадке разработки, потому что там они так же подключаются в head. Атрибут defer не блокирует страницу, а скрипты выполняются, когда дерево DOM готово-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?apikey=380a270f-ad53-406b-8d61-f7cc553394c5&load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+
+    <script src="js/libs.js" defer></script>
+	<script src="js/main.js" defer></script>
   </head>
 
   <body class="page-categories">
@@ -4393,7 +4405,7 @@
 
             </div>
 
-            <div class="filter__wrap" data-filter-show-wrap>
+            <form class="filter__wrap" name="_form" method="get" data-filter-show-wrap>
                 <div class="elem-title filter__wrap-title hidden-md hidden-lg hidden-xl">
                       <svg aria-hidden="true" class="icon icon-filter">
     <use xlink:href="assets/images/required/sprite.svg#filter"></use>
@@ -4401,7 +4413,7 @@
 
                     Фильтр
 
-                    <a href="#" class="elem-close" data-filter-close>
+                    <a href="" class="elem-close" data-filter-close>
                           <svg aria-hidden="true" class="icon icon-close">
     <use xlink:href="assets/images/required/sprite.svg#close"></use>
   </svg>
@@ -4539,7 +4551,8 @@
 
                 <div class="filter__wrap-btn hidden-md hidden-lg hidden-xl">
                     <a href="#" class="elem-btn elem-btn--light elem-btn--gray bold" data-filter-delete>Сбросить</a>
-                    <a href="#" class="elem-btn">Применить</a>
+                    <button type="submit" name="set_filter" id="set_filter" class=" elem-btn" data-filter-close>Применить</a>
+
                 </div>
 
                 <div class="filter__info hidden-sm hidden-xs">
@@ -4579,7 +4592,7 @@
                 <div class="filter__row filter__all hidden-sm hidden-xs">
                     Найдено товаров:  12
                 </div>
-            </div>
+            </form>
                 
                 <div class="filter__row filter__row--between">
 
@@ -6153,17 +6166,5 @@
 	<!-- JavaScript files placed at the end of the document so the pages load faster
 	================================================== -->
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="http://api-maps.yandex.ru/2.0/?apikey=380a270f-ad53-406b-8d61-f7cc553394c5&load=package.full&lang=ru-RU" type="text/javascript"></script>
-
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
-
-
-    <script src="js/libs.js"></script>
-	<script src="js/main.js"></script>
   </body>
 </html>

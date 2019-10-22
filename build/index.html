@@ -24,6 +24,18 @@
 	<link rel="stylesheet" href="template_styles.css">
 	  <!-- endbuild -->
 
+    <!-- Перенес скрипты вверх для имитации работы на площадке разработки, потому что там они так же подключаются в head. Атрибут defer не блокирует страницу, а скрипты выполняются, когда дерево DOM готово-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?apikey=380a270f-ad53-406b-8d61-f7cc553394c5&load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+
+    <script src="js/libs.js" defer></script>
+	<script src="js/main.js" defer></script>
   </head>
 
   <body class="page-index">
@@ -5426,17 +5438,5 @@
 	<!-- JavaScript files placed at the end of the document so the pages load faster
 	================================================== -->
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="http://api-maps.yandex.ru/2.0/?apikey=380a270f-ad53-406b-8d61-f7cc553394c5&load=package.full&lang=ru-RU" type="text/javascript"></script>
-
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
-
-
-    <script src="js/libs.js"></script>
-	<script src="js/main.js"></script>
   </body>
 </html>
