@@ -12,7 +12,7 @@ class OrderIcon {
 
             parent.children().removeClass('active');
             el.addClass('active');
-            el.find('input').prop('checked', 'checked');
+            el.find('input').prop('checked', 'checked').change();
             
             e.preventDefault();
         });
