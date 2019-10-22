@@ -230,6 +230,9 @@
             @media (max-width: $lg) {
                 height: 152px;
                 width: 152px !important;
+                background: #878787;
+                border-radius: 50%;
+                overflow: hidden;
             }
 
             @media (max-width: $md) {
