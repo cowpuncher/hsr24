@@ -108,7 +108,7 @@
         border-radius: 16px;
         margin-bottom: 32px;
         display: none;
-        
+
         @media (max-width: $md) {
             position: fixed;
             overflow: hidden;
@@ -120,7 +120,7 @@
             background: $color-white;
             z-index: 100;
             padding: 13px 15px;
-            
+
             top: -70px;
             transform: translateY(70px);
         }
@@ -205,10 +205,13 @@
         width: 100%;
         margin-left: 0;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: -20px;
+        flex-wrap: wrap;
     }
 
     &__item {
+        margin-bottom: 20px;
+        margin-right: 25px;
 
         @media (max-width: $lg) {
             width: calc(100% / 3 - 20px);
@@ -217,8 +220,6 @@
         @media (max-width: $md) {
             width: 100%;
         }
-
-        margin-right: 25px;
 
         @media (max-width: $lg) {
             margin-right: 30px;
@@ -232,8 +233,10 @@
             }
         }
 
-        &:last-child {
-            margin-right: 0;
+        &:nth-child(3n + 1) {
+            @media (max-width: $lg) {
+                margin-right: 0;
+            }
         }
     }
 
