@@ -17,6 +17,11 @@
         @media (max-width: $md) {
             height: 332px;
         }
+
+        @media (min-width: 1024px) {
+            height: calc(100vh - 240px - 520px);
+            min-height: 259px;
+        }
     }
 
     &--popup-sm {

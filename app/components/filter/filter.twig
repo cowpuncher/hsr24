@@ -35,12 +35,12 @@
                 {{ price.price(data) }}
             </div>
 
-            <div class="filter__wrap" data-filter-show-wrap>
+            <form class="filter__wrap" name="_form" method="get" data-filter-show-wrap>
                 <div class="elem-title filter__wrap-title hidden-md hidden-lg hidden-xl">
                     {{ svg.icon('filter') }}
                     Фильтр
 
-                    <a href="#" class="elem-close" data-filter-close>
+                    <a href="" class="elem-close" data-filter-close>
                         {{ svg.icon('close') }}
                     </a>
                 </div>
@@ -79,7 +79,8 @@
 
                 <div class="filter__wrap-btn hidden-md hidden-lg hidden-xl">
                     <a href="#" class="elem-btn elem-btn--light elem-btn--gray bold" data-filter-delete>Сбросить</a>
-                    <a href="#" class="elem-btn">Применить</a>
+                    <button type="submit" name="set_filter" id="set_filter" class=" elem-btn" data-filter-close>Применить</a>
+
                 </div>
 
                 <div class="filter__info hidden-sm hidden-xs">
@@ -113,7 +114,7 @@
                 <div class="filter__row filter__all hidden-sm hidden-xs">
                     Найдено товаров:  12
                 </div>
-            </div>
+            </form>
         {% endif %}
         {% if data.viewIcon %}
 
