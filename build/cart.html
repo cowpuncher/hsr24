@@ -24,6 +24,18 @@
 	<link rel="stylesheet" href="template_styles.css">
 	  <!-- endbuild -->
 
+    <!-- Перенес скрипты вверх для имитации работы на площадке разработки, потому что там они так же подключаются в head. Атрибут defer не блокирует страницу, а скрипты выполняются, когда дерево DOM готово-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?apikey=380a270f-ad53-406b-8d61-f7cc553394c5&load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+
+    <script src="js/libs.js" defer></script>
+	<script src="js/main.js" defer></script>
   </head>
 
   <body class="page-index">
@@ -4359,6 +4371,7 @@
                             
                                                             <div class="text-left table__price">
                                     <div class="table__price-items">
+                                                                                    <div class="elem-price-old">1290 <span class="elem-rub">i</span></div>
                                         
                                         <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
                                     </div>
@@ -4496,7 +4509,7 @@
             
             <div class="table__footer">
                 <div class="row justify-content-between">
-                    <div class="table__col col-xl-6 col-lg-6 col-md-6">
+                    <div class="table__col col-xl-6 col-lg-6 col-md-5">
                         <div class="table__row hidden-xs hidden-sm hidden-md">
                             <a href="#" class="elem-icon table__link" data-remove-all>  <svg aria-hidden="true" class="icon icon-garbage-can">
     <use xlink:href="assets/images/required/sprite.svg#garbage-can"></use>
@@ -4517,7 +4530,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="table__col col-xl-6 col-lg-6 col-md-6 justify-content-end">
+                    <div class="table__col col-xl-6 col-lg-6 col-md-5 justify-content-end">
                         <div class="row">
                             <div class="col-xl-11 col-lg-11">
                                 <div class="row">
@@ -5600,17 +5613,5 @@
 	<!-- JavaScript files placed at the end of the document so the pages load faster
 	================================================== -->
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="http://api-maps.yandex.ru/2.0/?apikey=380a270f-ad53-406b-8d61-f7cc553394c5&load=package.full&lang=ru-RU" type="text/javascript"></script>
-
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
-
-
-    <script src="js/libs.js"></script>
-	<script src="js/main.js"></script>
   </body>
 </html>

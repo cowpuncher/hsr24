@@ -333,6 +333,8 @@
         }
 
         & .elem-btn {
+            display: inline-flex;
+
             &.active {
                 & .icon {
                     & .bg {

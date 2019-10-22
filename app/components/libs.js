@@ -14,5 +14,3 @@ import '../../bower_components/bootstrap-select/dist/js/i18n/defaults-ru_RU.min.
 import '../../bower_components/air-datepicker/dist/js/datepicker.min.js';
 import '../../bower_components/picturefill/dist/picturefill.min.js';
 import '../../bower_components/inputmask/dist/min/jquery.inputmask.bundle.min.js';
-
-

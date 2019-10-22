@@ -11,7 +11,7 @@ class Filter {
 
             el.toggleClass('open');
             el.parents('.filter').find('[data-filter-show-wrap]').slideToggle(300);
-            
+
             e.preventDefault();
         });
 
@@ -20,7 +20,7 @@ class Filter {
 
             $('[data-filter-show]').removeClass('open');
             el.parents('.filter').find('[data-filter-show-wrap]').slideUp(300);
-        
+
             e.preventDefault();
         });
 
@@ -73,7 +73,7 @@ class Filter {
 
             $('select[' + select +']').find('option:selected').eq(index).prop("selected", false);
             $('select[' + select +']').selectpicker('refresh');
-            
+
 
             if (len == 0) {
                 list.addClass('null');
@@ -104,9 +104,9 @@ class Filter {
         $(document).on('click', '[data-filter-delete]', function(e){
             var el = $(this);
             var list = el.parent().children().find('[data-filter-list]');
-            
+
             var filterItem = $('.filter__wrap').find('.filter__item');
-            
+
             filterItem.each(function() {
                 var selectItem = $(this).find('.bootstrap-select select');
                 selectItem.selectpicker('deselectAll');
@@ -136,7 +136,7 @@ class Filter {
         filterWrap.find('.filter__item').each(function() {
             $('select[data-filter]').on('change', function() {
                 var selectedOption = $('select[data-filter]').parent().find('.dropdown-menu li').hasClass('selected');
-                
+
                 if (selectedOption) {
                     filterWrap.find('.filter__info').slideDown();
                     filterWrap.find('.filter__all').slideDown();

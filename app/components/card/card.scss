@@ -155,14 +155,7 @@
         &.list {
             padding: 0;
 
-            @media (max-width: $lg) {
-                padding-left: 27px;
-                padding-right: 27px;
-            }
-
             @media (max-width: $md) {
-                padding-left: 0;
-                padding-right: 0;
                 margin-left: 0;
                 margin-right: 0;
             }

@@ -323,9 +323,8 @@ table {
 
     &__name {
         @media (max-width: $lg) {
-            order: 1;
-            margin-bottom: 0;
-            margin-top: 8px;
+            margin-bottom: 12px;
+            font-size: 13px;
         }
 
         @media (max-width: $md) {
@@ -373,9 +372,8 @@ table {
 
             @media (max-width: $lg) {
                 align-items: flex-start;
+                padding-top: 6px;
             }
-
-
 
             &-items {
                 line-height: 0;
@@ -393,6 +391,20 @@ table {
                 .elem-price-old {
                     @media (max-width: $lg) {
                         margin-left: 10px;
+                    }
+                }
+
+                .elem-price-old+.elem-price {
+                    color: $color-base;
+                }
+
+                .elem-price-old {
+                    color: $color-red;
+                }
+
+                .elem-price {
+                    @media (max-width: $lg) {
+                        line-height: 26px;
                     }
                 }
             }
