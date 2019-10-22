@@ -655,10 +655,11 @@
         }
 
         & .elem-btn {
-            margin-bottom: 6px;
+            margin-left: 10px;
 
             @media (max-width: $lg) {
                 margin-bottom: 0;
+                margin-left: 0;
             }
         }
 
