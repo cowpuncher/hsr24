@@ -128,7 +128,7 @@
         &.active {
             &:hover {
                 color: $color-white;
-                background: $color-base;  
+                background: $color-base;
             }
         }
     }
@@ -221,6 +221,8 @@
 
     &--w100 {
         width: 100%;
+        display: block;
+        text-align: center;
     }
 
     &--mob-m-t-10 {
@@ -329,6 +331,8 @@
         width: 100%;
         max-width: 100%;
         min-width: 100%;
+        display: block;
+        text-align: center;
     }
 
     &--auto {
