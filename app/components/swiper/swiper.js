@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('[data-tabs-slider]', {
     observer: true,
     observeParents: true,
     slidesPerView: 4,

@@ -29,7 +29,7 @@
                         <div class="card__wrap">
                             <div class="card__list card__slider">
                                 {% if item.sliderType == "swiper" %}
-                                    <div class="swiper-container">
+                                    <div class="swiper-container" data-tabs-slider>
                                         <div class="swiper-wrapper">
                                             {% for item2 in item.slider %}
                                                 {{ card.card(item2) }}
