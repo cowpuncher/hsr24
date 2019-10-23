@@ -281,6 +281,7 @@
         letter-spacing: -0.2px;
         width: auto;
         padding: 0 12px;
+        line-height: 38px;
     }
 
     &--sm {
@@ -323,7 +324,7 @@
 
     &--xs {
         font-size: 12px;
-        line-height: 15px;
+        line-height: 12px;
         height: 28px;
         min-width: 136px;
     }
