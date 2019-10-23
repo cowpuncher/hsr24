@@ -1027,6 +1027,11 @@
                 "img": "assets/images/example/popular/img4.jpg",
                 "img2": "assets/images/example/popular/img4.jpg",
                 "name": "Товары для здоровья"
+            },
+            {
+                "img": "assets/images/example/popular/img1.jpg",
+                "img2": "assets/images/example/popular/img1.jpg",
+                "name": "Товары для здоровья"
             }
         ]
     },
