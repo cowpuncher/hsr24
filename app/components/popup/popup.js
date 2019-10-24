@@ -269,8 +269,12 @@ class Popap {
                   if ($('[data-validate]').length) {
                     $('[data-validate]').validate();
                   }
+
+                  $('body').addClass('noscroll');
                 },
-                close: function() {},
+                close: function() {
+                    $('body').removeClass('noscroll');
+                },
                 change: function(data) {
                     var content = this.content;
                     var id = content[0].id;
@@ -281,7 +285,6 @@ class Popap {
                         }
                     }, 300);
                 }
-                // e.t.c.
               }
         });
 
