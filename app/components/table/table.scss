@@ -207,6 +207,7 @@ table {
             @media (max-width: $lg) {
                 height: 44px;
                 font-size: 13px;
+                line-height: 34px;
             }
 
             @media (max-width: $md) {
@@ -224,6 +225,15 @@ table {
 
         @media (max-width: $md) {
             margin-top: 19px;
+        }
+
+        & > * {
+            &:not(:last-child) {
+
+                @media (max-width: $lg) {
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
 
