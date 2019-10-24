@@ -229,7 +229,6 @@ table {
 
         & > * {
             &:not(:last-child) {
-
                 @media (max-width: $lg) {
                     margin-bottom: 15px;
                 }
