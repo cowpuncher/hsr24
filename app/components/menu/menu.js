@@ -56,41 +56,46 @@ class Menu {
                     if (!el.hasClass('.menu-bottom__drop')) {
                         var drop = el.children('[data-menu-bottom-drop-menu]');
 
-                        var row = drop.find('.menu-bottom__row');
-
-                        row.each(function() {
-                            var col = $(this).children();
+                        if (!drop.hasClass('opened')) {
                             var colWidth = parseInt(drop.css('padding-left')) + parseInt(drop.css('padding-right'));
+
+                            var row = drop.find('.menu-bottom__row');
+                            var col = row.children();
+
                             var max = 5;
                             var i = 0;
 
-                            col.each(function() {
-                                if (i < max) {
-                                    colWidth = colWidth + $(this).width() + parseInt($(this).css('margin-right'));
-                                    i++;
-                                }
+                            row.each(function() {
+                                i = 0;
+
+                                col.each(function() {
+                                    if (i < max) {
+                                        colWidth = colWidth + $(this).width() + parseInt($(this).css('margin-right'));
+                                        i++;
+                                    }
+                                });
+
                             });
 
                             drop.css({'width': colWidth + 'px'});
-                        });
+                            drop.addClass('opened');
 
-                        var dropWidth = drop.width();
+                            var dropWidth = drop.width();
+                            var ww = $(window).width();
+                            var bd = (ww - $('.container').width()) / 2;
 
+                            var elLeft = el.offset().left + 34;
+                            var maxWidth = ww - elLeft - bd - 12;
+                            var ml = 0;
+                            var arrow = 34;
 
-                        var ww = $(window).width();
-                        var bd = (ww - $('.container').width()) / 2;
+                            if (dropWidth > maxWidth) {
+                                ml = maxWidth - dropWidth;
+                                arrow = ml * (-1) + arrow;
 
-                        var elLeft = el.offset().left + 34;
-                        var maxWidth = ww - elLeft - bd - 12;
-                        var ml = 0;
-                        var arrow = 34;
-
-                        if (dropWidth > maxWidth) {
-                            ml = maxWidth - dropWidth;
-                            arrow = ml * (-1) + arrow;
-
-                            drop.css({'margin-left': ml + 'px'});
-                            drop.find('[data-menu-bottom-drop-arrow]').css({'left': arrow + 'px'});
+                                drop.css({'margin-left': ml + 'px'});
+                                drop.find('[data-menu-bottom-drop-arrow]').css({'left': arrow + 'px'});
+                            }
                         }
                     }
                 });
