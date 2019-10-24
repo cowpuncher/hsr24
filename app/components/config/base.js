@@ -1,5 +1,6 @@
 'use strict';
 
+// adds SVG External Content support to all browsers
 svg4everybody();
 
 $(document).ready(function() {
@@ -543,4 +544,8 @@ $(document).ready(function() {
             $.magnificPopup.close();
         }
     });
+
+    if (jivo_api.chatMode() == 'online') {
+        $('.online-support').hide()
+    }
 });
