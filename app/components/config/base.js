@@ -1,5 +1,6 @@
 'use strict';
 
+// adds SVG External Content support to all browsers
 svg4everybody();
 
 $(document).ready(function() {
@@ -484,7 +485,7 @@ $(document).ready(function() {
         });
     })
 
-    $('.page-product__info').find('.elem-price-old').prev('.elem-price').addClass('color-red');
+  $('.page-product__info').find('.elem-price-old .elem-rub').parent().prev('.elem-price').addClass('color-red');
 
     $(document).ready(function() {
         var headerHeight = $('.header').outerHeight(true);
@@ -543,4 +544,8 @@ $(document).ready(function() {
             $.magnificPopup.close();
         }
     });
+
+    if (jivo_api.chatMode() == 'online') {
+        $('.online-support').hide()
+    }
 });

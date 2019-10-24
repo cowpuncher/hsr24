@@ -23,7 +23,6 @@ class Slider {
 
         var sliderCards = this.sliderCards;
         var sliderCardsPopup = this.sliderCardsPopup;
-        var sliderCategory = this.sliderCategory;
         var ww = $(window).width();
 
         this.slider.slick({
@@ -253,41 +252,73 @@ class Slider {
             ]
         });
 
-        this.sliderCategory.slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            prevArrow: prevCarousel,
-            nextArrow: nextCarousel,
-            cssEase: 'ease-out',
-            slidesToShow: 6,
-            responsive: [
-                {
-                    breakpoint: 1279,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 3,
-                        variableWidth: true
-                    }
+        // this.sliderCategory.slick({
+        //     dots: false,
+        //     infinite: true,
+        //     speed: 300,
+        //     prevArrow: prevCarousel,
+        //     nextArrow: nextCarousel,
+        //     cssEase: 'ease-out',
+        //     slidesToShow: 6,
+        //     responsive: [
+        //         {
+        //             breakpoint: 1279,
+        //             settings: {
+        //                 slidesToShow: 4,
+        //                 slidesToScroll: 3,
+        //                 variableWidth: true
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 992,
+        //             settings: {
+        //                 slidesToShow: 4,
+        //                 slidesToScroll: 1,
+        //                 variableWidth: false
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 767,
+        //             settings: {
+        //                 slidesToScroll: 2,
+        //                 arrows: false,
+        //                 variableWidth: true
+        //             }
+        //         }
+        //     ]
+        // });
+
+        var sliderCategory = new Swiper('[data-slider-category]', {
+            spaceBetween: 8,
+            freeMode: true,
+            slidesPerView: 'auto',
+            mousewheelControl: true,
+            freeMode: true,
+            freeModeSticky: true,
+            loop: true,
+            navigation: {
+              nextEl: '.slick-next',
+              prevEl: '.slick-prev',
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 8
                 },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 2,
-                        variableWidth: false
-                    }
+                992: {
+                    spaceBetween: 18,
+                    slidesPerView: 4
                 },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToScroll: 2,
-                        arrows: false,
-                        variableWidth: true
-                    }
+                1278: {
+                    spaceBetween: 17,
+                    slidesPerView: 'auto'
+                },
+                1920: {
+                    slidesPerView: 6,
+                    spaceBetween: 16
                 }
-            ]
-        });
+            }
+          });
 
         this.sliderCarousel.slick({
             dots: false,

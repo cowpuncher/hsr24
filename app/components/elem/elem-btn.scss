@@ -322,7 +322,7 @@
 
     &--xs {
         font-size: 12px;
-        line-height: 15px;
+        line-height: 12px;
         height: 28px;
         min-width: 136px;
     }
@@ -331,8 +331,7 @@
         width: 100%;
         max-width: 100%;
         min-width: 100%;
-        display: block;
-        text-align: center;
+        //display: block;
     }
 
     &--auto {
@@ -361,5 +360,12 @@
                 margin-left: 10px;
             }
         }
+    }
+}
+
+button {
+    &.elem-btn {
+        display: inline-block;
+        text-align: center;
     }
 }

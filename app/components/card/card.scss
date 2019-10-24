@@ -324,6 +324,7 @@
         border-bottom: 1px solid $color-smoke;
         height: 248px;
         text-align: center;
+        display: flex;
 
         @media (max-width: $lg) {
             height: 194px;
@@ -333,11 +334,20 @@
             height: 138px;
         }
 
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
         & img {
             // width: 100%;
             vertical-align: top;
             border-radius: 5px 5px 0 0;
             max-height: 100%;
+            object-fit: contain;
+            font-family: 'object-fit: contain';
 
             @media (max-width: $md) {
                 border-radius: 3px;
@@ -655,10 +665,15 @@
         }
 
         & .elem-btn {
-            margin-bottom: 6px;
+            margin-left: 10px;
 
             @media (max-width: $lg) {
                 margin-bottom: 0;
+                margin-left: 0;
+            }
+
+            &--disabled {
+                margin-left: auto;
             }
         }
 

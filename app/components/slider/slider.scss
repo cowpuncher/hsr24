@@ -118,6 +118,41 @@
     }
 }
 
+
+
+.swiper-wrap {
+    padding: 0 30px;
+    position: relative;
+
+    @media (max-width: $md) {
+        padding: 0 52px;
+    }
+
+    & .slick-arrow {
+        margin-top: -17px;
+
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+
+    & .slick-prev {
+        left: 0;
+
+        @media (max-width: $lg) {
+            left: -5px;
+        }
+    }
+
+    & .slick-next {
+        right: 0;
+
+        @media (max-width: $lg) {
+            right: -5px;
+        }
+    }
+}
+
 .slider {
     &__item {
         position: relative;
@@ -172,67 +207,69 @@
     }
 
     &-category {
-        padding: 0 30px;
 
-        @media (max-width: $md) {
-            margin-left: -15px;
-            margin-right: -15px;
-            padding: 0 52px;
-        }
+        &.swiper-container {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
 
-        & .slick-list {
             @media (max-width: $md) {
                 overflow: inherit;
             }
         }
 
-        & .slick-slide {
-            margin-right: 8px;
-            margin-left: 8px;
-
-            @media (max-width: $lg) {
-                margin-left: 9px;
-            }
-
-            @media (max-width: $md) {
-                margin-left: 4px;
-                margin-right: 4px;
-            }
-
-            & img {
-                width: 100%;
-            }
+        @media (max-width: $md) {
+            margin-left: -15px;
+            margin-right: -15px;
+            padding: 0;
         }
 
-        & .slick-arrow {
-            margin-top: -17px;
-        }
+        // & .slick-slide {
+        //     margin-right: 8px;
+        //     margin-left: 8px;
 
-        & .slick-prev {
-            left: 0;
+        //     @media (max-width: $lg) {
+        //         margin-left: 9px;
+        //     }
 
-            @media (max-width: $lg) {
-                left: -5px;
-            }
-        }
+        //     @media (max-width: $md) {
+        //         margin-left: 4px;
+        //         margin-right: 4px;
+        //     }
 
-        & .slick-next {
-            right: 0;
-
-            @media (max-width: $lg) {
-                right: -5px;
-            }
-        }
+        //     & img {
+        //         width: 100%;
+        //     }
+        // }
 
         &__item {
             position: relative;
+            // margin-right: 8px !important;
+            // margin-left: 8px;
 
             @media (max-width: $lg) {
-                height: 152px;
-                width: 152px !important;
+                // margin-left: 9px;
+                // margin-right: 9px !important;
+            }
+
+            @media (max-width: $md) {
+                // margin-left: 4px;
+                // margin-right: 4px !important;
+            }
+
+            @media (max-width: $lg) {
                 background: #878787;
                 border-radius: 50%;
                 overflow: hidden;
+            }
+
+            @media (max-width: $lg - 1) and (min-width: 993px) {
+                width: 152px !important;
+                height: 152px;
+            }
+
+            @media (max-width: 992px) {
+                height: auto;
             }
 
             @media (max-width: $md) {
@@ -354,6 +391,7 @@
             overflow: hidden;
             border-radius: 4px;
             width: 91px;
+            max-height: 180px;
 
             & img {
                 width: 100%;
@@ -375,6 +413,7 @@
         & .slick-slide {
             width: 91px;
             margin-right: 27px;
+            max-height: 180px;
 
             @media (max-width: $lg) {
                 width: 88px;

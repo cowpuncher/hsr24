@@ -29,7 +29,22 @@
                 <div class="container__inner">
                     <h2 class="elem-title">Популярные категории</h2>
                 </div>
-                {{ slider.slider(sliderPopular) }}
+                <!-- {{ slider.slider(sliderPopular) }} -->
+
+                <div class="swiper-wrap">
+                    <div class="slider-category swiper-container" data-slider-category>
+                        <div class="swiper-wrapper">
+                            {% for item in sliderPopular.list %}
+                                <div class="swiper-slide slider-category__item dark">
+                                    <img src="{{ item.img }}" srcset="{{ item.img2 }} 480w, {{ item.img }}" alt="{{ item.img_alt }}" class="slider-category__img">
+                                    <div class="slider-category__name">{{ item.name }}</div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <button type="button" class="slick-arrow slick-prev slick-prev--carousel"></button>
+                    <button type="button" class="slick-arrow slick-next slick-next--carousel"></button>
+                </div>
             </div>
 
             {{ banner.banner(bannerInner) }}

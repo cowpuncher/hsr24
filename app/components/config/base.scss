@@ -34,6 +34,15 @@ body {
         position: fixed;
         cursor: pointer;
     }
+
+    &.noscroll {
+        overflow: hidden;
+
+        & .page {
+            overflow: hidden;
+            height: 100vh;
+        }
+    }
 }
 
 .page {
