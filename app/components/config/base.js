@@ -484,7 +484,7 @@ $(document).ready(function() {
         });
     })
 
-    $('.page-product__info').find('.elem-price-old').prev('.elem-price').addClass('color-red');
+  $('.page-product__info').find('.elem-price-old .elem-rub').parent().prev('.elem-price').addClass('color-red');
 
     $(document).ready(function() {
         var headerHeight = $('.header').outerHeight(true);
