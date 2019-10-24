@@ -324,6 +324,7 @@
         border-bottom: 1px solid $color-smoke;
         height: 248px;
         text-align: center;
+        display: flex;
 
         @media (max-width: $lg) {
             height: 194px;
@@ -331,6 +332,12 @@
 
         @media (max-width: $sm) {
             height: 138px;
+        }
+
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         & img {
