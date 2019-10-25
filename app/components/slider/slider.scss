@@ -385,6 +385,11 @@
             transform: translate3d(0, 0, 0) !important;
         }
 
+        & .slick-track {
+            display: flex;
+            align-items: center;
+        }
+
         &__item {
             vertical-align: top;
             position: relative;
