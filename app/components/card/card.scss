@@ -338,6 +338,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
         }
 
         & img {
@@ -345,6 +346,8 @@
             vertical-align: top;
             border-radius: 5px 5px 0 0;
             max-height: 100%;
+            object-fit: contain;
+            font-family: 'object-fit: contain';
 
             @media (max-width: $md) {
                 border-radius: 3px;
