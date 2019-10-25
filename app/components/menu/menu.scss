@@ -152,18 +152,22 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
+            margin-bottom: -12px;
 
             @media (max-width: $lg) {
                 display: block;
                 position: relative;
+                margin-bottom: 0;
             }
 		}
 
 		&__item {
             position: relative;
+            padding-bottom: 12px;
 
             @media (max-width: $lg) {
                 position: initial;
+                padding-bottom: 0;
             }
 
 			& + & {
@@ -345,13 +349,13 @@
         &__drop {
             position: absolute;
             left: 0;
-            top: calc(100% + 12px);
+            top: 100%;
             background: $color-white;
             border: 1px solid #E6E6E6;
             border-top: 1px solid $color-base;
             display: flex;
             padding: 25px 23px 42px;
-            transition: all 0.3s ease-in-out;
+            transition: opacity 0.3s ease-in-out;
             opacity: 0;
             visibility: hidden;
 
