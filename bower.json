@@ -8,7 +8,8 @@
     "air-datepicker": "^2.2.3",
     "picturefill": "^3.0.3",
     "swiper": "^5.0.4",
-    "inputmask": "^4.0.9"
+    "inputmask": "^4.0.9",
+    "object-fit-images": "*"
   },
   "devDependencies": {
     "magnific-popup": "^1.1.0",
