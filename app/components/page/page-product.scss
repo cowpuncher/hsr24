@@ -426,6 +426,14 @@
 
         & .page-product__info {
             padding-top: 0;
+
+            & .page-product__left {
+                & .elem-btn:not(.elem-btn--sm) {
+                    @media (max-width: $lg) {
+                        min-width: 144px;
+                    }
+                }
+            }
         }
 
         & .page-product__top {
