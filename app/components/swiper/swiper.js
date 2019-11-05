@@ -37,7 +37,14 @@ var swiper = new Swiper('[data-tabs-slider]', {
   }
 });
 
-
+var swiperCategory  = new Swiper('[data-swiper-category]', {
+    slidesPerView: 'auto',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // el: '.swiper-scrollbar'
+});
 
 // $(window).resize(function() {
 //   $(".swiper-container").each(function(){
