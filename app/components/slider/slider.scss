@@ -334,6 +334,27 @@
             &:not(:first-child) {
                 display: none;
             }
+
+            &--video {
+                width: 100% !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & > * {
+                    border-radius: 8px;
+                    max-width: 650px;
+
+                    @media (max-width: $md) {
+                        height: 63.23529411764706vw;
+                        max-width: 100%;
+                    }
+                }
+
+                & .slider-product__bg {
+                    display: none;
+                }
+            }
         }
 
         .slick-track {
