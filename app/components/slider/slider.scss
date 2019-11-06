@@ -354,6 +354,12 @@
                 & .slider-product__bg {
                     display: none;
                 }
+
+                & .ytp-chrome-top,
+                & .ytp-chrome-bottom,
+                & .ytp-expand-pause-overlay .ytp-pause-overlay {
+                    display: none;
+                }
             }
         }
 
@@ -452,14 +458,14 @@
             }
         }
 
-        & .slick-active {
+        & .slick-slide  {
             & .slider-product-carousel__bg {
                 background: none;
             }
 
-            & .elem-play {
-                display: none;
-            }
+            // & .elem-play {
+            //     display: none;
+            // }
 
         }
 
