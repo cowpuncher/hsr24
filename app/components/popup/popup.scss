@@ -496,3 +496,12 @@
     height: auto !important;
     top: 0 !important;
 }
+
+#cartAdded {
+    .popup__btns *+* {
+        @media (max-width: $md) {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+    }
+}
