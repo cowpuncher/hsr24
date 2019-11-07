@@ -42,6 +42,12 @@
             margin-top: 26px;
             margin-bottom: 26px;
         }
+
+        .popup & {
+            @media (max-width: $sm) {
+                margin-top: 5px;
+            }
+        }
     }
 
     &:last-child &__desc {
@@ -51,6 +57,12 @@
     &__row {
         display: flex;
         margin-bottom: -21px;
+
+        .popup & {
+            @media (max-width: $sm) {
+                margin-bottom: 5px;
+            }
+        }
     }
 
     &__input {
