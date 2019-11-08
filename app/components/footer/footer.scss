@@ -313,6 +313,20 @@
         }
     }
 
+    &__autograph {
+        @media (min-width: $lg) {
+            margin-top: 25px;
+        }
+
+        @media (max-width: $lg) and (min-width: $md + 1) {
+            margin: 0 20px;
+        }
+
+        @media (max-width: $md) {
+            margin-top: 15px;
+        }
+    }
+
     &__adress {
         font-size: 11px;
         line-height: 15px;
