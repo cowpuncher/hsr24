@@ -1037,6 +1037,11 @@
             {
                 "href": "#",
                 "text": "Доставка и оплата",
+                "class": "order-lg-8  order-md-1 text-md-left"
+            },
+            {
+                "href": "http://warranty.hsr24.ru/",
+                "text": "Дополнительная гарантия",
                 "class": "order-lg-6  order-md-1 text-md-left"
             },
             {
@@ -1052,7 +1057,7 @@
             {
                 "href": "#",
                 "text": "Возврат и обмен",
-                "class": "order-lg-8  order-md-4 text-md-right"
+                "class": "order-lg-10  order-md-4 text-md-right"
             },
             {
                 "href": "http://hh.ru/employer/2527584",
