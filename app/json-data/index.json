@@ -104,6 +104,10 @@
         {
             "title": "Личный кабинет",
             "href": "profile.html"
+        },
+        {
+            "title": "Новая страница подкатегории",
+            "href": "new-subcategories.html"
         }
     ],
     "menuTop": {
