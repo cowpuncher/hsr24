@@ -314,8 +314,18 @@
     }
 
     &__autograph {
+
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 400;
+
+        @media (max-width: $md) {
+            letter-spacing: -0.2px;
+            font-size: 12px;
+        }
+
         @media (min-width: $lg) {
-            margin-top: 25px;
+            margin-top: 30px;
         }
 
         @media (max-width: $lg) and (min-width: $md + 1) {
