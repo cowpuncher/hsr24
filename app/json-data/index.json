@@ -108,6 +108,10 @@
         {
             "title": "Новая страница подкатегории",
             "href": "new-subcategories.html"
+        },
+        {
+            "title": "Новая страница категории",
+            "href": "new-categories.html"
         }
     ],
     "menuTop": {

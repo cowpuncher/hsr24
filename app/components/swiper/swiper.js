@@ -96,3 +96,12 @@ var swiper = new Swiper('[data-slider-brands]', {
   }
 }
 });
+
+var swiperCategory  = new Swiper('[data-swiper-category-img]', {
+  slidesPerView: 'auto',
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  // el: '.swiper-scrollbar'
+});
