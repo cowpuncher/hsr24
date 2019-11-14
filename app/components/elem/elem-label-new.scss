@@ -1,0 +1,42 @@
+.elem-label-new {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 24px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0;
+    text-align: right;
+    padding-top: 4px;
+    padding-left: 7px;
+
+    @media (max-width: $sm) {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    &[required] {
+        &:after {
+            content: '*';
+            color: $color-red;
+            margin-left: 3px;
+        }
+    }
+
+    &--red-circle {
+        background-color: $color-red;
+        color: $white;
+        border-radius: 10px;
+        padding: 0px 7px;
+        margin-left: 2px;
+        margin-bottom: 14px;
+        font-weight: normal;
+    }
+}

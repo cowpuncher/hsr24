@@ -1,0 +1,65 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/card/card.twig' as card %}
+{% import '../components/pagination/pagination.twig' as pagination %}
+{% import '../components/new-filter/filter.twig' as filters %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-categories{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            <div class="elem-back hidden-lg hidden-xl">
+                {{ svg.icon('arrow-back2') }}
+                Назад
+
+                <div class="elem-back__list">
+                    <div class="elem-back__item">
+                        <a href="#" class="elem-back__link">Уход за кожей</a>
+                    </div>
+                    <div class="elem-back__item">
+                        <a href="#" class="elem-back__link">Товары по уходу</a>
+                    </div>
+                    <div class="elem-back__item">
+                        <a href="#" class="elem-back__link">Красота и здоровье</a>
+                    </div>
+                </div>
+            </div>
+
+            {# заголовок #}
+            <h1 class="h2 elem-title elem-title--row">
+                <span>Красота и здоровье</span><span class="elem-title__count hidden-xs">Товары 1—12 из 20</span>
+            </h1>
+
+            {# фильтр #}
+            {{ filters.filter(filterList) }}
+
+            {# список карточек #}
+            <div class="card__list" data-card-list>
+                {% for item in cardClist %}
+                    {{ card.card(item) }}
+                {% endfor %}
+            </div>
+
+            {# пагинация #}
+            {{ pagination.pagination() }}
+        </div>
+	</div>
+
+    <a href="#" class="online-support">
+        {{ svg.icon('ask') }}
+    </a>
+
+{% endblock %}

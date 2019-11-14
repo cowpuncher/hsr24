@@ -1,0 +1,57 @@
+.elem-link-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    height: 74px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 8px 12px 8px 8px;
+    border: 1px solid #E6E6E6;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    &.swiper-slide {
+        display: inline-flex;
+        width: auto;
+        
+        @media (max-width: 767px) {
+            width: 72px;
+        }
+    }
+
+    & .icon {
+        margin-right: 8px;
+        flex-shrink: 0;
+    }
+
+    &--margin-right {
+
+        &:not(:last-child) {
+            margin-right: 16px;
+
+            @media (min-width: $md + 1) {
+                margin-right: 28px;
+            }
+
+            @media (min-width: $lg + 1) {
+                margin-right: 36px;
+            }
+        }
+    }
+
+    &.active,
+    &--red {
+        color: $color-red;
+    }
+
+    &--nowrap {
+        white-space: nowrap;
+    }
+}
