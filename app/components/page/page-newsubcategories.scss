@@ -10,11 +10,16 @@
         margin-right: 10px;
     }
 
+    &__row {
+        display: flex;
+    }
+
     .filter-big-item {
         display: block;
         position: relative;
         max-height: 380px;
         margin-bottom: 30px;
+        flex: 1 auto;
         
         padding-left: 15px;
         padding-right: 15px;
