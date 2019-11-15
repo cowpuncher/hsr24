@@ -21,6 +21,11 @@
         border-radius: 15px;
         margin-right: 3.5%;
         overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        img {
+            transition: all 0.3s ease-in-out; 
+        }
 
         &:last-child {
             margin-right: 0;
@@ -28,8 +33,7 @@
 
         &:hover img {
             transform: scale(1.1);
-            transition: linear .2s;
-            opacity: .70;
+            transition: all 0.3s ease-in-out;
         }
 
         @media (max-width: 767px) {
