@@ -10,6 +10,20 @@
 
     &__row {
         display: flex;
+
+        &--mobile-show {
+            display: none;
+            @media (max-width: 479px) {
+                display: flex;
+            }
+        }
+
+        &--mobile-hide {
+            display: flex;
+            @media (max-width: 479px) {
+                display: none;
+            }
+        }
     }
 
     .filter-big-item {
@@ -22,6 +36,12 @@
         margin-right: 3.5%;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
+
+        @media (max-width: 479px) {
+            &--mr-0 {
+                margin-right: 0;
+            }
+        }
 
         &:before {
             content: '';
@@ -58,17 +78,31 @@
             margin-bottom: 20px;
         }
 
-        @media (max-width: 599px) {
-            &.item-medium {
-                width: 50%;
+        &--mobile-hide {
+            display: block;
+            @media (max-width: 479px) {
+                display: none;
             }
         }
 
-        @media (max-width: 599px) {
-            &.item-big {
-                width: 100%;
+        &--mobile-show {
+            display: none;
+            @media (max-width: 479px) {
+                display: block;
             }
         }
+
+        // @media (max-width: 599px) {
+        //     &.item-medium {
+        //         width: 50%;
+        //     }
+        // }
+
+        // @media (max-width: 599px) {
+        //     &.item-big {
+        //         width: 100%;
+        //     }
+        // }
 
         &__text {
             display: flex;
@@ -95,7 +129,7 @@
             @media (max-width: 767px) {
                 height: 60px;
                 font-size: 14px;
-                line-height: 21px;
+                line-height: 18px;
                 padding-left: 10px;
                 padding-right: 10px;
             }
@@ -125,6 +159,10 @@
                     font-weight: normal;
                     font-size: 16px;
                     line-height: 19px;
+
+                    @media (max-width: 479px) {
+                        font-size: 10px;
+                    }
                 }
 
                 .elem-price {
@@ -133,6 +171,10 @@
                     font-weight: normal;
                     font-size: 27px;
                     line-height: 32px;
+
+                    @media (max-width: 479px) {
+                        font-size: 20px;
+                    }
                 }
             }
         }
