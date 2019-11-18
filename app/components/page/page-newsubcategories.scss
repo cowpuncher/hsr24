@@ -18,13 +18,14 @@
         max-height: 380px;
         margin-bottom: 30px;
         flex: 1 auto;
-        border-radius: 15px;
+        border-radius: 16px !important;
         margin-right: 3.5%;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
 
         img {
             transition: all 0.3s ease-in-out; 
+            border-radius: 16px !important;
         }
 
         &:last-child {
@@ -34,6 +35,8 @@
         &:hover img {
             transform: scale(1.1);
             transition: all 0.3s ease-in-out;
+            filter: brightness(60%);
+            border-radius: 16px;
         }
 
         @media (max-width: 767px) {
