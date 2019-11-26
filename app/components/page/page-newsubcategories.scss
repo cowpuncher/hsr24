@@ -36,6 +36,9 @@
         margin-right: 3.5%;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
+        height: 367px;
+        overflow: hidden;
+        min-width: 367px;
 
         @media (max-width: 479px) {
             &--mr-0 {
@@ -64,6 +67,8 @@
         img {
             transition: all 0.3s ease-in-out; 
             border-radius: 16px;
+            min-height: 367px;
+            object-fit: cover;
         }
 
         &:last-child {
