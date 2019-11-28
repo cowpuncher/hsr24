@@ -29,16 +29,16 @@
     .filter-big-item {
         display: block;
         position: relative;
-        max-height: 380px;
+        max-height: 367px;
         margin-bottom: 30px;
         flex: 1 auto;
         border-radius: 16px;
         margin-right: 3.5%;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
-        height: 367px;
+        height: auto;
         overflow: hidden;
-        min-width: 367px;
+
 
         @media (max-width: 479px) {
             &--mr-0 {
