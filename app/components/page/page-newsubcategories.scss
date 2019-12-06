@@ -44,6 +44,8 @@
             &--mr-0 {
                 margin-right: 0;
             }
+
+            max-height: 190px;
         }
 
         &:before {
@@ -69,6 +71,10 @@
             border-radius: 16px;
             min-height: 367px;
             object-fit: cover;
+
+            @media (max-width: 479px) {
+                min-height: 190px;
+            }
         }
 
         &:last-child {

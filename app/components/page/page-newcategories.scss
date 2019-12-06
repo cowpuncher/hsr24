@@ -1,6 +1,11 @@
 .filter {
     .filter-picture  {
         height: 100px;
+
+        @media (max-width: 767px) {
+            height: auto;
+        }
+
         .swiper-button-prev,
         .swiper-button-next {
             height: 100%;
@@ -13,6 +18,18 @@
 
             @media (max-width: 767px) {
                 display: none;                
+            }
+        }
+
+        .elem-link--nowrap {
+            @media (max-width: 767px) {
+                white-space: inherit;
+            }
+        }
+
+        &__inner {
+            a {
+                text-align: center;
             }
         }
     }
