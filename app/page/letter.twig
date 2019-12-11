@@ -1,0 +1,37 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-index{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {# заголовок #}
+            <h1 class="h2 elem-title">Письмо</h1>
+            <ol>
+                {% for item in menuList %}
+                    <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+
+    <a href="#" class="online-support">
+        {{ svg.icon('ask') }}
+    </a>
+
+    <script src="//code.jivosite.com/widget.js" data-jv-id="298WvMdhIF" async></script>
+
+{% endblock %}
