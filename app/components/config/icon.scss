@@ -7,23 +7,18 @@
     }
 
     &-logo {
-        width: 104px;
-        height: 58px;
+        width: 120px;
+        height: 60px;
 
         @media (max-width: $lg) {
-            height: 48px;
-            width: 86px;
+            height: 60px;
+            width: 120px;
         }
 
         @media (max-width: $md) {
-            height: 44px;
-            width: 72px;
+            height: 60px;
+            width: 120px;
         }
-    }
-
-    &-logo-ng {
-        width: 120px;
-        height: 60px;
     }
 
     &-search,
