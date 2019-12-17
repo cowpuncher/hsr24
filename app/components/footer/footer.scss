@@ -13,6 +13,14 @@
         flex-direction: column-reverse;
     }
 
+    &__logo {
+        @media (max-width: $lg) {
+            .icon-logo {
+                width: 85px;
+            }
+        }
+    }
+
     &__bottom {
         background: $color-base;
 
