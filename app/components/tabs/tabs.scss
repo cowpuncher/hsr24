@@ -137,6 +137,10 @@
         &-item {
             display: none;
 
+            .card__wrap {
+                padding: 0 0 10px;
+            }
+
             &.open {
                 display: block;
             }
