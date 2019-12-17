@@ -10,6 +10,7 @@
 
     &__row {
         display: flex;
+        width: 100%;
 
         &--mobile-show {
             display: none;
@@ -38,6 +39,7 @@
         transition: all 0.3s ease-in-out;
         height: auto;
         overflow: hidden;
+        max-width: calc(50% - 20px);
 
 
         @media (max-width: 479px) {
@@ -45,6 +47,7 @@
                 margin-right: 0;
             }
 
+            max-width: inherit;
             max-height: 190px;
         }
 
@@ -58,7 +61,7 @@
             bottom: 0;
             background: rgba(0, 0, 0, .2);
             opacity: 0;
-            transition: all 0.3s ease-in-out; 
+            transition: all 0.3s ease-in-out;
             z-index: 1;
         }
 
@@ -67,7 +70,7 @@
         }
 
         img {
-            transition: all 0.3s ease-in-out; 
+            transition: all 0.3s ease-in-out;
             border-radius: 16px;
             min-height: 367px;
             object-fit: cover;
@@ -199,6 +202,10 @@
 .brand__slider {
     position: relative;
 
+    @media (min-width: 1280px) {
+        margin-bottom: 20px;
+    }
+
     &:after {
         position: absolute;
         right: 0;
@@ -218,7 +225,7 @@
 
     .swiper-button-next {
         right: -36px;
-        
+
         @media (max-width: 767px) {
             right: -10px;
             display: block;

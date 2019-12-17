@@ -1,9 +1,11 @@
 .elem-link-picture {
     margin-right: 8px;
+    max-width   : 58px;
+    width       : 100%;
 
     @media (max-width: 767px) {
-        padding: 0;
-        margin-right: 0;
+        padding      : 0;
+        margin-right : 0;
         margin-bottom: 10px;
 
     }
