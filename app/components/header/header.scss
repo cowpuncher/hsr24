@@ -384,6 +384,8 @@
         justify-content: center;
         align-items: center;
 
+        transition: all .5s ease 0s;
+
         @media (max-width: $lg) {
             justify-content: space-between;
         }
@@ -448,7 +450,8 @@
 .fix-nav {
     position: fixed;
     width: 100%;
-
+    z-index: 100000;
+    transition: all .5s ease 0s;
     // @media (min-width: $lg) {
     //     width: 1240px;
     //     left: 50%;
