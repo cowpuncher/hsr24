@@ -361,6 +361,15 @@
             }
         }
     }
+
+    &--yellow {
+        background: #FFFF00;
+        color: #F61D2A;
+
+        &:hover {
+            background: #D7AD1B;
+        }
+    }
 }
 
 button {
