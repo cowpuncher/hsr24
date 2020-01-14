@@ -22,6 +22,7 @@
 
     <style>.wrap_mW._show_1e._orinationRight_25._isCallEnabled_2Q._showLogo_3q.__jivoMobileButton {display: none;}</style>
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css">
 	<!-- build:styles_version -->
 	<link rel="stylesheet" href="template_styles.css">
 	  <!-- endbuild -->
@@ -32,9 +33,11 @@
 
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
 
     <script src="js/libs.js" defer></script>
 	<script src="js/main.js" defer></script>
@@ -46,9 +49,43 @@
         <div class="preloader visible" id="preloader">
             <img src="assets/images/required/loader.gif" alt="">
         </div>
-        <header id="header" class="header">
-  <div class="header__top dark hidden-xs hidden-sm hidden-md">
-    <div class="container">
+        <header id="header" class="header header--bg-sale">
+
+<div class="header__timer">
+    <div class="container container--timer">
+        <div class="header__inner">
+            <div class="header__timer-special-text">Самая горячая распродажа этой зимы!</div>
+            <div class="header__timer-special-text-mobile">SALE</div>
+            <div class="clock-box">
+                <div class="clock-box__title">До окончания:</div>
+                <div id="countdown" class="badge-timer__time elem-countdown" data-countdown>
+                    <div class="elem-countdown__number">
+                        <span class="days elem-countdown__time"></span>
+                        <span class="elem-countdown__text">дни</span>
+                    </div>
+                    <div class="elem-countdown__number">
+                        <span class="hours elem-countdown__time"></span>
+                        <span class="elem-countdown__text">часы</span>
+                    </div>
+                    <div class="elem-countdown__number">
+                        <span class="minutes elem-countdown__time"></span>
+                        <span class="elem-countdown__text">мин.</span>
+                    </div>
+                    <div class="elem-countdown__number">
+                        <span class="seconds elem-countdown__time"></span>
+                        <span class="elem-countdown__text">сек.</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="header__timer-link">За покупками</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="header__top header__top--blue-dark dark hidden-xs hidden-sm hidden-md">
+    <div class="container container--blue-dark">
         <div class="header__inner">
                             
             
@@ -136,12 +173,12 @@
     </div>
   </div>
 
-  <div class="header__middle">
+  <div class="header__middle header__middle--bg-white">
     <div class="container">
         <div class="header__inner">
             <a href="main.html" class="elem-logo">
-                  <svg aria-hidden="true" class="icon icon-logo">
-    <use xlink:href="assets/images/required/sprite.svg#logo"></use>
+                  <svg aria-hidden="true" class="icon icon-logo-old">
+    <use xlink:href="assets/images/required/sprite.svg#logo-old"></use>
   </svg>
 
             </a>
@@ -4251,6 +4288,10 @@
         </div>
     </div>
 </div>
+
+    <div class="header__space-box">
+
+    </div>
 </header>
 
 	  <main>
@@ -4886,8 +4927,9 @@
 	  </main>
 
 	  <footer id="footer" class="footer">
+    <div class="footer__space-box"></div>
     <div class="footer__top order-md-2 order-lg-0">
-        <div class="container">
+        <div class="container container--sale-bg-color">
             <form class="footer__subscribe" method="get" action="" novalidate data-validate>
                 <div class="footer__subscribe-icon">
                       <svg aria-hidden="true" class="icon icon-mail_illustration">
@@ -4906,8 +4948,8 @@
             <div class="footer__inner">
                 <div class="footer__col footer__row-mobile">
                     <a href="main.html" class="elem-logo footer__logo">
-                          <svg aria-hidden="true" class="icon icon-logo">
-    <use xlink:href="assets/images/required/sprite.svg#logo"></use>
+                          <svg aria-hidden="true" class="icon icon-logo-old">
+    <use xlink:href="assets/images/required/sprite.svg#logo-old"></use>
   </svg>
 
                     </a>

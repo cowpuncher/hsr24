@@ -92,7 +92,7 @@
             padding-top: 11px;
         }
     }
-    
+
     &__middle--bg-white {
         background: #fff;
 
@@ -307,6 +307,7 @@
         text-transform: uppercase;
         color: #FFFF00;
         text-shadow: 2px 2px 8px #E8000E, -2px -2px 20px #FF7179;
+        letter-spacing: 1px;
 
         @media (max-width: $lg) {
             display: none;
@@ -322,7 +323,7 @@
             font-weight: 800;
             font-size: 32.9328px;
             line-height: 29px;
-            letter-spacing: 0.04em;
+            letter-spacing: 3px;
             text-transform: uppercase;
             color: #FFFF00;
             text-shadow: 0.925562px 0.925562px 1.85112px #E8000E, -1.85112px -1.85112px 1.85112px #FF7179;
@@ -350,7 +351,7 @@
             height: 21.98px;
             font-size: 7.65432px;
         }
-        
+
     }
 }
 
