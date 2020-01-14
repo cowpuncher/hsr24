@@ -2,11 +2,29 @@
 
 <div class="header__timer">
     <div class="container container--timer">
-        <div class="header__inner">
+        <div class="header__inner header__inner--timer">
             <div class="header__timer-special-text">Самая горячая распродажа этой зимы!</div>
             <div class="header__timer-special-text-mobile">SALE</div>
             <div class="clock-box">
-                {# <div class="your-clock"></div> #}
+                <div class="clock-box__title">До окончания:</div>
+                <div id="countdown" class="badge-timer__time elem-countdown" data-countdown>
+                    <div class="elem-countdown__number">
+                        <span class="days elem-countdown__time"></span>
+                        <span class="elem-countdown__text">дни</span>
+                    </div>
+                    <div class="elem-countdown__number">
+                        <span class="hours elem-countdown__time"></span>
+                        <span class="elem-countdown__text">часы</span>
+                    </div>
+                    <div class="elem-countdown__number">
+                        <span class="minutes elem-countdown__time"></span>
+                        <span class="elem-countdown__text">мин.</span>
+                    </div>
+                    <div class="elem-countdown__number">
+                        <span class="seconds elem-countdown__time"></span>
+                        <span class="elem-countdown__text">сек.</span>
+                    </div>
+                </div>
             </div>
             <div>
                 <a href="#" class="header__timer-link">За покупками</a>
@@ -86,6 +104,6 @@
     {% include '../mobile-menu/mobile-menu.twig' %}
 
     <div class="header__space-box">
-        
+
     </div>
 </header>

@@ -91,8 +91,33 @@
         @media (max-width: $md) {
             padding-top: 11px;
         }
+
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            top: 0;
+            left: -200px;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            top: 0;
+            right: -200px;
+        }
     }
-    
+
     &__middle--bg-white {
         background: #fff;
 
@@ -104,6 +129,33 @@
         @media (min-width: 1919px) {
             max-width: 1280px;
             margin: 0 auto;
+        }
+    }
+
+    &__bootom > div.container {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            top: 0;
+            left: -200px;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            top: 0;
+            right: -200px;
         }
     }
 
@@ -272,6 +324,31 @@
         background: #fff;
         width: 100%;
 
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            top: 0;
+            left: -200px;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            top: 0;
+            right: -200px;
+        }
+
         @media (min-width: 1280px) {
             max-width: 1240px;
             width: 100%;
@@ -290,12 +367,25 @@
     &__timer {
         background: url(assets/images/example/bg/sale-img-small.jpg);
         height: 80px;
+
         display: flex;
         justify-content: center;
         align-items: center;
 
         @media (max-width: $lg) {
             height: 32px;
+            background-image: none;
+            background-color: #F51D2A;
+        }
+    }
+
+    &__inner--timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $lg) {
+            justify-content: space-between;
         }
     }
 
@@ -307,6 +397,7 @@
         text-transform: uppercase;
         color: #FFFF00;
         text-shadow: 2px 2px 8px #E8000E, -2px -2px 20px #FF7179;
+        letter-spacing: 1px;
 
         @media (max-width: $lg) {
             display: none;
@@ -322,7 +413,7 @@
             font-weight: 800;
             font-size: 32.9328px;
             line-height: 29px;
-            letter-spacing: 0.04em;
+            letter-spacing: 3px;
             text-transform: uppercase;
             color: #FFFF00;
             text-shadow: 0.925562px 0.925562px 1.85112px #E8000E, -1.85112px -1.85112px 1.85112px #FF7179;
@@ -350,17 +441,25 @@
             height: 21.98px;
             font-size: 7.65432px;
         }
-        
+
     }
 }
 
 .fix-nav {
     position: fixed;
     width: 100%;
-}
 
-// .clock-box {
-//     .your-clock {
-//         display: flex;
-//     }
-// }
+    // @media (min-width: $lg) {
+    //     width: 1240px;
+    //     left: 50%;
+    //     top: 0;
+    //     transform: translate(-50%, 0);
+    // }
+
+    // @media(min-width: $xl) {
+    //     width: 1280px;
+    //     left: 50%;
+    //     top: 0;
+    //     transform: translate(-50%, 0);
+    // }
+}
