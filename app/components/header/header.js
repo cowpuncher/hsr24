@@ -87,3 +87,45 @@ class Header {
   }
 
   new Header();
+
+
+  $(document).ready(function(){
+
+    var clock = $('.your-clock').FlipClock({
+        clockFace: 'DailyCounter', //вид счетчика (с количеством дней)
+        autoStart: false,          //Отключаем автозапуск
+        countdown: true	,           //Отсчет назад
+        language:'ru-ru',           //Локаль языка
+        callbacks: {               //Действие после окончания отсчета
+        stop: function() {
+		
+       	}
+       }
+    });
+
+    var dt = "January 24 2020 00:00:00";
+    var first = new Date(dt);
+    var last = Date.now();
+    var remaining = first - last;
+    remaining /= 1000;
+
+    clock.setTime(remaining * 24);        //Устанавливаем нужное время в секундах
+    clock.setCountdown(true); //Устанавливаем отсчет назад
+    clock.start(); 
+
+
+
+    
+
+    $(window).scroll(function () {
+        var timer = $('.header__timer');
+
+		if ($(this).scrollTop() > 136) {
+			timer.addClass("fix-nav");
+		} else {
+			timer.removeClass("fix-nav");
+		}
+	});
+
+  });
+  
