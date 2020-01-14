@@ -82,6 +82,7 @@ body {
 
 .container {
     background: #fff;
+    
 
     @media (max-width: $lg) {
         padding-left: 16px;
@@ -731,4 +732,32 @@ jdiv {
 .popup_1H,
 .main_1y {
     width: 100% !important;
+}
+
+
+main > div.container{
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 200px;
+        height: 100%;
+        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        top: 0;
+        left: -200px;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 200px;
+        height: 100%;
+        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        top: 0;
+        right: -200px;
+    }
 }

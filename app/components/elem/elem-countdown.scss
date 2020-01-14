@@ -46,6 +46,8 @@
                 @media (max-width: $lg) {
                     font-size: 17px;
                     line-height: 17px;
+                    top: -4px;
+                    right: -8px;
                 }
             }
         }
@@ -92,7 +94,8 @@
 
     @media (max-width: $lg) {
         margin-top: 0;
-        margin-left: 8px;
+        margin-left: 0;
+        margin-right: inherit;
     }
 
     &__title {
