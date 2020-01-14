@@ -5,7 +5,8 @@
 }
 
 body {
-	background: $bg-base;
+    // background: $bg-base;
+    background: url('assets/images/example/bg/sale-img-big.jpg');
 	font-family: $font-base;
     font-size: $font-size-base;
     font-weight: $font-weight-base;
@@ -80,6 +81,8 @@ body {
 }
 
 .container {
+    background: #fff;
+
     @media (max-width: $lg) {
         padding-left: 16px;
         padding-right: 16px;
@@ -102,6 +105,18 @@ body {
             padding-left: 0;
             padding-right: 0;
         }
+    }
+
+    &--blue-dark {
+        background: #221E59;
+    }
+
+    &--sale-bg-color {
+        background: #F6F6F6;
+    }
+
+    &--timer {
+        background: transparent;
     }
 }
 

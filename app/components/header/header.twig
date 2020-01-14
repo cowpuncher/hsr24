@@ -1,6 +1,22 @@
-<header id="header" class="header">
-  <div class="header__top dark hidden-xs hidden-sm hidden-md">
-    <div class="container">
+<header id="header" class="header header--bg-sale">
+
+<div class="header__timer">
+    <div class="container container--timer">
+        <div class="header__inner">
+            <div class="header__timer-special-text">Самая горячая распродажа этой зимы!</div>
+            <div class="header__timer-special-text-mobile">SALE</div>
+            <div class="clock-box">
+                {# <div class="your-clock"></div> #}
+            </div>
+            <div>
+                <a href="#" class="header__timer-link">За покупками</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="header__top header__top--blue-dark dark hidden-xs hidden-sm hidden-md">
+    <div class="container container--blue-dark">
         <div class="header__inner">
             {{ menu.menu(menuTop) }}
 
@@ -17,11 +33,11 @@
     </div>
   </div>
 
-  <div class="header__middle">
+  <div class="header__middle header__middle--bg-white">
     <div class="container">
         <div class="header__inner">
             <a href="main.html" class="elem-logo">
-                {{ svg.icon('logo') }}
+                {{ svg.icon('logo-old') }}
             </a>
 
             <div class="header__search">
@@ -68,4 +84,8 @@
   </div>
 
     {% include '../mobile-menu/mobile-menu.twig' %}
+
+    <div class="header__space-box">
+        
+    </div>
 </header>
