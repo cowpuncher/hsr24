@@ -101,6 +101,10 @@
 
     &__wrap {
         padding: 0 0 40px;
+
+        @media (max-width: $md) {
+            margin-bottom: 25px;
+        }
     }
 
     &__list {

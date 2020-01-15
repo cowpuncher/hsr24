@@ -357,3 +357,15 @@
         }
     }
 }
+
+.banner-hide-mob {
+    @media (max-width: $md) {
+        display: none;
+    }
+}
+
+.mob-mt-15 {
+    @media (max-width: $md) {
+        margin-top: -15px;
+    }
+}
