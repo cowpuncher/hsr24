@@ -29,7 +29,7 @@
     {% if data.list %}
         <div class="banner-inner">
             <div class="banner-inner__col ordex-xs-1 order-sm-1 order-md-0">
-                <div class="banner-inner__item">
+                <div class="banner-inner__item banner-inner__item--height-302">
                     <img src="{{ data.list[0].img }}" srcset="{{ data.list[0].img2 }} 320w" alt="">
                     <div class="banner-inner__inner">
                         <h3 class="banner-inner__title">{{ data.list[0].title }}</h3>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="banner-inner__col banner-inner__col--auto">
+            <div class="banner-inner__col banner-inner__col--auto banner-hide-mob">
                 <img src="{{ data.list[3].img }}" srcset="{{ data.list[3].img2 }} 320w" alt="">
                 <div class="banner-inner__inner">
                     <h3 class="banner-inner__title">{{ data.list[3].title }}</h3>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class=" order-xl-3 order-lg-3">
+        <div class=" order-xl-3 order-lg-3 mob-mt-15">
             <div class="banner banner--full ">
                 <img src="assets/images/example/banner/banner4.jpg" alt="">
                 <div class="banner__inner banner__inner--big">
