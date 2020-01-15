@@ -447,22 +447,23 @@
     }
 }
 
+
+
 .fix-nav {
     position: fixed;
     width: 100%;
     z-index: 100000;
-    transition: all .5s ease 0s;
-    // @media (min-width: $lg) {
-    //     width: 1240px;
-    //     left: 50%;
-    //     top: 0;
-    //     transform: translate(-50%, 0);
-    // }
+    top: 0;
+}
 
-    // @media(min-width: $xl) {
-    //     width: 1280px;
-    //     left: 50%;
-    //     top: 0;
-    //     transform: translate(-50%, 0);
-    // }
+@keyframes showElement {
+    0% {opacity: 0;
+        top: -70px} 
+    100% {opacity: 1;
+        top: 0} 
+}
+
+.fix-nav {
+    animation-name: showElement;
+    animation-duration: 1s;
 }
