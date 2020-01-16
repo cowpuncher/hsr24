@@ -187,11 +187,14 @@ class Header {
 
     $(window).scroll(function () {
         var timer = $('.header__timer');
+        var menu = $('.header__top');
 
 		if ($(this).scrollTop() > 136) {
-			timer.addClass("fix-nav");
+            timer.addClass("fix-nav");
+            menu.css('margin-top', '80px');
 		} else {
-			timer.removeClass("fix-nav");
+            timer.removeClass("fix-nav");
+            menu.css('margin-top', '0');
 		}
 	});
 
