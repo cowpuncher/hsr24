@@ -145,7 +145,8 @@ class Header {
 
             var tomorrow = new Date();
             tomorrow.setDate(tomorrow.getDate()+1);
-            var nextday = new Date((tomorrow.getMonth()+1)+','+tomorrow.getDate()+','+tomorrow.getFullYear()+',00:00:00');
+            var nd = (tomorrow.getMonth()+1)+','+tomorrow.getDate()+','+tomorrow.getFullYear()+' 00:00:00';
+            var nextday = new Date(nd.replace(/,/g, '/'));
 
             var t = getTimeRemaining(tomorrow);
 
