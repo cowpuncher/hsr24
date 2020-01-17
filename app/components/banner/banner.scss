@@ -7,6 +7,12 @@
         flex-wrap: wrap;
     }
 
+    h3 {
+        &.text-white {
+            color: #fff !important;
+        }
+    }
+
     &--full {
         margin-bottom: 27px;
         align-items: flex-start;
