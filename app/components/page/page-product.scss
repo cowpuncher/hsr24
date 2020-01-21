@@ -26,6 +26,12 @@
         @media (max-width: $lg) {
             padding: 20px 19px;
         }
+
+        @media (max-width: $md) {
+            margin-top: 16px;
+            margin-bottom: 24px;
+            padding: 12px;
+        }
     }
 
     &__complect-header {
