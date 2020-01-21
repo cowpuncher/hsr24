@@ -16,6 +16,22 @@
         }
     }
 
+    &__complect {
+        padding: 24px 24px 20px 24px;
+        background-color: #f6f6f6;
+        border-radius: 8px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        @media (max-width: $lg) {
+            padding: 20px 19px;
+        }
+    }
+
+    &__complect-header {
+        margin-bottom: 0;
+    }
+
     &__row {
         display: flex;
         align-items: center;

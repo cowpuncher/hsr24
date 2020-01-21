@@ -27,3 +27,4 @@ import './reviews/reviews';
 import './profile/profile';
 import './swiper/swiper';
 import './scroll-row/scroll-row';
+import "./complect/complect.js";
