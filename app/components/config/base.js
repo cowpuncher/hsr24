@@ -374,7 +374,7 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('[data-promo]').keyup(function() {
+    /*$('[data-promo]').keyup(function() {
         var el = $(this);
         var val = el.val().replace('_','')
 
@@ -383,7 +383,7 @@ $(document).ready(function() {
         } else {
             el.removeClass('succsess');
         }
-    });
+    });*/
 
     $(document).on('click', '.elem-input-icon.error', function(){
         var el = $(this);
@@ -436,7 +436,7 @@ $(document).ready(function() {
     //     }
     // })
 
-    $('[data-form-promo]').submit(function(e) {
+    /*$('[data-form-promo]').submit(function(e) {
         var el = $(this);
         var input = el.find('[data-promo]');
         var item = input.parent();
@@ -457,7 +457,7 @@ $(document).ready(function() {
         }
 
         e.preventDefault();
-    });
+    });*/
 
     $(document).on('click', '[data-like]', function(e) {
         $(this).toggleClass('active');
