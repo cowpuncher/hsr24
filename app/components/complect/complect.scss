@@ -95,6 +95,8 @@
 
         @media (max-width: $sm) {
             flex: 1;
+            max-width: 270px;
+            margin: 0 auto;
         }
 
         &::before {
