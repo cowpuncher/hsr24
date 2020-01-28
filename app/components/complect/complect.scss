@@ -316,6 +316,9 @@
         height: 132px;
         border-radius: 8px;
         background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @media (max-width: $lg) {
             width: 136px;
