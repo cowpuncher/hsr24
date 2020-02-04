@@ -1,109 +1,78 @@
 <header id="header" class="header header--bg-sale">
 
-<div class="header__timer">
-    <div class="container container--timer">
-        <div class="header__inner header__inner--timer">
-            <div class="header__timer-special-text">Самая горячая распродажа этой зимы!</div>
-            <div class="header__timer-special-text-mobile">SALE</div>
-            <div class="clock-box">
-                <div class="clock-box__title">До окончания:</div>
-                <div id="countdown" class="badge-timer__time elem-countdown" data-countdown>
-                    <div class="elem-countdown__number">
-                        <span class="days elem-countdown__time"></span>
-                        <span class="elem-countdown__text">дни</span>
-                    </div>
-                    <div class="elem-countdown__number">
-                        <span class="hours elem-countdown__time"></span>
-                        <span class="elem-countdown__text">часы</span>
-                    </div>
-                    <div class="elem-countdown__number">
-                        <span class="minutes elem-countdown__time"></span>
-                        <span class="elem-countdown__text">мин.</span>
-                    </div>
-                    <div class="elem-countdown__number">
-                        <span class="seconds elem-countdown__time"></span>
-                        <span class="elem-countdown__text">сек.</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <a href="#" class="header__timer-link">За покупками</a>
-            </div>
-        </div>
-    </div>
-</div>
+	<div class="header__top header__top--blue-dark dark hidden-xs hidden-sm hidden-md">
+		<div class="container container--blue-dark">
+			<div class="header__inner">
+				{{ menu.menu(menuTop) }}
 
-  <div class="header__top header__top--blue-dark dark hidden-xs hidden-sm hidden-md">
-    <div class="container container--blue-dark">
-        <div class="header__inner">
-            {{ menu.menu(menuTop) }}
+				<div class="header__authorization">
+					{% if userInit %}
+						<a href="#" class="header__link">Личный кабинет</a>
+						<a href="#" class="header__link">Выход</a>
+					{% else %}
+						<a href="#login" class="header__link header__link--thin" data-popup-modal>Вход</a>
+						<a href="#reg" class="header__link header__link--thin" data-popup-modal>Регистрация
+							{{ svg.icon('user') }}
+						</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
 
-            <div class="header__authorization">
-                {% if userInit %}
-                    <a href="#" class="header__link">Личный кабинет</a>
-                    <a href="#" class="header__link">Выход</a>
-                {% else %}
-                    <a href="#login" class="header__link header__link--thin" data-popup-modal>Вход</a>
-                    <a href="#reg" class="header__link header__link--thin" data-popup-modal>Регистрация {{ svg.icon('user') }} </a>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-  </div>
+	<div class="header__middle header__middle--bg-white">
+		<div class="container">
+			<div class="header__inner">
+				<a href="main.html" class="elem-logo">
+					{{ svg.icon('logo-old') }}
+				</a>
 
-  <div class="header__middle header__middle--bg-white">
-    <div class="container">
-        <div class="header__inner">
-            <a href="main.html" class="elem-logo">
-                {{ svg.icon('logo-old') }}
-            </a>
+				<div class="header__search">
+					<div class="elem-item">
+						<div class="elem-input__icon">
+							{{ svg.icon('search') }}
+						</div>
+						<input type="text" class="elem-input elem-input--sm" placeholder="Поиск по сайту" data-autocomplete>
+						<div class="ui-autocomplete__wrap">
+							<h6>
+								<a href="newpage.html" class="ui-autocomplete__link" data-autocomplete-all>Все результаты</a>
+							</h6>
+							<div class="ui-autocomplete__wrap-in"></div>
+						</div>
+					</div>
+				</div>
 
-            <div class="header__search">
-                <div class="elem-item">
-                    <div class="elem-input__icon">
-                        {{ svg.icon('search') }}
-                    </div>
-                    <input type="text" class="elem-input elem-input--sm" placeholder="Поиск по сайту" data-autocomplete>
-                    <div class="ui-autocomplete__wrap">
-                        <h6>
-                            <a href="newpage.html" class="ui-autocomplete__link" data-autocomplete-all>Все результаты</a>
-                        </h6>
-                        <div class="ui-autocomplete__wrap-in"></div>
-                    </div>
-                </div>
-            </div>
+				<div class="header__contacts hidden-xs hidden-sm hidden-md">
+					<a href="javascript:jivo_api.open({start : 'call'})" class="header__contacts-title">Обратный звонок</a>
+					<a href="tel:8800707502" class="header__contacts-phone">
+						{{ svg.icon('24h') }}
+						8 800 707-50-25
+					</a>
+					<div class="header__contacts-desc">Звонок по России бесплатный</div>
+				</div>
 
-            <div class="header__contacts hidden-xs hidden-sm hidden-md">
-                <a href="javascript:jivo_api.open({start : 'call'})" class="header__contacts-title">Обратный звонок</a>
-                <a href="tel:8800707502" class="header__contacts-phone">
-                    {{ svg.icon('24h') }} 8 800 707-50-25
-                </a>
-                <div class="header__contacts-desc">Звонок по России бесплатный</div>
-            </div>
+				<div class="header__menu">
+					{{ menu.menu(menuIcons) }}
+					{{ hamburger.hamburger() }}
+				</div>
+			</div>
+		</div>
+	</div>
 
-            <div class="header__menu">
-                {{ menu.menu(menuIcons) }}
-                {{ hamburger.hamburger() }}
-            </div>
-        </div>
-    </div>
-  </div>
+	<div class="header__bootom hidden-xs hidden-sm hidden-md">
+		<div class="container">
+			<div class="header__inner">
+				{{ menu.menu(menuBottom) }}
 
-  <div class="header__bootom hidden-xs hidden-sm hidden-md">
-    <div class="container">
-        <div class="header__inner">
-            {{ menu.menu(menuBottom) }}
+				<a href="#" class="menu-bottom__all">
+					{{ svg.icon('all') }}
+					Весь каталог
+				</a>
+			</div>
+		</div>
+	</div>
 
-            <a href="#" class="menu-bottom__all">
-                {{ svg.icon('all') }} Весь каталог
-            </a>
-        </div>
-    </div>
-  </div>
+	{% include '../mobile-menu/mobile-menu.twig' %}
 
-    {% include '../mobile-menu/mobile-menu.twig' %}
-
-    <div class="header__space-box">
-
-    </div>
+	<div class="header__space-box"></div>
 </header>
