@@ -1,14 +1,12 @@
 .footer {
-    // margin-top: 40px;
-    margin-top: 0;
-    // background: $color-smoke;
+    margin-top: 40px;
+    background: $color-smoke;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 
     @media (max-width: $lg) {
-        // margin-top: 28px;
-        margin-top: 0;
+        margin-top: 28px;
     }
 
     @media (max-width: $md) {
@@ -20,60 +18,6 @@
             .icon-logo {
                 width: 85px;
             }
-        }
-    }
-
-    &__space-box {
-        height: 28px;
-        background: #fff;
-        width: 100%;
-
-        position: relative;
-
-        &:after {
-            position: absolute;
-            content: '';
-            display: block;
-            width: 200px;
-            height: 100%;
-            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-            top: 0;
-            left: -200px;
-        }
-
-        &:before {
-            position: absolute;
-            content: '';
-            display: block;
-            width: 200px;
-            height: 100%;
-            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-            top: 0;
-            right: -200px;
-        }
-
-        @media (max-width: $md) {
-            order: 1;
-        }
-        @media (max-width: $lg) {
-            height: 28px;
-            background: #fff;
-            width: 100%;
-        }
-
-        @media (min-width: 1280px) {
-            max-width: 1240px;
-            width: 100%;
-            height: 40px;
-            margin: 0 auto;
-        }
-        @media (min-width: 1920px) {
-            height: 40px;
-            background: #fff;
-            max-width: 1280px;
-            width: 100%;
-            margin: 0 auto;
         }
     }
 
@@ -301,7 +245,6 @@
 
     &__top {
         padding: 25px 0 32px;
-        background: $color-smoke;
 
         @media (max-width: $lg) {
             padding-top: 28px;
