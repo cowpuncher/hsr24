@@ -9,16 +9,14 @@
     line-height: 16px;
     font-weight: 800;
     color: $color-gray;
-    // margin-top: 17px;
-    margin-top: 0; // для новогоднего дизайна. убираем разрыв
+    margin-top: 17px;
     position: relative;
     cursor: pointer;
 
     @media (max-width: $md) {
         margin-left: 0;
         margin-right: 0;
-        // margin-top: 6px; // для новогоднего дизайна. убираем разрыв
-        margin-top: 0;
+        margin-top: 6px;
         font-size: 12px;
         line-height: 15px;
         padding: 0 8px;
