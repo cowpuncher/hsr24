@@ -342,11 +342,11 @@
 						</div>
 
 
-						<h2 class="h2 elem-title elem-title--row">
+						<h2 class="h2 elem-title elem-title--row hidden-md hidden-sm hidden-xs">
 							<span>Бренды</span>
 						</h2>
 
-						<div class="tabs__body js-tabs-body slider-block-brands">
+						<div class="tabs__body js-tabs-body slider-block-brands hidden-md hidden-sm hidden-xs">
 							<div class="tabs__body-item open">
 								<div class="brand__wrap">
 									<div class="brand__list brand__slider">
@@ -465,11 +465,11 @@
 						</div>
 
 
-						<h2 class="h2 elem-title elem-title--row">
+						<h2 class="h2 elem-title elem-title--row hidden-sm hidden-xs">
 							<span>Подборка товаров</span>
 						</h2>
 
-						<div class="assortment-product">
+						<div class="assortment-product hidden-sm hidden-xs">
 							<div class="assortment-product__inner">
 
 								<div class="assortment-product__row-top">
@@ -603,13 +603,92 @@
 									</div>
 								</div>
 
-								<div class="assortment-product__row-bottom">
+								<div class="assortment-product__row-bottom hidden-md">
 									<div
-										class="assortment-product__banner-bottom">{# <img class="assortment-product__banner-img" src="" alt=""> #}
+										class="assortment-product__banner-bottom">
+                                        {# <img class="assortment-product__banner-img" src="" alt=""> #}
 									</div>
 								</div>
 
+							</div>
+						</div>
 
+						<h2 class="h2 elem-title elem-title--row hidden-lg hidden-xl">
+							<span>Бренды</span>
+						</h2>
+
+						<div class="tabs__body js-tabs-body slider-block-brands hidden-lg hidden-xl">
+							<div class="tabs__body-item open">
+								<div class="brand__wrap">
+									<div class="brand__list brand__slider">
+										<div class="swiper-container swiper-container-initialized swiper-container-horizontal" data-slider-brands-min-item>
+											<div class="swiper-wrapper">
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-1.jpg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-2.jpg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-3.jpg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-4.jpg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-5.jpg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-6.jpg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-1.jpg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="brand swiper-slide">
+													<div class="brand__img">
+														<a href="#"><img src="assets/images/example/slider-block/brand-2.jpg" alt=""></a>
+													</div>
+												</div>
+
+											</div>
+											<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+											<div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+											<div class="swiper-scrollbar">
+												<div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px); width: 0px;"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="assortment-product__row-bottom assortment-product__row-bottom--mobile hidden-lg hidden-xl">
+							<div
+								class="assortment-product__banner-bottom">
+                                {# <img class="assortment-product__banner-img" src="" alt=""> #}
 							</div>
 						</div>
 
@@ -951,10 +1030,10 @@
 
 							{# список карточек #}
 						{# <div class="card__list" data-card-list>
-																																																																																																															                    {% for item in cardClist %}
-																																																																																																															                        {{ card.card(item) }}
-																																																																																																															                    {% endfor %}
-																																																																																																															                </div> #}
+																																																																																																																											                    {% for item in cardClist %}
+																																																																																																																											                        {{ card.card(item) }}
+																																																																																																																											                    {% endfor %}
+																																																																																																																											                </div> #}
 
 							{# пагинация #}
 							{# {{ pagination.pagination() }} #}

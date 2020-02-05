@@ -7,6 +7,10 @@
     width       : 100%;
     margin-right: 25px;
 
+    @media (max-width: $lg) {
+        display: none;
+    }
+
     &__inner {
 
         &>* {
@@ -59,6 +63,10 @@
 
 .half-box {
     width: calc(100% - 313px);
+
+    @media (max-width: $lg) {
+        width: 100%;
+    }
 }
 
 .u-filter-product {
@@ -89,6 +97,23 @@
         &:nth-child(4n) {
             margin-right: 0;
         }
+
+        @media (max-width: $lg) {
+            width: calc(25% - 11.3px);
+        }
+
+        @media (max-width: $md) {
+            width       : calc(50% - 5px);
+            margin-right: 10px;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(4n) {
+                margin-right: auto;
+            }
+        }
     }
 
     &__name-product {
@@ -117,11 +142,25 @@
 }
 
 .recommendations-item {
-    width       : 23.71%;
+    width       : calc(25% - 11.3px);
     margin-right: 15px;
 
     &:nth-child(4n) {
         margin-right: 0;
+    }
+
+    @media (max-width: $md) {
+        width        : calc(50% - 5px);
+        margin-right : 10px;
+        margin-bottom: 10px;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(4n) {
+            margin-right: inherit;
+        }
     }
 
     &__img-wrap {
@@ -151,6 +190,15 @@
 
     &__row-bottom {
         margin-top: 30px;
+
+        &--mobile {
+            margin-top: 20px;
+
+            @media (max-width: $md) {
+                margin-top   : 10px;
+                margin-bottom: 10px;
+            }
+        }
     }
 
     &__banner-left {
@@ -161,6 +209,11 @@
         overflow     : hidden;
         margin-right : 20px;
         margin-bottom: 20px;
+
+        @media (max-width: 1023px) {
+            width       : 30%;
+            margin-right: 3px;
+        }
     }
 
     &__banner-bottom {
@@ -177,8 +230,16 @@
         display  : flex;
         flex-wrap: wrap;
 
+        @media (max-width: 1023px) {
+            width: 100%;
+        }
+
         &>* {
-            width: 31.3%;
+            width: 31.2%;
+
+            @media (max-width: $lg) {
+                width: calc(33% - 10px);
+            }
         }
     }
 }
