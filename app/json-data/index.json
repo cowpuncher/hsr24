@@ -116,6 +116,10 @@
         {
             "title": "Письмо",
             "href": "letter.html"
+        },
+        {
+            "title": "Cтраница подкатегории update",
+            "href": "update-subcategories.html"
         }
     ],
     "menuTop": {
