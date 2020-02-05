@@ -138,9 +138,14 @@ var swiper = new Swiper('[data-tabs-slider-item-three]', {
     spaceBetween: 10,
     allowTouchMove: true
   },
+  // when window width is <= 1023px
+  1023: {
+    slidesPerView: 3,
+    spaceBetween: 26
+  },
   // when window width is <= 1279px
   1279: {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 26
   }
 }
@@ -184,7 +189,7 @@ var swiper = new Swiper('[data-slider-brands-min-item]', {
   },
   // when window width is <= 1279px
   1279: {
-    slidesPerView: 4,
+    slidesPerView: 6,
     spaceBetween: 26
   }
 }
