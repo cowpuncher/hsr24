@@ -1046,8 +1046,8 @@
 
 			<div class="filter ">
 
-				<div class="filter__row filter__row--between">
-			
+				<div class="filter__row filter__row--between hidden-md hidden-sm hidden-xs">
+
 					<div class="filter__btn hidden-md hidden-sm hidden-xs">
 						<div class="filter__btn-item">
 							<a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md elem-btn--fix-weight" title="Хиты продаж" data-filter-btn="">Хиты продаж</a>
@@ -1326,7 +1326,105 @@
 				</form>
 
 
-				<div class="filter__view hidden-md hidden-lg hidden-xl" data-filter-view="">
+				<div class="filter__row filter__row--between hidden-lg hidden-xl u-margin-auto">
+
+					<div class="filter__select">
+
+
+						<div class="dropdown bootstrap-select show-tick sortlist bs3 dropup">
+							<select class="sortlist" title="Выберите параметры" data-mobile-none="" data-desktop-none="" tabindex="-98">
+								<option class="" value="popular" selected="">
+									Популярные
+								</option>
+								<option class="" value="maxPrice">
+									Сначала дорогие
+								</option>
+								<option class="" value="minPrice">
+									Сначала дешевые
+								</option>
+								<option class="hidden-xl hidden-lg" value="hit">
+									Хиты продаж
+								</option>
+								<option class="hidden-xl hidden-lg" value="sale">
+									Товары со скидкой
+								</option>
+								<option class="hidden-xl hidden-lg" value="new">
+									Новинки
+								</option>
+							</select>
+							<button type="button" class="btn dropdown-toggle btn-default" style="display: none;" data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" title="Популярные">
+								<div class="filter-option">
+									<div class="filter-option-inner">
+										<div class="filter-option-inner-inner">Популярные</div>
+									</div>
+								</div>
+								<span class="bs-caret">
+									<span class="caret"></span>
+								</span>
+							</button>
+							<div class="dropdown-menu open" style="max-height: 289px; overflow: hidden; min-height: 113px;">
+								<div class="inner open" role="listbox" id="bs-select-4" tabindex="-1" aria-activedescendant="bs-select-4-0" style="max-height: 287px; overflow-y: auto; min-height: 111px;">
+									<ul class="dropdown-menu inner " role="presentation" style="margin-top: 0px; margin-bottom: 0px;">
+										<li class="selected active">
+											<a role="option" id="bs-select-4-0" tabindex="0" aria-setsize="6" aria-posinset="1" class="active selected" aria-selected="true">
+												<span class="glyphicon glyphicon-ok check-mark"></span>
+												<span class="text">
+													Популярные
+												</span>
+											</a>
+										</li>
+										<li>
+											<a role="option" id="bs-select-4-1" tabindex="0">
+												<span class="glyphicon glyphicon-ok check-mark"></span>
+												<span class="text">
+													Сначала дорогие
+												</span>
+											</a>
+										</li>
+										<li>
+											<a role="option" id="bs-select-4-2" tabindex="0">
+												<span class="glyphicon glyphicon-ok check-mark"></span>
+												<span class="text">
+													Сначала дешевые
+												</span>
+											</a>
+										</li>
+										<li>
+											<a role="option" class="hidden-xl hidden-lg" id="bs-select-4-3" tabindex="0">
+												<span class="glyphicon glyphicon-ok check-mark"></span>
+												<span class="text">
+													Хиты продаж
+												</span>
+											</a>
+										</li>
+										<li>
+											<a role="option" class="hidden-xl hidden-lg" id="bs-select-4-4" tabindex="0">
+												<span class="glyphicon glyphicon-ok check-mark"></span>
+												<span class="text">
+													Товары со скидкой
+												</span>
+											</a>
+										</li>
+										<li>
+											<a role="option" class="hidden-xl hidden-lg" id="bs-select-4-5" tabindex="0">
+												<span class="glyphicon glyphicon-ok check-mark"></span>
+												<span class="text">
+													Новинки
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+				<div class="filter__view hiddem-sm hidden-xs hidden-md hidden-lg hidden-xl u-hidden-all" data-filter-view="">
 					<a href="" class="filter__view-link active" data-filter-view-item="table">
 						<svg aria-hidden="true" class="icon icon-table">
 							<use xlink:href="assets/images/required/sprite.svg#table"></use>
@@ -1341,7 +1439,7 @@
 
 					</a>
 				</div>
-				<div class="filter__row hidden-md hidden-lg hidden-xl">
+				<div class="filter__row hidden-xs hidden-md hidden-lg hidden-xl u-hidden-all">
 					<div class="elem-title__count">Товары: 1-12 из 20</div>
 				</div>
 			</div>
@@ -1350,6 +1448,14 @@
 				{% for item in cardClist %}
 					{{ card.card(item) }}
 				{% endfor %}
+
+				<div class="elem-more__row u-margin-auto">
+					<a href="#" class="elem-more">
+						<svg aria-hidden="true" class="icon icon-show-more">
+							<use xlink:href="assets/images/required/sprite.svg#show-more"></use>
+						</svg>
+					</a>
+				</div>
 			</div>
 
 			<a href="#" class="online-support">

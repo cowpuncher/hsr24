@@ -189,6 +189,10 @@
         font-size  : 18px;
         line-height: 27px;
         text-align : center;
+
+        @media (max-width: $md) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -303,4 +307,18 @@
 
 .u-margin {
     margin-bottom: 25px;
+}
+
+.u-margin-auto {
+    @media (max-width: $md) {
+        margin-right: auto;
+    }
+}
+
+.u-hidden-all {
+    display: none;
+}
+
+.u-margin-auto {
+    margin: auto;
 }
