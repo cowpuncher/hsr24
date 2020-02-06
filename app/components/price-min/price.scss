@@ -1,0 +1,126 @@
+.price {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $md) {
+        flex-direction: column;
+        margin-bottom: 9px;
+    }
+
+    * + & {
+        margin-left: 20px;
+
+        @media (max-width: $lg) {
+            margin-left: 39px;
+        }
+    }
+
+    &__name {
+        flex-shrink: 0;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+
+        @media (max-width: $lg) {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.1px;
+        }
+    }
+
+    &__input {
+        display: flex;
+        margin-left: 12px;
+        flex-shrink: 0;
+
+        @media (max-width: $lg) {
+            margin-left: 16px;
+        }
+
+        @media (max-width: $md) {
+            margin-left: 0;
+            margin-bottom: 22px;
+            padding-top: 12px;
+        }
+    }
+
+    &__label {
+        display: flex;
+        margin-bottom: 0;
+
+        & + & {
+            margin-left: 12px;
+
+            @media (max-width: $lg) {
+                margin-left: 10px;
+            }
+        }
+
+        &[data-before="от"] {
+            &:before {
+                content: 'от';
+            }
+        }
+
+        &[data-before="до"] {
+            &:before {
+                content: 'до';
+            }
+        }
+
+        &[data-before] {
+            &:before {
+                position: absolute;
+                margin-top: 8px;
+                margin-left: 14px;
+
+                @media (max-width: $lg) {
+                    font-size: 10px;
+                    margin-top: 7px;
+                    margin-left: 12px;
+                }
+
+                @media (max-width: $md) {
+                    font-size: 12px;
+                    margin-top: 14px;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        
+    }
+
+    &__slider {
+        background: $color-gray-light;
+        height: 5px;
+        min-width: 137px;
+        border-radius: 3px;
+        margin-left: 12px;
+
+        @media (max-width: $md) {
+            margin-left: 12px;
+            margin-right: 12px;
+            width: calc(100% - 24px) !important;
+        }
+
+        & .ui-slider-range {
+            background: $color-base;
+        }
+
+        & .ui-slider-handle {
+            border: 1px solid $color-base;
+            background: $color-white;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+
+            @media (max-width: $md) {
+                height: 24px;
+                width: 24px;
+                top: -10px;
+            }
+        }
+    }
+}

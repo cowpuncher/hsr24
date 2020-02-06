@@ -306,10 +306,16 @@
 }
 
 .u-margin {
-    margin-bottom: 25px;
+    @media(max-width: $lg) {
+        margin-bottom: 5px;
+    }
+
+    @media(max-width: $md) {
+        margin-bottom: 15px;
+    }
 }
 
-.u-margin-auto {
+.u-margin-right-auto {
     @media (max-width: $md) {
         margin-right: auto;
     }
@@ -321,4 +327,26 @@
 
 .u-margin-auto {
     margin: auto;
+}
+
+.u-filter {
+    margin-bottom: -25px;
+
+    @media (max-width: $lg) {
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: $md) {
+        margin-bottom: 0;
+    }
+}
+
+.elem-more-show a {
+    background: transparent;
+}
+
+.elem-more-show a .icon {
+    @media (max-width: $md) {
+        display: block !important;
+    }
 }
