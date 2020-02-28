@@ -666,6 +666,7 @@
             padding-left: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
+            text-align: center;
         }
 
         & .elem-btn {
@@ -768,7 +769,6 @@
         }
 
         @media (max-width: $md) {
-            justify-content: space-between;
             margin-bottom: 6px;
         }
 
