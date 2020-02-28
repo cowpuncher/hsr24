@@ -676,12 +676,6 @@
                 margin-left: 0;
             }
 
-            @media (max-width: $md) {
-                height: 30px;
-                min-width: 100px;
-                border-radius: 15px;
-            }
-
             &--disabled {
                 margin-left: auto;
             }
