@@ -12,7 +12,6 @@
     @media (max-width: $md) {
         font-size: 22px;
         line-height: 26px;
-        margin-right: auto;
     }
 
     &--lg {
@@ -58,8 +57,8 @@
         @media (max-width: $md) {
             font-size: 12px;
             line-height: 14px;
-            letter-spacing: 0px;
-            margin-left: 0px;
+            letter-spacing: 0;
+            margin-left: auto;
         }
 
         &--lg {
