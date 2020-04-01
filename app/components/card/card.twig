@@ -1,7 +1,7 @@
 {% macro card(data) %}
     {% import '../../page/_macros/_svg.twig' as svg %}
 
-	<div class="card {% if data.class %}{{ data.class }}{% endif %}">
+	<div class="card card--redesign {% if data.class %}{{ data.class }}{% endif %}">
         
         {% if data.class == "card-link swiper-slide" %}
             <div class="card-link__inner">
@@ -27,6 +27,13 @@
               </span>
             {% endif %}
         </div>
+        <div class="card__price">
+            {% if data.priceOld %}
+                <div class="elem-price">{{ data.price }}</div>
+                <div class="elem-price-old">{{ data.priceOld }}</div>
+            {% endif %}
+        </div>
+
         <div class="card__info">
 
             {% if data.articul %}
@@ -36,16 +43,29 @@
             {% endif %}
 
             <a href="#" class="card__name">{{ data.name }}</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                {% if data.priceOld %}
-                    <div class="elem-price-old">{{ data.priceOld }}</div>
-                    <div class="elem-price">{{ data.price }}</div>
-                {% endif %}
-            </div>
+            
             {% if data.btn %}
-                <a href="#" class="elem-btn elem-btn--light elem-btn--sm {% if data.null %} elem-btn--disabled {% endif %} {% if data.unsubscribe %} elem-btn--gray-light {% endif %}" {% if data.null %} {% else %} data-add="Добавить" {% endif %}>{{ data.btn }}</a>
+                <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14 {% if data.null %} elem-btn--disabled {% endif %} {% if data.unsubscribe %} elem-btn--gray-light {% endif %}" {% if data.null %} {% else %} data-add="Добавить" {% endif %}>{{ data.btn }}</a>
             {% endif %}
         </div>
         <span class="card__like {% if data.likeActive %}active{% endif %}" data-like>

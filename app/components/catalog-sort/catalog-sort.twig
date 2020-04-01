@@ -1,0 +1,66 @@
+{% macro filter(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+    {% import '../price/price.twig' as price %}
+    {% import '../pagination/pagination.twig' as pagination %}
+    {% import '../select/select.twig' as select %}
+
+	<div class="filter filter--full {{ data.class }}">
+
+        
+        {% if data.viewIcon %}
+
+        {% else %}
+            <div class="elem-title__count align-items-center hidden-sm hidden-md hidden-lg hidden-xl d-flex">Результаты: 12 из 200</div>
+
+            <div class="filter__view hidden-xs hidden-md hidden-lg hidden-xl" data-filter-view>
+                {% if data.count %}
+                    <div class="filter__view-name">Показать:</div>
+                    <div class="filter__nums">
+                        {% for item in data.count %}
+                            <a href="" class="filter__nums-item {% if item.active %}active{% endif %}">{{ item.text }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
+        <div class="filter__row filter__row--between hidden-mob">
+
+            <div class="filter__select filter__select--width-auto">
+                {# выпадающий список #}
+                {{ select.select(data.sortList) }}
+            </div>
+
+            {# пагинация #}
+            {% if data.btn %}
+                    <div class="filter__btn filter__btn--center hidden-md hidden-sm hidden-xs">
+                        {% for item in data.btn %}
+                            <div class="filter__btn-item">
+                                <a href="{{ item.href }}" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--md elem-btn--fix-weight" title="{{ item.text }}" data-filter-btn>{{ item.text }}</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+            <div class="filter__view hidden-sm hidden-xs" data-filter-view>
+                {% if data.count %}
+                    <div class="filter__view-name">Показать:</div>
+                    <div class="filter__nums">
+                        {% for item in data.count %}
+                            <a href="" class="filter__nums-item {% if item.active %}active{% endif %}">{{ item.text }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if data.viewIcon %}
+                    <a href="" class="filter__view-link active" data-filter-view-item="table">
+                        {{ svg.icon('table') }}
+                    </a>
+
+                    <a href="" class="filter__view-link" data-filter-view-item="list">
+                        {{ svg.icon('list') }}
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

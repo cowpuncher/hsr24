@@ -120,6 +120,10 @@
         {
             "title": "Cтраница подкатегории update",
             "href": "update-subcategories.html"
+        },
+        {
+            "title": "Новая страница категории (с боковым фильтром и обновленным видом карточек)",
+            "href": "new-categories-aside-filter.html"
         }
     ],
     "menuTop": {

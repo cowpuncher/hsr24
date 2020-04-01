@@ -551,6 +551,12 @@ table {
     }
 }
 
+@media (max-width: $md) {
+    .hidden-mob {
+        display: none !important;
+    }
+}
+
 @media (max-width: $sm) {
     .hidden-xs {
         display: none !important;

@@ -4406,7 +4406,36 @@
                 <div class="swiper-button-prev"></div>
             </div>
 
-            <div class="filter__row filter__row--between">
+            <div class="filter__row filter__row--between hidden-xl hidden-lg hidden-md">
+                <div class="filter__select">
+                    
+                        
+        <select class="sortlist" title=""   data-mobile-none="" data-desktop-none="">
+                            <option    class="" value="popular"  selected  >
+                                            Популярные
+                                    </option>
+                            <option    class="" value="maxPrice"  >
+                                            Сначала дорогие
+                                    </option>
+                            <option    class="" value="minPrice"  >
+                                            Сначала дешевые
+                                    </option>
+                            <option    class="hidden-xl hidden-lg" value="hit"  >
+                                            Хиты продаж
+                                    </option>
+                            <option    class="hidden-xl hidden-lg" value="sale"  >
+                                            Товары со скидкой
+                                    </option>
+                            <option    class="hidden-xl hidden-lg" value="new"  >
+                                            Новинки
+                                    </option>
+                    </select>
+    
+
+                </div>
+            </div>
+            
+            <div class="filter__row filter__row--between hidden-xl hidden-lg"> 
                 
                     <a href="#" class="elem-filter" data-filter-show>
                       <svg aria-hidden="true" class="icon icon-filter">
@@ -4641,109 +4670,7 @@
         
 
         
-        <div class="filter__row filter__row--between">
-
-            <div class="filter__select">
-                
-                    
-        <select class="sortlist" title=""   data-mobile-none="" data-desktop-none="">
-                            <option    class="" value="popular"  selected  >
-                                            Популярные
-                                    </option>
-                            <option    class="" value="maxPrice"  >
-                                            Сначала дорогие
-                                    </option>
-                            <option    class="" value="minPrice"  >
-                                            Сначала дешевые
-                                    </option>
-                            <option    class="hidden-xl hidden-lg" value="hit"  >
-                                            Хиты продаж
-                                    </option>
-                            <option    class="hidden-xl hidden-lg" value="sale"  >
-                                            Товары со скидкой
-                                    </option>
-                            <option    class="hidden-xl hidden-lg" value="new"  >
-                                            Новинки
-                                    </option>
-                    </select>
-    
-
-            </div>
-
-            
-            <div class="hidden-md hidden-sm hidden-xs">
-                    
-	<nav class="pagination">
-        <ul class="pagination__list">
-            <a href="#" class="pagination__link pagination__link--prev disabled">
-                  <svg aria-hidden="true" class="icon icon-arrow-back">
-    <use xlink:href="assets/images/required/sprite.svg#arrow-back"></use>
-  </svg>
-
-            </a>
-
-                                          <li class="pagination__item">
-                                      <span class="pagination__text">1</span>
-                                  </li>
-                                                        <li class="pagination__item">
-                                      <a href="#" class="pagination__link">2</a>
-                                  </li>
-                                                        <li class="pagination__item">
-                                      <a href="#" class="pagination__link">3</a>
-                                  </li>
-                                                                                                                                                                                                                                                                                                          <li class="pagination__item">
-                    <a href="#" class="pagination__link pagination__link--more">...</a>
-                  </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="pagination__item">
-                                      <a href="#" class="pagination__link">18</a>
-                                  </li>
-                                                        <li class="pagination__item">
-                                      <a href="#" class="pagination__link">19</a>
-                                  </li>
-                                                        <li class="pagination__item">
-                                      <a href="#" class="pagination__link">20</a>
-                                  </li>
-                          
-            <a href="#" class="pagination__link pagination__link--next">  <svg aria-hidden="true" class="icon icon-arrow-back">
-    <use xlink:href="assets/images/required/sprite.svg#arrow-back"></use>
-  </svg>
-</a>
-        </ul>
-	</nav>
-
-            </div>
-
-            <div class="filter__view hidden-sm hidden-xs" data-filter-view>
-                
-                    <div class="filter__view-name">Показать:</div>
-                    <div class="filter__nums">
-                        
-                            <a href="" class="filter__nums-item active">12</a>
-                        
-                            <a href="" class="filter__nums-item ">24</a>
-                        
-                            <a href="" class="filter__nums-item ">36</a>
-                        
-                    </div>
-                
-
-                
-                    <a href="" class="filter__view-link active" data-filter-view-item="table">
-                          <svg aria-hidden="true" class="icon icon-table">
-    <use xlink:href="assets/images/required/sprite.svg#table"></use>
-  </svg>
-
-                    </a>
-
-                    <a href="" class="filter__view-link" data-filter-view-item="list">
-                          <svg aria-hidden="true" class="icon icon-list">
-    <use xlink:href="assets/images/required/sprite.svg#list"></use>
-  </svg>
-
-                    </a>
-                
-            </div>
-        </div>
+        
 
         
             <div class="filter__view hidden-md hidden-lg hidden-xl" data-filter-view>
@@ -4772,7 +4699,7 @@
             <div class="card__list" data-card-list>
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -4781,6 +4708,11 @@
                 НЕТ В НАЛИЧИИ
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -4788,13 +4720,28 @@
               </span>
             
             <a href="#" class="card__name">Колье + браслет «Меридиан»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  elem-btn--disabled  "  >Сообщить о поступлении</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  elem-btn--disabled  "  >Сообщить о поступлении</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -4811,7 +4758,7 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -4820,6 +4767,11 @@
                 Распродажа
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -4827,13 +4779,28 @@
               </span>
             
             <a href="#" class="card__name">Колье «Сияние звезд»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -4850,7 +4817,7 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -4859,6 +4826,11 @@
                 Распродажа
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -4866,13 +4838,28 @@
               </span>
             
             <a href="#" class="card__name">Колье + серьги «Янтарная палитра» </a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -4889,7 +4876,7 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -4898,6 +4885,11 @@
                 Распродажа
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -4905,13 +4897,28 @@
               </span>
             
             <a href="#" class="card__name">Колье + серьги «Янтарная россыпь»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -4928,12 +4935,17 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
             <a href="#"><img src="assets/images/example/card/img15.jpg" alt=""></a>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -4941,13 +4953,28 @@
               </span>
             
             <a href="#" class="card__name">Комплект «Созвездие Изумруд»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -4964,7 +4991,7 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -4973,6 +5000,11 @@
                 акция
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -4980,13 +5012,28 @@
               </span>
             
             <a href="#" class="card__name">Колье + серьги «Янтарный цветок»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -5003,7 +5050,7 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -5012,6 +5059,11 @@
                 новинка
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -5019,13 +5071,28 @@
               </span>
             
             <a href="#" class="card__name">Комплект цепь + серьги «Чудесница»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -5042,7 +5109,7 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -5051,6 +5118,11 @@
                 хит продаж
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -5058,13 +5130,28 @@
               </span>
             
             <a href="#" class="card__name">Комплект «Созвездие Рубин»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -5081,12 +5168,17 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
             <a href="#"><img src="assets/images/example/card/img15.jpg" alt=""></a>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -5094,13 +5186,28 @@
               </span>
             
             <a href="#" class="card__name">Комплект «Созвездие Изумруд»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -5117,7 +5224,7 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
@@ -5126,6 +5233,11 @@
                 акция
               </span>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -5133,13 +5245,28 @@
               </span>
             
             <a href="#" class="card__name">Комплект «Созвездие Сапфир»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -5156,12 +5283,17 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
             <a href="#"><img src="assets/images/example/card/img8.jpg" alt=""></a>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -5169,13 +5301,28 @@
               </span>
             
             <a href="#" class="card__name">Колье + браслет «Меридиан»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
@@ -5192,12 +5339,17 @@
 
                 
                         
-	<div class="card ">
+	<div class="card card--redesign ">
         
         
         <div class="card__img dark">
             <a href="#"><img src="assets/images/example/card/img12.jpg" alt=""></a>
                     </div>
+        <div class="card__price">
+                            <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
+                <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
+                    </div>
+
         <div class="card__info">
 
                           <span class="card__articul">
@@ -5205,13 +5357,28 @@
               </span>
             
             <a href="#" class="card__name">Колье «Сияние звезд»</a>
+
+            <ul class="card-list card-list--only-list">
+                <li class="card-list__item">
+                    <span class="card-list__key">Материал:</span>
+                    <span class="card-list__value">5.5" 960x480 IPS</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Размер:</span>
+                    <span class="card-list__value">29х34х7.5 cm</span>
+                </li>
+
+                <li class="card-list__item">
+                    <span class="card-list__key">Вес:</span>
+                    <span class="card-list__value">700 гр</span>
+                </li>
+            </ul>
+
         </div>
         <div class="card__bottom">
-            <div class="card__price">
-                                    <div class="elem-price-old">1 400 <span class="elem-rub">i</span></div>
-                    <div class="elem-price">1 000 <span class="elem-rub">i</span></div>
-                            </div>
-                            <a href="#" class="elem-btn elem-btn--light elem-btn--sm  "  data-add="Добавить" >В корзину</a>
+            
+                            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14  "  data-add="Добавить" >В корзину</a>
                     </div>
         <span class="card__like " data-like>
             
