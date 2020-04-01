@@ -89,6 +89,10 @@
                 font-weight: normal;
             }
         }
+
+        &--width-auto {
+            min-width: auto;
+        }
     }
 
     &__btn {
@@ -100,6 +104,11 @@
             & + & {
                 margin-left: 12px;
             }
+        }
+
+        &--center {
+            flex-grow: 0;
+            margin: 0 auto;
         }
     }
 
@@ -263,11 +272,16 @@
         }
 
         &-link {
+            width: 20px;
             margin-left: 40px;
             display: inline-flex;
 
             @media (max-width: $lg) {
                 margin-left: 21px;
+            }
+
+            @media (max-width: $lg) {
+                width: 15px;
             }
 
             & + & {
@@ -528,5 +542,9 @@
             display: block;
             width: 100%;
         }
+    }
+
+    &--full {
+        width: 100%;
     }
 }

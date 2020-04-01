@@ -1010,5 +1010,215 @@
                 }
             }
         }
+        &--baseline {
+            align-content: baseline;
+        }
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &-list {
+        font-size: 12px;
+        line-height: 14px;
+
+        &--only-list {
+            display: none;
+        }
+
+        &__item {
+            line-height: 18px;
+        }
+
+        &__key {
+            color: $color-gray;
+            margin-right: 4px;
+        }
+    }
+
+    &__list {
+        &.list {
+            .card-list {
+                &--only-list {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // Редизайн карточек
+    &--redesign {
+        transition: border 0.3s ease-in-out;
+
+        &:hover {
+            border-color: $color-gray-light;
+            transition: border 0.3s ease-in-out;
+
+            .card {
+                &__img {
+                    border-color: $color-gray-light;
+                    transition: border 0.3s ease-in-out;
+                }
+
+                &__like {
+                    @media (max-width: $lg) {
+                        display: none;
+
+                        .list & {
+                            display: block;                        
+                        }
+                    }
+                }
+            }
+        }
+
+        .card {
+            &__img {
+                transition: border 0.3s ease-in-out;
+            }
+
+            &__status {
+                .list & {
+                    top: 0px;
+                }
+            }
+
+            &__info {
+                padding: 0 16px 11px;
+
+                min-height: unset;
+                align-items: unset;
+
+                .list & {
+                    padding: 0;
+                    padding-top: 30px;
+                }
+            }
+
+            &__name {
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            &__articul {
+                font-size: 12px;
+                line-height: 14px;
+        
+                position: unset;
+                right: unset;
+                top: unset;
+            }
+
+            &__bottom {
+                padding: 0px 16px 16px;
+
+                & .elem-btn {
+                    margin-left: unset;
+                }
+
+                .list & {
+                    padding-bottom: 8px;
+                    padding-right: 60px;
+
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    max-width: 300px;
+
+                    .elem-btn {
+                        font-size: unset;
+                    }
+                }
+            }
+
+            &__price {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding: 10px 16px;
+
+                @media (max-width: $lg) {
+                    flex-direction: row;
+                }
+
+                @media (max-width: $md) {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+
+                .elem-price-old {
+                    margin-left: 4px;
+                    margin-bottom: 3px;
+
+                    @media (max-width: $md) {
+                        margin-left: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .list & {
+                    flex-direction: row;
+
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            &__like {
+                .list & {
+                    bottom: 8px;
+                    right: 8px;
+                }
+
+                @media (max-width: $lg) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // Редизайн списка карточек
+    &__list {
+        &--redesign {
+            .filter {
+                &--full {
+                    padding: 0 13px;
+                }
+            }
+
+            &.list {
+                padding: 0 36px;
+
+                @media (max-width: $lg) {
+                    padding: 0 18px;
+                }
+
+                @media (max-width: $md) {
+                    padding: 0;
+                }
+
+                .card {
+                    &--redesign {
+                        @media (max-width: $md) {
+                            padding-bottom: 50px;
+                        }
+                    }
+
+                    &__name {
+                        max-width: none;
+
+                        margin: 4px 0;
+                    }
+                }
+
+                .filter {
+                    &--full {
+                        padding: 0;
+                    }
+                }
+            }
+        }
     }
 }

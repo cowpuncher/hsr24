@@ -1,0 +1,114 @@
+.filter {
+    &-aside {
+        flex-shrink: 0;
+        width: 224px;
+
+        &__inner {
+            background: #F6F6F6;
+            padding: 20px 16px;
+            border-radius: 12px;
+        }
+
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
+
+    &-item {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E6E6E6;
+
+        & + & {
+            margin-top: 20px;
+        }
+
+        & + &__reset {
+            margin-top: 20px;
+        }
+    
+        &__count {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        &__reset {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+
+        &__show {
+            position: relative;
+            width: 16px;
+            height: 16px;
+
+            &:before {
+                content: '';
+                width: 11px;
+                height: 11px;
+                position: absolute;
+                top: 0;
+                left: 3px;
+                border-right: 1px solid;
+                border-bottom: 1px solid;
+                transform: rotateZ(45deg);
+            }
+
+            &.active {
+                &:before {
+                    top: 6px;
+                    transform: rotateZ(-135deg);
+                }
+            }
+        }
+
+        &__body {
+            display: none;
+            margin-top: 10px;
+
+            &.visible {
+                display: block;
+                padding-top: 0;
+            }
+        }
+
+        &__scroll {
+            max-height: 142px;
+            margin-right: -16px;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+    
+            &::-webkit-scrollbar-track {
+                border-radius: 2px;
+                background: $color-gray-light;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                border-radius: 2px;
+                background: $color-gray;
+            }
+        }
+
+        &__search {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

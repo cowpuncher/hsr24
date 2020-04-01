@@ -1,0 +1,98 @@
+{% macro filterAside(data) %}
+    {% import '../../page/_macros/_svg.twig' as svg %}
+    {% import '../price-aside/price-aside.twig' as priceAside %}
+    {% import '../pagination/pagination.twig' as pagination %}
+    {% import '../select/select.twig' as select %}
+
+	<div class="filter-aside">
+        <div class="filter-aside__inner">
+            <div class="filter-item">
+                <h5 class="filter-item__count">{{ data.filterAside.productsCount }} товаров</h5>
+                <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--transparent filter-item__reset" title="Очистить фильтры">Очистить фильтры</a>
+            </div>
+
+            {% for item in data.filterAside.filterBy %}
+                <div class="filter-item">
+                    {% if item.type != "availability" %}
+                        <a href="#" class="filter-item__head" data-filter-head>
+                            <h5 class="filter-item__title">{{ item.title }}</h5>
+                            <span class="filter-item__show"></span>
+                        </a>
+                    {% endif %}
+
+                    {% if item.type == "availability" %}
+                        <div class="filter-item__body visible" data-filter-body>
+                    {% else %}
+                        <div class="filter-item__body" data-filter-body>
+                    {% endif %}
+                    
+                        {% if item.type == "price" %}
+                            {{ priceAside.priceAside(data) }}
+                        {% endif %}
+
+                        {% if item.type == "availability" %}
+                            {% for item in data.filterAside.availability %}
+                                <label class="elem-checkbox">
+                                    <input type="checkbox" class="elem-checkbox__input">
+                                    <div class="elem-checkbox__span">{{ item.name }}</div>
+                                </label>
+                            {% endfor %}
+                        {% endif %}
+
+                        {% if item.type == "brand" %}
+                            {% for item in data.filterAside.brands %}
+                                <label class="elem-checkbox">
+                                    <input type="checkbox" class="elem-checkbox__input">
+                                    <div class="elem-checkbox__span">{{ item.name }}</div>
+                                </label>
+                            {% endfor %}
+                        {% endif %}
+
+                        {% if item.type == "country" %}
+                            <label class="elem-search filter-item__search">
+                                <input type="text" class="elem-search__input" placeholder="Поиск">
+                                <span class="elem-search__icon">
+                                    {{ svg.icon('search') }}
+                                </span>
+                            </label>
+                            
+                            <div class="filter-item__scroll">
+                                {% for item in data.filterAside.countries %}
+                                    <label class="elem-checkbox">
+                                        <input type="checkbox" class="elem-checkbox__input">
+                                        <div class="elem-checkbox__span">{{ item.name }}</div>
+                                    </label>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        {% if item.type == "weight" %}
+                            {{ priceAside.priceAside(data) }}
+                        {% endif %}
+
+                        {% if item.type == "color" %}
+                            <label class="elem-search filter-item__search">
+                                <input type="text" class="elem-search__input" placeholder="Поиск">
+                                <span class="elem-search__icon">
+                                    {{ svg.icon('search') }}
+                                </span>
+                            </label>
+                            
+                            <div class="filter-item__scroll">
+                                {% for item in data.filterAside.colors %}
+                                    <label class="elem-checkbox elem-checkbox--color">
+                                        <input type="checkbox" class="elem-checkbox__input">
+                                        <div class="elem-checkbox__span">{{ item.name }}</div>
+                                        <span class="elem-checkbox__color" style="{% if item.color %}background:{{ item.color }};{% if item.border %}border-color:{{ item.border }};{% else %}border-color:{{ item.color }};{% endif %}{% endif %}"></span>
+                                    </label>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+
+            <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--transparent filter-item__reset" title="Очистить фильтры">Очистить фильтры</a>
+        </div>
+    </div>
+{% endmacro %}

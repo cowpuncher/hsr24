@@ -18,7 +18,14 @@
                 <div class="swiper-button-prev"></div>
             </div>
 
-            <div class="filter__row filter__row--between">
+            <div class="filter__row filter__row--between hidden-xl hidden-lg hidden-md">
+                <div class="filter__select">
+                    {# выпадающий список #}
+                    {{ select.select(data.sortList) }}
+                </div>
+            </div>
+            
+            <div class="filter__row filter__row--between hidden-xl hidden-lg"> 
                 {% if data.filter %}
                     <a href="#" class="elem-filter" data-filter-show>
                     {{ svg.icon('filter') }} {{ data.filter.name }}
@@ -135,39 +142,7 @@
                 {% endif %}
             </div>
         {% endif %}
-        <div class="filter__row filter__row--between">
-
-            <div class="filter__select">
-                {# выпадающий список #}
-                {{ select.select(data.sortList) }}
-            </div>
-
-            {# пагинация #}
-            <div class="hidden-md hidden-sm hidden-xs">
-                {{ pagination.pagination() }}
-            </div>
-
-            <div class="filter__view hidden-sm hidden-xs" data-filter-view>
-                {% if data.count %}
-                    <div class="filter__view-name">Показать:</div>
-                    <div class="filter__nums">
-                        {% for item in data.count %}
-                            <a href="" class="filter__nums-item {% if item.active %}active{% endif %}">{{ item.text }}</a>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-
-                {% if data.viewIcon %}
-                    <a href="" class="filter__view-link active" data-filter-view-item="table">
-                        {{ svg.icon('table') }}
-                    </a>
-
-                    <a href="" class="filter__view-link" data-filter-view-item="list">
-                        {{ svg.icon('list') }}
-                    </a>
-                {% endif %}
-            </div>
-        </div>
+        
 
         {% if data.viewIcon %}
             <div class="filter__view hidden-md hidden-lg hidden-xl" data-filter-view>
