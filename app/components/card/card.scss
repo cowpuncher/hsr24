@@ -1151,6 +1151,10 @@
                     align-items: center;
                 }
 
+                .elem-price {
+                    color: $color-red;
+                }
+
                 .elem-price-old {
                     margin-left: 4px;
                     margin-bottom: 3px;
@@ -1167,10 +1171,6 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-
-                    .elem-price {
-                        color: $color-red;
-                    }
                 }
             }
 
