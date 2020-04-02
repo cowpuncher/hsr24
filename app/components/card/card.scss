@@ -733,11 +733,11 @@
                 }
 
                 &[data-add] {
-                    text-transform: lowercase;
+                    // text-transform: lowercase;
                     font-size: 14px;
 
                     @media (max-width: $lg) {
-                        text-transform: none;
+                        // text-transform: none;
                         font-size: 13px;
                     }
 
@@ -754,6 +754,10 @@
                             display: none;
                         }
                     }
+                }
+
+                &[data-add="Перейти"] {
+                    text-transform: lowercase;
                 }
             }
         }
@@ -1163,6 +1167,10 @@
                     position: absolute;
                     top: 0;
                     right: 0;
+
+                    .elem-price {
+                        color: $color-red;
+                    }
                 }
             }
 
