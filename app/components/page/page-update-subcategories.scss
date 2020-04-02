@@ -295,6 +295,31 @@
     &__price {
         width: 100%;
     }
+
+    &--redesign {
+        .assortment-product-item {
+            &__info {
+                order: 1;
+                padding-top: 0;
+                min-height: auto;
+            }
+
+            &__name {
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            &__bottom {
+                margin-top: 10px;
+            }
+
+            &__price {
+                .elem-price {
+                    margin-top: -6px;
+                }
+            }
+        }
+    }
 }
 
 .u-paddin-left {
