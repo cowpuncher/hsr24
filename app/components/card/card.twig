@@ -28,9 +28,11 @@
             {% endif %}
         </div>
         <div class="card__price">
-            {% if data.priceOld %}
-                <div class="elem-price">{{ data.price }}</div>
-                <div class="elem-price-old">{{ data.priceOld }}</div>
+            {% if data.price %}
+                <div class="elem-price {% if data.priceOld %}elem-price--new {% endif %}">{{ data.price }}</div>
+                {% if data.priceOld %}
+                    <div class="elem-price-old">{{ data.priceOld }}</div>
+                {% endif %}
             {% endif %}
         </div>
 
