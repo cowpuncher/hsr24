@@ -65,7 +65,7 @@
         <div class="card__bottom">
             
             {% if data.btn %}
-                <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14 {% if data.null %} elem-btn--disabled {% endif %} {% if data.unsubscribe %} elem-btn--gray-light {% endif %}" {% if data.null %} {% else %} data-add="Добавить" {% endif %}>{{ data.btn }}</a>
+                <a href="#" class="elem-btn elem-btn--light elem-btn--md elem-btn--full elem-btn--font-size-14 {% if data.null %} elem-btn--disabled {% endif %} {% if data.unsubscribe %} elem-btn--gray-light {% endif %}" {% if data.null %} {% else %} data-add="" {% endif %}>{{ data.btn }}</a>
             {% endif %}
         </div>
         <span class="card__like {% if data.likeActive %}active{% endif %}" data-like>

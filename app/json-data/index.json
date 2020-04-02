@@ -124,6 +124,10 @@
         {
             "title": "Новая страница категории (с боковым фильтром и обновленным видом карточек)",
             "href": "new-categories-aside-filter.html"
+        },
+        {
+            "title": "Новая страница подкатегории (с боковым фильтром и обновленным видом карточек)",
+            "href": "update-subcategories-aside-filter.html"
         }
     ],
     "menuTop": {
