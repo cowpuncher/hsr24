@@ -3,6 +3,7 @@
 import './config/base.js';
 
 // import './libs/jquery.ui.autocomplete.js';
+import './libs/jquery.ui.touch-punch.js';
 
 import './accordion/accordion';
 import './autocomplete/autocomplete';
