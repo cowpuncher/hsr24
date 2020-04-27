@@ -374,6 +374,32 @@
         font-size: 14px;
         line-height: 16px;
     }
+
+    &--filter-option {
+        justify-content: space-between;
+        font-weight: 800;
+        padding: 0 25px 0 15px !important;
+
+        .caret {
+            position: relative;
+            width: 16px;
+            height: 16px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 11px;
+                height: 11px;
+                border-top: 1px solid #101010;
+                border-right: 1px solid #101010;
+                transform: rotate(45deg);
+                margin-top: -6px;
+                transition: all 0.3s ease-in-out; 
+            }
+        }
+    }
 }
 
 button {

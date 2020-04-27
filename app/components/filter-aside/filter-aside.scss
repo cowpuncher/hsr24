@@ -104,6 +104,15 @@
                 border-radius: 2px;
                 background: $color-gray;
             }
+
+            @media (max-width: $md) {
+                max-height: calc(100vh - 188px);
+                margin-right: -12px;
+
+                &--without-input {
+                    max-height: calc(100vh - 150px);
+                }
+            }
         }
 
         &__search {

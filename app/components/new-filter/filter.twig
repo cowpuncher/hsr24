@@ -27,7 +27,7 @@
             
             <div class="filter__row filter__row--between hidden-xl hidden-lg"> 
                 {% if data.filter %}
-                    <a href="#" class="elem-filter" data-filter-show>
+                    <a href="#filter" class="elem-filter hidden-md" data-popup-modal>
                     {{ svg.icon('filter') }} {{ data.filter.name }}
                     </a>
                 {% endif %}
@@ -42,7 +42,7 @@
                     </div>
                 {% endif %}
 
-                {{ price.price(data) }}
+                {# {{ price.price(data) }} #}
             </div>
 
             <form class="filter__wrap" name="_form" method="get" data-filter-show-wrap>

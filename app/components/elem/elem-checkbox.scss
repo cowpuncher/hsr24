@@ -1,7 +1,7 @@
 .elem-checkbox {
     display: flex;
     align-items: center;
-    height: 22px;
+    min-height: 22px;
 
     &:last-child {
         margin-bottom: 0;
