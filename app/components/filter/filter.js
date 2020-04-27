@@ -152,6 +152,34 @@ class Filter {
             $(this).addClass('active');
         })
 
+        // Показ/скрытие контента выбранной опции в попапе с мобильным фильтром
+        $('[data-filter-mobile]').on('click', function (e) {
+            e.preventDefault();
+            var el = $(this);
+            
+            var filterParent = el.closest('[data-filter-mobile-parent]');
+            var filterOptions = el.closest('[data-filter-mobile-options]');
+
+            var selectedOption = el.attr('data-filter-mobile');
+            var selectedOptionContent = filterParent.find(`[data-filter-mobile-content='${selectedOption}']`);
+
+            filterOptions.hide();
+            selectedOptionContent.show();
+        });
+
+        // Возврат к списку опций из текущей выбранной опции в попапе с мобильным фильтром
+        $('[data-filter-mobile-back]').on('click', function (e) {
+            e.preventDefault();
+            var el = $(this);
+
+            var filterContent = el.closest('[data-filter-mobile-content]');
+            var filterParent = el.closest('[data-filter-mobile-parent]');
+            var filterOptions = filterParent.find('[data-filter-mobile-options]');
+
+            filterContent.hide();
+            filterOptions.show();
+        });
+
 	}
 }
 

@@ -6452,7 +6452,1369 @@
         <div class="popup__status-btn d-flex justify-content-center"><a href="#" class="elem-btn elem-btn--lg">Закрыть</a></div>
     </div>
 </div>
-	</div> <!-- page-wrapper end -->
+
+<div id="filter" class="popup popup--lgx mfp-hide">
+    <form class="filter-desktop hidden-xs">
+        <h2 class="popup__title">Все фильтры</h2>
+
+        <div class="popup-filter">
+            <div class="popup-filter__col">
+                <div class="filter-item">
+                    <div class="filter-item__body visible" data-filter-body="">
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">В наличии</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Высокий рейтинг</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бестселлеры</div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Цена</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+
+                        <div class="price price--aside">
+                            <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+                            <div class="price__input">
+                                <label class="price__label" data-before="от">
+                                    <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                                </label>
+                                <label class="price__label" data-before="до">
+                                    <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Бренды</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="" style="display: none;">
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Braun</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Scarlett</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Philips</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Energy</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Magio</div>
+                        </label> 
+                    </div>
+                </div>
+
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Страна-изготовитель</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+
+                        <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Китай</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Германия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Италия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Венгрия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Гонконг</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Испания</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">США</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Канада</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Россия</div>
+                        </label>
+
+                    </div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Вес товара, г</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+                        <div class="price price--aside">
+                            <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+                            <div class="price__input">
+                                <label class="price__label" data-before="от">
+                                    <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                                </label>
+                                <label class="price__label" data-before="до">
+                                    <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Цвет</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+                        <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Белый</div>
+                            <span class="elem-checkbox__color" style="background:#FFFFFF;border-color:#E6E6E6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Черный</div>
+                            <span class="elem-checkbox__color" style="background:#000000;border-color:#000000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Красный</div>
+                            <span class="elem-checkbox__color" style="background:#F61D2A;border-color:#F61D2A;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Голубой</div>
+                            <span class="elem-checkbox__color" style="background:#C0FBF8;border-color:#C0FBF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Синий</div>
+                            <span class="elem-checkbox__color" style="background:#3085F8;border-color:#3085F8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серый</div>
+                            <span class="elem-checkbox__color" style="background:#C6C6C6;border-color:#C6C6C6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фиолетовый</div>
+                            <span class="elem-checkbox__color" style="background:#D155FF;border-color:#D155FF;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оранжевый</div>
+                            <span class="elem-checkbox__color" style="background:#FFA51F;border-color:#FFA51F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Желтый</div>
+                            <span class="elem-checkbox__color" style="background:#FFEC44;border-color:#FFEC44;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Лимонный</div>
+                            <span class="elem-checkbox__color" style="background:#FBFF4F;border-color:#FBFF4F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бирюзовый</div>
+                            <span class="elem-checkbox__color" style="background:#78FFF8;border-color:#78FFF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-синий</div>
+                            <span class="elem-checkbox__color" style="background:#004DB5;border-color:#004DB5;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фуксия</div>
+                            <span class="elem-checkbox__color" style="background:#FD16AD;border-color:#FD16AD;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#C0002E;border-color:#C0002E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#70001B;border-color:#70001B;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оливковый</div>
+                            <span class="elem-checkbox__color" style="background:#7F8000;border-color:#7F8000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серо-зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4C6D62;border-color:#4C6D62;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Морская волна</div>
+                            <span class="elem-checkbox__color" style="background:#008887;border-color:#008887;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4EF25E;border-color:#4EF25E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Коричневый</div>
+                            <span class="elem-checkbox__color" style="background:#7A4D1F;border-color:#7A4D1F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Золотой</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #D29D0B 0%, #E5C652 24.48%, #F7EF85 49.48%, #C98E0D 56.77%, #D6B244 69.27%, #FEF687 100%);border-color:#D5A82D;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серебряный</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #848484 0%, #D9D9D9 24.48%, #FAFAFA 49.48%, #AEAEAE 56.77%, #D5D5D5 69.27%, #EEEEEE 100%);border-color:#BDBDBD;"></span>
+                        </label>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-filter__col">
+                <div class="filter-item">
+                    <div class="filter-item__body visible" data-filter-body="">
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">В наличии</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Высокий рейтинг</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бестселлеры</div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Цена</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+
+                        <div class="price price--aside">
+                            <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+                            <div class="price__input">
+                                <label class="price__label" data-before="от">
+                                    <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                                </label>
+                                <label class="price__label" data-before="до">
+                                    <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Бренды</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="" style="display: none;">
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Braun</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Scarlett</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Philips</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Energy</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Magio</div>
+                        </label> 
+                    </div>
+                </div>
+
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Страна-изготовитель</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+
+                        <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Китай</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Германия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Италия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Венгрия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Гонконг</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Испания</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">США</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Канада</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Россия</div>
+                        </label>
+
+                    </div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Вес товара, г</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+                        <div class="price price--aside">
+                            <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+                            <div class="price__input">
+                                <label class="price__label" data-before="от">
+                                    <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                                </label>
+                                <label class="price__label" data-before="до">
+                                    <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Цвет</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+                        <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Белый</div>
+                            <span class="elem-checkbox__color" style="background:#FFFFFF;border-color:#E6E6E6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Черный</div>
+                            <span class="elem-checkbox__color" style="background:#000000;border-color:#000000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Красный</div>
+                            <span class="elem-checkbox__color" style="background:#F61D2A;border-color:#F61D2A;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Голубой</div>
+                            <span class="elem-checkbox__color" style="background:#C0FBF8;border-color:#C0FBF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Синий</div>
+                            <span class="elem-checkbox__color" style="background:#3085F8;border-color:#3085F8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серый</div>
+                            <span class="elem-checkbox__color" style="background:#C6C6C6;border-color:#C6C6C6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фиолетовый</div>
+                            <span class="elem-checkbox__color" style="background:#D155FF;border-color:#D155FF;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оранжевый</div>
+                            <span class="elem-checkbox__color" style="background:#FFA51F;border-color:#FFA51F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Желтый</div>
+                            <span class="elem-checkbox__color" style="background:#FFEC44;border-color:#FFEC44;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Лимонный</div>
+                            <span class="elem-checkbox__color" style="background:#FBFF4F;border-color:#FBFF4F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бирюзовый</div>
+                            <span class="elem-checkbox__color" style="background:#78FFF8;border-color:#78FFF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-синий</div>
+                            <span class="elem-checkbox__color" style="background:#004DB5;border-color:#004DB5;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фуксия</div>
+                            <span class="elem-checkbox__color" style="background:#FD16AD;border-color:#FD16AD;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#C0002E;border-color:#C0002E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#70001B;border-color:#70001B;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оливковый</div>
+                            <span class="elem-checkbox__color" style="background:#7F8000;border-color:#7F8000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серо-зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4C6D62;border-color:#4C6D62;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Морская волна</div>
+                            <span class="elem-checkbox__color" style="background:#008887;border-color:#008887;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4EF25E;border-color:#4EF25E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Коричневый</div>
+                            <span class="elem-checkbox__color" style="background:#7A4D1F;border-color:#7A4D1F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Золотой</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #D29D0B 0%, #E5C652 24.48%, #F7EF85 49.48%, #C98E0D 56.77%, #D6B244 69.27%, #FEF687 100%);border-color:#D5A82D;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серебряный</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #848484 0%, #D9D9D9 24.48%, #FAFAFA 49.48%, #AEAEAE 56.77%, #D5D5D5 69.27%, #EEEEEE 100%);border-color:#BDBDBD;"></span>
+                        </label>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-filter__col">
+                <div class="filter-item">
+                    <div class="filter-item__body visible" data-filter-body="">
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">В наличии</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Высокий рейтинг</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бестселлеры</div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Цена</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+
+                        <div class="price price--aside">
+                            <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+                            <div class="price__input">
+                                <label class="price__label" data-before="от">
+                                    <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                                </label>
+                                <label class="price__label" data-before="до">
+                                    <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Бренды</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="" style="display: none;">
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Braun</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Scarlett</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Philips</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Energy</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Magio</div>
+                        </label> 
+                    </div>
+                </div>
+
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Страна-изготовитель</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+
+                        <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Китай</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Германия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Италия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Венгрия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Гонконг</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Испания</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">США</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Канада</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Россия</div>
+                        </label>
+
+                    </div>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Вес товара, г</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+                        <div class="price price--aside">
+                            <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+                            <div class="price__input">
+                                <label class="price__label" data-before="от">
+                                    <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                                </label>
+                                <label class="price__label" data-before="до">
+                                    <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                                </label>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <a href="#" class="filter-item__head" data-filter-head="">
+                        <h5 class="filter-item__title">Цвет</h5>
+                        <span class="filter-item__show"></span>
+                    </a>
+
+                    <div class="filter-item__body" data-filter-body="">
+                        <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Белый</div>
+                            <span class="elem-checkbox__color" style="background:#FFFFFF;border-color:#E6E6E6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Черный</div>
+                            <span class="elem-checkbox__color" style="background:#000000;border-color:#000000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Красный</div>
+                            <span class="elem-checkbox__color" style="background:#F61D2A;border-color:#F61D2A;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Голубой</div>
+                            <span class="elem-checkbox__color" style="background:#C0FBF8;border-color:#C0FBF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Синий</div>
+                            <span class="elem-checkbox__color" style="background:#3085F8;border-color:#3085F8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серый</div>
+                            <span class="elem-checkbox__color" style="background:#C6C6C6;border-color:#C6C6C6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фиолетовый</div>
+                            <span class="elem-checkbox__color" style="background:#D155FF;border-color:#D155FF;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оранжевый</div>
+                            <span class="elem-checkbox__color" style="background:#FFA51F;border-color:#FFA51F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Желтый</div>
+                            <span class="elem-checkbox__color" style="background:#FFEC44;border-color:#FFEC44;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Лимонный</div>
+                            <span class="elem-checkbox__color" style="background:#FBFF4F;border-color:#FBFF4F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бирюзовый</div>
+                            <span class="elem-checkbox__color" style="background:#78FFF8;border-color:#78FFF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-синий</div>
+                            <span class="elem-checkbox__color" style="background:#004DB5;border-color:#004DB5;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фуксия</div>
+                            <span class="elem-checkbox__color" style="background:#FD16AD;border-color:#FD16AD;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#C0002E;border-color:#C0002E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#70001B;border-color:#70001B;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оливковый</div>
+                            <span class="elem-checkbox__color" style="background:#7F8000;border-color:#7F8000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серо-зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4C6D62;border-color:#4C6D62;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Морская волна</div>
+                            <span class="elem-checkbox__color" style="background:#008887;border-color:#008887;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4EF25E;border-color:#4EF25E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Коричневый</div>
+                            <span class="elem-checkbox__color" style="background:#7A4D1F;border-color:#7A4D1F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Золотой</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #D29D0B 0%, #E5C652 24.48%, #F7EF85 49.48%, #C98E0D 56.77%, #D6B244 69.27%, #FEF687 100%);border-color:#D5A82D;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серебряный</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #848484 0%, #D9D9D9 24.48%, #FAFAFA 49.48%, #AEAEAE 56.77%, #D5D5D5 69.27%, #EEEEEE 100%);border-color:#BDBDBD;"></span>
+                        </label>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form class="filter-mobile hidden-sm hidden-md hidden-lg hidden-xl" data-filter-mobile-parent>
+        <div class="filter-mobile__options" data-filter-mobile-options>
+            <h2 class="popup__title popup-filter__title">
+                <div class="filter-mobile__icon">  <svg aria-hidden="true" class="icon icon-filter">
+    <use xlink:href="assets/images/required/sprite.svg#filter"></use>
+  </svg>
+</div>
+                Фильтр
+            </h2>
+
+            <div class="filter-mobile__option">
+                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--filter-option" title="Цена" data-filter-mobile="price">Цена <span class="caret"></span></span></a>
+            </div>
+
+            <div class="filter-mobile__option">
+                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--filter-option" title="Цвет" data-filter-mobile="color">Цвет <span class="caret"></span></span></a>
+            </div>
+
+            <div class="filter-mobile__option">
+               <label class="elem-checkbox">
+                   <input type="checkbox" class="elem-checkbox__input">
+                   <div class="elem-checkbox__span">В наличии</div>
+               </label>
+
+               <label class="elem-checkbox">
+                   <input type="checkbox" class="elem-checkbox__input">
+                   <div class="elem-checkbox__span">Высокий рейтинг</div>
+               </label>
+
+               <label class="elem-checkbox">
+                   <input type="checkbox" class="elem-checkbox__input">
+                   <div class="elem-checkbox__span">Бестселлеры</div>
+               </label>
+            </div>
+
+            <div class="filter-mobile__option">
+                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--filter-option" title="Бренды" data-filter-mobile="brands">Бренды <span class="caret"></span></span></a>
+            </div>
+
+            <div class="filter-mobile__option">
+                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--filter-option" title="Страна-изготовитель" data-filter-mobile="countries">Страна-изготовитель <span class="caret"></span></span></a>
+            </div>
+
+            <div class="filter-mobile__option">
+                <a href="#" class="elem-btn elem-btn--light elem-btn--light-no-hover elem-btn--filter-option" title="Вес товара, г" data-filter-mobile="weight">Вес товара, г <span class="caret"></span></span></a>
+            </div>
+
+            <div class="elem-btn__wrap filter-mobile__submit">
+                <a href="#" class="elem-btn elem-btn--lg-min">Применить</a>
+            </div>
+        </div>
+
+        <div class="filter-mobile__option-content" data-filter-mobile-content="price">
+            <h2 class="popup__title popup-filter__title popup-filter__title--option">
+                <a href="#" class="filter-mobile__back" data-filter-mobile-back>  <svg aria-hidden="true" class="icon icon-arrow">
+    <use xlink:href="assets/images/required/sprite.svg#arrow"></use>
+  </svg>
+</a>
+                Цена
+            </h2>
+
+            <div class="price price--aside">
+                <div class="price__input">
+                    <label class="price__label" data-before="от">
+                        <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                    </label>
+                    <label class="price__label" data-before="до">
+                        <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                    </label>
+                </div>
+
+                <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+            </div> 
+
+            <div class="elem-btn__wrap filter-mobile__submit">
+                <a href="#" class="elem-btn elem-btn--lg-min">Применить</a>
+            </div>
+        </div>
+
+        <div class="filter-mobile__option-content" data-filter-mobile-content="color">
+            <h2 class="popup__title popup-filter__title popup-filter__title--option">
+                <a href="#" class="filter-mobile__back" data-filter-mobile-back>  <svg aria-hidden="true" class="icon icon-arrow">
+    <use xlink:href="assets/images/required/sprite.svg#arrow"></use>
+  </svg>
+</a>
+                Цвет
+            </h2>
+
+            
+                        <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Белый</div>
+                            <span class="elem-checkbox__color" style="background:#FFFFFF;border-color:#E6E6E6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Черный</div>
+                            <span class="elem-checkbox__color" style="background:#000000;border-color:#000000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Красный</div>
+                            <span class="elem-checkbox__color" style="background:#F61D2A;border-color:#F61D2A;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Голубой</div>
+                            <span class="elem-checkbox__color" style="background:#C0FBF8;border-color:#C0FBF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Синий</div>
+                            <span class="elem-checkbox__color" style="background:#3085F8;border-color:#3085F8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серый</div>
+                            <span class="elem-checkbox__color" style="background:#C6C6C6;border-color:#C6C6C6;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фиолетовый</div>
+                            <span class="elem-checkbox__color" style="background:#D155FF;border-color:#D155FF;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оранжевый</div>
+                            <span class="elem-checkbox__color" style="background:#FFA51F;border-color:#FFA51F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Желтый</div>
+                            <span class="elem-checkbox__color" style="background:#FFEC44;border-color:#FFEC44;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Лимонный</div>
+                            <span class="elem-checkbox__color" style="background:#FBFF4F;border-color:#FBFF4F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бирюзовый</div>
+                            <span class="elem-checkbox__color" style="background:#78FFF8;border-color:#78FFF8;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-синий</div>
+                            <span class="elem-checkbox__color" style="background:#004DB5;border-color:#004DB5;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Фуксия</div>
+                            <span class="elem-checkbox__color" style="background:#FD16AD;border-color:#FD16AD;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#C0002E;border-color:#C0002E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Темно-бордовый</div>
+                            <span class="elem-checkbox__color" style="background:#70001B;border-color:#70001B;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Оливковый</div>
+                            <span class="elem-checkbox__color" style="background:#7F8000;border-color:#7F8000;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серо-зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4C6D62;border-color:#4C6D62;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Морская волна</div>
+                            <span class="elem-checkbox__color" style="background:#008887;border-color:#008887;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Зеленый</div>
+                            <span class="elem-checkbox__color" style="background:#4EF25E;border-color:#4EF25E;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Коричневый</div>
+                            <span class="elem-checkbox__color" style="background:#7A4D1F;border-color:#7A4D1F;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Золотой</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #D29D0B 0%, #E5C652 24.48%, #F7EF85 49.48%, #C98E0D 56.77%, #D6B244 69.27%, #FEF687 100%);border-color:#D5A82D;"></span>
+                        </label>
+
+                        <label class="elem-checkbox elem-checkbox--color">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Серебряный</div>
+                            <span class="elem-checkbox__color" style="background:linear-gradient(180deg, #848484 0%, #D9D9D9 24.48%, #FAFAFA 49.48%, #AEAEAE 56.77%, #D5D5D5 69.27%, #EEEEEE 100%);border-color:#BDBDBD;"></span>
+                        </label>
+                    </div>
+
+            <div class="elem-btn__wrap filter-mobile__submit">
+                <a href="#" class="elem-btn elem-btn--lg-min">Применить</a>
+            </div>
+                
+        </div>
+
+        <div class="filter-mobile__option-content" data-filter-mobile-content="brands">
+            <h2 class="popup__title popup-filter__title popup-filter__title--option">
+                <a href="#" class="filter-mobile__back" data-filter-mobile-back>  <svg aria-hidden="true" class="icon icon-arrow">
+    <use xlink:href="assets/images/required/sprite.svg#arrow"></use>
+  </svg>
+</a>
+                Бренды
+            </h2>
+            
+            <div class="filter-item__scroll filter-item__scroll--without-input">
+            <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Braun</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Scarlett</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Philips</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Energy</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Magio</div>
+                        </label> 
+                        </div>
+
+            <div class="elem-btn__wrap filter-mobile__submit">
+                <a href="#" class="elem-btn elem-btn--lg-min">Применить</a>
+            </div>
+        </div>
+
+        <div class="filter-mobile__option-content" data-filter-mobile-content="countries">
+            <h2 class="popup__title popup-filter__title popup-filter__title--option">
+                <a href="#" class="filter-mobile__back" data-filter-mobile-back>  <svg aria-hidden="true" class="icon icon-arrow">
+    <use xlink:href="assets/images/required/sprite.svg#arrow"></use>
+  </svg>
+</a>
+                Страна-изготовитель
+            </h2>
+
+            <label class="elem-search filter-item__search">
+                            <input type="text" class="elem-search__input" placeholder="Поиск">
+                            <span class="elem-search__icon">
+                              <svg aria-hidden="true" class="icon icon-search">
+                                <use xlink:href="assets/images/required/sprite.svg#search"></use>
+                            </svg>
+
+                        </span>
+                    </label>
+
+                    <div class="filter-item__scroll">
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Китай</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Германия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Италия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Венгрия</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Гонконг</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Испания</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">США</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Канада</div>
+                        </label>
+
+                        <label class="elem-checkbox">
+                            <input type="checkbox" class="elem-checkbox__input">
+                            <div class="elem-checkbox__span">Россия</div>
+                        </label>
+
+                    </div>
+
+            <div class="elem-btn__wrap filter-mobile__submit">
+                <a href="#" class="elem-btn elem-btn--lg-min">Применить</a>
+            </div>
+        </div>
+
+        <div class="filter-mobile__option-content" data-filter-mobile-content="weight">
+            <h2 class="popup__title popup-filter__title popup-filter__title--option">
+                <a href="#" class="filter-mobile__back" data-filter-mobile-back>  <svg aria-hidden="true" class="icon icon-arrow">
+    <use xlink:href="assets/images/required/sprite.svg#arrow"></use>
+  </svg>
+</a>
+                Вес товара, г
+            </h2>
+
+            <div class="price price--aside">
+                <div class="price__input">
+                    <label class="price__label" data-before="от">
+                        <input id="lower-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-lower-value="">
+                    </label>
+                    <label class="price__label" data-before="до">
+                        <input id="upper-value" type="text" class="elem-input elem-input--md elem-input--price elem-input--price-label" data-upper-value="">
+                    </label>
+                </div>
+
+                <div id="slider-price" class="price__slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-slider-price="" data-start="1000" data-end="10000" data-min="0" data-max="30000"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 3.33333%; width: 30%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 3.33333%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 33.3333%;"></span></div>
+            </div>
+
+            <div class="elem-btn__wrap filter-mobile__submit">
+                <a href="#" class="elem-btn elem-btn--lg-min">Применить</a>
+            </div>
+        </div>
+    </form>
+    
+    <div class="elem-btn__wrap popup-filter__btn hidden-xs">
+        <a href="#" class="elem-btn elem-btn--lg-min">Применить</a>
+    </div>
+</div>	</div> <!-- page-wrapper end -->
 
 	<!-- JavaScript files placed at the end of the document so the pages load faster
 	================================================== -->

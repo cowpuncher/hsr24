@@ -24,6 +24,12 @@
             </div>
         {% endif %}
         <div class="filter__row filter__row--between filter__row--wrap hidden-mob">
+            <a href="#filter" class="elem-filter hidden-xl hidden-lg" data-popup-modal>
+                <svg aria-hidden="true" class="icon icon-filter">
+                    <use xlink:href="assets/images/required/sprite.svg#filter"></use>
+                </svg>
+                Фильтры&nbsp;<span class="hidden-sm hidden-xs">по параметрам</span>
+            </a>
 
             <div class="filter__select filter__select--width-auto">
                 {# выпадающий список #}
@@ -41,7 +47,7 @@
                     </div>
                 {% endif %}
 
-            <div class="filter__view filter__view--new-line hidden-sm hidden-xs" data-filter-view>
+            <div class="filter__view filter__view--new-line filter__view--lg-grow filter__view--lg-right hidden-sm hidden-xs" data-filter-view>
                 {% if data.count %}
                     <div class="filter__view-name">Показать:</div>
                     <div class="filter__nums">

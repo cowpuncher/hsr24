@@ -1190,6 +1190,8 @@
     // Редизайн списка карточек
     &__list {
         &--redesign {
+            width: 100%;
+
             .filter {
                 &--full {
                     padding: 0 13px;
@@ -1226,6 +1228,10 @@
                         padding: 0;
                     }
                 }
+            }
+
+            .elem-more__row {
+                width: 100%;
             }
         }
     }
