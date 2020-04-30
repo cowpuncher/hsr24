@@ -581,6 +581,9 @@
     }
 
     &-mobile {
+        &__options {
+            margin-bottom: 60px;
+        }
         &__option {
             & + & {
                 margin-top: 15px;

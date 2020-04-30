@@ -134,6 +134,15 @@
 
             @media (max-width: $md) {
                 width: 100%;
+                &.mt25 {
+                    margin-top: 25px;
+                }
+            }
+
+            &-width {
+                min-width: 100%;
+                border-bottom: 1px solid #E6E6E6;
+                margin-bottom: 25px;
             }
         }
 

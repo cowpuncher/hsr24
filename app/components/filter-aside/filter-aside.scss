@@ -17,6 +17,9 @@
     &-item {
         padding-bottom: 20px;
         border-bottom: 1px solid #E6E6E6;
+        &__clear {
+            border-bottom: none;
+        }
 
         & + & {
             margin-top: 20px;
@@ -25,7 +28,7 @@
         & + &__reset {
             margin-top: 20px;
         }
-    
+
         &__count {
             font-size: 16px;
             line-height: 20px;
@@ -94,12 +97,12 @@
             &::-webkit-scrollbar {
                 width: 3px;
             }
-    
+
             &::-webkit-scrollbar-track {
                 border-radius: 2px;
                 background: $color-gray-light;
             }
-    
+
             &::-webkit-scrollbar-thumb {
                 border-radius: 2px;
                 background: $color-gray;
