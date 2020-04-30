@@ -1067,10 +1067,10 @@
 
                 &__like {
                     @media (max-width: $lg) {
-                        display: none;
+                        display: none!important;
 
                         .list & {
-                            display: block;                        
+                            display: block;
                         }
                     }
                 }
@@ -1108,7 +1108,7 @@
             &__articul {
                 font-size: 12px;
                 line-height: 14px;
-        
+
                 position: unset;
                 right: unset;
                 top: unset;
@@ -1181,7 +1181,7 @@
                 }
 
                 @media (max-width: $lg) {
-                    display: none;
+                    display: none!important;
                 }
             }
         }
