@@ -5314,6 +5314,64 @@
         </div>
 </div>
 
+<div id="authorization" class="popup popup--mds mfp-hide">
+    <h2 class="popup__title popup__title--authorization">Вы уже зарегистрированны</h2>
+
+    <div class="popup__text popup__text--authorization">
+        Пожалуйста, авторизуйтесь
+    </div>
+
+    <form action="" novalidate data-validate>
+        <div class="elem-item">
+            <label class="elem-label" required>Ваш номер телефона</label>
+            <input type="tel" name="phone" class="elem-input js-valid-phone" required placeholder="+7 (___) ___-__-__" data-phone tabindex="0">
+        </div>
+        <div class="elem-btn__wrap popup__btn popup__btn--authorization">
+            <button class="elem-btn">Получить код</button>
+        </div>
+
+        <div class="sms">
+    <div class="sms__title">
+        <label class="elem-label" required>Введите код из SMS</label>
+        <a href="#" class="sms__link hidden-xs hidden-sm hidden-md">Отправить код повторно</a>
+    </div>
+    <div class="sms__row">
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" tabindex="1">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" tabindex="2">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" tabindex="3">
+        </div>
+        <div class="sms__input elem-item">
+            <input type="text" class="elem-input" tabindex="4">
+        </div>
+    </div>
+    <div class="sms__desc">
+        Не получили код? <a href="#" class="sms__link"> Отправить повторно.</a>
+    </div>
+</div>
+    </form>
+
+    <div class="popup__links-register">
+        <a href="#">У вас нет учетной записи?</a>
+        <a href="#">Зарегистрироваться.</a>
+    </div>
+
+    <div class="popup__links-register popup__links-register--mobile">
+
+        <h3>Нет учетной записи?</h3>
+
+        <p>Зарегистрируйтесь и получите все преимущества зарегистрированого клиента!</p>
+       
+        <a href="#" class="elem-btn">
+            <span>Зарегистрироваться.</span>
+        </a>
+    </div>
+</div>
+
 <div id="video" class="popup popup--lg mfp-hide">
     <iframe width="100%" height="420" src="https://www.youtube.com/embed/ou8RbLhM9A8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
