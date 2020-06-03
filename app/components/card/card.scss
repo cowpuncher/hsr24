@@ -1240,11 +1240,11 @@
         }
 
         &--items-size-4 {
-            &>* {
+            .card {
                 @media (min-width: $lg) {
                     width: calc(100% / 3 - 26px);
                 }
-                
+
                 @media(min-width: $lgx) {
                     width: calc(100% / 4 - 26px);
                 }
