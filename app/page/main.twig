@@ -5,61 +5,64 @@
 {% import '../components/banner/banner.twig' as banner %}
 {% import '../components/slider/slider.twig' as slider %}
 {% import '../components/tabs/tabs.twig' as tabs %}
-{% import '../components/recommend/recommend.twig' as recommend %}
+{% import '../components/recommend-slider/recommend.twig' as recommend %}
 {% import '../components/social/social.twig' as social %}
 {% import '../components/pay/pay.twig' as pay %}
 
-{% block title %}{{ page_title }}{% endblock %}
+{% block title %}
+	{{ page_title }}
+{% endblock %}
 
-{% block bodyClass %}page-main{% endblock %}
+{% block bodyClass %}page-main
+{% endblock %}
 
-{% block pageClass %}page--overflow-hide{% endblock %}
+{% block pageClass %}page--overflow-hide
+{% endblock %}
 
 {% block content %}
-    <div class="container">
-        {{ banner.banner(bannerList) }}
-    </div>
+	<div class="container">
+		{{ banner.banner(bannerList) }}
+	</div>
 
-    <div class="container d-flex flex-column">
-            {{ menu.menu(advantagesList) }}
+	<div class="container d-flex flex-column">
+		{{ menu.menu(advantagesList) }}
 
 
+		<div class="slider__wrap hidden-lg hidden-xl">
+			<div class="container__inner">
+				<h2 class="elem-title">Популярные категории</h2>
+			</div>
+			<!-- {{ slider.slider(sliderPopular) }} -->
 
-            <div class="slider__wrap hidden-lg hidden-xl">
-                <div class="container__inner">
-                    <h2 class="elem-title">Популярные категории</h2>
-                </div>
-                <!-- {{ slider.slider(sliderPopular) }} -->
+			<div class="swiper-wrap">
+				<div class="slider-category swiper-container" data-slider-category>
+					<div class="swiper-wrapper">
+						{% for item in sliderPopular.list %}
+							<div class="swiper-slide slider-category__item dark">
+								<img src="{{ item.img }}" srcset="{{ item.img2 }} 480w, {{ item.img }}" alt="{{ item.img_alt }}" class="slider-category__img">
+								<div class="slider-category__name">{{ item.name }}</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+				<button type="button" class="slick-arrow slick-prev slick-prev--carousel"></button>
+				<button type="button" class="slick-arrow slick-next slick-next--carousel"></button>
+			</div>
+		</div>
 
-                <div class="swiper-wrap">
-                    <div class="slider-category swiper-container" data-slider-category>
-                        <div class="swiper-wrapper">
-                            {% for item in sliderPopular.list %}
-                                <div class="swiper-slide slider-category__item dark">
-                                    <img src="{{ item.img }}" srcset="{{ item.img2 }} 480w, {{ item.img }}" alt="{{ item.img_alt }}" class="slider-category__img">
-                                    <div class="slider-category__name">{{ item.name }}</div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <button type="button" class="slick-arrow slick-prev slick-prev--carousel"></button>
-                    <button type="button" class="slick-arrow slick-next slick-next--carousel"></button>
-                </div>
-            </div>
+		{{ tabs.tabs(tabsList) }}
 
-            {{ tabs.tabs(tabsList) }}
+		{{ banner.banner(bannerInner) }}
 
-            {{ banner.banner(bannerInner) }}
+		{{ recommend.recommend(recommendList) }}
 
-            {{ recommend.recommend(recommendList) }}
+		{{ banner.banner(bannerFull) }}
 
-            {{ banner.banner(bannerFull) }}
+		{{ recommend.recommend(viewList) }}
+	</div>
 
-            {{ recommend.recommend(viewList) }}
-    </div>
-
-    <a href="#" class="online-support">
-        {{ svg.icon('ask') }}
-    </a>
+	<a href="#" class="online-support">
+		{{ svg.icon('ask') }}
+	</a>
 
 {% endblock %}

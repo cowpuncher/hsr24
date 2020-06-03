@@ -1,0 +1,27 @@
+.recommend {
+    margin-bottom: 27px;
+
+    @media (max-width: $lg) {
+        margin-bottom: 27px;
+    }
+
+    @media (max-width: $md) {
+        margin-bottom: 28px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    & .card {
+        &__list {
+            margin-bottom: -56px;
+
+            @media (min-width: $md + 1) {
+                padding-left: 25px;
+                padding-right: 25px;
+                margin-bottom: -16px;
+            }
+        }
+    }
+}
