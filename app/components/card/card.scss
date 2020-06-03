@@ -6,12 +6,16 @@
     background: $color-white;
     border-radius: 5px;
     margin: 0 13px 26px;
-    width: calc(25% - 26px);
+    width: calc(20% - 26px);
 
     &:hover {
         .card__like {
             display: flex;
         }
+    }
+
+    @media (max-width: $lgx) {
+        width: calc(100% / 4 - 26px);
     }
 
     @media (max-width: $lg) {
@@ -1232,6 +1236,18 @@
 
             .elem-more__row {
                 width: 100%;
+            }
+        }
+
+        &--items-size-4 {
+            &>* {
+                @media (min-width: $lg) {
+                    width: calc(100% / 3 - 26px);
+                }
+                
+                @media(min-width: $lgx) {
+                    width: calc(100% / 4 - 26px);
+                }
             }
         }
     }
