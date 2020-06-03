@@ -477,9 +477,9 @@
             },
             {
                 "href": "#",
-                "text": "Одежда, обувь и аксессуары",
+                "text": "Одежда, обувь <br>и аксессуары",
                 "icon": "cloth-shoes",
-                "class": "hidden-xl hidden-lg",
+                "class": "hidden-lgx",
                 "submenu": [
                     {
                         "title": "Текстиль для дома",

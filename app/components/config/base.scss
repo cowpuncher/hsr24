@@ -91,6 +91,10 @@ body {
         padding-right: 15px;
     }
 
+    @media(min-width: $lgx + 1) {
+        max-width: 1440px;
+    }
+
     &__inner {
         padding: 0 36px;
 
@@ -506,6 +510,12 @@ table {
 
     .text-xl-right {
         text-align: right !important;
+    }
+}
+
+@media(min-width: $lg + 1) and (max-width: $lgx) {
+    .hidden-lgx {
+        display: none !important;  
     }
 }
 

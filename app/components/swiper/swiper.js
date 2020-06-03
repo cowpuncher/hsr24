@@ -1,7 +1,7 @@
 var swiper = new Swiper('[data-tabs-slider]', {
     observer: true,
     observeParents: true,
-    slidesPerView: 4,
+    slidesPerView: 5,
     spaceBetween: 26,
     allowTouchMove: false,
     scrollbar: {
@@ -32,6 +32,10 @@ var swiper = new Swiper('[data-tabs-slider]', {
     // when window width is <= 1279px
     1279: {
       slidesPerView: 3,
+      spaceBetween: 26
+    },
+    1535: {
+      slidesPerView: 4,
       spaceBetween: 26
     }
   }
@@ -146,6 +150,54 @@ var swiper = new Swiper('[data-tabs-slider-item-three]', {
   // when window width is <= 1279px
   1279: {
     slidesPerView: 4,
+    spaceBetween: 26
+  }
+}
+});
+
+var swiper = new Swiper('[data-tabs-slider-item-four]', {
+  observer: true,
+  observeParents: true,
+  slidesPerView: 4,
+  spaceBetween: 26,
+  allowTouchMove: false,
+  scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: false,
+      draggable: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+  // when window width is <= 480px
+  534: {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    allowTouchMove: true
+  },
+  // when window width is <= 767px
+  767: {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    allowTouchMove: true
+  },
+  // when window width is <= 1023px
+  1023: {
+    slidesPerView: 3,
+    spaceBetween: 26
+  },
+  // when window width is <= 1279px
+  1279: {
+    slidesPerView: 4,
+    spaceBetween: 26
+  },
+  1535: {
+    slidesPerView: 3,
     spaceBetween: 26
   }
 }
