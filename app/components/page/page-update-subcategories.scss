@@ -255,10 +255,10 @@
         }
 
         &>* {
-            width: calc(100% / 4 - 14px);
+            width: calc(100% / 3 - 14px);
 
-            @media (max-width: $lgx) {
-                width: calc(100% / 3 - 14px);
+            @media (min-width: $lgx + 1) {
+                width: calc(100% / 4 - 14px);
             }
         }
     }

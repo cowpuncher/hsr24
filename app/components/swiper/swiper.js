@@ -196,7 +196,7 @@ var swiper = new Swiper('[data-tabs-slider-item-four]', {
     slidesPerView: 4,
     spaceBetween: 26
   },
-  1535: {
+  1439: {
     slidesPerView: 3,
     spaceBetween: 26
   }

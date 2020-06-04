@@ -1245,7 +1245,7 @@
                     width: calc(100% / 3 - 26px);
                 }
 
-                @media(min-width: $lgx) {
+                @media(min-width: $lgx + 1) {
                     width: calc(100% / 4 - 26px);
                 }
             }
