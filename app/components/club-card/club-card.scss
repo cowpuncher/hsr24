@@ -29,28 +29,11 @@
     }
 
     &__btn {
-        @media (min-width: $md) {
-            position: absolute;
-            max-width: 40%;
-            bottom: 78.125vw; // 600px;
-            left: -13.021vw; // -100px;
-        }
-
-        @media (min-width: 1024px) {
-            bottom: 73.242vw; // 750px;
-        }
-
-        @media (min-width: $lg) {
-            position: absolute;
-            max-width: 30%;
-            bottom: 820px;
-            left: -162px;
-        }
-
-        @media (min-width: $xl) {
-            max-width: 276px;
-            bottom: 830px;
-            left: -90px;
+        position: static;
+        margin-top: 20px;
+        
+        button {
+            width: 20%;
         }
     }
 
@@ -702,6 +685,387 @@
                 }
             }
 
+        }
+    }
+
+    p {
+
+        @media(max-width: $md) {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    &__box {
+        display: flex;
+
+        @media(max-width: $md) {
+            flex-direction: column;
+        }
+
+        &-left {
+            margin-right: 35px;
+
+            width: calc(45%);
+
+            @media(max-width: $lgx) {
+                width: calc(62%);
+            }
+
+            &--size-40 {
+                @media(max-width: $lgx) {
+                    max-width: 457px;
+                    width: 100%;
+                    margin-right: 10px;
+                }
+
+                .club-card__status-wrap {
+                    margin-right: 25px;
+                }
+
+                @media(max-width: $md) {
+                    max-width: 100%;
+
+                    .club-card__status-wrap {
+                        width: 100%;
+                        max-width: 100px;
+                        margin: 0 15px 0 0;
+                    }
+                }
+            }
+        }
+
+        &-right {
+            flex-grow: 1;
+        }
+
+        &--md-size-50 {
+            @media(max-width: $lg) {
+                .club-card__box-left {
+                    width: 40.5%;
+                    margin-right: 15px;
+                }
+
+                .club-card__box-right {
+                    width: 50%;
+                }
+
+                .club-card__status-wrap {
+                    margin: 0 auto 15px;
+                }
+            }
+
+            @media(max-width: $md) {
+                .club-card__box-left,
+                .club-card__box-right {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                .club-card__box-right {
+                    margin-top: 65px;
+                }
+
+                .club-card__status-wrap {
+                    width: 100%;
+                    max-width: 100px;
+                    margin: 0 15px 0 0;
+                }
+            }
+
+        }
+    }
+    
+
+    &__status {
+        display: flex;
+
+        &-wrap {
+            max-width: 155px;
+            width: 100%;
+            margin-right: 45px;
+        }
+
+        &-text {
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+
+            @media(max-width: $md) {
+                display: none;
+            }
+        }
+
+        &--padding-left {
+            padding-left: 145px;
+
+            @media(max-width: $lgx) {
+                padding-left: 125px;
+            }
+
+            @media(max-width: $lg) {
+                padding-left: 160px;
+            }
+
+            @media(max-width: $md) {
+                padding-left: 0;
+            }
+        }
+
+        &--arrow {
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background: url('/assets/images/required/club-card/icon-arrow.svg') center / contain no-repeat;
+                height: 30px;
+                width: 95px;
+            }
+
+            @media(max-width: $lg) {
+                &::before {
+                    width: 145px;
+                    top: 16%;
+                    transform: translateY(-16%);
+                }
+            }
+
+            @media(max-width: $md) {
+                &::before {
+                    width: 20px;
+                    height: 42px;
+
+                    top: -52px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: url('/assets/images/required/club-card/icon-arrow-down.svg') center / contain no-repeat;
+                    
+                }
+            }
+        }
+
+        &--flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        &--block {
+            @media (min-width: $md + 1) and (max-width: $lg) {
+                display: block;
+            }
+        }
+    }
+
+    &__bonus {
+        width: 100%;
+
+        &-inner {
+            display: flex;
+            align-items: center;
+
+            border-radius: 16px; 
+            border: 1px solid #F6F6F6;
+
+            height: 90px;
+
+            padding-left: 10px;
+            padding-right: 35px;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @media(max-width: $lg) {
+                margin-bottom: 15px;
+                padding-right: 0;
+            }
+
+            @media(max-width: $md) {
+                height: 44px;
+                margin-bottom: 8px;
+            }
+        }
+
+        &-title {
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 39px;
+            color: #F61D2A;
+
+            margin-right: 10px;
+
+            @media(max-width: $md) {
+                font-size: 24px;
+            }
+        }
+
+        &-subtitle {
+            letter-spacing: -0.2px;
+            font-size: 16px;
+            line-height: 24px;
+
+            @media(max-width: $lg) {
+                font-size: 13px;
+                line-height: 19px;
+            }
+
+            @media(max-width: $md) {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+
+        &-unlimited {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+
+            @media(max-width: $md) {
+                margin-top: 20px;
+                margin-bottom: 25px;
+                font-size: 10px;
+            }
+
+            img {
+                margin-right: 15px;
+
+                @media(max-width: $lg) {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                @media(max-width: $md) {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        &--width-60 {
+            width: 69%;
+
+            @media(max-width: $lgx) {
+                width: 60%;
+            }
+
+            @media(max-width: $lg) {
+                width: 100%;
+            }
+
+            @media(max-width: $md) {
+                width: calc(100% - 115px);
+            }
+        }
+    }
+
+    &__balance {
+        background: url('/assets/images/required/club-card/balance-bg.svg') center / cover no-repeat;
+
+        padding-top: 55px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+
+        border: 1px solid #F6F6F6;
+        border-radius: 16px;
+
+        @media(max-width: $lg) {
+            padding-left: 25px;
+            padding-top: 62px;
+
+            height: 195px;
+        }
+
+        @media(max-width: $md) {
+            margin-top: 20px;
+            padding-top: 8px;
+            padding-bottom: 0;
+            padding-left: 15px;
+
+            height: 65px;
+        }
+
+        &-title {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 10px;
+
+            @media(max-width: $lg) {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            @media(max-width: $md) {
+                font-size: 10px;
+                line-height: 14px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-sum {
+            font-weight: 800;
+            font-size: 52px;
+            line-height: 64px;
+            color: #F61D2A;
+
+            @media(max-width: $lg) {
+                font-size: 44px;
+                line-height: 54px;
+            }
+
+            @media(max-width: $md) {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+    }
+
+    &__task {
+        padding: 35px 0;
+        margin-top: 25px;
+        margin-bottom: 40px;
+
+        border: 1px solid #F6F6F6;
+        border-radius: 16px;
+
+        text-align: center;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+
+        @media(max-width: $lg) {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media(max-width: $md) {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-align: left;
+
+            padding: 7px 15px 0;
+        }
+
+        &-target {
+            color: #F61D2A;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 15px;
+
+            @media(max-width: $md) {
+                display: block;
+                text-align: left;
+                margin-left: 0;
+            }
         }
     }
 
