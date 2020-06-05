@@ -39,6 +39,14 @@
         
         button {
             width: 20%;
+
+            @media(max-width: $lgx) {
+                width: 270px;
+            }
+
+            @media(max-width: $md) {
+                width: 100%;
+            }
         }
     }
 
