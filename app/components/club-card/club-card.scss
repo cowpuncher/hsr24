@@ -31,6 +31,11 @@
     &__btn {
         position: static;
         margin-top: 20px;
+        margin-bottom: 40px;
+
+        @media(max-width: $md) {
+            margin-bottom: 20px;
+        }
         
         button {
             width: 20%;
@@ -824,7 +829,7 @@
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                background: url('/assets/images/required/club-card/icon-arrow.svg') center / contain no-repeat;
+                background: url('assets/images/required/club-card/icon-arrow.svg') center / contain no-repeat;
                 height: 30px;
                 width: 95px;
             }
@@ -845,7 +850,7 @@
                     top: -52px;
                     left: 50%;
                     transform: translateX(-50%);
-                    background: url('/assets/images/required/club-card/icon-arrow-down.svg') center / contain no-repeat;
+                    background: url('assets/images/required/club-card/icon-arrow-down.svg') center / contain no-repeat;
                     
                 }
             }
@@ -967,7 +972,7 @@
     }
 
     &__balance {
-        background: url('/assets/images/required/club-card/balance-bg.svg') center / cover no-repeat;
+        background: url('assets/images/required/club-card/balance-bg.svg') center / cover no-repeat;
 
         padding-top: 55px;
         padding-bottom: 40px;
