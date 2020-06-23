@@ -1,0 +1,54 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/recommend-slider/recommend.twig' as recommend %}
+
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-index{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <div class="container__inner">
+
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            <h2 class="elem-title elem-title--inner elem-title--row">
+                <span>Товары по запросу «аыпкруерру»</span>
+            </h2>
+
+            <div class="searching-null">
+                <div class="searching-null__text hidden-md hidden-lg hidden-xl">
+                    <p>К сожалению, ничего похожего по вашему запросу не найдено.</p>
+                </div>
+
+                <div class="searching-null__icon">
+                    {{ svg.icon('searching-null') }}
+                </div>
+
+                <div class="searching-null__text">
+                    <p class="hidden-mob">К сожалению, ничего похожего по вашему запросу не найдено.</p>
+
+                    <div class="searching-null__btn">
+                        <a href="/" class="elem-btn elem-btn--full elem-btn--lg">Вернуться на главную</a>
+                    </div>
+                </div>
+            </div>
+
+            {{ recommend.recommend(recommendList) }}
+
+        </div>
+	</div>
+
+    <a href="#" class="online-support">
+        {{ svg.icon('ask') }}
+    </a>
+
+{% endblock %}

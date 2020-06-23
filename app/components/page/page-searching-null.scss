@@ -1,0 +1,61 @@
+.searching-null {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px;
+
+    @media screen and (max-width: $md) {
+        display: block;
+        padding: 0 0 20px;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+
+        .icon-searching-null {
+            width: 220px;
+            height: 190px;
+        }
+
+        @media screen and (max-width: $md) {
+            text-align: center;
+            margin: 30px 0;
+        }
+    }
+
+    &__text {
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: $lg) {
+                font-size: 13px;
+                line-height: 19px;
+            }
+
+            @media screen and (max-width: $md) {
+                margin-bottom: 0;
+            }
+        }
+
+        margin-left: 45px;
+
+        @media screen and (max-width: $md) {
+            margin-left: 0;
+        }
+    }
+
+    &__btn {
+        max-width: 275px;
+
+        @media screen and (max-width: $md) {
+            max-width: none;
+        }
+    }
+
+    & + .recommend {
+        @media screen and (max-width: $lg) {
+            margin-bottom: 60px;
+        }
+    }
+}
