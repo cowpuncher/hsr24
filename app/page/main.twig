@@ -8,6 +8,7 @@
 {% import '../components/recommend-slider/recommend.twig' as recommend %}
 {% import '../components/social/social.twig' as social %}
 {% import '../components/pay/pay.twig' as pay %}
+{% import '../components/card/card.twig' as card %}
 
 {% block title %}
 	{{ page_title }}
@@ -52,7 +53,69 @@
 
 		{{ tabs.tabs(tabsList) }}
 
+        <div class="collections">
+            <div class="collections__row">
+                <div class="collections__col">
+                    <a href="#" class="collections__banner">
+                        <div class="collections__banner-title">Детские товары</div>
+                        <img src="assets/images/example/collections/img1.jpg" alt="" class="collections__banner-img">
+                    </a>
+                    <div class="collections__list">
+                        {% for item in collections.list %}
+                            <div class="collections__item">
+                                {{ card.card(item) }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="collections__col">
+                    <div class="swiper-container" data-collections-slider="">
+                        <div class="swiper-wrapper">
+                            {% for item in collections.slider %}
+                                <div class="swiper-slide collections__row">
+                                    <a href="#" class="collections__banner collections__banner--slider">
+                                        <div class="collections__banner-title">{{ item.title }}</div>
+                                        <img src="{{ item.img }}" alt="" class="collections__banner-img">
+                                    </a>
+                                    <div class="collections__list">
+                                        {% for item2 in item.list %}
+                                            <div class="collections__item">
+                                                {{ card.card(item2) }}
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 		{{ banner.banner(bannerInner) }}
+
+        <div class="collections  order-xl-1 order-lg-1">
+            <div class="collections__row">
+                <div class="collections__card">
+                    <h2 class="elem-title collections__title">Бестселлер</h2>
+                    {{ card.card(collections2.card) }}
+                </div>
+                <div class="collections__list">
+                    {% for item in collections2.list %}
+                        <div class="collections__item collections__item--min">
+                            {{ card.card(item) }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <a href="#" class="collections__banner collections__banner--right">
+                    <img src="assets/images/example/collections/img3.jpg" alt="" class="collections__banner-img">
+                </a>
+            </div>
+        </div>
 
 		{{ recommend.recommend(recommendList) }}
 
