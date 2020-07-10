@@ -1568,5 +1568,221 @@
                 "href": "#"
             }
         ]
+    },
+    "collections": {
+        "list": [
+            {
+                "img": "assets/images/example/card/img20.jpg",
+                "status": "хит продаж",
+                "name": "Подушка для беременных AmaroBaby",
+                "price": "2 490 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img21.jpg",
+                "status": "Распродажа",
+                "name": "Чудо-машинка «Молния»",
+                "priceOld": "1 990 <span class=\"elem-rub\">i</span>",
+                "price": "1 490<span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img22.jpg",
+                "status": "хит продаж",
+                "name": "Электронные качели детские AMAROBABY Swinging Baby",
+                "price": "6 250 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img23.jpg",
+                "status": "Распродажа",
+                "name": "Чудо-Трек",
+                "priceOld": "1 590 <span class=\"elem-rub\">i</span>",
+                "price": "990 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            }
+        ],
+        "slider": [
+            {
+                "title": "Товары для самых маленьких",
+                "img": "assets/images/example/collections/img2.jpg",
+                "list": [
+                    {
+                        "img": "assets/images/example/card/img24.jpg",
+                        "status": "хит продаж",
+                        "name": "Ходунки детские с электронной игровой панелью AMAROBABY",
+                        "price": "3 190 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img25.jpg",
+                        "status": "Распродажа",
+                        "name": "Развивающий коврик для детей AMAROBABY",
+                        "priceOld": "2 390 <span class=\"elem-rub\">i</span>",
+                        "price": "1 390 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img26.jpg",
+                        "status": "хит продаж",
+                        "name": "Стул для кормления AMAROBABY ROCKING BABY mint",
+                        "price": "10 490 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img27.jpg",
+                        "status": "Распродажа",
+                        "name": "Бортик в кроватку 12 предметов AmaroBaby серый",
+                        "priceOld": "1 890 <span class=\"elem-rub\">i</span>",
+                        "price": "990 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    }
+                ]
+            },
+            {
+                "title": "Товары для самых маленьких",
+                "img": "assets/images/example/collections/img2.jpg",
+                "list": [
+                    {
+                        "img": "assets/images/example/card/img24.jpg",
+                        "status": "хит продаж",
+                        "name": "Ходунки детские с электронной игровой панелью AMAROBABY",
+                        "price": "3 190 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img25.jpg",
+                        "status": "Распродажа",
+                        "name": "Развивающий коврик для детей AMAROBABY",
+                        "priceOld": "2 390 <span class=\"elem-rub\">i</span>",
+                        "price": "1 390 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img26.jpg",
+                        "status": "хит продаж",
+                        "name": "Стул для кормления AMAROBABY ROCKING BABY mint",
+                        "price": "10 490 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img27.jpg",
+                        "status": "Распродажа",
+                        "name": "Бортик в кроватку 12 предметов AmaroBaby серый",
+                        "priceOld": "1 890 <span class=\"elem-rub\">i</span>",
+                        "price": "990 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    }
+                ]
+            },
+            {
+                "title": "Товары для самых маленьких",
+                "img": "assets/images/example/collections/img2.jpg",
+                "list": [
+                    {
+                        "img": "assets/images/example/card/img24.jpg",
+                        "status": "хит продаж",
+                        "name": "Ходунки детские с электронной игровой панелью AMAROBABY",
+                        "price": "3 190 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img25.jpg",
+                        "status": "Распродажа",
+                        "name": "Развивающий коврик для детей AMAROBABY",
+                        "priceOld": "2 390 <span class=\"elem-rub\">i</span>",
+                        "price": "1 390 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img26.jpg",
+                        "status": "хит продаж",
+                        "name": "Стул для кормления AMAROBABY ROCKING BABY mint",
+                        "price": "10 490 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    },
+                    {
+                        "img": "assets/images/example/card/img27.jpg",
+                        "status": "Распродажа",
+                        "name": "Бортик в кроватку 12 предметов AmaroBaby серый",
+                        "priceOld": "1 890 <span class=\"elem-rub\">i</span>",
+                        "price": "990 <span class=\"elem-rub\">i</span>",
+                        "class": "card--full card--collections"
+                    }
+                ]
+            }
+        ]
+    },
+    "collections2": {
+        "card": {
+            "img": "assets/images/example/card/img28.jpg",
+            "status": "хит продаж",
+            "name": "Мультирезка «ДОЛЬКА»",
+            "price": "10000 <span class=\"elem-rub\">i</span>",
+            "class": "card--full",
+            "btn": "В корзину"
+        },
+        "list": [
+            {
+                "img": "assets/images/example/card/img20.jpg",
+                "status": "хит продаж",
+                "name": "Подушка для беременных AmaroBaby",
+                "price": "2 490 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img21.jpg",
+                "status": "Распродажа",
+                "name": "Чудо-машинка «Молния»",
+                "priceOld": "1 990 <span class=\"elem-rub\">i</span>",
+                "price": "1 490<span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img20.jpg",
+                "status": "хит продаж",
+                "name": "Подушка для беременных AmaroBaby",
+                "price": "2 490 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img21.jpg",
+                "status": "Распродажа",
+                "name": "Чудо-машинка «Молния»",
+                "priceOld": "1 990 <span class=\"elem-rub\">i</span>",
+                "price": "1 490<span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img22.jpg",
+                "status": "хит продаж",
+                "name": "Электронные качели детские AMAROBABY Swinging Baby",
+                "price": "6 250 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img23.jpg",
+                "status": "Распродажа",
+                "name": "Чудо-Трек",
+                "priceOld": "1 590 <span class=\"elem-rub\">i</span>",
+                "price": "990 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img22.jpg",
+                "status": "хит продаж",
+                "name": "Электронные качели детские AMAROBABY Swinging Baby",
+                "price": "6 250 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            },
+            {
+                "img": "assets/images/example/card/img23.jpg",
+                "status": "Распродажа",
+                "name": "Чудо-Трек",
+                "priceOld": "1 590 <span class=\"elem-rub\">i</span>",
+                "price": "990 <span class=\"elem-rub\">i</span>",
+                "class": "card--full card--collections"
+            }
+        ]
     }
 }

@@ -246,3 +246,10 @@ var swiper = new Swiper('[data-slider-brands-min-item]', {
   }
 }
 });
+
+var swiper = new Swiper('[data-collections-slider]', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
