@@ -428,10 +428,26 @@
 
     &--full &__img {
         height: 323px;
+
+        @media (max-width: 1170px) {
+            height: 232px;
+        }
+
+        @media (max-width: $md) {
+            height: auto;
+        }
     }
 
     &--collections &__img {
         height: 163px;
+
+        @media (max-width: 1170px) {
+            height: 94px;
+        }
+
+        @media (max-width: $md) {
+            height: auto;
+        }
     }
 
     &__status {
@@ -1208,6 +1224,25 @@
     &--full &__price {
         padding-top: 14px;
         padding-bottom: 13px;
+
+        @media (max-width: $md) {
+            padding: 5px 0 0;
+            margin-bottom: 4px;
+        }
+
+        & .elem-price {
+            @media (max-width: $md) {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &--full &__name {
+        @media (max-width: $md) {
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 
     &--collections &__price {
@@ -1221,9 +1256,54 @@
             padding-bottom: 7px;
         }
 
+        @media (max-width: 1170px) {
+            height: 54px;
+            padding-bottom: 0;
+        }
+
+        @media (max-width: $md) {
+            height: 32px;
+            margin-bottom: 4px;
+        }
+
+        & .elem-price {
+            @media (max-width: 1170px) {
+                margin-top: 0;
+            }
+
+            @media (max-width: $md) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
         & .elem-price-old {
             order: -1;
             margin: 0 0 -3px;
+
+            @media (max-width: 1170px) {
+                margin-bottom: -6px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 10px;
+                line-height: 12px;
+                margin-bottom: -3px;
+            }
+        }
+    }
+
+    &--collections &__info {
+        @media (max-width: 1170px) {
+            display: none;
+        }
+
+        @media (max-width: $md) {
+            display: block;
+        }
+
+        @media (max-width: $sm) {
+            display: none;
         }
     }
 
@@ -1231,13 +1311,33 @@
         display: none;
     }
 
+    &--collections &__img {
+        & img {
+            width: 100%;
+        }
+    }
+
     &--full &__bottom {
         padding-top: 33px;
         justify-content: center;
 
+        @media (max-width: $md) {
+            padding-top: 0;
+            padding-bottom: 12px;
+        }
+
         & .elem-btn {
             width: auto;
             min-width: 196px;
+
+            @media (max-width: $sm) {
+                min-width: 128px;
+                font-size: 10px;
+                line-height: 12px;
+                padding: 5px 10px;
+                width: auto;
+                height: 26px;
+            }
         }
     }
 
@@ -1246,6 +1346,11 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow-y: hidden;
+
+        @media (max-width: $md) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 
     // Редизайн списка карточек
