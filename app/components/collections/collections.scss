@@ -9,6 +9,10 @@
     &__row {
         display: flex;
         align-items: flex-start;
+
+        &--stretch {
+            align-items: stretch;
+        }
     }
 
     &__col {
@@ -79,6 +83,12 @@
             margin-left: 16px;
             flex-shrink: 0;
             margin-right: 0;
+
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
 
         &-title {
@@ -137,6 +147,10 @@
 
         @media (max-width: 1439px) {
             margin-right: 11px;
+        }
+
+        & .card {
+            height: auto;
         }
     }
 
