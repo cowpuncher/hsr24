@@ -336,6 +336,10 @@
         & .card {
             height: auto;
 
+            @media (max-width: 1439px) {
+                height: calc(100% - 63px);
+            }
+
             @media (max-width: 1170px) {
                 height: calc(100% - 71px);
             }
@@ -497,6 +501,33 @@
 
                 @media (max-width: $md) {
                     height: auto;
+                    max-height: 150px;
+                }
+            }
+
+            & .card__price {
+                @media (max-width: $md) {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                & .elem-price {
+                    @media (max-width: $md) {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+
+                & .elem-price-old {
+                    @media (max-width: $md) {
+                        font-size: 12px;
+                        line-height: 14px;
+                        order: 1;
+                        margin-left: 4px;
+                        margin-bottom: -3px;
+                        top: 0;
+                    }
                 }
             }
         }
