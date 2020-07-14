@@ -80,7 +80,7 @@ body {
 }
 
 .container {
-    
+
     @media (max-width: $lg) {
         padding-left: 16px;
         padding-right: 16px;
@@ -104,6 +104,18 @@ body {
         }
 
         @media (max-width: $md) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__in-max {
+        padding-left: 56px;
+        padding-right: 56px;
+        margin-top: -33px;
+
+        @media (max-width: 1439px) {
+            margin-top: 0;
             padding-left: 0;
             padding-right: 0;
         }
@@ -515,7 +527,7 @@ table {
 
 @media(min-width: $lg + 1) and (max-width: $lgx) {
     .hidden-lgx {
-        display: none !important;  
+        display: none !important;
     }
 }
 

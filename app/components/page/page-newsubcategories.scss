@@ -206,6 +206,12 @@
         margin-bottom: 20px;
     }
 
+    &--max {
+        @media (min-width: 1280px) {
+            margin-bottom: 11px;
+        }
+    }
+
     /*&:after {
         position: absolute;
         right: 0;
