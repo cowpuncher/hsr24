@@ -24,4 +24,14 @@
             }
         }
     }
+
+    &--alt .card {
+        &__list {
+            margin-bottom: 0;
+
+            @media (min-width: $md + 1) {
+                margin-bottom: -16px;
+            }
+        }
+    }
 }

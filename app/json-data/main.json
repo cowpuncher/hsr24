@@ -1367,7 +1367,7 @@
         ]
     },
     "recommendList": {
-        "class": "order-xl-2 order-lg-2",
+        "class": "order-xl-2 order-lg-2  recommend--alt",
         "title": "Рекомендуем",
         "list": [
             {

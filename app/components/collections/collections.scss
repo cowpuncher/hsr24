@@ -7,7 +7,12 @@
     }
 
     @media (max-width: 1170px) {
-        padding: 42px 0px 29px;
+        padding: 12px 0px 29px;
+    }
+
+    .order-xl-1 + & {
+        margin-top: 12px;
+        margin-bottom: -10px;
     }
 
     &__row {
