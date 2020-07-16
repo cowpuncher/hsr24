@@ -342,6 +342,10 @@
             height: auto;
 
             @media (max-width: 1439px) {
+                height: calc(100% - 90px);
+            }
+
+            @media (max-width: 1279px) {
                 height: calc(100% - 63px);
             }
 
@@ -507,6 +511,16 @@
                 @media (max-width: $md) {
                     height: auto;
                     max-height: 150px;
+                    overflow: hidden;
+                }
+
+                & a {
+                    & img {
+                        @media (max-width: $md) {
+                            top: 0;
+                            transform: none;
+                        }
+                    }
                 }
             }
 
