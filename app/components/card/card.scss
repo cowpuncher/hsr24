@@ -1312,8 +1312,24 @@
     }
 
     &--collections &__img {
+        & a {
+            position: relative;
+            @media (max-width: $md) {
+                padding-top: 100%;
+            }
+        }
         & img {
             width: 100%;
+            @media (max-width: $md) {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                height: 100%;
+                object-position: center center;
+                object-fit: contain;
+                max-height: 150px;
+                transform: translate(0, -50%);
+            }
         }
     }
 
