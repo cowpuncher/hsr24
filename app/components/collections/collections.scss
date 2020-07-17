@@ -161,7 +161,7 @@
         flex-shrink: 0;
         margin-right: 15px;
         position: relative;
-        padding: 70px 0 69px;
+        // padding: 70px 0 69px;
 
         @media (max-width: 1170px) {
             width: 152px;
@@ -175,7 +175,7 @@
 
         &--slider {
             margin-bottom: 71px;
-            padding-bottom: 70px;
+            // padding-bottom: 70px;
             height: calc(100% - 71px);
 
             @media (max-width: 1170px) {
@@ -222,7 +222,7 @@
             line-height: 29px;
             color: $color-base;
             background: no-repeat 0 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 262 137' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H262V113L0 137V0Z' fill='%23FEE600'/%3E%3C/svg%3E%0A");
+            // background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 262 137' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H262V113L0 137V0Z' fill='%23FEE600'/%3E%3C/svg%3E%0A");
             background-size: 100% auto;
             left: 0;
             top: 0;
@@ -247,6 +247,10 @@
             }
         }
 
+        &:hover &-title {
+            color: $color-red;
+        }
+
         &-img {
             width: 100%;
             height: 100%;
@@ -254,7 +258,7 @@
         }
 
         &:after {
-            content: '';
+            // content: '';
             position: absolute;
             bottom: 0;
             left: 0;
