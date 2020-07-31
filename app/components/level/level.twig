@@ -8,6 +8,7 @@
             {% for item in data.list %}
                 <div class="level__item">
                     <div class="level__card {% if item.cardColor %}{{ item.cardColor }}{% endif %}">
+                        <div class="level__image"><img src="{{ item.img }}" alt=""></div>
                         <div class="level__head">{{ item.cardTitle }}</div>
                         <div class="level__sale">{{ item.sale }}</div>
                     </div>
