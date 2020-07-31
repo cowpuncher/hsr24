@@ -32,14 +32,20 @@
         align-items: center;
         background-image: url("./assets/images/example/badge-right.png");
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 90% 70%;
+        background-position: left 60px center;
+        background-size: 95% 75%;
+
+        @media (max-width: $lgx) {
+            background-position: left 70px center;
+            background-size: 90% 75%;
+        }
 
         @media (max-width: $lg) {
-            background-image: none;
+            background-size: 90% 85%;
         }
 
         @media (max-width: $md) {
+            background-image: none;
             align-items: flex-start;
             display: block;
             padding: 0 10px;
@@ -53,12 +59,25 @@
             }
         }
 
+        &:nth-child(odd) {
+            @media (max-width: $lgx) {
+                .level__info {
+                    padding-right: 70px;
+                }
+            }
+        }
+
         &:nth-child(even) {
             flex-direction: row-reverse;
             background-image: url("./assets/images/example/badge-left.png");
+            background-position: right 60px center;
 
-            @media (max-width: $lg) {
-                background-image: none;
+            @media (max-width: $lgx) {
+                background-position: right 70px center;
+
+                .level__info {
+                    padding-left: 70px;
+                }
             }
         }
     }
@@ -70,10 +89,17 @@
         position: relative;
         flex-shrink: 0;
 
+        @media (max-width: $lgx) {
+            margin-right: 0;
+
+            .level__info {
+                padding-right: 50px;
+            }
+        }
+
         @media (max-width: $lg) {
             height: 181px;
             width: 190px;
-            margin-right: 28px;
         }
 
         &.dark {
@@ -89,8 +115,8 @@
         margin-right: 0;
         margin-left: 52px;
 
-        @media (max-width: $lg) {
-            margin-left: 28px;
+        @media (max-width: $lgx) {
+            margin-left: 0;
         }
     }
 
@@ -150,14 +176,12 @@
 
     &__info {
         @media (max-width: $lg) {
-            font-size: 13px;
-            line-height: 19px;
+            font-size: 12px;
+            line-height: 17px;
         }
 
         @media (max-width: $md) {
             margin-top: 13px;
-            font-size: 12px;
-            line-height: 17px;
         }
     }
 }

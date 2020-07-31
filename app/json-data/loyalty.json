@@ -1052,7 +1052,7 @@
         "img": "assets/images/example/banner/banner-with-cards.jpg"
     },
     "teaserList": {
-        "text": "В жизни всё нужно делать с удовольствием. И шопинг не исключение! <br class=\"hidden-md hidden-xs\" /> Станьте участником нашей клубной программы и получите свою порцию удовольствия!"
+        "text": "В жизни всё нужно делать с удовольствием. И шопинг не исключение! <br /> Станьте участником нашей клубной программы и получите свою порцию удовольствия!"
     },
     "levelList": {
         "title": "Уровни программы",
@@ -1129,7 +1129,7 @@
             {
                 "img": "assets/images/example/loyalty-step-2.png",
                 "head": "Совершайте покупки",
-                "badge": "Стоимость вступления в&nbsp;программу HSR бонус: <span>990 p</span>"
+                "badge": "Стоимость вступления в&nbsp;программу HSR бонус: <span>990<span class=\"elem-rub\">i</span></span>"
             },
             {
                 "img": "assets/images/example/loyalty-step-3.png",

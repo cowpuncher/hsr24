@@ -51,6 +51,7 @@
 
         @media (max-width: $lg) {
             width: 47%;
+            margin-bottom: 70px;
         }
 
         @media (max-width: $md) {
@@ -295,7 +296,8 @@
         font-weight: 800;
         color: $color-base;
 
-        @media (max-width: $md) {
+        @media (max-width: $lgx) {
+            padding: 14px 18px;
             font-size: 14px;
         }
 
@@ -305,6 +307,10 @@
             font-weight: 800;
             color: $color-red;
             margin-left: 5px;
+
+            @media (max-width: $lgx) {
+                font-size: 17px;
+            }
         }
     }
 }
