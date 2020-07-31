@@ -49,6 +49,20 @@
                             </div>
                         {% endif %}
                     </div>
+
+                    {% if item.button %}
+                        <div  class="step__button-block">
+                            <a href class="elem-btn step__button">
+                                {{ item.button }}
+                            </a>
+                        </div>
+                    {% endif %}
+
+                    {% if item.badge %}
+                        <div  class="step__badge">
+                            {{ item.badge }}
+                        </div>
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>

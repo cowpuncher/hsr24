@@ -12,7 +12,7 @@
     }
 
     &__list {
-        padding: 0 103px;
+        padding: 0 50px;
 
         @media (max-width: $lg) {
             padding: 0;
@@ -30,6 +30,14 @@
     &__item {
         display: flex;
         align-items: center;
+        background-image: url("./assets/images/example/badge-right.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90% 70%;
+
+        @media (max-width: $lg) {
+            background-image: none;
+        }
 
         @media (max-width: $md) {
             align-items: flex-start;
@@ -47,30 +55,33 @@
 
         &:nth-child(even) {
             flex-direction: row-reverse;
+            background-image: url("./assets/images/example/badge-left.png");
+
+            @media (max-width: $lg) {
+                background-image: none;
+            }
         }
     }
 
     &__card {
-        background: $color-gray;
         border-radius: 20px;
         height: 225px;
-        width: 359px;
         margin-right: 52px;
         position: relative;
         flex-shrink: 0;
 
         @media (max-width: $lg) {
             height: 181px;
-            width: 290px;
+            width: 190px;
             margin-right: 28px;
         }
 
         &.dark {
-            background: $color-base;
+
         }
 
         &.red {
-            background: $color-red;
+
         }
     }
 
@@ -83,6 +94,15 @@
         }
     }
 
+    &__image {
+        height: 100%;
+
+        img {
+            max-height: 100%;
+            width: auto;
+        }
+    }
+
     &__head {
         font-size: 24px;
         line-height: 29px;
@@ -92,6 +112,7 @@
         left: 28px;
         top: 24px;
         right: 28px;
+        display: none;
 
         @media (max-width: $lg) {
             left: 20px;
@@ -108,8 +129,8 @@
         position: absolute;
         right: 28px;
         bottom: 17px;
-        display: flex;
         align-items: flex-end;
+        display: none;
 
         @media (max-width: $lg) {
             font-size: 48px;
