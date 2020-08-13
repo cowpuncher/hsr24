@@ -5,7 +5,7 @@ class Step {
 	}
 
 	 initialize() {
-		
+
 	}
 }
 
