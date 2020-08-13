@@ -1127,7 +1127,11 @@
                 "button": "Стать участником",
             },
             {
+<<<<<<< HEAD
                 "img": "assets/images/icons-svg/loyalty-step-2.svg",
+=======
+                "img": "assets/images/example/loyalty-step-2.png",
+>>>>>>> default
                 "head": "Совершайте покупки",
                 "badge": "Стоимость вступления в&nbsp;программу HSR бонус: <span>990<span class=\"elem-rub\">i</span></span>"
 
