@@ -1122,17 +1122,17 @@
         "title": "Стать участником программы просто!",
         "list": [
             {
-                "img": "assets/images/example/loyalty-step-1.png",
+                "img": "assets/images/icons-svg/loyalty-step-1.svg",
                 "head": "Приобретите карту участника программы лояльности",
                 "button": "Стать участником",
                 "badge": "Стоимость вступления в&nbsp;программу HSR бонус: <span>990<span class=\"elem-rub\">i</span></span>"
             },
             {
-                "img": "assets/images/example/loyalty-step-2.png",
+                "img": "assets/images/icons-svg/loyalty-step-2.svg",
                 "head": "Совершайте покупки"
             },
             {
-                "img": "assets/images/example/loyalty-step-3.png",
+                "img": "assets/images/icons-svg/loyalty-step-3.svg",
                 "head": "Получайте бонусы",
                 "list": [
                     {
@@ -1144,7 +1144,7 @@
                 ]
             },
             {
-                "img": "assets/images/example/loyalty-step-4.png",
+                "img": "assets/images/icons-svg/loyalty-step-4.svg",
                 "head": "Расплачивайтесь бонусами",
                 "list": [
                     {
