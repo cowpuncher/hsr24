@@ -1125,11 +1125,12 @@
                 "img": "assets/images/example/loyalty-step-1.png",
                 "head": "Приобретите карту участника программы лояльности",
                 "button": "Стать участником",
-                "badge": "Стоимость вступления в&nbsp;программу HSR бонус: <span>990<span class=\"elem-rub\">i</span></span>"
             },
             {
                 "img": "assets/images/example/loyalty-step-2.png",
-                "head": "Совершайте покупки"
+                "head": "Совершайте покупки",
+                "badge": "Стоимость вступления в&nbsp;программу HSR бонус: <span>990<span class=\"elem-rub\">i</span></span>"
+
             },
             {
                 "img": "assets/images/example/loyalty-step-3.png",
