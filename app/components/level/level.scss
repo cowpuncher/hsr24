@@ -1,4 +1,9 @@
 .level {
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
     * + & {
         margin-top: 24px;
 
@@ -28,34 +33,52 @@
     }
 
     &__item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         background-image: url("./assets/images/example/badge-right.png");
         background-repeat: no-repeat;
         background-position: left 60px center;
-        background-size: 95% 75%;
+        -webkit-background-size: 95% 75%;
+           -moz-background-size: 95% 75%;
+                background-size: 95% 75%;
 
         @media (max-width: $lgx) {
             background-position: left 70px center;
-            background-size: 90% 75%;
+            -webkit-background-size: 90% 75%;
+               -moz-background-size: 90% 75%;
+                    background-size: 90% 75%;
         }
 
         @media (max-width: $lg) {
-            background-size: 90% 85%;
+            -webkit-background-size: 90% 85%;
+               -moz-background-size: 90% 85%;
+                    background-size: 90% 85%;
         }
 
         @media (max-width: $md) {
             background-image: none;
-            align-items: flex-start;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+               -moz-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
             display: block;
             padding: 0 10px;
         }
 
         & + & {
-            margin-top: 32px;
+            margin-top: 0;
 
             @media (max-width: $lg) {
-                margin-top: 20px;
+                margin-top: 0;
             }
         }
 
@@ -68,7 +91,13 @@
         }
 
         &:nth-child(even) {
-            flex-direction: row-reverse;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+               -moz-box-orient: horizontal;
+               -moz-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
             background-image: url("./assets/images/example/badge-left.png");
             background-position: right 60px center;
 
@@ -83,11 +112,15 @@
     }
 
     &__card {
-        border-radius: 20px;
+        -webkit-border-radius: 20px;
+           -moz-border-radius: 20px;
+                border-radius: 20px;
         height: 225px;
         margin-right: 52px;
         position: relative;
-        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
 
         @media (max-width: $lgx) {
             margin-right: 0;
@@ -155,7 +188,11 @@
         position: absolute;
         right: 28px;
         bottom: 17px;
-        align-items: flex-end;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+           -moz-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         display: none;
 
         @media (max-width: $lg) {
