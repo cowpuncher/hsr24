@@ -1,0 +1,34 @@
+{% extends "template/layout.twig" %}
+
+{% import '../components/menu/menu.twig' as menu %}
+{% import '../components/hamburger/hamburger.twig' as hamburger %}
+{% import '../components/social/social.twig' as social %}
+{% import '../components/pay/pay.twig' as pay %}
+{% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
+{% import '../components/tabs/tabs.twig' as tabs %}
+
+
+
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block bodyClass %}page-profile{% endblock %}
+
+{% block content %}
+
+	<div class="container">
+        <form class="container__inner" novalidate data-validate>
+            {# хлебные крошки #}
+            {{ breadcrumbs.breadcrumbs(breadcrumbsList) }}
+
+            {{ tabs.tabsProfile(tabsList) }}
+
+        </form>
+	</div>
+
+    <a href="#" class="online-support">
+        {{ svg.icon('ask') }}
+    </a>
+
+{% endblock %}
+npm

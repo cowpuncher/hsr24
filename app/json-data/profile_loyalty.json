@@ -1,143 +1,5 @@
 {
     "page_title": "HSR",
-    "menuList": [
-        {
-            "title": "Главная",
-            "href": "main.html"
-        },
-        {
-            "title": "Каталог",
-            "href": "catalog.html"
-        },
-        {
-            "title": "Категории",
-            "href": "categories.html"
-        },
-        {
-            "title": "404",
-            "href": "404.html"
-        },
-        {
-            "title": "Акции",
-            "href": "actions.html"
-        },
-        {
-            "title": "Акция",
-            "href": "action.html"
-        },
-        {
-            "title": "Поиск",
-            "href": "searching.html"
-        },
-        {
-            "title": "Оформление заказа",
-            "href": "order.html"
-        },
-        {
-            "title": "Спасибо за покупку!",
-            "href": "thank.html"
-        },
-        {
-            "title": "Гарантия качества",
-            "href": "guarantees.html"
-        },
-        {
-            "title": "Программа лояльности",
-            "href": "loyalty.html"
-        },
-        {
-            "title": "О компании",
-            "href": "about.html"
-        },
-        {
-            "title": "Политика конфиденциальности",
-            "href": "privacy.html"
-        },
-        {
-            "title": "Возврат и обмен",
-            "href": "return.html"
-        },
-        {
-            "title": "Доставка и оплата",
-            "href": "delivery.html"
-        },
-        {
-            "title": "Компаниям",
-            "href": "for-companies.html"
-        },
-        {
-            "title": "Конаткты",
-            "href": "contact.html"
-        },
-        {
-            "title": "Избранное",
-            "href": "favs.html"
-        },
-        {
-            "title": "Избранное пустой список",
-            "href": "favs-null.html"
-        },
-        {
-            "title": "Корзина",
-            "href": "cart.html"
-        },
-        {
-            "title": "Корзина пустая",
-            "href": "cart-empty.html"
-        },
-        {
-            "title": "Корзина авторизованного пользователя",
-            "href": "cart-authorized.html"
-        },
-        {
-            "title": "Карточка товара",
-            "href": "product.html"
-        },
-        {
-            "title": "Карточка товара автризованного пользователя",
-            "href": "product-auth.html"
-        },
-        {
-            "title": "Карточка товара  с размерами",
-            "href": "product-size.html"
-        },
-        {
-            "title": "Личный кабинет",
-            "href": "profile.html"
-        },
-        {
-            "title": "Личный кабинет - Карта HSR",
-            "href": "profile_loyalty.html"
-        },
-        {
-            "title": "Новая страница подкатегории",
-            "href": "new-subcategories.html"
-        },
-        {
-            "title": "Новая страница категории",
-            "href": "new-categories.html"
-        },
-        {
-            "title": "Письмо",
-            "href": "letter.html"
-        },
-        {
-            "title": "Cтраница подкатегории update",
-            "href": "update-subcategories.html"
-        },
-        {
-            "title": "Новая страница категории (с боковым фильтром и обновленным видом карточек)",
-            "href": "new-categories-aside-filter.html"
-        },
-        {
-            "title": "Новая страница подкатегории (с боковым фильтром и обновленным видом карточек)",
-            "href": "update-subcategories-aside-filter.html"
-        },
-        {
-            "title": "Поиск (ничего не найдено)",
-            "href": "searching-null.html"
-        }
-    ],
     "menuTop": {
         "prefix": "top",
         "list": [
@@ -451,64 +313,79 @@
                 "icon": "beauty",
                 "submenu": [
                     {
-                        "title": "Аксессуары для стрижки и бритья ",
+                        "title": "Текстиль для дома",
                         "list": [
                             {
-                                "text": "Средства для бритья для мужчин",
-                                "href": "#"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Гигиена",
-                        "list": [
-                            {
-                                "text": "Техника для красоты и здоровья",
-                                "href": "#"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Здоровье ",
-                        "list": [
-                            {
-                                "text": "Ортопедия и реабилитация",
+                                "text": "Подушки, одеяла, покрывала",
                                 "href": "#"
                             },
                             {
-                                "text": "Приборы для здоровья",
-                                "href": "#"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Уход за волосами",
-                        "list": [
-                            {
-                                "text": "Уход за волосами и кожей головы",
-                                "href": "#"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Уход за кожей",
-                        "list": [
-                            {
-                                "text": "Средства по уходу за лицом",
+                                "text": "Постельное белье",
                                 "href": "#"
                             },
                             {
-                                "text": "Средства по уходу за телом",
+                                "text": "Тюль и шторы",
+                                "href": "#"
+                            },
+                            {
+                                "text": "Полотенца и скатерти",
                                 "href": "#"
                             }
                         ]
                     },
                     {
-                        "title": "Уход за ногтями",
+                        "title": "Бытовая техника",
                         "list": [
                             {
-                                "text": "Маникюр и педикюр",
+                                "text": "Текстиль для дома",
                                 "href": "#"
+                            },
+                            {
+                                "text": "Техника для кухни",
+                                "href": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Посуда",
+                        "list": [
+                            {
+                                "text": "Приготовление пищи",
+                                "href": "#"
+                            },
+                            {
+                                "text": "Сервировка стола",
+                                "href": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "category": true,
+                        "list": [
+                            {
+                                "text": "Кухонные принадлежности",
+                                "href": "#",
+                                "class": "h5"
+                            },
+                            {
+                                "text": "Хозяйственные товары",
+                                "href": "#",
+                                "class": "h5"
+                            },
+                            {
+                                "text": "Обустройство и ремонт",
+                                "href": "#",
+                                "class": "h5"
+                            },
+                            {
+                                "text": "Товары для автомобиля",
+                                "href": "#",
+                                "class": "h5"
+                            },
+                            {
+                                "text": "Декор интерьера",
+                                "href": "#",
+                                "class": "h5"
                             }
                         ]
                     }
@@ -1069,11 +946,6 @@
             {
                 "href": "#",
                 "text": "Доставка и оплата",
-                "class": "order-lg-8  order-md-1 text-md-left"
-            },
-            {
-                "href": "http://warranty.hsr24.ru/",
-                "text": "Дополнительная гарантия",
                 "class": "order-lg-6  order-md-1 text-md-left"
             },
             {
@@ -1089,7 +961,7 @@
             {
                 "href": "#",
                 "text": "Возврат и обмен",
-                "class": "order-lg-10  order-md-4 text-md-right"
+                "class": "order-lg-8  order-md-4 text-md-right"
             },
             {
                 "href": "http://hh.ru/employer/2527584",
@@ -1164,15 +1036,436 @@
         ]
     },
     "breadcrumbsList": {
+        "class": "hidden-xs hidden-sm",
         "list": [
             {
                 "href": "main.html",
                 "icon": "home2"
             },
             {
-                "text": "Список страниц",
-                "href": "index.html"
+                "text": "Личный кабинет",
+                "href": "order.html"
             }
         ]
+    },
+
+
+    "tabsList": {
+        "class": "tabs--profile",
+        "list": [
+            {
+                "title": "Мои заказы",
+                "active": true
+            },
+            {
+                "title": "Мои данные"
+            },
+            {
+                "title": "HSR бонус"
+            }
+        ],
+
+        "tabsOrdersTypes": {
+            "list": [
+                {
+                    "title": "Активные",
+                    "active": true
+                },
+                {
+                    "title": "Выполненные"
+                },
+                {
+                    "title": "Все заказы"
+                }
+            ],
+
+            "tableList": {
+                "class": "table table--order",
+                "head": [
+                    {
+                        "text": "№ заказа"
+                    },
+                    {
+                        "text": "Дата / время"
+                    },
+                    {
+                        "text": "Статус"
+                    },
+                    {
+                        "text": "Вид оплаты"
+                    },
+                    {
+                        "text": "Сумма"
+                    },
+                    {
+                        "text": "Подробнее"
+                    }
+                ],
+                "list": [
+                    {
+                        "list": [
+                            {
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
+                                "class": "td--order td--order-number"
+                            },
+                            {
+                                "text": "00.00.00 / 00:00",
+                                "class": "td--order td--order-date"
+                            },
+                            {
+                                "text": "Доставляется",
+                                "class": "td--order td--order-status"
+                            },
+                            {
+                                "text": "Наличными",
+                                "class": "td--order td--order-payment"
+                            },
+                            {
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
+                                "class": "td--order td--order-price"
+                            },
+                            {
+                                "more": true,
+                                "class": "td--order td--order-more",
+                                "list": {
+
+                                }
+
+                            }
+                        ],
+                        "more": [
+                            {
+                                "address": "125315, Москва, ул. Московская, 10/1",
+                                "deliveryType": "Курьером",
+                                "trackNumber": "000000000000",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
+                                "products": [
+                                    {
+                                        "name": "Мульти-овощерезка «Радуга вкуса»"
+                                    },
+                                    {
+                                        "name": "Комплект «Адора»"
+                                    },
+                                    {
+                                        "name": "Женское пальто из замши и шерпы"
+                                    },
+                                    {
+                                        "name": "Подвес «Янтарная загадка»"
+                                    }
+                                ]
+
+                            }
+                        ]
+                    },
+                    {
+
+                        "list": [
+                            {
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
+                                "class": "td--order td--order-number"
+                            },
+                            {
+                                "text": "00.00.00 / 00:00",
+                                "class": "td--order td--order-date"
+                            },
+                            {
+                                "text": "Оформляется",
+                                "class": "td--order td--order-status"
+                            },
+                            {
+                                "text": "Онлайн-оплата",
+                                "class": "td--order td--order-payment"
+                            },
+                            {
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
+                                "class": "td--order td--order-price"
+                            },
+                            {
+                                "more": true,
+                                "class": "td--order td--order-more"
+                            }
+                        ],
+                        "more": [
+                            {
+                                "address": "125315, Москва, ул. Московская, 10/1",
+                                "deliveryType": "Курьером",
+                                "trackNumber": "000000000000",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
+                                "products": [
+                                    {
+                                        "name": "Мульти-овощерезка «Радуга вкуса»"
+                                    },
+                                    {
+                                        "name": "Комплект «Адора»"
+                                    },
+                                    {
+                                        "name": "Женское пальто из замши и шерпы"
+                                    },
+                                    {
+                                        "name": "Подвес «Янтарная загадка»"
+                                    }
+                                ]
+
+                            }
+                        ]
+                    },
+                    {
+
+                        "list": [
+                            {
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
+                                "class": "td--order td--order-number"
+                            },
+                            {
+                                "text": "00.00.00 / 00:00",
+                                "class": "td--order td--order-date"
+                            },
+                            {
+                                "text": "Доставляется",
+                                "class": "td--order td--order-status"
+                            },
+                            {
+                                "text": "Онлайн-оплата",
+                                "class": "td--order td--order-payment"
+                            },
+                            {
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
+                                "class": "td--order td--order-price"
+                            },
+                            {
+                                "more": true,
+                                "class": "td--order td--order-more"
+                            }
+                        ],
+                        "more": [
+                            {
+                                "address": "125315, Москва, ул. Московская, 10/1",
+                                "deliveryType": "Курьером",
+                                "trackNumber": "000000000000",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
+                                "products": [
+                                    {
+                                        "name": "Мульти-овощерезка «Радуга вкуса»"
+                                    },
+                                    {
+                                        "name": "Комплект «Адора»"
+                                    },
+                                    {
+                                        "name": "Женское пальто из замши и шерпы"
+                                    },
+                                    {
+                                        "name": "Подвес «Янтарная загадка»"
+                                    }
+                                ]
+
+                            }
+                        ]
+                    },
+                    {
+
+                        "list": [
+                            {
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
+                                "class": "td--order td--order-number"
+                            },
+                            {
+                                "text": "00.00.00 / 00:00",
+                                "class": "td--order td--order-date"
+                            },
+                            {
+                                "text": "Оформляется",
+                                "class": "td--order td--order-status"
+                            },
+                            {
+                                "text": "Онлайн-оплата",
+                                "class": "td--order td--order-payment"
+                            },
+                            {
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
+                                "class": "td--order td--order-price"
+                            },
+                            {
+                                "more": true,
+                                "class": "td--order td--order-more"
+                            }
+                        ],
+                        "more": [
+                            {
+                                "address": "125315, Москва, ул. Московская, 10/1",
+                                "deliveryType": "Курьером",
+                                "trackNumber": "000000000000",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
+                                "products": [
+                                    {
+                                        "name": "Мульти-овощерезка «Радуга вкуса»"
+                                    },
+                                    {
+                                        "name": "Комплект «Адора»"
+                                    },
+                                    {
+                                        "name": "Женское пальто из замши и шерпы"
+                                    },
+                                    {
+                                        "name": "Подвес «Янтарная загадка»"
+                                    }
+                                ]
+
+                            }
+                        ]
+                    },
+                    {
+
+                        "list": [
+                            {
+                                "text": "<span class=\"hidden-xl hidden-lg hidden-md\">Заказ №</span> 00000",
+                                "class": "td--order td--order-number"
+                            },
+                            {
+                                "text": "00.00.00 / 00:00",
+                                "class": "td--order td--order-date"
+                            },
+                            {
+                                "text": "Доставляется",
+                                "class": "td--order td--order-status"
+                            },
+                            {
+                                "text": "Онлайн-оплата",
+                                "class": "td--order td--order-payment"
+                            },
+                            {
+                                "price": "10 000 <span class=\"elem-rub\">i</span>",
+                                "class": "td--order td--order-price"
+                            },
+                            {
+                                "more": true,
+                                "class": "td--order td--order-more"
+                            }
+                        ],
+                        "more": [
+                            {
+                                "address": "125315, Москва, ул. Московская, 10/1",
+                                "deliveryType": "Курьером",
+                                "trackNumber": "000000000000",
+                                "productSum": "6700 руб.",
+                                "deliverySum": "0 руб.",
+                                "saleHSR": "2500 руб.",
+                                "saleRouble": "150 руб.",
+                                "salePromocode": "300 руб.",
+                                "totalSum": "2 000 <span class=\"elem-rub\">i</span>",
+                                "products": [
+                                    {
+                                        "name": "Мульти-овощерезка «Радуга вкуса»"
+                                    },
+                                    {
+                                        "name": "Комплект «Адора»"
+                                    },
+                                    {
+                                        "name": "Женское пальто из замши и шерпы"
+                                    },
+                                    {
+                                        "name": "Подвес «Янтарная загадка»"
+                                    }
+                                ]
+
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+
+        "sexSelect": {
+            "title": "Пол не выбран",
+            "title2": "Пол не выбран",
+            "class": "select-custom select-custom--w-100",
+            "list": [
+                {
+                    "text": "Мужской",
+                    "value": "male"
+                },
+                {
+                    "text": "Женский",
+                    "value": "female"
+                }
+            ]
+        },
+
+        "specialProductList": {
+            "title": "Специально для вас",
+            "list": [
+                {
+                    "img": "assets/images/example/card/img1.jpg",
+                    "status": "Распродажа",
+                    "name": "Мульти-овощерезка «Радуга вкуса»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img5.jpg",
+                    "status": "акция",
+                    "name": "Куртка «Надежная защита»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img6.jpg",
+                    "status": "новинка",
+                    "name": "Брошь «Лунный цветок»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img7.jpg",
+                    "status": "хит продаж",
+                    "name": "Брошь «Цветущий янтарь»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img9.jpg",
+                    "status": "новинка",
+                    "name": "Подвес «Янтарная загадка»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                },
+                {
+                    "img": "assets/images/example/card/img10.jpg",
+                    "status": "хит продаж",
+                    "name": "Колье + серьги «Янтарный цветок»",
+                    "priceOld": "1 400 <span class=\"elem-rub\">i</span>",
+                    "price": "1 000 <span class=\"elem-rub\">i</span>",
+                    "btn": "В корзину"
+                }
+            ]
+        }
+
     }
+
+
+
 }

@@ -2,11 +2,11 @@
     position: relative;
     &__group {
         position: relative;
-        
+
         &:nth-child(3) {
             margin: 20px 0;
         }
-        
+
         &--slider {
             margin: 20px 0;
 
@@ -28,6 +28,10 @@
         }
     }
 
+    .club-card__bonus--width-60 {
+        width: auto;
+    }
+
     &__btn {
         position: static;
         margin-top: 20px;
@@ -36,7 +40,7 @@
         @media(max-width: $md) {
             margin-bottom: 20px;
         }
-        
+
         button {
             width: 20%;
 
@@ -50,16 +54,259 @@
         }
     }
 
+    &__wrap--center {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+                @media(max-width: 1090px) {
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                       -moz-box-orient: vertical;
+                       -moz-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: start;
+                    -webkit-align-items: flex-start;
+                       -moz-box-align: start;
+                        -ms-flex-align: start;
+                            align-items: flex-start;
+                }
+    }
+
+    &__wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+           -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+                .club-card__box-left {
+                    width: 100%;
+                    margin: 0;
+                }
+                .club-card__bonus {
+                    width: auto;
+                    @media(max-width: 520px) {
+                        width: 100%;
+                    }
+                }
+                .club-card__status-text {
+                    text-align: left;
+                    @media(max-width: $md) {
+                        display: block;
+                    }
+                }
+                .club-card__box {
+                    margin-left: 65px;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                       -moz-box-orient: vertical;
+                       -moz-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                            width: 50%;
+
+                    @media(max-width: $lgx) {
+                        margin-left: 25px;
+                    }
+                    @media(max-width: 870px) {
+                        width: 58%;
+                        margin-left: 0;
+                    }
+                    @media(max-width: 520px) {
+                        width: 100%;
+                    }
+                }
+                .wrap {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin-top: auto;
+
+                    @media(max-width: 1090px) {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    @media(max-width: 705px) {
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        -webkit-flex-direction: column;
+                           -moz-box-orient: vertical;
+                           -moz-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                    }
+                    @media(max-width: 520px) {
+                        position: static;
+                    }
+                    .step__badge {
+                        width: auto;
+                        br {
+                            @media(max-width: 1090px) {
+                                display: none;
+                            }
+                            @media(max-width: 520px) {
+                                display: block;
+                            }
+                        }
+                        @media(max-width: 1090px) {
+                            width: auto;
+                            height: auto;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -moz-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-align: center;
+                            -webkit-align-items: center;
+                               -moz-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
+                            margin: 0;
+                        }
+                        @media(max-width: 520px) {
+                            display: block;
+                        }
+
+                    }
+                }
+                .step__button-block {
+                    width: 276px;
+                    margin-right: 35px;
+                    @media(max-width: $lgx) {
+                        width: 210px;
+                    }
+                    @media(max-width: 1090px) {
+                        width: 270px;
+                        margin-right: 5px;
+                    }
+                    @media(max-width: 520px) {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                }
+
+            .club-card__img-card {
+                width: 50%;
+                @media(max-width: $lgx) {
+                    width: 47%;
+                }
+                @media(max-width: 870px) {
+                    width: 40%;
+                }
+                @media(max-width: 520px) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+
+            @media(max-width: 1090px) {
+                position: relative;
+                padding-bottom: 80px;
+            }
+            @media(max-width: 890px) {
+                -webkit-box-align: start;
+                -webkit-align-items: flex-start;
+                   -moz-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
+            }
+            @media(max-width: 705px) {
+                padding-bottom: 120px;
+            }
+            @media(max-width: 520px) {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                   -moz-box-orient: vertical;
+                   -moz-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                        padding-bottom: 0;
+            }
+    }
+
+
+
+    &__badge {
+        background: #f61d2a;
+        color: #fff;
+        padding: 12px 0;
+        margin: 0 auto 0 40px;
+        -webkit-border-radius: 12px;
+           -moz-border-radius: 12px;
+                border-radius: 12px;
+        width: 363px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+           -moz-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+                span {
+                    color: #fff;
+                    line-height: 1em;
+
+                    @media(max-width: 1090px) {
+                        font-size: 24px;
+                    }
+
+                    @media(max-width: 520px) {
+                        font-size: 16px;
+                    }
+                }
+
+                @media(max-width: 1090px) {
+                    margin-left: 0;
+                    width: 275px;
+                    margin-bottom: 15px;
+                }
+
+                @media(max-width: $md) {
+                    padding: 8px 0;
+                }
+
+                @media(max-width: 520px) {
+                    width: 100%;
+                    padding: 5px 0;
+                }
+    }
+
     &__text {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;       
+        height: 100%;
 
         &-item {
             position: absolute;
-            
+
             &--bold {
                 font-weight: 800;
             }
@@ -112,10 +359,10 @@
                     line-height: 2.083vw; // 16px;
                 }
 
-                
+
                 @media (min-width: 1024px) {
                     top: 27.930vw; // 286px;
-                    left: 44.238vw; // 453px; 
+                    left: 44.238vw; // 453px;
                 }
 
 
@@ -258,7 +505,7 @@
                 color: $color-orange;
                 text-align: center;
 
-                
+
                 @media (min-width: $md) {
                     top: -13.672vw; // -105px;
                     left: 67.448vw; // 518px;
@@ -559,7 +806,7 @@
 
             &--present-all {
                 right: 3.125vw; // 10px;
-                
+
                 @media (min-width: $md) {
                     right: 45.052vw; // 346px;
                 }
@@ -710,18 +957,34 @@
     }
 
     &__box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
 
         @media(max-width: $md) {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+               -moz-box-orient: vertical;
+               -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
 
         &-left {
             margin-right: 35px;
 
+            width: -webkit-calc(45%);
+
+            width: -moz-calc(45%);
+
             width: calc(45%);
 
             @media(max-width: $lgx) {
+                width: -webkit-calc(62%);
+                width: -moz-calc(62%);
                 width: calc(62%);
             }
 
@@ -749,7 +1012,11 @@
         }
 
         &-right {
-            flex-grow: 1;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+               -moz-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
         }
 
         &--md-size-50 {
@@ -788,15 +1055,29 @@
 
         }
     }
-    
+
 
     &__status {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
 
         &-wrap {
             max-width: 155px;
             width: 100%;
             margin-right: 45px;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
         }
 
         &-text {
@@ -836,7 +1117,11 @@
                 position: absolute;
                 top: 50%;
                 left: 0;
-                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                   -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                     -o-transform: translateY(-50%);
+                        transform: translateY(-50%);
                 background: url('assets/images/required/club-card/icon-arrow.svg') center / contain no-repeat;
                 height: 30px;
                 width: 95px;
@@ -846,7 +1131,11 @@
                 &::before {
                     width: 145px;
                     top: 16%;
-                    transform: translateY(-16%);
+                    -webkit-transform: translateY(-16%);
+                       -moz-transform: translateY(-16%);
+                        -ms-transform: translateY(-16%);
+                         -o-transform: translateY(-16%);
+                            transform: translateY(-16%);
                 }
             }
 
@@ -857,15 +1146,21 @@
 
                     top: -52px;
                     left: 50%;
-                    transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                       -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                         -o-transform: translateX(-50%);
+                            transform: translateX(-50%);
                     background: url('assets/images/required/club-card/icon-arrow-down.svg') center / contain no-repeat;
-                    
+
                 }
             }
         }
 
         &--flex-wrap {
-            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
         }
 
         &--block {
@@ -879,10 +1174,22 @@
         width: 100%;
 
         &-inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
 
-            border-radius: 16px; 
+            -webkit-border-radius: 16px;
+
+               -moz-border-radius: 16px;
+
+                    border-radius: 16px;
             border: 1px solid #F6F6F6;
 
             height: 90px;
@@ -936,8 +1243,16 @@
         }
 
         &-unlimited {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             margin-top: 10px;
             margin-bottom: 40px;
 
@@ -974,6 +1289,8 @@
             }
 
             @media(max-width: $md) {
+                width: -webkit-calc(100% - 115px);
+                width: -moz-calc(100% - 115px);
                 width: calc(100% - 115px);
             }
         }
@@ -987,7 +1304,9 @@
         padding-left: 40px;
 
         border: 1px solid #F6F6F6;
-        border-radius: 16px;
+        -webkit-border-radius: 16px;
+           -moz-border-radius: 16px;
+                border-radius: 16px;
 
         @media(max-width: $lg) {
             padding-left: 25px;
@@ -1047,7 +1366,9 @@
         margin-bottom: 40px;
 
         border: 1px solid #F6F6F6;
-        border-radius: 16px;
+        -webkit-border-radius: 16px;
+           -moz-border-radius: 16px;
+                border-radius: 16px;
 
         text-align: center;
         font-weight: 800;
@@ -1102,6 +1423,10 @@
                 right: 0;
                 width: 50px;
                 height: 100%;
+                background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255,0)));
+                background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255,0) 100%);
+                background: -moz-linear-gradient(right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255,0) 100%);
+                background: -o-linear-gradient(right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255,0) 100%);
                 background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255,0) 100%);
             }
         }
