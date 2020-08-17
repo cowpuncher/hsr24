@@ -21,6 +21,13 @@
         }
     }
 
+    .step__title {
+        display: none;
+        @media (max-width: $lg) {
+            display: block;
+        }
+    }
+
     &__head {
         display: -webkit-box;
         display: -webkit-flex;

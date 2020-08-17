@@ -23,6 +23,12 @@
 
     &__name {
         margin-bottom: 0;
+        @media (max-width: 1080px) {
+            margin-bottom: 20px;
+        }
+        @media (max-width: $md) {
+            margin-bottom: 10px;
+        }
     }
 
     &__image {
@@ -39,6 +45,9 @@
 
     &__welcome {
         margin-bottom: 25px;
+        @media(max-width: 1090px) {
+            margin-bottom: 17px;
+        }
     }
 
     &__btn {
@@ -101,22 +110,45 @@
            -moz-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
+                -webkit-box-align: start;
+                -webkit-align-items: flex-start;
+                   -moz-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
                 margin-bottom: 30px;
+                @media(max-width: $lgx) {
+                    -webkit-box-align: center;
+                    -webkit-align-items: center;
+                       -moz-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                }
                 .club-card__box-left {
                     width: 100%;
                     margin: 0;
                 }
                 .club-card__bonus {
                     width: auto;
-                    @media(max-width: 520px) {
+                    @media(max-width: $lg) {
                         width: 100%;
+                        margin-top: -15px;
+                    }
+                    @media(max-width: $md) {
+                        width: 60%;
+                        margin-top: 0;
                     }
                 }
                 .club-card__status-text {
                     text-align: left;
                     margin-bottom: 25px;
+                    @media(max-width: $lgx) {
+                        margin-bottom: -3px;
+                        font-size: 14px;
+                    }
                     @media(max-width: $md) {
                         display: block;
+                        margin-bottom: 10px;
+                        font-size: 11px;
                     }
                 }
                 .club-card__box {
@@ -132,6 +164,10 @@
 
                     @media(max-width: $lgx) {
                         margin-left: 25px;
+                        width: 55%;
+                        .step__badge span {
+                            font-size: 24px;
+                        }
                     }
                     @media(max-width: 870px) {
                         width: 58%;
@@ -147,7 +183,16 @@
                     display: -moz-box;
                     display: -ms-flexbox;
                     display: flex;
-                    margin-top: auto;
+                    margin-top: 50px;
+
+                    @media(max-width: $lgx) {
+                        margin-top: 10px;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                           -moz-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                    }
 
                     @media(max-width: 1090px) {
                         position: absolute;
@@ -165,9 +210,13 @@
                     }
                     @media(max-width: 520px) {
                         position: static;
+                        margin-top: 0;
                     }
                     .step__badge {
-                        width: auto;
+                        width: 305px;
+                        font-size: 16px;
+                        padding: 5px 22px;
+                        height: 60px;
                         br {
                             @media(max-width: 1090px) {
                                 display: none;
@@ -176,9 +225,12 @@
                                 display: block;
                             }
                         }
+                        @media(max-width: 1210px) {
+                            width: 390px;
+                        }
                         @media(max-width: 1090px) {
-                            width: auto;
-                            height: auto;
+                            width: 60%;
+                            font-size: 13px;
                             display: -webkit-box;
                             display: -webkit-flex;
                             display: -moz-box;
@@ -191,8 +243,15 @@
                                     align-items: center;
                             margin: 0;
                         }
-                        @media(max-width: 520px) {
+                        @media(max-width: $md) {
                             display: block;
+                            width: 100%;
+                            padding: 5px 15px;
+                            font-size: 10px;
+                            height: 50px;
+                            span {
+                                font-size: 14px;
+                            }
                         }
 
                     }
@@ -201,10 +260,10 @@
                     width: 276px;
                     margin-right: 35px;
                     @media(max-width: $lgx) {
-                        width: 210px;
+                        width: 290px;
                     }
                     @media(max-width: 1090px) {
-                        width: 270px;
+                        width: 320px;
                         margin-right: 5px;
                     }
                     @media(max-width: 520px) {
@@ -216,14 +275,14 @@
             .club-card__img-card {
                 width: 44%;
                 @media(max-width: $lgx) {
-                    width: 47%;
+                    width: 460px;
                 }
-                @media(max-width: 870px) {
+                @media(max-width: 1090px) {
                     width: 40%;
                 }
                 @media(max-width: 520px) {
                     width: 100%;
-                    margin-bottom: 15px;
+                    margin-bottom: 10px;
                 }
             }
 
@@ -263,7 +322,8 @@
         -webkit-border-radius: 12px;
            -moz-border-radius: 12px;
                 border-radius: 12px;
-        width: 363px;
+        width: 380px;
+        font-size: 24px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -282,7 +342,6 @@
                 span {
                     color: #fff;
                     line-height: 1em;
-
                     @media(max-width: 1090px) {
                         font-size: 24px;
                     }
@@ -292,19 +351,28 @@
                     }
                 }
 
+                @media(max-width: 1300px) {
+                    margin: 0 auto 0 30px;
+                }
+
                 @media(max-width: 1090px) {
                     margin-left: 0;
-                    width: 275px;
+                    line-height: 1em;
                     margin-bottom: 15px;
+                    width: 275px;
+                    font-size: 17px;
+                    height: 50px;
                 }
 
                 @media(max-width: $md) {
                     padding: 8px 0;
+                    font-size: 14px;
+                    height: 35px;
                 }
 
                 @media(max-width: 520px) {
                     width: 100%;
-                    padding: 5px 0;
+                    padding: 10px 0;
                 }
     }
 
@@ -1001,13 +1069,16 @@
 
             &--size-40 {
                 @media(max-width: $lgx) {
-                    max-width: 457px;
+                    max-width: 500px;
                     width: 100%;
                     margin-right: 10px;
                 }
 
                 .club-card__status-wrap {
                     margin-right: 35px;
+                    @media(max-width: $lg) {
+                        margin-right: 25px;
+                    }
                 }
 
                 @media(max-width: $md) {
@@ -1089,6 +1160,12 @@
             display: -moz-box;
             display: -ms-flexbox;
             display: flex;
+            @media(max-width: $lgx) {
+                max-width: 160px;
+            }
+            @media(max-width: $lg) {
+                max-width: 135px;
+            }
         }
 
         &-text {
@@ -1136,6 +1213,9 @@
                 background: url('assets/images/required/club-card/icon-arrow.svg') center / contain no-repeat;
                 height: 30px;
                 width: 95px;
+                @media(max-width: $lgx) {
+                    left: 0;
+                }
             }
 
             @media(max-width: $lg) {
@@ -1213,14 +1293,22 @@
                 margin-bottom: 0;
             }
 
+
+            @media(max-width: $lgx) {
+                width: 270px;
+            }
+
             @media(max-width: $lg) {
                 margin-bottom: 15px;
                 padding-right: 0;
+                height: 80px;
+                width: 230px;
             }
 
             @media(max-width: $md) {
                 height: 44px;
                 margin-bottom: 8px;
+                width: 170px;
             }
         }
 
