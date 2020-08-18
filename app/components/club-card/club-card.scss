@@ -304,6 +304,15 @@
                                 font-size: 14px;
                             }
                         }
+                        @media(max-width: 520px) {
+                            -webkit-box-pack: start;
+                            -webkit-justify-content: flex-start;
+                               -moz-box-pack: start;
+                                -ms-flex-pack: start;
+                                    justify-content: flex-start;
+                            padding-left: 20px;
+                            width: 100%;
+                        }
 
                     }
                 }
