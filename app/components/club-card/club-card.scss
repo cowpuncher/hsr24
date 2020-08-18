@@ -302,6 +302,9 @@
                             height: 50px;
                             span {
                                 font-size: 14px;
+                                @media(max-width: 520px) {
+                                    line-height: 1.5em;
+                                }
                             }
                         }
                         @media(max-width: 520px) {
@@ -312,6 +315,12 @@
                                     justify-content: flex-start;
                             padding-left: 20px;
                             width: 100%;
+                            -webkit-box-align: end;
+                            -webkit-align-items: flex-end;
+                               -moz-box-align: end;
+                                -ms-flex-align: end;
+                                    align-items: flex-end;
+                             line-height: 1.8em;
                         }
 
                     }
