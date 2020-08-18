@@ -5,7 +5,7 @@
 {% import '../components/social/social.twig' as social %}
 {% import '../components/pay/pay.twig' as pay %}
 {% import '../components/breadcrumbs/breadcrumbs.twig' as breadcrumbs %}
-{% import '../components/tabs/tabs.twig' as tabs %}
+{% import '../components/tabs/tabs-loyalty.twig' as tabsLoyalty %}
 
 
 
@@ -24,7 +24,7 @@
             {# заголовок #}
             <h2 class="elem-title step__title">Личный кабинет</h2>
 
-            {{ tabs.tabsProfile(tabsList) }}
+            {{ tabsLoyalty.tabsProfile(tabsList) }}
 
         </form>
 	</div>

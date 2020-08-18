@@ -166,14 +166,17 @@
 
                     @media(max-width: $lgx) {
                         margin-left: 25px;
-                        width: 55%;
+                        width: 70%;
                         .step__badge span {
                             font-size: 24px;
                         }
                     }
                     @media(max-width: 870px) {
-                        width: 58%;
+                        width: 55%;
                         margin-left: 0;
+                    }
+                    @media(max-width: $md) {
+                        width: 58%;
                     }
                     @media(max-width: 520px) {
                         width: 100%;
@@ -196,10 +199,15 @@
                                 align-items: center;
                     }
 
+                    @media(max-width: $lg) {
+                        margin-top: 55px;
+                    }
+
                     @media(max-width: 1090px) {
                         position: absolute;
                         bottom: 0;
                         left: 0;
+                        width: 100%;
                     }
                     @media(max-width: 705px) {
                         -webkit-box-orient: vertical;
@@ -231,7 +239,7 @@
                             width: 390px;
                         }
                         @media(max-width: 1090px) {
-                            width: 60%;
+                            width: 65%;
                             font-size: 13px;
                             display: -webkit-box;
                             display: -webkit-flex;
@@ -244,16 +252,27 @@
                                 -ms-flex-align: center;
                                     align-items: center;
                             margin: 0;
+                            height: 40px;
+                            -webkit-box-pack: center;
+                            -webkit-justify-content: center;
+                               -moz-box-pack: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                         }
                         @media(max-width: $md) {
                             display: block;
                             width: 100%;
-                            padding: 5px 15px;
+                            padding: 7px 15px;
                             font-size: 10px;
-                            height: 50px;
+                            height: 41px;
+                            text-align: center;
                             span {
                                 font-size: 14px;
                             }
+                        }
+                        @media(max-width: 520px) {
+                            height: 55px;
+                            text-align: start;
                         }
 
                     }
@@ -261,12 +280,22 @@
                 .step__button-block {
                     width: 276px;
                     margin-right: 35px;
+                    height: auto;
+                    -webkit-box-align: end;
+                    -webkit-align-items: flex-end;
+                       -moz-box-align: end;
+                        -ms-flex-align: end;
+                            align-items: flex-end;
                     @media(max-width: $lgx) {
                         width: 290px;
                     }
                     @media(max-width: 1090px) {
                         width: 320px;
                         margin-right: 5px;
+                    }
+                    @media(max-width: $md) {
+                        width: 100%;
+                        margin: 10px 0;
                     }
                     @media(max-width: 520px) {
                         width: 100%;
@@ -280,7 +309,10 @@
                     width: 460px;
                 }
                 @media(max-width: 1090px) {
-                    width: 40%;
+                    width: 270px;
+                }
+                @media(max-width: $md) {
+                    width: 200px;
                 }
                 @media(max-width: 520px) {
                     width: 100%;
@@ -1075,6 +1107,13 @@
                     width: 100%;
                     margin-right: 10px;
                 }
+                @media(max-width: $lg) {
+                    max-width: 450px;
+                }
+                @media(max-width: 1090px) {
+                    max-width: 100%;
+                }
+
 
                 .club-card__status-wrap {
                     margin-right: 35px;
@@ -1304,7 +1343,7 @@
                 margin-bottom: 15px;
                 padding-right: 0;
                 height: 80px;
-                width: 230px;
+                width: 100%;
             }
 
             @media(max-width: $md) {
@@ -1400,7 +1439,7 @@
     &__balance {
         background: url('assets/images/required/club-card/balance-bg.svg') center / cover no-repeat;
 
-        padding-top: 55px;
+        padding-top: 45px;
         padding-bottom: 40px;
         padding-left: 40px;
 
@@ -1411,9 +1450,9 @@
 
         @media(max-width: $lg) {
             padding-left: 25px;
-            padding-top: 62px;
+            padding-top: 40px;
 
-            height: 195px;
+            // height: 195px;
         }
 
         @media(max-width: $md) {
