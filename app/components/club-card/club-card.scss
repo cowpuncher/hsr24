@@ -298,12 +298,12 @@
                                     justify-content: center;
                         }
                         @media(max-width: $md) {
-                            font-size: 10px;
+                            font-size: 12px;
                             height: 50px;
                             span {
                                 font-size: 14px;
                                 @media(max-width: 520px) {
-                                    line-height: 1.5em;
+                                    line-height: 1.4em;
                                 }
 
                             }
@@ -321,7 +321,7 @@
                                -moz-box-align: end;
                                 -ms-flex-align: end;
                                     align-items: flex-end;
-                             line-height: 1.8em;
+                             line-height: 1.5em;
                         }
 
                     }
@@ -1089,8 +1089,8 @@
     p {
 
         @media(max-width: $md) {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 12px;
+            line-height: 1.5em;
         }
     }
 
@@ -1370,7 +1370,7 @@
             @media(max-width: $md) {
                 height: 44px;
                 margin-bottom: 8px;
-                width: 170px;
+                width: 180px;
             }
         }
 
@@ -1398,7 +1398,7 @@
             }
 
             @media(max-width: $md) {
-                font-size: 10px;
+                font-size: 12px;
                 line-height: 12px;
             }
         }
@@ -1420,7 +1420,7 @@
             @media(max-width: $md) {
                 margin-top: 20px;
                 margin-bottom: 25px;
-                font-size: 10px;
+                font-size: 12px;
             }
 
             img {
@@ -1497,7 +1497,7 @@
             }
 
             @media(max-width: $md) {
-                font-size: 10px;
+                font-size: 12px;
                 line-height: 14px;
                 margin-bottom: 5px;
             }
@@ -1611,6 +1611,9 @@
     &__group-reg {
         .club-card__name {
             margin-bottom: 30px;
+            @media (max-width: $md) {
+                margin-bottom: 10px;
+            }
         }
         .club-card__status-wrap {
             -webkit-box-orient: vertical;
