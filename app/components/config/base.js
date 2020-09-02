@@ -305,7 +305,7 @@ $(document).ready(function() {
     $('[data-phone]').inputmask("+7 (999) 999-99-99");
     $('[data-card-num]').inputmask("9999 9999 9999 9999");
     $('[data-ssn]').inputmask("999-99-9999");
-    $('[data-promo]').inputmask("9999");
+    // $('[data-promo]').inputmask("9999");
 
     // Валидация форм
     $.validator.setDefaults({
