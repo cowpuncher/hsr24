@@ -23,6 +23,7 @@ import './order-icon/order-icon';
 import './order-list/order-list';
 import './question/question';
 import './rating/rating';
+import './table/table';
 
 import './reviews/reviews';
 import './profile/profile';
@@ -31,3 +32,5 @@ import './scroll-row/scroll-row';
 import "./complect/complect.js";
 
 import './filter-aside/filter-aside';
+
+

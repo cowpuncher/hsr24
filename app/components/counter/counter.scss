@@ -1,4 +1,8 @@
 .counter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100px;
 
@@ -10,11 +14,27 @@
         height: 27px;
         width: 27px;
         border: 1px solid $color-base;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        flex-shrink: 0;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
         background: transparent;
         outline: none;
         position: relative;
@@ -33,7 +53,11 @@
         }
 
         &:after {
-            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+               -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                 -o-transform: rotate(90deg);
+                    transform: rotate(90deg);
         }
 
         &--minus {
@@ -58,20 +82,30 @@
         font-weight: 800;
         border: 0;
         background: transparent;
+        width: -webkit-calc(100% - 54px);
+        width: -moz-calc(100% - 54px);
         width: calc(100% - 54px);
         outline: none;
         text-align: center;
     }
 
     &--inner {
-        border-radius: 28px;
+        -webkit-border-radius: 28px;
+           -moz-border-radius: 28px;
+                border-radius: 28px;
         border: 1px solid $color-gray-light;
         height: 52px;
-        align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+           -moz-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 0 22px;
         width: 155px;
         margin-left: 16px;
-        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
 
         @media (max-width: $lg) {
             height: 44px;
@@ -82,8 +116,14 @@
 
         @media (max-width: $md) {
             margin-left: 0;
-            order: -1;
+            -webkit-box-ordinal-group: 0;
+            -webkit-order: -1;
+               -moz-box-ordinal-group: 0;
+                -ms-flex-order: -1;
+                    order: -1;
             margin-right: 10px;
+            width: -webkit-calc(50% - 5px);
+            width: -moz-calc(50% - 5px);
             width: calc(50% - 5px);
             padding: 0 21px;
         }
@@ -98,4 +138,7 @@
             margin-left: -8px;
         }
     }
+}
+input:disabled {
+    color: #e6e6e6;
 }

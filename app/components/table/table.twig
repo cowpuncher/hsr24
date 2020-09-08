@@ -57,7 +57,8 @@
                                 {{ counter.counter({
                                     "min": "1",
                                     "max": "100",
-                                    "val": item2.count
+                                    "val": item2.count,
+                                    "disabled": item2.disabled
                                 }) }}
                             {% endif %}
 
@@ -88,6 +89,12 @@
                                 </a>
                             {% endif %}
 
+                            {% if item2.change %}
+                                <a href="#present" class="elem-change" data-popup-modal>
+                                    Изменить
+                                </a>
+                            {% endif %}
+
                             {% if item2.more %}
                                 <a href="#" class="btn-more" data-more>
                                     {{ svg.icon('arrow-down') }}
@@ -96,6 +103,83 @@
                         </td>
                     {% endfor %}
                 </tr>
+
+                {% for item2 in item.addCard %}
+                    <tr class="tr--add__card">
+                        <td colspan="7" class="td {% if item2.class %}{{ item2.class }}{% endif %} {% if item.null %}td--null{% endif %}" {% if item2.null %}{% endif %}>
+                            {% if item2.img %}
+                                <div class="add__card">
+                                    <a class="add__card--dropdown">
+                                        <img src="assets/images/icons-svg/arrow-down.svg" alt="">
+                                    </a>
+                                    <h3 class="add__card-title">
+                                        Станьте почетным клиентом HSR!
+                                    </h3>
+                                    <div class="add__card-mobile__block active">
+                                        <div class="add__card-mobile__images">
+                                            <img src="assets/images/icons-svg/card.svg" alt="">
+                                            <span class="add__card-block--plus">
+                                                <img src="assets/images/icons-svg/plus.svg" alt="">
+                                            </span>
+                                            <img src="assets/images/icons-svg/present.svg" alt="">
+                                        </div>
+                                        <a href="/cart.html" class="elem-btn elem-btn--lg bold">Получите подарок и бонусы с покупки!</a>
+                                    </div>
+                                    <div class="add__card-desctop__block disable">
+                                        <span class="add__card-desc">
+                                            Получите бонусы с покупки и подарок на выбор!
+                                        </span>
+                                        <div class="add__card-block">
+                                        <div class="add__card-block__card">
+                                            <div class="add__card-block__card--img">
+                                                <img src="{{ item2.img }}" alt="">
+                                            </div>
+                                            <span>
+                                                Стоимость вступления: {{ item2.amoutCard }}
+                                            </span>
+                                        </div>
+                                        <span class="add__card-block--plus">
+                                            <img src="assets/images/icons-svg/plus.svg" alt="">
+                                        </span>
+                            {% endif %}
+                                            <ul class="add__card-list">
+                                                {% for item in item2.listItem  %}
+                                                    <li class="add__card-list__item {{ item.active }}">
+                                                        <div class="add__card-list__item--img">
+                                                            <img src="{{ item.img }}" alt="">
+                                                        </div>
+                                                        <div class="card__price">
+                                                            <div class="elem-price-old">20 190 <span class="elem-rub">i</span></div>
+                                                            <div class="elem-price elem-price--lg color-red">0 <span class="elem-rub">i</span></div>
+                                                        </div>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur
+                                                        </p>
+                                                        <span class="add__card-list__item--checked {{ item.active }}">
+                                                            <img src="assets/images/icons-svg/checked.svg" alt="">
+                                                        </span>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                            <div class="add__card-bonus">
+                                                <span class="add__card-block--plus">
+                                                    <img src="assets/images/icons-svg/plus.svg" alt="">
+                                                </span>
+                                                <div class="add__card--bonus">
+                                                    <span>
+                                                        100
+                                                    </span>
+                                                    бонусов
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="/cart.html" class="elem-btn elem-btn--lg bold add__card--btn">Добавить в корзину</a>
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+
+                {% endfor %}
 
                 {% if item.more %}
                     {% for item2 in item.more %}

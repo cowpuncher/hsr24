@@ -9,10 +9,10 @@
 
     <div class="counter{{pr}} {{mod}} {% if data.class %}{{ data.class }}{% endif %}" data-counter{{pr}}>
 
-        <button class="counter{{pr}}__btn counter{{pr}}__btn--minus" {{attr}}-minus></button>
+        <button class="counter{{pr}}__btn counter{{pr}}__btn--minus" {{attr}}-minus ></button>
 
-        <input type="text" class="counter{{pr}}__input" min="{{ data.min }}" value="{{ data.val }}" max="{{ data.max }}" {{attr}}-input>
+        <input type="text" class="counter{{pr}}__input" min="{{ data.min }}" value="{{ data.val }}" max="{{ data.max }}" {{attr}}-input  {% if data.disabled %}{{ data.disabled }}{% endif %}>
 
-        <button class="counter{{pr}}__btn counter{{pr}}__btn--plus" {{attr}}-plus></button>
+        <button class="counter{{pr}}__btn counter{{pr}}__btn--plus" {{attr}}-plus {% if data.disabled %}{{ data.disabled }}{% endif %}></button>
     </div>
 {% endmacro %}

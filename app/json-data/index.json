@@ -90,6 +90,18 @@
             "href": "cart-authorized.html"
         },
         {
+            "title": "Корзина добавления подарка",
+            "href": "cart-add-present.html"
+        },
+        {
+            "title": "Корзина добавления подарка - 2 шт.",
+            "href": "cart-add-present-two.html"
+        },
+        {
+            "title": "Корзина изменить подарок",
+            "href": "cart-change-present.html"
+        },
+        {
             "title": "Карточка товара",
             "href": "product.html"
         },
